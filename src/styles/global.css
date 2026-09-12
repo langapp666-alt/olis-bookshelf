@@ -417,6 +417,7 @@ h3 {
 .hero {
   display: grid;
   gap: 1.35rem;
+  align-items: start;
   padding: 0.35rem 0 0.5rem;
 }
 
