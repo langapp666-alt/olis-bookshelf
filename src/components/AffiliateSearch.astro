@@ -1,0 +1,16 @@
+---
+import { affiliateTag, amazonSearchUrl } from "../lib/site";
+
+interface Props {
+  query: string;
+  label?: string;
+}
+
+const { query, label = query } = Astro.props;
+const href = amazonSearchUrl(query);
+---
+
+<p class="small">
+  Amazon search (placeholder tag <code>{affiliateTag}</code>):
+  <a href={href} rel="sponsored nofollow">{label}</a>
+</p>

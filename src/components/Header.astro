@@ -1,0 +1,41 @@
+---
+import Logo from "./Logo.astro";
+
+const pathname = Astro.url.pathname;
+
+const links = [
+  { href: "/", label: "Home" },
+  { href: "/genres/epic-fantasy/", label: "Epic Fantasy" },
+  { href: "/genres/space-opera/", label: "Space Opera / SFF" },
+  { href: "/genres/mystery-thriller/", label: "Mystery / Thriller" },
+  { href: "/methodology/", label: "Methodology" },
+  { href: "/about/", label: "About" },
+  { href: "/disclosure/", label: "Disclosure" },
+];
+
+function isCurrent(href: string) {
+  if (href === "/") return pathname === "/";
+  return pathname === href || pathname.startsWith(href);
+}
+---
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="/">
+      <Logo class="wordmark-mark" />
+      <span class="wordmark-text">
+        <span class="wordmark-oli">Oli's</span>
+        <span class="wordmark-shelf">Bookshelf</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      {
+        links.map((link) => (
+          <a href={link.href} aria-current={isCurrent(link.href) ? "page" : undefined}>
+            {link.label}
+          </a>
+        ))
+      }
+    </nav>
+  </div>
+</header>

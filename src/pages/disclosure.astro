@@ -1,0 +1,60 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { affiliateTag } from "../lib/site";
+---
+
+<BaseLayout
+  title="Disclosure"
+  description="FTC affiliate disclosure for Oli's Bookshelf. Amazon Associates is not active yet."
+>
+  <p class="eyebrow">Money and links</p>
+  <h1>Disclosure</h1>
+  <p class="lede">
+    This page is the full affiliate and advertising disclosure. If a later post mentions a retailer,
+    this is still the controlling text until we replace it.
+  </p>
+
+  <div class="disclosure-box">
+    <p style="margin:0 0 0.6rem;">
+      <strong>As an Amazon Associate I earn from qualifying purchases.</strong>
+    </p>
+    <p class="small" style="margin:0;">
+      That sentence is here to meet Amazon’s required Associates wording. The program is
+      <strong>not active yet</strong>. We have not applied, we have not been approved, and we have
+      not put a live Associates tag on this site.
+    </p>
+  </div>
+
+  <div class="prose">
+    <h2>What that means today</h2>
+    <ul>
+      <li>
+        Book search links use the public placeholder tag <code>{affiliateTag}</code>. They are not
+        meant to generate commission.
+      </li>
+      <li>We do not claim income, traffic, or “this niche prints money.”</li>
+      <li>
+        If Associates is approved later, we will replace the placeholder, keep this disclosure, and
+        note the change date in the repository.
+      </li>
+    </ul>
+
+    <h2>FTC note</h2>
+    <p>
+      If a link on this site could earn a commission in the future, we will say so on the page and
+      keep this disclosure linked from the footer. We do not accept paid placements for reading-order
+      facts. A retailer paying for a ranking would be a review, and we do not publish reviews.
+    </p>
+
+    <h2>What we will not do</h2>
+    <ul>
+      <li>Hide a live tag behind a “just a search link” label</li>
+      <li>Invent testimonials about products</li>
+      <li>Promise that buying through us funds the site in any specific amount</li>
+    </ul>
+
+    <p>
+      More detail lives in <code>docs/HOW_IT_EARNS.md</code>.
+    </p>
+  </div>
+</BaseLayout>

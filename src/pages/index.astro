@@ -1,0 +1,69 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import GuideCard from "../components/GuideCard.astro";
+import { genres, siteName, siteTagline } from "../lib/site";
+
+const guides = (await getCollection("guides")).sort((a, b) =>
+  a.data.title.localeCompare(b.data.title),
+);
+---
+
+<BaseLayout
+  title={siteName}
+  description="Reading-order and what-to-read-next guides for long SFF and mystery series. Drafts are marked until a person reviews them."
+>
+  <section class="hero">
+    <div>
+      <p class="eyebrow">Long series, short arguments</p>
+      <h1>{siteTagline}</h1>
+      <p class="lede">
+        Oli's Bookshelf is a niche desk for publication order, the chronological traps that spoil,
+        and a few honest next-read suggestions. No scraped blurbs, no star ratings, no “I made $12k
+        in a month.”
+      </p>
+      <div class="btn-row">
+        <a class="btn" href="/methodology/">How we build lists</a>
+        <a class="btn btn-secondary" href="/disclosure/">Affiliate disclosure</a>
+      </div>
+    </div>
+    <aside class="hero-card">
+      <p class="eyebrow">Currently drafted</p>
+      <p style="margin:0 0 0.6rem;">
+        Three guides are in the collection and marked <strong>DRAFT</strong> for human review:
+        Murderbot, The Expanse, and Discworld City Watch.
+      </p>
+      <p class="small muted" style="margin:0;">
+        Twelve more long-tail series sit in the backlog. Harry Potter, Tolkien, A Song of Ice and
+        Fire, and Star Wars are not primary targets.
+      </p>
+    </aside>
+  </section>
+
+  <h2>Draft guides</h2>
+  <div class="card-grid">
+    {guides.map((guide) => <GuideCard guide={guide} />)}
+  </div>
+
+  <h2>Browse by shelf</h2>
+  <div class="grid-3">
+    {
+      Object.values(genres).map((genre) => (
+        <a class="genre-card" href={`/genres/${genre.slug}/`}>
+          <p class="eyebrow">{genre.label}</p>
+          <p style="margin:0;">{genre.blurb}</p>
+        </a>
+      ))
+    }
+  </div>
+
+  <div class="panel" style="margin-top:1.5rem;">
+    <h2 style="margin-top:0;">What you will not find here</h2>
+    <ul>
+      <li>Copied jacket copy or copyrighted book text</li>
+      <li>Fake reviews or invented “reader reactions”</li>
+      <li>Live Amazon Associates tags (the placeholder is <code>TODO_AFFILIATE_TAG</code>)</li>
+      <li>Income claims or “this site prints money” language</li>
+    </ul>
+  </div>
+</BaseLayout>

@@ -1,0 +1,24 @@
+---
+interface Props {
+  flags?: string[];
+}
+
+const { flags = [] } = Astro.props;
+---
+
+<aside class="draft-banner" role="status">
+  <p style="margin:0 0 0.4rem;"><strong>DRAFT — needs human review.</strong></p>
+  <p class="small" style="margin:0;">
+    Publication facts were checked against the sources listed on this page. A person still needs to
+    confirm titles, dates, and any flagged blurbs before this guide is marked reviewed.
+  </p>
+  {
+    flags.length > 0 && (
+      <ul class="small" style="margin:0.7rem 0 0;">
+        {flags.map((flag) => (
+          <li>{flag}</li>
+        ))}
+      </ul>
+    )
+  }
+</aside>

@@ -1,0 +1,65 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Methodology"
+  description="How Oli's Bookshelf builds reading-order lists: publication first, chronology second, sources on the page."
+>
+  <p class="eyebrow">How the lists get made</p>
+  <h1>Methodology</h1>
+  <p class="lede">
+    A reading-order page is a research note, not a vibe. We treat publication order as the default
+    first read, then explain chronological exceptions without dumping spoilers into the table.
+  </p>
+
+  <div class="prose">
+    <h2>The working order</h2>
+    <ol>
+      <li>
+        <strong>Start with the author’s or publisher’s list</strong> when one exists. Martha Wells’
+        Murderbot page and the official Discworld novel list are the model.
+      </li>
+      <li>
+        <strong>Separate novels from optional shorts.</strong> A picture book, an RPG extra, or a
+        web-only short does not belong in the numbered novel column.
+      </li>
+      <li>
+        <strong>Publication first for a first read.</strong> Chronological prequels often exist
+        because they lean on later knowledge. We flag those instead of silently reordering.
+      </li>
+      <li>
+        <strong>Name the common mistakes.</strong> “I read Fugitive Telemetry after Network Effect
+        because it was published later” is a useful sentence. “Just read them in any order” is not.
+      </li>
+      <li>
+        <strong>Write next-reads from the reason, not the algorithm.</strong> Three to five titles,
+        each with an original sentence about voice, structure, or aftercare. No scraped “readers
+        also liked.”
+      </li>
+      <li>
+        <strong>Leave the human-review flags on.</strong> Dates, collected editions, and retailer
+        blurbs go stale. Drafts stay drafts until someone checks them.
+      </li>
+    </ol>
+
+    <h2>What counts as a source</h2>
+    <p>
+      Author sites, publisher reading-order pages, and ISFDB-style publication records. Fandom wikis
+      can point at a primary source; they are not the source. We record the URL on the guide and the
+      date we last opened it.
+    </p>
+
+    <h2>What we refuse to invent</h2>
+    <ul>
+      <li>Plot summaries that retell a chapter</li>
+      <li>Star ratings or “best book in the series”</li>
+      <li>Income or traffic claims</li>
+    </ul>
+
+    <p>
+      The operational checklist is <code>docs/CONTENT_WORKFLOW.md</code>. The series queue is
+      <code>docs/SERIES_BACKLOG.md</code>.
+    </p>
+  </div>
+</BaseLayout>
