@@ -1,0 +1,43 @@
+---
+import { affiliateTag, amazonSearchUrl } from "../lib/site";
+
+interface Props {
+  series: string;
+  author: string;
+  genreLabel: string;
+  sources: { label: string; url: string }[];
+}
+
+const { series, author, genreLabel, sources } = Astro.props;
+const searchHref = amazonSearchUrl(series);
+---
+
+<div class="panel">
+  <p class="eyebrow">On this desk</p>
+  <p class="aside-series">{series}</p>
+  <p class="small muted" style="margin:0 0 0.85rem;">
+    {author} · {genreLabel}
+  </p>
+  <a class="btn" href={searchHref} rel="sponsored nofollow">Search Amazon</a>
+  <p class="small muted" style="margin:0.7rem 0 0;">
+    Placeholder tag <code>{affiliateTag}</code>
+  </p>
+  <hr class="rule" />
+  <p class="small" style="margin:0 0 0.55rem;">
+    <strong>As an Amazon Associate I earn from qualifying purchases.</strong> Associates is not
+    active yet. Search links are not meant to generate commission.
+  </p>
+  <p class="small" style="margin:0 0 0.85rem;">
+    <a href="/disclosure/">Full disclosure</a> · <a href="/methodology/">Methodology</a>
+  </p>
+  <p class="small" style="margin:0 0 0.35rem;"><strong>Sources</strong></p>
+  <ul class="source-list small">
+    {
+      sources.map((source) => (
+        <li>
+          <a href={source.url}>{source.label}</a>
+        </li>
+      ))
+    }
+  </ul>
+</div>

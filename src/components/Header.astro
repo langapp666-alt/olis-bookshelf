@@ -3,11 +3,13 @@ import Logo from "./Logo.astro";
 
 const pathname = Astro.url.pathname;
 
-const links = [
-  { href: "/", label: "Home" },
+const shelves = [
   { href: "/genres/epic-fantasy/", label: "Epic Fantasy" },
-  { href: "/genres/space-opera/", label: "Space Opera / SFF" },
-  { href: "/genres/mystery-thriller/", label: "Mystery / Thriller" },
+  { href: "/genres/space-opera/", label: "Space Opera" },
+  { href: "/genres/mystery-thriller/", label: "Mystery" },
+];
+
+const house = [
   { href: "/methodology/", label: "Methodology" },
   { href: "/about/", label: "About" },
   { href: "/disclosure/", label: "Disclosure" },
@@ -20,22 +22,56 @@ function isCurrent(href: string) {
 ---
 
 <header class="site-header">
-  <div class="wrap header-inner">
-    <a class="wordmark" href="/">
-      <Logo class="wordmark-mark" />
-      <span class="wordmark-text">
-        <span class="wordmark-oli">Oli's</span>
-        <span class="wordmark-shelf">Bookshelf</span>
-      </span>
-    </a>
-    <nav class="nav" aria-label="Primary">
-      {
-        links.map((link) => (
-          <a href={link.href} aria-current={isCurrent(link.href) ? "page" : undefined}>
-            {link.label}
-          </a>
-        ))
-      }
-    </nav>
+  <div class="wrap">
+    <div class="header-bar">
+      <a class="wordmark" href="/">
+        <Logo class="wordmark-mark" />
+        <span class="wordmark-text">
+          <span class="wordmark-oli">Oli's</span>
+          <span class="wordmark-shelf">Bookshelf</span>
+        </span>
+      </a>
+      <details class="nav-box" data-nav-box>
+        <summary class="nav-toggle">
+          Menu
+          <span class="nav-toggle-icon" aria-hidden="true"><span></span></span>
+        </summary>
+        <nav class="nav" aria-label="Primary">
+          <div class="nav-group">
+            <p class="nav-label">Shelves</p>
+            <a href="/" aria-current={isCurrent("/") ? "page" : undefined}>Home</a>
+            {
+              shelves.map((link) => (
+                <a href={link.href} aria-current={isCurrent(link.href) ? "page" : undefined}>
+                  {link.label}
+                </a>
+              ))
+            }
+          </div>
+          <div class="nav-group">
+            <p class="nav-label">The desk</p>
+            {
+              house.map((link) => (
+                <a href={link.href} aria-current={isCurrent(link.href) ? "page" : undefined}>
+                  {link.label}
+                </a>
+              ))
+            }
+          </div>
+        </nav>
+      </details>
+    </div>
   </div>
 </header>
+
+<script>
+  const box = document.querySelector<HTMLDetailsElement>("[data-nav-box]");
+  if (box) {
+    const desktop = window.matchMedia("(min-width: 900px)");
+    const sync = () => {
+      box.open = desktop.matches;
+    };
+    sync();
+    desktop.addEventListener("change", sync);
+  }
+</script>

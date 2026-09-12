@@ -4,19 +4,27 @@ import type { CollectionEntry } from "astro:content";
 
 interface Props {
   guide: CollectionEntry<"guides">;
+  index?: number;
 }
 
-const { guide } = Astro.props;
+const { guide, index } = Astro.props;
 const genre = genres[guide.data.genre as GenreSlug];
+const n = typeof index === "number" ? String(index).padStart(2, "0") : null;
 ---
 
-<a class="guide-card" href={`/guides/${guide.data.slug}/`}>
-  <div class="pill-row">
-    <span class="pill genre">{genre.label}</span>
-    {guide.data.status === "draft" && <span class="pill draft">Draft</span>}
+<a class:list={[n ? "catalog-item" : "guide-card"]} href={`/guides/${guide.data.slug}/`}>
+  {n && <span class="catalog-index" aria-hidden="true">{n}</span>}
+  <div>
+    <div class="pill-row">
+      <span class="pill genre">{genre.label}</span>
+      {guide.data.status === "draft" && <span class="pill draft">Draft</span>}
+    </div>
+    <h2>{guide.data.title}</h2>
+    <p class="byline small">{guide.data.series} · {guide.data.author}</p>
+    <p style="margin:0.15rem 0 0;">{guide.data.description}</p>
+    <p class="small muted" style="margin:0.35rem 0 0;">
+      Last verified {formatDate(guide.data.lastVerified)}
+    </p>
+    <p class="catalog-cta">Open the guide</p>
   </div>
-  <h2 style="margin:0;font-size:1.45rem;">{guide.data.title}</h2>
-  <p class="muted" style="margin:0;">{guide.data.series} · {guide.data.author}</p>
-  <p style="margin:0;">{guide.data.description}</p>
-  <p class="small muted" style="margin:0;">Last verified {formatDate(guide.data.lastVerified)}</p>
 </a>
