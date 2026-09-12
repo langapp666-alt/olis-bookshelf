@@ -1,0 +1,66 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import GuideCard from "../../components/GuideCard.astro";
+import { genres, type GenreSlug } from "../../lib/site";
+
+export function getStaticPaths() {
+  return Object.values(genres).map((genre) => ({
+    params: { slug: genre.slug },
+    props: { genre },
+  }));
+}
+
+const { genre } = Astro.props;
+const guides = (await getCollection("guides")).filter(
+  (entry) => entry.data.genre === (genre.slug as GenreSlug),
+);
+
+const queued: Record<GenreSlug, string[]> = {
+  "epic-fantasy": [
+    "The Locked Tomb — Tamsyn Muir",
+    "Mistborn Era 1 + 2 — Brandon Sanderson",
+    "The Books of Babel — Josiah Bancroft",
+    "The Craft Sequence — Max Gladstone",
+  ],
+  "space-opera": [
+    "Foreigner — C. J. Cherryh",
+    "The Culture — Iain M. Banks",
+  ],
+  "mystery-thriller": [
+    "Rivers of London — Ben Aaronovitch (also urban fantasy)",
+    "The Dresden Files — Jim Butcher",
+    "October Daye — Seanan McGuire",
+    "InCryptid — Seanan McGuire",
+    "Jackson Brodie — Kate Atkinson",
+    "Cormoran Strike — Robert Galbraith",
+  ],
+};
+---
+
+<BaseLayout title={genre.label} description={genre.blurb}>
+  <p class="eyebrow">Genre hub</p>
+  <h1>{genre.label}</h1>
+  <p class="lede">{genre.blurb}</p>
+
+  <h2>Guides on this shelf</h2>
+  {
+    guides.length > 0 ? (
+      <div class="card-grid">
+        {guides.map((guide) => (
+          <GuideCard guide={guide} />
+        ))}
+      </div>
+    ) : (
+      <p>No drafted guide in this hub yet. The backlog below is the queue.</p>
+    )
+  }
+
+  <div class="panel" style="margin-top:1.5rem;">
+    <h2 style="margin-top:0;">Queued series</h2>
+    <p class="small muted">From <code>docs/SERIES_BACKLOG.md</code>. Not drafted.</p>
+    <ul>
+      {queued[genre.slug as GenreSlug].map((item) => <li>{item}</li>)}
+    </ul>
+  </div>
+</BaseLayout>

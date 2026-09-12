@@ -1,0 +1,22 @@
+---
+import { formatDate, genres, type GenreSlug } from "../lib/site";
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  guide: CollectionEntry<"guides">;
+}
+
+const { guide } = Astro.props;
+const genre = genres[guide.data.genre as GenreSlug];
+---
+
+<a class="guide-card" href={`/guides/${guide.data.slug}/`}>
+  <div class="pill-row">
+    <span class="pill genre">{genre.label}</span>
+    {guide.data.status === "draft" && <span class="pill draft">Draft</span>}
+  </div>
+  <h2 style="margin:0;font-size:1.45rem;">{guide.data.title}</h2>
+  <p class="muted" style="margin:0;">{guide.data.series} · {guide.data.author}</p>
+  <p style="margin:0;">{guide.data.description}</p>
+  <p class="small muted" style="margin:0;">Last verified {formatDate(guide.data.lastVerified)}</p>
+</a>
