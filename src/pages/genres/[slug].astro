@@ -28,7 +28,7 @@ const queued: Record<GenreSlug, string[]> = {
     "The Culture — Iain M. Banks",
   ],
   "mystery-thriller": [
-    "Rivers of London — Ben Aaronovitch (also urban fantasy)",
+    "Rivers of London — Ben Aaronovitch",
     "The Dresden Files — Jim Butcher",
     "October Daye — Seanan McGuire",
     "InCryptid — Seanan McGuire",
@@ -40,7 +40,7 @@ const queued: Record<GenreSlug, string[]> = {
 
 <BaseLayout title={genre.label} description={genre.blurb}>
   <header class="page-head">
-    <p class="eyebrow">Genre hub</p>
+    <p class="eyebrow">Shelf</p>
     <h1>{genre.label}</h1>
     <p class="lede">{genre.blurb}</p>
   </header>
@@ -57,13 +57,13 @@ const queued: Record<GenreSlug, string[]> = {
         ))}
       </div>
     ) : (
-      <p>No drafted guide in this hub yet. The backlog below is the queue.</p>
+      <p>Nothing mapped here yet. The series below are next.</p>
     )
   }
 
-  <div class="panel colophon">
-    <h2>Queued series</h2>
-    <p class="small muted">From <code>docs/SERIES_BACKLOG.md</code>. Not drafted.</p>
+  <div class="house-note colophon">
+    <h2>Coming next</h2>
+    <p class="small muted">Titles we intend to map. Not guides yet.</p>
     <ul>
       {queued[genre.slug as GenreSlug].map((item) => <li>{item}</li>)}
     </ul>
