@@ -2,7 +2,9 @@
 import { getCollection, render } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import DraftBanner from "../../components/DraftBanner.astro";
-import { affiliateTag, amazonSearchUrl, formatDate, genres } from "../../lib/site";
+import AffiliatePanel from "../../components/AffiliatePanel.astro";
+import AffiliateDock from "../../components/AffiliateDock.astro";
+import { formatDate, genres } from "../../lib/site";
 
 export async function getStaticPaths() {
   const guides = await getCollection("guides");
@@ -15,50 +17,32 @@ export async function getStaticPaths() {
 const { guide } = Astro.props;
 const { Content } = await render(guide);
 const genre = genres[guide.data.genre];
-const searchHref = amazonSearchUrl(guide.data.series);
 ---
 
-<BaseLayout title={guide.data.title} description={guide.data.description}>
+<BaseLayout title={guide.data.title} description={guide.data.description} dock>
   <article class="guide-layout">
-    <div class="prose">
+    <header class="guide-header page-head">
       <p class="eyebrow">{genre.label}</p>
       <h1>{guide.data.title}</h1>
       <p class="lede">{guide.data.description}</p>
-      <div class="pill-row" style="margin-bottom:1rem;">
+      <div class="pill-row" style="margin:1rem 0 0;">
         {guide.data.status === "draft" && <span class="pill draft">Draft</span>}
         <span class="pill">{guide.data.author}</span>
         <span class="pill">Verified {formatDate(guide.data.lastVerified)}</span>
       </div>
+    </header>
+    <div class="prose">
       {guide.data.status === "draft" && <DraftBanner flags={guide.data.reviewFlags} />}
       <Content />
     </div>
     <aside class="guide-aside">
-      <div class="panel">
-        <p class="eyebrow">On this desk</p>
-        <p style="margin:0 0 0.5rem;"><strong>{guide.data.series}</strong></p>
-        <p class="small muted" style="margin:0 0 0.8rem;">
-          {guide.data.author} · {genre.label}
-        </p>
-        <p class="small">
-          Amazon search (placeholder tag <code>{affiliateTag}</code>):
-          <a href={searchHref} rel="sponsored nofollow">{guide.data.series}</a>
-        </p>
-        <hr class="rule" />
-        <p class="small" style="margin:0 0 0.4rem;"><strong>Sources</strong></p>
-        <ul class="source-list small">
-          {
-            guide.data.sources.map((source) => (
-              <li>
-                <a href={source.url}>{source.label}</a>
-              </li>
-            ))
-          }
-        </ul>
-        <p class="small">
-          <a href="/disclosure/">Affiliate disclosure</a> ·
-          <a href="/methodology/">Methodology</a>
-        </p>
-      </div>
+      <AffiliatePanel
+        series={guide.data.series}
+        author={guide.data.author}
+        genreLabel={genre.label}
+        sources={guide.data.sources}
+      />
     </aside>
   </article>
+  <AffiliateDock query={guide.data.series} label={guide.data.series} />
 </BaseLayout>

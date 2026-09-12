@@ -39,11 +39,16 @@ const queued: Record<GenreSlug, string[]> = {
 ---
 
 <BaseLayout title={genre.label} description={genre.blurb}>
-  <p class="eyebrow">Genre hub</p>
-  <h1>{genre.label}</h1>
-  <p class="lede">{genre.blurb}</p>
+  <header class="page-head">
+    <p class="eyebrow">Genre hub</p>
+    <h1>{genre.label}</h1>
+    <p class="lede">{genre.blurb}</p>
+  </header>
 
-  <h2>Guides on this shelf</h2>
+  <header class="section-head">
+    <p class="eyebrow">On this shelf</p>
+    <h2>Guides</h2>
+  </header>
   {
     guides.length > 0 ? (
       <div class="card-grid">
@@ -56,8 +61,8 @@ const queued: Record<GenreSlug, string[]> = {
     )
   }
 
-  <div class="panel" style="margin-top:1.5rem;">
-    <h2 style="margin-top:0;">Queued series</h2>
+  <div class="panel colophon">
+    <h2>Queued series</h2>
     <p class="small muted">From <code>docs/SERIES_BACKLOG.md</code>. Not drafted.</p>
     <ul>
       {queued[genre.slug as GenreSlug].map((item) => <li>{item}</li>)}

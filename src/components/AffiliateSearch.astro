@@ -10,7 +10,13 @@ const { query, label = query } = Astro.props;
 const href = amazonSearchUrl(query);
 ---
 
-<p class="small">
-  Amazon search (placeholder tag <code>{affiliateTag}</code>):
-  <a href={href} rel="sponsored nofollow">{label}</a>
-</p>
+<div class="disclosure-note">
+  <p class="eyebrow">Find the books</p>
+  <p>
+    Amazon search for <a href={href} rel="sponsored nofollow">{label}</a>. Placeholder tag
+    <code>{affiliateTag}</code>.
+  </p>
+  <p class="small muted">
+    As an Amazon Associate I earn from qualifying purchases. Associates is not active yet.
+  </p>
+</div>

@@ -14,7 +14,7 @@ const guides = (await getCollection("guides")).sort((a, b) =>
   description="Reading-order and what-to-read-next guides for long SFF and mystery series. Drafts are marked until a person reviews them."
 >
   <section class="hero">
-    <div>
+    <div class="hero-copy">
       <p class="eyebrow">Long series, short arguments</p>
       <h1>{siteTagline}</h1>
       <p class="lede">
@@ -29,9 +29,10 @@ const guides = (await getCollection("guides")).sort((a, b) =>
     </div>
     <aside class="hero-card">
       <p class="eyebrow">Currently drafted</p>
+      <p class="hero-stat">3 guides on the desk</p>
       <p style="margin:0 0 0.6rem;">
-        Three guides are in the collection and marked <strong>DRAFT</strong> for human review:
-        Murderbot, The Expanse, and Discworld City Watch.
+        Murderbot, The Expanse, and Discworld City Watch are in the collection and marked
+        <strong>DRAFT</strong> until a person reviews them.
       </p>
       <p class="small muted" style="margin:0;">
         Twelve more long-tail series sit in the backlog. Harry Potter, Tolkien, A Song of Ice and
@@ -40,25 +41,34 @@ const guides = (await getCollection("guides")).sort((a, b) =>
     </aside>
   </section>
 
-  <h2>Draft guides</h2>
-  <div class="card-grid">
-    {guides.map((guide) => <GuideCard guide={guide} />)}
+  <div class="ornament" aria-hidden="true"><span class="ornament-mark">✦</span></div>
+
+  <header class="section-head">
+    <p class="eyebrow">On the desk</p>
+    <h2>Draft guides</h2>
+  </header>
+  <div class="catalog">
+    {guides.map((guide, i) => <GuideCard guide={guide} index={i + 1} />)}
   </div>
 
-  <h2>Browse by shelf</h2>
+  <header class="section-head">
+    <p class="eyebrow">Browse</p>
+    <h2>Shelves</h2>
+  </header>
   <div class="grid-3">
     {
       Object.values(genres).map((genre) => (
         <a class="genre-card" href={`/genres/${genre.slug}/`}>
           <p class="eyebrow">{genre.label}</p>
           <p style="margin:0;">{genre.blurb}</p>
+          <p class="card-cta">Open this shelf</p>
         </a>
       ))
     }
   </div>
 
-  <div class="panel" style="margin-top:1.5rem;">
-    <h2 style="margin-top:0;">What you will not find here</h2>
+  <div class="panel colophon">
+    <h2>What you will not find here</h2>
     <ul>
       <li>Copied jacket copy or copyrighted book text</li>
       <li>Fake reviews or invented “reader reactions”</li>
