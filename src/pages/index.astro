@@ -2,7 +2,7 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import GuideCard from "../components/GuideCard.astro";
-import { genres, siteName, siteTagline } from "../lib/site";
+import { genres, siteName } from "../lib/site";
 
 const guides = (await getCollection("guides")).sort((a, b) =>
   a.data.title.localeCompare(b.data.title),
@@ -16,7 +16,7 @@ const guides = (await getCollection("guides")).sort((a, b) =>
   <section class="hero">
     <div class="hero-copy">
       <p class="eyebrow">Long series, short arguments</p>
-      <h1>{siteTagline}</h1>
+      <h1>Series reading order,<br />then what to read next.</h1>
       <p class="lede">
         Oli's Bookshelf is a niche desk for publication order, the chronological traps that spoil,
         and a few honest next-read suggestions. No scraped blurbs, no star ratings, no “I made $12k

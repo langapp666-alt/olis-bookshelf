@@ -21,17 +21,17 @@ const genre = genres[guide.data.genre];
 
 <BaseLayout title={guide.data.title} description={guide.data.description} dock>
   <article class="guide-layout">
-    <header class="guide-header page-head">
-      <p class="eyebrow">{genre.label}</p>
-      <h1>{guide.data.title}</h1>
-      <p class="lede">{guide.data.description}</p>
-      <div class="pill-row" style="margin:1rem 0 0;">
-        {guide.data.status === "draft" && <span class="pill draft">Draft</span>}
-        <span class="pill">{guide.data.author}</span>
-        <span class="pill">Verified {formatDate(guide.data.lastVerified)}</span>
-      </div>
-    </header>
     <div class="prose">
+      <header class="page-head">
+        <p class="eyebrow">{genre.label}</p>
+        <h1>{guide.data.title}</h1>
+        <p class="lede">{guide.data.description}</p>
+        <div class="pill-row" style="margin:1rem 0 0;">
+          {guide.data.status === "draft" && <span class="pill draft">Draft</span>}
+          <span class="pill">{guide.data.author}</span>
+          <span class="pill">Verified {formatDate(guide.data.lastVerified)}</span>
+        </div>
+      </header>
       {guide.data.status === "draft" && <DraftBanner flags={guide.data.reviewFlags} />}
       <Content />
     </div>

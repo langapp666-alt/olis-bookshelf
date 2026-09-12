@@ -421,7 +421,7 @@ h3 {
 }
 
 .hero-copy h1 {
-  max-width: 14ch;
+  max-width: 11em;
 }
 
 .hero-card,
@@ -646,14 +646,13 @@ h3 {
   font-family: var(--sans);
   font-size: 0.68rem;
   font-weight: 650;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--linen);
   background: var(--draft);
-  padding: 0.38rem 0.5rem;
-  line-height: 1.15;
+  padding: 0.32rem 0.5rem;
+  line-height: 1;
   text-align: center;
-  min-width: 4.4rem;
 }
 
 .draft-banner h2,
@@ -808,7 +807,7 @@ th {
 
   .prose table.is-stacked tbody td {
     display: grid;
-    grid-template-columns: 7.2rem minmax(0, 1fr);
+    grid-template-columns: 6.4rem minmax(0, 1fr);
     gap: 0.55rem;
     padding: 0.5rem 0.8rem;
     border-bottom: 1px solid var(--rule);
@@ -1020,15 +1019,6 @@ hr.rule {
     grid-template-columns: minmax(0, 1fr) 17.5rem;
     align-items: start;
     gap: 2rem;
-  }
-
-  .guide-header {
-    grid-column: 1 / -1;
-    max-width: none;
-  }
-
-  .guide-header .lede {
-    max-width: 42rem;
   }
 
   .guide-aside .panel {
