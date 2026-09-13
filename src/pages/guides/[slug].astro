@@ -5,20 +5,23 @@ import AffiliatePanel from "../../components/AffiliatePanel.astro";
 import AffiliateDock from "../../components/AffiliateDock.astro";
 import GuideToc from "../../components/GuideToc.astro";
 import OrderTable from "../../components/OrderTable.astro";
+import RelatedGuides from "../../components/RelatedGuides.astro";
 import StartHere from "../../components/StartHere.astro";
+import { relatedGuides } from "../../lib/related-guides";
 import { formatDate, genres } from "../../lib/site";
 
 export async function getStaticPaths() {
   const guides = await getCollection("guides");
   return guides.map((guide) => ({
     params: { slug: guide.data.slug },
-    props: { guide },
+    props: { guide, guides },
   }));
 }
 
-const { guide } = Astro.props;
+const { guide, guides } = Astro.props;
 const { Content, headings } = await render(guide);
 const genre = genres[guide.data.genre];
+const related = relatedGuides(guide, guides);
 ---
 
 <BaseLayout title={guide.data.title} description={guide.data.description} dock>
@@ -49,6 +52,7 @@ const genre = genres[guide.data.genre];
         />
       </aside>
     </div>
+    <RelatedGuides guides={related} />
   </article>
   <AffiliateDock query={`${guide.data.series} ${guide.data.author}`} label={guide.data.series} />
 </BaseLayout>

@@ -37,7 +37,7 @@ Record the URL and the date opened (`lastVerified` in frontmatter). If an offici
 
 ## What-to-read-next
 
-Three to five titles. Each needs an original reason that names a *structure* or *aftercare* (voice, institution, scale), not a vibe adjective pile. Do not scrape “readers also enjoyed.”
+Three to five titles. Each needs an original reason that names a *structure* or *aftercare* (voice, institution, scale), not a vibe adjective pile. Do not scrape “readers also enjoyed.” When the recommended series already has a guide on this site, link the series name to that guide URL (for example `/guides/lord-of-the-rings-reading-order/`). Keep Amazon per-title buttons. Do not invent slugs or ASINs.
 
 ## Voice
 

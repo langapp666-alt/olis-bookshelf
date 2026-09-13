@@ -32,7 +32,7 @@ Genre must be one of: `epic-fantasy`, `space-opera`, `mystery-thriller`, `romanc
 2. Order table(s)
 3. Optional arcs / shorts
 4. Common mistakes
-5. Three to five what-to-read-next items with original reasons
+5. Three to five what-to-read-next items with original reasons. Link to an on-site guide URL when that series already has a page.
 6. FAQ
 7. Sources
 8. Accuracy notes as HTML comments (not a public “human-review flags” heading)
