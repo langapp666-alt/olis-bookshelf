@@ -1,0 +1,33 @@
+---
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+
+interface Props {
+  headings: Heading[];
+}
+
+const { headings } = Astro.props;
+const toc = headings.filter((heading) => heading.depth === 2);
+
+function labelFor(text: string) {
+  return text.replace(/:$/, "");
+}
+---
+
+{
+  toc.length > 2 && (
+    <nav class="guide-toc" aria-label="On this page">
+      <p class="guide-toc-label">On this page</p>
+      <ol class="guide-toc-list">
+        {toc.map((heading) => (
+          <li>
+            <a href={`#${heading.slug}`}>{labelFor(heading.text)}</a>
+          </li>
+        ))}
+      </ol>
+    </nav>
+  )
+}

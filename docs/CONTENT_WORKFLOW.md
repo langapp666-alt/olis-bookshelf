@@ -24,7 +24,7 @@ Create `src/content/guides/<slug>.mdx` with frontmatter:
 - `reviewFlags` for anything a person must re-check (do not render these on the public page)
 - `sources`
 
-Genre must be one of: `epic-fantasy`, `space-opera`, `mystery-thriller`.
+Genre must be one of: `epic-fantasy`, `space-opera`, `mystery-thriller`, `romance`.
 
 ## 4. Required sections
 
@@ -36,7 +36,7 @@ Genre must be one of: `epic-fantasy`, `space-opera`, `mystery-thriller`.
 6. FAQ
 7. Sources
 8. Accuracy notes as HTML comments (not a public “human-review flags” heading)
-9. Disclosure + Amazon search URL via `amazonSearchUrl()` (site tag)
+9. Disclosure + per-title Amazon search URLs via `OrderTable` / `amazonBookUrl()` (site tag). Do not invent ASINs.
 
 ## 5. Human review (blocking)
 

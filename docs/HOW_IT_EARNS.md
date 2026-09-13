@@ -4,7 +4,7 @@ Status as of 2026-09-13: **the Amazon Associates tag is live** (`olisbookshelf-2
 
 ## Current state
 
-- Search links on guides use the live Associates tag.
+- Series search links and per-title Amazon search links on guides use the live Associates tag.
 - Amazon still reviews the application: we need **3 non-personal qualifying sales within 180 days**. That is a program requirement, not an income forecast.
 - `/disclosure/` states Amazon’s required sentence and that the program is active.
 

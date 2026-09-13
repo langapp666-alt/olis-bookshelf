@@ -3,6 +3,9 @@ import { getCollection, render } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import AffiliatePanel from "../../components/AffiliatePanel.astro";
 import AffiliateDock from "../../components/AffiliateDock.astro";
+import GuideToc from "../../components/GuideToc.astro";
+import OrderTable from "../../components/OrderTable.astro";
+import StartHere from "../../components/StartHere.astro";
 import { formatDate, genres } from "../../lib/site";
 
 export async function getStaticPaths() {
@@ -14,32 +17,42 @@ export async function getStaticPaths() {
 }
 
 const { guide } = Astro.props;
-const { Content } = await render(guide);
+const { Content, headings } = await render(guide);
 const genre = genres[guide.data.genre];
 ---
 
 <BaseLayout title={guide.data.title} description={guide.data.description} dock>
-  <article class="guide-layout">
-    <div class="prose">
-      <header class="page-head">
-        <p class="eyebrow">{genre.label}</p>
-        <h1>{guide.data.title}</h1>
-        <p class="lede">{guide.data.description}</p>
-        <div class="pill-row" style="margin:1rem 0 0;">
-          <span class="pill">{guide.data.author}</span>
-          <span class="pill">Checked {formatDate(guide.data.lastVerified)}</span>
-        </div>
-      </header>
-      <Content />
+  <article class="guide-page">
+    <header class="page-head guide-head">
+      <p class="eyebrow">
+        <a href={`/genres/${genre.slug}/`}>{genre.label}</a>
+      </p>
+      <h1>{guide.data.title}</h1>
+      <p class="lede">{guide.data.description}</p>
+      <div class="pill-row">
+        <span class="pill">{guide.data.author}</span>
+        <span class="pill">Checked {formatDate(guide.data.lastVerified)}</span>
+      </div>
+      <p class="guide-affiliate-note">
+        As an Amazon Associate I earn from qualifying purchases. Every title in
+        the order tables has its own Amazon search link.
+      </p>
+    </header>
+
+    <div class="guide-layout">
+      <div class="prose guide-prose">
+        <Content components={{ OrderTable, StartHere }} />
+      </div>
+      <aside class="guide-aside">
+        <GuideToc headings={headings} />
+        <AffiliatePanel
+          series={guide.data.series}
+          author={guide.data.author}
+          genreLabel={genre.label}
+          sources={guide.data.sources}
+        />
+      </aside>
     </div>
-    <aside class="guide-aside">
-      <AffiliatePanel
-        series={guide.data.series}
-        author={guide.data.author}
-        genreLabel={genre.label}
-        sources={guide.data.sources}
-      />
-    </aside>
   </article>
-  <AffiliateDock query={guide.data.series} label={guide.data.series} />
+  <AffiliateDock query={`${guide.data.series} ${guide.data.author}`} label={guide.data.series} />
 </BaseLayout>

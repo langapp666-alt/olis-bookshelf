@@ -6,18 +6,20 @@ lastVerified: 2026-09-13
 slug: the-locked-tomb-reading-order
 series: The Locked Tomb
 author: Tamsyn Muir
-status: reviewed
+status: published
 reviewFlags: []
 sources:
   - label: "Tamsyn Muir — The Locked Tomb"
     url: "https://tamsynmuir.com/the-locked-tomb"
 ---
 
-import { amazonSearchUrl } from "../../lib/site";
+import { amazonRel, amazonSearchUrl } from "../../lib/site";
+import OrderTable from "../../components/OrderTable.astro";
+import StartHere from "../../components/StartHere.astro";
 
-## Starting point
-
-Start with **Gideon the Ninth**. Muir’s own series page says the sequence begins there, continues with *Harrow the Ninth* and *Nona the Ninth*, and concludes with *Alecto the Ninth* (forthcoming).
+<StartHere title="Gideon the Ninth">
+  Muir’s own series page says the sequence begins there, continues with *Harrow the Ninth* and *Nona the Ninth*, and concludes with *Alecto the Ninth* (forthcoming).
+</StartHere>
 
 Do not start with *Nona*. Do not start with the Sixth House short. Do not start with *Harrow* because someone told you it is “the real book.” *Harrow* spends capital you only have if you have already been in Canaan House.
 
@@ -27,12 +29,15 @@ This is a four-book argument. Three novels are out. The fourth is not. Short fic
 
 Publication order is the only honest first read. Chronology is not a separate on-ramp here; the later books are doing things *to* the earlier ones.
 
-| # | Title | Year | Notes |
-| --- | --- | --- | --- |
-| 1 | Gideon the Ninth | 2019 | Start here. |
-| 2 | Harrow the Ninth | 2020 | Sequel. Different camera. Still second. |
-| 3 | Nona the Ninth | 2022 | Book three, not a side novel. |
-| 4 | Alecto the Ninth | — | Forthcoming. No firm date when last checked. |
+<OrderTable
+  author="Tamsyn Muir"
+  books={[
+    { n: 1, title: "Gideon the Ninth", year: 2019, notes: "Start here." },
+    { n: 2, title: "Harrow the Ninth", year: 2020, notes: "Sequel. Different camera. Still second." },
+    { n: 3, title: "Nona the Ninth", year: 2022, notes: "Book three, not a side novel." },
+    { n: 4, title: "Alecto the Ninth", year: "—", notes: "Forthcoming. No firm date when last checked." },
+  ]}
+/>
 
 ### Nona is not optional
 
@@ -44,11 +49,14 @@ If you bounced off *Harrow*, that is a taste problem, not a license to jump. The
 
 Muir’s site lists three shorts. None belong in the numbered novel column.
 
-| Title | Where it lived | Story placement | First-read? |
-| --- | --- | --- | --- |
-| The Mysterious Study of Doctor Sex | Reactor / Tor.com, 2020 | Years before *Gideon*; Palamedes and Camilla | Optional. After *Gideon* is plenty. |
-| As Yet Unsent | *Harrow* paperback / ebook; also Tor.com | Between *Harrow* and *Nona* | Optional. Read after *Harrow* if you have the later printing. |
-| The Unwanted Guest | *Nona* paperback | During *Nona*; one-act play | Optional. After *Nona*. |
+<OrderTable
+  author="Tamsyn Muir"
+  books={[
+    { title: "The Mysterious Study of Doctor Sex", year: 2020, notes: "Years before Gideon. Optional after Gideon.", query: "The Mysterious Study of Doctor Sex Tamsyn Muir" },
+    { title: "As Yet Unsent", year: 2021, notes: "Between Harrow and Nona. Optional after Harrow.", query: "As Yet Unsent Tamsyn Muir" },
+    { title: "The Unwanted Guest", year: 2023, notes: "During Nona. Optional after Nona.", query: "The Unwanted Guest Tamsyn Muir" },
+  ]}
+/>
 
 Some later *Harrow* printings also include a short “Blood of Eden Memorandum for Record.” Treat it as extra material in that edition, not as a missing novel.
 
@@ -68,7 +76,7 @@ Do not read the Sixth House prequel first. It is a locked-room school story that
 
 1. **[The Murderbot Diaries](/guides/murderbot-diaries-reading-order/) (Martha Wells)** — If the voice was the addiction: a narrator who would rather watch media than admit a feeling, in a smaller room.
 2. **[The Books of Babel](/guides/books-of-babel-reading-order/) (Josiah Bancroft)** — If you want another climb through layered institutions, with a protagonist who keeps rewriting what competence means.
-3. **Gideon the Ninth’s nearest neighbor is not more necromancy.** Try **The Spear Cuts Through Water (Simon Jimenez)** if you want mythic voice and a frame that refuses to sit still.
+3. **The Spear Cuts Through Water (Simon Jimenez)** — If you want mythic voice and a frame that refuses to sit still. Gideon’s nearest neighbor is not more necromancy.
 4. **Ancillary Justice (Ann Leckie)** — If the empire-as-body problem was the hook, without Muir’s joke density.
 5. **[The Craft Sequence](/guides/craft-sequence-reading-order/) (Max Gladstone)** — If dead gods as infrastructure felt like home, and you want contracts instead of cavaliers.
 
@@ -78,23 +86,23 @@ Do not read the Sixth House prequel first. It is a locked-room school story that
 No. *As Yet Unsent* is the one most worth slotting after *Harrow* if you have it. The others are texture.
 
 **Can I skip Harrow?**  
-You can stop. You cannot skip it and still be reading this series.
+No. The later books are in conversation with it.
 
-**Is Nona a side book?**  
-No. Muir lists it as the continuation.
+**Is Nona a spin-off?**  
+No. It is book three.
 
-**When is Alecto the Ninth?**  
-Forthcoming, with no date on the author’s series page when last opened. Do not invent one.
+**When is Alecto?**  
+Forthcoming. Do not invent a date.
 
-**Which printing do I need?**  
-Any *Gideon* is fine. For the shorts, prefer later paperbacks of *Harrow* and *Nona*, or the Reactor texts.
+**Should I wait for the last book?**  
+No. Three novels are already a sequence.
 
 ## Sources
 
-- [Tamsyn Muir, The Locked Tomb](https://tamsynmuir.com/the-locked-tomb) — novel order, forthcoming *Alecto*, and the three listed shorts. Opened 2026-09-13.
+- [Tamsyn Muir, The Locked Tomb](https://tamsynmuir.com/the-locked-tomb) — official novel sequence and short-fiction notes. Opened 2026-09-13.
 
 ## Disclosure
 
 As an Amazon Associate I earn from qualifying purchases.
 
-Amazon search: <a href={amazonSearchUrl("The Locked Tomb Tamsyn Muir")} rel="sponsored nofollow">The Locked Tomb Tamsyn Muir</a>
+Series search: <a href={amazonSearchUrl("The Locked Tomb Tamsyn Muir")} rel={amazonRel}>The Locked Tomb Tamsyn Muir</a>

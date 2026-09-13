@@ -6,7 +6,7 @@ lastVerified: 2026-09-13
 slug: dresden-files-reading-order
 series: The Dresden Files
 author: Jim Butcher
-status: reviewed
+status: published
 reviewFlags: []
 sources:
   - label: "Jim Butcher — Dresden Files"
@@ -15,11 +15,13 @@ sources:
     url: "https://www.penguinrandomhouse.com/books/645506/twelve-months-by-jim-butcher/"
 ---
 
-import { amazonSearchUrl } from "../../lib/site";
+import { amazonRel, amazonSearchUrl } from "../../lib/site";
+import OrderTable from "../../components/OrderTable.astro";
+import StartHere from "../../components/StartHere.astro";
 
-## Starting point
-
-Start with **Storm Front**. It is book one. It is also the thinnest book, and that is fine. The series teaches its own later rules. You do not need *Side Jobs*, the comics, or a “best starting book” essay that begins at *Dead Beat*.
+<StartHere title="Storm Front">
+  It is book one. It is also the thinnest book, and that is fine. The series teaches its own later rules. You do not need *Side Jobs*, the comics, or a “best starting book” essay that begins at *Dead Beat*.
+</StartHere>
 
 Do not start with *Changes*. Do not start with *Peace Talks*. Do not start with a graphic novel adaptation of book one. The comics are a different script of a story you should meet as a novel.
 
@@ -29,41 +31,47 @@ Butcher’s author page still listed the novels through *Battle Ground* when las
 
 Publication order is the first-read path. The cases accumulate. So do the debts.
 
-| # | Title | Year |
-| --- | --- | --- |
-| 1 | Storm Front | 2000 |
-| 2 | Fool Moon | 2001 |
-| 3 | Grave Peril | 2001 |
-| 4 | Summer Knight | 2002 |
-| 5 | Death Masks | 2003 |
-| 6 | Blood Rites | 2004 |
-| 7 | Dead Beat | 2005 |
-| 8 | Proven Guilty | 2006 |
-| 9 | White Night | 2007 |
-| 10 | Small Favor | 2008 |
-| 11 | Turn Coat | 2009 |
-| 12 | Changes | 2010 |
-| 13 | Ghost Story | 2011 |
-| 14 | Cold Days | 2012 |
-| 15 | Skin Game | 2014 |
-| 16 | Peace Talks | 2020 |
-| 17 | Battle Ground | 2020 |
-| 18 | Twelve Months | 2026 |
+<OrderTable
+  author="Jim Butcher"
+  books={[
+    { n: 1, title: "Storm Front", year: 2000 },
+    { n: 2, title: "Fool Moon", year: 2001 },
+    { n: 3, title: "Grave Peril", year: 2001 },
+    { n: 4, title: "Summer Knight", year: 2002 },
+    { n: 5, title: "Death Masks", year: 2003 },
+    { n: 6, title: "Blood Rites", year: 2004 },
+    { n: 7, title: "Dead Beat", year: 2005 },
+    { n: 8, title: "Proven Guilty", year: 2006 },
+    { n: 9, title: "White Night", year: 2007 },
+    { n: 10, title: "Small Favor", year: 2008 },
+    { n: 11, title: "Turn Coat", year: 2009 },
+    { n: 12, title: "Changes", year: 2010 },
+    { n: 13, title: "Ghost Story", year: 2011 },
+    { n: 14, title: "Cold Days", year: 2012 },
+    { n: 15, title: "Skin Game", year: 2014 },
+    { n: 16, title: "Peace Talks", year: 2020 },
+    { n: 17, title: "Battle Ground", year: 2020 },
+    { n: 18, title: "Twelve Months", year: 2026 },
+  ]}
+/>
 
 *Peace Talks* and *Battle Ground* were carved from one longer project. Read them in that order, back to back if you can. They are not interchangeable “late Dresden.”
 
-The series is not finished. Butcher has described a long run of case books plus a later apocalyptic trilogy. *Mirror Mirror* is a announced later title, not a substitute for book 18, and not a starting point.
+The series is not finished. Butcher has described a long run of case books plus a later apocalyptic trilogy. *Mirror Mirror* is an announced later title, not a substitute for book 18, and not a starting point.
 
 ## Shorts and collections
 
 Keep these out of the numbered novel column.
 
-| Title | Year | Use |
-| --- | --- | --- |
-| Side Jobs | 2010 | Collection of shorts through the *Changes* era. Optional cleanup after book 12. |
-| Brief Cases | 2018 | Later shorts. Optional after *Skin Game*. |
-| The Law | 2022 | Standalone novella after *Battle Ground*. Optional. |
-| Working for Bigfoot | 2014 | Three related shorts; also folded into the collections. Skip on a first novel pass. |
+<OrderTable
+  author="Jim Butcher"
+  books={[
+    { title: "Side Jobs", year: 2010, notes: "Shorts through the Changes era. Optional after book 12." },
+    { title: "Brief Cases", year: 2018, notes: "Later shorts. Optional after Skin Game." },
+    { title: "The Law", year: 2022, notes: "Novella after Battle Ground. Optional." },
+    { title: "Working for Bigfoot", year: 2014, notes: "Three related shorts; also in the collections." },
+  ]}
+/>
 
 A first read can be novels only. If you want the shorts, use the two collections rather than chasing every anthology appearance. Lists titled “Side Jobs reading order” go stale; the collections are the stable objects.
 
@@ -81,9 +89,9 @@ Graphic novels and Dynamite comics adapt or sidestep early cases. They are not a
 
 1. **[Rivers of London](/guides/rivers-of-london-reading-order/) (Ben Aaronovitch)** — If you want the police job and the city as a living system, with less solitary-wizard posture.
 2. **[Cormoran Strike](/guides/cormoran-strike-reading-order/) (Robert Galbraith)** — If the private-detective partnership was the pleasure and you want cases without the Nevernever.
-3. **The October Daye books (Seanan McGuire)** — If you want another long urban-fantasy investigator ladder, with novellas between the numbered books.
+3. **[Jack Reacher](/guides/jack-reacher-reading-order/) (Lee Child)** — If you want another long investigator run that people treat as “any order” until the later books assume the earlier ones.
 4. **[Discworld — City Watch](/guides/discworld-city-watch-reading-order/) (Terry Pratchett)** — If the institution-building was the hook and you would like the copper without the wizard-for-hire brand.
-5. **The Craft Sequence (Max Gladstone)** — If late Dresden’s legal and political machinery was more interesting than the monster of the week. See our [Craft guide](/guides/craft-sequence-reading-order/).
+5. **[The Craft Sequence](/guides/craft-sequence-reading-order/) (Max Gladstone)** — If late Dresden’s legal and political machinery was more interesting than the monster of the week.
 
 ## FAQ
 
@@ -111,4 +119,4 @@ Optional reread of early cases. Not an on-ramp.
 
 As an Amazon Associate I earn from qualifying purchases.
 
-Amazon search: <a href={amazonSearchUrl("The Dresden Files Jim Butcher")} rel="sponsored nofollow">The Dresden Files Jim Butcher</a>
+Series search: <a href={amazonSearchUrl("The Dresden Files Jim Butcher")} rel={amazonRel}>The Dresden Files Jim Butcher</a>

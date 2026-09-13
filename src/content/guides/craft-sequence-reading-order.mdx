@@ -6,7 +6,7 @@ lastVerified: 2026-09-13
 slug: craft-sequence-reading-order
 series: The Craft Sequence
 author: Max Gladstone
-status: reviewed
+status: published
 reviewFlags: []
 sources:
   - label: "Max Gladstone — The Craft Sequence"
@@ -15,11 +15,13 @@ sources:
     url: "https://torpublishinggroup.com/dead-country/?format=trade&isbn=9780765395917"
 ---
 
-import { amazonSearchUrl } from "../../lib/site";
+import { amazonRel, amazonSearchUrl } from "../../lib/site";
+import OrderTable from "../../components/OrderTable.astro";
+import StartHere from "../../components/StartHere.astro";
 
-## Starting point
-
-Start with **Three Parts Dead**. It is the first published novel and the book that teaches how gods, law firms, and cities fit together in this setting.
+<StartHere title="Three Parts Dead">
+  It is the first published novel and the book that teaches how gods, law firms, and cities fit together in this setting.
+</StartHere>
 
 Do not start with *Last First Snow* just because it is “book 1” in the title numbers. Those numbers are internal chronology, not bookstore order. Gladstone wrote the first five books out of time on purpose.
 
@@ -31,14 +33,17 @@ Tor has also marketed **Dead Country** (Craft Wars, 2023) as a standalone entry 
 
 Gladstone has said that if you want an order, it is probably publication order — the order he wrote and read them.
 
-| # | Title | Year |
-| --- | --- | --- |
-| 1 | Three Parts Dead | 2012 |
-| 2 | Two Serpents Rise | 2013 |
-| 3 | Full Fathom Five | 2014 |
-| 4 | Last First Snow | 2015 |
-| 5 | Four Roads Cross | 2016 |
-| 6 | The Ruin of Angels | 2017 |
+<OrderTable
+  author="Max Gladstone"
+  books={[
+    { n: 1, title: "Three Parts Dead", year: 2012 },
+    { n: 2, title: "Two Serpents Rise", year: 2013 },
+    { n: 3, title: "Full Fathom Five", year: 2014 },
+    { n: 4, title: "Last First Snow", year: 2015 },
+    { n: 5, title: "Four Roads Cross", year: 2016 },
+    { n: 6, title: "The Ruin of Angels", year: 2017 },
+  ]}
+/>
 
 Each book is built to stand alone. Characters still cross. Publication order is how the reveals were aimed.
 
@@ -46,14 +51,17 @@ Each book is built to stand alone. Characters still cross. Publication order is 
 
 For the first five books, the number in the title is the internal chronology. *The Ruin of Angels* has no number; Gladstone describes the first five as a complete unit and everything after as moving forward in time.
 
-| Chronology | Title |
-| --- | --- |
-| 1 | Last First Snow |
-| 2 | Two Serpents Rise |
-| 3 | Three Parts Dead |
-| 4 | Four Roads Cross |
-| 5 | Full Fathom Five |
-| 6 | The Ruin of Angels |
+<OrderTable
+  author="Max Gladstone"
+  books={[
+    { n: 1, title: "Last First Snow", year: 2015, notes: "Chronology 1. Prequel texture." },
+    { n: 2, title: "Two Serpents Rise", year: 2013, notes: "Chronology 2." },
+    { n: 3, title: "Three Parts Dead", year: 2012, notes: "Chronology 3." },
+    { n: 4, title: "Four Roads Cross", year: 2016, notes: "Chronology 4." },
+    { n: 5, title: "Full Fathom Five", year: 2014, notes: "Chronology 5." },
+    { n: 6, title: "The Ruin of Angels", year: 2017, notes: "After the numbered five." },
+  ]}
+/>
 
 Chronology is a reread tool, or a path for someone who already bounced off publication order and wants the Dresediel Lex story in calendar time. It is not cleaner. *Last First Snow* is a prequel that leans on knowing what the later city became. *Two Serpents Rise* hides things that *Last First Snow* will have already shown.
 
@@ -63,11 +71,14 @@ This is a contested order. We are not pretending otherwise. **First read: public
 
 A later quartet, publication order:
 
-| # | Title | Year |
-| --- | --- | --- |
-| 1 | Dead Country | 2023 |
-| 2 | Wicked Problems | 2024 |
-| 3 | Dead Hand Rule | 2025 |
+<OrderTable
+  author="Max Gladstone"
+  books={[
+    { n: 1, title: "Dead Country", year: 2023 },
+    { n: 2, title: "Wicked Problems", year: 2024 },
+    { n: 3, title: "Dead Hand Rule", year: 2025 },
+  ]}
+/>
 
 Gladstone has described *Dead Hand Rule* as the second-to-last Craft book, with one volume still to come. Do not treat Craft Wars as Sequence books 7–9. It is a tighter endgame written after the first season.
 
@@ -90,28 +101,25 @@ Choice-of-game titles (*Choice of the Deathless*, *Deathless: The City’s Thirs
 
 ## FAQ
 
+**Do the title numbers tell me where to start?**  
+They tell you chronology. They do not tell you where to start. Start with *Three Parts Dead*.
+
 **Can I read them in any order?**  
-Each Sequence novel is built as a case. Publication order is still how the series teaches itself. Chronology is documented above because the titles invite the question.
+Gladstone wrote the first five to be visitable. Publication order is still the aimed sequence of reveals.
 
-**Is Dead Country book one?**  
-It is Craft Wars book one. It is not Craft Sequence book one.
+**Is Dead Country a first book?**  
+It is a first *Craft Wars* book. It is not Sequence book one.
 
-**Do I need the games?**  
-No.
-
-**Where does Four Roads Cross sit?**  
-Fifth published, fourth in the title-number chronology, and a direct follow-on to *Three Parts Dead*’s city.
-
-**Is the Sequence finished?**  
-The six Sequence novels are a finished unit. Craft Wars is the later endgame and was still awaiting its last volume when last checked.
+**Where do the games go?**  
+Out of the novel column.
 
 ## Sources
 
-- [Max Gladstone, The Craft Sequence](https://maxgladstone.com/series/the-craft-sequence/) — publication list, title-number chronology, and the Craft Wars titles on the same archive. Opened 2026-09-13.
-- [Tor, *Dead Country*](https://torpublishinggroup.com/dead-country/?format=trade&isbn=9780765395917) — Craft Wars #1 and the publisher’s “entry point” framing. Opened 2026-09-13.
+- [Max Gladstone, The Craft Sequence](https://maxgladstone.com/series/the-craft-sequence/) — series page and publication framing. Opened 2026-09-13.
+- [Tor, *Dead Country*](https://torpublishinggroup.com/dead-country/?format=trade&isbn=9780765395917) — Craft Wars entry. Opened 2026-09-13.
 
 ## Disclosure
 
 As an Amazon Associate I earn from qualifying purchases.
 
-Amazon search: <a href={amazonSearchUrl("Craft Sequence Max Gladstone")} rel="sponsored nofollow">Craft Sequence Max Gladstone</a>
+Series search: <a href={amazonSearchUrl("The Craft Sequence Max Gladstone")} rel={amazonRel}>The Craft Sequence Max Gladstone</a>

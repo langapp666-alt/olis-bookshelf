@@ -1,0 +1,15 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<div class="start-here">
+  <p class="start-here-kicker">Start here</p>
+  <p class="start-here-title">{title}</p>
+  <div class="start-here-body">
+    <slot />
+  </div>
+</div>

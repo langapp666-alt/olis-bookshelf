@@ -1,10 +1,10 @@
 # Oli's Bookshelf
 
-Series reading-order and “what to read next” guides for long science fiction, fantasy, and mystery/thriller shelves. Brand: **Oli's Bookshelf**.
+Series reading-order and “what to read next” guides for long science fiction, fantasy, mystery/thriller, and romance shelves. Brand: **Oli's Bookshelf**.
 
 This is a static [Astro](https://astro.build) site. Guides live in a Markdown/MDX content collection.
 
-Amazon Associates is **active**. Book search links use the Associates tag from `PUBLIC_AFFILIATE_TAG` / `src/lib/site.ts`.
+Amazon Associates is **active**. Per-title and series search links use the Associates tag from `PUBLIC_AFFILIATE_TAG` / `src/lib/site.ts` via `amazonBookUrl()` / `amazonSearchUrl()`. Do not invent ASINs.
 
 ## Local development
 
@@ -40,9 +40,21 @@ npm run preview  # serves dist/ locally
 | Cormoran Strike | `/guides/cormoran-strike-reading-order/` |
 | The Culture | `/guides/the-culture-reading-order/` |
 | The Books of Babel | `/guides/books-of-babel-reading-order/` |
+| Wheel of Time | `/guides/wheel-of-time-reading-order/` |
+| Red Rising | `/guides/red-rising-reading-order/` |
+| Stormlight Archive | `/guides/stormlight-archive-reading-order/` |
+| First Law | `/guides/first-law-reading-order/` |
+| Jack Reacher | `/guides/jack-reacher-reading-order/` |
+| Bridgerton | `/guides/bridgerton-reading-order/` |
+| Outlander | `/guides/outlander-reading-order/` |
+| Witcher novels | `/guides/witcher-novels-reading-order/` |
+| Dune novels | `/guides/dune-novels-reading-order/` |
+| Malazan Book of the Fallen | `/guides/malazan-book-of-the-fallen-reading-order/` |
+| All guides | `/guides/` |
 | Epic Fantasy hub | `/genres/epic-fantasy/` |
 | Space Opera / SFF hub | `/genres/space-opera/` |
 | Mystery / Thriller hub | `/genres/mystery-thriller/` |
+| Romance hub | `/genres/romance/` |
 | About / editorial standards | `/about/` |
 | Disclosure (FTC + Associates wording) | `/disclosure/` |
 | Methodology | `/methodology/` |

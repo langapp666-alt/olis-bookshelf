@@ -6,7 +6,7 @@ lastVerified: 2026-09-13
 slug: mistborn-era-1-2-reading-order
 series: Mistborn (Era 1 and 2)
 author: Brandon Sanderson
-status: reviewed
+status: published
 reviewFlags: []
 sources:
   - label: "Brandon Sanderson — Where do I start?"
@@ -15,23 +15,28 @@ sources:
     url: "https://www.brandonsanderson.com/pages/the-mistborn-saga-the-original-trilogy"
 ---
 
-import { amazonSearchUrl } from "../../lib/site";
+import { amazonRel, amazonSearchUrl } from "../../lib/site";
+import OrderTable from "../../components/OrderTable.astro";
+import StartHere from "../../components/StartHere.astro";
 
-## Starting point
+<StartHere title="Mistborn: The Final Empire">
+  It is Era 1, book one. Often shelved as *Mistborn*. Do not start with *The Alloy of Law*.
+</StartHere>
 
-Start with **Mistborn: The Final Empire** (often shelved as *Mistborn*). It is Era 1, book one.
+Sanderson’s own Cosmere on-ramp page calls Alloy “an okay jumping in spot” and immediately warns that it has spoilers for the original trilogy. Era 2 is the same planet a few centuries later. It is written for people who already know what the first trilogy did to that world.
 
-Do not start with *The Alloy of Law*. Sanderson’s own Cosmere on-ramp page calls Alloy “an okay jumping in spot” and immediately warns that it has spoilers for the original trilogy. Era 2 is the same planet a few centuries later. It is written for people who already know what the first trilogy did to that world.
-
-This page covers **Mistborn Era 1 and Era 2 only**. It is not a Cosmere reading-order guide. Stormlight, *Warbreaker*, and the secret-project novels are other shelves.
+This page covers **Mistborn Era 1 and Era 2 only**. It is not a Cosmere reading-order guide. For Stormlight as a separate door, see the [Stormlight Archive guide](/guides/stormlight-archive-reading-order/). *Warbreaker* and the secret-project novels are other shelves.
 
 ## Era 1 — the original trilogy
 
-| # | Title | Year |
-| --- | --- | --- |
-| 1 | The Final Empire | 2006 |
-| 2 | The Well of Ascension | 2007 |
-| 3 | The Hero of Ages | 2008 |
+<OrderTable
+  author="Brandon Sanderson"
+  books={[
+    { n: 1, title: "The Final Empire", year: 2006, notes: "Also sold as Mistborn.", query: "Mistborn The Final Empire Brandon Sanderson" },
+    { n: 2, title: "The Well of Ascension", year: 2007 },
+    { n: 3, title: "The Hero of Ages", year: 2008 },
+  ]}
+/>
 
 Read these three in order. There is no contested start inside Era 1.
 
@@ -39,12 +44,15 @@ Read these three in order. There is no contested start inside Era 1.
 
 Set roughly three hundred years later. Four books. The era is complete.
 
-| # | Title | Year |
-| --- | --- | --- |
-| 1 | The Alloy of Law | 2011 |
-| 2 | Shadows of Self | 2015 |
-| 3 | The Bands of Mourning | 2016 |
-| 4 | The Lost Metal | 2022 |
+<OrderTable
+  author="Brandon Sanderson"
+  books={[
+    { n: 1, title: "The Alloy of Law", year: 2011 },
+    { n: 2, title: "Shadows of Self", year: 2015 },
+    { n: 3, title: "The Bands of Mourning", year: 2016 },
+    { n: 4, title: "The Lost Metal", year: 2022 },
+  ]}
+/>
 
 Era 2 is shorter, more case-shaped, and more of a partnership book. It still assumes Era 1’s history. If you bounced off Era 1’s middle book, that is a taste problem. Starting Era 2 instead will not “skip the slog” without also skipping the ending Era 2 keeps talking around.
 
@@ -52,7 +60,15 @@ Era 2 is shorter, more case-shaped, and more of a partnership book. It still ass
 
 **Mistborn: Secret History** is a companion novella, not Era 1.5 in the bookstore sense.
 
-Sanderson’s trilogy page is blunt: it contains huge spoilers for the original trilogy and **very minor spoilers for *The Bands of Mourning***. His current advice is to treat it as a companion after you have the Era 1 ending, with the BoM caveat attached.
+<OrderTable
+  author="Brandon Sanderson"
+  books={[
+    { title: "Mistborn: Secret History", year: 2016, notes: "Companion. See placement below.", query: "Mistborn Secret History Brandon Sanderson" },
+    { title: "Arcanum Unbounded", year: 2016, notes: "Collection. Holds Eleventh Metal and Allomancer Jak.", query: "Arcanum Unbounded Brandon Sanderson" },
+  ]}
+/>
+
+Sanderson’s trilogy page is blunt: *Secret History* contains huge spoilers for the original trilogy and **very minor spoilers for *The Bands of Mourning***. His current advice is to treat it as a companion after you have the Era 1 ending, with the BoM caveat attached.
 
 **House rule for a first read:**
 
@@ -79,11 +95,11 @@ Other extras stay out of the numbered columns:
 
 ## What to read next
 
-1. **[The Books of Babel](/guides/books-of-babel-reading-order/) (Josiah Bancroft)** — If you want another finite climb: one protagonist, one structure, no Cosmere homework.
-2. **The Emperor’s Soul (Brandon Sanderson)** — If the magic-system pleasure was the point and you want a novella that does not ask you to start Stormlight.
-3. **[The Craft Sequence](/guides/craft-sequence-reading-order/) (Max Gladstone)** — If Era 2’s legal and financial aftertaste was more interesting than the heist.
-4. **The Goblin Emperor (Katherine Addison)** — If the draw was an outsider learning court procedure, without a second era waiting.
-5. **[The Locked Tomb](/guides/the-locked-tomb-reading-order/) (Tamsyn Muir)** — If you want a short series that still makes book two a different camera, not a longer Cosmere commitment.
+1. **[The Stormlight Archive](/guides/stormlight-archive-reading-order/) (Brandon Sanderson)** — If you want the other Cosmere door Sanderson names for fantasy readers, as its own series, not a homework chart.
+2. **[The Books of Babel](/guides/books-of-babel-reading-order/) (Josiah Bancroft)** — If you want another finite climb: one protagonist, one structure, no Cosmere homework.
+3. **The Emperor’s Soul (Brandon Sanderson)** — If the magic-system pleasure was the point and you want a novella that does not ask you to start Stormlight.
+4. **[The Craft Sequence](/guides/craft-sequence-reading-order/) (Max Gladstone)** — If Era 2’s legal and financial aftertaste was more interesting than the heist.
+5. **The Goblin Emperor (Katherine Addison)** — If the draw was an outsider learning court procedure, without a second era waiting.
 
 ## FAQ
 
@@ -111,4 +127,4 @@ Same book. Search either.
 
 As an Amazon Associate I earn from qualifying purchases.
 
-Amazon search: <a href={amazonSearchUrl("Mistborn Brandon Sanderson")} rel="sponsored nofollow">Mistborn Brandon Sanderson</a>
+Series search: <a href={amazonSearchUrl("Mistborn Brandon Sanderson")} rel={amazonRel}>Mistborn Brandon Sanderson</a>
