@@ -20,8 +20,6 @@ const queued: Record<GenreSlug, string[]> = {
   "epic-fantasy": [],
   "space-opera": ["Foreigner — C. J. Cherryh"],
   "mystery-thriller": [
-    "Rivers of London — Ben Aaronovitch",
-    "The Dresden Files — Jim Butcher",
     "October Daye — Seanan McGuire",
     "InCryptid — Seanan McGuire",
     "Jackson Brodie — Kate Atkinson",
@@ -54,7 +52,7 @@ const queued: Record<GenreSlug, string[]> = {
 
   {
     queued[genre.slug as GenreSlug].length > 0 && (
-      <div class="panel colophon">
+      <div class="house-note colophon">
         <h2>Still queued</h2>
         <p class="small muted">
           From <code>docs/SERIES_BACKLOG.md</code>. Not yet a guide.
@@ -67,15 +65,4 @@ const queued: Record<GenreSlug, string[]> = {
       </div>
     )
   }
-      <p>Nothing mapped here yet. The series below are next.</p>
-    )
-  }
-
-  <div class="house-note colophon">
-    <h2>Coming next</h2>
-    <p class="small muted">Titles we intend to map. Not guides yet.</p>
-    <ul>
-      {queued[genre.slug as GenreSlug].map((item) => <li>{item}</li>)}
-    </ul>
-  </div>
 </BaseLayout>
