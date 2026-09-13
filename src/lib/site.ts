@@ -1,6 +1,33 @@
 export const siteName = "Oli's Bookshelf";
 export const siteTagline = "Reading order for long series. Then what to read next.";
 
+/** Confirmed public brand channels. Do not invent handles or follower counts. */
+export const socials = [
+  {
+    id: "youtube",
+    label: "YouTube",
+    handle: "@olisbookshelf",
+    href: "https://www.youtube.com/@olisbookshelf",
+    inFooter: true,
+  },
+  {
+    id: "x",
+    label: "X",
+    handle: "@OlisBookshelf",
+    href: "https://x.com/OlisBookshelf",
+    inFooter: true,
+  },
+  {
+    id: "goodreads",
+    label: "Goodreads",
+    handle: "olisbookshelfofficial",
+    href: "https://www.goodreads.com/olisbookshelfofficial",
+    inFooter: false,
+  },
+] as const;
+
+export type SocialId = (typeof socials)[number]["id"];
+
 /** Public Amazon Associates tag. Override with PUBLIC_AFFILIATE_TAG if needed. */
 export const affiliateTag =
   import.meta.env.PUBLIC_AFFILIATE_TAG?.trim() || "olisbookshelf-20";

@@ -1,0 +1,51 @@
+---
+import { socials } from "../lib/site";
+
+interface Props {
+  variant?: "about" | "footer";
+}
+
+const { variant = "about" } = Astro.props;
+const links = variant === "footer" ? socials.filter((link) => link.inFooter) : socials;
+const navLabel = variant === "footer" ? "Oli's Bookshelf on other sites" : "Find Oli elsewhere";
+---
+
+<nav class:list={["social-links", `social-links--${variant}`]} aria-label={navLabel}>
+  <ul>
+    {
+      links.map((link) => (
+        <li>
+          <a href={link.href} rel="noopener noreferrer" target="_blank">
+            {link.id === "youtube" ? (
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  fill="currentColor"
+                  d="M23.5 6.2a3 3 0 0 0-2.1-2.2C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 32 32 0 0 0 0 12a32 32 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.2c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.2A32 32 0 0 0 24 12a32 32 0 0 0-.5-5.8ZM9.8 15.5v-7L15.8 12l-6 3.5Z"
+                />
+              </svg>
+            ) : link.id === "x" ? (
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  fill="currentColor"
+                  d="M14.3 10.3 22.1 1.2h-1.9l-6.8 7.9L8 1.2H1.2l8.2 12L1.2 22.8h1.9l7.2-8.3 5.7 8.3H22.8l-8.5-12.5Zm-2.5 2.9-.8-1.2L3.8 2.6h2.9l5.3 7.6.8 1.2 6.9 9.9h-2.9l-5.9-8.1Z"
+                />
+              </svg>
+            ) : (
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  fill="currentColor"
+                  d="M3.2 2.4h5.1c1.8 0 3.3.6 4.3 1.9.9-1.2 2.4-1.9 4.1-1.9h4.1v17.3h-4.5c-1.4 0-2.6.3-3.4.9v1.7H6.6c-2 0-3.4-1.4-3.4-3.4V2.4Zm1.9 1.8v13.2c0 .8.6 1.5 1.5 1.5h3.8V7.1c0-.8.2-1.4.7-1.8.4-.4 1-.6 1.7-.6.4 0 .7 0 1-.1V4.2H6.6c-.6 0-1.1.2-1.5.6Zm14.6 13.7V4.2h-2.6c-1.5 0-2.6.5-3.3 1.4-.4.5-.6 1.2-.6 2.1v11.6c.9-.6 2.1-.9 3.6-.9h2.9Z"
+                />
+              </svg>
+            )}
+            <span class="social-links-label">
+              {link.label}
+              {variant === "about" ? <span class="social-links-handle">{link.handle}</span> : null}
+            </span>
+            <span class="visually-hidden"> (opens in a new tab)</span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>
