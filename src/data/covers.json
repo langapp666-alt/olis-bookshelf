@@ -1,1 +1,2378 @@
-{}
+{
+  "a court of thorns and roses|sarah j. maas": {
+    "coverId": 8738585,
+    "olid": "OL27099075M"
+  },
+  "a court of mist and fury|sarah j. maas": {
+    "coverId": 11279902,
+    "olid": "OL32650438M"
+  },
+  "a court of wings and ruin|sarah j. maas": {
+    "coverId": 8506724,
+    "olid": "OL26832221M"
+  },
+  "a court of frost and starlight|sarah j. maas": {
+    "coverId": 8569939,
+    "olid": "OL26875532M"
+  },
+  "a court of silver flames|sarah j. maas": {
+    "coverId": 10643508,
+    "olid": "OL31965048M"
+  },
+  "a little hatred|joe abercrombie": {
+    "coverId": 14543428,
+    "olid": "OL27311234M"
+  },
+  "the trouble with peace|joe abercrombie": {
+    "coverId": 14543432,
+    "olid": "OL28999010M"
+  },
+  "the wisdom of crowds|joe abercrombie": {
+    "coverId": 14543429,
+    "olid": "OL32279456M"
+  },
+  "a game of thrones|george r. r. martin": {
+    "coverId": 9269962,
+    "olid": "OL7829767M"
+  },
+  "a clash of kings|george r. r. martin": {
+    "coverId": 8231751,
+    "olid": "OL376045M"
+  },
+  "a storm of swords|george r. r. martin": {
+    "coverId": 15124196,
+    "olid": "OL7255734M"
+  },
+  "a feast for crows|george r. r. martin": {
+    "coverId": 6501256,
+    "olid": "OL23247419M"
+  },
+  "a dance with dragons|george r. r. martin": {
+    "coverId": 11298743,
+    "olid": "OL25229207M"
+  },
+  "a knight of the seven kingdoms|george r. r. martin": {
+    "coverId": 11445490,
+    "olid": "OL26143783M"
+  },
+  "fire & blood|george r. r. martin": {
+    "coverId": 12063529,
+    "olid": "OL26974903M"
+  },
+  "a song of ice and fire|george r. r. martin": {
+    "coverId": 8595260,
+    "olid": "OL25936505M"
+  },
+  "mr. mercedes|stephen king": {
+    "coverId": 14653120,
+    "olid": "OL26805725M"
+  },
+  "finders keepers|stephen king": {
+    "coverId": 8339525,
+    "olid": "OL26644859M"
+  },
+  "end of watch|stephen king": {
+    "coverId": 12376085,
+    "olid": "OL25935295M"
+  },
+  "the outsider|stephen king": {
+    "coverId": 11412999
+  },
+  "bill hodges|stephen king": {
+    "coverId": 8765405,
+    "olid": "OL27284671M"
+  },
+  "for we are many|dennis e. taylor": {
+    "coverId": 11329842,
+    "olid": "OL32705617M"
+  },
+  "all these worlds|dennis e. taylor": {
+    "coverId": 12750210,
+    "olid": "OL26955719M"
+  },
+  "heaven's river|dennis e. taylor": {
+    "coverId": 10522898,
+    "olid": "OL31462977M"
+  },
+  "not till we are lost|dennis e. taylor": {
+    "coverId": 14926951,
+    "olid": "OL58751042M"
+  },
+  "we are legion (we are bob)|dennis e. taylor": {
+    "coverId": 8421582,
+    "olid": "OL26770283M"
+  },
+  "bobiverse|dennis e. taylor": {
+    "coverId": 10441976,
+    "olid": "OL30143693M"
+  },
+  "senlin ascends|josiah bancroft": {
+    "coverId": 9139754,
+    "olid": "OL26920732M"
+  },
+  "arm of the sphinx|josiah bancroft": {
+    "coverId": 8539755,
+    "olid": "OL26851123M"
+  },
+  "the hod king|josiah bancroft": {
+    "coverId": 8749889,
+    "olid": "OL27256869M"
+  },
+  "the fall of babel|josiah bancroft": {
+    "coverId": 11483038,
+    "olid": "OL32850835M"
+  },
+  "the duke and i|julia quinn": {
+    "coverId": 6492549
+  },
+  "the viscount who loved me|julia quinn": {
+    "coverId": 492893,
+    "olid": "OL7970311M"
+  },
+  "an offer from a gentleman|julia quinn": {
+    "coverId": 237294,
+    "olid": "OL3667100M"
+  },
+  "romancing mister bridgerton|julia quinn": {
+    "coverId": 237493
+  },
+  "to sir phillip, with love|julia quinn": {
+    "coverId": 237494
+  },
+  "when he was wicked|julia quinn": {
+    "coverId": 27787,
+    "olid": "OL3388558M"
+  },
+  "it’s in his kiss|julia quinn": {
+    "coverId": 1473370,
+    "olid": "OL3409890M"
+  },
+  "on the way to the wedding|julia quinn": {
+    "coverId": 27790,
+    "olid": "OL7277983M"
+  },
+  "queen charlotte|julia quinn": {
+    "coverId": 14629897,
+    "olid": "OL50717759M"
+  },
+  "because of miss bridgerton|julia quinn": {
+    "coverId": 10654831,
+    "olid": "OL31978666M"
+  },
+  "the girl with the make-believe husband|julia quinn": {
+    "coverId": 13194173,
+    "olid": "OL37732443M"
+  },
+  "the other miss bridgerton|julia quinn": {
+    "coverId": 8814635,
+    "olid": "OL27351166M"
+  },
+  "first comes scandal|julia quinn": {
+    "coverId": 12468672,
+    "olid": "OL35728278M"
+  },
+  "bridgerton|julia quinn": {
+    "coverId": 237493
+  },
+  "the fifth season|n. k. jemisin": {
+    "coverId": 8133598,
+    "olid": "OL25941433M"
+  },
+  "the obelisk gate|n. k. jemisin": {
+    "coverId": 8138324,
+    "olid": "OL26428727M"
+  },
+  "the stone sky|n. k. jemisin": {
+    "coverId": 8191910,
+    "olid": "OL26461538M"
+  },
+  "the broken earth|n. k. jemisin": {
+    "coverId": 8539028,
+    "olid": "OL26848393M"
+  },
+  "caraval|stephanie garber": {
+    "coverId": 7990753,
+    "olid": "OL26316828M"
+  },
+  "legendary|stephanie garber": {
+    "coverId": 9242465,
+    "olid": "OL26961629M"
+  },
+  "finale|stephanie garber": {
+    "coverId": 8802288,
+    "olid": "OL27337968M"
+  },
+  "spectacular|stephanie garber": {
+    "coverId": 15155801,
+    "olid": "OL51093819M"
+  },
+  "children of time|adrian tchaikovsky": {
+    "coverId": 8264706
+  },
+  "children of ruin|adrian tchaikovsky": {
+    "coverId": 8750923,
+    "olid": "OL27259544M"
+  },
+  "children of memory|adrian tchaikovsky": {
+    "coverId": 14633285,
+    "olid": "OL38410196M"
+  },
+  "the cuckoo’s calling|robert galbraith": {
+    "coverId": 7261207
+  },
+  "the silkworm|robert galbraith": {
+    "coverId": 7403180
+  },
+  "career of evil|robert galbraith": {
+    "coverId": 9243446
+  },
+  "lethal white|robert galbraith": {
+    "coverId": 9243445
+  },
+  "troubled blood|robert galbraith": {
+    "coverId": 10147317
+  },
+  "the ink black heart|robert galbraith": {
+    "coverId": 12900629,
+    "olid": "OL37583183M"
+  },
+  "the hallmarked man|robert galbraith": {
+    "coverId": 15123274,
+    "olid": "OL57592301M"
+  },
+  "cormoran strike|robert galbraith": {
+    "coverId": 10865948,
+    "olid": "OL32226436M"
+  },
+  "the final empire|brandon sanderson": {
+    "coverId": 14658160
+  },
+  "the way of kings|brandon sanderson": {
+    "coverId": 14658316,
+    "olid": "OL24345134M"
+  },
+  "warbreaker|brandon sanderson": {
+    "coverId": 14658347,
+    "olid": "OL24088391M"
+  },
+  "elantris|brandon sanderson": {
+    "coverId": 14658083,
+    "olid": "OL3311824M"
+  },
+  "the emperor's soul|brandon sanderson": {
+    "coverId": 14658408,
+    "olid": "OL27140688M"
+  },
+  "tress of the emerald sea|brandon sanderson": {
+    "coverId": 13143232
+  },
+  "yumi and the nightmare painter|brandon sanderson": {
+    "coverId": 13989845
+  },
+  "the sunlit man|brandon sanderson": {
+    "coverId": 13989844
+  },
+  "unsouled|will wight": {
+    "coverId": 9963334,
+    "olid": "OL28126666M"
+  },
+  "soulsmith|will wight": {
+    "coverId": 8572853,
+    "olid": "OL26880173M"
+  },
+  "blackflame|will wight": {
+    "coverId": 10439899,
+    "olid": "OL30128369M"
+  },
+  "skysworn|will wight": {
+    "coverId": 8763263,
+    "olid": "OL27281487M"
+  },
+  "ghostwater|will wight": {
+    "coverId": 8571602,
+    "olid": "OL26878082M"
+  },
+  "underlord|will wight": {
+    "coverId": 10171128,
+    "olid": "OL28240197M"
+  },
+  "uncrowned|will wight": {
+    "coverId": 10171129,
+    "olid": "OL28240198M"
+  },
+  "wintersteel|will wight": {
+    "coverId": 10468948,
+    "olid": "OL30544835M"
+  },
+  "bloodline|will wight": {
+    "coverId": 10889866,
+    "olid": "OL32260743M"
+  },
+  "reaper|will wight": {
+    "coverId": 13008785,
+    "olid": "OL35159543M"
+  },
+  "dreadgod|will wight": {
+    "coverId": 13178830,
+    "olid": "OL38549828M"
+  },
+  "waybound|will wight": {
+    "coverId": 14551863,
+    "olid": "OL48399736M"
+  },
+  "cradle|will wight": {
+    "coverId": 8572853,
+    "olid": "OL26880173M"
+  },
+  "three parts dead|max gladstone": {
+    "coverId": 7927777,
+    "olid": "OL25324148M"
+  },
+  "two serpents rise|max gladstone": {
+    "coverId": 14604616,
+    "olid": "OL28776673M"
+  },
+  "full fathom five|max gladstone": {
+    "coverId": 8452587,
+    "olid": "OL26797268M"
+  },
+  "last first snow|max gladstone": {
+    "coverId": 8542605,
+    "olid": "OL26855663M"
+  },
+  "the ruin of angels|max gladstone": {
+    "coverId": 8452729,
+    "olid": "OL26797370M"
+  },
+  "dead hand rule|max gladstone": {
+    "coverId": 15141442,
+    "olid": "OL57606571M"
+  },
+  "the craft sequence|max gladstone": {
+    "coverId": 8542605,
+    "olid": "OL26855663M"
+  },
+  "house of earth and blood|sarah j. maas": {
+    "coverId": 9289603,
+    "olid": "OL27924119M"
+  },
+  "house of sky and breath|sarah j. maas": {
+    "coverId": 10327411
+  },
+  "house of flame and shadow|sarah j. maas": {
+    "coverId": 13525139,
+    "olid": "OL47131784M"
+  },
+  "crescent city|sarah j. maas": {
+    "coverId": 15102581,
+    "olid": "OL57772654M"
+  },
+  "the gunslinger|stephen king": {
+    "coverId": 8396638,
+    "olid": "OL24944189M"
+  },
+  "the drawing of the three|stephen king": {
+    "coverId": 14651245,
+    "olid": "OL2050421M"
+  },
+  "the waste lands|stephen king": {
+    "coverId": 14654089,
+    "olid": "OL43033578M"
+  },
+  "wizard and glass|stephen king": {
+    "coverId": 14657088,
+    "olid": "OL430254M"
+  },
+  "wolves of the calla|stephen king": {
+    "coverId": 14652470,
+    "olid": "OL15576556M"
+  },
+  "song of susannah|stephen king": {
+    "coverId": 8393691
+  },
+  "the dark tower|stephen king": {
+    "coverId": 14656148,
+    "olid": "OL23272355M"
+  },
+  "the wind through the keyhole|stephen king": {
+    "coverId": 14653576,
+    "olid": "OL33995480M"
+  },
+  "guards! guards!|terry pratchett": {
+    "coverId": 13095550,
+    "olid": "OL8690315M"
+  },
+  "men at arms|terry pratchett": {
+    "coverId": 14648019,
+    "olid": "OL18060235M"
+  },
+  "feet of clay|terry pratchett": {
+    "coverId": 14648799,
+    "olid": "OL7878347M"
+  },
+  "jingo|terry pratchett": {
+    "coverId": 14649227,
+    "olid": "OL49835818M"
+  },
+  "the fifth elephant|terry pratchett": {
+    "coverId": 14646884,
+    "olid": "OL20093136M"
+  },
+  "night watch|terry pratchett": {
+    "coverId": 14649312,
+    "olid": "OL3568421M"
+  },
+  "thud!|terry pratchett": {
+    "coverId": 14645706,
+    "olid": "OL3423892M"
+  },
+  "snuff|terry pratchett": {
+    "coverId": 9478731,
+    "olid": "OL25018585M"
+  },
+  "discworld — city watch|terry pratchett": {
+    "coverId": 13750539,
+    "olid": "OL39221133M"
+  },
+  "mort|terry pratchett": {
+    "coverId": 14648805,
+    "olid": "OL47800506M"
+  },
+  "reaper man|terry pratchett": {
+    "coverId": 14648856,
+    "olid": "OL52825875M"
+  },
+  "soul music|terry pratchett": {
+    "coverId": 14645780,
+    "olid": "OL7287068M"
+  },
+  "hogfather|terry pratchett": {
+    "coverId": 14649230,
+    "olid": "OL52845680M"
+  },
+  "thief of time|terry pratchett": {
+    "coverId": 14646130,
+    "olid": "OL6795375M"
+  },
+  "discworld — death|terry pratchett": {
+    "coverId": 12819661,
+    "olid": "OL28719468M"
+  },
+  "equal rites|terry pratchett": {
+    "coverId": 6925774,
+    "olid": "OL24961013M"
+  },
+  "wyrd sisters|terry pratchett": {
+    "coverId": 14648051,
+    "olid": "OL17582416M"
+  },
+  "witches abroad|terry pratchett": {
+    "coverId": 14645790,
+    "olid": "OL7286696M"
+  },
+  "lords and ladies|terry pratchett": {
+    "coverId": 14646144,
+    "olid": "OL26646787M"
+  },
+  "maskerade|terry pratchett": {
+    "coverId": 14646574,
+    "olid": "OL7815087M"
+  },
+  "carpe jugulum|terry pratchett": {
+    "coverId": 14646440,
+    "olid": "OL7439637M"
+  },
+  "the wee free men|terry pratchett": {
+    "coverId": 14645723,
+    "olid": "OL3557001M"
+  },
+  "a hat full of sky|terry pratchett": {
+    "coverId": 7092840,
+    "olid": "OL15485918M"
+  },
+  "wintersmith|terry pratchett": {
+    "coverId": 14645769,
+    "olid": "OL7283651M"
+  },
+  "i shall wear midnight|terry pratchett": {
+    "coverId": 14646145,
+    "olid": "OL26404939M"
+  },
+  "the shepherd's crown|terry pratchett": {
+    "coverId": 14646934,
+    "olid": "OL27307066M"
+  },
+  "storm front|jim butcher": {
+    "coverId": 6414916,
+    "olid": "OL24266134M"
+  },
+  "fool moon|jim butcher": {
+    "coverId": 2701529,
+    "olid": "OL11736845M"
+  },
+  "grave peril|jim butcher": {
+    "coverId": 1697925,
+    "olid": "OL9454808M"
+  },
+  "summer knight|jim butcher": {
+    "coverId": 1725578,
+    "olid": "OL9863217M"
+  },
+  "death masks|jim butcher": {
+    "coverId": 295110,
+    "olid": "OL3385676M"
+  },
+  "blood rites|jim butcher": {
+    "coverId": 6387078,
+    "olid": "OL24225702M"
+  },
+  "dead beat|jim butcher": {
+    "coverId": 295188,
+    "olid": "OL3299415M"
+  },
+  "proven guilty|jim butcher": {
+    "coverId": 6399853,
+    "olid": "OL24252179M"
+  },
+  "white night|jim butcher": {
+    "coverId": 1237182,
+    "olid": "OL9507050M"
+  },
+  "small favor|jim butcher": {
+    "coverId": 8047953,
+    "olid": "OL23277960M"
+  },
+  "turn coat|jim butcher": {
+    "coverId": 6422690,
+    "olid": "OL24273008M"
+  },
+  "changes|jim butcher": {
+    "coverId": 6423567,
+    "olid": "OL24273765M"
+  },
+  "ghost story|jim butcher": {
+    "coverId": 6685202,
+    "olid": "OL24604773M"
+  },
+  "cold days|jim butcher": {
+    "coverId": 7469117
+  },
+  "skin game|jim butcher": {
+    "coverId": 7616940
+  },
+  "peace talks|jim butcher": {
+    "coverId": 10180649,
+    "olid": "OL28250811M"
+  },
+  "battle ground|jim butcher": {
+    "coverId": 10167847,
+    "olid": "OL28236277M"
+  },
+  "twelve months|jim butcher": {
+    "coverId": 15163787,
+    "olid": "OL61164324M"
+  },
+  "side jobs|jim butcher": {
+    "coverId": 6582649,
+    "olid": "OL24356740M"
+  },
+  "brief cases|jim butcher": {
+    "coverId": 12649287,
+    "olid": "OL26955777M"
+  },
+  "the law|jim butcher": {
+    "coverId": 15245348,
+    "olid": "OL62083802M"
+  },
+  "working for bigfoot|jim butcher": {
+    "coverId": 10203605,
+    "olid": "OL28276999M"
+  },
+  "the dresden files|jim butcher": {
+    "coverId": 295250,
+    "olid": "OL7576304M"
+  },
+  "dune|frank herbert": {
+    "coverId": 11481354,
+    "olid": "OL32848840M"
+  },
+  "dune messiah|frank herbert": {
+    "coverId": 980253,
+    "olid": "OL8890326M"
+  },
+  "children of dune|frank herbert": {
+    "coverId": 6976407,
+    "olid": "OL24935059M"
+  },
+  "god emperor of dune|frank herbert": {
+    "coverId": 6711531
+  },
+  "heretics of dune|frank herbert": {
+    "coverId": 284530,
+    "olid": "OL7525590M"
+  },
+  "chapterhouse: dune|frank herbert": {
+    "coverId": 5536140,
+    "olid": "OL2855494M"
+  },
+  "dungeon crawler carl|matt dinniman": {
+    "coverId": 15143022,
+    "olid": "OL60638628M"
+  },
+  "carl's doomsday scenario|matt dinniman": {
+    "coverId": 11702962,
+    "olid": "OL33026470M"
+  },
+  "the dungeon anarchist's cookbook|matt dinniman": {
+    "coverId": 15233609,
+    "olid": "OL62207650M"
+  },
+  "the gate of the feral gods|matt dinniman": {
+    "coverId": 15232581,
+    "olid": "OL62200143M"
+  },
+  "the butcher's masquerade|matt dinniman": {
+    "coverId": 15231958,
+    "olid": "OL62191143M"
+  },
+  "the eye of the bedlam bride|matt dinniman": {
+    "coverId": 15231488,
+    "olid": "OL62170983M"
+  },
+  "this inevitable ruin|matt dinniman": {
+    "coverId": 15142977,
+    "olid": "OL60639135M"
+  },
+  "a parade of horribles|matt dinniman": {
+    "coverId": 15221497,
+    "olid": "OL61932789M"
+  },
+  "a wizard of earthsea|ursula k. le guin": {
+    "coverId": 13617691,
+    "olid": "OL9137999M"
+  },
+  "the tombs of atuan|ursula k. le guin": {
+    "coverId": 6633403,
+    "olid": "OL23026851M"
+  },
+  "the farthest shore|ursula k. le guin": {
+    "coverId": 6498990,
+    "olid": "OL24206845M"
+  },
+  "tehanu|ursula k. le guin": {
+    "coverId": 3347790,
+    "olid": "OL12991729M"
+  },
+  "tales from earthsea|ursula k. le guin": {
+    "coverId": 4636848,
+    "olid": "OL7584863M"
+  },
+  "the other wind|ursula k. le guin": {
+    "coverId": 890630,
+    "olid": "OL8926664M"
+  },
+  "earthsea|ursula k. le guin": {
+    "coverId": 13617691,
+    "olid": "OL9137999M"
+  },
+  "fourth wing|rebecca yarros": {
+    "coverId": 14407898,
+    "olid": "OL46057997M"
+  },
+  "iron flame|rebecca yarros": {
+    "coverId": 14405746
+  },
+  "onyx storm|rebecca yarros": {
+    "coverId": 15232777,
+    "olid": "OL60556430M"
+  },
+  "threshing day|rebecca yarros": {
+    "coverId": 15244359,
+    "olid": "OL62417601M"
+  },
+  "the blade itself|joe abercrombie": {
+    "coverId": 14543422,
+    "olid": "OL7878939M"
+  },
+  "before they are hanged|joe abercrombie": {
+    "coverId": 14595640,
+    "olid": "OL50987839M"
+  },
+  "last argument of kings|joe abercrombie": {
+    "coverId": 6901175,
+    "olid": "OL24981613M"
+  },
+  "best served cold|joe abercrombie": {
+    "coverId": 14543410,
+    "olid": "OL26106710M"
+  },
+  "the heroes|joe abercrombie": {
+    "coverId": 14543400,
+    "olid": "OL24384315M"
+  },
+  "red country|joe abercrombie": {
+    "coverId": 14595641,
+    "olid": "OL39876997M"
+  },
+  "sharp ends|joe abercrombie": {
+    "coverId": 14543433,
+    "olid": "OL27204893M"
+  },
+  "the first law|joe abercrombie": {
+    "coverId": 8740201,
+    "olid": "OL27101841M"
+  },
+  "the cruel prince|holly black": {
+    "coverId": 8361789,
+    "olid": "OL26694821M"
+  },
+  "the wicked king|holly black": {
+    "coverId": 8361788,
+    "olid": "OL26694815M"
+  },
+  "the queen of nothing|holly black": {
+    "coverId": 9146990,
+    "olid": "OL27716522M"
+  },
+  "the lost sisters|holly black": {
+    "coverId": 10641560,
+    "olid": "OL31962812M"
+  },
+  "how the king of elfhame learned to hate stories|holly black": {
+    "coverId": 10527709,
+    "olid": "OL30014147M"
+  },
+  "the stolen heir|holly black": {
+    "coverId": 13122196,
+    "olid": "OL38504908M"
+  },
+  "the prisoner's throne|holly black": {
+    "coverId": 14594863,
+    "olid": "OL50712862M"
+  },
+  "the folk of the air|holly black": {
+    "coverId": 10862387,
+    "olid": "OL32218436M"
+  },
+  "foundation|isaac asimov": {
+    "coverId": 14612610,
+    "olid": "OL51565403M"
+  },
+  "foundation and empire|isaac asimov": {
+    "coverId": 9300695,
+    "olid": "OL14419754M"
+  },
+  "second foundation|isaac asimov": {
+    "coverId": 9261324,
+    "olid": "OL18118902M"
+  },
+  "foundation's edge|isaac asimov": {
+    "coverId": 6700720,
+    "olid": "OL8341084M"
+  },
+  "foundation and earth|isaac asimov": {
+    "coverId": 9304027,
+    "olid": "OL2709493M"
+  },
+  "prelude to foundation|isaac asimov": {
+    "coverId": 12816973,
+    "olid": "OL38580945M"
+  },
+  "forward the foundation|isaac asimov": {
+    "coverId": 9300894,
+    "olid": "OL1740805M"
+  },
+  "the housemaid|freida mcfadden": {
+    "coverId": 15105883,
+    "olid": "OL59645491M"
+  },
+  "the housemaid's secret|freida mcfadden": {
+    "coverId": 13439869,
+    "olid": "OL46530123M"
+  },
+  "the housemaid is watching|freida mcfadden": {
+    "coverId": 14633291
+  },
+  "the housemaid's wedding|freida mcfadden": {
+    "coverId": 15162542,
+    "olid": "OL61134260M"
+  },
+  "the locked door|freida mcfadden": {
+    "coverId": 13156268,
+    "olid": "OL39812830M"
+  },
+  "never lie|freida mcfadden": {
+    "coverId": 13198561,
+    "olid": "OL46394099M"
+  },
+  "the inmate|freida mcfadden": {
+    "coverId": 15125020,
+    "olid": "OL57582441M"
+  },
+  "ward d|freida mcfadden": {
+    "coverId": 15125127,
+    "olid": "OL57563072M"
+  },
+  "the teacher|freida mcfadden": {
+    "coverId": 14570911,
+    "olid": "OL50559817M"
+  },
+  "the coworker|freida mcfadden": {
+    "coverId": 15121479,
+    "olid": "OL60091148M"
+  },
+  "the boyfriend|freida mcfadden": {
+    "coverId": 14820506,
+    "olid": "OL51147545M"
+  },
+  "the crash|freida mcfadden": {
+    "coverId": 15125037,
+    "olid": "OL57553749M"
+  },
+  "the tenant|freida mcfadden": {
+    "coverId": 15091484,
+    "olid": "OL57586223M"
+  },
+  "freida mcfadden thrillers|freida mcfadden": {
+    "coverId": 15207291,
+    "olid": "OL60888898M"
+  },
+  "from blood and ash|jennifer l. armentrout": {
+    "coverId": 14105538,
+    "olid": "OL38057296M"
+  },
+  "a kingdom of flesh and fire|jennifer l. armentrout": {
+    "coverId": 10360316,
+    "olid": "OL28890040M"
+  },
+  "the crown of gilded bones|jennifer l. armentrout": {
+    "coverId": 10535359,
+    "olid": "OL31838948M"
+  },
+  "the war of two queens|jennifer l. armentrout": {
+    "coverId": 11417894,
+    "olid": "OL32786013M"
+  },
+  "a soul of ash and blood|jennifer l. armentrout": {
+    "coverId": 15232200,
+    "olid": "OL46737315M"
+  },
+  "the primal of blood and bone|jennifer l. armentrout": {
+    "coverId": 15128598,
+    "olid": "OL60348905M"
+  },
+  "a shadow in the ember|jennifer l. armentrout": {
+    "coverId": 14660379,
+    "olid": "OL38056188M"
+  },
+  "a light in the flame|jennifer l. armentrout": {
+    "coverId": 13334206,
+    "olid": "OL40297601M"
+  },
+  "born of blood and ash|jennifer l. armentrout": {
+    "coverId": 15232229,
+    "olid": "OL50729727M"
+  },
+  "the lies of locke lamora|scott lynch": {
+    "coverId": 6307636,
+    "olid": "OL7878903M"
+  },
+  "red seas under red skies|scott lynch": {
+    "coverId": 12439889,
+    "olid": "OL28641782M"
+  },
+  "the republic of thieves|scott lynch": {
+    "coverId": 7761740
+  },
+  "gentleman bastards|scott lynch": {
+    "coverId": 10204112,
+    "olid": "OL28277494M"
+  },
+  "a good girl's guide to murder|holly jackson": {
+    "coverId": 13156188
+  },
+  "good girl, bad blood|holly jackson": {
+    "coverId": 11466695,
+    "olid": "OL32835101M"
+  },
+  "as good as dead|holly jackson": {
+    "coverId": 10716589,
+    "olid": "OL32051195M"
+  },
+  "kill joy|holly jackson": {
+    "coverId": 13248377,
+    "olid": "OL40128785M"
+  },
+  "shadow and bone|leigh bardugo": {
+    "coverId": 13816048,
+    "olid": "OL26842628M"
+  },
+  "siege and storm|leigh bardugo": {
+    "coverId": 10297781,
+    "olid": "OL28350080M"
+  },
+  "ruin and rising|leigh bardugo": {
+    "coverId": 12667421,
+    "olid": "OL37753018M"
+  },
+  "six of crows|leigh bardugo": {
+    "coverId": 12667417,
+    "olid": "OL25908319M"
+  },
+  "crooked kingdom|leigh bardugo": {
+    "coverId": 12667428,
+    "olid": "OL26201129M"
+  },
+  "king of scars|leigh bardugo": {
+    "coverId": 12714913,
+    "olid": "OL29392156M"
+  },
+  "rule of wolves|leigh bardugo": {
+    "coverId": 10394566,
+    "olid": "OL29531005M"
+  },
+  "harry potter and the philosopher's stone|j. k. rowling": {
+    "coverId": 15155833,
+    "olid": "OL61027601M"
+  },
+  "harry potter and the chamber of secrets|j. k. rowling": {
+    "coverId": 15158664,
+    "olid": "OL59041259M"
+  },
+  "harry potter and the prisoner of azkaban|j. k. rowling": {
+    "coverId": 10580435,
+    "olid": "OL26234270M"
+  },
+  "harry potter and the goblet of fire|j. k. rowling": {
+    "coverId": 12059372,
+    "olid": "OL25683482M"
+  },
+  "harry potter and the order of the phoenix|j. k. rowling": {
+    "coverId": 15158666,
+    "olid": "OL25662116M"
+  },
+  "harry potter and the half-blood prince|j. k. rowling": {
+    "coverId": 10716273
+  },
+  "harry potter and the deathly hallows|j. k. rowling": {
+    "coverId": 15158660,
+    "olid": "OL26378158M"
+  },
+  "fantastic beasts and where to find them|j. k. rowling": {
+    "coverId": 8417016,
+    "olid": "OL26767687M"
+  },
+  "quidditch through the ages|j. k. rowling": {
+    "coverId": 8273320,
+    "olid": "OL23245390M"
+  },
+  "the tales of beedle the bard|j. k. rowling": {
+    "coverId": 13776199
+  },
+  "short stories from hogwarts of heroism, hardship and dangerous hobbies|j. k. rowling": {
+    "coverId": 14830858,
+    "olid": "OL42153336M"
+  },
+  "fantastic beasts and where to find them: the original screenplay|j. k. rowling": {
+    "coverId": 7884242
+  },
+  "fantastic beasts: the crimes of grindelwald|j. k. rowling": {
+    "coverId": 13192207,
+    "olid": "OL42982643M"
+  },
+  "harry potter and the cursed child|j. k. rowling": {
+    "coverId": 8763851,
+    "olid": "OL27282400M"
+  },
+  "harry potter|j. k. rowling": {
+    "coverId": 15155833,
+    "olid": "OL61027601M"
+  },
+  "the will of the many|james islington": {
+    "coverId": 15247547,
+    "olid": "OL62456572M"
+  },
+  "the strength of the few|james islington": {
+    "coverId": 15150800,
+    "olid": "OL60789223M"
+  },
+  "northern lights|philip pullman": {
+    "coverId": 8747028,
+    "olid": "OL9731031M"
+  },
+  "the subtle knife|philip pullman": {
+    "coverId": 12614549,
+    "olid": "OL34922234M"
+  },
+  "the amber spyglass|philip pullman": {
+    "coverId": 12613246,
+    "olid": "OL23244828M"
+  },
+  "la belle sauvage|philip pullman": {
+    "coverId": 8597847,
+    "olid": "OL27005728M"
+  },
+  "the secret commonwealth|philip pullman": {
+    "coverId": 8743803,
+    "olid": "OL27140241M"
+  },
+  "the rose field|philip pullman": {
+    "coverId": 15142872,
+    "olid": "OL60434939M"
+  },
+  "his dark materials|philip pullman": {
+    "coverId": 12474447,
+    "olid": "OL17905319M"
+  },
+  "if it bleeds|stephen king": {
+    "coverId": 14654512,
+    "olid": "OL29469416M"
+  },
+  "holly|stephen king": {
+    "coverId": 14655773,
+    "olid": "OL46119383M"
+  },
+  "never flinch|stephen king": {
+    "coverId": 14825714,
+    "olid": "OL56971290M"
+  },
+  "the hunger games|suzanne collins": {
+    "coverId": 12646537,
+    "olid": "OL37079404M"
+  },
+  "catching fire|suzanne collins": {
+    "coverId": 12646539,
+    "olid": "OL37079405M"
+  },
+  "mockingjay|suzanne collins": {
+    "coverId": 12646459,
+    "olid": "OL26332553M"
+  },
+  "the ballad of songbirds and snakes|suzanne collins": {
+    "coverId": 14421833
+  },
+  "sunrise on the reaping|suzanne collins": {
+    "coverId": 14847912,
+    "olid": "OL57572489M"
+  },
+  "hyperion|dan simmons": {
+    "coverId": 380332,
+    "olid": "OL7878868M"
+  },
+  "the fall of hyperion|dan simmons": {
+    "coverId": 484900,
+    "olid": "OL7959658M"
+  },
+  "endymion|dan simmons": {
+    "coverId": 975059,
+    "olid": "OL8865869M"
+  },
+  "the rise of endymion|dan simmons": {
+    "coverId": 4910012,
+    "olid": "OL9131411M"
+  },
+  "hyperion cantos|dan simmons": {
+    "coverId": 13495972,
+    "olid": "OL9041458M"
+  },
+  "ancillary justice|ann leckie": {
+    "coverId": 7355949,
+    "olid": "OL25726365M"
+  },
+  "ancillary sword|ann leckie": {
+    "coverId": 7422984,
+    "olid": "OL25631967M"
+  },
+  "ancillary mercy|ann leckie": {
+    "coverId": 7436540,
+    "olid": "OL25936560M"
+  },
+  "provenance|ann leckie": {
+    "coverId": 8316894,
+    "olid": "OL26635482M"
+  },
+  "translation state|ann leckie": {
+    "coverId": 13240199,
+    "olid": "OL42730380M"
+  },
+  "imperial radch|ann leckie": {
+    "coverId": 13337784,
+    "olid": "OL28850116M"
+  },
+  "killing floor|lee child": {
+    "coverId": 11089125,
+    "olid": "OL32428122M"
+  },
+  "die trying|lee child": {
+    "coverId": 14424757,
+    "olid": "OL692556M"
+  },
+  "tripwire|lee child": {
+    "coverId": 14424673,
+    "olid": "OL26337458M"
+  },
+  "running blind|lee child": {
+    "coverId": 1818524,
+    "olid": "OL8494378M"
+  },
+  "echo burning|lee child": {
+    "coverId": 14812320,
+    "olid": "OL53616319M"
+  },
+  "without fail|lee child": {
+    "coverId": 14424682,
+    "olid": "OL3952671M"
+  },
+  "persuader|lee child": {
+    "coverId": 14424684,
+    "olid": "OL23247566M"
+  },
+  "the enemy|lee child": {
+    "coverId": 14424689,
+    "olid": "OL23272403M"
+  },
+  "one shot|lee child": {
+    "coverId": 14424685,
+    "olid": "OL3309583M"
+  },
+  "the hard way|lee child": {
+    "coverId": 14425111,
+    "olid": "OL43562863M"
+  },
+  "bad luck and trouble|lee child": {
+    "coverId": 14424663,
+    "olid": "OL23277929M"
+  },
+  "nothing to lose|lee child": {
+    "coverId": 15027615,
+    "olid": "OL50533454M"
+  },
+  "gone tomorrow|lee child": {
+    "coverId": 14425142,
+    "olid": "OL24767583M"
+  },
+  "61 hours|lee child": {
+    "coverId": 9747748,
+    "olid": "OL24586080M"
+  },
+  "worth dying for|lee child": {
+    "coverId": 14424674,
+    "olid": "OL24356143M"
+  },
+  "the affair|lee child": {
+    "coverId": 14425118,
+    "olid": "OL49631986M"
+  },
+  "a wanted man|lee child": {
+    "coverId": 11101535,
+    "olid": "OL32441939M"
+  },
+  "never go back|lee child": {
+    "coverId": 14425199,
+    "olid": "OL49632035M"
+  },
+  "personal|lee child": {
+    "coverId": 14425062,
+    "olid": "OL49631948M"
+  },
+  "make me|lee child": {
+    "coverId": 14425076,
+    "olid": "OL25935283M"
+  },
+  "night school|lee child": {
+    "coverId": 14425063,
+    "olid": "OL49631949M"
+  },
+  "the midnight line|lee child": {
+    "coverId": 9251650,
+    "olid": "OL26933324M"
+  },
+  "past tense|lee child": {
+    "coverId": 14425067,
+    "olid": "OL26967787M"
+  },
+  "blue moon|lee child": {
+    "coverId": 14425140,
+    "olid": "OL49632003M"
+  },
+  "the sentinel|lee child": {
+    "coverId": 14425219,
+    "olid": "OL28136496M"
+  },
+  "better off dead|lee child": {
+    "coverId": 14425270,
+    "olid": "OL31848911M"
+  },
+  "no plan b|lee child": {
+    "coverId": 12866677,
+    "olid": "OL36817937M"
+  },
+  "the secret|lee child": {
+    "coverId": 13718764,
+    "olid": "OL46662382M"
+  },
+  "in too deep|lee child": {
+    "coverId": 14652115,
+    "olid": "OL50970082M"
+  },
+  "jack reacher|lee child": {
+    "coverId": 9056241,
+    "olid": "OL27606092M"
+  },
+  "the name of the wind|patrick rothfuss": {
+    "coverId": 11480483,
+    "olid": "OL7993641M"
+  },
+  "the wise man's fear|patrick rothfuss": {
+    "coverId": 8294024,
+    "olid": "OL9808760M"
+  },
+  "the hobbit|j. r. r. tolkien": {
+    "coverId": 14627509,
+    "olid": "OL51711263M"
+  },
+  "the fellowship of the ring|j. r. r. tolkien": {
+    "coverId": 14627060,
+    "olid": "OL51708686M"
+  },
+  "the two towers|j. r. r. tolkien": {
+    "coverId": 14627564,
+    "olid": "OL51711454M"
+  },
+  "the return of the king|j. r. r. tolkien": {
+    "coverId": 14627062,
+    "olid": "OL51708706M"
+  },
+  "the silmarillion|j. r. r. tolkien": {
+    "coverId": 14627042,
+    "olid": "OL18768117M"
+  },
+  "unfinished tales|j. r. r. tolkien": {
+    "coverId": 9293458,
+    "olid": "OL4125417M"
+  },
+  "the children of húrin|j. r. r. tolkien": {
+    "coverId": 8220298
+  },
+  "beren and lúthien|j. r. r. tolkien": {
+    "coverId": 12639912,
+    "olid": "OL27233650M"
+  },
+  "the fall of gondolin|j. r. r. tolkien": {
+    "coverId": 12451486,
+    "olid": "OL26961988M"
+  },
+  "the fall of númenor|j. r. r. tolkien": {
+    "coverId": 14627073
+  },
+  "the lord of the rings|j. r. r. tolkien": {
+    "coverId": 14625765,
+    "olid": "OL51694024M"
+  },
+  "gardens of the moon|steven erikson": {
+    "coverId": 374277,
+    "olid": "OL7850642M"
+  },
+  "deadhouse gates|steven erikson": {
+    "coverId": 525197,
+    "olid": "OL8054062M"
+  },
+  "memories of ice|steven erikson": {
+    "coverId": 524439,
+    "olid": "OL3422272M"
+  },
+  "house of chains|steven erikson": {
+    "coverId": 374327,
+    "olid": "OL7850673M"
+  },
+  "midnight tides|steven erikson": {
+    "coverId": 524762,
+    "olid": "OL8053688M"
+  },
+  "reaper’s gale|steven erikson": {
+    "coverId": 386149,
+    "olid": "OL7544028M"
+  },
+  "toll the hounds|steven erikson": {
+    "coverId": 6684006,
+    "olid": "OL24603258M"
+  },
+  "dust of dreams|steven erikson": {
+    "coverId": 6304352,
+    "olid": "OL24087278M"
+  },
+  "the crippled god|steven erikson": {
+    "coverId": 9720396,
+    "olid": "OL25045816M"
+  },
+  "malazan book of the fallen|steven erikson": {
+    "coverId": 525197,
+    "olid": "OL8054062M"
+  },
+  "the well of ascension|brandon sanderson": {
+    "coverId": 14658341,
+    "olid": "OL8053698M"
+  },
+  "the hero of ages|brandon sanderson": {
+    "coverId": 14658094,
+    "olid": "OL24088527M"
+  },
+  "the alloy of law|brandon sanderson": {
+    "coverId": 14658081,
+    "olid": "OL25280450M"
+  },
+  "shadows of self|brandon sanderson": {
+    "coverId": 14658321,
+    "olid": "OL25926785M"
+  },
+  "the bands of mourning|brandon sanderson": {
+    "coverId": 14658335,
+    "olid": "OL25926786M"
+  },
+  "the lost metal|brandon sanderson": {
+    "coverId": 14658507,
+    "olid": "OL36539466M"
+  },
+  "arcanum unbounded|brandon sanderson": {
+    "coverId": 14658368,
+    "olid": "OL26367469M"
+  },
+  "all systems red|martha wells": {
+    "coverId": 9157148,
+    "olid": "OL26500848M"
+  },
+  "artificial condition|martha wells": {
+    "coverId": 10537139,
+    "olid": "OL26960367M"
+  },
+  "rogue protocol|martha wells": {
+    "coverId": 12013488,
+    "olid": "OL26966631M"
+  },
+  "exit strategy|martha wells": {
+    "coverId": 10692785,
+    "olid": "OL32025937M"
+  },
+  "network effect|martha wells": {
+    "coverId": 9426689,
+    "olid": "OL28044727M"
+  },
+  "fugitive telemetry|martha wells": {
+    "coverId": 10104879,
+    "olid": "OL28166035M"
+  },
+  "system collapse|martha wells": {
+    "coverId": 13127133,
+    "olid": "OL45311812M"
+  },
+  "platform decay|martha wells": {
+    "coverId": 15154430,
+    "olid": "OL60999688M"
+  },
+  "the lion, the witch and the wardrobe|c. s. lewis": {
+    "coverId": 8441376,
+    "olid": "OL7265111M"
+  },
+  "prince caspian|c. s. lewis": {
+    "coverId": 45897,
+    "olid": "OL7288313M"
+  },
+  "the voyage of the dawn treader|c. s. lewis": {
+    "coverId": 9184719,
+    "olid": "OL15095973M"
+  },
+  "the silver chair|c. s. lewis": {
+    "coverId": 6950992,
+    "olid": "OL24934004M"
+  },
+  "the horse and his boy|c. s. lewis": {
+    "coverId": 9184792,
+    "olid": "OL9222272M"
+  },
+  "the magician's nephew|c. s. lewis": {
+    "coverId": 1072931,
+    "olid": "OL9248118M"
+  },
+  "the last battle|c. s. lewis": {
+    "coverId": 6529226,
+    "olid": "OL6200309M"
+  },
+  "the chronicles of narnia|c. s. lewis": {
+    "coverId": 9321656,
+    "olid": "OL3962556M"
+  },
+  "rosemary and rue|seanan mcguire": {
+    "coverId": 6372885,
+    "olid": "OL24194340M"
+  },
+  "a local habitation|seanan mcguire": {
+    "coverId": 6303502,
+    "olid": "OL24091925M"
+  },
+  "an artificial night|seanan mcguire": {
+    "coverId": 9123165,
+    "olid": "OL27683025M"
+  },
+  "late eclipses|seanan mcguire": {
+    "coverId": 6716399,
+    "olid": "OL24623294M"
+  },
+  "one salt sea|seanan mcguire": {
+    "coverId": 14789719,
+    "olid": "OL25358190M"
+  },
+  "ashes of honor|seanan mcguire": {
+    "coverId": 10105364,
+    "olid": "OL28166571M"
+  },
+  "chimes at midnight|seanan mcguire": {
+    "coverId": 8079940,
+    "olid": "OL26386207M"
+  },
+  "the winter long|seanan mcguire": {
+    "coverId": 9260769,
+    "olid": "OL27167661M"
+  },
+  "a red-rose chain|seanan mcguire": {
+    "coverId": 8764653,
+    "olid": "OL27283908M"
+  },
+  "once broken faith|seanan mcguire": {
+    "coverId": 8506608,
+    "olid": "OL26832123M"
+  },
+  "the brightest fell|seanan mcguire": {
+    "coverId": 14787979,
+    "olid": "OL26928674M"
+  },
+  "night and silence|seanan mcguire": {
+    "coverId": 8250012,
+    "olid": "OL26496872M"
+  },
+  "the unkindest tide|seanan mcguire": {
+    "coverId": 10220348,
+    "olid": "OL28295578M"
+  },
+  "a killing frost|seanan mcguire": {
+    "coverId": 10105374,
+    "olid": "OL28166581M"
+  },
+  "when sorrows come|seanan mcguire": {
+    "coverId": 13472174,
+    "olid": "OL36415533M"
+  },
+  "be the serpent|seanan mcguire": {
+    "coverId": 13105982,
+    "olid": "OL36842188M"
+  },
+  "october daye|seanan mcguire": {
+    "coverId": 6716396,
+    "olid": "OL24623289M"
+  },
+  "old man's war|john scalzi": {
+    "coverId": 14425273,
+    "olid": "OL49632066M"
+  },
+  "the ghost brigades|john scalzi": {
+    "coverId": 524706,
+    "olid": "OL3411276M"
+  },
+  "the last colony|john scalzi": {
+    "coverId": 524768,
+    "olid": "OL8053700M"
+  },
+  "zoe's tale|john scalzi": {
+    "coverId": 5081229,
+    "olid": "OL10936428M"
+  },
+  "the human division|john scalzi": {
+    "coverId": 12525091,
+    "olid": "OL27146365M"
+  },
+  "the end of all things|john scalzi": {
+    "coverId": 8737397
+  },
+  "once upon a broken heart|stephanie garber": {
+    "coverId": 11427092
+  },
+  "the ballad of never after|stephanie garber": {
+    "coverId": 12945180,
+    "olid": "OL36884060M"
+  },
+  "a curse for true love|stephanie garber": {
+    "coverId": 13124827,
+    "olid": "OL45269989M"
+  },
+  "outlander|diana gabaldon": {
+    "coverId": 14428230
+  },
+  "dragonfly in amber|diana gabaldon": {
+    "coverId": 6920490,
+    "olid": "OL19786779M"
+  },
+  "voyager|diana gabaldon": {
+    "coverId": 238962,
+    "olid": "OL1412931M"
+  },
+  "drums of autumn|diana gabaldon": {
+    "coverId": 10710402,
+    "olid": "OL976890M"
+  },
+  "the fiery cross|diana gabaldon": {
+    "coverId": 280733,
+    "olid": "OL7519659M"
+  },
+  "a breath of snow and ashes|diana gabaldon": {
+    "coverId": 239469
+  },
+  "an echo in the bone|diana gabaldon": {
+    "coverId": 10664958,
+    "olid": "OL24094915M"
+  },
+  "written in my own heart’s blood|diana gabaldon": {
+    "coverId": 10864039,
+    "olid": "OL32221802M"
+  },
+  "go tell the bees that i am gone|diana gabaldon": {
+    "coverId": 10860237,
+    "olid": "OL32213250M"
+  },
+  "lord john and the private matter|diana gabaldon": {
+    "coverId": 1471747,
+    "olid": "OL3693792M"
+  },
+  "lord john and the brotherhood of the blade|diana gabaldon": {
+    "coverId": 240110,
+    "olid": "OL7439404M"
+  },
+  "lord john and the hand of devils|diana gabaldon": {
+    "coverId": 1190030,
+    "olid": "OL9753347M"
+  },
+  "the scottish prisoner|diana gabaldon": {
+    "coverId": 10084454,
+    "olid": "OL28142602M"
+  },
+  "the lightning thief|rick riordan": {
+    "coverId": 7239831
+  },
+  "the sea of monsters|rick riordan": {
+    "coverId": 108909,
+    "olid": "OL7359831M"
+  },
+  "the titan's curse|rick riordan": {
+    "coverId": 14601475,
+    "olid": "OL42345607M"
+  },
+  "the battle of the labyrinth|rick riordan": {
+    "coverId": 6274739
+  },
+  "the last olympian|rick riordan": {
+    "coverId": 6624107
+  },
+  "the lost hero|rick riordan": {
+    "coverId": 12848687,
+    "olid": "OL28556907M"
+  },
+  "the son of neptune|rick riordan": {
+    "coverId": 13012024,
+    "olid": "OL42479856M"
+  },
+  "the mark of athena|rick riordan": {
+    "coverId": 12848680,
+    "olid": "OL26684870M"
+  },
+  "the house of hades|rick riordan": {
+    "coverId": 10837177,
+    "olid": "OL32181525M"
+  },
+  "the blood of olympus|rick riordan": {
+    "coverId": 7303498
+  },
+  "the hidden oracle|rick riordan": {
+    "coverId": 7442820,
+    "olid": "OL25943352M"
+  },
+  "the dark prophecy|rick riordan": {
+    "coverId": 11807743,
+    "olid": "OL33104099M"
+  },
+  "the burning maze|rick riordan": {
+    "coverId": 8174272,
+    "olid": "OL26450437M"
+  },
+  "the tyrant's tomb|rick riordan": {
+    "coverId": 8788784
+  },
+  "the tower of nero|rick riordan": {
+    "coverId": 9945247
+  },
+  "the chalice of the gods|rick riordan": {
+    "coverId": 14596529
+  },
+  "wrath of the triple goddess|rick riordan": {
+    "coverId": 15191827,
+    "olid": "OL61423800M"
+  },
+  "the poppy war|r. f. kuang": {
+    "coverId": 8463552,
+    "olid": "OL26807748M"
+  },
+  "the dragon republic|r. f. kuang": {
+    "coverId": 8539487,
+    "olid": "OL26850082M"
+  },
+  "the burning god|r. f. kuang": {
+    "coverId": 10329759,
+    "olid": "OL28651661M"
+  },
+  "the drowning faith|r. f. kuang": {
+    "coverId": 14838509,
+    "olid": "OL57501739M"
+  },
+  "assassin's apprentice|robin hobb": {
+    "coverId": 4915230,
+    "olid": "OL9145776M"
+  },
+  "royal assassin|robin hobb": {
+    "coverId": 14093093,
+    "olid": "OL46114937M"
+  },
+  "assassin's quest|robin hobb": {
+    "coverId": 368112,
+    "olid": "OL1003016M"
+  },
+  "ship of magic|robin hobb": {
+    "coverId": 372583,
+    "olid": "OL7829878M"
+  },
+  "ship of destiny|robin hobb": {
+    "coverId": 8314580,
+    "olid": "OL7829880M"
+  },
+  "fool's errand|robin hobb": {
+    "coverId": 13556499,
+    "olid": "OL47152571M"
+  },
+  "the golden fool|robin hobb": {
+    "coverId": 373091,
+    "olid": "OL7830160M"
+  },
+  "fool's fate|robin hobb": {
+    "coverId": 374007,
+    "olid": "OL3691365M"
+  },
+  "dragon haven|robin hobb": {
+    "coverId": 6298448,
+    "olid": "OL24088185M"
+  },
+  "city of dragons|robin hobb": {
+    "coverId": 7254797,
+    "olid": "OL25425290M"
+  },
+  "blood of dragons|robin hobb": {
+    "coverId": 7284727,
+    "olid": "OL25493617M"
+  },
+  "fool's assassin|robin hobb": {
+    "coverId": 10107391,
+    "olid": "OL28169128M"
+  },
+  "fool's quest|robin hobb": {
+    "coverId": 13172508,
+    "olid": "OL42864902M"
+  },
+  "assassin's fate|robin hobb": {
+    "coverId": 8417258,
+    "olid": "OL26767864M"
+  },
+  "red rising|pierce brown": {
+    "coverId": 7316188,
+    "olid": "OL25646224M"
+  },
+  "golden son|pierce brown": {
+    "coverId": 8454351,
+    "olid": "OL26798371M"
+  },
+  "morning star|pierce brown": {
+    "coverId": 8566174,
+    "olid": "OL26870179M"
+  },
+  "iron gold|pierce brown": {
+    "coverId": 14511722,
+    "olid": "OL26940101M"
+  },
+  "dark age|pierce brown": {
+    "coverId": 8748017,
+    "olid": "OL27252762M"
+  },
+  "light bringer|pierce brown": {
+    "coverId": 15157697,
+    "olid": "OL35588583M"
+  },
+  "rivers of london|ben aaronovitch": {
+    "coverId": 8472420,
+    "olid": "OL26814272M"
+  },
+  "moon over soho|ben aaronovitch": {
+    "coverId": 7150004,
+    "olid": "OL25364780M"
+  },
+  "broken homes|ben aaronovitch": {
+    "coverId": 8600681,
+    "olid": "OL27011566M"
+  },
+  "foxglove summer|ben aaronovitch": {
+    "coverId": 11344405,
+    "olid": "OL27205236M"
+  },
+  "the hanging tree|ben aaronovitch": {
+    "coverId": 8447837,
+    "olid": "OL26793925M"
+  },
+  "lies sleeping|ben aaronovitch": {
+    "coverId": 10108965,
+    "olid": "OL28171086M"
+  },
+  "false value|ben aaronovitch": {
+    "coverId": 10221123,
+    "olid": "OL28296414M"
+  },
+  "amongst our weapons|ben aaronovitch": {
+    "coverId": 14768342,
+    "olid": "OL38915188M"
+  },
+  "stone and sky|ben aaronovitch": {
+    "coverId": 15201330,
+    "olid": "OL57744487M"
+  },
+  "the furthest station|ben aaronovitch": {
+    "coverId": 11299677,
+    "olid": "OL32670554M"
+  },
+  "the october man|ben aaronovitch": {
+    "coverId": 8612434,
+    "olid": "OL27013377M"
+  },
+  "what abigail did that summer|ben aaronovitch": {
+    "coverId": 10713506,
+    "olid": "OL32047948M"
+  },
+  "winter’s gifts|ben aaronovitch": {
+    "coverId": 15168854,
+    "olid": "OL51062445M"
+  },
+  "theft of swords|michael j. sullivan": {
+    "coverId": 12183154,
+    "olid": "OL24827611M"
+  },
+  "rise of empire|michael j. sullivan": {
+    "coverId": 12208130,
+    "olid": "OL24842603M"
+  },
+  "heir of novron|michael j. sullivan": {
+    "coverId": 14419372
+  },
+  "the crown tower|michael j. sullivan": {
+    "coverId": 10291902,
+    "olid": "OL28343365M"
+  },
+  "the rose and the thorn|michael j. sullivan": {
+    "coverId": 7512074
+  },
+  "the death of dulgath|michael j. sullivan": {
+    "coverId": 8566055,
+    "olid": "OL26870053M"
+  },
+  "drumindor|michael j. sullivan": {
+    "coverId": 15155327,
+    "olid": "OL57613018M"
+  },
+  "riyria revelations|michael j. sullivan": {
+    "coverId": 13233637,
+    "olid": "OL28908820M"
+  },
+  "a deadly education|naomi novik": {
+    "coverId": 10206042,
+    "olid": "OL28279719M"
+  },
+  "the last graduate|naomi novik": {
+    "coverId": 10468622,
+    "olid": "OL30543749M"
+  },
+  "the golden enclaves|naomi novik": {
+    "coverId": 12412918
+  },
+  "shatter me|tahereh mafi": {
+    "coverId": 6974992
+  },
+  "unravel me|tahereh mafi": {
+    "coverId": 12727567,
+    "olid": "OL27143333M"
+  },
+  "ignite me|tahereh mafi": {
+    "coverId": 7272906,
+    "olid": "OL25439048M"
+  },
+  "restore me|tahereh mafi": {
+    "coverId": 8797404,
+    "olid": "OL27332833M"
+  },
+  "defy me|tahereh mafi": {
+    "coverId": 8791330,
+    "olid": "OL27325416M"
+  },
+  "imagine me|tahereh mafi": {
+    "coverId": 9363194,
+    "olid": "OL27974771M"
+  },
+  "destroy me|tahereh mafi": {
+    "coverId": 14427908
+  },
+  "fracture me|tahereh mafi": {
+    "coverId": 15252569,
+    "olid": "OL29669966M"
+  },
+  "shadow me|tahereh mafi": {
+    "coverId": 14408244,
+    "olid": "OL29797595M"
+  },
+  "reveal me|tahereh mafi": {
+    "coverId": 12782240,
+    "olid": "OL29800569M"
+  },
+  "believe me|tahereh mafi": {
+    "coverId": 12045357,
+    "olid": "OL34654648M"
+  },
+  "watch me|tahereh mafi": {
+    "coverId": 15174425,
+    "olid": "OL61374878M"
+  },
+  "wool|hugh howey": {
+    "coverId": 14369537,
+    "olid": "OL48590101M"
+  },
+  "shift|hugh howey": {
+    "coverId": 11712987,
+    "olid": "OL25944959M"
+  },
+  "dust|hugh howey": {
+    "coverId": 10054840,
+    "olid": "OL26227924M"
+  },
+  "silo (wool)|hugh howey": {
+    "coverId": 10851114,
+    "olid": "OL32201938M"
+  },
+  "skyward|brandon sanderson": {
+    "coverId": 14658323,
+    "olid": "OL26664276M"
+  },
+  "starsight|brandon sanderson": {
+    "coverId": 14662078,
+    "olid": "OL43346725M"
+  },
+  "cytonic|brandon sanderson": {
+    "coverId": 14658369,
+    "olid": "OL32527527M"
+  },
+  "defiant|brandon sanderson": {
+    "coverId": 13815273,
+    "olid": "OL47316862M"
+  },
+  "sunreach|brandon sanderson": {
+    "coverId": 14837512,
+    "olid": "OL57496869M"
+  },
+  "redawn|brandon sanderson": {
+    "coverId": 14372989,
+    "olid": "OL48596388M"
+  },
+  "evershore|brandon sanderson": {
+    "coverId": 14837533,
+    "olid": "OL57496987M"
+  },
+  "annihilation|jeff vandermeer": {
+    "coverId": 8408974,
+    "olid": "OL26759325M"
+  },
+  "authority|jeff vandermeer": {
+    "coverId": 10526739,
+    "olid": "OL29685300M"
+  },
+  "acceptance|jeff vandermeer": {
+    "coverId": 8441678,
+    "olid": "OL26788677M"
+  },
+  "absolution|jeff vandermeer": {
+    "coverId": 15174269,
+    "olid": "OL60822904M"
+  },
+  "misery|stephen king": {
+    "coverId": 8259296
+  },
+  "11/22/63|stephen king": {
+    "coverId": 10713447,
+    "olid": "OL24906649M"
+  },
+  "the shining|stephen king": {
+    "coverId": 12376585,
+    "olid": "OL22312685M"
+  },
+  "carrie|stephen king": {
+    "coverId": 9256043,
+    "olid": "OL27902097M"
+  },
+  "salem's lot|stephen king": {
+    "coverId": 12015639,
+    "olid": "OL8291805M"
+  },
+  "the stand|stephen king": {
+    "coverId": 9255992,
+    "olid": "OL25159731M"
+  },
+  "pet sematary|stephen king": {
+    "coverId": 12015500,
+    "olid": "OL33965435M"
+  },
+  "it|stephen king": {
+    "coverId": 8569284
+  },
+  "the green mile|stephen king": {
+    "coverId": 9334567
+  },
+  "different seasons|stephen king": {
+    "coverId": 14655761,
+    "olid": "OL49825722M"
+  },
+  "words of radiance|brandon sanderson": {
+    "coverId": 14658334,
+    "olid": "OL25438720M"
+  },
+  "oathbringer|brandon sanderson": {
+    "coverId": 14658111,
+    "olid": "OL26421466M"
+  },
+  "rhythm of war|brandon sanderson": {
+    "coverId": 14658361,
+    "olid": "OL28217699M"
+  },
+  "wind and truth|brandon sanderson": {
+    "coverId": 14836765,
+    "olid": "OL57480993M"
+  },
+  "edgedancer|brandon sanderson": {
+    "coverId": 14658530,
+    "olid": "OL27420261M"
+  },
+  "dawnshard|brandon sanderson": {
+    "coverId": 11385385,
+    "olid": "OL32758402M"
+  },
+  "the stormlight archive|brandon sanderson": {
+    "coverId": 8494963,
+    "olid": "OL26825072M"
+  },
+  "empire of silence|christopher ruocchio": {
+    "coverId": 13278787,
+    "olid": "OL46541657M"
+  },
+  "howling dark|christopher ruocchio": {
+    "coverId": 14672282,
+    "olid": "OL29459986M"
+  },
+  "demon in white|christopher ruocchio": {
+    "coverId": 13885929,
+    "olid": "OL34697339M"
+  },
+  "kingdoms of death|christopher ruocchio": {
+    "coverId": 14755426,
+    "olid": "OL37337085M"
+  },
+  "ashes of man|christopher ruocchio": {
+    "coverId": 13764405,
+    "olid": "OL37758332M"
+  },
+  "disquiet gods|christopher ruocchio": {
+    "coverId": 15170257,
+    "olid": "OL60894035M"
+  },
+  "shadows upon time|christopher ruocchio": {
+    "coverId": 15170259,
+    "olid": "OL60845361M"
+  },
+  "queen amid ashes|christopher ruocchio": {
+    "coverId": 15170796,
+    "olid": "OL61329900M"
+  },
+  "the dregs of empire|christopher ruocchio": {
+    "coverId": 15170804,
+    "olid": "OL61330124M"
+  },
+  "sun eater|christopher ruocchio": {
+    "coverId": 15170800,
+    "olid": "OL61329905M"
+  },
+  "consider phlebas|iain m. banks": {
+    "coverId": 1009644,
+    "olid": "OL9041460M"
+  },
+  "the player of games|iain m. banks": {
+    "coverId": 44077,
+    "olid": "OL996368M"
+  },
+  "use of weapons|iain m. banks": {
+    "coverId": 2379038,
+    "olid": "OL10426208M"
+  },
+  "the state of the art|iain m. banks": {
+    "coverId": 908770,
+    "olid": "OL8998702M"
+  },
+  "excession|iain m. banks": {
+    "coverId": 5276044,
+    "olid": "OL13354061M"
+  },
+  "inversions|iain m. banks": {
+    "coverId": 908983,
+    "olid": "OL91700M"
+  },
+  "look to windward|iain m. banks": {
+    "coverId": 476421,
+    "olid": "OL3942432M"
+  },
+  "matter|iain m. banks": {
+    "coverId": 1174791,
+    "olid": "OL9420515M"
+  },
+  "surface detail|iain m. banks": {
+    "coverId": 6672209,
+    "olid": "OL24500323M"
+  },
+  "the hydrogen sonata|iain m. banks": {
+    "coverId": 7425860,
+    "olid": "OL25924197M"
+  },
+  "leviathan wakes|james s. a. corey": {
+    "coverId": 7314237
+  },
+  "caliban’s war|james s. a. corey": {
+    "coverId": 7314238
+  },
+  "abaddon’s gate|james s. a. corey": {
+    "coverId": 8624248,
+    "olid": "OL26206368M"
+  },
+  "cibola burn|james s. a. corey": {
+    "coverId": 7610576
+  },
+  "nemesis games|james s. a. corey": {
+    "coverId": 8036735,
+    "olid": "OL26353388M"
+  },
+  "babylon’s ashes|james s. a. corey": {
+    "coverId": 8417833,
+    "olid": "OL26768271M"
+  },
+  "persepolis rising|james s. a. corey": {
+    "coverId": 8402849,
+    "olid": "OL26753542M"
+  },
+  "tiamat’s wrath|james s. a. corey": {
+    "coverId": 8600919,
+    "olid": "OL27011751M"
+  },
+  "leviathan falls|james s. a. corey": {
+    "coverId": 14424717
+  },
+  "the butcher of anderson station|james s. a. corey": {
+    "coverId": 15248833,
+    "olid": "OL34839604M"
+  },
+  "gods of risk|james s. a. corey": {
+    "coverId": 7992542,
+    "olid": "OL26318312M"
+  },
+  "drive|james s. a. corey": {
+    "coverId": 11295257,
+    "olid": "OL32667435M"
+  },
+  "the churn|james s. a. corey": {
+    "coverId": 11295288,
+    "olid": "OL32667444M"
+  },
+  "the vital abyss|james s. a. corey": {
+    "coverId": 7992541,
+    "olid": "OL26318311M"
+  },
+  "strange dogs|james s. a. corey": {
+    "coverId": 8159461,
+    "olid": "OL26441534M"
+  },
+  "auberon|james s. a. corey": {
+    "coverId": 9158815,
+    "olid": "OL27737396M"
+  },
+  "the sins of our fathers|james s. a. corey": {
+    "coverId": 14572176,
+    "olid": "OL50566635M"
+  },
+  "memory’s legion|james s. a. corey": {
+    "coverId": 12674980,
+    "olid": "OL34163779M"
+  },
+  "the expanse|james s. a. corey": {
+    "coverId": 8833453,
+    "olid": "OL27370264M"
+  },
+  "gideon the ninth|tamsyn muir": {
+    "coverId": 10139515,
+    "olid": "OL28204387M"
+  },
+  "harrow the ninth|tamsyn muir": {
+    "coverId": 9406886,
+    "olid": "OL28024928M"
+  },
+  "nona the ninth|tamsyn muir": {
+    "coverId": 14567050
+  },
+  "the mysterious study of doctor sex|tamsyn muir": {
+    "coverId": 10651047,
+    "olid": "OL31973821M"
+  },
+  "as yet unsent|tamsyn muir": {
+    "coverId": 15107111,
+    "olid": "OL35695974M"
+  },
+  "the three-body problem|cixin liu": {
+    "coverId": 10526598,
+    "olid": "OL27897732M"
+  },
+  "the dark forest|cixin liu": {
+    "coverId": 10526598,
+    "olid": "OL27897732M"
+  },
+  "death's end|cixin liu": {
+    "coverId": 7893958,
+    "olid": "OL26214600M"
+  },
+  "the redemption of time|baoshu": {
+    "coverId": 10158478,
+    "olid": "OL28226451M"
+  },
+  "throne of glass|sarah j. maas": {
+    "coverId": 13312488,
+    "olid": "OL35606216M"
+  },
+  "crown of midnight|sarah j. maas": {
+    "coverId": 14348029,
+    "olid": "OL39347068M"
+  },
+  "the assassin's blade|sarah j. maas": {
+    "coverId": 8738841,
+    "olid": "OL27099336M"
+  },
+  "heir of fire|sarah j. maas": {
+    "coverId": 9318480
+  },
+  "queen of shadows|sarah j. maas": {
+    "coverId": 7994583,
+    "olid": "OL26319924M"
+  },
+  "empire of storms|sarah j. maas": {
+    "coverId": 14349313,
+    "olid": "OL39627100M"
+  },
+  "tower of dawn|sarah j. maas": {
+    "coverId": 8506737,
+    "olid": "OL26832224M"
+  },
+  "kingdom of ash|sarah j. maas": {
+    "coverId": 8465438,
+    "olid": "OL26809543M"
+  },
+  "the thursday murder club|richard osman": {
+    "coverId": 10201431,
+    "olid": "OL28274140M"
+  },
+  "the man who died twice|richard osman": {
+    "coverId": 12002504,
+    "olid": "OL33891091M"
+  },
+  "the bullet that missed|richard osman": {
+    "coverId": 12929475,
+    "olid": "OL36886752M"
+  },
+  "the last devil to die|richard osman": {
+    "coverId": 13603213,
+    "olid": "OL46215267M"
+  },
+  "the impossible fortune|richard osman": {
+    "coverId": 15135944,
+    "olid": "OL60529470M"
+  },
+  "thursday murder club|richard osman": {
+    "coverId": 15233414,
+    "olid": "OL60891050M"
+  },
+  "twilight|stephenie meyer": {
+    "coverId": 12641977,
+    "olid": "OL25418289M"
+  },
+  "new moon|stephenie meyer": {
+    "coverId": 12643406
+  },
+  "eclipse|stephenie meyer": {
+    "coverId": 12643410
+  },
+  "breaking dawn|stephenie meyer": {
+    "coverId": 12643419,
+    "olid": "OL24709839M"
+  },
+  "the short second life of bree tanner|stephenie meyer": {
+    "coverId": 6390898,
+    "olid": "OL24236284M"
+  },
+  "life and death|stephenie meyer": {
+    "coverId": 9338703
+  },
+  "midnight sun|stephenie meyer": {
+    "coverId": 9946539,
+    "olid": "OL28125873M"
+  },
+  "the long way to a small, angry planet|becky chambers": {
+    "coverId": 8902659,
+    "olid": "OL26318316M"
+  },
+  "a closed and common orbit|becky chambers": {
+    "coverId": 8211950,
+    "olid": "OL26474379M"
+  },
+  "record of a spaceborn few|becky chambers": {
+    "coverId": 8352303
+  },
+  "the galaxy, and the ground within|becky chambers": {
+    "coverId": 10672244,
+    "olid": "OL29489024M"
+  },
+  "to be taught, if fortunate|becky chambers": {
+    "coverId": 10114139,
+    "olid": "OL28176837M"
+  },
+  "wayfarers|becky chambers": {
+    "coverId": 8216158,
+    "olid": "OL26477488M"
+  },
+  "every heart a doorway|seanan mcguire": {
+    "coverId": 7433973,
+    "olid": "OL25933911M"
+  },
+  "down among the sticks and bones|seanan mcguire": {
+    "coverId": 10834677,
+    "olid": "OL27238285M"
+  },
+  "beneath the sugar sky|seanan mcguire": {
+    "coverId": 8434141,
+    "olid": "OL26780101M"
+  },
+  "in an absent dream|seanan mcguire": {
+    "coverId": 8803666,
+    "olid": "OL27339516M"
+  },
+  "come tumbling down|seanan mcguire": {
+    "coverId": 9258751,
+    "olid": "OL27904533M"
+  },
+  "across the green grass fields|seanan mcguire": {
+    "coverId": 10152888,
+    "olid": "OL28219947M"
+  },
+  "where the drowned girls go|seanan mcguire": {
+    "coverId": 10858265,
+    "olid": "OL32210361M"
+  },
+  "lost in the moment and found|seanan mcguire": {
+    "coverId": 13136846,
+    "olid": "OL37879785M"
+  },
+  "mislaid in parts half-known|seanan mcguire": {
+    "coverId": 14038699,
+    "olid": "OL47437019M"
+  },
+  "through gates of garnet and gold|seanan mcguire": {
+    "coverId": 15169677,
+    "olid": "OL61108546M"
+  },
+  "wayward children|seanan mcguire": {
+    "coverId": 8451965,
+    "olid": "OL26797100M"
+  },
+  "the eye of the world|robert jordan": {
+    "coverId": 980232,
+    "olid": "OL8890304M"
+  },
+  "the great hunt|robert jordan": {
+    "coverId": 182352,
+    "olid": "OL1858597M"
+  },
+  "the dragon reborn|robert jordan": {
+    "coverId": 603239,
+    "olid": "OL9469484M"
+  },
+  "the shadow rising|robert jordan": {
+    "coverId": 603240,
+    "olid": "OL9516108M"
+  },
+  "the fires of heaven|robert jordan": {
+    "coverId": 603821,
+    "olid": "OL9323813M"
+  },
+  "lord of chaos|robert jordan": {
+    "coverId": 182398,
+    "olid": "OL1105059M"
+  },
+  "a crown of swords|robert jordan": {
+    "coverId": 10293497,
+    "olid": "OL28345140M"
+  },
+  "the path of daggers|robert jordan": {
+    "coverId": 182462
+  },
+  "winter’s heart|robert jordan": {
+    "coverId": 5021142,
+    "olid": "OL9857448M"
+  },
+  "crossroads of twilight|robert jordan": {
+    "coverId": 604208,
+    "olid": "OL9723565M"
+  },
+  "knife of dreams|robert jordan": {
+    "coverId": 871816,
+    "olid": "OL8875169M"
+  },
+  "new spring|robert jordan": {
+    "coverId": 886234,
+    "olid": "OL8920076M"
+  },
+  "the wheel of time|robert jordan": {
+    "coverId": 182352,
+    "olid": "OL1858597M"
+  },
+  "sword of destiny|andrzej sapkowski": {
+    "coverId": 11102583,
+    "olid": "OL32443094M"
+  },
+  "season of storms|andrzej sapkowski": {
+    "coverId": 8457629,
+    "olid": "OL26802123M"
+  },
+  "crossroads of ravens|andrzej sapkowski": {
+    "coverId": 15201230,
+    "olid": "OL60835284M"
+  },
+  "the witcher|andrzej sapkowski": {
+    "coverId": 10693418,
+    "olid": "OL32027120M"
+  }
+}
