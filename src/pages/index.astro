@@ -38,8 +38,7 @@ const shelves = Object.values(genres).map((genre) => ({
       <p class="hero-stat">{guideCount} reading-order guides</p>
       <p class="hero-card-copy">
         High-search series first: where to start, what to skip, and why a prequel
-        is often a later book. Each title in an order table has its own Amazon
-        search link.
+        is often a later book.
       </p>
       <p class="small muted hero-card-note">
         Covers come from Open Library when we have a reliable ID. Missing art
@@ -90,6 +89,7 @@ const shelves = Object.values(genres).map((genre) => ({
       </li>
       <li>
         Publication first. Contested prequel orders stay labeled.
+        We skip Harry Potter, Tolkien, A Song of Ice and Fire, and Star Wars.
       </li>
     </ul>
   </div>

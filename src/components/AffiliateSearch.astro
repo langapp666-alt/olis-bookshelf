@@ -1,5 +1,5 @@
 ---
-import { affiliateTag, amazonSearchUrl } from "../lib/site";
+import { amazonRel, amazonSearchUrl } from "../lib/site";
 
 interface Props {
   query: string;
@@ -10,13 +10,6 @@ const { query, label = query } = Astro.props;
 const href = amazonSearchUrl(query);
 ---
 
-<div class="disclosure-note">
-  <p class="eyebrow">Find the books</p>
-  <p>
-    Amazon search for <a href={href} rel="sponsored nofollow">{label}</a>. Associates tag
-    <code>{affiliateTag}</code>.
-  </p>
-  <p class="small muted">
-    As an Amazon Associate I earn from qualifying purchases.
-  </p>
-</div>
+<p>
+  <a href={href} rel={amazonRel}>{label}</a>
+</p>

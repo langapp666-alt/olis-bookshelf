@@ -1,5 +1,5 @@
 ---
-import { affiliateTag, amazonRel, amazonSearchUrl } from "../lib/site";
+import { amazonRel, amazonSearchUrl } from "../lib/site";
 
 interface Props {
   series: string;
@@ -19,23 +19,10 @@ const searchHref = amazonSearchUrl(`${series} ${author}`);
     {author} · {genreLabel}
   </p>
   <a class="btn" href={searchHref} rel={amazonRel}>Search the series on Amazon</a>
-  <p class="small muted affiliate-tagline">
-    Associates tag <code>{affiliateTag}</code>
-  </p>
-  <hr class="rule" />
-  <p class="small disclosure-copy">
-    <strong>As an Amazon Associate I earn from qualifying purchases.</strong>
-    Each title in the order tables links to an Amazon search for that book. Series
-    search is here if you want the whole shelf.
-  </p>
-  <p class="small aside-links">
-    <a href="/disclosure/">Full disclosure</a>
-    ·
-    <a href="/methodology/">How the lists are made</a>
-  </p>
   {
     sources.length > 0 && (
       <>
+        <hr class="rule" />
         <p class="small aside-sources-label"><strong>Sources</strong></p>
         <ul class="source-list small">
           {sources.map((source) => (

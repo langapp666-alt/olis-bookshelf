@@ -22,4 +22,4 @@ No display ads, sponsored rankings, or paid review placements in the current des
 
 > As an Amazon Associate I earn from qualifying purchases.
 
-Keep that sentence on the disclosure page and near affiliate links.
+Keep that sentence in the site footer and on `/disclosure/` only. Do not repeat it in guide prose, asides, docks, or house-rule copy.

@@ -1,5 +1,5 @@
 ---
-import { affiliateTag, amazonRel, amazonSearchUrl } from "../lib/site";
+import { amazonRel, amazonSearchUrl } from "../lib/site";
 
 interface Props {
   query: string;
@@ -12,12 +12,6 @@ const href = amazonSearchUrl(query);
 
 <div class="guide-dock">
   <div class="guide-dock-inner">
-    <p class="guide-dock-meta">
-      As an Amazon Associate I earn from qualifying purchases.
-      Tag <code>{affiliateTag}</code>
-      ·
-      <a href="/disclosure/">Disclosure</a>
-    </p>
     <a class="btn" href={href} rel={amazonRel}>Search {label} on Amazon</a>
   </div>
 </div>

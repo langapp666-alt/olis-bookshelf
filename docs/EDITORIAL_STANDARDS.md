@@ -47,4 +47,4 @@ Bookshop desk, not growth-hacking blog. Specific, calm, slightly dry. No purple 
 
 - We do not host pirated texts or “free PDF” links.
 - We do not claim a specific Associates income.
-- FTC disclosure stays in the footer and on `/disclosure/`.
+- FTC disclosure stays in the footer and on `/disclosure/` only. Do not repeat Associates wording in guide chrome or main content.
