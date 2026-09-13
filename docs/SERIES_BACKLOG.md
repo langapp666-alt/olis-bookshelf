@@ -115,6 +115,15 @@ Last updated: 2026-09-13
 | The Hitchhiker's Guide to the Galaxy | Douglas Adams | Space Opera / SFF | `hitchhikers-guide-reading-order` |
 | Kate Daniels | Ilona Andrews | Mystery / Thriller | `kate-daniels-reading-order` |
 | Legend | Marie Lu | Space Opera / SFF | `legend-reading-order` |
+| Zodiac Academy | Caroline Peckham and Susanne Valenti | Romance | `zodiac-academy-reading-order` |
+| Black Dagger Brotherhood | J. R. Ward | Romance | `black-dagger-brotherhood-reading-order` |
+| The Lunar Chronicles | Marissa Meyer | Space Opera / SFF | `lunar-chronicles-reading-order` |
+| The Bridge Kingdom | Danielle L. Jensen | Romance | `bridge-kingdom-reading-order` |
+| Lady of Darkness | Melissa K. Roehrich | Romance | `lady-of-darkness-reading-order` |
+| The Broken Kingdoms | L.J. Andrews | Romance | `broken-kingdoms-reading-order` |
+| An Ember in the Ashes | Sabaa Tahir | Epic Fantasy | `ember-in-the-ashes-reading-order` |
+| The Selection | Kiera Cass | Romance | `selection-reading-order` |
+| Fever | Karen Marie Moning | Romance | `fever-reading-order` |
 
 ## Queued
 
@@ -129,8 +138,9 @@ High-demand leftovers, in no particular order. Do not crowd out a higher-search 
 | Night Angel | Brent Weeks | Epic Fantasy | Finished trilogy plus later Kylar books. |
 | The Belgariad / Malloreon | David Eddings | Epic Fantasy | Two five-book runs; prequels look like book one. |
 | Warrior Cats (entry) | Erin Hunter | Epic Fantasy | Many arcs; people start on a later prophecy. |
-| The Fever Series | Karen Marie Moning | Romance | Novellas and Fever spin-offs. |
 | Kate Daniels world spin-offs | Ilona Andrews | Mystery / Thriller | Gunmetal Magic / Blood Heir look like new book ones. |
+| Shannara (entry) | Terry Brooks | Epic Fantasy | Many cycles; people start on a later sword. |
+| Forgotten Realms — Drizzt (entry) | R. A. Salvatore | Epic Fantasy | Homeland looks like book one of the wrong door. |
 
 ## Out of scope as primaries
 
