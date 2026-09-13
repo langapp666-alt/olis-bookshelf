@@ -5,6 +5,7 @@ Fifteen long-tail series for Oli's Bookshelf. Primaries we are **not** chasing: 
 Status key:
 
 - **published** — a guide exists in `src/content/guides/` and is marked `status: reviewed`
+- **published** — a guide exists in `src/content/guides/` with `status: published`
 - **queued** — research not started beyond this line
 
 Last updated: 2026-09-13

@@ -1,7 +1,6 @@
 ---
 import { getCollection, render } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import DraftBanner from "../../components/DraftBanner.astro";
 import AffiliatePanel from "../../components/AffiliatePanel.astro";
 import AffiliateDock from "../../components/AffiliateDock.astro";
 import { formatDate, genres } from "../../lib/site";
@@ -27,12 +26,10 @@ const genre = genres[guide.data.genre];
         <h1>{guide.data.title}</h1>
         <p class="lede">{guide.data.description}</p>
         <div class="pill-row" style="margin:1rem 0 0;">
-          {guide.data.status === "draft" && <span class="pill draft">Draft</span>}
           <span class="pill">{guide.data.author}</span>
-          <span class="pill">Verified {formatDate(guide.data.lastVerified)}</span>
+          <span class="pill">Checked {formatDate(guide.data.lastVerified)}</span>
         </div>
       </header>
-      {guide.data.status === "draft" && <DraftBanner flags={guide.data.reviewFlags} />}
       <Content />
     </div>
     <aside class="guide-aside">

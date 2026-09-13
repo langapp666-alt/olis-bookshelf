@@ -71,7 +71,7 @@ No custom domain is required.
 5. Save and deploy. Cloudflare gives the project a free `https://<project-name>.pages.dev` URL.
 6. Copy that hostname into `site` in `astro.config.mjs` so the sitemap and `robots.txt` use the real origin, then redeploy.
 
-Preview deployments on pull requests also get `*.pages.dev` URLs. That is enough to share drafts. Do not set up Associates or a custom domain as part of this scaffold.
+The public origin is `https://olis-bookshelf.pages.dev`.
 
 ## Affiliate placeholder
 
