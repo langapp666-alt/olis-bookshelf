@@ -4,7 +4,7 @@ How a series guide goes from backlog line to a published page.
 
 ## 1. Pick from the backlog
 
-Use `docs/SERIES_BACKLOG.md`. Do not add Harry Potter, Tolkien, ASOIAF, or Star Wars as primaries.
+Use `docs/SERIES_BACKLOG.md`. High-search titles are in scope when the order is still contested. Star Wars remains out as a primary unless a later pass adds a focused novel-only path.
 
 ## 2. Collect sources
 

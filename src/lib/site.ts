@@ -19,19 +19,19 @@ export const genres = {
     slug: "space-opera",
     label: "Space Opera / SFF",
     blurb:
-      "Crews, stations, and political machinery. Novel versus novella, and the prequels that spoil if you treat them as on-ramps.",
+      "Crews, stations, silos, and civilizational machinery. Novel versus novella, and the prequels that spoil if you treat them as on-ramps.",
   },
   "mystery-thriller": {
     slug: "mystery-thriller",
     label: "Mystery / Thriller",
     blurb:
-      "Detective series in publication order, plus the spin-offs that look optional until a later book assumes you have read them.",
+      "Detective series and thriller paths in publication order, plus the spin-offs that look optional until a later book assumes you have read them.",
   },
   romance: {
     slug: "romance",
     label: "Romance",
     blurb:
-      "Family sagas and long historical runs where the screen order is not the book order, and prequels look like book one.",
+      "Family sagas, romantasy runs, and long historical shelves where the screen order is not the book order, and prequels look like book one.",
   },
 } as const;
 

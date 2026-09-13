@@ -41,8 +41,8 @@ const shelves = Object.values(genres).map((genre) => ({
         is often a later book.
       </p>
       <p class="small muted hero-card-note">
-        Harry Potter, Tolkien, A Song of Ice and Fire, and Star Wars are not
-        primary targets. Those paths are already mapped.
+        Covers come from Open Library when we have a reliable ID. Missing art
+        is skipped; we do not hotlink Amazon images.
       </p>
     </aside>
   </section>
@@ -52,7 +52,7 @@ const shelves = Object.values(genres).map((genre) => ({
     <input
       type="search"
       name="q"
-      placeholder="Wheel of Time, Reacher, Bridgerton…"
+      placeholder="Fourth Wing, Hobbit, Housemaid, Reacher…"
       autocomplete="off"
       data-catalog-filter
     />
@@ -84,6 +84,11 @@ const shelves = Object.values(genres).map((genre) => ({
       <li>No jacket copy, chapter quotes, or invented reader reactions.</li>
       <li>No star ratings, and no “best book in the series.”</li>
       <li>
+        Amazon Associates is active. Title and series search links may earn a
+        commission; we do not promise income.
+      </li>
+      <li>
+        Publication first. Contested prequel orders stay labeled.
         We skip Harry Potter, Tolkien, A Song of Ice and Fire, and Star Wars.
       </li>
     </ul>

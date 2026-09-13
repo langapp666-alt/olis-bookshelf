@@ -26,30 +26,15 @@ npm run preview  # serves dist/ locally
 
 ## What’s on the site
 
+Seventy-plus reading-order guides live in `src/content/guides/`. The home page, `/guides/`, and the four genre hubs list them automatically. The full published table is in `docs/SERIES_BACKLOG.md`.
+
+High-search paths now include Tolkien, Harry Potter, Bobiverse, Freida McFadden, Silo/Wool, Hunger Games, focused Stephen King pages, Broken Earth, Poppy War, Wayward Children, the Maas series, Empyrean, a Cosmere starter (not a 40-book spreadsheet), and other demand shelves.
+
+Order tables show Open Library covers when `src/data/covers.json` has a reliable ID. Refresh IDs with `node src/scripts/fetch-covers.mjs`. Do not scrape Amazon images.
+
 | Page | Route |
 | --- | --- |
 | Home | `/` |
-| Murderbot Diaries | `/guides/murderbot-diaries-reading-order/` |
-| The Expanse | `/guides/the-expanse-reading-order/` |
-| Discworld City Watch | `/guides/discworld-city-watch-reading-order/` |
-| Rivers of London | `/guides/rivers-of-london-reading-order/` |
-| The Locked Tomb | `/guides/the-locked-tomb-reading-order/` |
-| Mistborn Era 1 + 2 | `/guides/mistborn-era-1-2-reading-order/` |
-| The Dresden Files | `/guides/dresden-files-reading-order/` |
-| The Craft Sequence | `/guides/craft-sequence-reading-order/` |
-| Cormoran Strike | `/guides/cormoran-strike-reading-order/` |
-| The Culture | `/guides/the-culture-reading-order/` |
-| The Books of Babel | `/guides/books-of-babel-reading-order/` |
-| Wheel of Time | `/guides/wheel-of-time-reading-order/` |
-| Red Rising | `/guides/red-rising-reading-order/` |
-| Stormlight Archive | `/guides/stormlight-archive-reading-order/` |
-| First Law | `/guides/first-law-reading-order/` |
-| Jack Reacher | `/guides/jack-reacher-reading-order/` |
-| Bridgerton | `/guides/bridgerton-reading-order/` |
-| Outlander | `/guides/outlander-reading-order/` |
-| Witcher novels | `/guides/witcher-novels-reading-order/` |
-| Dune novels | `/guides/dune-novels-reading-order/` |
-| Malazan Book of the Fallen | `/guides/malazan-book-of-the-fallen-reading-order/` |
 | All guides | `/guides/` |
 | Epic Fantasy hub | `/genres/epic-fantasy/` |
 | Space Opera / SFF hub | `/genres/space-opera/` |
@@ -63,7 +48,7 @@ npm run preview  # serves dist/ locally
 
 House docs (not shipped as pages):
 
-- `docs/SERIES_BACKLOG.md` — 15 long-tail series
+- `docs/SERIES_BACKLOG.md` — published slugs plus queued leftovers
 - `docs/EDITORIAL_STANDARDS.md`
 - `docs/HOW_IT_EARNS.md`
 - `docs/CONTENT_WORKFLOW.md`

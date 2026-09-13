@@ -14,6 +14,10 @@ const guides = defineCollection({
     slug: z.string(),
     series: z.string(),
     author: z.string(),
+    coverId: z.number().int().positive().optional(),
+    isbn: z.string().optional(),
+    olid: z.string().optional(),
+    gbid: z.string().optional(),
     status: z.enum(["draft", "published", "reviewed"]).default("published"),
     reviewFlags: z.array(z.string()).default([]),
     sources: z
