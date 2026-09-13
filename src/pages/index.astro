@@ -22,7 +22,7 @@ const shelves = Object.values(genres).map((genre) => ({
   description="Reading-order maps for long science fiction, fantasy, mystery, and romance series. Publication first, chronology when it matters, and a few next reads with reasons."
   wide
 >
-  <section class="masthead">
+  <section class="masthead" data-masthead>
     <div class="masthead-copy">
       <p class="eyebrow">Reading-order catalog</p>
       <h1>The next book, not the loudest one.</h1>
@@ -78,7 +78,7 @@ const shelves = Object.values(genres).map((genre) => ({
               </h2>
               <p class="shelf-blurb">{genre.blurb}</p>
             </div>
-            <p class="shelf-count">
+            <p class="shelf-count" data-shelf-total={guides.length}>
               <a href={`/genres/${genre.slug}/`}>
                 {guides.length === 1 ? "1 map" : `${guides.length} maps`}
               </a>

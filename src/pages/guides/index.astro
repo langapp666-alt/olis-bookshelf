@@ -43,7 +43,7 @@ const shelves = Object.values(genres).map((genre) => ({
                 <a href={`/genres/${genre.slug}/`}>{genre.label}</a>
               </h2>
             </div>
-            <p class="shelf-count">
+            <p class="shelf-count" data-shelf-total={guides.length}>
               <a href={`/genres/${genre.slug}/`}>
                 {guides.length === 1 ? "1 map" : `${guides.length} maps`}
               </a>

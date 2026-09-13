@@ -4,13 +4,13 @@ import { genres, type GenreSlug } from "./site";
 /** High-traffic, often-misstarted series — one per desk slot, mixed shelves. */
 export const featuredSlugs = [
   "empyrean-reading-order",
-  "lord-of-the-rings-reading-order",
+  "harry-potter-reading-order",
   "dune-novels-reading-order",
   "housemaid-reading-order",
-  "harry-potter-reading-order",
-  "murderbot-diaries-reading-order",
   "acotar-reading-order",
+  "murderbot-diaries-reading-order",
   "jack-reacher-reading-order",
+  "lord-of-the-rings-reading-order",
 ] as const;
 
 export const catalogChips: { slug: GenreSlug | ""; label: string }[] = [

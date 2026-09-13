@@ -6,6 +6,7 @@ export function bindCatalogFind(root: ParentNode = document) {
   const items = [...root.querySelectorAll<HTMLElement>("[data-catalog-item]")];
   const shelves = [...root.querySelectorAll<HTMLElement>("[data-shelf]")];
   const featured = root.querySelector<HTMLElement>("[data-featured]");
+  const masthead = root.querySelector<HTMLElement>("[data-masthead]");
   const empty = root.querySelector<HTMLElement>("[data-catalog-empty]");
   const countEl = root.querySelector<HTMLElement>("[data-catalog-count]");
   const chips = [...root.querySelectorAll<HTMLButtonElement>("[data-catalog-genre]")];
@@ -46,14 +47,26 @@ export function bindCatalogFind(root: ParentNode = document) {
     });
 
     shelves.forEach((shelf) => {
-      const any = [...shelf.querySelectorAll<HTMLElement>("[data-catalog-item]")].some(
+      const shown = [...shelf.querySelectorAll<HTMLElement>("[data-catalog-item]")].filter(
         (item) => !item.hidden,
       );
-      shelf.hidden = !any;
+      shelf.hidden = shown.length === 0;
+      const count = shelf.querySelector<HTMLElement>("[data-shelf-total]");
+      if (count) {
+        const total = Number(count.getAttribute("data-shelf-total") || shown.length);
+        const n = q || genre ? shown.length : total;
+        const label = n === 1 ? "1 map" : `${n} maps`;
+        const link = count.querySelector("a");
+        if (link) link.textContent = label;
+        else count.textContent = label;
+      }
     });
 
     if (featured) {
       featured.hidden = Boolean(q || genre);
+    }
+    if (masthead) {
+      masthead.hidden = Boolean(q || genre);
     }
 
     if (empty) {

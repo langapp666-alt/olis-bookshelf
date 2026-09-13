@@ -43,6 +43,7 @@ const seriesCoverAliases: Record<string, string> = {
   "the culture|iain m. banks": "consider phlebas|iain m. banks",
   "the locked tomb|tamsyn muir": "gideon the ninth|tamsyn muir",
   "remembrance of earth's past|cixin liu": "the three-body problem|cixin liu",
+  "the lord of the rings|j. r. r. tolkien": "the fellowship of the ring|j. r. r. tolkien",
 };
 
 export function lookupCover(
@@ -52,7 +53,8 @@ export function lookupCover(
 ): CoverRecord | undefined {
   if (explicit && hasCover(explicit)) return explicit;
   const key = coverKey(title, author);
-  const record = covers[key] ?? covers[seriesCoverAliases[key] ?? ""];
+  const aliased = seriesCoverAliases[key];
+  const record = (aliased ? covers[aliased] : undefined) ?? covers[key];
   return record && hasCover(record) ? record : undefined;
 }
 
