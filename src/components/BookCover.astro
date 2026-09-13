@@ -26,8 +26,8 @@ const dims: Record<CoverSize, { w: number; h: number; ol: "S" | "M" | "L" }> = {
 const { title, cover, size = "table", priority = false } = Astro.props;
 const { w, h, ol } = dims[size];
 const primary = cover ? openLibraryCoverUrl(cover, ol) : undefined;
-const large = cover && size === "poster" ? openLibraryCoverUrl(cover, "L") : undefined;
-const medium = cover && size === "poster" ? openLibraryCoverUrl(cover, "M") : undefined;
+const large = cover && (size === "poster" || size === "shelf") ? openLibraryCoverUrl(cover, "L") : undefined;
+const medium = cover && (size === "poster" || size === "shelf") ? openLibraryCoverUrl(cover, "M") : undefined;
 const fallback = cover ? googleBooksCoverUrl(cover) : undefined;
 const src = primary ?? fallback;
 const nextSrc = primary && fallback ? fallback : undefined;
@@ -36,7 +36,7 @@ const sizesAttr =
   size === "poster"
     ? "(min-width: 980px) 16rem, 42vw"
     : size === "shelf"
-      ? "(min-width: 980px) 11rem, (min-width: 720px) 18vw, 42vw"
+      ? "(min-width: 1200px) 10rem, (min-width: 980px) 12rem, (min-width: 720px) 18vw, 42vw"
       : size === "related"
         ? "4.5rem"
         : `${w}px`;

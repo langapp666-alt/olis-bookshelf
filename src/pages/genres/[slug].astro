@@ -19,11 +19,32 @@ const guides = sortGuides(
 );
 ---
 
-<BaseLayout title={genre.label} description={genre.blurb} wide>
+<BaseLayout
+  title={`${genre.label} reading-order guides`}
+  description={genre.blurb}
+  wide
+  jsonLd={{
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: `${genre.label} reading-order guides`,
+    url: new URL(`/genres/${genre.slug}/`, Astro.site).href,
+    description: genre.blurb,
+  }}
+>
   <header class="page-head catalog-page-head">
     <p class="eyebrow">Shelf</p>
-    <h1>{genre.label}</h1>
+    <h1>{genre.label} reading-order guides</h1>
     <p class="lede">{genre.blurb}</p>
+    <p class="shelf-jump">
+      <a href="/guides/">All maps</a>
+      {
+        Object.values(genres)
+          .filter((other) => other.slug !== genre.slug)
+          .map((other) => (
+            <a href={`/genres/${other.slug}/`}>{other.label}</a>
+          ))
+      }
+    </p>
   </header>
 
   <CatalogFind id="find" total={guides.length} chips={false} placeholder="Series or author on this shelf" />

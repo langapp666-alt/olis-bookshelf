@@ -6,10 +6,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   <header class="page-head">
     <p class="eyebrow">404</p>
     <h1>This shelf is empty</h1>
-    <p class="lede">The page you asked for is not in the shop.</p>
+    <p class="lede">
+      The page you asked for is not in the shop. Try the{" "}
+      <a href="/guides/">reading-order catalog</a> or a shelf:{" "}
+      <a href="/genres/epic-fantasy/">Fantasy</a>,{" "}
+      <a href="/genres/space-opera/">Space</a>,{" "}
+      <a href="/genres/mystery-thriller/">Mystery</a>,{" "}
+      <a href="/genres/romance/">Romance</a>.
+    </p>
   </header>
   <div class="btn-row">
-    <a class="btn" href="/">Back to the guides</a>
-    <a class="btn btn-secondary" href="/methodology/">How the lists are made</a>
+    <a class="btn" href="/guides/">Browse the guides</a>
+    <a class="btn btn-secondary" href="/">Home</a>
   </div>
 </BaseLayout>
