@@ -1,12 +1,12 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import CatalogFind from "../../components/CatalogFind.astro";
 import GuideCard from "../../components/GuideCard.astro";
+import { sortGuides } from "../../lib/catalog";
 import { genres, type GenreSlug } from "../../lib/site";
 
-const allGuides = (await getCollection("guides")).sort((a, b) =>
-  a.data.series.localeCompare(b.data.series),
-);
+const allGuides = sortGuides(await getCollection("guides"));
 
 const shelves = Object.values(genres).map((genre) => ({
   genre,
@@ -17,40 +17,41 @@ const shelves = Object.values(genres).map((genre) => ({
 <BaseLayout
   title="Reading-order guides"
   description="All Oli's Bookshelf series reading-order guides, grouped by shelf. Publication first, chronology when it matters."
+  wide
 >
-  <header class="page-head">
+  <header class="page-head catalog-page-head">
     <p class="eyebrow">Catalog</p>
     <h1>Reading-order guides</h1>
     <p class="lede">
-      {allGuides.length} series maps. Publication order first. Chronology when it
-      actually changes the read.
+      {allGuides.length} series maps, grouped by shelf. Publication order first.
+      Chronology when it actually changes the read.
     </p>
   </header>
 
-  <label class="catalog-filter">
-    <span class="catalog-filter-label">Find a series</span>
-    <input
-      type="search"
-      name="q"
-      placeholder="Series or author"
-      autocomplete="off"
-      data-catalog-filter
-    />
-  </label>
+  <CatalogFind id="find" total={allGuides.length} placeholder="Series or author" />
+
+  <p class="catalog-empty" data-catalog-empty hidden>No series on this shelf matches that search.</p>
 
   {
     shelves.map(({ genre, guides }) =>
       guides.length > 0 ? (
         <section class="shelf-block" data-shelf>
-          <header class="section-head">
-            <p class="eyebrow">
-              <a href={`/genres/${genre.slug}/`}>{genre.label}</a>
+          <header class="shelf-head">
+            <div>
+              <p class="eyebrow">Shelf</p>
+              <h2>
+                <a href={`/genres/${genre.slug}/`}>{genre.label}</a>
+              </h2>
+            </div>
+            <p class="shelf-count">
+              <a href={`/genres/${genre.slug}/`}>
+                {guides.length === 1 ? "1 map" : `${guides.length} maps`}
+              </a>
             </p>
-            <h2>{guides.length === 1 ? "1 guide" : `${guides.length} guides`}</h2>
           </header>
-          <div class="catalog catalog-compact">
+          <div class="cover-wall">
             {guides.map((guide) => (
-              <GuideCard guide={guide} compact />
+              <GuideCard guide={guide} variant="shelf" />
             ))}
           </div>
         </section>
@@ -58,25 +59,3 @@ const shelves = Object.values(genres).map((genre) => ({
     )
   }
 </BaseLayout>
-
-<script>
-  const input = document.querySelector<HTMLInputElement>("[data-catalog-filter]");
-  if (input) {
-    const items = [...document.querySelectorAll<HTMLElement>("[data-catalog-item]")];
-    const shelves = [...document.querySelectorAll<HTMLElement>("[data-shelf]")];
-    const apply = () => {
-      const q = input.value.trim().toLowerCase();
-      items.forEach((item) => {
-        const hay = item.getAttribute("data-catalog-text") || "";
-        item.hidden = Boolean(q) && !hay.includes(q);
-      });
-      shelves.forEach((shelf) => {
-        const visible = [...shelf.querySelectorAll<HTMLElement>("[data-catalog-item]")].some(
-          (item) => !item.hidden,
-        );
-        shelf.hidden = !visible;
-      });
-    };
-    input.addEventListener("input", apply);
-  }
-</script>

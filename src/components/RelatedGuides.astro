@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
+import GuideCard from "./GuideCard.astro";
 
 interface Props {
   guides: CollectionEntry<"guides">[];
@@ -13,14 +14,11 @@ const { guides } = Astro.props;
     <section class="related-guides" aria-labelledby="related-guides-heading">
       <p class="eyebrow">Same shelf</p>
       <h2 id="related-guides-heading">Related guides</h2>
-      <ul class="related-guides-list">
+      <div class="cover-wall is-related">
         {guides.map((guide) => (
-          <li>
-            <a href={`/guides/${guide.data.slug}/`}>{guide.data.series}</a>
-            <span class="related-guides-author">{guide.data.author}</span>
-          </li>
+          <GuideCard guide={guide} variant="related" filterable={false} />
         ))}
-      </ul>
+      </div>
     </section>
   )
 }

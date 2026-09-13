@@ -8,9 +8,10 @@ interface Props {
   title: string;
   description: string;
   dock?: boolean;
+  wide?: boolean;
 }
 
-const { title, description, dock = false } = Astro.props;
+const { title, description, dock = false, wide = false } = Astro.props;
 const pageTitle = title === siteName ? title : `${title} · ${siteName}`;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 ---
@@ -28,6 +29,8 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://covers.openlibrary.org" />
+    <link rel="dns-prefetch" href="https://covers.openlibrary.org" />
     <link
       href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500&family=Schibsted+Grotesk:wght@400;500;600&display=swap"
       rel="stylesheet"
@@ -36,14 +39,14 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonical} />
-    <meta name="theme-color" content="#f4f0e6" />
+    <meta name="theme-color" content="#f7f3ea" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <div class="site-shell">
       <Header />
       <main id="main" class:list={["site-main", { "has-dock": dock }]}>
-        <div class="wrap">
+        <div class:list={["wrap", { "wrap-wide": wide }]}>
           <slot />
         </div>
       </main>
