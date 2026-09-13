@@ -13,7 +13,7 @@ Help a first-time reader pick a starting book and a path through a long series w
 3. **No fake reviews.** No invented reader quotes, no star ratings, no “I stayed up until 3am.”
 4. **No spam.** One guide per series spine. No doorway pages that only exist to host affiliate links.
 5. **No income claims.** We do not publish revenue, RPM, or “this niche is easy money.”
-6. **Drafts stay drafts.** New guides use `status: draft` until a person checks titles, dates, and flags.
+6. **Internal accuracy notes stay off the public chrome.** New work can use `status: draft` in frontmatter. Published pages use `status: published` and do not render draft banners, stamps, or review-flag lists. Keep remaining accuracy notes in `docs/` or HTML comments.
 7. **Affiliate tags stay inert until Associates is real.** Use `TODO_AFFILIATE_TAG` only. See `HOW_IT_EARNS.md`.
 
 ## Sourcing

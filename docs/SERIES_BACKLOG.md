@@ -4,12 +4,12 @@ Fifteen long-tail series for Oli's Bookshelf. Primaries we are **not** chasing: 
 
 Status key:
 
-- **drafted** — a guide exists in `src/content/guides/` and is marked `status: draft` until human review
+- **published** — a guide exists in `src/content/guides/` with `status: published`
 - **queued** — research not started beyond this line
 
 Last updated: 2026-09-12
 
-## Drafted
+## Published
 
 | Series | Author | Genre hub | Slug |
 | --- | --- | --- | --- |

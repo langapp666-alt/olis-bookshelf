@@ -11,41 +11,44 @@ const guides = (await getCollection("guides")).sort((a, b) =>
 
 <BaseLayout
   title={siteName}
-  description="Reading-order and what-to-read-next guides for long SFF and mystery series. Drafts are marked until a person reviews them."
+  description="Reading-order maps for long science fiction, fantasy, and mystery series. Publication first, chronology when it matters, and a few next reads with reasons."
 >
   <section class="hero">
     <div class="hero-copy">
-      <p class="eyebrow">Long series, short arguments</p>
-      <h1>Series reading order,<br />then what to read next.</h1>
+      <p class="eyebrow">Reading orders</p>
+      <h1>The next book, not the loudest one.</h1>
       <p class="lede">
-        Oli's Bookshelf is a niche desk for publication order, the chronological traps that spoil,
-        and a few honest next-read suggestions. No scraped blurbs, no star ratings, no “I made $12k
-        in a month.”
+        Long series hide the path: prequels that spoil, novellas that look skippable, lists that
+        quietly add picture books. We start with publication order, then say where chronology
+        actually changes the read.
       </p>
       <div class="btn-row">
-        <a class="btn" href="/methodology/">How we build lists</a>
-        <a class="btn btn-secondary" href="/disclosure/">Affiliate disclosure</a>
+        <a class="btn" href="#guides">Open the guides</a>
+        <a class="btn btn-secondary" href="/methodology/">How the lists are made</a>
       </div>
     </div>
     <aside class="hero-card">
-      <p class="eyebrow">Currently drafted</p>
-      <p class="hero-stat">3 guides on the desk</p>
-      <p style="margin:0 0 0.6rem;">
-        Murderbot, The Expanse, and Discworld City Watch are in the collection and marked
-        <strong>DRAFT</strong> until a person reviews them.
-      </p>
-      <p class="small muted" style="margin:0;">
-        Twelve more long-tail series sit in the backlog. Harry Potter, Tolkien, A Song of Ice and
-        Fire, and Star Wars are not primary targets.
-      </p>
+      <p class="eyebrow">On the shelf</p>
+      <p class="hero-stat">Three series, mapped</p>
+      <ul class="shelf-list">
+        <li>
+          <a href="/guides/murderbot-diaries-reading-order/">The Murderbot Diaries</a>
+        </li>
+        <li>
+          <a href="/guides/the-expanse-reading-order/">The Expanse</a>
+        </li>
+        <li>
+          <a href="/guides/discworld-city-watch-reading-order/">Discworld City Watch</a>
+        </li>
+      </ul>
     </aside>
   </section>
 
-  <div class="ornament" aria-hidden="true"><span class="ornament-mark">✦</span></div>
+  <hr class="rule-break" />
 
-  <header class="section-head">
-    <p class="eyebrow">On the desk</p>
-    <h2>Draft guides</h2>
+  <header class="section-head" id="guides">
+    <p class="eyebrow">Guides</p>
+    <h2>Publication order, then the traps</h2>
   </header>
   <div class="catalog">
     {guides.map((guide, i) => <GuideCard guide={guide} index={i + 1} />)}
@@ -67,13 +70,13 @@ const guides = (await getCollection("guides")).sort((a, b) =>
     }
   </div>
 
-  <div class="panel colophon">
-    <h2>What you will not find here</h2>
+  <div class="house-note colophon">
+    <h2>House rules</h2>
     <ul>
-      <li>Copied jacket copy or copyrighted book text</li>
-      <li>Fake reviews or invented “reader reactions”</li>
-      <li>Live Amazon Associates tags (the placeholder is <code>TODO_AFFILIATE_TAG</code>)</li>
-      <li>Income claims or “this site prints money” language</li>
+      <li>No jacket copy, chapter quotes, or invented reader reactions.</li>
+      <li>No star ratings, and no “best book in the series.”</li>
+      <li>Amazon Associates is not active. Search links carry a placeholder tag only.</li>
+      <li>We skip Harry Potter, Tolkien, A Song of Ice and Fire, and Star Wars. Those paths are already mapped.</li>
     </ul>
   </div>
 </BaseLayout>

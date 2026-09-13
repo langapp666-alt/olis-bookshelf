@@ -4,16 +4,12 @@ import Logo from "./Logo.astro";
 const pathname = Astro.url.pathname;
 
 const shelves = [
-  { href: "/genres/epic-fantasy/", label: "Epic Fantasy" },
-  { href: "/genres/space-opera/", label: "Space Opera" },
+  { href: "/genres/epic-fantasy/", label: "Fantasy" },
+  { href: "/genres/space-opera/", label: "Space" },
   { href: "/genres/mystery-thriller/", label: "Mystery" },
 ];
 
-const house = [
-  { href: "/methodology/", label: "Methodology" },
-  { href: "/about/", label: "About" },
-  { href: "/disclosure/", label: "Disclosure" },
-];
+const house = [{ href: "/about/", label: "About" }];
 
 function isCurrent(href: string) {
   if (href === "/") return pathname === "/";
@@ -39,7 +35,6 @@ function isCurrent(href: string) {
         <nav class="nav" aria-label="Primary">
           <div class="nav-group">
             <p class="nav-label">Shelves</p>
-            <a href="/" aria-current={isCurrent("/") ? "page" : undefined}>Home</a>
             {
               shelves.map((link) => (
                 <a href={link.href} aria-current={isCurrent(link.href) ? "page" : undefined}>
@@ -49,7 +44,7 @@ function isCurrent(href: string) {
             }
           </div>
           <div class="nav-group">
-            <p class="nav-label">The desk</p>
+            <p class="nav-label">The shop</p>
             {
               house.map((link) => (
                 <a href={link.href} aria-current={isCurrent(link.href) ? "page" : undefined}>
@@ -67,11 +62,17 @@ function isCurrent(href: string) {
 <script>
   const box = document.querySelector<HTMLDetailsElement>("[data-nav-box]");
   if (box) {
-    const desktop = window.matchMedia("(min-width: 900px)");
+    const desktop = window.matchMedia("(min-width: 980px)");
     const sync = () => {
       box.open = desktop.matches;
     };
     sync();
     desktop.addEventListener("change", sync);
+
+    box.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        if (!desktop.matches) box.open = false;
+      });
+    });
   }
 </script>

@@ -7,11 +7,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   description="How Oli's Bookshelf builds reading-order lists: publication first, chronology second, sources on the page."
 >
   <header class="page-head">
-    <p class="eyebrow">How the lists get made</p>
-    <h1>Methodology</h1>
+    <p class="eyebrow">Methodology</p>
+    <h1>How the lists are made</h1>
     <p class="lede">
-      A reading-order page is a research note, not a vibe. We treat publication order as the default
-      first read, then explain chronological exceptions without dumping spoilers into the table.
+      A reading-order page is a research note. Publication order is the default first read.
+      Chronological exceptions get explained without dumping spoilers into the table.
     </p>
   </header>
 
@@ -40,28 +40,22 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         also liked.”
       </li>
       <li>
-        <strong>Leave the human-review flags on.</strong> Dates, collected editions, and retailer
-        blurbs go stale. Drafts stay drafts until someone checks them.
+        <strong>Date the sources.</strong> Collected editions, retailer blurbs, and official URLs
+        move. Each guide records the day we last opened its sources.
       </li>
     </ol>
 
     <h2>What counts as a source</h2>
     <p>
-      Author sites, publisher reading-order pages, and ISFDB-style publication records. Fandom wikis
-      can point at a primary source; they are not the source. We record the URL on the guide and the
-      date we last opened it.
+      Author sites, publisher reading-order pages, and bibliographic publication records. Fandom
+      wikis can point at a primary source; they are not the source. We put the URL on the guide.
     </p>
 
-    <h2>What we refuse to invent</h2>
+    <h2>What we will not invent</h2>
     <ul>
       <li>Plot summaries that retell a chapter</li>
       <li>Star ratings or “best book in the series”</li>
       <li>Income or traffic claims</li>
     </ul>
-
-    <p>
-      The operational checklist is <code>docs/CONTENT_WORKFLOW.md</code>. The series queue is
-      <code>docs/SERIES_BACKLOG.md</code>.
-    </p>
   </div>
 </BaseLayout>
