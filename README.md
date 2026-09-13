@@ -4,7 +4,7 @@ Series reading-order and “what to read next” guides for long science fiction
 
 This is a static [Astro](https://astro.build) site. Guides live in a Markdown/MDX content collection.
 
-Amazon Associates is **not** active. Book search links use the placeholder tag `TODO_AFFILIATE_TAG` only.
+Amazon Associates is **active**. Book search links use the Associates tag from `PUBLIC_AFFILIATE_TAG` / `src/lib/site.ts`.
 
 ## Local development
 
@@ -65,13 +65,9 @@ No custom domain is required.
 
 The public origin is `https://olis-bookshelf.pages.dev`.
 
-## Affiliate placeholder
+## Affiliate tag
 
-`src/lib/site.ts` exports `affiliateTag = "TODO_AFFILIATE_TAG"`. Do not replace it with a live tag until:
-
-- Associates is approved
-- `/disclosure/` still says how links work
-- `docs/HOW_IT_EARNS.md` records the go-live date
+`src/lib/site.ts` exports `affiliateTag` from `PUBLIC_AFFILIATE_TAG` (default `olisbookshelf-20`). Keep `/disclosure/` accurate if the tag changes. Search URLs are fine; do not invent ASINs.
 
 ## Stack
 

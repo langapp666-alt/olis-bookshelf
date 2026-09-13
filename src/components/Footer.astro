@@ -1,4 +1,6 @@
 ---
+import { affiliateTag } from "../lib/site";
+
 const year = new Date().getUTCFullYear();
 ---
 
@@ -18,8 +20,8 @@ const year = new Date().getUTCFullYear();
         <a href="/disclosure/">Disclosure</a>
       </p>
       <p class="muted" style="margin:0;color:var(--footer-muted);">
-        As an Amazon Associate I earn from qualifying purchases. Amazon Associates is not active.
-        Search links use the placeholder tag <code>TODO_AFFILIATE_TAG</code>.
+        As an Amazon Associate I earn from qualifying purchases. Search links use our Associates
+        tag <code>{affiliateTag}</code>.
       </p>
       <p class="muted" style="margin:0.7rem 0 0;color:var(--footer-muted);">© {year} Oli's Bookshelf</p>
     </div>

@@ -14,7 +14,7 @@ Help a first-time reader pick a starting book and a path through a long series w
 4. **No spam.** One guide per series spine. No doorway pages that only exist to host affiliate links.
 5. **No income claims.** We do not publish revenue, RPM, or “this niche is easy money.”
 6. **Internal accuracy notes stay off the public chrome.** New work can use `status: draft` in frontmatter. Published pages use `status: published` and do not render draft banners, stamps, or review-flag lists. Keep remaining accuracy notes in `docs/` or HTML comments.
-7. **Affiliate tags stay inert until Associates is real.** Use `TODO_AFFILIATE_TAG` only. See `HOW_IT_EARNS.md`.
+7. **Affiliate links use the live site tag.** `affiliateTag` / `PUBLIC_AFFILIATE_TAG` in `src/lib/site.ts`. Do not invent a second tag. See `HOW_IT_EARNS.md`.
 
 ## Sourcing
 
@@ -45,5 +45,5 @@ Bookshop desk, not growth-hacking blog. Specific, calm, slightly dry. No purple 
 ## Legal / ethics
 
 - We do not host pirated texts or “free PDF” links.
-- We do not claim Associates earnings before the program is active.
+- We do not claim a specific Associates income.
 - FTC disclosure stays in the footer and on `/disclosure/`.

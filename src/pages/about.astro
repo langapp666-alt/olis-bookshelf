@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { affiliateTag } from "../lib/site";
 ---
 
 <BaseLayout
@@ -43,8 +44,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         page number.
       </li>
       <li>
-        <strong>Money stays plain.</strong> Amazon Associates is not active. Search URLs use
-        <code>TODO_AFFILIATE_TAG</code> only. See the <a href="/disclosure/">disclosure</a>.
+        <strong>Money stays plain.</strong> Amazon Associates is active. Search URLs use the site
+        tag <code>{affiliateTag}</code>. See the <a href="/disclosure/">disclosure</a>.
       </li>
     </ul>
 
