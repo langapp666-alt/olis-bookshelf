@@ -89,6 +89,41 @@ Last updated: 2026-09-13
 | Riyria Revelations | Michael J. Sullivan | Epic Fantasy | `riyria-revelations-reading-order` |
 | Thursday Murder Club | Richard Osman | Mystery / Thriller | `thursday-murder-club-reading-order` |
 | A Good Girl's Guide to Murder | Holly Jackson | Mystery / Thriller | `good-girls-guide-to-murder-reading-order` |
+| Divergent | Veronica Roth | Space Opera / SFF | `divergent-reading-order` |
+| The Maze Runner | James Dashner | Space Opera / SFF | `maze-runner-reading-order` |
+| The Inheritance Cycle | Christopher Paolini | Epic Fantasy | `inheritance-cycle-reading-order` |
+| Artemis Fowl | Eoin Colfer | Epic Fantasy | `artemis-fowl-reading-order` |
+| The Magicians | Lev Grossman | Epic Fantasy | `magicians-reading-order` |
+| Discworld — Rincewind | Terry Pratchett | Epic Fantasy | `discworld-rincewind-reading-order` |
+| Discworld — Moist von Lipwig | Terry Pratchett | Epic Fantasy | `discworld-moist-reading-order` |
+| Vorkosigan Saga | Lois McMaster Bujold | Space Opera / SFF | `vorkosigan-reading-order` |
+| Temeraire | Naomi Novik | Epic Fantasy | `temeraire-reading-order` |
+| The Iron Druid Chronicles | Kevin Hearne | Mystery / Thriller | `iron-druid-reading-order` |
+| Mercy Thompson | Patricia Briggs | Mystery / Thriller | `mercy-thompson-reading-order` |
+| Powder Mage | Brian McClellan | Epic Fantasy | `powder-mage-reading-order` |
+| Lightbringer | Brent Weeks | Epic Fantasy | `lightbringer-reading-order` |
+| Shadowhunter Chronicles | Cassandra Clare | Epic Fantasy | `shadowhunters-reading-order` |
+| Captive Prince | C. S. Pacat | Romance | `captive-prince-reading-order` |
+| Winternight Trilogy | Katherine Arden | Epic Fantasy | `winternight-reading-order` |
+| The Roots of Chaos | Samantha Shannon | Epic Fantasy | `roots-of-chaos-reading-order` |
+| The Atlas Series | Olivie Blake | Epic Fantasy | `atlas-series-reading-order` |
+| Revelation Space | Alastair Reynolds | Space Opera / SFF | `revelation-space-reading-order` |
+| Vampire Academy | Richelle Mead | Romance | `vampire-academy-reading-order` |
+| All Souls | Deborah Harkness | Romance | `all-souls-reading-order` |
+| Red Queen | Victoria Aveyard | Epic Fantasy | `red-queen-reading-order` |
+| The Reckoners | Brandon Sanderson | Space Opera / SFF | `reckoners-reading-order` |
+| The Hitchhiker's Guide to the Galaxy | Douglas Adams | Space Opera / SFF | `hitchhikers-guide-reading-order` |
+| Kate Daniels | Ilona Andrews | Mystery / Thriller | `kate-daniels-reading-order` |
+| Legend | Marie Lu | Space Opera / SFF | `legend-reading-order` |
+| Zodiac Academy | Caroline Peckham and Susanne Valenti | Romance | `zodiac-academy-reading-order` |
+| Black Dagger Brotherhood | J. R. Ward | Romance | `black-dagger-brotherhood-reading-order` |
+| The Lunar Chronicles | Marissa Meyer | Space Opera / SFF | `lunar-chronicles-reading-order` |
+| The Bridge Kingdom | Danielle L. Jensen | Romance | `bridge-kingdom-reading-order` |
+| Lady of Darkness | Melissa K. Roehrich | Romance | `lady-of-darkness-reading-order` |
+| The Broken Kingdoms | L.J. Andrews | Romance | `broken-kingdoms-reading-order` |
+| An Ember in the Ashes | Sabaa Tahir | Epic Fantasy | `ember-in-the-ashes-reading-order` |
+| The Selection | Kiera Cass | Romance | `selection-reading-order` |
+| Fever | Karen Marie Moning | Romance | `fever-reading-order` |
 
 ## Queued
 
@@ -96,26 +131,16 @@ High-demand leftovers, in no particular order. Do not crowd out a higher-search 
 
 | Series | Author | Likely hub | Why it is on this list |
 | --- | --- | --- | --- |
-| Discworld — Rincewind / Wizards | Terry Pratchett | Epic Fantasy | Completes the main Discworld character lines. |
 | InCryptid | Seanan McGuire | Mystery / Thriller | Family-branch order is the trap. |
 | Foreigner | C. J. Cherryh | Space Opera / SFF | Trilogy-by-trilogy structure is the actual product. |
 | Jackson Brodie | Kate Atkinson | Mystery / Thriller | Short list, but the later books assume the earlier cases. |
 | The Final Architecture | Adrian Tchaikovsky | Space Opera / SFF | Separate from Children of Time; people mix the doors. |
-| Temeraire | Naomi Novik | Epic Fantasy | Long complete run; not the Scholomance. |
-| Vorkosigan Saga | Lois McMaster Bujold | Space Opera / SFF | Publication versus Cordelia-first is contested. |
-| Mercy Thompson | Patricia Briggs | Mystery / Thriller | Novellas and Alpha & Omega spin-off. |
-| The Magicians | Lev Grossman | Epic Fantasy | Trilogy plus later Fillory extras. |
-| Powder Mage | Brian McClellan | Epic Fantasy | Sequel trilogy looks like a new book one. |
-| Lightbringer | Brent Weeks | Epic Fantasy | Finished five; people still start on book 3. |
-| Shadowhunters | Cassandra Clare | Epic Fantasy | Mortal Instruments versus Infernal Devices. |
-| Divergent | Veronica Roth | Space Opera / SFF | Four / We Can Be Mended extras. |
-| The Maze Runner | James Dashner | Space Opera / SFF | Prequels that look like book one. |
-| Captive Prince | C. S. Pacat | Romance | Shorts after the trilogy. |
-| Winternight | Katherine Arden | Epic Fantasy | Finished trilogy; later related novel. |
-| Roots of Chaos | Samantha Shannon | Epic Fantasy | Priory versus Day of Fallen Night. |
-| The Atlas Series | Olivie Blake | Epic Fantasy | Finished trilogy people start in the middle of. |
-| Iron Druid | Kevin Hearne | Mystery / Thriller | Completed nine plus shorts. |
-| Revelation Space | Alastair Reynolds | Space Opera / SFF | Chasm City and Prefect look like book one. |
+| Night Angel | Brent Weeks | Epic Fantasy | Finished trilogy plus later Kylar books. |
+| The Belgariad / Malloreon | David Eddings | Epic Fantasy | Two five-book runs; prequels look like book one. |
+| Warrior Cats (entry) | Erin Hunter | Epic Fantasy | Many arcs; people start on a later prophecy. |
+| Kate Daniels world spin-offs | Ilona Andrews | Mystery / Thriller | Gunmetal Magic / Blood Heir look like new book ones. |
+| Shannara (entry) | Terry Brooks | Epic Fantasy | Many cycles; people start on a later sword. |
+| Forgotten Realms — Drizzt (entry) | R. A. Salvatore | Epic Fantasy | Homeland looks like book one of the wrong door. |
 
 ## Out of scope as primaries
 
