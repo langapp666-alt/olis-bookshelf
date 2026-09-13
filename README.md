@@ -67,7 +67,7 @@ No custom domain is required.
    - **Framework preset:** Astro
    - **Build command:** `npm run build`
    - **Build output directory:** `dist`
-   - **Node version:** `22` (or add an environment variable `NODE_VERSION=22`)
+   - **Node version:** `22` (repo has `.nvmrc` and `.node-version`; or set `NODE_VERSION=22`)
 5. Save and deploy. Cloudflare gives the project a free `https://<project-name>.pages.dev` URL.
 6. Copy that hostname into `site` in `astro.config.mjs` so the sitemap and `robots.txt` use the real origin, then redeploy.
 
