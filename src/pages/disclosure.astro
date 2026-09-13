@@ -1,57 +1,24 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { affiliateTag } from "../lib/site";
 ---
 
 <BaseLayout
   title="Disclosure"
-  description="FTC affiliate disclosure for Oli's Bookshelf. Amazon Associates is active."
+  description="As an Amazon Associate I earn from qualifying purchases."
 >
   <header class="page-head">
     <p class="eyebrow">Disclosure</p>
-    <h1>How the links work</h1>
-    <p class="lede">
-      If a page on this site links to a retailer, this is the controlling text.
-    </p>
+    <h1>Disclosure</h1>
   </header>
 
-  <div class="disclosure-box">
-    <p style="margin:0 0 0.6rem;">
+  <div class="prose">
+    <p>
       <strong>As an Amazon Associate I earn from qualifying purchases.</strong>
     </p>
-    <p class="small" style="margin:0;">
-      Amazon Associates is <strong>active</strong> on this site. Book and series search links
-      include our Associates tag. If you buy through those links, we may earn a commission. We
-      do not promise any particular income from this.
-    </p>
-  </div>
-
-  <div class="prose">
-    <h2>What that means today</h2>
-    <ul>
-      <li>
-        Title and series search links use the public Associates tag <code>{affiliateTag}</code>.
-        We do not invent ASINs.
-      </li>
-      <li>We do not claim income, traffic, or that this niche “prints money.”</li>
-      <li>
-        Qualifying-purchase wording stays on this page and near affiliate links. A commission is
-        possible, not guaranteed.
-      </li>
-    </ul>
-
-    <h2>FTC note</h2>
     <p>
-      When a link here could earn a commission, we say so on the page and keep this disclosure in
-      the footer. We do not accept paid placements for reading-order facts. A retailer paying for a
-      ranking would be a review, and we do not publish reviews.
+      Book and series links on this site go to Amazon search results. If you buy
+      through those links, we may earn a commission. We do not claim any
+      particular income from this.
     </p>
-
-    <h2>What we will not do</h2>
-    <ul>
-      <li>Hide a live tag behind a “just a search link” label</li>
-      <li>Invent testimonials about products</li>
-      <li>Promise that buying through us funds the site in any specific amount</li>
-    </ul>
   </div>
 </BaseLayout>
