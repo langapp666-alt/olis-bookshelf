@@ -60,13 +60,13 @@ export function lookupCover(
 
 export function coverInitials(title: string): string {
   const words = title
-    .replace(/[—–/-]/g, " ")
+    .replace(/[—–/()[\],.:]/g, " ")
     .split(/\s+/)
-    .filter((word) => word && !/^(the|a|an)$/i.test(word));
+    .filter((word) => word && !/^(the|a|an|and|of|era|\d+)$/i.test(word));
   if (words.length >= 2) {
     return `${words[0][0] ?? ""}${words[1][0] ?? ""}`.toUpperCase();
   }
-  return title.replace(/[^A-Za-z0-9]/g, "").slice(0, 2).toUpperCase() || "•";
+  return (words[0] ?? title).replace(/[^A-Za-z0-9]/g, "").slice(0, 2).toUpperCase() || "•";
 }
 
 export function hasCover(record?: CoverRecord): boolean {
