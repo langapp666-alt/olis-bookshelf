@@ -2,7 +2,7 @@
 
 Series reading-order and “what to read next” guides for long science fiction, fantasy, and mystery/thriller shelves. Brand: **Oli's Bookshelf**.
 
-This is a static [Astro](https://astro.build) site. Guides live in a Markdown/MDX content collection. Three drafts are included and labeled **DRAFT** until a person reviews them.
+This is a static [Astro](https://astro.build) site. Guides live in a Markdown/MDX content collection.
 
 Amazon Associates is **not** active. Book search links use the placeholder tag `TODO_AFFILIATE_TAG` only.
 
@@ -29,9 +29,17 @@ npm run preview  # serves dist/ locally
 | Page | Route |
 | --- | --- |
 | Home | `/` |
-| Murderbot Diaries (draft) | `/guides/murderbot-diaries-reading-order/` |
-| The Expanse (draft) | `/guides/the-expanse-reading-order/` |
-| Discworld City Watch (draft) | `/guides/discworld-city-watch-reading-order/` |
+| Murderbot Diaries | `/guides/murderbot-diaries-reading-order/` |
+| The Expanse | `/guides/the-expanse-reading-order/` |
+| Discworld City Watch | `/guides/discworld-city-watch-reading-order/` |
+| Rivers of London | `/guides/rivers-of-london-reading-order/` |
+| The Locked Tomb | `/guides/the-locked-tomb-reading-order/` |
+| Mistborn Era 1 + 2 | `/guides/mistborn-era-1-2-reading-order/` |
+| The Dresden Files | `/guides/dresden-files-reading-order/` |
+| The Craft Sequence | `/guides/craft-sequence-reading-order/` |
+| Cormoran Strike | `/guides/cormoran-strike-reading-order/` |
+| The Culture | `/guides/the-culture-reading-order/` |
+| The Books of Babel | `/guides/books-of-babel-reading-order/` |
 | Epic Fantasy hub | `/genres/epic-fantasy/` |
 | Space Opera / SFF hub | `/genres/space-opera/` |
 | Mystery / Thriller hub | `/genres/mystery-thriller/` |

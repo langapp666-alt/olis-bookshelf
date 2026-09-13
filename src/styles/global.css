@@ -727,6 +727,26 @@ h3 {
   border-bottom: 1px solid var(--rule);
 }
 
+.prose h3 {
+  margin-top: 1.35rem;
+  font-size: 1.08rem;
+}
+
+.prose dl {
+  margin: 0 0 1rem;
+}
+
+.prose dt {
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  font-weight: 650;
+  margin-top: 0.7rem;
+}
+
+.prose dd {
+  margin: 0.15rem 0 0;
+}
+
 .table-wrap {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
