@@ -7,10 +7,12 @@ import { genres, siteName } from "../lib/site";
 const guides = (await getCollection("guides")).sort((a, b) =>
   a.data.title.localeCompare(b.data.title),
 );
+const guideCount = guides.length;
 ---
 
 <BaseLayout
   title={siteName}
+  description="Reading-order and what-to-read-next guides for long SFF and mystery series. Publication order first, chronological traps flagged."
   description="Reading-order maps for long science fiction, fantasy, and mystery series. Publication first, chronology when it matters, and a few next reads with reasons."
 >
   <section class="hero">
@@ -28,6 +30,17 @@ const guides = (await getCollection("guides")).sort((a, b) =>
       </div>
     </div>
     <aside class="hero-card">
+      <p class="eyebrow">On the desk</p>
+      <p class="hero-stat">{guideCount} reading-order guides</p>
+      <p style="margin:0 0 0.6rem;">
+        Long-tail SFF and mystery series: where to start, what to skip, and why prequels
+        often spoil. Harry Potter, Tolkien, A Song of Ice and Fire, and Star Wars are not
+        primary targets.
+      </p>
+      <p class="small muted" style="margin:0;">
+        More series sit in the backlog. New pages follow the same house rules: author and
+        publisher lists first, optional shorts out of the numbered column.
+      </p>
       <p class="eyebrow">On the shelf</p>
       <p class="hero-stat">Three series, mapped</p>
       <ul class="shelf-list">
@@ -46,6 +59,9 @@ const guides = (await getCollection("guides")).sort((a, b) =>
 
   <hr class="rule-break" />
 
+  <header class="section-head">
+    <p class="eyebrow">On the desk</p>
+    <h2>Reading-order guides</h2>
   <header class="section-head" id="guides">
     <p class="eyebrow">Guides</p>
     <h2>Publication order, then the traps</h2>

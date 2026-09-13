@@ -12,28 +12,19 @@ export function getStaticPaths() {
 }
 
 const { genre } = Astro.props;
-const guides = (await getCollection("guides")).filter(
-  (entry) => entry.data.genre === (genre.slug as GenreSlug),
-);
+const guides = (await getCollection("guides"))
+  .filter((entry) => entry.data.genre === (genre.slug as GenreSlug))
+  .sort((a, b) => a.data.title.localeCompare(b.data.title));
 
 const queued: Record<GenreSlug, string[]> = {
-  "epic-fantasy": [
-    "The Locked Tomb — Tamsyn Muir",
-    "Mistborn Era 1 + 2 — Brandon Sanderson",
-    "The Books of Babel — Josiah Bancroft",
-    "The Craft Sequence — Max Gladstone",
-  ],
-  "space-opera": [
-    "Foreigner — C. J. Cherryh",
-    "The Culture — Iain M. Banks",
-  ],
+  "epic-fantasy": [],
+  "space-opera": ["Foreigner — C. J. Cherryh"],
   "mystery-thriller": [
     "Rivers of London — Ben Aaronovitch",
     "The Dresden Files — Jim Butcher",
     "October Daye — Seanan McGuire",
     "InCryptid — Seanan McGuire",
     "Jackson Brodie — Kate Atkinson",
-    "Cormoran Strike — Robert Galbraith",
   ],
 };
 ---
@@ -57,6 +48,25 @@ const queued: Record<GenreSlug, string[]> = {
         ))}
       </div>
     ) : (
+      <p>No guide in this hub yet. The backlog below is the queue.</p>
+    )
+  }
+
+  {
+    queued[genre.slug as GenreSlug].length > 0 && (
+      <div class="panel colophon">
+        <h2>Still queued</h2>
+        <p class="small muted">
+          From <code>docs/SERIES_BACKLOG.md</code>. Not yet a guide.
+        </p>
+        <ul>
+          {queued[genre.slug as GenreSlug].map((item) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+      </div>
+    )
+  }
       <p>Nothing mapped here yet. The series below are next.</p>
     )
   }

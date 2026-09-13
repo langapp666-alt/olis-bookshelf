@@ -32,6 +32,14 @@ npm run preview  # serves dist/ locally
 | Murderbot Diaries | `/guides/murderbot-diaries-reading-order/` |
 | The Expanse | `/guides/the-expanse-reading-order/` |
 | Discworld City Watch | `/guides/discworld-city-watch-reading-order/` |
+| Rivers of London | `/guides/rivers-of-london-reading-order/` |
+| The Locked Tomb | `/guides/the-locked-tomb-reading-order/` |
+| Mistborn Era 1 + 2 | `/guides/mistborn-era-1-2-reading-order/` |
+| The Dresden Files | `/guides/dresden-files-reading-order/` |
+| The Craft Sequence | `/guides/craft-sequence-reading-order/` |
+| Cormoran Strike | `/guides/cormoran-strike-reading-order/` |
+| The Culture | `/guides/the-culture-reading-order/` |
+| The Books of Babel | `/guides/books-of-babel-reading-order/` |
 | Epic Fantasy hub | `/genres/epic-fantasy/` |
 | Space Opera / SFF hub | `/genres/space-opera/` |
 | Mystery / Thriller hub | `/genres/mystery-thriller/` |
