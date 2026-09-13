@@ -3345,5 +3345,322 @@
   "curse of shadows and thorns|l.j. andrews": {
     "coverId": 13600328,
     "olid": "OL37538067M"
+  },
+  "casino royale|ian fleming": {
+    "coverId": 5540820,
+    "olid": "OL20789256M"
+  },
+  "live and let die|ian fleming": {
+    "coverId": 109570,
+    "olid": "OL3682284M"
+  },
+  "goldfinger|ian fleming": {
+    "coverId": 109454,
+    "olid": "OL3561000M"
+  },
+  "from russia, with love|ian fleming": {
+    "coverId": 109458,
+    "olid": "OL3564345M"
+  },
+  "from russia with love|ian fleming": {
+    "coverId": 109458,
+    "olid": "OL3564345M"
+  },
+  "a study in scarlet|arthur conan doyle": {
+    "coverId": 13405534,
+    "olid": "OL47068254M"
+  },
+  "the sign of the four|arthur conan doyle": {
+    "coverId": 9247987,
+    "olid": "OL13492734M"
+  },
+  "the adventures of sherlock holmes|arthur conan doyle": {
+    "coverId": 6717853,
+    "olid": "OL24349267M"
+  },
+  "the hound of the baskervilles|arthur conan doyle": {
+    "coverId": 8063264
+  },
+  "the mysterious affair at styles|agatha christie": {
+    "coverId": 13699667,
+    "olid": "OL46918364M"
+  },
+  "the murder of roger ackroyd|agatha christie": {
+    "coverId": 13151356,
+    "olid": "OL46524697M"
+  },
+  "murder on the orient express|agatha christie": {
+    "coverId": 11100465,
+    "olid": "OL32440766M"
+  },
+  "the murder at the vicarage|agatha christie": {
+    "coverId": 12996560,
+    "olid": "OL40281075M"
+  },
+  "and then there were none|agatha christie": {
+    "coverId": 11172296,
+    "olid": "OL32520899M"
+  },
+  "death on the nile|agatha christie": {
+    "coverId": 14066646,
+    "olid": "OL47461471M"
+  },
+  "the body in the library|agatha christie": {
+    "coverId": 12855259,
+    "olid": "OL16159111M"
+  },
+  "the murder on the links|agatha christie": {
+    "coverId": 14582832,
+    "olid": "OL51017254M"
+  },
+  "the big four|agatha christie": {
+    "coverId": 12996529,
+    "olid": "OL40281005M"
+  },
+  "the mystery of the blue train|agatha christie": {
+    "coverId": 14575533,
+    "olid": "OL50983631M"
+  },
+  "peril at end house|agatha christie": {
+    "coverId": 12996556,
+    "olid": "OL40281064M"
+  },
+  "lord edgware dies|agatha christie": {
+    "coverId": 9492111
+  },
+  "three act tragedy|agatha christie": {
+    "coverId": 14591411,
+    "olid": "OL7584445M"
+  },
+  "death in the clouds|agatha christie": {
+    "coverId": 11433305,
+    "olid": "OL32800637M"
+  },
+  "the a.b.c. murders|agatha christie": {
+    "coverId": 14573514,
+    "olid": "OL50890407M"
+  },
+  "murder in mesopotamia|agatha christie": {
+    "coverId": 12855104,
+    "olid": "OL14244001M"
+  },
+  "cards on the table|agatha christie": {
+    "coverId": 6469172,
+    "olid": "OL24202743M"
+  },
+  "dumb witness|agatha christie": {
+    "coverId": 14578123,
+    "olid": "OL51012137M"
+  },
+  "appointment with death|agatha christie": {
+    "coverId": 14561660,
+    "olid": "OL7257830M"
+  },
+  "hercule poirot's christmas|agatha christie": {
+    "coverId": 12855074,
+    "olid": "OL39217511M"
+  },
+  "sad cypress|agatha christie": {
+    "coverId": 6559532,
+    "olid": "OL24218747M"
+  },
+  "one, two, buckle my shoe|agatha christie": {
+    "coverId": 14586349,
+    "olid": "OL47802318M"
+  },
+  "evil under the sun|agatha christie": {
+    "coverId": 13671433,
+    "olid": "OL47231044M"
+  },
+  "five little pigs|agatha christie": {
+    "coverId": 14578138,
+    "olid": "OL51012141M"
+  },
+  "the hollow|agatha christie": {
+    "coverId": 13679064,
+    "olid": "OL47237529M"
+  },
+  "taken at the flood|agatha christie": {
+    "coverId": 13670254,
+    "olid": "OL46918393M"
+  },
+  "mrs mcginty's dead|agatha christie": {
+    "coverId": 12996471,
+    "olid": "OL40280896M"
+  },
+  "after the funeral|agatha christie": {
+    "coverId": 12996535,
+    "olid": "OL40281023M"
+  },
+  "hickory dickory dock|agatha christie": {
+    "coverId": 10662538,
+    "olid": "OL31990718M"
+  },
+  "dead man's folly|agatha christie": {
+    "coverId": 6985969,
+    "olid": "OL24954310M"
+  },
+  "cat among the pigeons|agatha christie": {
+    "coverId": 12852588,
+    "olid": "OL39215574M"
+  },
+  "the clocks|agatha christie": {
+    "coverId": 12996554,
+    "olid": "OL24203578M"
+  },
+  "third girl|agatha christie": {
+    "coverId": 14577913,
+    "olid": "OL5570041M"
+  },
+  "hallowe'en party|agatha christie": {
+    "coverId": 11160095
+  },
+  "elephants can remember|agatha christie": {
+    "coverId": 11165070,
+    "olid": "OL5288326M"
+  },
+  "curtain|agatha christie": {
+    "coverId": 12387503,
+    "olid": "OL5255746M"
+  },
+  "the moving finger|agatha christie": {
+    "coverId": 13672855,
+    "olid": "OL47231963M"
+  },
+  "a murder is announced|agatha christie": {
+    "coverId": 14578204,
+    "olid": "OL51012149M"
+  },
+  "they do it with mirrors|agatha christie": {
+    "coverId": 10249524,
+    "olid": "OL9241053M"
+  },
+  "a pocket full of rye|agatha christie": {
+    "coverId": 14591386,
+    "olid": "OL43615237M"
+  },
+  "4.50 from paddington|agatha christie": {
+    "coverId": 10251961,
+    "olid": "OL28322498M"
+  },
+  "the mirror crack'd from side to side|agatha christie": {
+    "coverId": 10561150,
+    "olid": "OL31883057M"
+  },
+  "a caribbean mystery|agatha christie": {
+    "coverId": 14578132,
+    "olid": "OL51012139M"
+  },
+  "at bertram's hotel|agatha christie": {
+    "coverId": 6379981
+  },
+  "nemesis|agatha christie": {
+    "coverId": 10249139,
+    "olid": "OL7664733M"
+  },
+  "sleeping murder|agatha christie": {
+    "coverId": 10247294,
+    "olid": "OL28317526M"
+  },
+  "the secret adversary|agatha christie": {
+    "coverId": 14590159,
+    "olid": "OL51162345M"
+  },
+  "crooked house|agatha christie": {
+    "coverId": 14570595,
+    "olid": "OL50557260M"
+  },
+  "the pale horse|agatha christie": {
+    "coverId": 12996562,
+    "olid": "OL40281077M"
+  },
+  "agatha christie|agatha christie": {
+    "coverId": 10650163
+  },
+  "moonraker|ian fleming": {
+    "coverId": 6593911,
+    "olid": "OL24363523M"
+  },
+  "diamonds are forever|ian fleming": {
+    "coverId": 5540817,
+    "olid": "OL19690690M"
+  },
+  "dr. no|ian fleming": {
+    "coverId": 15111197,
+    "olid": "OL52205733M"
+  },
+  "for your eyes only|ian fleming": {
+    "coverId": 109569,
+    "olid": "OL3682290M"
+  },
+  "thunderball|ian fleming": {
+    "coverId": 109571,
+    "olid": "OL3682277M"
+  },
+  "the spy who loved me|ian fleming": {
+    "coverId": 109573,
+    "olid": "OL3683352M"
+  },
+  "on her majesty's secret service|ian fleming": {
+    "coverId": 109572,
+    "olid": "OL3684386M"
+  },
+  "you only live twice|ian fleming": {
+    "coverId": 14076122,
+    "olid": "OL7571742M"
+  },
+  "the man with the golden gun|ian fleming": {
+    "coverId": 109575,
+    "olid": "OL3687941M"
+  },
+  "octopussy and the living daylights|ian fleming": {
+    "coverId": 7911833
+  },
+  "colonel sun|kingsley amis": {
+    "coverId": 540558,
+    "olid": "OL8109317M"
+  },
+  "trigger mortis|anthony horowitz": {
+    "coverId": 10410582,
+    "olid": "OL27185905M"
+  },
+  "with a mind to kill|anthony horowitz": {
+    "coverId": 12780403,
+    "olid": "OL36097839M"
+  },
+  "james bond|ian fleming": {
+    "coverId": 896777,
+    "olid": "OL8960974M"
+  },
+  "the memoirs of sherlock holmes|arthur conan doyle": {
+    "coverId": 8349161,
+    "olid": "OL8102647M"
+  },
+  "the return of sherlock holmes|arthur conan doyle": {
+    "coverId": 9246467,
+    "olid": "OL7173235M"
+  },
+  "the valley of fear|arthur conan doyle": {
+    "coverId": 8350377,
+    "olid": "OL20548211M"
+  },
+  "his last bow|arthur conan doyle": {
+    "coverId": 8243267,
+    "olid": "OL6603034M"
+  },
+  "the case-book of sherlock holmes|arthur conan doyle": {
+    "coverId": 8350410
+  },
+  "the house of silk|anthony horowitz": {
+    "coverId": 8345964,
+    "olid": "OL25082942M"
+  },
+  "a study in scarlet women|sherry thomas": {
+    "coverId": 8882319,
+    "olid": "OL27420785M"
+  },
+  "sherlock holmes|arthur conan doyle": {
+    "coverId": 6717853,
+    "olid": "OL24349267M"
   }
 }

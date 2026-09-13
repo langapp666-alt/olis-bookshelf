@@ -124,6 +124,9 @@ Last updated: 2026-09-13
 | An Ember in the Ashes | Sabaa Tahir | Epic Fantasy | `ember-in-the-ashes-reading-order` |
 | The Selection | Kiera Cass | Romance | `selection-reading-order` |
 | Fever | Karen Marie Moning | Romance | `fever-reading-order` |
+| James Bond | Ian Fleming | Mystery / Thriller | `james-bond-reading-order` |
+| Agatha Christie | Agatha Christie | Mystery / Thriller | `christie-reading-paths` |
+| Sherlock Holmes | Arthur Conan Doyle | Mystery / Thriller | `sherlock-holmes-reading-order` |
 
 ## Queued
 

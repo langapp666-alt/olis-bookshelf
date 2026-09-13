@@ -53,6 +53,9 @@ const seriesCoverAliases: Record<string, string> = {
   "the roots of chaos|samantha shannon": "the priory of the orange tree|samantha shannon",
   "shadowhunter chronicles|cassandra clare": "city of bones|cassandra clare",
   "vorkosigan saga|lois mcmaster bujold": "shards of honor|lois mcmaster bujold",
+  "james bond|ian fleming": "casino royale|ian fleming",
+  "agatha christie|agatha christie": "the mysterious affair at styles|agatha christie",
+  "sherlock holmes|arthur conan doyle": "a study in scarlet|arthur conan doyle",
 };
 
 export function lookupCover(
