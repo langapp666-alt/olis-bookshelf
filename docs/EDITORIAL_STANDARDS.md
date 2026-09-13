@@ -33,6 +33,7 @@ Record the URL and the date opened (`lastVerified` in frontmatter). If an offici
 - Chronology is documented when it diverges.
 - Chronological prequels that spoil later novels are flagged, not promoted as on-ramps.
 - Optional shorts, picture books, RPG extras, and cameos stay out of the numbered novel column.
+- Book covers use Open Library cover IDs (Google Books volume IDs only as fallback). Do not scrape Amazon HTML or hotlink Amazon image URLs. Skip a cover if we do not have a reliable ID.
 
 ## What-to-read-next
 

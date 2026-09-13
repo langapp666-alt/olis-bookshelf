@@ -1,5 +1,7 @@
 ---
 import { genres, type GenreSlug } from "../lib/site";
+import { lookupCover } from "../lib/covers";
+import BookCover from "./BookCover.astro";
 import type { CollectionEntry } from "astro:content";
 
 interface Props {
@@ -14,6 +16,12 @@ const n = typeof index === "number" ? String(index).padStart(2, "0") : null;
 const searchText = [guide.data.series, guide.data.author, guide.data.title, genre.label]
   .join(" ")
   .toLowerCase();
+const cover = lookupCover(guide.data.series, guide.data.author, {
+  coverId: guide.data.coverId,
+  isbn: guide.data.isbn,
+  olid: guide.data.olid,
+  gbid: guide.data.gbid,
+});
 ---
 
 <a
@@ -23,6 +31,7 @@ const searchText = [guide.data.series, guide.data.author, guide.data.title, genr
   data-catalog-text={searchText}
 >
   {n && <span class="catalog-index" aria-hidden="true">{n}</span>}
+  {cover && <BookCover title={guide.data.series} cover={cover} size="card" />}
   <div>
     <div class="pill-row">
       <span class="pill genre">{genre.label}</span>

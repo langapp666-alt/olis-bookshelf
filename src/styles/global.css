@@ -571,7 +571,8 @@ h3 {
   min-width: 0;
 }
 
-.catalog-item {
+.catalog-item,
+.guide-card.is-compact {
   flex-direction: row;
   align-items: flex-start;
   gap: 0.95rem;
@@ -887,6 +888,31 @@ th {
   color: var(--muted);
 }
 
+.book-title-cell {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  min-width: 0;
+}
+
+.book-cover {
+  width: 2.5rem;
+  height: 3.75rem;
+  object-fit: cover;
+  flex: 0 0 auto;
+  background: var(--paper-2);
+  border: 1px solid var(--rule);
+}
+
+.book-cover.is-card {
+  width: 2.85rem;
+  height: 4.25rem;
+}
+
+.book-cover[hidden] {
+  display: none;
+}
+
 .book-title {
   font-weight: 500;
 }
@@ -993,6 +1019,10 @@ th {
   table.order-table.is-stacked .amazon-link {
     width: 100%;
     min-height: 2.75rem;
+  }
+
+  table.order-table.is-stacked .book-title-cell {
+    align-items: center;
   }
 }
 

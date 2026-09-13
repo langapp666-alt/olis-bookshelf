@@ -1,5 +1,7 @@
 ---
 import { amazonBookUrl, amazonRel } from "../lib/site";
+import { lookupCover, type CoverRecord } from "../lib/covers";
+import BookCover from "./BookCover.astro";
 
 export interface OrderBook {
   n?: string | number;
@@ -9,6 +11,10 @@ export interface OrderBook {
   notes?: string;
   author?: string;
   query?: string;
+  coverId?: number;
+  isbn?: string;
+  olid?: string;
+  gbid?: string;
 }
 
 interface Props {
@@ -43,7 +49,13 @@ const hasYear = books.some((book) => book.year !== undefined && book.year !== ""
           <tr>
             {hasN && <td data-label="#">{book.n ?? ""}</td>}
             <td data-label="Title">
-              <span class="book-title">{book.title}</span>
+              <span class="book-title-cell">
+                <BookCover
+                  title={book.title}
+                  cover={lookupCover(book.title, book.author ?? author, book as CoverRecord)}
+                />
+                <span class="book-title">{book.title}</span>
+              </span>
             </td>
             {hasForm && <td data-label="Form">{book.form}</td>}
             {hasYear && <td data-label="Year">{book.year}</td>}

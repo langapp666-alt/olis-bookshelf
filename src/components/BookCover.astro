@@ -1,0 +1,44 @@
+---
+import {
+  googleBooksCoverUrl,
+  openLibraryCoverUrl,
+  type CoverRecord,
+} from "../lib/covers";
+
+interface Props {
+  title: string;
+  cover?: CoverRecord;
+  size?: "table" | "card";
+}
+
+const { title, cover, size = "table" } = Astro.props;
+const primary = cover ? openLibraryCoverUrl(cover) : undefined;
+const fallback = cover ? googleBooksCoverUrl(cover) : undefined;
+const src = primary ?? fallback;
+const nextSrc = primary && fallback ? fallback : undefined;
+---
+
+{
+  src ? (
+    <img
+      class:list={["book-cover", size === "card" && "is-card"]}
+      src={src}
+      data-fallback={nextSrc}
+      alt=""
+      width={size === "card" ? 48 : 40}
+      height={size === "card" ? 72 : 60}
+      loading="lazy"
+      decoding="async"
+      referrerpolicy="no-referrer"
+      onerror="
+        const next = this.getAttribute('data-fallback');
+        if (next && this.src !== next) {
+          this.removeAttribute('data-fallback');
+          this.src = next;
+          return;
+        }
+        this.hidden = true;
+      "
+    />
+  ) : null
+}
