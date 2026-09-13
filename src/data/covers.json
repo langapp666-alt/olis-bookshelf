@@ -2374,5 +2374,739 @@
   "the witcher|andrzej sapkowski": {
     "coverId": 10693418,
     "olid": "OL32027120M"
+  },
+  "a discovery of witches|deborah harkness": {
+    "coverId": 6998669,
+    "olid": "OL25154729M"
+  },
+  "shadow of night|deborah harkness": {
+    "coverId": 11159567,
+    "olid": "OL25237882M"
+  },
+  "the book of life|deborah harkness": {
+    "coverId": 11159561,
+    "olid": "OL26372250M"
+  },
+  "time's convert|deborah harkness": {
+    "coverId": 9327262,
+    "olid": "OL26962416M"
+  },
+  "the black bird oracle|deborah harkness": {
+    "coverId": 14653299,
+    "olid": "OL51061912M"
+  },
+  "all souls|deborah harkness": {
+    "coverId": 9005041,
+    "olid": "OL27549468M"
+  },
+  "artemis fowl|eoin colfer": {
+    "coverId": 10212689,
+    "olid": "OL28287629M"
+  },
+  "the arctic incident|eoin colfer": {
+    "coverId": 12636249,
+    "olid": "OL24644819M"
+  },
+  "the eternity code|eoin colfer": {
+    "coverId": 12636263,
+    "olid": "OL7359693M"
+  },
+  "the opal deception|eoin colfer": {
+    "coverId": 12636364,
+    "olid": "OL7359834M"
+  },
+  "the lost colony|eoin colfer": {
+    "coverId": 12636224,
+    "olid": "OL8142720M"
+  },
+  "the time paradox|eoin colfer": {
+    "coverId": 9650739,
+    "olid": "OL23292484M"
+  },
+  "the atlantis complex|eoin colfer": {
+    "coverId": 12636230,
+    "olid": "OL24329820M"
+  },
+  "the last guardian|eoin colfer": {
+    "coverId": 12636252,
+    "olid": "OL25282820M"
+  },
+  "the fowl twins|eoin colfer": {
+    "coverId": 10238165,
+    "olid": "OL28309866M"
+  },
+  "the fowl twins deny all charges|eoin colfer": {
+    "coverId": 12996332,
+    "olid": "OL29491607M"
+  },
+  "the atlas six|olivie blake": {
+    "coverId": 10862205,
+    "olid": "OL32217912M"
+  },
+  "the atlas paradox|olivie blake": {
+    "coverId": 14567159,
+    "olid": "OL38236009M"
+  },
+  "the atlas complex|olivie blake": {
+    "coverId": 13239396,
+    "olid": "OL46536366M"
+  },
+  "captive prince|c. s. pacat": {
+    "coverId": 7442792,
+    "olid": "OL25943330M"
+  },
+  "prince's gambit|c. s. pacat": {
+    "coverId": 14604622,
+    "olid": "OL29551310M"
+  },
+  "kings rising|c. s. pacat": {
+    "coverId": 10888631,
+    "olid": "OL32259339M"
+  },
+  "the summer palace and other stories|c. s. pacat": {
+    "coverId": 9240703,
+    "olid": "OL27849893M"
+  },
+  "going postal|terry pratchett": {
+    "coverId": 14646992,
+    "olid": "OL3304705M"
+  },
+  "making money|terry pratchett": {
+    "coverId": 14645701,
+    "olid": "OL7288929M"
+  },
+  "raising steam|terry pratchett": {
+    "coverId": 14646849,
+    "olid": "OL27104334M"
+  },
+  "the colour of magic|terry pratchett": {
+    "coverId": 14647238,
+    "olid": "OL28477029M"
+  },
+  "the light fantastic|terry pratchett": {
+    "coverId": 6531015,
+    "olid": "OL24238671M"
+  },
+  "sourcery|terry pratchett": {
+    "coverId": 6927508,
+    "olid": "OL24961019M"
+  },
+  "eric|terry pratchett": {
+    "coverId": 14648940,
+    "olid": "OL9040702M"
+  },
+  "interesting times|terry pratchett": {
+    "coverId": 14646167,
+    "olid": "OL7286991M"
+  },
+  "the last continent|terry pratchett": {
+    "coverId": 14645770,
+    "olid": "OL381815M"
+  },
+  "the last hero|terry pratchett": {
+    "coverId": 14645749,
+    "olid": "OL3948971M"
+  },
+  "divergent|veronica roth": {
+    "coverId": 13274634,
+    "olid": "OL26223598M"
+  },
+  "insurgent|veronica roth": {
+    "coverId": 7083755
+  },
+  "allegiant|veronica roth": {
+    "coverId": 7276393,
+    "olid": "OL25432922M"
+  },
+  "we can be mended|veronica roth": {
+    "coverId": 15118313,
+    "olid": "OL35953535M"
+  },
+  "the hitchhiker's guide to the galaxy|douglas adams": {
+    "coverId": 12986869,
+    "olid": "OL17837787M"
+  },
+  "the restaurant at the end of the universe|douglas adams": {
+    "coverId": 12714921,
+    "olid": "OL37807528M"
+  },
+  "life, the universe and everything|douglas adams": {
+    "coverId": 8569244,
+    "olid": "OL3495472M"
+  },
+  "so long, and thanks for all the fish|douglas adams": {
+    "coverId": 11465415,
+    "olid": "OL22351808M"
+  },
+  "mostly harmless|douglas adams": {
+    "coverId": 11465755,
+    "olid": "OL1722032M"
+  },
+  "and another thing...|eoin colfer": {
+    "coverId": 7143006,
+    "olid": "OL25358349M"
+  },
+  "eragon|christopher paolini": {
+    "coverId": 13921600
+  },
+  "eldest|christopher paolini": {
+    "coverId": 12848701,
+    "olid": "OL27939293M"
+  },
+  "brisingr|christopher paolini": {
+    "coverId": 2411585,
+    "olid": "OL10751961M"
+  },
+  "inheritance|christopher paolini": {
+    "coverId": 6973055,
+    "olid": "OL25053846M"
+  },
+  "the fork, the witch, and the worm|christopher paolini": {
+    "coverId": 8784482
+  },
+  "murtagh|christopher paolini": {
+    "coverId": 13841845,
+    "olid": "OL47319456M"
+  },
+  "the inheritance cycle|christopher paolini": {
+    "coverId": 8536272,
+    "olid": "OL26843791M"
+  },
+  "hounded|kevin hearne": {
+    "coverId": 14629340,
+    "olid": "OL36053312M"
+  },
+  "hexed|kevin hearne": {
+    "coverId": 7835354
+  },
+  "hammered|kevin hearne": {
+    "coverId": 7235138
+  },
+  "tricked|kevin hearne": {
+    "coverId": 7637850
+  },
+  "trapped|kevin hearne": {
+    "coverId": 7550133
+  },
+  "hunted|kevin hearne": {
+    "coverId": 7529608
+  },
+  "shattered|kevin hearne": {
+    "coverId": 7498439
+  },
+  "staked|kevin hearne": {
+    "coverId": 8459591,
+    "olid": "OL26804945M"
+  },
+  "besieged|kevin hearne": {
+    "coverId": 14648666,
+    "olid": "OL36331510M"
+  },
+  "scourged|kevin hearne": {
+    "coverId": 10928628,
+    "olid": "OL32303519M"
+  },
+  "the purloined poodle|kevin hearne": {
+    "coverId": 8478380,
+    "olid": "OL26818553M"
+  },
+  "the iron druid chronicles|kevin hearne": {
+    "coverId": 8459591,
+    "olid": "OL26804945M"
+  },
+  "magic bites|ilona andrews": {
+    "coverId": 10301993,
+    "olid": "OL28362239M"
+  },
+  "magic burns|ilona andrews": {
+    "coverId": 9118507,
+    "olid": "OL27677093M"
+  },
+  "magic strikes|ilona andrews": {
+    "coverId": 10667256,
+    "olid": "OL31996473M"
+  },
+  "magic bleeds|ilona andrews": {
+    "coverId": 6297626,
+    "olid": "OL24083294M"
+  },
+  "magic slays|ilona andrews": {
+    "coverId": 9572708,
+    "olid": "OL25363797M"
+  },
+  "magic rises|ilona andrews": {
+    "coverId": 10483410,
+    "olid": "OL30677395M"
+  },
+  "magic breaks|ilona andrews": {
+    "coverId": 7285066,
+    "olid": "OL25573632M"
+  },
+  "magic shifts|ilona andrews": {
+    "coverId": 13080794,
+    "olid": "OL27186708M"
+  },
+  "magic binds|ilona andrews": {
+    "coverId": 13048128,
+    "olid": "OL27213556M"
+  },
+  "magic triumphs|ilona andrews": {
+    "coverId": 8810548,
+    "olid": "OL27346735M"
+  },
+  "magic tides|ilona andrews": {
+    "coverId": 13230657,
+    "olid": "OL46535264M"
+  },
+  "kate daniels|ilona andrews": {
+    "coverId": 2421413,
+    "olid": "OL10256226M"
+  },
+  "legend|marie lu": {
+    "coverId": 7268930
+  },
+  "prodigy|marie lu": {
+    "coverId": 9257778,
+    "olid": "OL25246670M"
+  },
+  "champion|marie lu": {
+    "coverId": 8371540,
+    "olid": "OL26709828M"
+  },
+  "rebel|marie lu": {
+    "coverId": 8990123,
+    "olid": "OL27534179M"
+  },
+  "the black prism|brent weeks": {
+    "coverId": 6459308,
+    "olid": "OL24332679M"
+  },
+  "the blinding knife|brent weeks": {
+    "coverId": 11489001,
+    "olid": "OL32856510M"
+  },
+  "the broken eye|brent weeks": {
+    "coverId": 8999182,
+    "olid": "OL27543625M"
+  },
+  "the blood mirror|brent weeks": {
+    "coverId": 8458302,
+    "olid": "OL26803790M"
+  },
+  "the burning white|brent weeks": {
+    "coverId": 9130118,
+    "olid": "OL27691311M"
+  },
+  "the magicians|lev grossman": {
+    "coverId": 6294573,
+    "olid": "OL23150292M"
+  },
+  "the magician king|lev grossman": {
+    "coverId": 8572829,
+    "olid": "OL26880093M"
+  },
+  "the magician's land|lev grossman": {
+    "coverId": 9020300,
+    "olid": "OL27565382M"
+  },
+  "the maze runner|james dashner": {
+    "coverId": 10464801,
+    "olid": "OL30534827M"
+  },
+  "the scorch trials|james dashner": {
+    "coverId": 6636110,
+    "olid": "OL24384500M"
+  },
+  "the death cure|james dashner": {
+    "coverId": 6935538,
+    "olid": "OL24994751M"
+  },
+  "the kill order|james dashner": {
+    "coverId": 8157057
+  },
+  "the fever code|james dashner": {
+    "coverId": 8325602,
+    "olid": "OL26641410M"
+  },
+  "the infinite glade|james dashner": {
+    "coverId": 15124160,
+    "olid": "OL60154027M"
+  },
+  "moon called|patricia briggs": {
+    "coverId": 7391183
+  },
+  "blood bound|patricia briggs": {
+    "coverId": 284401,
+    "olid": "OL7524376M"
+  },
+  "iron kissed|patricia briggs": {
+    "coverId": 1230945,
+    "olid": "OL9390736M"
+  },
+  "bone crossed|patricia briggs": {
+    "coverId": 6625303,
+    "olid": "OL24377107M"
+  },
+  "silver borne|patricia briggs": {
+    "coverId": 6397099,
+    "olid": "OL24249729M"
+  },
+  "river marked|patricia briggs": {
+    "coverId": 6684456,
+    "olid": "OL24604012M"
+  },
+  "frost burned|patricia briggs": {
+    "coverId": 7693562
+  },
+  "night broken|patricia briggs": {
+    "coverId": 7661330
+  },
+  "fire touched|patricia briggs": {
+    "coverId": 12756644,
+    "olid": "OL27200596M"
+  },
+  "silence fallen|patricia briggs": {
+    "coverId": 14649437,
+    "olid": "OL27228456M"
+  },
+  "storm cursed|patricia briggs": {
+    "coverId": 13008735,
+    "olid": "OL40994422M"
+  },
+  "smoke bitten|patricia briggs": {
+    "coverId": 9312761,
+    "olid": "OL27930451M"
+  },
+  "soul taken|patricia briggs": {
+    "coverId": 11289550,
+    "olid": "OL32662196M"
+  },
+  "winter lost|patricia briggs": {
+    "coverId": 14638811,
+    "olid": "OL52245892M"
+  },
+  "mercy thompson|patricia briggs": {
+    "coverId": 8330183,
+    "olid": "OL24094947M"
+  },
+  "promise of blood|brian mcclellan": {
+    "coverId": 7667720
+  },
+  "the crimson campaign|brian mcclellan": {
+    "coverId": 8407734,
+    "olid": "OL26758409M"
+  },
+  "the autumn republic|brian mcclellan": {
+    "coverId": 12510072,
+    "olid": "OL27188558M"
+  },
+  "sins of empire|brian mcclellan": {
+    "coverId": 8508260,
+    "olid": "OL26833037M"
+  },
+  "wrath of empire|brian mcclellan": {
+    "coverId": 8842921,
+    "olid": "OL27379663M"
+  },
+  "blood of empire|brian mcclellan": {
+    "coverId": 9244869,
+    "olid": "OL27866809M"
+  },
+  "powder mage|brian mcclellan": {
+    "coverId": 8402584,
+    "olid": "OL26753294M"
+  },
+  "steelheart|brandon sanderson": {
+    "coverId": 14658147,
+    "olid": "OL25431390M"
+  },
+  "firefight|brandon sanderson": {
+    "coverId": 14658343,
+    "olid": "OL27097629M"
+  },
+  "calamity|brandon sanderson": {
+    "coverId": 14658158,
+    "olid": "OL27096918M"
+  },
+  "mitosis|brandon sanderson": {
+    "coverId": 8737489
+  },
+  "lux|brandon sanderson": {
+    "coverId": 14836403,
+    "olid": "OL57476481M"
+  },
+  "the reckoners|brandon sanderson": {
+    "coverId": 8423411,
+    "olid": "OL26772331M"
+  },
+  "red queen|victoria aveyard": {
+    "coverId": 7434883
+  },
+  "glass sword|victoria aveyard": {
+    "coverId": 7434839
+  },
+  "king's cage|victoria aveyard": {
+    "coverId": 7909655,
+    "olid": "OL26241559M"
+  },
+  "war storm|victoria aveyard": {
+    "coverId": 8739000
+  },
+  "cruel crown|victoria aveyard": {
+    "coverId": 8515842
+  },
+  "broken throne|victoria aveyard": {
+    "coverId": 8792572,
+    "olid": "OL27327697M"
+  },
+  "revelation space|alastair reynolds": {
+    "coverId": 911071,
+    "olid": "OL9002707M"
+  },
+  "redemption ark|alastair reynolds": {
+    "coverId": 5277650,
+    "olid": "OL13364675M"
+  },
+  "absolution gap|alastair reynolds": {
+    "coverId": 284155,
+    "olid": "OL3301753M"
+  },
+  "inhibitor phase|alastair reynolds": {
+    "coverId": 10503226,
+    "olid": "OL30798130M"
+  },
+  "chasm city|alastair reynolds": {
+    "coverId": 380118
+  },
+  "the prefect|alastair reynolds": {
+    "coverId": 1286941,
+    "olid": "OL7878914M"
+  },
+  "elysium fire|alastair reynolds": {
+    "coverId": 11087255,
+    "olid": "OL28697979M"
+  },
+  "machine vendetta|alastair reynolds": {
+    "coverId": 13564806,
+    "olid": "OL46665804M"
+  },
+  "the priory of the orange tree|samantha shannon": {
+    "coverId": 8802446,
+    "olid": "OL27338143M"
+  },
+  "a day of fallen night|samantha shannon": {
+    "coverId": 12986849,
+    "olid": "OL38119589M"
+  },
+  "among the burning flowers|samantha shannon": {
+    "coverId": 15158287,
+    "olid": "OL57520911M"
+  },
+  "city of bones|cassandra clare": {
+    "coverId": 10121449
+  },
+  "city of ashes|cassandra clare": {
+    "coverId": 1787130,
+    "olid": "OL9609638M"
+  },
+  "city of glass|cassandra clare": {
+    "coverId": 8200332
+  },
+  "city of fallen angels|cassandra clare": {
+    "coverId": 8200331
+  },
+  "city of lost souls|cassandra clare": {
+    "coverId": 7278981
+  },
+  "city of heavenly fire|cassandra clare": {
+    "coverId": 7933241,
+    "olid": "OL26264897M"
+  },
+  "clockwork angel|cassandra clare": {
+    "coverId": 6582736,
+    "olid": "OL24356802M"
+  },
+  "clockwork prince|cassandra clare": {
+    "coverId": 6934916,
+    "olid": "OL24906274M"
+  },
+  "clockwork princess|cassandra clare": {
+    "coverId": 9042989,
+    "olid": "OL27590316M"
+  },
+  "lady midnight|cassandra clare": {
+    "coverId": 10503897,
+    "olid": "OL30850872M"
+  },
+  "lord of shadows|cassandra clare": {
+    "coverId": 8470222,
+    "olid": "OL26377586M"
+  },
+  "queen of air and darkness|cassandra clare": {
+    "coverId": 10829136,
+    "olid": "OL28914586M"
+  },
+  "chain of gold|cassandra clare": {
+    "coverId": 9290977,
+    "olid": "OL27924710M"
+  },
+  "chain of iron|cassandra clare": {
+    "coverId": 10527972,
+    "olid": "OL31764020M"
+  },
+  "chain of thorns|cassandra clare": {
+    "coverId": 13179997,
+    "olid": "OL42513803M"
+  },
+  "his majesty's dragon|naomi novik": {
+    "coverId": 8191809,
+    "olid": "OL19068607M"
+  },
+  "throne of jade|naomi novik": {
+    "coverId": 8191812
+  },
+  "black powder war|naomi novik": {
+    "coverId": 13732
+  },
+  "empire of ivory|naomi novik": {
+    "coverId": 6428274
+  },
+  "victory of eagles|naomi novik": {
+    "coverId": 6419701,
+    "olid": "OL24278518M"
+  },
+  "tongues of serpents|naomi novik": {
+    "coverId": 6452163,
+    "olid": "OL24326626M"
+  },
+  "crucible of gold|naomi novik": {
+    "coverId": 10230267
+  },
+  "blood of tyrants|naomi novik": {
+    "coverId": 7564034
+  },
+  "league of dragons|naomi novik": {
+    "coverId": 9142301,
+    "olid": "OL27706934M"
+  },
+  "temeraire|naomi novik": {
+    "coverId": 10466494,
+    "olid": "OL30538514M"
+  },
+  "vampire academy|richelle mead": {
+    "coverId": 10136600
+  },
+  "frostbite|richelle mead": {
+    "coverId": 13765372,
+    "olid": "OL19470631M"
+  },
+  "shadow kiss|richelle mead": {
+    "coverId": 6309317
+  },
+  "blood promise|richelle mead": {
+    "coverId": 5779361
+  },
+  "spirit bound|richelle mead": {
+    "coverId": 6300516
+  },
+  "last sacrifice|richelle mead": {
+    "coverId": 6671766
+  },
+  "bloodlines|richelle mead": {
+    "coverId": 7511657
+  },
+  "the golden lily|richelle mead": {
+    "coverId": 7554856
+  },
+  "the indigo spell|richelle mead": {
+    "coverId": 7840193
+  },
+  "the fiery heart|richelle mead": {
+    "coverId": 7583872
+  },
+  "silver shadows|richelle mead": {
+    "coverId": 7818834
+  },
+  "the ruby circle|richelle mead": {
+    "coverId": 7804556
+  },
+  "shards of honor|lois mcmaster bujold": {
+    "coverId": 934049,
+    "olid": "OL8706808M"
+  },
+  "barrayar|lois mcmaster bujold": {
+    "coverId": 981974,
+    "olid": "OL8910837M"
+  },
+  "the warrior's apprentice|lois mcmaster bujold": {
+    "coverId": 934054,
+    "olid": "OL8706813M"
+  },
+  "the vor game|lois mcmaster bujold": {
+    "coverId": 5807570,
+    "olid": "OL7663039M"
+  },
+  "cetaganda|lois mcmaster bujold": {
+    "coverId": 409508,
+    "olid": "OL797287M"
+  },
+  "brothers in arms|lois mcmaster bujold": {
+    "coverId": 1469161,
+    "olid": "OL8107887M"
+  },
+  "mirror dance|lois mcmaster bujold": {
+    "coverId": 3943745,
+    "olid": "OL1428433M"
+  },
+  "memory|lois mcmaster bujold": {
+    "coverId": 409546,
+    "olid": "OL986720M"
+  },
+  "komarr|lois mcmaster bujold": {
+    "coverId": 1860536,
+    "olid": "OL8547234M"
+  },
+  "a civil campaign|lois mcmaster bujold": {
+    "coverId": 406716,
+    "olid": "OL33754M"
+  },
+  "diplomatic immunity|lois mcmaster bujold": {
+    "coverId": 476795,
+    "olid": "OL3956389M"
+  },
+  "captain vorpatril's alliance|lois mcmaster bujold": {
+    "coverId": 8003672,
+    "olid": "OL25361837M"
+  },
+  "cryoburn|lois mcmaster bujold": {
+    "coverId": 6608047,
+    "olid": "OL24371354M"
+  },
+  "gentleman jole and the red queen|lois mcmaster bujold": {
+    "coverId": 7435459
+  },
+  "ethan of athos|lois mcmaster bujold": {
+    "coverId": 4840599,
+    "olid": "OL8706824M"
+  },
+  "falling free|lois mcmaster bujold": {
+    "coverId": 407069,
+    "olid": "OL538837M"
+  },
+  "the bear and the nightingale|katherine arden": {
+    "coverId": 11946359,
+    "olid": "OL28856610M"
+  },
+  "the girl in the tower|katherine arden": {
+    "coverId": 14416797,
+    "olid": "OL26936235M"
+  },
+  "the winter of the witch|katherine arden": {
+    "coverId": 10308818,
+    "olid": "OL28371914M"
+  },
+  "winternight trilogy|katherine arden": {
+    "coverId": 8775259,
+    "olid": "OL27299824M"
   }
 }
