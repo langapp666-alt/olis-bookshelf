@@ -6,7 +6,7 @@ lastVerified: 2026-09-13
 slug: rivers-of-london-reading-order
 series: Rivers of London
 author: Ben Aaronovitch
-status: reviewed
+status: published
 reviewFlags: []
 sources:
   - label: "Ben Aaronovitch — British editions"
@@ -15,11 +15,13 @@ sources:
     url: "https://www.benaaronovitch.com/chronology/"
 ---
 
-import { amazonSearchUrl } from "../../lib/site";
+import { amazonRel, amazonSearchUrl } from "../../lib/site";
+import OrderTable from "../../components/OrderTable.astro";
+import StartHere from "../../components/StartHere.astro";
 
-## Starting point
-
-Start with **Rivers of London** (US paperback title: *Midnight Riot*). It is the first published novel and the first time Peter Grant is a probationary constable who notices that a ghost can give a statement.
+<StartHere title="Rivers of London">
+  US paperback title: *Midnight Riot*. It is the first published novel and the first time Peter Grant is a probationary constable who notices that a ghost can give a statement.
+</StartHere>
 
 Do not start with a novella. Do not start with the comics. Do not start with *The Masquerades of Spring* because it is earlier in Nightingale’s life. That book is a 1920s jazz-age side story. It will not teach you the Folly as a modern police job.
 
@@ -29,18 +31,21 @@ The series is still growing. Novellas, comics, and a short-story collection sit 
 
 Publication order is the first-read path.
 
-| # | Title | Year | Notes |
-| --- | --- | --- | --- |
-| 1 | Rivers of London | 2011 | US: *Midnight Riot*. Start here. |
-| 2 | Moon Over Soho | 2011 | |
-| 3 | Whispers Under Ground | 2012 | |
-| 4 | Broken Homes | 2013 | |
-| 5 | Foxglove Summer | 2014 | |
-| 6 | The Hanging Tree | 2016 | |
-| 7 | Lies Sleeping | 2018 | |
-| 8 | False Value | 2020 | |
-| 9 | Amongst Our Weapons | 2022 | |
-| 10 | Stone and Sky | 2025 | Latest novel at last check. |
+<OrderTable
+  author="Ben Aaronovitch"
+  books={[
+    { n: 1, title: "Rivers of London", year: 2011, notes: "US: Midnight Riot. Start here.", query: "Rivers of London Midnight Riot Ben Aaronovitch" },
+    { n: 2, title: "Moon Over Soho", year: 2011 },
+    { n: 3, title: "Whispers Under Ground", year: 2012 },
+    { n: 4, title: "Broken Homes", year: 2013 },
+    { n: 5, title: "Foxglove Summer", year: 2014 },
+    { n: 6, title: "The Hanging Tree", year: 2016 },
+    { n: 7, title: "Lies Sleeping", year: 2018 },
+    { n: 8, title: "False Value", year: 2020 },
+    { n: 9, title: "Amongst Our Weapons", year: 2022 },
+    { n: 10, title: "Stone and Sky", year: 2025, notes: "Latest novel at last check." },
+  ]}
+/>
 
 Aaronovitch’s own British-editions page, when opened, listed through *The Masquerades of Spring* and had not yet added *Stone and Sky*. Gollancz published that tenth novel in July 2025. If a shop page is stale, trust the most recent Gollancz/DAW novel, not the merch grid.
 
@@ -48,13 +53,16 @@ Aaronovitch’s own British-editions page, when opened, listed through *The Masq
 
 These are real books. They are not Peter Grant #6.5 in the spine sense. Read them after the novel they followed into shops, or save them for later.
 
-| Title | Year | Who it follows | First-read? |
-| --- | --- | --- | --- |
-| The Furthest Station | 2017 | After *Foxglove Summer* | Optional. Peter and Nightingale on the Metropolitan line. |
-| The October Man | 2019 | After *The Hanging Tree* | Optional. Tobias Winter in Germany. A different desk. |
-| What Abigail Did That Summer | 2021 | After *Foxglove Summer* in story time | Optional. Abigail’s camera. Better once you know her. |
-| Winter’s Gifts | 2023 | After *Amongst Our Weapons* | Optional. Kimberly Reynolds in the US. |
-| The Masquerades of Spring | 2024 | 1920s; first on the author’s chronology page | **Not a starting point.** Nightingale before Peter exists. |
+<OrderTable
+  author="Ben Aaronovitch"
+  books={[
+    { title: "The Furthest Station", year: 2017, notes: "After Foxglove Summer. Optional." },
+    { title: "The October Man", year: 2019, notes: "Tobias Winter in Germany. A different desk." },
+    { title: "What Abigail Did That Summer", year: 2021, notes: "After Foxglove Summer in story time. Optional." },
+    { title: "Winter’s Gifts", year: 2023, notes: "Kimberly Reynolds in the US. After Amongst Our Weapons." },
+    { title: "The Masquerades of Spring", year: 2024, notes: "1920s Nightingale. Not a starting point." },
+  ]}
+/>
 
 Aaronovitch’s [chronology page](https://www.benaaronovitch.com/chronology/) interleaves novels, novellas, shorts, and comics. It is useful as a map of *when stories sit*, not as a first-read syllabus. It also still looks pre–*Stone and Sky*. Publication order for the novels remains the honest on-ramp.
 
@@ -80,7 +88,7 @@ The comics (*Body Work*, *Night Witch*, *Black Mould*, and the later graphic nov
 2. **[The Dresden Files](/guides/dresden-files-reading-order/) (Jim Butcher)** — If you want another long wizard-for-hire ladder, with the warning that book one is a porch and the institution shows up later.
 3. **[Cormoran Strike](/guides/cormoran-strike-reading-order/) (Robert Galbraith)** — If you want the police-adjacent London casework without the magic, and a partnership that accumulates book by book.
 4. **The Laundry Files (Charles Stross)** — If the Folly’s bureaucratic magic was the hook: IT, secrecy, and entities that arrive as paperwork.
-5. **October Daye (Seanan McGuire)** — If you want a long urban-fantasy investigator series where the novellas between numbered books are the other trap.
+5. **[Jack Reacher](/guides/jack-reacher-reading-order/) (Lee Child)** — If you want the investigator without the river gods: a long run that looks interchangeable until a four-book chain appears.
 
 ## FAQ
 
@@ -88,24 +96,21 @@ The comics (*Body Work*, *Night Witch*, *Black Mould*, and the later graphic nov
 No. They add other desks (Abigail, Winter, Reynolds, 1920s Nightingale) and one Metropolitan-line case. The novels carry Peter’s job.
 
 **Which title do I search in the US?**  
-*Rivers of London* or *Midnight Riot*. Same book.
+*Midnight Riot* or *Rivers of London*. Same book one.
 
-**Can I read The October Man as a standalone?**  
-You can. It is a different protagonist in Germany. You will miss why the Folly’s English habits matter. It is a poor series on-ramp.
+**Is The Masquerades of Spring a prequel on-ramp?**  
+It is earlier. It is not an on-ramp.
 
 **Where do the comics go?**  
-After the novel they sat beside, or never. Not before book one.
-
-**Is Stone and Sky a starting point?**  
-No. It is the tenth novel.
+Optional, after you already know Peter’s job.
 
 ## Sources
 
-- [Ben Aaronovitch, British editions](https://www.benaaronovitch.com/british/) — novels and novellas the shop page still lists. Opened 2026-09-13.
-- [Ben Aaronovitch, chronology](https://www.benaaronovitch.com/chronology/) — story-time interleave, including comics and shorts. Opened 2026-09-13. The page had not yet added *Stone and Sky*.
+- [Ben Aaronovitch, British editions](https://www.benaaronovitch.com/british/) — official British novel and novella list. Opened 2026-09-13.
+- [Ben Aaronovitch, chronology](https://www.benaaronovitch.com/chronology/) — story-time map, not a first-read syllabus. Opened 2026-09-13.
 
 ## Disclosure
 
 As an Amazon Associate I earn from qualifying purchases.
 
-Amazon search: <a href={amazonSearchUrl("Rivers of London Ben Aaronovitch")} rel="sponsored nofollow">Rivers of London Ben Aaronovitch</a>
+Series search: <a href={amazonSearchUrl("Rivers of London Ben Aaronovitch")} rel={amazonRel}>Rivers of London Ben Aaronovitch</a>

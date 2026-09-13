@@ -6,18 +6,20 @@ lastVerified: 2026-09-13
 slug: cormoran-strike-reading-order
 series: Cormoran Strike
 author: Robert Galbraith
-status: reviewed
+status: published
 reviewFlags: []
 sources:
   - label: "Robert Galbraith — The Strike books"
     url: "https://robert-galbraith.com/strike-books/"
 ---
 
-import { amazonSearchUrl } from "../../lib/site";
+import { amazonRel, amazonSearchUrl } from "../../lib/site";
+import OrderTable from "../../components/OrderTable.astro";
+import StartHere from "../../components/StartHere.astro";
 
-## Starting point
-
-Start with **The Cuckoo’s Calling**. It is the first novel and the first time you meet Cormoran Strike and Robin Ellacott as a working partnership that does not yet know it is one.
+<StartHere title="The Cuckoo’s Calling">
+  It is the first novel and the first time you meet Cormoran Strike and Robin Ellacott as a working partnership that does not yet know it is one.
+</StartHere>
 
 There is no prequel on-ramp. There is no “begin with the best case.” Later books spend capital earned in the earlier ones: the agency, the press, the families, and the leftover damage from each investigation.
 
@@ -25,16 +27,19 @@ Robert Galbraith is the name on the spine. Use it when you search. The author’
 
 ## The novels
 
-| # | Title | Year |
-| --- | --- | --- |
-| 1 | The Cuckoo’s Calling | 2013 |
-| 2 | The Silkworm | 2014 |
-| 3 | Career of Evil | 2015 |
-| 4 | Lethal White | 2018 |
-| 5 | Troubled Blood | 2020 |
-| 6 | The Ink Black Heart | 2022 |
-| 7 | The Running Grave | 2023 |
-| 8 | The Hallmarked Man | 2025 |
+<OrderTable
+  author="Robert Galbraith"
+  books={[
+    { n: 1, title: "The Cuckoo’s Calling", year: 2013 },
+    { n: 2, title: "The Silkworm", year: 2014 },
+    { n: 3, title: "Career of Evil", year: 2015 },
+    { n: 4, title: "Lethal White", year: 2018 },
+    { n: 5, title: "Troubled Blood", year: 2020 },
+    { n: 6, title: "The Ink Black Heart", year: 2022 },
+    { n: 7, title: "The Running Grave", year: 2023 },
+    { n: 8, title: "The Hallmarked Man", year: 2025 },
+  ]}
+/>
 
 *The Hallmarked Man* is book 8 (2 September 2025). It is not a starting point.
 
@@ -58,7 +63,7 @@ There are no canonical novellas sitting between the novels the way Rivers of Lon
 ## What to read next
 
 1. **[Rivers of London](/guides/rivers-of-london-reading-order/) (Ben Aaronovitch)** — If you want another London partnership that treats the city as a working beat, with magic as extra jurisdiction instead of none.
-2. **Jackson Brodie (Kate Atkinson)** — If you want cases that keep folding back into the detective’s own leftovers, in fewer books.
+2. **[Jack Reacher](/guides/jack-reacher-reading-order/) (Lee Child)** — If you want a longer investigator run that publishers call standalone, with the handful of books that actually form a chain.
 3. **[The Dresden Files](/guides/dresden-files-reading-order/) (Jim Butcher)** — If the private-eye voice was the hook and you can tolerate a wizard license.
 4. **The Thursday Murder Club (Richard Osman)** — If the pleasure was the investigation as a social machine, in a lighter register.
 5. **[Discworld — City Watch](/guides/discworld-city-watch-reading-order/) (Terry Pratchett)** — If you want the copper’s ladder without the contemporary crime page-count.
@@ -78,14 +83,14 @@ Announced February 2026. Date not posted on the official book page when last ope
 It follows early cases closely enough that you should treat seasons as adaptations, not as a free first chapter.
 
 **Are there shorts I am missing?**  
-Nothing that belongs on this table. The official page is novels.
+Not as a required spine. The novels are the product.
 
 ## Sources
 
-- [Robert Galbraith, The Strike books](https://robert-galbraith.com/strike-books/) — publication list through *The Hallmarked Man* and the book 9 announcement. Opened 2026-09-13.
+- [Robert Galbraith, The Strike books](https://robert-galbraith.com/strike-books/) — official publication list. Opened 2026-09-13.
 
 ## Disclosure
 
 As an Amazon Associate I earn from qualifying purchases.
 
-Amazon search: <a href={amazonSearchUrl("Cormoran Strike Robert Galbraith")} rel="sponsored nofollow">Cormoran Strike Robert Galbraith</a>
+Series search: <a href={amazonSearchUrl("Cormoran Strike Robert Galbraith")} rel={amazonRel}>Cormoran Strike Robert Galbraith</a>

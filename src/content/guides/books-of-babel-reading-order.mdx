@@ -13,17 +13,35 @@ sources:
     url: "http://www.thebooksofbabel.com/thebooksofbabel"
 ---
 
-import { amazonSearchUrl } from "../../lib/site";
+import { amazonRel, amazonSearchUrl } from "../../lib/site";
+import OrderTable from "../../components/OrderTable.astro";
+import StartHere from "../../components/StartHere.astro";
 
-## Starting point
-
-Start with **Senlin Ascends**. It is book one of a finished four-book climb. There is no prequel, no side-novel on-ramp, and no honest way to begin with *Arm of the Sphinx* because the first book “is slow.”
+<StartHere title="Senlin Ascends">
+  It is book one of a finished four-book climb. There is no prequel, no side-novel on-ramp, and no honest way to begin with *Arm of the Sphinx* because the first book “is slow.”
+</StartHere>
 
 The first book *is* deliberate. Senlin is a headmaster with a guidebook. The Tower trains him out of that. Starting at book two hands you a crew and a problem you have not earned.
 
 Some readers bounce. That is a taste problem, not a reading-order problem. The series does not have a gentler door.
 
 ## The four novels
+
+Publication order is the story order. The tetralogy is complete.
+
+<OrderTable
+  author="Josiah Bancroft"
+  books={[
+    { n: 1, title: "Senlin Ascends", year: 2013, notes: "Self-published; Orbit reprint 2018. Start here." },
+    { n: 2, title: "Arm of the Sphinx", year: 2015, notes: "Self-published; Orbit reprint 2018." },
+    { n: 3, title: "The Hod King", year: 2019, notes: "Orbit." },
+    { n: 4, title: "The Fall of Babel", year: 2021, notes: "Last novel." },
+  ]}
+/>
+
+The 2018 Orbit editions are the same first two books, not a reboot. If your library has the later covers, you are still in the same sequence.
+
+Bancroft’s series page lists them as Book I–IV of the tetralogy. There is no contested chronology. People who “argue Senlin vs sequels as a start” are arguing about patience, not about hidden prequels.
 
 ## Optional extras
 
@@ -46,21 +64,6 @@ If you find a later anthology or related short, read it after the tetralogy. Not
 4. **[The Craft Sequence](/guides/craft-sequence-reading-order/) (Max Gladstone)** — If the Tower’s ringdoms felt like city-states with contracts, and you want that as a whole setting.
 5. **Piranesi (Susanna Clarke)** — If the pleasure was a building that is also a worldview, and you want one book, not four.
 
-**Is this related to R. F. Kuang’s Babel?**  
-No. Different book, different argument. Search “Senlin” if the title is crowded.
-
-## Sources
-
-- [Josiah Bancroft, The Books of Babel](http://www.thebooksofbabel.com/thebooksofbabel) — tetralogy listing, Book I–IV. Opened 2026-09-13.
-
-First-publication years above are the original English appearances; Orbit’s 2018 reprints are the common trade editions of books 1–2.
-
-## Disclosure
-
-As an Amazon Associate I earn from qualifying purchases.
-
-Amazon search: <a href={amazonSearchUrl("The Books of Babel Josiah Bancroft")} rel="sponsored nofollow">The Books of Babel Josiah Bancroft</a>
-
 ## FAQ
 
 **Do I have to read them in order?**  
@@ -75,15 +78,17 @@ Whichever printing your shop has. Orbit 2018 is the widely available first volum
 **Is there a book five?**  
 Not as part of this tetralogy. *The Fall of Babel* is the last novel on the author’s series page.
 
-Publication order is the story order. The tetralogy is complete.
+**Is this related to R. F. Kuang’s Babel?**  
+No. Different book, different argument. Search “Senlin” if the title is crowded.
 
-| # | Title | First year | Notes |
-| --- | --- | --- | --- |
-| 1 | Senlin Ascends | 2013 | Self-published; Orbit reprint 2018. Start here. |
-| 2 | Arm of the Sphinx | 2015 | Self-published; Orbit reprint 2018. |
-| 3 | The Hod King | 2019 | Orbit. |
-| 4 | The Fall of Babel | 2021 | Last novel. |
+## Sources
 
-The 2018 Orbit editions are the same first two books, not a reboot. If your library has the later covers, you are still in the same sequence.
+- [Josiah Bancroft, The Books of Babel](http://www.thebooksofbabel.com/thebooksofbabel) — tetralogy listing, Book I–IV. Opened 2026-09-13.
 
-Bancroft’s series page lists them as Book I–IV of the tetralogy. There is no contested chronology. People who “argue Senlin vs sequels as a start” are arguing about patience, not about hidden prequels.
+First-publication years above are the original English appearances; Orbit’s 2018 reprints are the common trade editions of books 1–2.
+
+## Disclosure
+
+As an Amazon Associate I earn from qualifying purchases.
+
+Series search: <a href={amazonSearchUrl("The Books of Babel Josiah Bancroft")} rel={amazonRel}>The Books of Babel Josiah Bancroft</a>

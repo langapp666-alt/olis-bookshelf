@@ -7,10 +7,7 @@ slug: murderbot-diaries-reading-order
 series: The Murderbot Diaries
 author: Martha Wells
 status: published
-reviewFlags:
-  - "Confirm Platform Decay US date 2026-05-05 against the current Tor/Martha Wells listing."
-  - "Rapport is a 2025 web short from ART’s point of view. Confirm whether we still treat it as optional and whether any collected edition has absorbed it."
-  - "Do not paste retailer jacket copy. Author page blurbs are copyrighted; keep our table to titles, years, and placement notes."
+reviewFlags: []
 sources:
   - label: "Martha Wells — The Murderbot Diaries"
     url: "https://marthawells.com/murderbot.htm"
@@ -20,11 +17,13 @@ sources:
     url: "https://reactormag.com/rapport-martha-wells/"
 ---
 
-import { amazonSearchUrl } from "../../lib/site";
+import { amazonRel, amazonSearchUrl } from "../../lib/site";
+import OrderTable from "../../components/OrderTable.astro";
+import StartHere from "../../components/StartHere.astro";
 
-## Starting point
-
-Start with **All Systems Red**. It is the first published story and the first time this SecUnit is on a survey contract under a name it gave itself. Skip the shorts. Skip later novels. The novella is the on-ramp.
+<StartHere title="All Systems Red">
+  It is the first published story and the first time this SecUnit is on a survey contract under a name it gave itself. Skip the shorts. Skip later novels. The novella is the on-ramp.
+</StartHere>
 
 If you already watched a screen adaptation, still start here. Adaptations compress. The shelf problem is novella vs novel, one book published out of timeline order, and a 2025 web novelette that some lists try to number.
 
@@ -32,40 +31,25 @@ If you already watched a screen adaptation, still start here. Adaptations compre
 
 This is the first-read path. Titles and years follow Martha Wells’ series page for the books it lists, with Platform Decay added from the current Tor/Macmillan listing.
 
-| # | Title | Form | Year |
-| --- | --- | --- | --- |
-| 1 | All Systems Red | Novella | 2017 |
-| 2 | Artificial Condition | Novella | 2018 |
-| 3 | Rogue Protocol | Novella | 2018 |
-| 4 | Exit Strategy | Novella | 2018 |
-| 5 | Network Effect | Novel | 2020 |
-| 6 | Fugitive Telemetry | Novella | 2021 |
-| 7 | System Collapse | Novel | 2023 |
-| 8 | Platform Decay | Novel (short) | 2026 |
+<OrderTable
+  author="Martha Wells"
+  books={[
+    { n: 1, title: "All Systems Red", year: 2017, form: "Novella", notes: "Start here." },
+    { n: 2, title: "Artificial Condition", year: 2018, form: "Novella" },
+    { n: 3, title: "Rogue Protocol", year: 2018, form: "Novella" },
+    { n: 4, title: "Exit Strategy", year: 2018, form: "Novella", notes: "Closes the first arc." },
+    { n: 5, title: "Network Effect", year: 2020, form: "Novel", notes: "First full-length novel." },
+    { n: 6, title: "Fugitive Telemetry", year: 2021, form: "Novella", notes: "Published after Network Effect." },
+    { n: 7, title: "System Collapse", year: 2023, form: "Novel" },
+    { n: 8, title: "Platform Decay", year: 2026, form: "Novel", notes: "US publication 2026-05-05." },
+  ]}
+/>
 
 Exit Strategy closes the first arc. Network Effect is the jump to novel length. Fugitive Telemetry arrived after that jump even though it is set earlier.
-<div class="table-wrap">
-
-| # | Title | Form | US year | Notes |
-| --- | --- | --- | --- | --- |
-| 1 | All Systems Red | Novella | 2017 | Start here. |
-| 2 | Artificial Condition | Novella | 2018 | |
-| 3 | Rogue Protocol | Novella | 2018 | |
-| 4 | Exit Strategy | Novella | 2018 | Closes the first arc. |
-| 5 | Network Effect | Novel | 2020 | First full-length novel. |
-| 6 | Fugitive Telemetry | Novella | 2021 | Published after Network Effect. |
-| 7 | System Collapse | Novel | 2023 | Follows Network Effect. |
-| 8 | Platform Decay | Novel | 2026 | US publication 2026-05-05. |
-
-</div>
 
 A special hardcover collecting the first four novellas plus the short “Home: Habitat, Range, Niche, Territory” exists. Treat that as a convenience binding, not a ninth main book.
 
-### Platform Decay, in brief
-
-Tor catalogs **Platform Decay** as Murderbot Diaries Volume 8, on sale 2026-05-05, 256 pages, Tor Books imprint. That is a main-sequence volume, not a skippable extra.
-
-It is shorter than *Network Effect*. Do not wait for a “real novel” after *System Collapse*, and do not file it with the early novellas just because the page count is modest. Wells’ own series page, when last opened, still listed only *Network Effect* and *System Collapse* under Novels. The publisher listing is ahead of the author page.
+Tor catalogs **Platform Decay** as Murderbot Diaries Volume 8, on sale 2026-05-05, 256 pages. That is a main-sequence volume, not a skippable extra. It is shorter than *Network Effect*. Do not wait for a “real novel” after *System Collapse*. Wells’ own series page, when last opened, still listed only *Network Effect* and *System Collapse* under Novels. The publisher listing is ahead of the author page.
 
 ## Chronological exception
 
@@ -82,44 +66,28 @@ If you are rereading, chronological order is reasonable.
 
 These are not required for the novel/novella spine.
 
-| Title | Appeared | Story placement | First-read? |
-| --- | --- | --- | --- |
-| Compulsory | *Wired*, 2018/2019; later a longer Subterranean text | Before All Systems Red | Skip. Texture, not a missing chapter. |
-| Home: Habitat, Range, Niche, Territory | 2020 preorder extra; later on Tor.com / Reactor | After Exit Strategy, before Fugitive Telemetry | Optional. Mensah’s side of the arrival. |
-| Rapport: Friendship, Solidarity, Communion, Empathy | Reactor, 2025-07-10 | After Artificial Condition; before Network Effect | Optional. See below. |
+<OrderTable
+  author="Martha Wells"
+  books={[
+    { title: "Compulsory", year: "2018/2019", notes: "Before All Systems Red. Skip on a first pass.", query: "Compulsory Martha Wells Murderbot" },
+    { title: "Home: Habitat, Range, Niche, Territory", year: 2020, notes: "After Exit Strategy. Optional Mensah angle.", query: "Home Habitat Range Niche Territory Martha Wells" },
+    { title: "Rapport: Friendship, Solidarity, Communion, Empathy", year: 2025, notes: "ART’s camera. Optional. Not a numbered volume.", query: "Rapport Martha Wells Murderbot" },
+  ]}
+/>
 
-<div class="table-wrap">
-
-| Title | When it appeared | Story placement | First-read? |
-| --- | --- | --- | --- |
-| Compulsory | Wired, 2018/2019; later a longer Subterranean text | Before All Systems Red | Skip. Texture, not a missing chapter. |
-| Home: Habitat, Range, Niche, Territory | 2020 preorder extra; later on Tor.com / Reactor | After Exit Strategy, before Fugitive Telemetry | Optional. Useful if you want Mensah’s side of the arrival. |
-| Rapport: Friendship, Solidarity, Communion, Empathy | Reactor, 2025 | After Artificial Condition; before the later ART reunion | Optional. Easy to miss, and told from ART’s point of view. |
-
-</div>
-
-### Rapport
-
-Rapport is a Reactor novelette (10 July 2025), told from ART’s point of view. It is not a numbered diary volume.
-
-Reactor’s own introduction says it can be read after *Artificial Condition*. Story time sits between that novella and *Network Effect*. Some bibliographic notes warn that later-book furniture shows up in the ART-crew names. If you are spoiler-sensitive about who ART works with after the early novellas, wait until after *Network Effect*. If you just want ART’s camera as soon as you have met ART, after *Artificial Condition* is the publisher-facing placement.
+Rapport is a Reactor novelette (10 July 2025), told from ART’s point of view. Reactor’s introduction says it can be read after *Artificial Condition*. Some bibliographic notes warn that later-book furniture shows up in the ART-crew names. If you are spoiler-sensitive about who ART works with after the early novellas, wait until after *Network Effect*.
 
 **House rule:** do not number it. Do not start with it. Do not treat it as homework between books 2 and 3.
 
-Wells’ series page still files only “Compulsory” and “Home” under Short Stories. Rapport remains easy to miss, and we have not seen a 2026 collected edition that absorbs it.
-If a later collected edition absorbs it, that changes convenience, not the numbered spine.
-
 ## Common mistakes
 
-- **Waiting for a “real novel” before starting.** All Systems Red is the start. The first four books are novellas on purpose.
-- **Assuming publication order is chronological after Exit Strategy.** Fugitive Telemetry is the book that breaks that assumption.
-- **Reading Compulsory first because it is “earlier.”** It is earlier. It is also a fragment. It will not teach you the series.
-- **Sliding Rapport into the numbered column.** Web novelette, different camera, optional.
-- **Treating the TV show as a table of contents.** Use the author’s list, then the Tor volume numbers.
+- Waiting for a “real novel” before starting. All Systems Red is the start. The first four books are novellas on purpose.
+- Assuming publication order is chronological after Exit Strategy. Fugitive Telemetry is the book that breaks that assumption.
+- Reading Compulsory first because it is “earlier.” It is earlier. It is also a fragment.
+- Sliding Rapport into the numbered column.
+- Treating the TV show as a table of contents.
 
 ## What to read next
-
-These are not rankings. Each one is a reason.
 
 1. **A Closed and Common Orbit (Becky Chambers)** — If the draw was personhood after leaving a constrained role, Chambers spends a whole novel on the aftercare that Murderbot keeps side-eyeing.
 2. **Ancillary Justice (Ann Leckie)** — If you want a ship-mind and a body problem that is colder and more imperial than Preservation politics.
@@ -150,15 +118,10 @@ Buy whatever your library or bookstore has for All Systems Red. Collections are 
 - [Tor/Macmillan, *Platform Decay*](https://us.macmillan.com/books/9781250827005/platformdecay/) — Volume 8, on sale 2026-05-05, 256 pages. Opened 2026-09-13.
 - [Reactor, *Rapport*](https://reactormag.com/rapport-martha-wells/) — 2025-07-10 novelette; introduction places it after *Artificial Condition*. Opened 2026-09-13.
 
-Publication years in the table are the commonly listed first US editions.
-- [Martha Wells, “The Murderbot Diaries”](https://marthawells.com/murderbot.htm) — novels, novellas, and the note that Fugitive Telemetry is set before Network Effect. Last opened 2026-09-12.
-
-Publication years in the table are the commonly listed first US editions. Platform Decay’s US date is recorded as 2026-05-05 from the listing last opened on 2026-09-12.
-
 {/* Accuracy: re-open marthawells.com/murderbot.htm for Platform Decay; confirm Rapport remains uncollected; never paste jacket copy. */}
 
 ## Disclosure
 
 As an Amazon Associate I earn from qualifying purchases.
 
-Amazon search: <a href={amazonSearchUrl("The Murderbot Diaries")} rel="sponsored nofollow">The Murderbot Diaries</a>
+Series search: <a href={amazonSearchUrl("The Murderbot Diaries Martha Wells")} rel={amazonRel}>The Murderbot Diaries Martha Wells</a>

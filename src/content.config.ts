@@ -2,7 +2,7 @@ import { defineCollection } from "astro:content";
 import { glob } from "astro/loaders";
 import { z } from "astro/zod";
 
-export const genres = ["epic-fantasy", "space-opera", "mystery-thriller"] as const;
+export const genres = ["epic-fantasy", "space-opera", "mystery-thriller", "romance"] as const;
 
 const guides = defineCollection({
   loader: glob({ base: "./src/content/guides", pattern: "**/*.{md,mdx}" }),

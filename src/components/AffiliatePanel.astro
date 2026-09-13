@@ -1,5 +1,5 @@
 ---
-import { affiliateTag, amazonSearchUrl } from "../lib/site";
+import { affiliateTag, amazonRel, amazonSearchUrl } from "../lib/site";
 
 interface Props {
   series: string;
@@ -9,35 +9,42 @@ interface Props {
 }
 
 const { series, author, genreLabel, sources } = Astro.props;
-const searchHref = amazonSearchUrl(series);
+const searchHref = amazonSearchUrl(`${series} ${author}`);
 ---
 
-<div class="panel">
+<div class="panel affiliate-panel">
   <p class="eyebrow">This series</p>
   <p class="aside-series">{series}</p>
-  <p class="small muted" style="margin:0 0 0.85rem;">
+  <p class="small muted aside-byline">
     {author} · {genreLabel}
   </p>
-  <a class="btn" href={searchHref} rel="sponsored nofollow">Search Amazon</a>
-  <p class="small muted" style="margin:0.7rem 0 0;">
+  <a class="btn" href={searchHref} rel={amazonRel}>Search the series on Amazon</a>
+  <p class="small muted affiliate-tagline">
     Associates tag <code>{affiliateTag}</code>
   </p>
   <hr class="rule" />
-  <p class="small" style="margin:0 0 0.55rem;">
-    <strong>As an Amazon Associate I earn from qualifying purchases.</strong> Search links may
-    earn a commission.
+  <p class="small disclosure-copy">
+    <strong>As an Amazon Associate I earn from qualifying purchases.</strong>
+    Each title in the order tables links to an Amazon search for that book. Series
+    search is here if you want the whole shelf.
   </p>
-  <p class="small" style="margin:0 0 0.85rem;">
-    <a href="/disclosure/">Full disclosure</a> · <a href="/methodology/">How the lists are made</a>
+  <p class="small aside-links">
+    <a href="/disclosure/">Full disclosure</a>
+    ·
+    <a href="/methodology/">How the lists are made</a>
   </p>
-  <p class="small" style="margin:0 0 0.35rem;"><strong>Sources</strong></p>
-  <ul class="source-list small">
-    {
-      sources.map((source) => (
-        <li>
-          <a href={source.url}>{source.label}</a>
-        </li>
-      ))
-    }
-  </ul>
+  {
+    sources.length > 0 && (
+      <>
+        <p class="small aside-sources-label"><strong>Sources</strong></p>
+        <ul class="source-list small">
+          {sources.map((source) => (
+            <li>
+              <a href={source.url}>{source.label}</a>
+            </li>
+          ))}
+        </ul>
+      </>
+    )
+  }
 </div>

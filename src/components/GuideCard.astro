@@ -1,29 +1,39 @@
 ---
-import { formatDate, genres, type GenreSlug } from "../lib/site";
+import { genres, type GenreSlug } from "../lib/site";
 import type { CollectionEntry } from "astro:content";
 
 interface Props {
   guide: CollectionEntry<"guides">;
   index?: number;
+  compact?: boolean;
 }
 
-const { guide, index } = Astro.props;
+const { guide, index, compact = false } = Astro.props;
 const genre = genres[guide.data.genre as GenreSlug];
 const n = typeof index === "number" ? String(index).padStart(2, "0") : null;
+const searchText = [guide.data.series, guide.data.author, guide.data.title, genre.label]
+  .join(" ")
+  .toLowerCase();
 ---
 
-<a class:list={[n ? "catalog-item" : "guide-card"]} href={`/guides/${guide.data.slug}/`}>
+<a
+  class:list={[n ? "catalog-item" : "guide-card", { "is-compact": compact }]}
+  href={`/guides/${guide.data.slug}/`}
+  data-catalog-item
+  data-catalog-text={searchText}
+>
   {n && <span class="catalog-index" aria-hidden="true">{n}</span>}
   <div>
     <div class="pill-row">
       <span class="pill genre">{genre.label}</span>
     </div>
-    <h2>{guide.data.title}</h2>
-    <p class="byline small">{guide.data.series} · {guide.data.author}</p>
-    <p style="margin:0.15rem 0 0;">{guide.data.description}</p>
-    <p class="small muted" style="margin:0.35rem 0 0;">
-      Last checked {formatDate(guide.data.lastVerified)}
-    </p>
-    <p class="catalog-cta">Read the order</p>
+    <h2>{guide.data.series}</h2>
+    <p class="byline small">{guide.data.author}</p>
+    {
+      !compact && (
+        <p class="card-desc">{guide.data.description}</p>
+      )
+    }
+    <p class="catalog-cta">Open the order</p>
   </div>
 </a>

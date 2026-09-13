@@ -14,17 +14,7 @@ export function getStaticPaths() {
 const { genre } = Astro.props;
 const guides = (await getCollection("guides"))
   .filter((entry) => entry.data.genre === (genre.slug as GenreSlug))
-  .sort((a, b) => a.data.title.localeCompare(b.data.title));
-
-const queued: Record<GenreSlug, string[]> = {
-  "epic-fantasy": [],
-  "space-opera": ["Foreigner — C. J. Cherryh"],
-  "mystery-thriller": [
-    "October Daye — Seanan McGuire",
-    "InCryptid — Seanan McGuire",
-    "Jackson Brodie — Kate Atkinson",
-  ],
-};
+  .sort((a, b) => a.data.series.localeCompare(b.data.series));
 ---
 
 <BaseLayout title={genre.label} description={genre.blurb}>
@@ -36,33 +26,17 @@ const queued: Record<GenreSlug, string[]> = {
 
   <header class="section-head">
     <p class="eyebrow">On this shelf</p>
-    <h2>Guides</h2>
+    <h2>{guides.length === 1 ? "1 guide" : `${guides.length} guides`}</h2>
   </header>
   {
     guides.length > 0 ? (
-      <div class="card-grid">
+      <div class="catalog catalog-compact">
         {guides.map((guide) => (
-          <GuideCard guide={guide} />
+          <GuideCard guide={guide} compact />
         ))}
       </div>
     ) : (
-      <p>No guide in this hub yet. The backlog below is the queue.</p>
-    )
-  }
-
-  {
-    queued[genre.slug as GenreSlug].length > 0 && (
-      <div class="house-note colophon">
-        <h2>Still queued</h2>
-        <p class="small muted">
-          From <code>docs/SERIES_BACKLOG.md</code>. Not yet a guide.
-        </p>
-        <ul>
-          {queued[genre.slug as GenreSlug].map((item) => (
-            <li>{item}</li>
-          ))}
-        </ul>
-      </div>
+      <p>No guide in this hub yet.</p>
     )
   }
 </BaseLayout>

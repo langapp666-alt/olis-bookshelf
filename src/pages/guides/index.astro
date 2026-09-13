@@ -1,0 +1,83 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import GuideCard from "../../components/GuideCard.astro";
+import { genres, type GenreSlug } from "../../lib/site";
+
+const allGuides = (await getCollection("guides")).sort((a, b) =>
+  a.data.series.localeCompare(b.data.series),
+);
+
+const shelves = Object.values(genres).map((genre) => ({
+  genre,
+  guides: allGuides.filter((guide) => guide.data.genre === (genre.slug as GenreSlug)),
+}));
+---
+
+<BaseLayout
+  title="Reading-order guides"
+  description="All Oli's Bookshelf series reading-order guides, grouped by shelf. Publication first, chronology when it matters."
+>
+  <header class="page-head">
+    <p class="eyebrow">Catalog</p>
+    <h1>Reading-order guides</h1>
+    <p class="lede">
+      {allGuides.length} series maps. Publication order first. Chronology when it
+      actually changes the read. Each title in a guide has its own Amazon search
+      link.
+    </p>
+  </header>
+
+  <label class="catalog-filter">
+    <span class="catalog-filter-label">Find a series</span>
+    <input
+      type="search"
+      name="q"
+      placeholder="Series or author"
+      autocomplete="off"
+      data-catalog-filter
+    />
+  </label>
+
+  {
+    shelves.map(({ genre, guides }) =>
+      guides.length > 0 ? (
+        <section class="shelf-block" data-shelf>
+          <header class="section-head">
+            <p class="eyebrow">
+              <a href={`/genres/${genre.slug}/`}>{genre.label}</a>
+            </p>
+            <h2>{guides.length === 1 ? "1 guide" : `${guides.length} guides`}</h2>
+          </header>
+          <div class="catalog catalog-compact">
+            {guides.map((guide) => (
+              <GuideCard guide={guide} compact />
+            ))}
+          </div>
+        </section>
+      ) : null,
+    )
+  }
+</BaseLayout>
+
+<script>
+  const input = document.querySelector<HTMLInputElement>("[data-catalog-filter]");
+  if (input) {
+    const items = [...document.querySelectorAll<HTMLElement>("[data-catalog-item]")];
+    const shelves = [...document.querySelectorAll<HTMLElement>("[data-shelf]")];
+    const apply = () => {
+      const q = input.value.trim().toLowerCase();
+      items.forEach((item) => {
+        const hay = item.getAttribute("data-catalog-text") || "";
+        item.hidden = Boolean(q) && !hay.includes(q);
+      });
+      shelves.forEach((shelf) => {
+        const visible = [...shelf.querySelectorAll<HTMLElement>("[data-catalog-item]")].some(
+          (item) => !item.hidden,
+        );
+        shelf.hidden = !visible;
+      });
+    };
+    input.addEventListener("input", apply);
+  }
+</script>
