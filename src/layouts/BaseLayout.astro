@@ -1,19 +1,32 @@
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import SeoJsonLd from "../components/SeoJsonLd.astro";
 import "../styles/global.css";
 import { siteName } from "../lib/site";
+import { clipMeta, documentTitle } from "../lib/seo";
 
 interface Props {
   title: string;
   description: string;
   dock?: boolean;
   wide?: boolean;
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
 
-const { title, description, dock = false, wide = false } = Astro.props;
-const pageTitle = title === siteName ? title : `${title} · ${siteName}`;
+const { title, description, dock = false, wide = false, jsonLd } = Astro.props;
+const pageTitle = documentTitle(title);
+const metaDescription = clipMeta(description);
 const canonical = new URL(Astro.url.pathname, Astro.site);
+const origin = Astro.site ?? new URL("https://olis-bookshelf.pages.dev");
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: siteName,
+  url: origin.href,
+  description:
+    "Reading-order maps for long science fiction, fantasy, mystery, and romance series.",
+};
 ---
 
 <!doctype html>
@@ -22,11 +35,11 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{pageTitle}</title>
-    <meta name="description" content={description} />
+    <meta name="description" content={metaDescription} />
     <meta name="google-site-verification" content="9jkc3kGkWhu3Yil5wu9SF4CYXjPdrOnniWuBCEV5odQ" />
     <link rel="canonical" href={canonical} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="sitemap" href="/sitemap.xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://covers.openlibrary.org" />
@@ -35,11 +48,17 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
       href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500&family=Schibsted+Grotesk:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <meta property="og:site_name" content={siteName} />
     <meta property="og:title" content={pageTitle} />
-    <meta property="og:description" content={description} />
+    <meta property="og:description" content={metaDescription} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={metaDescription} />
     <meta name="theme-color" content="#f7f3ea" />
+    <SeoJsonLd schema={jsonLd ? [websiteSchema, ...(Array.isArray(jsonLd) ? jsonLd : [jsonLd])] : websiteSchema} />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>

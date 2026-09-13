@@ -4,7 +4,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import CatalogFind from "../components/CatalogFind.astro";
 import GuideCard from "../components/GuideCard.astro";
 import { featuredSlugs, guidesBySlug, sortGuides } from "../lib/catalog";
-import { genres, siteName, type GenreSlug } from "../lib/site";
+import { genres, type GenreSlug } from "../lib/site";
 
 const allGuides = sortGuides(await getCollection("guides"));
 const guideCount = allGuides.length;
@@ -18,14 +18,23 @@ const shelves = Object.values(genres).map((genre) => ({
 ---
 
 <BaseLayout
-  title={siteName}
+  title="Reading-order guides for long series"
   description="Reading-order maps for long science fiction, fantasy, mystery, and romance series. Publication first, chronology when it matters, and a few next reads with reasons."
   wide
+  jsonLd={{
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Reading-order guides for long series",
+    url: new URL("/", Astro.site).href,
+    description:
+      "Reading-order maps for long science fiction, fantasy, mystery, and romance series.",
+  }}
 >
   <section class="masthead" data-masthead>
     <div class="masthead-copy">
       <p class="eyebrow">Reading-order catalog</p>
-      <h1>The next book, not the loudest one.</h1>
+      <h1>Reading-order guides for long series</h1>
+      <p class="dek">The next book, not the loudest one.</p>
       <p class="lede">
         Long series hide the path: prequels that spoil, novellas that look skippable,
         lists that quietly add picture books. {guideCount} maps start with publication

@@ -44,6 +44,18 @@ const seriesCoverAliases: Record<string, string> = {
   "the locked tomb|tamsyn muir": "gideon the ninth|tamsyn muir",
   "remembrance of earth's past|cixin liu": "the three-body problem|cixin liu",
   "the lord of the rings|j. r. r. tolkien": "the fellowship of the ring|j. r. r. tolkien",
+  "the atlas series|olivie blake": "the atlas six|olivie blake",
+  "the broken kingdoms|l.j. andrews": "curse of shadows and thorns|l.j. andrews",
+  "discworld — moist von lipwig|terry pratchett": "going postal|terry pratchett",
+  "discworld — rincewind|terry pratchett": "the colour of magic|terry pratchett",
+  "lightbringer|brent weeks": "the black prism|brent weeks",
+  "the lunar chronicles|marissa meyer": "cinder|marissa meyer",
+  "the roots of chaos|samantha shannon": "the priory of the orange tree|samantha shannon",
+  "shadowhunter chronicles|cassandra clare": "city of bones|cassandra clare",
+  "vorkosigan saga|lois mcmaster bujold": "shards of honor|lois mcmaster bujold",
+  "james bond|ian fleming": "casino royale|ian fleming",
+  "agatha christie|agatha christie": "the mysterious affair at styles|agatha christie",
+  "sherlock holmes|arthur conan doyle": "a study in scarlet|arthur conan doyle",
 };
 
 export function lookupCover(

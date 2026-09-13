@@ -28,7 +28,7 @@ npm run preview  # serves dist/ locally
 
 A hundred-plus reading-order guides live in `src/content/guides/`. The home page, `/guides/`, and the four genre hubs list them automatically. The full published table is in `docs/SERIES_BACKLOG.md`.
 
-High-search paths now include Tolkien, Harry Potter, Divergent, Maze Runner, Inheritance Cycle, Shadowhunters, Vorkosigan, Temeraire, Discworld character lines, Bobiverse, Freida McFadden, Silo/Wool, Hunger Games, focused Stephen King pages, Broken Earth, Poppy War, Wayward Children, the Maas series, Empyrean, a Cosmere starter (not a 40-book spreadsheet), and other demand shelves.
+High-search paths now include Tolkien, Harry Potter, James Bond, Agatha Christie, Sherlock Holmes, Divergent, Maze Runner, Inheritance Cycle, Shadowhunters, Vorkosigan, Temeraire, Discworld character lines, Bobiverse, Freida McFadden, Silo/Wool, Hunger Games, focused Stephen King pages, Broken Earth, Poppy War, Wayward Children, the Maas series, Empyrean, a Cosmere starter (not a 40-book spreadsheet), and other demand shelves.
 
 Order tables show Open Library covers when `src/data/covers.json` has a reliable ID. Refresh IDs with `node src/scripts/fetch-covers.mjs`. Do not scrape Amazon images.
 
@@ -44,7 +44,7 @@ Order tables show Open Library covers when `src/data/covers.json` has a reliable
 | Disclosure (FTC + Associates wording) | `/disclosure/` |
 | Methodology | `/methodology/` |
 | `robots.txt` | `/robots.txt` |
-| Sitemap | `/sitemap-index.xml` |
+| Sitemap | `/sitemap.xml` (also `/sitemap-index.xml`, `/sitemap-0.xml`) |
 
 House docs (not shipped as pages):
 
@@ -79,7 +79,20 @@ The public origin is `https://olis-bookshelf.pages.dev`.
 - Astro (static output)
 - Markdown/MDX content collections
 - TypeScript
-- `@astrojs/sitemap` for the sitemap
+- Custom `/sitemap.xml` (single urlset with `lastmod`) plus the older index/child URLs so existing Search Console submissions keep working
+
+## Google Search Console
+
+Submit **`https://olis-bookshelf.pages.dev/sitemap.xml`**. That file is a bare `urlset` with `lastmod`, served as `text/xml; charset=utf-8`. `/sitemap-index.xml` and `/sitemap-0.xml` stay valid so an older GSC row does not 404.
+
+If GSC still says “Couldn’t fetch” while a public GET returns HTTP 200:
+
+1. Confirm the property is the URL-prefix `https://olis-bookshelf.pages.dev/` (not `pages.dev`).
+2. Submit the exact string with no trailing slash.
+3. In Cloudflare: Security Events / Bot Fight Mode. Super Bot Fight Mode on a `pages.dev` host often challenges Google’s sitemap fetcher even when a browser, `curl`, and URL Inspection succeed.
+4. URL Inspection → Test live URL on `/sitemap.xml`. If that is available to Google, the Sitemaps report is usually lag or a stale first-fetch error — resubmit and wait.
+
+This repo cannot turn Bot Fight Mode off. That is a dashboard setting, not a code defect. A custom domain is the reliable long-term fix that other `pages.dev` sites report.
 
 ## License of this repo
 

@@ -3,12 +3,13 @@ import { getCollection, render } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import AffiliatePanel from "../../components/AffiliatePanel.astro";
 import AffiliateDock from "../../components/AffiliateDock.astro";
+import GuideBreadcrumb from "../../components/GuideBreadcrumb.astro";
 import GuideToc from "../../components/GuideToc.astro";
 import OrderTable from "../../components/OrderTable.astro";
 import RelatedGuides from "../../components/RelatedGuides.astro";
 import StartHere from "../../components/StartHere.astro";
 import { relatedGuides } from "../../lib/related-guides";
-import { formatDate, genres } from "../../lib/site";
+import { formatDate, genres, isoDate, siteName } from "../../lib/site";
 
 export async function getStaticPaths() {
   const guides = await getCollection("guides");
@@ -22,11 +23,44 @@ const { guide, guides } = Astro.props;
 const { Content, headings } = await render(guide);
 const genre = genres[guide.data.genre];
 const related = relatedGuides(guide, guides);
+const canonical = new URL(`/guides/${guide.data.slug}/`, Astro.site);
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: siteName, item: new URL("/", Astro.site).href },
+    { "@type": "ListItem", position: 2, name: "Guides", item: new URL("/guides/", Astro.site).href },
+    {
+      "@type": "ListItem",
+      position: 3,
+      name: genre.label,
+      item: new URL(`/genres/${genre.slug}/`, Astro.site).href,
+    },
+    { "@type": "ListItem", position: 4, name: guide.data.title, item: canonical.href },
+  ],
+};
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: guide.data.title,
+  description: guide.data.description,
+  dateModified: isoDate(guide.data.lastVerified),
+  author: { "@type": "Organization", name: siteName },
+  publisher: { "@type": "Organization", name: siteName },
+  mainEntityOfPage: canonical.href,
+};
 ---
 
-<BaseLayout title={guide.data.title} description={guide.data.description} dock>
+<BaseLayout title={guide.data.title} description={guide.data.description} dock jsonLd={[breadcrumbSchema, articleSchema]}>
   <article class="guide-page">
     <header class="page-head guide-head">
+      <GuideBreadcrumb
+        crumbs={[
+          { href: "/", label: "Home" },
+          { href: "/guides/", label: "Guides" },
+          { href: `/genres/${genre.slug}/`, label: genre.label },
+        ]}
+      />
       <p class="eyebrow">
         <a href={`/genres/${genre.slug}/`}>{genre.label}</a>
       </p>
@@ -39,9 +73,6 @@ const related = relatedGuides(guide, guides);
     </header>
 
     <div class="guide-layout">
-      <div class="prose guide-prose">
-        <Content components={{ OrderTable, StartHere }} />
-      </div>
       <aside class="guide-aside">
         <GuideToc headings={headings} />
         <AffiliatePanel
@@ -51,6 +82,9 @@ const related = relatedGuides(guide, guides);
           sources={guide.data.sources}
         />
       </aside>
+      <div class="prose guide-prose">
+        <Content components={{ OrderTable, StartHere }} />
+      </div>
     </div>
     <RelatedGuides guides={related} />
   </article>

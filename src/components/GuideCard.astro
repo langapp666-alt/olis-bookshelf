@@ -53,9 +53,13 @@ const isTile = variant === "shelf" || variant === "featured" || variant === "rel
   {n && <span class="catalog-index" aria-hidden="true">{n}</span>}
   <BookCover title={guide.data.series} cover={cover} size={coverSize} priority={priority} />
   <div class="book-tile-copy">
-    <div class="pill-row">
-      <span class="pill genre">{genre.label}</span>
-    </div>
+    {
+      variant !== "shelf" && (
+        <div class="pill-row">
+          <span class="pill genre">{genre.label}</span>
+        </div>
+      )
+    }
     <h2>{guide.data.series}</h2>
     <p class="byline small">{guide.data.author}</p>
     {

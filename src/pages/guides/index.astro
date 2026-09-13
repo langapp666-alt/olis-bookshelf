@@ -18,6 +18,13 @@ const shelves = Object.values(genres).map((genre) => ({
   title="Reading-order guides"
   description="All Oli's Bookshelf series reading-order guides, grouped by shelf. Publication first, chronology when it matters."
   wide
+  jsonLd={{
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Reading-order guides",
+    url: new URL("/guides/", Astro.site).href,
+    description: "All series reading-order guides, grouped by shelf.",
+  }}
 >
   <header class="page-head catalog-page-head">
     <p class="eyebrow">Catalog</p>

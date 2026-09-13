@@ -1,0 +1,7 @@
+import type { APIRoute } from "astro";
+import { sitemapEntries, urlsetXml, xmlResponse } from "../lib/sitemap";
+
+export const GET: APIRoute = async ({ site }) => {
+  const origin = site ?? new URL("https://olis-bookshelf.pages.dev");
+  return xmlResponse(urlsetXml(await sitemapEntries(origin)));
+};

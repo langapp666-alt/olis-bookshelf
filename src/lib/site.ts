@@ -85,3 +85,7 @@ export function formatDate(date: Date): string {
     timeZone: "UTC",
   }).format(date);
 }
+
+export function isoDate(date: Date): string {
+  return date.toISOString().slice(0, 10);
+}
