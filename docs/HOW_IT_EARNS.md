@@ -1,27 +1,18 @@
-# How this site might earn (later)
+# How this site might earn
 
-Status as of 2026-09-12: **Amazon Associates is not set up.** No application, no approval, no live tag, no custom domain work in this repo.
+Status as of 2026-09-13: **the Amazon Associates tag is live** (`olisbookshelf-20` via `PUBLIC_AFFILIATE_TAG` / `src/lib/site.ts`).
 
 ## Current state
 
-- Search links on guides use the public placeholder `TODO_AFFILIATE_TAG`.
-- Those links are not intended to generate commission.
-- The site states Amazon’s required sentence on `/disclosure/` so the wording is ready, and immediately notes that the program is not active.
+- Search links on guides use the live Associates tag.
+- Amazon still reviews the application: we need **3 non-personal qualifying sales within 180 days**. That is a program requirement, not an income forecast.
+- `/disclosure/` states Amazon’s required sentence and that the program is active.
 
-## Planned, not promised
-
-If Associates is approved later:
-
-1. Replace `TODO_AFFILIATE_TAG` in `src/lib/site.ts` (and any remaining hardcoded URLs).
-2. Keep `/disclosure/` and the footer note.
-3. Record the go-live date in this file.
-4. Do not add a live tag in a commit that also hides the disclosure.
-
-We will not:
+## We will not
 
 - Claim a specific income
 - Stuff keyword pages that exist only for clicks
-- Pretend a placeholder tag is “already earning”
+- Treat the qualifying-sale review as guaranteed approval or revenue
 
 ## Other money
 
@@ -31,4 +22,4 @@ No display ads, sponsored rankings, or paid review placements in the current des
 
 > As an Amazon Associate I earn from qualifying purchases.
 
-Keep that sentence on the disclosure page even while the program is inactive, and keep the inactivity sentence next to it.
+Keep that sentence on the disclosure page and near affiliate links.

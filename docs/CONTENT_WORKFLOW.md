@@ -36,7 +36,7 @@ Genre must be one of: `epic-fantasy`, `space-opera`, `mystery-thriller`.
 6. FAQ
 7. Sources
 8. Accuracy notes as HTML comments (not a public “human-review flags” heading)
-9. Disclosure + `TODO_AFFILIATE_TAG` search URL
+9. Disclosure + Amazon search URL via `amazonSearchUrl()` (site tag)
 
 ## 5. Human review (blocking)
 
@@ -47,7 +47,7 @@ A person, not only a model, should:
 - [ ] Confirm dates
 - [ ] Confirm flagged shorts still exist where we say they do
 - [ ] Confirm no jacket copy or book text landed in the file
-- [ ] Confirm no live affiliate tag
+- [ ] Confirm search links use the site Associates tag (not a leftover placeholder)
 
 Then set `status: published` and refresh `lastVerified`. Published pages must not show draft banners, stamps, or review-flag lists.
 

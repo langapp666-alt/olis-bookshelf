@@ -1,7 +1,9 @@
 export const siteName = "Oli's Bookshelf";
 export const siteTagline = "Reading order for long series. Then what to read next.";
 
-export const affiliateTag = "TODO_AFFILIATE_TAG";
+/** Public Amazon Associates tag. Override with PUBLIC_AFFILIATE_TAG if needed. */
+export const affiliateTag =
+  import.meta.env.PUBLIC_AFFILIATE_TAG?.trim() || "olisbookshelf-20";
 
 export const genres = {
   "epic-fantasy": {
