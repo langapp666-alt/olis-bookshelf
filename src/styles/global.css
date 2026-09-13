@@ -1023,6 +1023,52 @@ th {
   min-width: 0;
 }
 
+.related-guides {
+  margin-top: 2.4rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--rule);
+}
+
+.related-guides h2 {
+  margin: 0.15rem 0 0.75rem;
+  font-size: 1.45rem;
+}
+
+.related-guides-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.45rem 1.5rem;
+}
+
+.related-guides-list li {
+  display: grid;
+  gap: 0.1rem;
+}
+
+.related-guides-list a {
+  font-family: var(--sans);
+  font-weight: 650;
+  text-decoration: none;
+  color: var(--ink-soft);
+}
+
+.related-guides-list a:hover {
+  color: var(--accent);
+}
+
+.related-guides-author {
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
+@media (min-width: 720px) {
+  .related-guides-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 .guide-layout {
   display: grid;
   gap: 1.75rem;
