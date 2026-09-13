@@ -1,0 +1,55 @@
+---
+import { catalogChips } from "../lib/catalog";
+
+interface Props {
+  id?: string;
+  placeholder?: string;
+  chips?: boolean;
+  total: number;
+}
+
+const {
+  id = "guides",
+  placeholder = "Fourth Wing, Hobbit, Housemaid, Reacher…",
+  chips = true,
+  total,
+} = Astro.props;
+---
+
+<div class="catalog-find" id={id} data-catalog-find data-catalog-total={total}>
+  <label class="catalog-find-field">
+    <span class="catalog-filter-label">Find a series</span>
+    <input
+      type="search"
+      name="q"
+      placeholder={placeholder}
+      autocomplete="off"
+      enterkeyhint="search"
+      data-catalog-filter
+    />
+  </label>
+  {
+    chips && (
+      <div class="catalog-chips" role="group" aria-label="Filter by shelf">
+        {catalogChips.map((chip, i) => (
+          <button
+            type="button"
+            class="catalog-chip"
+            data-catalog-genre={chip.slug}
+            aria-pressed={i === 0 ? "true" : "false"}
+          >
+            {chip.label}
+          </button>
+        ))}
+      </div>
+    )
+  }
+  <p class="catalog-find-meta" data-catalog-count>
+    {total} series maps
+  </p>
+</div>
+
+<script>
+  import { bindCatalogFind } from "../scripts/catalog-filter";
+  bindCatalogFind();
+</script>

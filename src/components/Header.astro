@@ -29,12 +29,34 @@ function isCurrent(href: string) {
           <span class="wordmark-shelf">Bookshelf</span>
         </span>
       </a>
+      <form class="header-find" action="/" method="get" role="search">
+        <label class="header-find-label" for="header-q">Find a series</label>
+        <input
+          id="header-q"
+          type="search"
+          name="q"
+          placeholder="Find a series"
+          autocomplete="off"
+          enterkeyhint="search"
+        />
+      </form>
       <details class="nav-box" data-nav-box>
         <summary class="nav-toggle">
           Menu
           <span class="nav-toggle-icon" aria-hidden="true"><span></span></span>
         </summary>
         <nav class="nav" aria-label="Primary">
+          <form class="nav-find" action="/" method="get" role="search">
+            <label class="header-find-label" for="nav-q">Find a series</label>
+            <input
+              id="nav-q"
+              type="search"
+              name="q"
+              placeholder="Find a series"
+              autocomplete="off"
+              enterkeyhint="search"
+            />
+          </form>
           <div class="nav-group">
             <p class="nav-label">Shelves</p>
             {
@@ -46,7 +68,7 @@ function isCurrent(href: string) {
             }
           </div>
           <div class="nav-group">
-            <p class="nav-label">The shop</p>
+            <p class="nav-label">House</p>
             {
               house.map((link) => (
                 <a href={link.href} aria-current={isCurrent(link.href) ? "page" : undefined}>

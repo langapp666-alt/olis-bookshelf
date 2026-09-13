@@ -1,13 +1,15 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import CatalogFind from "../components/CatalogFind.astro";
 import GuideCard from "../components/GuideCard.astro";
+import { featuredSlugs, guidesBySlug, sortGuides } from "../lib/catalog";
 import { genres, siteName, type GenreSlug } from "../lib/site";
 
-const allGuides = (await getCollection("guides")).sort((a, b) =>
-  a.data.series.localeCompare(b.data.series),
-);
+const allGuides = sortGuides(await getCollection("guides"));
 const guideCount = allGuides.length;
+const featured = guidesBySlug(allGuides, featuredSlugs);
+const desk = featured.slice(0, 4);
 
 const shelves = Object.values(genres).map((genre) => ({
   genre,
@@ -18,59 +20,73 @@ const shelves = Object.values(genres).map((genre) => ({
 <BaseLayout
   title={siteName}
   description="Reading-order maps for long science fiction, fantasy, mystery, and romance series. Publication first, chronology when it matters, and a few next reads with reasons."
+  wide
 >
-  <section class="hero">
-    <div class="hero-copy">
-      <p class="eyebrow">Reading orders</p>
+  <section class="masthead" data-masthead>
+    <div class="masthead-copy">
+      <p class="eyebrow">Reading-order catalog</p>
       <h1>The next book, not the loudest one.</h1>
       <p class="lede">
         Long series hide the path: prequels that spoil, novellas that look skippable,
-        lists that quietly add picture books. We start with publication order, then
-        say where chronology actually changes the read.
+        lists that quietly add picture books. {guideCount} maps start with publication
+        order, then say where chronology actually changes the read.
       </p>
       <div class="btn-row">
-        <a class="btn" href="#guides">Browse the guides</a>
+        <a class="btn" href="#find">Find a series</a>
         <a class="btn btn-secondary" href="/methodology/">How the lists are made</a>
       </div>
     </div>
-    <aside class="hero-card">
-      <p class="eyebrow">On the desk</p>
-      <p class="hero-stat">{guideCount} reading-order guides</p>
-      <p class="hero-card-copy">
-        High-search series first: where to start, what to skip, and why a prequel
-        is often a later book.
-      </p>
-      <p class="small muted hero-card-note">
-        Covers come from Open Library when we have a reliable ID. Missing art
-        is skipped; we do not hotlink Amazon images.
-      </p>
-    </aside>
+    <div class="masthead-desk" aria-label="Featured series on the desk">
+      {
+        desk.map((guide, i) => (
+          <GuideCard guide={guide} variant="shelf" priority={i < 2} filterable={false} />
+        ))
+      }
+    </div>
   </section>
 
-  <label class="catalog-filter" id="guides">
-    <span class="catalog-filter-label">Find a series</span>
-    <input
-      type="search"
-      name="q"
-      placeholder="Fourth Wing, Hobbit, Housemaid, Reacher…"
-      autocomplete="off"
-      data-catalog-filter
-    />
-  </label>
+  <CatalogFind id="find" total={guideCount} />
+
+  <p class="catalog-empty" data-catalog-empty hidden>No series on this shelf matches that search.</p>
+
+  <section class="featured-block" data-featured>
+    <header class="shelf-head">
+      <div>
+        <p class="eyebrow">On the desk</p>
+        <h2>Start here — the paths people usually get wrong</h2>
+      </div>
+      <p class="shelf-count">{featured.length} featured</p>
+    </header>
+    <div class="cover-wall is-featured">
+      {
+        featured.map((guide, i) => (
+          <GuideCard guide={guide} variant="featured" priority={i < 2} filterable={false} />
+        ))
+      }
+    </div>
+  </section>
 
   {
     shelves.map(({ genre, guides }) =>
       guides.length > 0 ? (
-        <section class="shelf-block" data-shelf>
-          <header class="section-head">
-            <p class="eyebrow">
-              <a href={`/genres/${genre.slug}/`}>{genre.label}</a>
+        <section class="shelf-block" data-shelf data-shelf-genre={genre.slug}>
+          <header class="shelf-head">
+            <div>
+              <p class="eyebrow">Shelf</p>
+              <h2>
+                <a href={`/genres/${genre.slug}/`}>{genre.label}</a>
+              </h2>
+              <p class="shelf-blurb">{genre.blurb}</p>
+            </div>
+            <p class="shelf-count" data-shelf-total={guides.length}>
+              <a href={`/genres/${genre.slug}/`}>
+                {guides.length === 1 ? "1 map" : `${guides.length} maps`}
+              </a>
             </p>
-            <h2>{guides.length === 1 ? "1 guide" : `${guides.length} guides`}</h2>
           </header>
-          <div class="catalog catalog-compact">
+          <div class="cover-wall">
             {guides.map((guide) => (
-              <GuideCard guide={guide} compact />
+              <GuideCard guide={guide} variant="shelf" />
             ))}
           </div>
         </section>
@@ -84,40 +100,16 @@ const shelves = Object.values(genres).map((genre) => ({
       <li>No jacket copy, chapter quotes, or invented reader reactions.</li>
       <li>No star ratings, and no “best book in the series.”</li>
       <li>
-        Amazon Associates is active. Title and series search links may earn a
-        commission; we do not promise income.
-      </li>
-      <li>
-        Publication first. Contested prequel orders stay labeled. High-search
-        paths such as{" "}
+        Publication first. Contested prequel orders stay labeled.{" "}
         <a href="/guides/lord-of-the-rings-reading-order/">Tolkien</a>,{" "}
         <a href="/guides/harry-potter-reading-order/">Harry Potter</a>, and{" "}
-        <a href="/guides/asoiaf-reading-order/">A Song of Ice and Fire</a> are
+        <a href="/guides/asoiaf-reading-order/">A Song of Ice and Fire</a> stay
         in scope when people still start on the wrong book. Star Wars stays out
         as a primary.
       </li>
     </ul>
+    <p class="small muted">
+      The method is on the <a href="/methodology/">methodology</a> page.
+    </p>
   </div>
 </BaseLayout>
-
-<script>
-  const input = document.querySelector<HTMLInputElement>("[data-catalog-filter]");
-  if (input) {
-    const items = [...document.querySelectorAll<HTMLElement>("[data-catalog-item]")];
-    const shelves = [...document.querySelectorAll<HTMLElement>("[data-shelf]")];
-    const apply = () => {
-      const q = input.value.trim().toLowerCase();
-      items.forEach((item) => {
-        const hay = item.getAttribute("data-catalog-text") || "";
-        item.hidden = Boolean(q) && !hay.includes(q);
-      });
-      shelves.forEach((shelf) => {
-        const visible = [...shelf.querySelectorAll<HTMLElement>("[data-catalog-item]")].some(
-          (item) => !item.hidden,
-        );
-        shelf.hidden = !visible;
-      });
-    };
-    input.addEventListener("input", apply);
-  }
-</script>

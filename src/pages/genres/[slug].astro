@@ -1,7 +1,9 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import CatalogFind from "../../components/CatalogFind.astro";
 import GuideCard from "../../components/GuideCard.astro";
+import { sortGuides } from "../../lib/catalog";
 import { genres, type GenreSlug } from "../../lib/site";
 
 export function getStaticPaths() {
@@ -12,27 +14,33 @@ export function getStaticPaths() {
 }
 
 const { genre } = Astro.props;
-const guides = (await getCollection("guides"))
-  .filter((entry) => entry.data.genre === (genre.slug as GenreSlug))
-  .sort((a, b) => a.data.series.localeCompare(b.data.series));
+const guides = sortGuides(
+  (await getCollection("guides")).filter((entry) => entry.data.genre === (genre.slug as GenreSlug)),
+);
 ---
 
-<BaseLayout title={genre.label} description={genre.blurb}>
-  <header class="page-head">
+<BaseLayout title={genre.label} description={genre.blurb} wide>
+  <header class="page-head catalog-page-head">
     <p class="eyebrow">Shelf</p>
     <h1>{genre.label}</h1>
     <p class="lede">{genre.blurb}</p>
   </header>
 
-  <header class="section-head">
-    <p class="eyebrow">On this shelf</p>
-    <h2>{guides.length === 1 ? "1 guide" : `${guides.length} guides`}</h2>
+  <CatalogFind id="find" total={guides.length} chips={false} placeholder="Series or author on this shelf" />
+
+  <p class="catalog-empty" data-catalog-empty hidden>No series on this shelf matches that search.</p>
+
+  <header class="shelf-head">
+    <div>
+      <p class="eyebrow">On this shelf</p>
+      <h2>{guides.length === 1 ? "1 map" : `${guides.length} maps`}</h2>
+    </div>
   </header>
   {
     guides.length > 0 ? (
-      <div class="catalog catalog-compact">
+      <div class="cover-wall">
         {guides.map((guide) => (
-          <GuideCard guide={guide} compact />
+          <GuideCard guide={guide} variant="shelf" />
         ))}
       </div>
     ) : (

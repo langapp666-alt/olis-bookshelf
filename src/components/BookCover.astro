@@ -1,44 +1,74 @@
 ---
 import {
+  coverInitials,
   googleBooksCoverUrl,
   openLibraryCoverUrl,
   type CoverRecord,
 } from "../lib/covers";
 
+export type CoverSize = "table" | "card" | "related" | "shelf" | "poster";
+
 interface Props {
   title: string;
   cover?: CoverRecord;
-  size?: "table" | "card";
+  size?: CoverSize;
+  priority?: boolean;
 }
 
-const { title, cover, size = "table" } = Astro.props;
-const primary = cover ? openLibraryCoverUrl(cover) : undefined;
+const dims: Record<CoverSize, { w: number; h: number; ol: "S" | "M" | "L" }> = {
+  table: { w: 40, h: 60, ol: "S" },
+  card: { w: 48, h: 72, ol: "M" },
+  related: { w: 72, h: 108, ol: "M" },
+  shelf: { w: 180, h: 270, ol: "M" },
+  poster: { w: 280, h: 420, ol: "L" },
+};
+
+const { title, cover, size = "table", priority = false } = Astro.props;
+const { w, h, ol } = dims[size];
+const primary = cover ? openLibraryCoverUrl(cover, ol) : undefined;
+const large = cover && size === "poster" ? openLibraryCoverUrl(cover, "L") : undefined;
+const medium = cover && size === "poster" ? openLibraryCoverUrl(cover, "M") : undefined;
 const fallback = cover ? googleBooksCoverUrl(cover) : undefined;
 const src = primary ?? fallback;
 const nextSrc = primary && fallback ? fallback : undefined;
+const initials = coverInitials(title);
+const sizesAttr =
+  size === "poster"
+    ? "(min-width: 980px) 16rem, 42vw"
+    : size === "shelf"
+      ? "(min-width: 980px) 11rem, (min-width: 720px) 18vw, 42vw"
+      : size === "related"
+        ? "4.5rem"
+        : `${w}px`;
 ---
 
-{
-  src ? (
-    <img
-      class:list={["book-cover", size === "card" && "is-card"]}
-      src={src}
-      data-fallback={nextSrc}
-      alt=""
-      width={size === "card" ? 48 : 40}
-      height={size === "card" ? 72 : 60}
-      loading="lazy"
-      decoding="async"
-      referrerpolicy="no-referrer"
-      onerror="
-        const next = this.getAttribute('data-fallback');
-        if (next && this.src !== next) {
-          this.removeAttribute('data-fallback');
-          this.src = next;
-          return;
-        }
-        this.hidden = true;
-      "
-    />
-  ) : null
-}
+<span class:list={["cover-frame", `is-${size}`]}>
+  <span class="cover-spine" aria-hidden="true">{initials}</span>
+  {
+    src ? (
+      <img
+        class:list={["book-cover", size === "card" && "is-card"]}
+        src={src}
+        srcset={large && medium ? `${medium} 180w, ${large} 500w` : undefined}
+        sizes={large ? sizesAttr : undefined}
+        data-fallback={nextSrc}
+        alt=""
+        width={w}
+        height={h}
+        loading={priority ? "eager" : "lazy"}
+        fetchpriority={priority ? "high" : undefined}
+        decoding="async"
+        referrerpolicy="no-referrer"
+        onerror="
+          const next = this.getAttribute('data-fallback');
+          if (next && this.src !== next) {
+            this.removeAttribute('data-fallback');
+            this.src = next;
+            return;
+          }
+          this.hidden = true;
+        "
+      />
+    ) : null
+  }
+</span>

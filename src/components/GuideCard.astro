@@ -1,48 +1,72 @@
 ---
 import { genres, type GenreSlug } from "../lib/site";
 import { lookupCover } from "../lib/covers";
-import BookCover from "./BookCover.astro";
+import { catalogText } from "../lib/catalog";
+import BookCover, { type CoverSize } from "./BookCover.astro";
 import type { CollectionEntry } from "astro:content";
 
 interface Props {
   guide: CollectionEntry<"guides">;
   index?: number;
   compact?: boolean;
+  variant?: "row" | "shelf" | "featured" | "related";
+  priority?: boolean;
+  filterable?: boolean;
 }
 
-const { guide, index, compact = false } = Astro.props;
+const {
+  guide,
+  index,
+  compact = false,
+  variant = compact ? "row" : "shelf",
+  priority = false,
+  filterable = true,
+} = Astro.props;
 const genre = genres[guide.data.genre as GenreSlug];
 const n = typeof index === "number" ? String(index).padStart(2, "0") : null;
-const searchText = [guide.data.series, guide.data.author, guide.data.title, genre.label]
-  .join(" ")
-  .toLowerCase();
+const searchText = catalogText(guide);
 const cover = lookupCover(guide.data.series, guide.data.author, {
   coverId: guide.data.coverId,
   isbn: guide.data.isbn,
   olid: guide.data.olid,
   gbid: guide.data.gbid,
 });
+const coverSize: CoverSize =
+  variant === "featured" ? "poster" : variant === "related" ? "related" : variant === "row" ? "card" : "shelf";
+const isTile = variant === "shelf" || variant === "featured" || variant === "related";
 ---
 
 <a
-  class:list={[n ? "catalog-item" : "guide-card", { "is-compact": compact }]}
+  class:list={[
+    isTile ? "book-tile" : n ? "catalog-item" : "guide-card",
+    {
+      "is-compact": variant === "row",
+      "is-featured": variant === "featured",
+      "is-related": variant === "related",
+    },
+  ]}
   href={`/guides/${guide.data.slug}/`}
-  data-catalog-item
-  data-catalog-text={searchText}
+  data-catalog-item={filterable ? "" : undefined}
+  data-catalog-text={filterable ? searchText : undefined}
+  data-genre={guide.data.genre}
 >
   {n && <span class="catalog-index" aria-hidden="true">{n}</span>}
-  {cover && <BookCover title={guide.data.series} cover={cover} size="card" />}
-  <div>
+  <BookCover title={guide.data.series} cover={cover} size={coverSize} priority={priority} />
+  <div class="book-tile-copy">
     <div class="pill-row">
       <span class="pill genre">{genre.label}</span>
     </div>
     <h2>{guide.data.series}</h2>
     <p class="byline small">{guide.data.author}</p>
     {
-      !compact && (
+      variant === "featured" && (
         <p class="card-desc">{guide.data.description}</p>
       )
     }
-    <p class="catalog-cta">Open the order</p>
+    {
+      (variant === "row" || variant === "featured") && (
+        <p class="catalog-cta">Open the order</p>
+      )
+    }
   </div>
 </a>
