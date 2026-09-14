@@ -5,7 +5,7 @@ import CatalogFind from "../../components/CatalogFind.astro";
 import GuideCard from "../../components/GuideCard.astro";
 import { sortGuides } from "../../lib/catalog";
 import { listedGuides } from "../../lib/guides-index";
-import { genres, type GenreSlug } from "../../lib/site";
+import { genres, siteOrigin, type GenreSlug } from "../../lib/site";
 
 export function getStaticPaths() {
   return Object.values(genres).map((genre) => ({
@@ -30,7 +30,7 @@ const guides = sortGuides(
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     name: `${genre.label} reading-order guides`,
-    url: new URL(`/genres/${genre.slug}/`, Astro.site).href,
+    url: new URL(`/genres/${genre.slug}/`, siteOrigin(Astro.site)).href,
     description: genre.blurb,
   }}
 >

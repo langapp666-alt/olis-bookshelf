@@ -7,7 +7,7 @@ import GuideCard from "../components/GuideCard.astro";
 import RandomGuide from "../components/RandomGuide.astro";
 import { featuredSlugs, guidesBySlug, sortGuides } from "../lib/catalog";
 import { listedGuides } from "../lib/guides-index";
-import { genres, type GenreSlug } from "../lib/site";
+import { genres, siteOrigin, type GenreSlug } from "../lib/site";
 
 const allGuides = sortGuides(listedGuides(await getCollection("guides")));
 const guideCount = allGuides.length;
@@ -28,7 +28,7 @@ const shelves = Object.values(genres).map((genre) => ({
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     name: "Reading-order guides for long series",
-    url: new URL("/", Astro.site).href,
+    url: new URL("/", siteOrigin(Astro.site)).href,
     description:
       "Reading-order maps for long science fiction, fantasy, mystery, and romance series.",
   }}

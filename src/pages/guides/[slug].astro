@@ -10,7 +10,7 @@ import RelatedGuides from "../../components/RelatedGuides.astro";
 import StartHere from "../../components/StartHere.astro";
 import { relatedGuides } from "../../lib/related-guides";
 import { listedGuides } from "../../lib/guides-index";
-import { formatDate, genres, isoDate, siteName } from "../../lib/site";
+import { formatDate, genres, isoDate, siteName, siteOrigin } from "../../lib/site";
 
 export async function getStaticPaths() {
   const guides = await getCollection("guides");
@@ -24,18 +24,19 @@ const { guide, guides } = Astro.props;
 const { Content, headings } = await render(guide);
 const genre = genres[guide.data.genre];
 const related = relatedGuides(guide, listedGuides(guides));
-const canonical = new URL(`/guides/${guide.data.slug}/`, Astro.site);
+const origin = siteOrigin(Astro.site);
+const canonical = new URL(`/guides/${guide.data.slug}/`, origin);
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: siteName, item: new URL("/", Astro.site).href },
-    { "@type": "ListItem", position: 2, name: "Guides", item: new URL("/guides/", Astro.site).href },
+    { "@type": "ListItem", position: 1, name: siteName, item: new URL("/", origin).href },
+    { "@type": "ListItem", position: 2, name: "Guides", item: new URL("/guides/", origin).href },
     {
       "@type": "ListItem",
       position: 3,
       name: genre.label,
-      item: new URL(`/genres/${genre.slug}/`, Astro.site).href,
+      item: new URL(`/genres/${genre.slug}/`, origin).href,
     },
     { "@type": "ListItem", position: 4, name: guide.data.title, item: canonical.href },
   ],
