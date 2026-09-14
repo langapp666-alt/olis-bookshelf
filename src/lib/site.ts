@@ -1,6 +1,34 @@
 export const siteName = "Oli's Bookshelf";
 export const siteTagline = "Reading order for long series. Then what to read next.";
 
+/**
+ * Canonical public origin. Cloudflare Pages also serves
+ * https://olis-bookshelf.pages.dev as an alternate host; keep in-app
+ * links relative so both work. Canonical / OG / sitemap URLs use .com.
+ */
+export const canonicalSiteOrigin = "https://olisbookshelf.com";
+export const pagesDevOrigin = "https://olis-bookshelf.pages.dev";
+export const defaultSiteOrigin = canonicalSiteOrigin;
+
+function normalizeOrigin(value: string): string {
+  return value.trim().replace(/\/+$/, "");
+}
+
+/** Prefer the custom domain; treat a leftover pages.dev env as unset. */
+export function resolveConfiguredOrigin(raw?: string): string {
+  const origin = raw ? normalizeOrigin(raw) : "";
+  if (!origin || origin === pagesDevOrigin) return canonicalSiteOrigin;
+  return origin;
+}
+
+export function siteOrigin(site?: URL | string | undefined): URL {
+  if (site instanceof URL) return new URL(resolveConfiguredOrigin(site.origin));
+  if (typeof site === "string" && site.trim()) {
+    return new URL(resolveConfiguredOrigin(site));
+  }
+  return new URL(canonicalSiteOrigin);
+}
+
 /** Confirmed public brand channels. Do not invent handles or follower counts. */
 export const socials = [
   {

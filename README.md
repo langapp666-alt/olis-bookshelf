@@ -53,9 +53,9 @@ House docs (not shipped as pages):
 - `docs/HOW_IT_EARNS.md`
 - `docs/CONTENT_WORKFLOW.md`
 
-## Deploy on Cloudflare Pages (free `*.pages.dev`)
+## Deploy on Cloudflare Pages
 
-No custom domain is required.
+The custom domain **https://olisbookshelf.com** is already attached in Cloudflare Pages (SSL live). This repo does not change DNS. `https://olis-bookshelf.pages.dev` stays a working alternate host because in-app links are relative.
 
 1. Push this repo to GitHub (already the source of truth).
 2. In the [Cloudflare dashboard](https://dash.cloudflare.com/), go to **Workers & Pages → Create → Pages → Connect to Git**.
@@ -65,10 +65,7 @@ No custom domain is required.
    - **Build command:** `npm run build`
    - **Build output directory:** `dist`
    - **Node version:** `22` (repo has `.nvmrc` and `.node-version`; or set `NODE_VERSION=22`)
-5. Save and deploy. Cloudflare gives the project a free `https://<project-name>.pages.dev` URL.
-6. Copy that hostname into `site` in `astro.config.mjs` so the sitemap and `robots.txt` use the real origin, then redeploy.
-
-The public origin is `https://olis-bookshelf.pages.dev`.
+5. Canonical, Open Graph, and sitemap URLs default to `https://olisbookshelf.com`. Override with `PUBLIC_SITE_URL` or `SITE_URL` only if the canonical host changes. A leftover `https://olis-bookshelf.pages.dev` env value is ignored so canonicals stay on the custom domain.
 
 ## Affiliate tag
 
@@ -83,16 +80,16 @@ The public origin is `https://olis-bookshelf.pages.dev`.
 
 ## Google Search Console
 
-Submit **`https://olis-bookshelf.pages.dev/sitemap.xml`**. That file is a bare `urlset` with `lastmod`, served as `text/xml; charset=utf-8`. `/sitemap-index.xml` and `/sitemap-0.xml` stay valid so an older GSC row does not 404.
+Submit **`https://olisbookshelf.com/sitemap.xml`**. That file is a bare `urlset` with `lastmod`, served as `text/xml; charset=utf-8`. `/sitemap-index.xml` and `/sitemap-0.xml` stay valid so an older GSC row does not 404. The `pages.dev` host can remain a second property if needed; page canonicals point at `https://olisbookshelf.com`.
 
 If GSC still says “Couldn’t fetch” while a public GET returns HTTP 200:
 
-1. Confirm the property is the URL-prefix `https://olis-bookshelf.pages.dev/` (not `pages.dev`).
+1. Confirm the property is the URL-prefix `https://olisbookshelf.com/` (not `pages.dev`).
 2. Submit the exact string with no trailing slash.
 3. In Cloudflare: Security Events / Bot Fight Mode. Super Bot Fight Mode on a `pages.dev` host often challenges Google’s sitemap fetcher even when a browser, `curl`, and URL Inspection succeed.
 4. URL Inspection → Test live URL on `/sitemap.xml`. If that is available to Google, the Sitemaps report is usually lag or a stale first-fetch error — resubmit and wait.
 
-This repo cannot turn Bot Fight Mode off. That is a dashboard setting, not a code defect. A custom domain is the reliable long-term fix that other `pages.dev` sites report.
+This repo cannot turn Bot Fight Mode off. That is a dashboard setting, not a code defect.
 
 ## License of this repo
 

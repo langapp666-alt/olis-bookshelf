@@ -1,9 +1,10 @@
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import GuidesIndex from "../components/GuidesIndex.astro";
 import SeoJsonLd from "../components/SeoJsonLd.astro";
 import "../styles/global.css";
-import { siteName } from "../lib/site";
+import { siteName, siteOrigin } from "../lib/site";
 import { clipMeta, documentTitle } from "../lib/seo";
 
 interface Props {
@@ -17,8 +18,8 @@ interface Props {
 const { title, description, dock = false, wide = false, jsonLd } = Astro.props;
 const pageTitle = documentTitle(title);
 const metaDescription = clipMeta(description);
-const canonical = new URL(Astro.url.pathname, Astro.site);
-const origin = Astro.site ?? new URL("https://olis-bookshelf.pages.dev");
+const origin = siteOrigin(Astro.site);
+const canonical = new URL(Astro.url.pathname, origin);
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -26,6 +27,14 @@ const websiteSchema = {
   url: origin.href,
   description:
     "Reading-order maps for long science fiction, fantasy, mystery, and romance series.",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: new URL("/guides/?q={search_term_string}", origin).href,
+    },
+    "query-input": "required name=search_term_string",
+  },
 };
 ---
 
@@ -71,8 +80,10 @@ const websiteSchema = {
       </main>
       <Footer />
     </div>
+    <GuidesIndex />
     <script>
       import "../scripts/enhance-tables";
+      import "../scripts/site-search";
     </script>
   </body>
 </html>

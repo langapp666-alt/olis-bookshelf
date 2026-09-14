@@ -23,7 +23,7 @@ export const catalogChips: { slug: GenreSlug | ""; label: string }[] = [
 
 export function catalogText(guide: CollectionEntry<"guides">): string {
   const genre = genres[guide.data.genre as GenreSlug];
-  return [guide.data.series, guide.data.author, guide.data.title, genre.label]
+  return [guide.data.series, guide.data.author, guide.data.title, guide.data.slug, genre.label]
     .join(" ")
     .toLowerCase();
 }

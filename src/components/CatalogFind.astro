@@ -1,5 +1,6 @@
 ---
 import { catalogChips } from "../lib/catalog";
+import RandomGuide from "./RandomGuide.astro";
 
 interface Props {
   id?: string;
@@ -17,17 +18,20 @@ const {
 ---
 
 <div class="catalog-find" id={id} data-catalog-find data-catalog-total={total}>
-  <label class="catalog-find-field">
-    <span class="catalog-filter-label">Find a series</span>
+  <div class="catalog-find-field search-field" data-search-field>
+    <label class="catalog-filter-label" for={`${id}-q`}>Find a series</label>
     <input
+      id={`${id}-q`}
       type="search"
       name="q"
       placeholder={placeholder}
       autocomplete="off"
+      spellcheck="false"
       enterkeyhint="search"
       data-catalog-filter
+      data-typeahead
     />
-  </label>
+  </div>
   {
     chips && (
       <div class="catalog-chips" role="group" aria-label="Filter by shelf">
@@ -44,9 +48,12 @@ const {
       </div>
     )
   }
-  <p class="catalog-find-meta" data-catalog-count>
-    {total} series maps
-  </p>
+  <div class="catalog-find-toolbar">
+    <p class="catalog-find-meta" data-catalog-count>
+      {total} series maps
+    </p>
+    <RandomGuide class="catalog-random" />
+  </div>
 </div>
 
 <script>

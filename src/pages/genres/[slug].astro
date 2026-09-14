@@ -4,7 +4,8 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import CatalogFind from "../../components/CatalogFind.astro";
 import GuideCard from "../../components/GuideCard.astro";
 import { sortGuides } from "../../lib/catalog";
-import { genres, type GenreSlug } from "../../lib/site";
+import { listedGuides } from "../../lib/guides-index";
+import { genres, siteOrigin, type GenreSlug } from "../../lib/site";
 
 export function getStaticPaths() {
   return Object.values(genres).map((genre) => ({
@@ -15,7 +16,9 @@ export function getStaticPaths() {
 
 const { genre } = Astro.props;
 const guides = sortGuides(
-  (await getCollection("guides")).filter((entry) => entry.data.genre === (genre.slug as GenreSlug)),
+  listedGuides(await getCollection("guides")).filter(
+    (entry) => entry.data.genre === (genre.slug as GenreSlug),
+  ),
 );
 ---
 
@@ -27,7 +30,7 @@ const guides = sortGuides(
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     name: `${genre.label} reading-order guides`,
-    url: new URL(`/genres/${genre.slug}/`, Astro.site).href,
+    url: new URL(`/genres/${genre.slug}/`, siteOrigin(Astro.site)).href,
     description: genre.blurb,
   }}
 >

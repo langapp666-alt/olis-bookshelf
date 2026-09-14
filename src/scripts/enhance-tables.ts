@@ -1,3 +1,13 @@
+const COL_CLASS: Record<string, string> = {
+  "#": "col-n",
+  n: "col-n",
+  year: "col-year",
+  form: "col-form",
+  amazon: "col-amazon",
+  title: "col-title",
+  notes: "col-notes",
+};
+
 function enhanceTables() {
   document.querySelectorAll<HTMLTableElement>(".prose table").forEach((table) => {
     let wrap = table.parentElement;
@@ -18,9 +28,18 @@ function enhanceTables() {
     const headers = [...table.querySelectorAll("thead th")].map((th) =>
       (th.textContent || "").trim(),
     );
+
+    headers.forEach((header, i) => {
+      const colClass = COL_CLASS[header.toLowerCase()];
+      const th = table.querySelectorAll("thead th")[i];
+      if (colClass && th && !th.classList.contains(colClass)) th.classList.add(colClass);
+    });
+
     table.querySelectorAll("tbody tr").forEach((tr) => {
       [...tr.children].forEach((td, i) => {
         if (headers[i]) td.setAttribute("data-label", headers[i]);
+        const colClass = COL_CLASS[headers[i]?.toLowerCase() ?? ""];
+        if (colClass && !td.classList.contains(colClass)) td.classList.add(colClass);
       });
     });
 

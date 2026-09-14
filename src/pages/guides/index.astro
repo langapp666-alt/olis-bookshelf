@@ -4,9 +4,10 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import CatalogFind from "../../components/CatalogFind.astro";
 import GuideCard from "../../components/GuideCard.astro";
 import { sortGuides } from "../../lib/catalog";
-import { genres, type GenreSlug } from "../../lib/site";
+import { listedGuides } from "../../lib/guides-index";
+import { genres, siteOrigin, type GenreSlug } from "../../lib/site";
 
-const allGuides = sortGuides(await getCollection("guides"));
+const allGuides = sortGuides(listedGuides(await getCollection("guides")));
 
 const shelves = Object.values(genres).map((genre) => ({
   genre,
@@ -22,7 +23,7 @@ const shelves = Object.values(genres).map((genre) => ({
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     name: "Reading-order guides",
-    url: new URL("/guides/", Astro.site).href,
+    url: new URL("/guides/", siteOrigin(Astro.site)).href,
     description: "All series reading-order guides, grouped by shelf.",
   }}
 >

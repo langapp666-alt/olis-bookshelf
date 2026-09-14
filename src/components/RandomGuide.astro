@@ -1,0 +1,12 @@
+---
+interface Props {
+  class?: string;
+  label?: string;
+}
+
+const { class: className = "btn btn-secondary", label = "Random guide" } = Astro.props;
+---
+
+<a class={className} href="/guides/" data-random-guide>
+  {label}
+</a>
