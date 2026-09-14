@@ -29,7 +29,7 @@ function isCurrent(href: string) {
           <span class="wordmark-shelf">Bookshelf</span>
         </span>
       </a>
-      <form class="header-find" action="/" method="get" role="search">
+      <form class="header-find search-field" action="/guides/" method="get" role="search" data-search-field>
         <label class="header-find-label" for="header-q">Find a series</label>
         <input
           id="header-q"
@@ -37,7 +37,9 @@ function isCurrent(href: string) {
           name="q"
           placeholder="Find a series"
           autocomplete="off"
+          spellcheck="false"
           enterkeyhint="search"
+          data-typeahead
         />
       </form>
       <details class="nav-box" data-nav-box>
@@ -46,7 +48,7 @@ function isCurrent(href: string) {
           <span class="nav-toggle-icon" aria-hidden="true"><span></span></span>
         </summary>
         <nav class="nav" aria-label="Primary">
-          <form class="nav-find" action="/" method="get" role="search">
+          <form class="nav-find search-field" action="/guides/" method="get" role="search" data-search-field>
             <label class="header-find-label" for="nav-q">Find a series</label>
             <input
               id="nav-q"
@@ -54,7 +56,9 @@ function isCurrent(href: string) {
               name="q"
               placeholder="Find a series"
               autocomplete="off"
+              spellcheck="false"
               enterkeyhint="search"
+              data-typeahead
             />
           </form>
           <div class="nav-group">
@@ -76,6 +80,9 @@ function isCurrent(href: string) {
                 </a>
               ))
             }
+            <a href="/guides/" data-random-guide>
+              Random
+            </a>
           </div>
         </nav>
       </details>

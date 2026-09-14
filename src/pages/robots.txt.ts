@@ -1,4 +1,5 @@
 import type { APIRoute } from "astro";
+import { siteOrigin } from "../lib/site";
 
 const getRobotsTxt = (site: URL) => `User-agent: *
 Allow: /
@@ -8,7 +9,7 @@ Sitemap: ${new URL("sitemap-index.xml", site).href}
 `;
 
 export const GET: APIRoute = ({ site }) => {
-  const origin = site ?? new URL("https://olis-bookshelf.pages.dev");
+  const origin = siteOrigin(site);
   return new Response(getRobotsTxt(origin), {
     headers: {
       "Content-Type": "text/plain; charset=utf-8",

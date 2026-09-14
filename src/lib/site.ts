@@ -1,6 +1,21 @@
 export const siteName = "Oli's Bookshelf";
 export const siteTagline = "Reading order for long series. Then what to read next.";
 
+/**
+ * Canonical origin used when Astro.site is unset.
+ * astro.config.mjs reads PUBLIC_SITE_URL / SITE_URL and falls back here,
+ * so a custom domain can be swapped without rewriting pages.
+ */
+export const defaultSiteOrigin = "https://olis-bookshelf.pages.dev";
+
+export function siteOrigin(site?: URL | string | undefined): URL {
+  if (site instanceof URL) return site;
+  if (typeof site === "string" && site.trim()) {
+    return new URL(site.trim().replace(/\/+$/, ""));
+  }
+  return new URL(defaultSiteOrigin);
+}
+
 /** Confirmed public brand channels. Do not invent handles or follower counts. */
 export const socials = [
   {

@@ -1,0 +1,36 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { lookupCover } from "../lib/covers";
+import BookCover from "./BookCover.astro";
+
+interface Props {
+  guides: CollectionEntry<"guides">[];
+}
+
+const { guides } = Astro.props;
+---
+
+<div class="cover-stack" aria-label="Featured series">
+  {
+    guides.map((guide, i) => {
+      const cover = lookupCover(guide.data.series, guide.data.author, {
+        coverId: guide.data.coverId,
+        isbn: guide.data.isbn,
+        olid: guide.data.olid,
+        gbid: guide.data.gbid,
+      });
+      return (
+        <a
+          class="cover-stack-item"
+          href={`/guides/${guide.data.slug}/`}
+          style={`--i: ${i}`}
+        >
+          <BookCover title={guide.data.series} cover={cover} size="shelf" priority={i < 2} />
+          <span class="visually-hidden">
+            {guide.data.series} by {guide.data.author}
+          </span>
+        </a>
+      );
+    })
+  }
+</div>

@@ -35,20 +35,24 @@ const hasYear = books.some((book) => book.year !== undefined && book.year !== ""
   <table class="order-table is-stacked">
     <thead>
       <tr>
-        {hasN && <th scope="col">#</th>}
-        <th scope="col">Title</th>
-        {hasForm && <th scope="col">Form</th>}
-        {hasYear && <th scope="col">Year</th>}
-        {hasNotes && <th scope="col">Notes</th>}
-        <th scope="col">Amazon</th>
+        {hasN && <th class="col-n" scope="col">#</th>}
+        <th class="col-title" scope="col">Title</th>
+        {hasForm && <th class="col-form" scope="col">Form</th>}
+        {hasYear && <th class="col-year" scope="col">Year</th>}
+        {hasNotes && <th class="col-notes" scope="col">Notes</th>}
+        <th class="col-amazon" scope="col">Amazon</th>
       </tr>
     </thead>
     <tbody>
       {
         books.map((book) => (
           <tr>
-            {hasN && <td data-label="#">{book.n ?? ""}</td>}
-            <td data-label="Title">
+            {hasN && (
+              <td class="col-n" data-label="#">
+                {book.n ?? ""}
+              </td>
+            )}
+            <td class="col-title" data-label="Title">
               <span class="book-title-cell">
                 <BookCover
                   title={book.title}
@@ -57,10 +61,22 @@ const hasYear = books.some((book) => book.year !== undefined && book.year !== ""
                 <span class="book-title">{book.title}</span>
               </span>
             </td>
-            {hasForm && <td data-label="Form">{book.form}</td>}
-            {hasYear && <td data-label="Year">{book.year}</td>}
-            {hasNotes && <td data-label="Notes">{book.notes}</td>}
-            <td data-label="Amazon" class="amazon-cell">
+            {hasForm && (
+              <td class="col-form" data-label="Form">
+                {book.form}
+              </td>
+            )}
+            {hasYear && (
+              <td class="col-year" data-label="Year">
+                {book.year}
+              </td>
+            )}
+            {hasNotes && (
+              <td class="col-notes" data-label="Notes">
+                {book.notes}
+              </td>
+            )}
+            <td class="col-amazon amazon-cell" data-label="Amazon">
               <a
                 class="amazon-link"
                 href={amazonBookUrl(book.title, book.author ?? author, book.query)}

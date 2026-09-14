@@ -66,9 +66,9 @@ No custom domain is required.
    - **Build output directory:** `dist`
    - **Node version:** `22` (repo has `.nvmrc` and `.node-version`; or set `NODE_VERSION=22`)
 5. Save and deploy. Cloudflare gives the project a free `https://<project-name>.pages.dev` URL.
-6. Copy that hostname into `site` in `astro.config.mjs` so the sitemap and `robots.txt` use the real origin, then redeploy.
+6. Copy that hostname into `PUBLIC_SITE_URL` (Cloudflare Pages env) or `site` in `astro.config.mjs` so the sitemap and `robots.txt` use the real origin, then redeploy.
 
-The public origin is `https://olis-bookshelf.pages.dev`.
+The public origin is `https://olis-bookshelf.pages.dev`. To point the sitemap and canonical URLs at a custom domain later, set `PUBLIC_SITE_URL` (or `SITE_URL`) at build time — no page rewrite required. Do not change Cloudflare DNS from this repo.
 
 ## Affiliate tag
 

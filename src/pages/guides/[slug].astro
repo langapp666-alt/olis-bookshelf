@@ -9,6 +9,7 @@ import OrderTable from "../../components/OrderTable.astro";
 import RelatedGuides from "../../components/RelatedGuides.astro";
 import StartHere from "../../components/StartHere.astro";
 import { relatedGuides } from "../../lib/related-guides";
+import { listedGuides } from "../../lib/guides-index";
 import { formatDate, genres, isoDate, siteName } from "../../lib/site";
 
 export async function getStaticPaths() {
@@ -22,7 +23,7 @@ export async function getStaticPaths() {
 const { guide, guides } = Astro.props;
 const { Content, headings } = await render(guide);
 const genre = genres[guide.data.genre];
-const related = relatedGuides(guide, guides);
+const related = relatedGuides(guide, listedGuides(guides));
 const canonical = new URL(`/guides/${guide.data.slug}/`, Astro.site);
 const breadcrumbSchema = {
   "@context": "https://schema.org",

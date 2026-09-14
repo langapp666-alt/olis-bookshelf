@@ -13,7 +13,7 @@ const { guides } = Astro.props;
   guides.length > 0 && (
     <section class="related-guides" aria-labelledby="related-guides-heading">
       <p class="eyebrow">Same shelf</p>
-      <h2 id="related-guides-heading">Related guides</h2>
+      <h2 id="related-guides-heading">Next reads on this shelf</h2>
       <div class="cover-wall is-related">
         {guides.map((guide) => (
           <GuideCard guide={guide} variant="related" filterable={false} />

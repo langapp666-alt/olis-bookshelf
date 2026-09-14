@@ -4,9 +4,10 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import CatalogFind from "../../components/CatalogFind.astro";
 import GuideCard from "../../components/GuideCard.astro";
 import { sortGuides } from "../../lib/catalog";
+import { listedGuides } from "../../lib/guides-index";
 import { genres, type GenreSlug } from "../../lib/site";
 
-const allGuides = sortGuides(await getCollection("guides"));
+const allGuides = sortGuides(listedGuides(await getCollection("guides")));
 
 const shelves = Object.values(genres).map((genre) => ({
   genre,

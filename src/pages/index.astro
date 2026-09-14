@@ -2,14 +2,17 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import CatalogFind from "../components/CatalogFind.astro";
+import CoverStack from "../components/CoverStack.astro";
 import GuideCard from "../components/GuideCard.astro";
+import RandomGuide from "../components/RandomGuide.astro";
 import { featuredSlugs, guidesBySlug, sortGuides } from "../lib/catalog";
+import { listedGuides } from "../lib/guides-index";
 import { genres, type GenreSlug } from "../lib/site";
 
-const allGuides = sortGuides(await getCollection("guides"));
+const allGuides = sortGuides(listedGuides(await getCollection("guides")));
 const guideCount = allGuides.length;
 const featured = guidesBySlug(allGuides, featuredSlugs);
-const desk = featured.slice(0, 4);
+const stack = featured.slice(0, 3);
 
 const shelves = Object.values(genres).map((genre) => ({
   genre,
@@ -36,22 +39,18 @@ const shelves = Object.values(genres).map((genre) => ({
       <h1>Reading-order guides for long series</h1>
       <p class="dek">The next book, not the loudest one.</p>
       <p class="lede">
-        Long series hide the path: prequels that spoil, novellas that look skippable,
-        lists that quietly add picture books. {guideCount} maps start with publication
-        order, then say where chronology actually changes the read.
+        {guideCount} maps for science fiction, fantasy, mystery, and romance.
+        Publication first. Chronology when it actually changes the read.
       </p>
       <div class="btn-row">
-        <a class="btn" href="#find">Find a series</a>
-        <a class="btn btn-secondary" href="/methodology/">How the lists are made</a>
+        <a class="btn" href="/guides/">Browse guides</a>
+        <RandomGuide />
       </div>
+      <p class="hero-note">
+        <a href="/methodology/">How the lists are made</a>
+      </p>
     </div>
-    <div class="masthead-desk" aria-label="Featured series on the desk">
-      {
-        desk.map((guide, i) => (
-          <GuideCard guide={guide} variant="shelf" priority={i < 2} filterable={false} />
-        ))
-      }
-    </div>
+    <CoverStack guides={stack} />
   </section>
 
   <CatalogFind id="find" total={guideCount} />
