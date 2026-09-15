@@ -1,0 +1,86 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { listedQuestions, questionHref } from "../../lib/questions";
+import { genres, siteName, siteOrigin, type GenreSlug } from "../../lib/site";
+import { absoluteOgUrl, siteOgPath } from "../../lib/og";
+import { breadcrumbSchema, webPageSchema } from "../../lib/guide-schema";
+
+const questions = listedQuestions(await getCollection("questions")).sort((a, b) =>
+  a.data.title.localeCompare(b.data.title),
+);
+const origin = siteOrigin(Astro.site);
+const canonical = new URL("/questions/", origin);
+const ogImage = absoluteOgUrl(origin, siteOgPath());
+
+const shelves = Object.values(genres)
+  .map((genre) => ({
+    genre,
+    questions: questions.filter((question) => question.data.genre === (genre.slug as GenreSlug)),
+  }))
+  .filter((shelf) => shelf.questions.length > 0);
+---
+
+<BaseLayout
+  title="Common questions"
+  description="Short answers to high-intent reading-order questions, then a link to the full guide. Publication first. No spreadsheet homework."
+  jsonLd={[
+    webPageSchema({
+      name: "Common questions",
+      description: "Short answers to high-intent reading-order questions, then a link to the full guide.",
+      url: canonical.href,
+      origin: origin.href,
+      siteName,
+      image: ogImage,
+    }),
+    breadcrumbSchema([
+      { name: siteName, item: new URL("/", origin).href },
+      { name: "Questions", item: canonical.href },
+    ]),
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      name: "Common questions",
+      url: canonical.href,
+    },
+  ]}
+  ogImage={ogImage}
+>
+  <header class="page-head catalog-page-head">
+    <p class="eyebrow">Questions</p>
+    <h1>Where to start — answered briefly</h1>
+    <p class="lede">
+      {questions.length} short pages for searches that want a door, not a 40-title chart. Each one
+      points at the full reading-order guide.
+    </p>
+  </header>
+
+  {
+    shelves.map(({ genre, questions: items }) => (
+      <section class="shelf-block">
+        <header class="shelf-head">
+          <div>
+            <p class="eyebrow">Shelf</p>
+            <h2>
+              <a href={`/genres/${genre.slug}/`}>{genre.label}</a>
+            </h2>
+          </div>
+          <p class="shelf-count">
+            {items.length === 1 ? "1 question" : `${items.length} questions`}
+          </p>
+        </header>
+        <ul class="question-index">
+          {items.map((question) => (
+            <li>
+              <a class="question-index-card" href={questionHref(question.data.slug)}>
+                <span class="question-index-kicker">{question.data.shortAnswerTitle}</span>
+                <span class="question-index-title">{question.data.title}</span>
+                <span class="question-index-desc">{question.data.description}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+</BaseLayout>

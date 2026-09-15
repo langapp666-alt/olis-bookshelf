@@ -21,4 +21,9 @@ export default defineConfig({
   output: "static",
   trailingSlash: "always",
   integrations: [mdx()],
+  vite: {
+    ssr: {
+      external: ["@resvg/resvg-js"],
+    },
+  },
 });

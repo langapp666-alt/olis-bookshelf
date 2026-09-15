@@ -11,7 +11,10 @@ const shelves = [
   { href: "/genres/romance/", label: "Romance" },
 ];
 
-const house = [{ href: "/about/", label: "About" }];
+const house = [
+  { href: "/questions/", label: "Questions" },
+  { href: "/about/", label: "About" },
+];
 
 function isCurrent(href: string) {
   if (href === "/") return pathname === "/";

@@ -4,8 +4,9 @@ import Footer from "../components/Footer.astro";
 import GuidesIndex from "../components/GuidesIndex.astro";
 import SeoJsonLd from "../components/SeoJsonLd.astro";
 import "../styles/global.css";
-import { siteName, siteOrigin } from "../lib/site";
+import { socials, siteName, siteOrigin } from "../lib/site";
 import { clipMeta, documentTitle } from "../lib/seo";
+import { absoluteOgUrl, OG_HEIGHT, OG_WIDTH, siteOgPath } from "../lib/og";
 
 interface Props {
   title: string;
@@ -13,13 +14,26 @@ interface Props {
   dock?: boolean;
   wide?: boolean;
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+  ogImage?: string;
+  ogType?: "website" | "article";
 }
 
-const { title, description, dock = false, wide = false, jsonLd } = Astro.props;
+const {
+  title,
+  description,
+  dock = false,
+  wide = false,
+  jsonLd,
+  ogImage,
+  ogType = "website",
+} = Astro.props;
 const pageTitle = documentTitle(title);
 const metaDescription = clipMeta(description);
 const origin = siteOrigin(Astro.site);
 const canonical = new URL(Astro.url.pathname, origin);
+const imagePath = ogImage ?? absoluteOgUrl(origin, siteOgPath());
+const imageUrl = imagePath.startsWith("http") ? imagePath : absoluteOgUrl(origin, imagePath);
+const twitter = socials.find((item) => item.id === "x");
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -65,12 +79,21 @@ const websiteSchema = {
     <meta property="og:site_name" content={siteName} />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={metaDescription} />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
     <meta property="og:url" content={canonical} />
     <meta property="og:locale" content="en_US" />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content={imageUrl} />
+    <meta property="og:image:secure_url" content={imageUrl} />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content={String(OG_WIDTH)} />
+    <meta property="og:image:height" content={String(OG_HEIGHT)} />
+    <meta property="og:image:alt" content={pageTitle} />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={pageTitle} />
     <meta name="twitter:description" content={metaDescription} />
+    <meta name="twitter:image" content={imageUrl} />
+    <meta name="twitter:image:alt" content={pageTitle} />
+    {twitter && <meta name="twitter:site" content={twitter.handle} />}
     <meta name="theme-color" content="#f3ece0" />
     <SeoJsonLd schema={jsonLd ? [websiteSchema, ...(Array.isArray(jsonLd) ? jsonLd : [jsonLd])] : websiteSchema} />
   </head>

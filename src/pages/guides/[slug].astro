@@ -2,13 +2,25 @@
 import { getCollection, render } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import AffiliateDock from "../../components/AffiliateDock.astro";
+import CommonQuestions from "../../components/CommonQuestions.astro";
 import GuideAside from "../../components/GuideAside.astro";
 import GuideHero from "../../components/GuideHero.astro";
 import OrderTable from "../../components/OrderTable.astro";
 import RelatedGuides from "../../components/RelatedGuides.astro";
 import StartHere from "../../components/StartHere.astro";
+import {
+  articleSchema,
+  breadcrumbSchema,
+  faqPageSchema,
+  itemListSchema,
+  parseFaqPairs,
+  parseFirstOrderTableTitles,
+  webPageSchema,
+} from "../../lib/guide-schema";
 import { relatedGuides } from "../../lib/related-guides";
 import { listedGuides } from "../../lib/guides-index";
+import { absoluteOgUrl, guideOgPath } from "../../lib/og";
+import { listedQuestions, questionsForGuide } from "../../lib/questions";
 import { genres, isoDate, siteName, siteOrigin } from "../../lib/site";
 
 export async function getStaticPaths() {
@@ -23,36 +35,54 @@ const { guide, guides } = Astro.props;
 const { Content, headings } = await render(guide);
 const genre = genres[guide.data.genre];
 const related = relatedGuides(guide, listedGuides(guides));
+const asked = questionsForGuide(listedQuestions(await getCollection("questions")), guide.data.slug);
 const origin = siteOrigin(Astro.site);
 const canonical = new URL(`/guides/${guide.data.slug}/`, origin);
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    { "@type": "ListItem", position: 1, name: siteName, item: new URL("/", origin).href },
-    { "@type": "ListItem", position: 2, name: "Guides", item: new URL("/guides/", origin).href },
-    {
-      "@type": "ListItem",
-      position: 3,
-      name: genre.label,
-      item: new URL(`/genres/${genre.slug}/`, origin).href,
-    },
-    { "@type": "ListItem", position: 4, name: guide.data.title, item: canonical.href },
-  ],
-};
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: guide.data.title,
-  description: guide.data.description,
-  dateModified: isoDate(guide.data.lastVerified),
-  author: { "@type": "Organization", name: siteName },
-  publisher: { "@type": "Organization", name: siteName },
-  mainEntityOfPage: canonical.href,
-};
+const ogImage = absoluteOgUrl(origin, guideOgPath(guide.data.slug));
+const logo = new URL("/og.png", origin).href;
+const modified = isoDate(guide.data.lastVerified);
+const jsonLd = [
+  webPageSchema({
+    name: guide.data.title,
+    description: guide.data.description,
+    url: canonical.href,
+    origin: origin.href,
+    siteName,
+    image: ogImage,
+    dateModified: modified,
+  }),
+  articleSchema({
+    headline: guide.data.title,
+    description: guide.data.description,
+    url: canonical.href,
+    dateModified: modified,
+    siteName,
+    image: ogImage,
+    logo,
+  }),
+  breadcrumbSchema([
+    { name: siteName, item: new URL("/", origin).href },
+    { name: "Guides", item: new URL("/guides/", origin).href },
+    { name: genre.label, item: new URL(`/genres/${genre.slug}/`, origin).href },
+    { name: guide.data.title, item: canonical.href },
+  ]),
+  faqPageSchema(parseFaqPairs(guide.body), canonical.href),
+  itemListSchema(
+    parseFirstOrderTableTitles(guide.body),
+    `Titles listed on ${guide.data.series}`,
+    canonical.href,
+  ),
+].filter((block): block is Record<string, unknown> => Boolean(block));
 ---
 
-<BaseLayout title={guide.data.title} description={guide.data.description} dock jsonLd={[breadcrumbSchema, articleSchema]}>
+<BaseLayout
+  title={guide.data.title}
+  description={guide.data.description}
+  dock
+  ogType="article"
+  ogImage={ogImage}
+  jsonLd={jsonLd}
+>
   <article class="guide-page">
     <GuideHero guide={guide} headings={headings} />
 
@@ -60,8 +90,9 @@ const articleSchema = {
       <div class="prose guide-prose">
         <Content components={{ OrderTable, StartHere }} />
       </div>
-      <GuideAside guide={guide} headings={headings} related={related} />
+      <GuideAside guide={guide} headings={headings} related={related} questions={asked} />
     </div>
+    <CommonQuestions questions={asked} />
     <RelatedGuides guides={related} />
   </article>
   <AffiliateDock query={`${guide.data.series} ${guide.data.author}`} label={guide.data.series} />
