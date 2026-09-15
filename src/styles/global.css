@@ -1310,7 +1310,7 @@ a.catalog-chip:hover {
 }
 
 .cover-frame.is-hero {
-  width: min(8.5rem, 38vw);
+  width: 100%;
   height: auto;
   aspect-ratio: 2 / 3;
 }
@@ -1983,12 +1983,13 @@ table .col-title {
 
 .guide-hero-grid {
   display: grid;
-  gap: 1.15rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.85rem 1rem;
   align-items: start;
 }
 
 .guide-hero-cover {
-  width: min(8.5rem, 38vw);
+  width: 5.6rem;
 }
 
 .guide-hero .pill-row {
@@ -2275,16 +2276,10 @@ hr.rule {
   }
 
   .guide-hero-grid {
-    grid-template-columns: minmax(0, 1fr) auto;
     gap: 2rem;
-    align-items: start;
   }
 
   .guide-hero-cover {
-    width: 10rem;
-  }
-
-  .cover-frame.is-hero {
     width: 10rem;
   }
 
@@ -2470,6 +2465,8 @@ hr.rule {
     grid-row: 1;
     position: sticky;
     top: calc(var(--header-h) + 0.85rem);
+    max-height: calc(100dvh - var(--header-h) - 1.5rem);
+    overflow: auto;
   }
 
   .guide-toc.is-mobile {

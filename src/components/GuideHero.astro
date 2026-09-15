@@ -49,10 +49,10 @@ const cover = lookupCover(guide.data.series, guide.data.author, {
         {countLabel && <span class="pill">{countLabel}</span>}
         <span class="pill">Checked {formatDate(guide.data.lastVerified)}</span>
       </div>
-      {headings.length > 0 && <GuideToc headings={headings} compact />}
     </div>
     <div class="guide-hero-cover">
       <BookCover title={guide.data.series} cover={cover} size="hero" priority />
     </div>
   </div>
+  {headings.length > 0 && <GuideToc headings={headings} compact />}
 </header>

@@ -25,6 +25,7 @@ export function pathChips(body: string | undefined, limit = 3): string[] {
   return [...body.matchAll(/^## (.+)$/gm)]
     .map((match) => match[1].replace(/:$/, "").trim())
     .filter((heading) => !SKIP_HEADINGS.test(heading))
+    .map((heading) => (heading.length > 36 ? `${heading.slice(0, 34).trim()}…` : heading))
     .slice(0, limit);
 }
 
