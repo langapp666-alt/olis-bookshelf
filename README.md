@@ -30,6 +30,8 @@ A hundred-plus reading-order guides live in `src/content/guides/`. The home page
 
 High-search paths now include Tolkien, Harry Potter, James Bond, Agatha Christie, Sherlock Holmes, Divergent, Maze Runner, Inheritance Cycle, Shadowhunters, Vorkosigan, Temeraire, Discworld character lines, Bobiverse, Freida McFadden, Silo/Wool, Hunger Games, focused Stephen King pages, Broken Earth, Poppy War, Wayward Children, the Maas series, Empyrean, a Cosmere starter (not a 40-book spreadsheet), and other demand shelves.
 
+Short **question hubs** live at `/questions/` (for example `/questions/where-to-start-the-cosmere/`). They answer one search intent, then send the reader to the matching guide. They are not a second catalog of affiliate pages.
+
 Order tables show Open Library covers when `src/data/covers.json` has a reliable ID. Refresh IDs with `node src/scripts/fetch-covers.mjs`. Do not scrape Amazon images.
 
 | Page | Route |
@@ -43,6 +45,8 @@ Order tables show Open Library covers when `src/data/covers.json` has a reliable
 | About / editorial standards | `/about/` |
 | Disclosure (FTC + Associates wording) | `/disclosure/` |
 | Methodology | `/methodology/` |
+| Common questions | `/questions/` |
+| Default Open Graph image | `/og.png` |
 | `robots.txt` | `/robots.txt` |
 | Sitemap | `/sitemap.xml` (robots.txt lists only this; `/sitemap-index.xml` and `/sitemap-0.xml` remain as aliases) |
 
@@ -90,6 +94,25 @@ If GSC still says “Couldn’t fetch” while a public GET returns HTTP 200:
 4. URL Inspection → Test live URL on `/sitemap.xml`. If that is available to Google, the Sitemaps report is usually lag or a stale first-fetch error — resubmit and wait.
 
 This repo cannot turn Bot Fight Mode off. That is a dashboard setting, not a code defect.
+
+## IndexNow
+
+A public IndexNow key is served at `https://olisbookshelf.com/5058d13b230c9d374f2b0d74aef0e894.txt` (the file body is the key). The key is public by design; no CI secret is required.
+
+To tell Bing and other IndexNow engines about new or updated URLs, POST to `https://api.indexnow.org/indexnow`:
+
+```json
+{
+  "host": "olisbookshelf.com",
+  "key": "5058d13b230c9d374f2b0d74aef0e894",
+  "keyLocation": "https://olisbookshelf.com/5058d13b230c9d374f2b0d74aef0e894.txt",
+  "urlList": [
+    "https://olisbookshelf.com/questions/where-to-start-the-cosmere/"
+  ]
+}
+```
+
+Submit the question-hub URLs and any changed guides after deploy. This repo does not call IndexNow at build time.
 
 ## License of this repo
 

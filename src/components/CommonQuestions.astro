@@ -1,0 +1,27 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { questionHref } from "../lib/questions";
+
+interface Props {
+  questions: CollectionEntry<"questions">[];
+}
+
+const { questions } = Astro.props;
+---
+
+{
+  questions.length > 0 && (
+    <section class="common-questions" aria-labelledby="common-questions-heading">
+      <p class="eyebrow">Common questions</p>
+      <h2 id="common-questions-heading">Asked about this shelf</h2>
+      <ul class="question-list">
+        {questions.map((question) => (
+          <li>
+            <a href={questionHref(question.data.slug)}>{question.data.title}</a>
+            <p class="small muted">{question.data.shortAnswerTitle}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )
+}

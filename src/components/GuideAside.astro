@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
+import { questionHref } from "../lib/questions";
 import { amazonRel, amazonSearchUrl, genres, type GenreSlug } from "../lib/site";
 import GuideToc from "./GuideToc.astro";
 
@@ -13,9 +14,10 @@ interface Props {
   guide: CollectionEntry<"guides">;
   headings: Heading[];
   related: CollectionEntry<"guides">[];
+  questions?: CollectionEntry<"questions">[];
 }
 
-const { guide, headings, related } = Astro.props;
+const { guide, headings, related, questions = [] } = Astro.props;
 const genre = genres[guide.data.genre as GenreSlug];
 const searchHref = amazonSearchUrl(`${guide.data.series} ${guide.data.author}`);
 const sources = guide.data.sources;
@@ -49,6 +51,20 @@ const sources = guide.data.sources;
     }
   </div>
   <GuideToc headings={headings} />
+  {
+    questions.length > 0 && (
+      <nav class="aside-related" aria-label="Common questions">
+        <p class="guide-toc-label">Common questions</p>
+        <ul class="aside-related-list">
+          {questions.map((item) => (
+            <li>
+              <a href={questionHref(item.data.slug)}>{item.data.title}</a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    )
+  }
   {
     related.length > 0 && (
       <nav class="aside-related" aria-label="Related series">

@@ -14,3 +14,15 @@
 
 /robots.txt
   Content-Type: text/plain; charset=utf-8
+
+/og.png
+  Content-Type: image/png
+  Cache-Control: public, max-age=86400
+
+/og/*
+  Content-Type: image/png
+  Cache-Control: public, max-age=86400
+
+/5058d13b230c9d374f2b0d74aef0e894.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=86400

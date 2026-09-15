@@ -1,4 +1,5 @@
 import { getCollection } from "astro:content";
+import { listedQuestions, questionHref } from "./questions";
 import { genres } from "./site";
 
 export type SitemapEntry = {
@@ -9,6 +10,7 @@ export type SitemapEntry = {
 const STATIC_PAGES = [
   "/",
   "/guides/",
+  "/questions/",
   "/about/",
   "/methodology/",
   "/disclosure/",
@@ -30,8 +32,10 @@ function escapeXml(value: string): string {
 
 export async function sitemapEntries(site: URL): Promise<{ loc: string; lastmod: string }[]> {
   const guides = await getCollection("guides");
-  const newestGuide = guides.reduce<Date | undefined>((latest, guide) => {
-    const date = guide.data.lastVerified;
+  const questions = listedQuestions(await getCollection("questions"));
+  const newestGuide = [...guides.map((guide) => guide.data.lastVerified), ...questions.map((q) => q.data.lastVerified)].reduce<
+    Date | undefined
+  >((latest, date) => {
     if (!latest || date > latest) return date;
     return latest;
   }, undefined);
@@ -41,6 +45,10 @@ export async function sitemapEntries(site: URL): Promise<{ loc: string; lastmod:
     ...guides.map((guide) => ({
       path: `/guides/${guide.data.slug}/`,
       lastmod: guide.data.lastVerified,
+    })),
+    ...questions.map((question) => ({
+      path: questionHref(question.data.slug),
+      lastmod: question.data.lastVerified,
     })),
   ];
 

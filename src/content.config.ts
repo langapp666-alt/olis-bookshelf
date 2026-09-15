@@ -31,4 +31,20 @@ const guides = defineCollection({
   }),
 });
 
-export const collections = { guides };
+/** Short intent pages that answer one question and send people to a full guide. */
+const questions = defineCollection({
+  loader: glob({ base: "./src/content/questions", pattern: "**/*.{md,mdx}" }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    shortAnswerTitle: z.string(),
+    shortAnswer: z.string(),
+    genre: z.enum(genres),
+    lastVerified: z.coerce.date(),
+    slug: z.string(),
+    guides: z.array(z.string()).min(1),
+    status: z.enum(["draft", "published", "reviewed"]).default("published"),
+  }),
+});
+
+export const collections = { guides, questions };

@@ -1,0 +1,108 @@
+---
+import { getCollection, render } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import GuideBreadcrumb from "../../components/GuideBreadcrumb.astro";
+import GuideCard from "../../components/GuideCard.astro";
+import StartHere from "../../components/StartHere.astro";
+import {
+  articleSchema,
+  breadcrumbSchema,
+  faqPageSchema,
+  parseFaqPairs,
+  webPageSchema,
+} from "../../lib/guide-schema";
+import { listedGuides } from "../../lib/guides-index";
+import { absoluteOgUrl, questionOgPath } from "../../lib/og";
+import { guidesForQuestion, listedQuestions, questionHref } from "../../lib/questions";
+import { genres, isoDate, siteName, siteOrigin } from "../../lib/site";
+
+export async function getStaticPaths() {
+  const questions = listedQuestions(await getCollection("questions"));
+  const guides = listedGuides(await getCollection("guides"));
+  return questions.map((question) => ({
+    params: { slug: question.data.slug },
+    props: { question, linkedGuides: guidesForQuestion(question, guides) },
+  }));
+}
+
+const { question, linkedGuides } = Astro.props;
+const { Content } = await render(question);
+const genre = genres[question.data.genre];
+const origin = siteOrigin(Astro.site);
+const canonical = new URL(questionHref(question.data.slug), origin);
+const ogImage = absoluteOgUrl(origin, questionOgPath(question.data.slug));
+const logo = new URL("/og.png", origin).href;
+const modified = isoDate(question.data.lastVerified);
+const jsonLd = [
+  webPageSchema({
+    name: question.data.title,
+    description: question.data.description,
+    url: canonical.href,
+    origin: origin.href,
+    siteName,
+    image: ogImage,
+    dateModified: modified,
+  }),
+  articleSchema({
+    headline: question.data.title,
+    description: question.data.description,
+    url: canonical.href,
+    dateModified: modified,
+    siteName,
+    image: ogImage,
+    logo,
+  }),
+  breadcrumbSchema([
+    { name: siteName, item: new URL("/", origin).href },
+    { name: "Questions", item: new URL("/questions/", origin).href },
+    { name: question.data.title, item: canonical.href },
+  ]),
+  faqPageSchema(parseFaqPairs(question.body), canonical.href),
+].filter((block): block is Record<string, unknown> => Boolean(block));
+---
+
+<BaseLayout
+  title={question.data.title}
+  description={question.data.description}
+  ogType="article"
+  ogImage={ogImage}
+  jsonLd={jsonLd}
+>
+  <article class="question-page">
+    <header class="question-hero">
+      <GuideBreadcrumb
+        crumbs={[
+          { href: "/", label: "Home" },
+          { href: "/questions/", label: "Questions" },
+          { href: `/genres/${genre.slug}/`, label: genre.label },
+        ]}
+      />
+      <p class="eyebrow">
+        <a href="/questions/">Common question</a>
+      </p>
+      <h1>{question.data.title}</h1>
+      <p class="lede">{question.data.description}</p>
+    </header>
+
+    <div class="prose guide-prose question-prose">
+      <StartHere title={question.data.shortAnswerTitle}>
+        <p>{question.data.shortAnswer}</p>
+      </StartHere>
+      <Content />
+    </div>
+
+    {
+      linkedGuides.length > 0 && (
+        <section class="question-guides" aria-labelledby="question-guides-heading">
+          <p class="eyebrow">Full maps</p>
+          <h2 id="question-guides-heading">Read the guide this answers</h2>
+          <div class="world-grid is-related">
+            {linkedGuides.map((guide) => (
+              <GuideCard guide={guide} variant="related" filterable={false} />
+            ))}
+          </div>
+        </section>
+      )
+    }
+  </article>
+</BaseLayout>
