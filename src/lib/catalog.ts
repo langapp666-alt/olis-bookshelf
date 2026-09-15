@@ -13,6 +13,20 @@ export const featuredSlugs = [
   "lord-of-the-rings-reading-order",
 ] as const;
 
+/** Longer or multi-door maps for the homepage “deep catalog” row. */
+export const spotlightSlugs = [
+  "cosmere-starter-reading-order",
+  "wheel-of-time-reading-order",
+  "malazan-book-of-the-fallen-reading-order",
+  "discworld-city-watch-reading-order",
+  "the-expanse-reading-order",
+  "dresden-files-reading-order",
+  "outlander-reading-order",
+  "first-law-reading-order",
+] as const;
+
+export const SHELF_PREVIEW = 6;
+
 export const catalogChips: { slug: GenreSlug | ""; label: string }[] = [
   { slug: "", label: "All" },
   { slug: "epic-fantasy", label: "Fantasy" },

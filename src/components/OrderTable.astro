@@ -29,6 +29,21 @@ const hasForm = showForm ?? books.some((book) => Boolean(book.form));
 const hasNotes = showNotes ?? books.some((book) => Boolean(book.notes));
 const hasN = books.some((book) => book.n !== undefined && book.n !== "");
 const hasYear = books.some((book) => book.year !== undefined && book.year !== "");
+
+type BadgeKind = "start" | "optional" | "stop" | "form";
+
+function badgeFor(book: OrderBook): { label: string; kind: BadgeKind } | null {
+  const notes = (book.notes ?? "").toLowerCase();
+  const form = (book.form ?? "").toLowerCase();
+  if (/do not start|not (an? )?(on-ramp|book one|required)/.test(notes)) {
+    return { label: "Do not start here", kind: "stop" };
+  }
+  if (/start here/.test(notes)) return { label: "Start here", kind: "start" };
+  if (/optional/.test(notes) || /optional/.test(form)) return { label: "Optional", kind: "optional" };
+  if (/contested/.test(notes)) return { label: "Contested", kind: "optional" };
+  if (book.form && !hasForm) return { label: book.form, kind: "form" };
+  return null;
+}
 ---
 
 <div class="table-wrap is-stacked">
@@ -45,48 +60,55 @@ const hasYear = books.some((book) => book.year !== undefined && book.year !== ""
     </thead>
     <tbody>
       {
-        books.map((book) => (
-          <tr>
-            {hasN && (
-              <td class="col-n" data-label="#">
-                {book.n ?? ""}
+        books.map((book) => {
+          const badge = badgeFor(book);
+          return (
+            <tr>
+              {hasN && (
+                <td class="col-n" data-label="#">
+                  {book.n ?? ""}
+                </td>
+              )}
+              <td class="col-title" data-label="Title">
+                <span class="book-title-cell">
+                  <BookCover
+                    title={book.title}
+                    cover={lookupCover(book.title, book.author ?? author, book as CoverRecord)}
+                  />
+                  <span class="book-title-stack">
+                    <span class="book-title">{book.title}</span>
+                    {badge && <span class:list={["row-badge", `is-${badge.kind}`]}>{badge.label}</span>}
+                  </span>
+                </span>
               </td>
-            )}
-            <td class="col-title" data-label="Title">
-              <span class="book-title-cell">
-                <BookCover
-                  title={book.title}
-                  cover={lookupCover(book.title, book.author ?? author, book as CoverRecord)}
-                />
-                <span class="book-title">{book.title}</span>
-              </span>
-            </td>
-            {hasForm && (
-              <td class="col-form" data-label="Form">
-                {book.form}
+              {hasForm && (
+                <td class="col-form" data-label="Form">
+                  {book.form}
+                </td>
+              )}
+              {hasYear && (
+                <td class="col-year" data-label="Year">
+                  {book.year}
+                </td>
+              )}
+              {hasNotes && (
+                <td class="col-notes" data-label="Notes">
+                  {book.notes}
+                </td>
+              )}
+              <td class="col-amazon amazon-cell" data-label="Amazon">
+                <a
+                  class="amazon-link"
+                  href={amazonBookUrl(book.title, book.author ?? author, book.query)}
+                  rel={amazonRel}
+                >
+                  Amazon
+                  <span class="visually-hidden">{` search for ${book.title}`}</span>
+                </a>
               </td>
-            )}
-            {hasYear && (
-              <td class="col-year" data-label="Year">
-                {book.year}
-              </td>
-            )}
-            {hasNotes && (
-              <td class="col-notes" data-label="Notes">
-                {book.notes}
-              </td>
-            )}
-            <td class="col-amazon amazon-cell" data-label="Amazon">
-              <a
-                class="amazon-link"
-                href={amazonBookUrl(book.title, book.author ?? author, book.query)}
-                rel={amazonRel}
-              >
-                Amazon
-              </a>
-            </td>
-          </tr>
-        ))
+            </tr>
+          );
+        })
       }
     </tbody>
   </table>

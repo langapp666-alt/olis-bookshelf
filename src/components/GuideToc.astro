@@ -7,9 +7,10 @@ interface Heading {
 
 interface Props {
   headings: Heading[];
+  compact?: boolean;
 }
 
-const { headings } = Astro.props;
+const { headings, compact = false } = Astro.props;
 const toc = headings.filter((heading) => heading.depth === 2);
 
 function labelFor(text: string) {
@@ -19,15 +20,28 @@ function labelFor(text: string) {
 
 {
   toc.length > 2 && (
-    <nav class="guide-toc" aria-label="On this page">
-      <p class="guide-toc-label">On this page</p>
-      <ol class="guide-toc-list">
-        {toc.map((heading) => (
-          <li>
-            <a href={`#${heading.slug}`}>{labelFor(heading.text)}</a>
-          </li>
-        ))}
-      </ol>
-    </nav>
+    compact ? (
+      <details class="guide-toc is-mobile">
+        <summary class="guide-toc-label">On this page</summary>
+        <ol class="guide-toc-list">
+          {toc.map((heading) => (
+            <li>
+              <a href={`#${heading.slug}`}>{labelFor(heading.text)}</a>
+            </li>
+          ))}
+        </ol>
+      </details>
+    ) : (
+      <nav class="guide-toc" aria-label="On this page">
+        <p class="guide-toc-label">On this page</p>
+        <ol class="guide-toc-list">
+          {toc.map((heading) => (
+            <li>
+              <a href={`#${heading.slug}`}>{labelFor(heading.text)}</a>
+            </li>
+          ))}
+        </ol>
+      </nav>
+    )
   )
 }

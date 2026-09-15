@@ -18,12 +18,15 @@ const searchHref = amazonSearchUrl(`${series} ${author}`);
   <p class="small muted aside-byline">
     {author} · {genreLabel}
   </p>
-  <a class="btn" href={searchHref} rel={amazonRel}>Search the series on Amazon</a>
+  <a class="aside-amazon" href={searchHref} rel={amazonRel}>
+    Amazon search
+    <span class="visually-hidden">{` for ${series}`}</span>
+  </a>
   {
     sources.length > 0 && (
       <>
         <hr class="rule" />
-        <p class="small aside-sources-label"><strong>Sources</strong></p>
+        <p class="small aside-sources-label">Sources</p>
         <ul class="source-list small">
           {sources.map((source) => (
             <li>

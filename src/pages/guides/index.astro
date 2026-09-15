@@ -3,11 +3,12 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import CatalogFind from "../../components/CatalogFind.astro";
 import GuideCard from "../../components/GuideCard.astro";
-import { sortGuides } from "../../lib/catalog";
+import { featuredSlugs, guidesBySlug, sortGuides } from "../../lib/catalog";
 import { listedGuides } from "../../lib/guides-index";
 import { genres, siteOrigin, type GenreSlug } from "../../lib/site";
 
 const allGuides = sortGuides(listedGuides(await getCollection("guides")));
+const featured = guidesBySlug(allGuides, featuredSlugs);
 
 const shelves = Object.values(genres).map((genre) => ({
   genre,
@@ -40,6 +41,23 @@ const shelves = Object.values(genres).map((genre) => ({
 
   <p class="catalog-empty" data-catalog-empty hidden>No series on this shelf matches that search.</p>
 
+  <section class="worlds-block" data-featured>
+    <header class="shelf-head">
+      <div>
+        <p class="eyebrow">Popular</p>
+        <h2>Start here — paths people usually get wrong</h2>
+      </div>
+      <p class="shelf-count">{featured.length} featured</p>
+    </header>
+    <div class="world-grid">
+      {
+        featured.map((guide, i) => (
+          <GuideCard guide={guide} variant="featured" priority={i < 2} filterable={false} />
+        ))
+      }
+    </div>
+  </section>
+
   {
     shelves.map(({ genre, guides }) =>
       guides.length > 0 ? (
@@ -57,9 +75,9 @@ const shelves = Object.values(genres).map((genre) => ({
               </a>
             </p>
           </header>
-          <div class="cover-wall">
+          <div class="world-grid is-compact">
             {guides.map((guide) => (
-              <GuideCard guide={guide} variant="shelf" />
+              <GuideCard guide={guide} variant="catalog" />
             ))}
           </div>
         </section>

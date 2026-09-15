@@ -5,7 +5,7 @@ export function bindCatalogFind(root: ParentNode = document) {
 
   const items = [...root.querySelectorAll<HTMLElement>("[data-catalog-item]")];
   const shelves = [...root.querySelectorAll<HTMLElement>("[data-shelf]")];
-  const featured = root.querySelector<HTMLElement>("[data-featured]");
+  const featured = root.querySelectorAll<HTMLElement>("[data-featured]");
   const masthead = root.querySelector<HTMLElement>("[data-masthead]");
   const empty = root.querySelector<HTMLElement>("[data-catalog-empty]");
   const countEl = root.querySelector<HTMLElement>("[data-catalog-count]");
@@ -62,9 +62,9 @@ export function bindCatalogFind(root: ParentNode = document) {
       }
     });
 
-    if (featured) {
-      featured.hidden = Boolean(q || genre);
-    }
+    featured.forEach((block) => {
+      block.hidden = Boolean(q || genre);
+    });
     if (masthead) {
       masthead.hidden = Boolean(q || genre);
     }

@@ -2,6 +2,7 @@
 import { genres, type GenreSlug } from "../lib/site";
 import { lookupCover } from "../lib/covers";
 import { catalogText } from "../lib/catalog";
+import { withGuideMeta } from "../lib/guide-meta";
 import BookCover, { type CoverSize } from "./BookCover.astro";
 import type { CollectionEntry } from "astro:content";
 
@@ -9,7 +10,7 @@ interface Props {
   guide: CollectionEntry<"guides">;
   index?: number;
   compact?: boolean;
-  variant?: "row" | "shelf" | "featured" | "related";
+  variant?: "row" | "shelf" | "featured" | "related" | "catalog";
   priority?: boolean;
   filterable?: boolean;
 }
@@ -18,7 +19,7 @@ const {
   guide,
   index,
   compact = false,
-  variant = compact ? "row" : "shelf",
+  variant = compact ? "row" : "catalog",
   priority = false,
   filterable = true,
 } = Astro.props;
@@ -31,18 +32,29 @@ const cover = lookupCover(guide.data.series, guide.data.author, {
   olid: guide.data.olid,
   gbid: guide.data.gbid,
 });
+const { countLabel, paths } = withGuideMeta(guide);
+const isWorld = variant === "featured" || variant === "catalog" || variant === "shelf" || variant === "related";
 const coverSize: CoverSize =
-  variant === "featured" ? "poster" : variant === "related" ? "related" : variant === "row" ? "card" : "shelf";
-const isTile = variant === "shelf" || variant === "featured" || variant === "related";
+  variant === "featured"
+    ? "world"
+    : variant === "related"
+      ? "related"
+      : variant === "row"
+        ? "card"
+        : "world";
+const showPaths = variant === "featured" && paths.length > 0;
+const blurb =
+  variant === "featured" ? guide.data.description : variant === "related" ? "" : guide.data.description;
 ---
 
 <a
   class:list={[
-    isTile ? "book-tile" : n ? "catalog-item" : "guide-card",
+    isWorld ? "world-card" : n ? "catalog-item" : "book-tile",
     {
       "is-compact": variant === "row",
       "is-featured": variant === "featured",
       "is-related": variant === "related",
+      "is-catalog": variant === "catalog" || variant === "shelf",
     },
   ]}
   href={`/guides/${guide.data.slug}/`}
@@ -52,24 +64,25 @@ const isTile = variant === "shelf" || variant === "featured" || variant === "rel
 >
   {n && <span class="catalog-index" aria-hidden="true">{n}</span>}
   <BookCover title={guide.data.series} cover={cover} size={coverSize} priority={priority} />
-  <div class="book-tile-copy">
-    {
-      variant !== "shelf" && (
-        <div class="pill-row">
-          <span class="pill genre">{genre.label}</span>
-        </div>
-      )
-    }
+  <div class="world-card-copy">
+    <div class="pill-row">
+      <span class="pill genre">{genre.label}</span>
+      {countLabel && <span class="pill">{countLabel}</span>}
+    </div>
     <h2>{guide.data.series}</h2>
     <p class="byline small">{guide.data.author}</p>
     {
-      variant === "featured" && (
-        <p class="card-desc">{guide.data.description}</p>
+      blurb && (
+        <p class="card-desc">{blurb}</p>
       )
     }
     {
-      (variant === "row" || variant === "featured") && (
-        <p class="catalog-cta">Open the order</p>
+      showPaths && (
+        <p class="path-chips" aria-label="Guide sections">
+          {paths.map((path) => (
+            <span class="path-chip">{path}</span>
+          ))}
+        </p>
       )
     }
   </div>
