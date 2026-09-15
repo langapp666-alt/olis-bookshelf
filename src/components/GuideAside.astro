@@ -1,0 +1,67 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { amazonRel, amazonSearchUrl, genres, type GenreSlug } from "../lib/site";
+import GuideToc from "./GuideToc.astro";
+
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+
+interface Props {
+  guide: CollectionEntry<"guides">;
+  headings: Heading[];
+  related: CollectionEntry<"guides">[];
+}
+
+const { guide, headings, related } = Astro.props;
+const genre = genres[guide.data.genre as GenreSlug];
+const searchHref = amazonSearchUrl(`${guide.data.series} ${guide.data.author}`);
+const sources = guide.data.sources;
+---
+
+<aside class="guide-aside">
+  <div class="panel series-panel">
+    <p class="eyebrow">This series</p>
+    <p class="aside-series">{guide.data.series}</p>
+    <p class="small muted aside-byline">
+      {guide.data.author} · {genre.label}
+    </p>
+    <a class="aside-amazon" href={searchHref} rel={amazonRel}>
+      Amazon search
+      <span class="visually-hidden">{` for ${guide.data.series}`}</span>
+    </a>
+    {
+      sources.length > 0 && (
+        <>
+          <hr class="rule" />
+          <p class="small aside-sources-label">Sources</p>
+          <ul class="source-list small">
+            {sources.map((source) => (
+              <li>
+                <a href={source.url}>{source.label}</a>
+              </li>
+            ))}
+          </ul>
+        </>
+      )
+    }
+  </div>
+  <GuideToc headings={headings} />
+  {
+    related.length > 0 && (
+      <nav class="aside-related" aria-label="Related series">
+        <p class="guide-toc-label">Related series</p>
+        <ul class="aside-related-list">
+          {related.map((item) => (
+            <li>
+              <a href={`/guides/${item.data.slug}/`}>{item.data.series}</a>
+              <span class="aside-related-author">{item.data.author}</span>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    )
+  }
+</aside>

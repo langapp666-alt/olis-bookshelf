@@ -5,13 +5,20 @@ import CatalogFind from "../components/CatalogFind.astro";
 import CoverStack from "../components/CoverStack.astro";
 import GuideCard from "../components/GuideCard.astro";
 import RandomGuide from "../components/RandomGuide.astro";
-import { featuredSlugs, guidesBySlug, sortGuides } from "../lib/catalog";
+import {
+  featuredSlugs,
+  guidesBySlug,
+  SHELF_PREVIEW,
+  sortGuides,
+  spotlightSlugs,
+} from "../lib/catalog";
 import { listedGuides } from "../lib/guides-index";
 import { genres, siteOrigin, type GenreSlug } from "../lib/site";
 
 const allGuides = sortGuides(listedGuides(await getCollection("guides")));
 const guideCount = allGuides.length;
 const featured = guidesBySlug(allGuides, featuredSlugs);
+const spotlight = guidesBySlug(allGuides, spotlightSlugs);
 const stack = featured.slice(0, 3);
 
 const shelves = Object.values(genres).map((genre) => ({
@@ -35,16 +42,17 @@ const shelves = Object.values(genres).map((genre) => ({
 >
   <section class="masthead" data-masthead>
     <div class="masthead-copy">
-      <p class="eyebrow">Reading-order catalog</p>
-      <h1>Reading-order guides for long series</h1>
-      <p class="dek">The next book, not the loudest one.</p>
+      <p class="eyebrow">Reading-order maps</p>
+      <h1>Know the next book — not the loudest one.</h1>
       <p class="lede">
-        {guideCount} maps for science fiction, fantasy, mystery, and romance.
-        Publication first. Chronology when it actually changes the read.
+        {guideCount} spoiler-light paths for long science fiction, fantasy, mystery, and romance
+        series. Publication first. Chronology when it actually changes the read. Optional extras
+        stay labeled.
       </p>
       <div class="btn-row">
         <a class="btn" href="/guides/">Browse guides</a>
         <RandomGuide />
+        <a class="btn btn-ghost" href="#find">Find a series</a>
       </div>
       <p class="hero-note">
         <a href="/methodology/">How the lists are made</a>
@@ -53,19 +61,21 @@ const shelves = Object.values(genres).map((genre) => ({
     <CoverStack guides={stack} />
   </section>
 
-  <CatalogFind id="find" total={guideCount} />
+  <CatalogFind id="find" total={guideCount} filterable={false} chipLinks action="/guides/" />
 
-  <p class="catalog-empty" data-catalog-empty hidden>No series on this shelf matches that search.</p>
-
-  <section class="featured-block" data-featured>
+  <section class="worlds-block" data-featured>
     <header class="shelf-head">
       <div>
-        <p class="eyebrow">On the desk</p>
-        <h2>Start here — the paths people usually get wrong</h2>
+        <p class="eyebrow">Start here</p>
+        <h2>Choose a world</h2>
+        <p class="shelf-blurb">
+          High-traffic series people still start on the wrong book. Genre, a short path, and the
+          first honest title.
+        </p>
       </div>
       <p class="shelf-count">{featured.length} featured</p>
     </header>
-    <div class="cover-wall is-featured">
+    <div class="world-grid">
       {
         featured.map((guide, i) => (
           <GuideCard guide={guide} variant="featured" priority={i < 2} filterable={false} />
@@ -74,10 +84,32 @@ const shelves = Object.values(genres).map((genre) => ({
     </div>
   </section>
 
+  <section class="worlds-block">
+    <header class="shelf-head">
+      <div>
+        <p class="eyebrow">Deep catalog</p>
+        <h2>Long maps, still labeled</h2>
+        <p class="shelf-blurb">
+          Multi-door universes and long runs where a spreadsheet is the usual wrong answer.
+        </p>
+      </div>
+      <p class="shelf-count">
+        <a href="/guides/">All {guideCount} maps</a>
+      </p>
+    </header>
+    <div class="world-grid">
+      {
+        spotlight.map((guide) => (
+          <GuideCard guide={guide} variant="catalog" filterable={false} />
+        ))
+      }
+    </div>
+  </section>
+
   {
     shelves.map(({ genre, guides }) =>
       guides.length > 0 ? (
-        <section class="shelf-block" data-shelf data-shelf-genre={genre.slug}>
+        <section class="shelf-block">
           <header class="shelf-head">
             <div>
               <p class="eyebrow">Shelf</p>
@@ -86,17 +118,26 @@ const shelves = Object.values(genres).map((genre) => ({
               </h2>
               <p class="shelf-blurb">{genre.blurb}</p>
             </div>
-            <p class="shelf-count" data-shelf-total={guides.length}>
+            <p class="shelf-count">
               <a href={`/genres/${genre.slug}/`}>
                 {guides.length === 1 ? "1 map" : `${guides.length} maps`}
               </a>
             </p>
           </header>
-          <div class="cover-wall">
-            {guides.map((guide) => (
-              <GuideCard guide={guide} variant="shelf" />
+          <div class="world-grid is-compact">
+            {guides.slice(0, SHELF_PREVIEW).map((guide) => (
+              <GuideCard guide={guide} variant="catalog" filterable={false} />
             ))}
           </div>
+          {
+            guides.length > SHELF_PREVIEW && (
+              <p class="shelf-more">
+                <a href={`/genres/${genre.slug}/`}>
+                  All {guides.length} {genre.label} maps
+                </a>
+              </p>
+            )
+          }
         </section>
       ) : null,
     )

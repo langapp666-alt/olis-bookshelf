@@ -1,16 +1,15 @@
 ---
 import { getCollection, render } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import AffiliatePanel from "../../components/AffiliatePanel.astro";
 import AffiliateDock from "../../components/AffiliateDock.astro";
-import GuideBreadcrumb from "../../components/GuideBreadcrumb.astro";
-import GuideToc from "../../components/GuideToc.astro";
+import GuideAside from "../../components/GuideAside.astro";
+import GuideHero from "../../components/GuideHero.astro";
 import OrderTable from "../../components/OrderTable.astro";
 import RelatedGuides from "../../components/RelatedGuides.astro";
 import StartHere from "../../components/StartHere.astro";
 import { relatedGuides } from "../../lib/related-guides";
 import { listedGuides } from "../../lib/guides-index";
-import { formatDate, genres, isoDate, siteName, siteOrigin } from "../../lib/site";
+import { genres, isoDate, siteName, siteOrigin } from "../../lib/site";
 
 export async function getStaticPaths() {
   const guides = await getCollection("guides");
@@ -55,38 +54,13 @@ const articleSchema = {
 
 <BaseLayout title={guide.data.title} description={guide.data.description} dock jsonLd={[breadcrumbSchema, articleSchema]}>
   <article class="guide-page">
-    <header class="page-head guide-head">
-      <GuideBreadcrumb
-        crumbs={[
-          { href: "/", label: "Home" },
-          { href: "/guides/", label: "Guides" },
-          { href: `/genres/${genre.slug}/`, label: genre.label },
-        ]}
-      />
-      <p class="eyebrow">
-        <a href={`/genres/${genre.slug}/`}>{genre.label}</a>
-      </p>
-      <h1>{guide.data.title}</h1>
-      <p class="lede">{guide.data.description}</p>
-      <div class="pill-row">
-        <span class="pill">{guide.data.author}</span>
-        <span class="pill">Checked {formatDate(guide.data.lastVerified)}</span>
-      </div>
-    </header>
+    <GuideHero guide={guide} headings={headings} />
 
     <div class="guide-layout">
-      <aside class="guide-aside">
-        <GuideToc headings={headings} />
-        <AffiliatePanel
-          series={guide.data.series}
-          author={guide.data.author}
-          genreLabel={genre.label}
-          sources={guide.data.sources}
-        />
-      </aside>
       <div class="prose guide-prose">
         <Content components={{ OrderTable, StartHere }} />
       </div>
+      <GuideAside guide={guide} headings={headings} related={related} />
     </div>
     <RelatedGuides guides={related} />
   </article>

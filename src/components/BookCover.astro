@@ -6,7 +6,7 @@ import {
   type CoverRecord,
 } from "../lib/covers";
 
-export type CoverSize = "table" | "card" | "related" | "shelf" | "poster";
+export type CoverSize = "table" | "card" | "related" | "world" | "shelf" | "poster" | "hero";
 
 interface Props {
   title: string;
@@ -19,15 +19,23 @@ const dims: Record<CoverSize, { w: number; h: number; ol: "S" | "M" | "L" }> = {
   table: { w: 40, h: 60, ol: "S" },
   card: { w: 48, h: 72, ol: "M" },
   related: { w: 72, h: 108, ol: "M" },
+  world: { w: 96, h: 144, ol: "M" },
   shelf: { w: 180, h: 270, ol: "M" },
   poster: { w: 280, h: 420, ol: "L" },
+  hero: { w: 160, h: 240, ol: "L" },
 };
 
 const { title, cover, size = "table", priority = false } = Astro.props;
 const { w, h, ol } = dims[size];
 const primary = cover ? openLibraryCoverUrl(cover, ol) : undefined;
-const large = cover && (size === "poster" || size === "shelf") ? openLibraryCoverUrl(cover, "L") : undefined;
-const medium = cover && (size === "poster" || size === "shelf") ? openLibraryCoverUrl(cover, "M") : undefined;
+const large =
+  cover && (size === "poster" || size === "shelf" || size === "hero" || size === "world")
+    ? openLibraryCoverUrl(cover, "L")
+    : undefined;
+const medium =
+  cover && (size === "poster" || size === "shelf" || size === "hero" || size === "world")
+    ? openLibraryCoverUrl(cover, "M")
+    : undefined;
 const fallback = cover ? googleBooksCoverUrl(cover) : undefined;
 const src = primary ?? fallback;
 const nextSrc = primary && fallback ? fallback : undefined;
@@ -35,11 +43,15 @@ const initials = coverInitials(title);
 const sizesAttr =
   size === "poster"
     ? "(min-width: 980px) 16rem, 42vw"
-    : size === "shelf"
-      ? "(min-width: 1200px) 10rem, (min-width: 980px) 12rem, (min-width: 720px) 18vw, 42vw"
-      : size === "related"
-        ? "4.5rem"
-        : `${w}px`;
+    : size === "hero"
+      ? "(min-width: 720px) 10rem, 28vw"
+      : size === "shelf"
+        ? "(min-width: 1200px) 10rem, (min-width: 980px) 12rem, (min-width: 720px) 18vw, 42vw"
+        : size === "world"
+          ? "6rem"
+          : size === "related"
+            ? "4.5rem"
+            : `${w}px`;
 ---
 
 <span class:list={["cover-frame", `is-${size}`]}>

@@ -62,9 +62,9 @@ const guides = sortGuides(
   </header>
   {
     guides.length > 0 ? (
-      <div class="cover-wall">
+      <div class="world-grid">
         {guides.map((guide) => (
-          <GuideCard guide={guide} variant="shelf" />
+          <GuideCard guide={guide} variant="catalog" />
         ))}
       </div>
     ) : (

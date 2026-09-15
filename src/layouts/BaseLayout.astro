@@ -59,7 +59,7 @@ const websiteSchema = {
     <link rel="preconnect" href="https://covers.openlibrary.org" />
     <link rel="dns-prefetch" href="https://covers.openlibrary.org" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500&family=Schibsted+Grotesk:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <meta property="og:site_name" content={siteName} />
@@ -71,7 +71,7 @@ const websiteSchema = {
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content={pageTitle} />
     <meta name="twitter:description" content={metaDescription} />
-    <meta name="theme-color" content="#f7f3ea" />
+    <meta name="theme-color" content="#f3ece0" />
     <SeoJsonLd schema={jsonLd ? [websiteSchema, ...(Array.isArray(jsonLd) ? jsonLd : [jsonLd])] : websiteSchema} />
   </head>
   <body>
@@ -88,6 +88,7 @@ const websiteSchema = {
     <GuidesIndex />
     <script>
       import "../scripts/enhance-tables";
+      import "../scripts/enhance-guide";
       import "../scripts/site-search";
     </script>
   </body>

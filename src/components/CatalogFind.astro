@@ -6,6 +6,9 @@ interface Props {
   id?: string;
   placeholder?: string;
   chips?: boolean;
+  chipLinks?: boolean;
+  filterable?: boolean;
+  action?: string;
   total: number;
 }
 
@@ -13,50 +16,113 @@ const {
   id = "guides",
   placeholder = "Fourth Wing, Hobbit, Housemaid, Reacher…",
   chips = true,
+  chipLinks = false,
+  filterable = true,
+  action,
   total,
 } = Astro.props;
 ---
 
-<div class="catalog-find" id={id} data-catalog-find data-catalog-total={total}>
-  <div class="catalog-find-field search-field" data-search-field>
-    <label class="catalog-filter-label" for={`${id}-q`}>Find a series</label>
-    <input
-      id={`${id}-q`}
-      type="search"
-      name="q"
-      placeholder={placeholder}
-      autocomplete="off"
-      spellcheck="false"
-      enterkeyhint="search"
-      data-catalog-filter
-      data-typeahead
-    />
-  </div>
-  {
-    chips && (
-      <div class="catalog-chips" role="group" aria-label="Filter by shelf">
-        {catalogChips.map((chip, i) => (
-          <button
-            type="button"
-            class="catalog-chip"
-            data-catalog-genre={chip.slug}
-            aria-pressed={i === 0 ? "true" : "false"}
-          >
-            {chip.label}
-          </button>
-        ))}
+{
+  action ? (
+    <form
+      class="catalog-find"
+      id={id}
+      action={action}
+      method="get"
+      data-search-field
+      data-catalog-total={total}
+    >
+      <div class="catalog-find-field search-field" data-search-field>
+        <label class="catalog-filter-label" for={`${id}-q`}>Find a series</label>
+        <input
+          id={`${id}-q`}
+          type="search"
+          name="q"
+          placeholder={placeholder}
+          autocomplete="off"
+          spellcheck="false"
+          enterkeyhint="search"
+          data-typeahead
+        />
       </div>
-    )
-  }
-  <div class="catalog-find-toolbar">
-    <p class="catalog-find-meta" data-catalog-count>
-      {total} series maps
-    </p>
-    <RandomGuide class="catalog-random" />
-  </div>
-</div>
+      {
+        chips && (
+          <div class="catalog-chips" role="group" aria-label={chipLinks ? "Browse by shelf" : "Filter by shelf"}>
+            {catalogChips.map((chip) =>
+              chipLinks ? (
+                <a class="catalog-chip" href={chip.slug ? `/genres/${chip.slug}/` : "/guides/"}>
+                  {chip.label}
+                </a>
+              ) : (
+                <button type="button" class="catalog-chip" data-catalog-genre={chip.slug}>
+                  {chip.label}
+                </button>
+              ),
+            )}
+          </div>
+        )
+      }
+      <div class="catalog-find-toolbar">
+        <p class="catalog-find-meta" data-catalog-count>
+          {total} series maps
+        </p>
+        <RandomGuide class="catalog-random" />
+      </div>
+    </form>
+  ) : (
+    <div class="catalog-find" id={id} data-catalog-find data-catalog-total={total}>
+      <div class="catalog-find-field search-field" data-search-field>
+        <label class="catalog-filter-label" for={`${id}-q`}>Find a series</label>
+        <input
+          id={`${id}-q`}
+          type="search"
+          name="q"
+          placeholder={placeholder}
+          autocomplete="off"
+          spellcheck="false"
+          enterkeyhint="search"
+          data-catalog-filter
+          data-typeahead
+        />
+      </div>
+      {
+        chips && (
+          <div class="catalog-chips" role="group" aria-label={chipLinks ? "Browse by shelf" : "Filter by shelf"}>
+            {catalogChips.map((chip, i) =>
+              chipLinks ? (
+                <a class="catalog-chip" href={chip.slug ? `/genres/${chip.slug}/` : "/guides/"}>
+                  {chip.label}
+                </a>
+              ) : (
+                <button
+                  type="button"
+                  class="catalog-chip"
+                  data-catalog-genre={chip.slug}
+                  aria-pressed={i === 0 ? "true" : "false"}
+                >
+                  {chip.label}
+                </button>
+              ),
+            )}
+          </div>
+        )
+      }
+      <div class="catalog-find-toolbar">
+        <p class="catalog-find-meta" data-catalog-count>
+          {total} series maps
+        </p>
+        <RandomGuide class="catalog-random" />
+      </div>
+    </div>
+  )
+}
 
-<script>
-  import { bindCatalogFind } from "../scripts/catalog-filter";
-  bindCatalogFind();
-</script>
+{
+  filterable && !action && (
+    <script>
+      import { bindCatalogFind } from "../scripts/catalog-filter";
+      bindCatalogFind();
+    </script>
+  )
+}

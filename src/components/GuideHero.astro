@@ -1,0 +1,58 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { lookupCover } from "../lib/covers";
+import { withGuideMeta } from "../lib/guide-meta";
+import { formatDate, genres, type GenreSlug } from "../lib/site";
+import BookCover from "./BookCover.astro";
+import GuideBreadcrumb from "./GuideBreadcrumb.astro";
+import GuideToc from "./GuideToc.astro";
+
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+
+interface Props {
+  guide: CollectionEntry<"guides">;
+  headings?: Heading[];
+}
+
+const { guide, headings = [] } = Astro.props;
+const genre = genres[guide.data.genre as GenreSlug];
+const { countLabel } = withGuideMeta(guide);
+const cover = lookupCover(guide.data.series, guide.data.author, {
+  coverId: guide.data.coverId,
+  isbn: guide.data.isbn,
+  olid: guide.data.olid,
+  gbid: guide.data.gbid,
+});
+---
+
+<header class="guide-hero">
+  <GuideBreadcrumb
+    crumbs={[
+      { href: "/", label: "Home" },
+      { href: "/guides/", label: "Guides" },
+      { href: `/genres/${genre.slug}/`, label: genre.label },
+    ]}
+  />
+  <div class="guide-hero-grid">
+    <div class="guide-hero-copy">
+      <p class="eyebrow">
+        <a href={`/genres/${genre.slug}/`}>{genre.label}</a>
+      </p>
+      <h1>{guide.data.title}</h1>
+      <p class="lede">{guide.data.description}</p>
+      <div class="pill-row">
+        <span class="pill">{guide.data.author}</span>
+        {countLabel && <span class="pill">{countLabel}</span>}
+        <span class="pill">Checked {formatDate(guide.data.lastVerified)}</span>
+      </div>
+      {headings.length > 0 && <GuideToc headings={headings} compact />}
+    </div>
+    <div class="guide-hero-cover">
+      <BookCover title={guide.data.series} cover={cover} size="hero" priority />
+    </div>
+  </div>
+</header>
