@@ -44,7 +44,7 @@ Order tables show Open Library covers when `src/data/covers.json` has a reliable
 | Disclosure (FTC + Associates wording) | `/disclosure/` |
 | Methodology | `/methodology/` |
 | `robots.txt` | `/robots.txt` |
-| Sitemap | `/sitemap.xml` (also `/sitemap-index.xml`, `/sitemap-0.xml`) |
+| Sitemap | `/sitemap.xml` (robots.txt lists only this; `/sitemap-index.xml` and `/sitemap-0.xml` remain as aliases) |
 
 House docs (not shipped as pages):
 
@@ -76,11 +76,11 @@ The custom domain **https://olisbookshelf.com** is already attached in Cloudflar
 - Astro (static output)
 - Markdown/MDX content collections
 - TypeScript
-- Custom `/sitemap.xml` (single urlset with `lastmod`) plus the older index/child URLs so existing Search Console submissions keep working
+- Custom `/sitemap.xml` (single urlset with `lastmod`). `robots.txt` advertises only that file. Older `/sitemap-index.xml` and `/sitemap-0.xml` URLs stay valid so an existing Search Console row does not 404.
 
 ## Google Search Console
 
-Submit **`https://olisbookshelf.com/sitemap.xml`**. That file is a bare `urlset` with `lastmod`, served as `text/xml; charset=utf-8`. `/sitemap-index.xml` and `/sitemap-0.xml` stay valid so an older GSC row does not 404. The `pages.dev` host can remain a second property if needed; page canonicals point at `https://olisbookshelf.com`.
+Submit **`https://olisbookshelf.com/sitemap.xml`**. That file is a bare `urlset` with `lastmod`, served as `text/xml; charset=utf-8`. `robots.txt` lists only this sitemap. `/sitemap-index.xml` and `/sitemap-0.xml` stay valid so an older GSC row does not 404, but they are not advertised. The `pages.dev` host can remain a second property if needed; page canonicals point at `https://olisbookshelf.com`.
 
 If GSC still says “Couldn’t fetch” while a public GET returns HTTP 200:
 

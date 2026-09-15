@@ -1,11 +1,12 @@
 import type { APIRoute } from "astro";
 import { siteOrigin } from "../lib/site";
 
+/** Advertise only the urlset. Compatibility aliases are not listed. */
+
 const getRobotsTxt = (site: URL) => `User-agent: *
 Allow: /
 
 Sitemap: ${new URL("sitemap.xml", site).href}
-Sitemap: ${new URL("sitemap-index.xml", site).href}
 `;
 
 export const GET: APIRoute = ({ site }) => {
