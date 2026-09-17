@@ -2103,6 +2103,98 @@ table .col-title {
   }
 }
 
+.questions-promo {
+  margin-top: 2.6rem;
+  padding: 1.65rem 1.35rem 1.7rem;
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--surface) 86%, var(--paper)) 0%, var(--surface) 100%);
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+
+.questions-promo .shelf-head {
+  border-top: 0;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.question-promo-list {
+  list-style: none;
+  margin: 0.35rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.7rem;
+  counter-reset: question-promo;
+}
+
+.question-promo-list li {
+  margin: 0;
+  counter-increment: question-promo;
+}
+
+.question-promo-card {
+  display: grid;
+  grid-template-columns: 2.1rem minmax(0, 1fr);
+  column-gap: 0.75rem;
+  row-gap: 0.15rem;
+  align-items: start;
+  padding: 0.85rem 0.95rem 0.95rem;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  color: inherit;
+  min-height: 4.5rem;
+}
+
+.question-promo-card::before {
+  content: counter(question-promo, decimal-leading-zero);
+  grid-row: 1 / span 2;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  padding-top: 0.2rem;
+}
+
+.question-promo-card:hover {
+  color: inherit;
+  border-color: color-mix(in srgb, var(--accent) 30%, var(--rule));
+}
+
+.question-promo-kicker {
+  grid-column: 2;
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.question-promo-title {
+  grid-column: 2;
+  font-family: var(--serif);
+  font-size: 1.12rem;
+  font-weight: 500;
+  line-height: 1.28;
+  color: var(--ink);
+}
+
+@media (min-width: 720px) {
+  .question-promo-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1080px) {
+  .questions-promo {
+    padding: 1.85rem 1.7rem 1.9rem;
+  }
+}
+
 .related-guides {
   margin-top: 2.75rem;
   padding-top: 1.6rem;

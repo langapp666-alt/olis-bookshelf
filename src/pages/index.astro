@@ -13,6 +13,8 @@ import {
   spotlightSlugs,
 } from "../lib/catalog";
 import { listedGuides } from "../lib/guides-index";
+import PopularQuestions from "../components/PopularQuestions.astro";
+import { popularQuestionSlugs, questionsBySlug, listedQuestions } from "../lib/questions";
 import { genres, siteOrigin, type GenreSlug } from "../lib/site";
 
 const allGuides = sortGuides(listedGuides(await getCollection("guides")));
@@ -20,6 +22,10 @@ const guideCount = allGuides.length;
 const featured = guidesBySlug(allGuides, featuredSlugs);
 const spotlight = guidesBySlug(allGuides, spotlightSlugs);
 const stack = featured.slice(0, 3);
+const popularQuestions = questionsBySlug(
+  listedQuestions(await getCollection("questions")),
+  popularQuestionSlugs,
+);
 
 const shelves = Object.values(genres).map((genre) => ({
   genre,
@@ -28,16 +34,16 @@ const shelves = Object.values(genres).map((genre) => ({
 ---
 
 <BaseLayout
-  title="Reading-order guides for long series"
-  description="Reading-order maps for long science fiction, fantasy, mystery, and romance series. Publication first, chronology when it matters, and a few next reads with reasons."
+  title="Reading-order guides: where to start"
+  description="Where to start Witcher, Cosmere, Dark Tower, Vorkosigan, Reacher, and 100+ long series. Publication first. Chronology when it actually changes the read."
   wide
   jsonLd={{
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Reading-order guides for long series",
+    name: "Reading-order guides: where to start",
     url: new URL("/", siteOrigin(Astro.site)).href,
     description:
-      "Reading-order maps for long science fiction, fantasy, mystery, and romance series.",
+      "Where to start long science fiction, fantasy, mystery, and romance series. Publication first.",
   }}
 >
   <section class="masthead" data-masthead>
@@ -51,13 +57,14 @@ const shelves = Object.values(genres).map((genre) => ({
       </p>
       <div class="btn-row">
         <a class="btn" href="/guides/">Browse guides</a>
+        <a class="btn btn-ghost" href="/questions/">Popular questions</a>
         <RandomGuide />
         <a class="btn btn-ghost" href="#find">Find a series</a>
       </div>
       <p class="hero-note">
         <a href="/methodology/">How the lists are made</a>
         {" · "}
-        <a href="/questions/">Common questions</a>
+        <a href="/questions/">All question hubs</a>
       </p>
     </div>
     <CoverStack guides={stack} />
@@ -85,6 +92,8 @@ const shelves = Object.values(genres).map((genre) => ({
       }
     </div>
   </section>
+
+  <PopularQuestions questions={popularQuestions} />
 
   <section class="worlds-block">
     <header class="shelf-head">

@@ -68,19 +68,19 @@ export const genres = {
     slug: "epic-fantasy",
     label: "Epic Fantasy",
     blurb:
-      "Long-arc fantasy where the hard part is not the plot. It is knowing which book is next, and which extra is not a book.",
+      "Epic fantasy reading order: Witcher shorts first, Cosmere doors, Dark Tower, Malazan. Prequels and extras labeled so they do not become book one.",
   },
   "space-opera": {
     slug: "space-opera",
     label: "Space Opera / SFF",
     blurb:
-      "Crews, stations, silos, and civilizational machinery. Novel versus novella, and the prequels that spoil if you treat them as on-ramps.",
+      "Space opera reading order: Vorkosigan (Cordelia first), Expanse novels then novellas, Red Rising not Iron Gold first. Prequels that spoil stay labeled.",
   },
   "mystery-thriller": {
     slug: "mystery-thriller",
     label: "Mystery / Thriller",
     blurb:
-      "Detective series and thriller paths in publication order, plus the spin-offs that look optional until a later book assumes you have read them.",
+      "Mystery and thriller reading order: Reacher publication vs chronological, Sherlock, Thursday Murder Club, Rivers of London. Publication first; prequels labeled.",
   },
   romance: {
     slug: "romance",

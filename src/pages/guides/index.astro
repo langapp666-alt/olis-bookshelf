@@ -3,12 +3,18 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import CatalogFind from "../../components/CatalogFind.astro";
 import GuideCard from "../../components/GuideCard.astro";
+import PopularQuestions from "../../components/PopularQuestions.astro";
 import { featuredSlugs, guidesBySlug, sortGuides } from "../../lib/catalog";
 import { listedGuides } from "../../lib/guides-index";
+import { listedQuestions, popularQuestionSlugs, questionsBySlug } from "../../lib/questions";
 import { genres, siteOrigin, type GenreSlug } from "../../lib/site";
 
 const allGuides = sortGuides(listedGuides(await getCollection("guides")));
 const featured = guidesBySlug(allGuides, featuredSlugs);
+const popularQuestions = questionsBySlug(
+  listedQuestions(await getCollection("questions")),
+  popularQuestionSlugs,
+);
 
 const shelves = Object.values(genres).map((genre) => ({
   genre,
@@ -17,13 +23,13 @@ const shelves = Object.values(genres).map((genre) => ({
 ---
 
 <BaseLayout
-  title="Reading-order guides"
-  description="All Oli's Bookshelf series reading-order guides, grouped by shelf. Publication first, chronology when it matters."
+  title="All reading-order guides"
+  description="Every Oli's Bookshelf map, grouped by shelf: Witcher, Cosmere, Dark Tower, mystery series, romantasy. Publication first, chronology when it matters."
   wide
   jsonLd={{
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Reading-order guides",
+    name: "All reading-order guides",
     url: new URL("/guides/", siteOrigin(Astro.site)).href,
     description: "All series reading-order guides, grouped by shelf.",
   }}
@@ -57,6 +63,12 @@ const shelves = Object.values(genres).map((genre) => ({
       }
     </div>
   </section>
+
+  <PopularQuestions
+    questions={popularQuestions}
+    heading="Popular reading-order questions"
+    blurb="Short where-to-start answers that point at the full map on this catalog."
+  />
 
   {
     shelves.map(({ genre, guides }) =>
