@@ -14,13 +14,13 @@ export function questionHref(slug: string): string {
  */
 export const popularQuestionSlugs = [
   "where-to-start-the-cosmere",
+  "where-to-start-bobiverse",
   "where-to-start-the-witcher",
+  "where-to-start-the-expanse",
   "where-to-start-the-dark-tower",
   "where-to-start-vorkosigan",
-  "narnia-publication-or-chronological",
   "jack-reacher-publication-or-chronological",
   "where-to-start-discworld",
-  "acotar-or-throne-of-glass",
   "where-to-start-malazan",
   "hobbit-or-silmarillion-first",
 ] as const;

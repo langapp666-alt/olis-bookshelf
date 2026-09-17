@@ -30,7 +30,7 @@ A hundred-plus reading-order guides live in `src/content/guides/`. The home page
 
 High-search paths now include Tolkien, Harry Potter, James Bond, Agatha Christie, Sherlock Holmes, Divergent, Maze Runner, Inheritance Cycle, Shadowhunters, Vorkosigan, Temeraire, Discworld character lines, Bobiverse, Freida McFadden, Silo/Wool, Hunger Games, focused Stephen King pages, Broken Earth, Poppy War, Wayward Children, the Maas series, Empyrean, a Cosmere starter (not a 40-book spreadsheet), and other demand shelves.
 
-Short **question hubs** live at `/questions/` (for example `/questions/where-to-start-the-cosmere/`). They answer one search intent, then send the reader to the matching guide. They are not a second catalog of affiliate pages. A second batch covers Witcher, Dark Tower, Vorkosigan, Malazan, First Law, Expanse, Red Rising, Tolkien, Narnia, Mistborn eras, Thursday Murder Club, Rivers of London, plus GSC-aligned doors for Bobiverse, Roots of Chaos, Broken Kingdoms, Revelation Space, and Foundation.
+Short **question hubs** live at `/questions/` (for example `/questions/where-to-start-the-cosmere/`). They answer one search intent, then send the reader to the matching guide. They are not a second catalog of affiliate pages. A second batch covers Witcher, Dark Tower, Vorkosigan, Malazan, First Law, Expanse, Red Rising, Tolkien, Narnia, Mistborn eras, Thursday Murder Club, Rivers of London, Bobiverse, Roots of Chaos, Broken Kingdoms, Revelation Space, Foundation, Poppy War, Artemis Fowl, Temeraire, and Marie Lu’s Legend (not Gemmell).
 
 Order tables show Open Library covers when `src/data/covers.json` has a reliable ID. Refresh IDs with `node src/scripts/fetch-covers.mjs`. Do not scrape Amazon images.
 
