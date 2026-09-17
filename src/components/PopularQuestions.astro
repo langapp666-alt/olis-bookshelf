@@ -1,0 +1,43 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { questionHref } from "../lib/questions";
+
+interface Props {
+  questions: CollectionEntry<"questions">[];
+  heading?: string;
+  blurb?: string;
+}
+
+const {
+  questions,
+  heading = "Popular reading-order questions",
+  blurb = "The searches that want a door, not a 40-title chart. Short answer first. Full map next.",
+} = Astro.props;
+---
+
+{
+  questions.length > 0 && (
+    <section class="questions-promo" aria-labelledby="popular-questions-heading">
+      <header class="shelf-head">
+        <div>
+          <p class="eyebrow">Questions</p>
+          <h2 id="popular-questions-heading">{heading}</h2>
+          <p class="shelf-blurb">{blurb}</p>
+        </div>
+        <p class="shelf-count">
+          <a href="/questions/">All question hubs</a>
+        </p>
+      </header>
+      <ol class="question-promo-list">
+        {questions.map((question) => (
+          <li>
+            <a class="question-promo-card" href={questionHref(question.data.slug)}>
+              <span class="question-promo-kicker">{question.data.shortAnswerTitle}</span>
+              <span class="question-promo-title">{question.data.title}</span>
+            </a>
+          </li>
+        ))}
+      </ol>
+    </section>
+  )
+}

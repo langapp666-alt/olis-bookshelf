@@ -8,6 +8,31 @@ export function questionHref(slug: string): string {
   return `/questions/${slug}/`;
 }
 
+/**
+ * Homepage and catalog promo — high-intent hubs, human-scannable order.
+ * Keep in sync with published `src/content/questions/` slugs.
+ */
+export const popularQuestionSlugs = [
+  "where-to-start-the-cosmere",
+  "where-to-start-bobiverse",
+  "where-to-start-the-witcher",
+  "where-to-start-the-expanse",
+  "where-to-start-the-dark-tower",
+  "where-to-start-vorkosigan",
+  "jack-reacher-publication-or-chronological",
+  "where-to-start-discworld",
+  "where-to-start-malazan",
+  "hobbit-or-silmarillion-first",
+] as const;
+
+export function questionsBySlug(questions: Question[], slugs: readonly string[]): Question[] {
+  const map = new Map(questions.map((question) => [question.data.slug, question]));
+  return slugs.flatMap((slug) => {
+    const question = map.get(slug);
+    return question ? [question] : [];
+  });
+}
+
 export function listedQuestions(questions: Question[]): Question[] {
   return questions.filter((question) => isListedStatus(question.data.status));
 }

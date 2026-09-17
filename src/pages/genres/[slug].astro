@@ -2,9 +2,11 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import CatalogFind from "../../components/CatalogFind.astro";
+import CommonQuestions from "../../components/CommonQuestions.astro";
 import GuideCard from "../../components/GuideCard.astro";
 import { sortGuides } from "../../lib/catalog";
 import { listedGuides } from "../../lib/guides-index";
+import { listedQuestions } from "../../lib/questions";
 import { genres, siteOrigin, type GenreSlug } from "../../lib/site";
 
 export function getStaticPaths() {
@@ -20,16 +22,20 @@ const guides = sortGuides(
     (entry) => entry.data.genre === (genre.slug as GenreSlug),
   ),
 );
+const asked = listedQuestions(await getCollection("questions"))
+  .filter((question) => question.data.genre === (genre.slug as GenreSlug))
+  .sort((a, b) => a.data.title.localeCompare(b.data.title));
+const askedPreview = asked.slice(0, 8);
 ---
 
 <BaseLayout
-  title={`${genre.label} reading-order guides`}
+  title={`${genre.label} reading order`}
   description={genre.blurb}
   wide
   jsonLd={{
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: `${genre.label} reading-order guides`,
+    name: `${genre.label} reading order`,
     url: new URL(`/genres/${genre.slug}/`, siteOrigin(Astro.site)).href,
     description: genre.blurb,
   }}
@@ -40,6 +46,7 @@ const guides = sortGuides(
     <p class="lede">{genre.blurb}</p>
     <p class="shelf-jump">
       <a href="/guides/">All maps</a>
+      <a href="/questions/">Questions</a>
       {
         Object.values(genres)
           .filter((other) => other.slug !== genre.slug)
@@ -53,6 +60,15 @@ const guides = sortGuides(
   <CatalogFind id="find" total={guides.length} chips={false} placeholder="Series or author on this shelf" />
 
   <p class="catalog-empty" data-catalog-empty hidden>No series on this shelf matches that search.</p>
+
+  <CommonQuestions questions={askedPreview} />
+  {
+    asked.length > askedPreview.length && (
+      <p class="shelf-more">
+        <a href="/questions/">All {asked.length} {genre.label} questions</a>
+      </p>
+    )
+  }
 
   <header class="shelf-head">
     <div>
