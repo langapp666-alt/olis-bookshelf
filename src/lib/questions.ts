@@ -13,16 +13,18 @@ export function questionHref(slug: string): string {
  * Keep in sync with published `src/content/questions/` slugs.
  */
 export const popularQuestionSlugs = [
+  "where-to-start-roots-of-chaos",
+  "where-to-start-silo",
+  "foundation-publication-or-chronological",
+  "should-i-read-brian-herbert-dune",
+  "jack-reacher-publication-or-chronological",
+  "where-to-start-malazan",
+  "artemis-fowl-series-order",
+  "where-to-start-acotar",
   "where-to-start-the-cosmere",
   "where-to-start-bobiverse",
-  "where-to-start-the-witcher",
   "where-to-start-the-expanse",
-  "where-to-start-the-dark-tower",
-  "where-to-start-vorkosigan",
-  "jack-reacher-publication-or-chronological",
-  "where-to-start-discworld",
-  "where-to-start-malazan",
-  "hobbit-or-silmarillion-first",
+  "where-to-start-the-witcher",
 ] as const;
 
 export function questionsBySlug(questions: Question[], slugs: readonly string[]): Question[] {

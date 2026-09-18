@@ -1502,6 +1502,11 @@ a.catalog-chip:hover {
   box-shadow: var(--shadow-sm);
 }
 
+.guide-prose > .start-here:first-child,
+.question-prose > .start-here:first-child {
+  margin-top: 0;
+}
+
 .start-here-kicker {
   margin: 0 0 0.2rem;
   font-family: var(--sans);
