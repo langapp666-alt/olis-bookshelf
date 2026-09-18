@@ -4,6 +4,7 @@ const COL_CLASS: Record<string, string> = {
   year: "col-year",
   form: "col-form",
   amazon: "col-amazon",
+  shop: "col-amazon",
   title: "col-title",
   notes: "col-notes",
 };

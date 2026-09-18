@@ -55,7 +55,7 @@ function badgeFor(book: OrderBook): { label: string; kind: BadgeKind } | null {
         {hasForm && <th class="col-form" scope="col">Form</th>}
         {hasYear && <th class="col-year" scope="col">Year</th>}
         {hasNotes && <th class="col-notes" scope="col">Notes</th>}
-        <th class="col-amazon" scope="col">Amazon</th>
+        <th class="col-amazon" scope="col">Shop</th>
       </tr>
     </thead>
     <tbody>
@@ -96,7 +96,7 @@ function badgeFor(book: OrderBook): { label: string; kind: BadgeKind } | null {
                   {book.notes}
                 </td>
               )}
-              <td class="col-amazon amazon-cell" data-label="Amazon">
+              <td class="col-amazon amazon-cell" data-label="Shop">
                 <a
                   class="amazon-link"
                   href={amazonBookUrl(book.title, book.author ?? author, book.query)}
