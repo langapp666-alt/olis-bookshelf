@@ -143,7 +143,7 @@
     "coverId": 27787,
     "olid": "OL3388558M"
   },
-  "it’s in his kiss|julia quinn": {
+  "it\u2019s in his kiss|julia quinn": {
     "coverId": 1473370,
     "olid": "OL3409890M"
   },
@@ -217,7 +217,7 @@
     "coverId": 14633285,
     "olid": "OL38410196M"
   },
-  "the cuckoo’s calling|robert galbraith": {
+  "the cuckoo\u2019s calling|robert galbraith": {
     "coverId": 7261207
   },
   "the silkworm|robert galbraith": {
@@ -430,7 +430,7 @@
     "coverId": 9478731,
     "olid": "OL25018585M"
   },
-  "discworld — city watch|terry pratchett": {
+  "discworld \u2014 city watch|terry pratchett": {
     "coverId": 13750539,
     "olid": "OL39221133M"
   },
@@ -454,7 +454,7 @@
     "coverId": 14646130,
     "olid": "OL6795375M"
   },
-  "discworld — death|terry pratchett": {
+  "discworld \u2014 death|terry pratchett": {
     "coverId": 12819661,
     "olid": "OL28719468M"
   },
@@ -1251,10 +1251,10 @@
     "coverId": 9293458,
     "olid": "OL4125417M"
   },
-  "the children of húrin|j. r. r. tolkien": {
+  "the children of h\u00farin|j. r. r. tolkien": {
     "coverId": 8220298
   },
-  "beren and lúthien|j. r. r. tolkien": {
+  "beren and l\u00fathien|j. r. r. tolkien": {
     "coverId": 12639912,
     "olid": "OL27233650M"
   },
@@ -1262,7 +1262,7 @@
     "coverId": 12451486,
     "olid": "OL26961988M"
   },
-  "the fall of númenor|j. r. r. tolkien": {
+  "the fall of n\u00famenor|j. r. r. tolkien": {
     "coverId": 14627073
   },
   "the lord of the rings|j. r. r. tolkien": {
@@ -1289,7 +1289,7 @@
     "coverId": 524762,
     "olid": "OL8053688M"
   },
-  "reaper’s gale|steven erikson": {
+  "reaper\u2019s gale|steven erikson": {
     "coverId": 386149,
     "olid": "OL7544028M"
   },
@@ -1529,7 +1529,7 @@
     "coverId": 10664958,
     "olid": "OL24094915M"
   },
-  "written in my own heart’s blood|diana gabaldon": {
+  "written in my own heart\u2019s blood|diana gabaldon": {
     "coverId": 10864039,
     "olid": "OL32221802M"
   },
@@ -1758,7 +1758,7 @@
     "coverId": 10713506,
     "olid": "OL32047948M"
   },
-  "winter’s gifts|ben aaronovitch": {
+  "winter\u2019s gifts|ben aaronovitch": {
     "coverId": 15168854,
     "olid": "OL51062445M"
   },
@@ -2057,10 +2057,10 @@
   "leviathan wakes|james s. a. corey": {
     "coverId": 7314237
   },
-  "caliban’s war|james s. a. corey": {
+  "caliban\u2019s war|james s. a. corey": {
     "coverId": 7314238
   },
-  "abaddon’s gate|james s. a. corey": {
+  "abaddon\u2019s gate|james s. a. corey": {
     "coverId": 8624248,
     "olid": "OL26206368M"
   },
@@ -2071,7 +2071,7 @@
     "coverId": 8036735,
     "olid": "OL26353388M"
   },
-  "babylon’s ashes|james s. a. corey": {
+  "babylon\u2019s ashes|james s. a. corey": {
     "coverId": 8417833,
     "olid": "OL26768271M"
   },
@@ -2079,7 +2079,7 @@
     "coverId": 8402849,
     "olid": "OL26753542M"
   },
-  "tiamat’s wrath|james s. a. corey": {
+  "tiamat\u2019s wrath|james s. a. corey": {
     "coverId": 8600919,
     "olid": "OL27011751M"
   },
@@ -2118,7 +2118,7 @@
     "coverId": 14572176,
     "olid": "OL50566635M"
   },
-  "memory’s legion|james s. a. corey": {
+  "memory\u2019s legion|james s. a. corey": {
     "coverId": 12674980,
     "olid": "OL34163779M"
   },
@@ -2339,7 +2339,7 @@
   "the path of daggers|robert jordan": {
     "coverId": 182462
   },
-  "winter’s heart|robert jordan": {
+  "winter\u2019s heart|robert jordan": {
     "coverId": 5021142,
     "olid": "OL9857448M"
   },
@@ -3662,5 +3662,549 @@
   "sherlock holmes|arthur conan doyle": {
     "coverId": 6717853,
     "olid": "OL24349267M"
+  },
+  "malice|john gwynne": {
+    "coverId": 8458717,
+    "olid": "OL26804511M"
+  },
+  "valour|john gwynne": {
+    "coverId": 8404705,
+    "olid": "OL26755520M"
+  },
+  "ruin|john gwynne": {
+    "coverId": 13773681,
+    "olid": "OL47308941M"
+  },
+  "wrath|john gwynne": {
+    "coverId": 12628098,
+    "olid": "OL27225804M"
+  },
+  "a time of dread|john gwynne": {
+    "coverId": 9228070,
+    "olid": "OL27834662M"
+  },
+  "a time of blood|john gwynne": {
+    "coverId": 8804513,
+    "olid": "OL27340432M"
+  },
+  "a time of courage|john gwynne": {
+    "coverId": 10188972,
+    "olid": "OL28260371M"
+  },
+  "the shadow of the gods|john gwynne": {
+    "coverId": 12380838,
+    "olid": "OL34696101M"
+  },
+  "the hunger of the gods|john gwynne": {
+    "coverId": 12817685
+  },
+  "the fury of the gods|john gwynne": {
+    "coverId": 15150796,
+    "olid": "OL60789085M"
+  },
+  "rhapsodic|laura thalassa": {
+    "coverId": 8596001,
+    "olid": "OL27003082M"
+  },
+  "a strange hymn|laura thalassa": {
+    "coverId": 10249118,
+    "olid": "OL28319473M"
+  },
+  "the emperor of evening stars|laura thalassa": {
+    "coverId": 10377473,
+    "olid": "OL29184313M"
+  },
+  "dark harmony|laura thalassa": {
+    "coverId": 11669365,
+    "olid": "OL33012986M"
+  },
+  "the bargainer|laura thalassa": {
+    "coverId": 13815385,
+    "olid": "OL36390806M"
+  },
+  "the black company|glen cook": {
+    "coverId": 6978703,
+    "olid": "OL24935072M"
+  },
+  "shadows linger|glen cook": {
+    "coverId": 6874911,
+    "olid": "OL24931266M"
+  },
+  "the white rose|glen cook": {
+    "coverId": 603159,
+    "olid": "OL9501229M"
+  },
+  "the silver spike|glen cook": {
+    "coverId": 603086,
+    "olid": "OL9591511M"
+  },
+  "shadow games|glen cook": {
+    "coverId": 603518,
+    "olid": "OL2063865M"
+  },
+  "dreams of steel|glen cook": {
+    "coverId": 603084,
+    "olid": "OL9461218M"
+  },
+  "bleak seasons|glen cook": {
+    "coverId": 603953,
+    "olid": "OL9321986M"
+  },
+  "she is the darkness|glen cook": {
+    "coverId": 182506,
+    "olid": "OL667944M"
+  },
+  "water sleeps|glen cook": {
+    "coverId": 182508,
+    "olid": "OL381471M"
+  },
+  "soldiers live|glen cook": {
+    "coverId": 604076,
+    "olid": "OL9793562M"
+  },
+  "port of shadows|glen cook": {
+    "coverId": 14838541,
+    "olid": "OL57506196M"
+  },
+  "lies weeping|glen cook": {
+    "coverId": 15139060,
+    "olid": "OL60587519M"
+  },
+  "visions of flesh and blood|jennifer l. armentrout": {
+    "coverId": 15123273,
+    "olid": "OL51086739M"
+  },
+  "flesh and fire|jennifer l. armentrout": {
+    "coverId": 10360316,
+    "olid": "OL28890040M"
+  },
+  "a touch of darkness|scarlett st. clair": {
+    "coverId": 10363130,
+    "olid": "OL28946291M"
+  },
+  "a game of fate|scarlett st. clair": {
+    "coverId": 10450006,
+    "olid": "OL30324103M"
+  },
+  "a touch of ruin|scarlett st. clair": {
+    "coverId": 11357445,
+    "olid": "OL32730658M"
+  },
+  "a game of retribution|scarlett st. clair": {
+    "coverId": 14641718,
+    "olid": "OL37332723M"
+  },
+  "a touch of malice|scarlett st. clair": {
+    "coverId": 12415911,
+    "olid": "OL34977047M"
+  },
+  "a game of gods|scarlett st. clair": {
+    "coverId": 15143774,
+    "olid": "OL48175061M"
+  },
+  "a touch of chaos|scarlett st. clair": {
+    "coverId": 14612989,
+    "olid": "OL48183912M"
+  },
+  "hades x persephone|scarlett st. clair": {
+    "coverId": 15141396,
+    "olid": "OL51109956M"
+  },
+  "on basilisk station|david weber": {
+    "coverId": 9263520
+  },
+  "the honor of the queen|david weber": {
+    "coverId": 2199732,
+    "olid": "OL9025659M"
+  },
+  "the short victorious war|david weber": {
+    "coverId": 3182767,
+    "olid": "OL12688934M"
+  },
+  "field of dishonor|david weber": {
+    "coverId": 476835,
+    "olid": "OL7949904M"
+  },
+  "flag in exile|david weber": {
+    "coverId": 476836,
+    "olid": "OL7949905M"
+  },
+  "honor among enemies|david weber": {
+    "coverId": 409583,
+    "olid": "OL7667334M"
+  },
+  "in enemy hands|david weber": {
+    "coverId": 2199737,
+    "olid": "OL9025673M"
+  },
+  "echoes of honor|david weber": {
+    "coverId": 406723,
+    "olid": "OL7659961M"
+  },
+  "ashes of victory|david weber": {
+    "coverId": 405579,
+    "olid": "OL7647003M"
+  },
+  "war of honor|david weber": {
+    "coverId": 478389,
+    "olid": "OL7950866M"
+  },
+  "at all costs|david weber": {
+    "coverId": 760423,
+    "olid": "OL8457523M"
+  },
+  "mission of honor|david weber": {
+    "coverId": 6393006,
+    "olid": "OL24124046M"
+  },
+  "a rising thunder|david weber": {
+    "coverId": 8470795,
+    "olid": "OL26813025M"
+  },
+  "uncompromising honor|david weber": {
+    "coverId": 9748969,
+    "olid": "OL28112684M"
+  },
+  "toll of honor|david weber": {
+    "coverId": 14605461,
+    "olid": "OL50630524M"
+  },
+  "crown of slaves|david weber": {
+    "coverId": 478370,
+    "olid": "OL3676470M"
+  },
+  "the shadow of saganami|david weber": {
+    "coverId": 759641,
+    "olid": "OL8456743M"
+  },
+  "torch of freedom|david weber": {
+    "coverId": 6577153
+  },
+  "storm from the shadows|david weber": {
+    "coverId": 7082936
+  },
+  "shadow of freedom|david weber": {
+    "coverId": 7584850
+  },
+  "cauldron of ghosts|david weber": {
+    "coverId": 7825283
+  },
+  "shadow of victory|david weber": {
+    "coverId": 12514784,
+    "olid": "OL27220214M"
+  },
+  "to end in fire|david weber": {
+    "coverId": 10597599,
+    "olid": "OL31914933M"
+  },
+  "a beautiful friendship|david weber": {
+    "coverId": 7944419,
+    "olid": "OL25220278M"
+  },
+  "fire season|david weber": {
+    "coverId": 7962046,
+    "olid": "OL25384487M"
+  },
+  "treecat wars|david weber": {
+    "coverId": 12771656,
+    "olid": "OL26920636M"
+  },
+  "a new clan|david weber": {
+    "coverId": 12113143,
+    "olid": "OL35302047M"
+  },
+  "transfer of power|vince flynn": {
+    "coverId": 4309601,
+    "olid": "OL3689903M"
+  },
+  "the third option|vince flynn": {
+    "coverId": 405312,
+    "olid": "OL6789307M"
+  },
+  "separation of power|vince flynn": {
+    "coverId": 1786803,
+    "olid": "OL8456872M"
+  },
+  "executive power|vince flynn": {
+    "coverId": 6805958,
+    "olid": "OL24752215M"
+  },
+  "memorial day|vince flynn": {
+    "coverId": 1957670,
+    "olid": "OL3308299M"
+  },
+  "consent to kill|vince flynn": {
+    "coverId": 474724,
+    "olid": "OL3428908M"
+  },
+  "act of treason|vince flynn": {
+    "coverId": 474725,
+    "olid": "OL7948306M"
+  },
+  "protect and defend|vince flynn": {
+    "coverId": 1384846,
+    "olid": "OL9897597M"
+  },
+  "extreme measures|vince flynn": {
+    "coverId": 7251905
+  },
+  "pursuit of honor|vince flynn": {
+    "coverId": 6635449,
+    "olid": "OL24382806M"
+  },
+  "american assassin|vince flynn": {
+    "coverId": 6581609,
+    "olid": "OL24356058M"
+  },
+  "kill shot|vince flynn": {
+    "coverId": 7893590,
+    "olid": "OL25011124M"
+  },
+  "the last man|vince flynn": {
+    "coverId": 9040886,
+    "olid": "OL27587671M"
+  },
+  "the survivor|vince flynn": {
+    "coverId": 10311489,
+    "olid": "OL28374845M"
+  },
+  "order to kill|vince flynn": {
+    "coverId": 9327239,
+    "olid": "OL27213404M"
+  },
+  "enemy of the state|vince flynn": {
+    "coverId": 8289166,
+    "olid": "OL26604936M"
+  },
+  "red war|vince flynn": {
+    "coverId": 12430749,
+    "olid": "OL34177578M"
+  },
+  "lethal agent|vince flynn": {
+    "coverId": 8788859,
+    "olid": "OL27320490M"
+  },
+  "total power|vince flynn": {
+    "coverId": 10357633,
+    "olid": "OL28778149M"
+  },
+  "enemy at the gates|vince flynn": {
+    "coverId": 10612699
+  },
+  "oath of loyalty|vince flynn": {
+    "coverId": 12992695,
+    "olid": "OL39647277M"
+  },
+  "code red|vince flynn": {
+    "coverId": 13467422,
+    "olid": "OL47095829M"
+  },
+  "denied access|vince flynn": {
+    "coverId": 15128587,
+    "olid": "OL57783358M"
+  },
+  "mitch rapp|vince flynn": {
+    "coverId": 8315264,
+    "olid": "OL24325038M"
+  },
+  "the way of shadows|brent weeks": {
+    "coverId": 6306862
+  },
+  "shadow's edge|brent weeks": {
+    "coverId": 7463492
+  },
+  "beyond the shadows|brent weeks": {
+    "coverId": 6306921
+  },
+  "perfect shadow|brent weeks": {
+    "coverId": 12824636,
+    "olid": "OL29358306M"
+  },
+  "night angel nemesis|brent weeks": {
+    "coverId": 14352420,
+    "olid": "OL38914287M"
+  },
+  "night angel|brent weeks": {
+    "coverId": 14352420,
+    "olid": "OL38914287M"
+  },
+  "sabriel|garth nix": {
+    "coverId": 13165306,
+    "olid": "OL33932917M"
+  },
+  "lirael|garth nix": {
+    "coverId": 24529,
+    "olid": "OL7276559M"
+  },
+  "abhorsen|garth nix": {
+    "coverId": 31567,
+    "olid": "OL7279495M"
+  },
+  "the creature in the case|garth nix": {
+    "coverId": 8329555,
+    "olid": "OL26643732M"
+  },
+  "clariel|garth nix": {
+    "coverId": 8746533,
+    "olid": "OL27245007M"
+  },
+  "goldenhand|garth nix": {
+    "coverId": 9137846,
+    "olid": "OL27701637M"
+  },
+  "terciel and elinor|garth nix": {
+    "coverId": 10702000,
+    "olid": "OL32035498M"
+  },
+  "the old kingdom|garth nix": {
+    "coverId": 10379719,
+    "olid": "OL29216420M"
+  },
+  "practical magic|alice hoffman": {
+    "coverId": 14810040,
+    "olid": "OL1120545M"
+  },
+  "the rules of magic|alice hoffman": {
+    "coverId": 14514262,
+    "olid": "OL26925982M"
+  },
+  "magic lessons|alice hoffman": {
+    "coverId": 14810835,
+    "olid": "OL28161835M"
+  },
+  "the book of magic|alice hoffman": {
+    "coverId": 12042053,
+    "olid": "OL34554521M"
+  },
+  "arrows of the queen|mercedes lackey": {
+    "coverId": 1723846,
+    "olid": "OL9504449M"
+  },
+  "arrow's flight|mercedes lackey": {
+    "coverId": 14293115,
+    "olid": "OL38586677M"
+  },
+  "arrow's fall|mercedes lackey": {
+    "coverId": 6676114,
+    "olid": "OL3550100M"
+  },
+  "by the sword|mercedes lackey": {
+    "coverId": 6874456,
+    "olid": "OL24930805M"
+  },
+  "winds of fate|mercedes lackey": {
+    "coverId": 4972731,
+    "olid": "OL9409054M"
+  },
+  "winds of change|mercedes lackey": {
+    "coverId": 4639557,
+    "olid": "OL7601108M"
+  },
+  "winds of fury|mercedes lackey": {
+    "coverId": 4979771,
+    "olid": "OL9478785M"
+  },
+  "storm warning|mercedes lackey": {
+    "coverId": 13162084,
+    "olid": "OL46528822M"
+  },
+  "storm rising|mercedes lackey": {
+    "coverId": 13770213,
+    "olid": "OL47305702M"
+  },
+  "storm breaking|mercedes lackey": {
+    "coverId": 683348,
+    "olid": "OL627554M"
+  },
+  "magic's pawn|mercedes lackey": {
+    "coverId": 6642472,
+    "olid": "OL3548044M"
+  },
+  "magic's promise|mercedes lackey": {
+    "coverId": 4639354,
+    "olid": "OL7601099M"
+  },
+  "magic's price|mercedes lackey": {
+    "coverId": 683234,
+    "olid": "OL8195782M"
+  },
+  "valdemar|mercedes lackey": {
+    "coverId": 6696069,
+    "olid": "OL8195656M"
+  },
+  "triptych|karin slaughter": {
+    "coverId": 6819851,
+    "olid": "OL24766002M"
+  },
+  "fractured|karin slaughter": {
+    "coverId": 2412015,
+    "olid": "OL10151009M"
+  },
+  "undone|karin slaughter": {
+    "coverId": 6297627,
+    "olid": "OL24083295M"
+  },
+  "broken|karin slaughter": {
+    "coverId": 6424942,
+    "olid": "OL24068874M"
+  },
+  "fallen|karin slaughter": {
+    "coverId": 11630342,
+    "olid": "OL25093993M"
+  },
+  "criminal|karin slaughter": {
+    "coverId": 7318249,
+    "olid": "OL25197868M"
+  },
+  "unseen|karin slaughter": {
+    "coverId": 7365510,
+    "olid": "OL25766741M"
+  },
+  "the kept woman|karin slaughter": {
+    "coverId": 8289256,
+    "olid": "OL26605098M"
+  },
+  "the last widow|karin slaughter": {
+    "coverId": 8758664
+  },
+  "the silent wife|karin slaughter": {
+    "coverId": 10354761,
+    "olid": "OL28744235M"
+  },
+  "after that night|karin slaughter": {
+    "coverId": 13607839,
+    "olid": "OL46120131M"
+  },
+  "this is why we lied|karin slaughter": {
+    "coverId": 14810658,
+    "olid": "OL51098697M"
+  },
+  "blindsighted|karin slaughter": {
+    "coverId": 2319742,
+    "olid": "OL9983855M"
+  },
+  "kisscut|karin slaughter": {
+    "coverId": 432898,
+    "olid": "OL3956515M"
+  },
+  "a faint cold fear|karin slaughter": {
+    "coverId": 432896,
+    "olid": "OL3682341M"
+  },
+  "indelible|karin slaughter": {
+    "coverId": 1472475,
+    "olid": "OL3310260M"
+  },
+  "faithless|karin slaughter": {
+    "coverId": 229797,
+    "olid": "OL7427085M"
+  },
+  "beyond reach|karin slaughter": {
+    "coverId": 2010919,
+    "olid": "OL9455188M"
+  },
+  "capture or kill|vince flynn": {
+    "coverId": 14812913,
+    "olid": "OL51338643M"
   }
 }

@@ -7,7 +7,7 @@ Status key:
 - **published** — a guide exists in `src/content/guides/` and is marked `status: published`
 - **queued** — research not started beyond this line
 
-Last updated: 2026-09-13
+Last updated: 2026-09-18
 
 ## Published
 
@@ -127,6 +127,18 @@ Last updated: 2026-09-13
 | James Bond | Ian Fleming | Mystery / Thriller | `james-bond-reading-order` |
 | Agatha Christie | Agatha Christie | Mystery / Thriller | `christie-reading-paths` |
 | Sherlock Holmes | Arthur Conan Doyle | Mystery / Thriller | `sherlock-holmes-reading-order` |
+| The Old Kingdom / Abhorsen | Garth Nix | Epic Fantasy | `old-kingdom-reading-order` |
+| Practical Magic | Alice Hoffman | Romance | `practical-magic-reading-order` |
+| Night Angel | Brent Weeks | Epic Fantasy | `night-angel-reading-order` |
+| Flesh and Fire | Jennifer L. Armentrout | Romance | `flesh-and-fire-reading-order` |
+| The Bargainer | Laura Thalassa | Romance | `bargainer-reading-order` |
+| Hades x Persephone | Scarlett St. Clair | Romance | `hades-persephone-reading-order` |
+| Mitch Rapp | Vince Flynn / Kyle Mills / Don Bentley | Mystery / Thriller | `mitch-rapp-reading-order` |
+| Will Trent / Grant County | Karin Slaughter | Mystery / Thriller | `will-trent-reading-order` |
+| The Black Company | Glen Cook | Epic Fantasy | `black-company-reading-order` |
+| Honorverse | David Weber | Space Opera / SFF | `honorverse-reading-order` |
+| Valdemar starter | Mercedes Lackey | Epic Fantasy | `valdemar-reading-order` |
+| The Banished Lands | John Gwynne | Epic Fantasy | `banished-lands-reading-order` |
 
 ## Queued
 
@@ -138,7 +150,6 @@ High-demand leftovers, in no particular order. Do not crowd out a higher-search 
 | Foreigner | C. J. Cherryh | Space Opera / SFF | Trilogy-by-trilogy structure is the actual product. |
 | Jackson Brodie | Kate Atkinson | Mystery / Thriller | Short list, but the later books assume the earlier cases. |
 | The Final Architecture | Adrian Tchaikovsky | Space Opera / SFF | Separate from Children of Time; people mix the doors. |
-| Night Angel | Brent Weeks | Epic Fantasy | Finished trilogy plus later Kylar books. |
 | The Belgariad / Malloreon | David Eddings | Epic Fantasy | Two five-book runs; prequels look like book one. |
 | Warrior Cats (entry) | Erin Hunter | Epic Fantasy | Many arcs; people start on a later prophecy. |
 | Kate Daniels world spin-offs | Ilona Andrews | Mystery / Thriller | Gunmetal Magic / Blood Heir look like new book ones. |

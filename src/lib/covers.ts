@@ -56,6 +56,16 @@ const seriesCoverAliases: Record<string, string> = {
   "james bond|ian fleming": "casino royale|ian fleming",
   "agatha christie|agatha christie": "the mysterious affair at styles|agatha christie",
   "sherlock holmes|arthur conan doyle": "a study in scarlet|arthur conan doyle",
+  "the old kingdom|garth nix": "sabriel|garth nix",
+  "night angel|brent weeks": "the way of shadows|brent weeks",
+  "flesh and fire|jennifer l. armentrout": "a shadow in the ember|jennifer l. armentrout",
+  "the bargainer|laura thalassa": "rhapsodic|laura thalassa",
+  "hades x persephone|scarlett st. clair": "a touch of darkness|scarlett st. clair",
+  "mitch rapp|vince flynn": "transfer of power|vince flynn",
+  "will trent / grant county|karin slaughter": "triptych|karin slaughter",
+  "honorverse|david weber": "on basilisk station|david weber",
+  "valdemar|mercedes lackey": "arrows of the queen|mercedes lackey",
+  "the banished lands|john gwynne": "malice|john gwynne",
 };
 
 export function lookupCover(
