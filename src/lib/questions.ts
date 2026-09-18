@@ -17,6 +17,7 @@ export const popularQuestionSlugs = [
   "where-to-start-silo",
   "foundation-publication-or-chronological",
   "should-i-read-brian-herbert-dune",
+  "where-to-start-dune",
   "jack-reacher-publication-or-chronological",
   "where-to-start-malazan",
   "artemis-fowl-series-order",

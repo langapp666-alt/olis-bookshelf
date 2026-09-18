@@ -12,8 +12,9 @@ const href = amazonSearchUrl(query);
 
 <div class="guide-dock">
   <div class="guide-dock-inner">
-    <a class="dock-amazon" href={href} rel={amazonRel}>
-      Amazon · {label}
+    <a class="amazon-link dock-amazon" href={href} rel={amazonRel}>
+      Amazon
+      <span class="dock-amazon-label"> · {label}</span>
     </a>
   </div>
 </div>

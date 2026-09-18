@@ -18,9 +18,9 @@ const searchHref = amazonSearchUrl(`${series} ${author}`);
   <p class="small muted aside-byline">
     {author} · {genreLabel}
   </p>
-  <a class="aside-amazon" href={searchHref} rel={amazonRel}>
-    Amazon search
-    <span class="visually-hidden">{` for ${series}`}</span>
+  <a class="amazon-link aside-amazon" href={searchHref} rel={amazonRel}>
+    Amazon
+    <span class="visually-hidden">{` search for ${series}`}</span>
   </a>
   {
     sources.length > 0 && (

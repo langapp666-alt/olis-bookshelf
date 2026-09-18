@@ -30,9 +30,9 @@ const sources = guide.data.sources;
     <p class="small muted aside-byline">
       {guide.data.author} · {genre.label}
     </p>
-    <a class="aside-amazon" href={searchHref} rel={amazonRel}>
-      Amazon search
-      <span class="visually-hidden">{` for ${guide.data.series}`}</span>
+    <a class="amazon-link aside-amazon" href={searchHref} rel={amazonRel}>
+      Amazon
+      <span class="visually-hidden">{` search for ${guide.data.series}`}</span>
     </a>
     {
       sources.length > 0 && (
