@@ -14,12 +14,12 @@ export function questionHref(slug: string): string {
  */
 export const popularQuestionSlugs = [
   "where-to-start-roots-of-chaos",
+  "where-to-start-malazan",
   "where-to-start-silo",
   "foundation-publication-or-chronological",
   "should-i-read-brian-herbert-dune",
   "where-to-start-dune",
   "jack-reacher-publication-or-chronological",
-  "where-to-start-malazan",
   "artemis-fowl-series-order",
   "where-to-start-acotar",
   "where-to-start-the-cosmere",

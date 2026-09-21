@@ -15,6 +15,7 @@ export const featuredSlugs = [
 
 /** Longer or multi-door maps for the homepage “deep catalog” row. */
 export const spotlightSlugs = [
+  "roots-of-chaos-reading-order",
   "cosmere-starter-reading-order",
   "wheel-of-time-reading-order",
   "malazan-book-of-the-fallen-reading-order",
