@@ -68,7 +68,7 @@ export const genres = {
     slug: "epic-fantasy",
     label: "Epic Fantasy",
     blurb:
-      "Epic fantasy reading order: Witcher shorts first, Cosmere doors, Dark Tower, Malazan. Prequels and extras labeled so they do not become book one.",
+      "Epic fantasy reading order: Witcher, Cosmere, Dark Tower, Malazan Book of the Fallen, Roots of Chaos (Priory first). Prequels labeled so they do not become book one.",
   },
   "space-opera": {
     slug: "space-opera",
