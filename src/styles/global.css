@@ -1533,7 +1533,7 @@ a.catalog-chip:hover {
   margin: 0.85rem 0 0;
 }
 
-.starter-amazon-link {
+.amazon-link.starter-amazon-link {
   width: 100%;
   max-width: 28rem;
   min-height: 2.6rem;
@@ -1545,7 +1545,7 @@ a.catalog-chip:hover {
   border-color: var(--accent);
 }
 
-.starter-amazon-link:hover {
+.amazon-link.starter-amazon-link:hover {
   color: #fff8f4;
   background: var(--accent-deep);
   border-color: var(--accent-deep);
