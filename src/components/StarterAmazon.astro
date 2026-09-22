@@ -1,0 +1,21 @@
+---
+import { amazonBookUrl, amazonRel } from "../lib/site";
+
+interface Props {
+  title: string;
+  author: string;
+  year?: number;
+  query?: string;
+  asin?: string;
+}
+
+const { title, author, year, query, asin } = Astro.props;
+const href = amazonBookUrl(title, author, query, asin);
+const label = year ? `${title} (${year})` : title;
+---
+
+<p class="starter-amazon">
+  <a class="amazon-link starter-amazon-link" href={href} rel={amazonRel}>
+    Amazon · {label}
+  </a>
+</p>

@@ -11,6 +11,8 @@ export interface OrderBook {
   notes?: string;
   author?: string;
   query?: string;
+  /** Verified ASIN only — never invent. Falls back to search when omitted. */
+  asin?: string;
   coverId?: number;
   isbn?: string;
   olid?: string;
@@ -99,7 +101,7 @@ function badgeFor(book: OrderBook): { label: string; kind: BadgeKind } | null {
               <td class="col-amazon amazon-cell" data-label="Shop">
                 <a
                   class="amazon-link"
-                  href={amazonBookUrl(book.title, book.author ?? author, book.query)}
+                  href={amazonBookUrl(book.title, book.author ?? author, book.query, book.asin)}
                   rel={amazonRel}
                 >
                   Amazon

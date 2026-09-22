@@ -4,7 +4,8 @@ Status as of 2026-09-13: **the Amazon Associates tag is live** (`olisbookshelf-2
 
 ## Current state
 
-- Series search links and per-title Amazon search links on guides use the live Associates tag.
+- Series search links and per-title Amazon links on guides use the live Associates tag (search by default; ASIN deep links only when a verified ASIN is present in data).
+- Buy-intent `/questions/` hubs may show one prominent book-1 Amazon control. No Associates wording in body prose; disclosure stays footer + `/disclosure/`.
 - Amazon still reviews the application: we need **3 non-personal qualifying sales within 180 days**. That is a program requirement, not an income forecast.
 - `/disclosure/` states Amazon’s required sentence and that the program is active.
 
