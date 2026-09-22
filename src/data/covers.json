@@ -143,7 +143,7 @@
     "coverId": 27787,
     "olid": "OL3388558M"
   },
-  "it\u2019s in his kiss|julia quinn": {
+  "it’s in his kiss|julia quinn": {
     "coverId": 1473370,
     "olid": "OL3409890M"
   },
@@ -217,7 +217,7 @@
     "coverId": 14633285,
     "olid": "OL38410196M"
   },
-  "the cuckoo\u2019s calling|robert galbraith": {
+  "the cuckoo’s calling|robert galbraith": {
     "coverId": 7261207
   },
   "the silkworm|robert galbraith": {
@@ -430,7 +430,7 @@
     "coverId": 9478731,
     "olid": "OL25018585M"
   },
-  "discworld \u2014 city watch|terry pratchett": {
+  "discworld — city watch|terry pratchett": {
     "coverId": 13750539,
     "olid": "OL39221133M"
   },
@@ -454,7 +454,7 @@
     "coverId": 14646130,
     "olid": "OL6795375M"
   },
-  "discworld \u2014 death|terry pratchett": {
+  "discworld — death|terry pratchett": {
     "coverId": 12819661,
     "olid": "OL28719468M"
   },
@@ -1251,10 +1251,10 @@
     "coverId": 9293458,
     "olid": "OL4125417M"
   },
-  "the children of h\u00farin|j. r. r. tolkien": {
+  "the children of húrin|j. r. r. tolkien": {
     "coverId": 8220298
   },
-  "beren and l\u00fathien|j. r. r. tolkien": {
+  "beren and lúthien|j. r. r. tolkien": {
     "coverId": 12639912,
     "olid": "OL27233650M"
   },
@@ -1262,7 +1262,7 @@
     "coverId": 12451486,
     "olid": "OL26961988M"
   },
-  "the fall of n\u00famenor|j. r. r. tolkien": {
+  "the fall of númenor|j. r. r. tolkien": {
     "coverId": 14627073
   },
   "the lord of the rings|j. r. r. tolkien": {
@@ -1289,7 +1289,7 @@
     "coverId": 524762,
     "olid": "OL8053688M"
   },
-  "reaper\u2019s gale|steven erikson": {
+  "reaper’s gale|steven erikson": {
     "coverId": 386149,
     "olid": "OL7544028M"
   },
@@ -1529,7 +1529,7 @@
     "coverId": 10664958,
     "olid": "OL24094915M"
   },
-  "written in my own heart\u2019s blood|diana gabaldon": {
+  "written in my own heart’s blood|diana gabaldon": {
     "coverId": 10864039,
     "olid": "OL32221802M"
   },
@@ -1758,7 +1758,7 @@
     "coverId": 10713506,
     "olid": "OL32047948M"
   },
-  "winter\u2019s gifts|ben aaronovitch": {
+  "winter’s gifts|ben aaronovitch": {
     "coverId": 15168854,
     "olid": "OL51062445M"
   },
@@ -2057,10 +2057,10 @@
   "leviathan wakes|james s. a. corey": {
     "coverId": 7314237
   },
-  "caliban\u2019s war|james s. a. corey": {
+  "caliban’s war|james s. a. corey": {
     "coverId": 7314238
   },
-  "abaddon\u2019s gate|james s. a. corey": {
+  "abaddon’s gate|james s. a. corey": {
     "coverId": 8624248,
     "olid": "OL26206368M"
   },
@@ -2071,7 +2071,7 @@
     "coverId": 8036735,
     "olid": "OL26353388M"
   },
-  "babylon\u2019s ashes|james s. a. corey": {
+  "babylon’s ashes|james s. a. corey": {
     "coverId": 8417833,
     "olid": "OL26768271M"
   },
@@ -2079,7 +2079,7 @@
     "coverId": 8402849,
     "olid": "OL26753542M"
   },
-  "tiamat\u2019s wrath|james s. a. corey": {
+  "tiamat’s wrath|james s. a. corey": {
     "coverId": 8600919,
     "olid": "OL27011751M"
   },
@@ -2118,7 +2118,7 @@
     "coverId": 14572176,
     "olid": "OL50566635M"
   },
-  "memory\u2019s legion|james s. a. corey": {
+  "memory’s legion|james s. a. corey": {
     "coverId": 12674980,
     "olid": "OL34163779M"
   },
@@ -2339,7 +2339,7 @@
   "the path of daggers|robert jordan": {
     "coverId": 182462
   },
-  "winter\u2019s heart|robert jordan": {
+  "winter’s heart|robert jordan": {
     "coverId": 5021142,
     "olid": "OL9857448M"
   },
@@ -4206,5 +4206,513 @@
   "capture or kill|vince flynn": {
     "coverId": 14812913,
     "olid": "OL51338643M"
+  },
+  "nine princes in amber|roger zelazny": {
+    "coverId": 535139,
+    "olid": "OL700616M"
+  },
+  "the guns of avalon|roger zelazny": {
+    "coverId": 6462929,
+    "olid": "OL22838257M"
+  },
+  "sign of the unicorn|roger zelazny": {
+    "coverId": 535149,
+    "olid": "OL388683M"
+  },
+  "the hand of oberon|roger zelazny": {
+    "coverId": 234744,
+    "olid": "OL7431431M"
+  },
+  "the courts of chaos|roger zelazny": {
+    "coverId": 7212514,
+    "olid": "OL4716713M"
+  },
+  "trumps of doom|roger zelazny": {
+    "coverId": 4196304
+  },
+  "blood of amber|roger zelazny": {
+    "coverId": 1464143,
+    "olid": "OL6794600M"
+  },
+  "sign of chaos|roger zelazny": {
+    "coverId": 4527611,
+    "olid": "OL6788130M"
+  },
+  "knight of shadows|roger zelazny": {
+    "coverId": 4527642,
+    "olid": "OL6788127M"
+  },
+  "prince of chaos|roger zelazny": {
+    "coverId": 3964849,
+    "olid": "OL1538847M"
+  },
+  "the chronicles of amber|roger zelazny": {
+    "coverId": 6202443,
+    "olid": "OL20934867M"
+  },
+  "pawn of prophecy|david eddings": {
+    "coverId": 1000455,
+    "olid": "OL9025569M"
+  },
+  "queen of sorcery|david eddings": {
+    "coverId": 6397608,
+    "olid": "OL24250177M"
+  },
+  "magician's gambit|david eddings": {
+    "coverId": 4965534,
+    "olid": "OL9335761M"
+  },
+  "castle of wizardry|david eddings": {
+    "coverId": 6690240,
+    "olid": "OL7790353M"
+  },
+  "enchanters' end game|david eddings": {
+    "coverId": 209046,
+    "olid": "OL9465174M"
+  },
+  "guardians of the west|david eddings": {
+    "coverId": 6685709
+  },
+  "king of the murgos|david eddings": {
+    "coverId": 10200948,
+    "olid": "OL2390202M"
+  },
+  "demon lord of karanda|david eddings": {
+    "coverId": 366086,
+    "olid": "OL7790417M"
+  },
+  "sorceress of darshiva|david eddings": {
+    "coverId": 9688638,
+    "olid": "OL2188491M"
+  },
+  "the seeress of kell|david eddings": {
+    "coverId": 6919756,
+    "olid": "OL24949450M"
+  },
+  "belgarath the sorcerer|david eddings": {
+    "coverId": 6461802,
+    "olid": "OL24335097M"
+  },
+  "polgara the sorceress|david eddings": {
+    "coverId": 208930,
+    "olid": "OL668967M"
+  },
+  "furies of calderon|jim butcher": {
+    "coverId": 284189,
+    "olid": "OL3304151M"
+  },
+  "academ's fury|jim butcher": {
+    "coverId": 284258,
+    "olid": "OL3421771M"
+  },
+  "cursor's fury|jim butcher": {
+    "coverId": 12589540,
+    "olid": "OL29034431M"
+  },
+  "captain's fury|jim butcher": {
+    "coverId": 1230927,
+    "olid": "OL9417448M"
+  },
+  "princeps' fury|jim butcher": {
+    "coverId": 8310407,
+    "olid": "OL23942257M"
+  },
+  "first lord's fury|jim butcher": {
+    "coverId": 6308474,
+    "olid": "OL24073864M"
+  },
+  "codex alera|jim butcher": {
+    "coverId": 284243,
+    "olid": "OL7524271M"
+  },
+  "the warded man|peter v. brett": {
+    "coverId": 6394990,
+    "olid": "OL24247835M"
+  },
+  "the desert spear|peter v. brett": {
+    "coverId": 9906224,
+    "olid": "OL24029210M"
+  },
+  "the daylight war|peter v. brett": {
+    "coverId": 7519512
+  },
+  "the skull throne|peter v. brett": {
+    "coverId": 12453818,
+    "olid": "OL27182170M"
+  },
+  "the core|peter v. brett": {
+    "coverId": 9237589,
+    "olid": "OL27846352M"
+  },
+  "brayan's gold|peter v. brett": {
+    "coverId": 7767384
+  },
+  "the great bazaar|peter v. brett": {
+    "coverId": 7767384
+  },
+  "messenger's legacy|peter v. brett": {
+    "coverId": 10869788,
+    "olid": "OL32235168M"
+  },
+  "barren|peter v. brett": {
+    "coverId": 8799703,
+    "olid": "OL27335105M"
+  },
+  "the demon cycle|peter v. brett": {
+    "coverId": 8749031,
+    "olid": "OL27255016M"
+  },
+  "the crystal shard|r. a. salvatore": {
+    "coverId": 1048109,
+    "olid": "OL9140962M"
+  },
+  "streams of silver|r. a. salvatore": {
+    "coverId": 547480,
+    "olid": "OL8144477M"
+  },
+  "the halfling's gem|r. a. salvatore": {
+    "coverId": 547678,
+    "olid": "OL8144677M"
+  },
+  "homeland|r. a. salvatore": {
+    "coverId": 1005941,
+    "olid": "OL9034928M"
+  },
+  "exile|r. a. salvatore": {
+    "coverId": 547296,
+    "olid": "OL3313364M"
+  },
+  "sojourn|r. a. salvatore": {
+    "coverId": 1005943,
+    "olid": "OL9034930M"
+  },
+  "the legacy|r. a. salvatore": {
+    "coverId": 3197103,
+    "olid": "OL12709550M"
+  },
+  "starless night|r. a. salvatore": {
+    "coverId": 7387428
+  },
+  "siege of darkness|r. a. salvatore": {
+    "coverId": 547592,
+    "olid": "OL8144586M"
+  },
+  "passage to dawn|r. a. salvatore": {
+    "coverId": 3197112,
+    "olid": "OL12709560M"
+  },
+  "the legend of drizzt|r. a. salvatore": {
+    "coverId": 13433838,
+    "olid": "OL46985368M"
+  },
+  "shards of earth|adrian tchaikovsky": {
+    "coverId": 11093784,
+    "olid": "OL32433347M"
+  },
+  "eyes of the void|adrian tchaikovsky": {
+    "coverId": 13195348,
+    "olid": "OL38064629M"
+  },
+  "lords of uncreation|adrian tchaikovsky": {
+    "coverId": 14820497,
+    "olid": "OL50636181M"
+  },
+  "foreigner|c. j. cherryh": {
+    "coverId": 503794,
+    "olid": "OL7993542M"
+  },
+  "invader|c. j. cherryh": {
+    "coverId": 3838455,
+    "olid": "OL915612M"
+  },
+  "inheritor|c. j. cherryh": {
+    "coverId": 683334,
+    "olid": "OL557919M"
+  },
+  "precursor|c. j. cherryh": {
+    "coverId": 683447,
+    "olid": "OL6898881M"
+  },
+  "defender|c. j. cherryh": {
+    "coverId": 503636,
+    "olid": "OL7993474M"
+  },
+  "explorer|c. j. cherryh": {
+    "coverId": 503682,
+    "olid": "OL3703158M"
+  },
+  "destroyer|c. j. cherryh": {
+    "coverId": 6962803,
+    "olid": "OL24966931M"
+  },
+  "pretender|c. j. cherryh": {
+    "coverId": 503901,
+    "olid": "OL7993642M"
+  },
+  "deliverer|c. j. cherryh": {
+    "coverId": 1413233,
+    "olid": "OL9450281M"
+  },
+  "deceiver|c. j. cherryh": {
+    "coverId": 7247995,
+    "olid": "OL24925099M"
+  },
+  "betrayer|c. j. cherryh": {
+    "coverId": 13095902,
+    "olid": "OL25055026M"
+  },
+  "intruder|c. j. cherryh": {
+    "coverId": 7572096
+  },
+  "protector|c. j. cherryh": {
+    "coverId": 7931638,
+    "olid": "OL26263410M"
+  },
+  "peacemaker|c. j. cherryh": {
+    "coverId": 7352861,
+    "olid": "OL25690464M"
+  },
+  "tracker|c. j. cherryh": {
+    "coverId": 10651397,
+    "olid": "OL27181218M"
+  },
+  "visitor|c. j. cherryh": {
+    "coverId": 10484921,
+    "olid": "OL30680405M"
+  },
+  "convergence|c. j. cherryh": {
+    "coverId": 8422796,
+    "olid": "OL26771620M"
+  },
+  "emergence|c. j. cherryh": {
+    "coverId": 8804221,
+    "olid": "OL27340128M"
+  },
+  "resurgence|c. j. cherryh": {
+    "coverId": 9248606,
+    "olid": "OL27891510M"
+  },
+  "divergence|c. j. cherryh": {
+    "coverId": 10239694,
+    "olid": "OL28310992M"
+  },
+  "defiance|c. j. cherryh": {
+    "coverId": 14251725,
+    "olid": "OL46809159M"
+  },
+  "still life|louise penny": {
+    "coverId": 1170673,
+    "olid": "OL9376705M"
+  },
+  "a fatal grace|louise penny": {
+    "coverId": 1469077,
+    "olid": "OL8107693M"
+  },
+  "the cruelest month|louise penny": {
+    "coverId": 1169793,
+    "olid": "OL9782669M"
+  },
+  "the brutal telling|louise penny": {
+    "coverId": 6464022,
+    "olid": "OL24349388M"
+  },
+  "bury your dead|louise penny": {
+    "coverId": 8260217,
+    "olid": "OL24367391M"
+  },
+  "a trick of the light|louise penny": {
+    "coverId": 7433730
+  },
+  "the beautiful mystery|louise penny": {
+    "coverId": 7433731
+  },
+  "how the light gets in|louise penny": {
+    "coverId": 7435129
+  },
+  "the long way home|louise penny": {
+    "coverId": 10208063,
+    "olid": "OL27160555M"
+  },
+  "the nature of the beast|louise penny": {
+    "coverId": 7436649,
+    "olid": "OL25936667M"
+  },
+  "a great reckoning|louise penny": {
+    "coverId": 10204399,
+    "olid": "OL27210859M"
+  },
+  "glass houses|louise penny": {
+    "coverId": 13346961,
+    "olid": "OL26659151M"
+  },
+  "kingdom of the blind|louise penny": {
+    "coverId": 9294240,
+    "olid": "OL26659152M"
+  },
+  "a better man|louise penny": {
+    "coverId": 8765528,
+    "olid": "OL27284786M"
+  },
+  "all the devils are here|louise penny": {
+    "coverId": 10114972,
+    "olid": "OL28177805M"
+  },
+  "the madness of crowds|louise penny": {
+    "coverId": 10643519,
+    "olid": "OL31965119M"
+  },
+  "the black wolf|louise penny": {
+    "coverId": 15138053,
+    "olid": "OL60568819M"
+  },
+  "state of terror|louise penny": {
+    "coverId": 12446789,
+    "olid": "OL35709646M"
+  },
+  "discount armageddon|seanan mcguire": {
+    "coverId": 7557331
+  },
+  "midnight blue-light special|seanan mcguire": {
+    "coverId": 11260665,
+    "olid": "OL32626284M"
+  },
+  "half-off ragnarok|seanan mcguire": {
+    "coverId": 14764797,
+    "olid": "OL29194224M"
+  },
+  "pocket apocalypse|seanan mcguire": {
+    "coverId": 9423366
+  },
+  "that ain't witchcraft|seanan mcguire": {
+    "coverId": 8804917,
+    "olid": "OL27340853M"
+  },
+  "imaginary numbers|seanan mcguire": {
+    "coverId": 9282541,
+    "olid": "OL27920866M"
+  },
+  "calculated risks|seanan mcguire": {
+    "coverId": 10292169,
+    "olid": "OL28343545M"
+  },
+  "spelunking through hell|seanan mcguire": {
+    "coverId": 11277267,
+    "olid": "OL32647057M"
+  },
+  "backpacking through bedlam|seanan mcguire": {
+    "coverId": 14793207,
+    "olid": "OL38234163M"
+  },
+  "incryptid|seanan mcguire": {
+    "coverId": 7831072
+  },
+  "case histories|kate atkinson": {
+    "coverId": 6606671,
+    "olid": "OL9873879M"
+  },
+  "one good turn|kate atkinson": {
+    "coverId": 1174814,
+    "olid": "OL9853455M"
+  },
+  "when will there be good news?|kate atkinson": {
+    "coverId": 5730813,
+    "olid": "OL16729573M"
+  },
+  "started early, took my dog|kate atkinson": {
+    "coverId": 6685964,
+    "olid": "OL24607382M"
+  },
+  "big sky|kate atkinson": {
+    "coverId": 10401473,
+    "olid": "OL29589333M"
+  },
+  "death at the sign of the rook|kate atkinson": {
+    "coverId": 15125831,
+    "olid": "OL57542364M"
+  },
+  "the atrocity archives|charles stross": {
+    "coverId": 955271
+  },
+  "the jennifer morgue|charles stross": {
+    "coverId": 5541281,
+    "olid": "OL22543259M"
+  },
+  "the fuller memorandum|charles stross": {
+    "coverId": 6670663,
+    "olid": "OL24466439M"
+  },
+  "the apocalypse codex|charles stross": {
+    "coverId": 10343063,
+    "olid": "OL25247221M"
+  },
+  "the rhesus chart|charles stross": {
+    "coverId": 7537663
+  },
+  "the annihilation score|charles stross": {
+    "coverId": 8441192,
+    "olid": "OL26788317M"
+  },
+  "the nightmare stacks|charles stross": {
+    "coverId": 13056103
+  },
+  "the delirium brief|charles stross": {
+    "coverId": 8538682,
+    "olid": "OL26847225M"
+  },
+  "the labyrinth index|charles stross": {
+    "coverId": 8753968,
+    "olid": "OL27265026M"
+  },
+  "dead lies dreaming|charles stross": {
+    "coverId": 10162820,
+    "olid": "OL28230913M"
+  },
+  "quantum of nightmares|charles stross": {
+    "coverId": 11945343,
+    "olid": "OL33266744M"
+  },
+  "season of skulls|charles stross": {
+    "coverId": 13620375,
+    "olid": "OL39744827M"
+  },
+  "the laundry files|charles stross": {
+    "coverId": 8753985,
+    "olid": "OL27265076M"
+  },
+  "the sword of shannara|terry brooks": {
+    "coverId": 908811,
+    "olid": "OL8998738M"
+  },
+  "the elfstones of shannara|terry brooks": {
+    "coverId": 908796,
+    "olid": "OL8998723M"
+  },
+  "the wishsong of shannara|terry brooks": {
+    "coverId": 908803,
+    "olid": "OL8998732M"
+  },
+  "first king of shannara|terry brooks": {
+    "coverId": 908993,
+    "olid": "OL8998851M"
+  },
+  "the scions of shannara|terry brooks": {
+    "coverId": 5023743,
+    "olid": "OL9886025M"
+  },
+  "the druid of shannara|terry brooks": {
+    "coverId": 6685695,
+    "olid": "OL22597011M"
+  },
+  "the elf queen of shannara|terry brooks": {
+    "coverId": 6685689,
+    "olid": "OL18278422M"
+  },
+  "the talismans of shannara|terry brooks": {
+    "coverId": 6685696,
+    "olid": "OL18271410M"
+  },
+  "shannara|terry brooks": {
+    "coverId": 908811,
+    "olid": "OL8998738M"
   }
 }

@@ -24,6 +24,9 @@ export const spotlightSlugs = [
   "discworld-city-watch-reading-order",
   "the-expanse-reading-order",
   "first-law-reading-order",
+  "foreigner-reading-order",
+  "drizzt-reading-order",
+  "laundry-files-reading-order",
 ] as const;
 
 export const SHELF_PREVIEW = 6;
