@@ -100,9 +100,36 @@ export function amazonSearchUrl(query: string): string {
   return `https://www.amazon.com/s?${params.toString()}`;
 }
 
-/** Title + author search. Do not invent ASINs; this is the required per-book link. */
-export function amazonBookUrl(title: string, author: string, query?: string): string {
-  return amazonSearchUrl(query?.trim() || `${title} ${author}`);
+/**
+ * Official Amazon product deep link. ASIN must be looked up (ISBN-10 / catalog);
+ * never invent one.
+ */
+export function amazonProductUrl(asin: string): string {
+  const id = asin.trim().toUpperCase();
+  const params = new URLSearchParams({ tag: affiliateTag });
+  return `https://www.amazon.com/dp/${encodeURIComponent(id)}?${params.toString()}`;
+}
+
+export type AmazonBookLinkOptions = {
+  query?: string;
+  asin?: string;
+};
+
+/**
+ * Prefer a verified ASIN product URL. Fall back to title + author search
+ * (exact title + author; optional more-specific query).
+ */
+export function amazonBookUrl(
+  title: string,
+  author: string,
+  queryOrOptions?: string | AmazonBookLinkOptions,
+): string {
+  const options: AmazonBookLinkOptions =
+    typeof queryOrOptions === "string"
+      ? { query: queryOrOptions }
+      : (queryOrOptions ?? {});
+  if (options.asin?.trim()) return amazonProductUrl(options.asin);
+  return amazonSearchUrl(options.query?.trim() || `${title} ${author}`);
 }
 
 export function formatDate(date: Date): string {

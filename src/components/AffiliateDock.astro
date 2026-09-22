@@ -1,20 +1,21 @@
 ---
-import { amazonRel, amazonSearchUrl } from "../lib/site";
+import { amazonRel } from "../lib/site";
+import type { RecommendedBook } from "../lib/guide-shop";
 
 interface Props {
-  query: string;
+  book: RecommendedBook;
+  /** Visible label prefix; default “Book 1 on Amazon”. */
   label?: string;
 }
 
-const { query, label = query } = Astro.props;
-const href = amazonSearchUrl(query);
+const { book, label = "Book 1 on Amazon" } = Astro.props;
 ---
 
 <div class="guide-dock">
   <div class="guide-dock-inner">
-    <a class="amazon-link dock-amazon" href={href} rel={amazonRel}>
-      Amazon
-      <span class="dock-amazon-label"> · {label}</span>
+    <a class="amazon-link dock-amazon" href={book.href} rel={amazonRel}>
+      {label}
+      <span class="dock-amazon-label"> · {book.title}</span>
     </a>
   </div>
 </div>

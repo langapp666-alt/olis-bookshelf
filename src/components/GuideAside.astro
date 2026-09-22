@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
+import type { RecommendedBook } from "../lib/guide-shop";
 import { questionHref } from "../lib/questions";
 import { amazonRel, amazonSearchUrl, genres, type GenreSlug } from "../lib/site";
 import GuideToc from "./GuideToc.astro";
@@ -15,11 +16,16 @@ interface Props {
   headings: Heading[];
   related: CollectionEntry<"guides">[];
   questions?: CollectionEntry<"questions">[];
+  bookOne?: RecommendedBook;
 }
 
-const { guide, headings, related, questions = [] } = Astro.props;
+const { guide, headings, related, questions = [], bookOne } = Astro.props;
 const genre = genres[guide.data.genre as GenreSlug];
-const searchHref = amazonSearchUrl(`${guide.data.series} ${guide.data.author}`);
+const shopHref = bookOne?.href ?? amazonSearchUrl(`${guide.data.series} ${guide.data.author}`);
+const shopLabel = bookOne ? "Book 1 on Amazon" : "Amazon";
+const shopHidden = bookOne
+  ? ` for ${bookOne.title}`
+  : ` search for ${guide.data.series}`;
 const sources = guide.data.sources;
 ---
 
@@ -30,10 +36,15 @@ const sources = guide.data.sources;
     <p class="small muted aside-byline">
       {guide.data.author} · {genre.label}
     </p>
-    <a class="amazon-link aside-amazon" href={searchHref} rel={amazonRel}>
-      Amazon
-      <span class="visually-hidden">{` search for ${guide.data.series}`}</span>
+    <a class="amazon-link aside-amazon" href={shopHref} rel={amazonRel}>
+      {shopLabel}
+      <span class="visually-hidden">{shopHidden}</span>
     </a>
+    {
+      bookOne && (
+        <p class="small muted aside-book1-title">{bookOne.title}</p>
+      )
+    }
     {
       sources.length > 0 && (
         <>

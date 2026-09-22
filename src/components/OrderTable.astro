@@ -1,4 +1,5 @@
 ---
+import { lookupAsin } from "../lib/asins";
 import { amazonBookUrl, amazonRel } from "../lib/site";
 import { lookupCover, type CoverRecord } from "../lib/covers";
 import BookCover from "./BookCover.astro";
@@ -11,6 +12,7 @@ export interface OrderBook {
   notes?: string;
   author?: string;
   query?: string;
+  asin?: string;
   coverId?: number;
   isbn?: string;
   olid?: string;
@@ -62,6 +64,12 @@ function badgeFor(book: OrderBook): { label: string; kind: BadgeKind } | null {
       {
         books.map((book) => {
           const badge = badgeFor(book);
+          const bookAuthor = book.author ?? author;
+          const asin = lookupAsin(book.title, bookAuthor, book.asin);
+          const shopHref = amazonBookUrl(book.title, bookAuthor, {
+            query: book.query,
+            asin,
+          });
           return (
             <tr>
               {hasN && (
@@ -73,7 +81,7 @@ function badgeFor(book: OrderBook): { label: string; kind: BadgeKind } | null {
                 <span class="book-title-cell">
                   <BookCover
                     title={book.title}
-                    cover={lookupCover(book.title, book.author ?? author, book as CoverRecord)}
+                    cover={lookupCover(book.title, bookAuthor, book as CoverRecord)}
                   />
                   <span class="book-title-stack">
                     <span class="book-title">{book.title}</span>
@@ -97,13 +105,11 @@ function badgeFor(book: OrderBook): { label: string; kind: BadgeKind } | null {
                 </td>
               )}
               <td class="col-amazon amazon-cell" data-label="Shop">
-                <a
-                  class="amazon-link"
-                  href={amazonBookUrl(book.title, book.author ?? author, book.query)}
-                  rel={amazonRel}
-                >
+                <a class="amazon-link" href={shopHref} rel={amazonRel}>
                   Amazon
-                  <span class="visually-hidden">{` search for ${book.title}`}</span>
+                  <span class="visually-hidden">
+                    {asin ? ` product page for ${book.title}` : ` search for ${book.title}`}
+                  </span>
                 </a>
               </td>
             </tr>
