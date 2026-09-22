@@ -12,7 +12,7 @@ export interface OrderBook {
   notes?: string;
   author?: string;
   query?: string;
-  /** Verified ASIN only — never invent. Falls back to search / asins.json when omitted. */
+  /** Validated amazon.com ASIN only — never invent. Ignored while deep links are off. */
   asin?: string;
   coverId?: number;
   isbn?: string;
@@ -108,9 +108,7 @@ function badgeFor(book: OrderBook): { label: string; kind: BadgeKind } | null {
               <td class="col-amazon amazon-cell" data-label="Shop">
                 <a class="amazon-link" href={shopHref} rel={amazonRel}>
                   Amazon
-                  <span class="visually-hidden">
-                    {asin ? ` product page for ${book.title}` : ` search for ${book.title}`}
-                  </span>
+                  <span class="visually-hidden">{` search for ${book.title}`}</span>
                 </a>
               </td>
             </tr>

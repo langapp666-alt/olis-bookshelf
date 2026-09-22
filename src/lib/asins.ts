@@ -12,6 +12,14 @@ type AsinMap = Record<string, AsinRecord>;
 
 const asins = asinMap as AsinMap;
 
+/**
+ * Open Library English-group ISBN-10s are NOT reliable amazon.com ASINs.
+ * Many UK/other marketplace codes 404 on www.amazon.com/dp/{id} (e.g. Dune
+ * 057512279X). Deep links stay off until each id is verified on amazon.com.
+ * See docs/ASIN_DEEP_LINKS.md.
+ */
+export const ASIN_DEEP_LINKS_ENABLED = false;
+
 /** ISBN-10 / Amazon ASIN pattern (10 alphanumeric, checksum not re-validated here). */
 export function isAsin(value: string | undefined | null): value is string {
   return Boolean(value && /^[A-Z0-9]{10}$/i.test(value.trim()));
@@ -22,6 +30,7 @@ export function lookupAsin(
   author: string,
   explicit?: string,
 ): string | undefined {
+  if (!ASIN_DEEP_LINKS_ENABLED) return undefined;
   if (isAsin(explicit)) return explicit.trim().toUpperCase();
   const record = asins[coverKey(title, author)];
   return record && isAsin(record.asin) ? record.asin.trim().toUpperCase() : undefined;
@@ -32,6 +41,7 @@ export function lookupAsin(
  * Ambiguous titles fall through to search URLs.
  */
 export function lookupAsinByTitle(title: string): string | undefined {
+  if (!ASIN_DEEP_LINKS_ENABLED) return undefined;
   const wanted = title.trim().toLowerCase().replace(/\s+/g, " ");
   if (!wanted) return undefined;
   const matches: string[] = [];

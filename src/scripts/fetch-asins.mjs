@@ -1,7 +1,12 @@
 /**
- * Look up Amazon ASINs (book ISBN-10) for titles used in guides.
- * Source: Open Library work editions. Prefer English-group ISBNs (978-0 / 978-1).
- * Writes src/data/asins.json. Does not invent ASINs.
+ * Look up candidate book ISBN-10 codes from Open Library (research only).
+ *
+ * WARNING: Open Library ISBN-10 is NOT a validated amazon.com ASIN.
+ * Many UK/other marketplace codes 404 on www.amazon.com/dp/{ISBN}.
+ * Site shop links currently use tagged title+author search
+ * (ASIN_DEEP_LINKS_ENABLED = false). Do not re-enable /dp/ links from
+ * this script's output without verifying each id on amazon.com.
+ * See docs/ASIN_DEEP_LINKS.md.
  *
  * Usage: node src/scripts/fetch-asins.mjs
  *        node src/scripts/fetch-asins.mjs --book1-only
