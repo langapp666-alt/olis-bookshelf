@@ -26,6 +26,9 @@ export const popularQuestionSlugs = [
   "where-to-start-bobiverse",
   "where-to-start-the-expanse",
   "where-to-start-the-witcher",
+  "drizzt-homeland-or-crystal-shard",
+  "where-to-start-laundry-files",
+  "belgariad-belgarath-first",
 ] as const;
 
 export function questionsBySlug(questions: Question[], slugs: readonly string[]): Question[] {

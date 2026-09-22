@@ -68,19 +68,19 @@ export const genres = {
     slug: "epic-fantasy",
     label: "Epic Fantasy",
     blurb:
-      "Epic fantasy reading order: Witcher, Cosmere, Dark Tower, Malazan Book of the Fallen, Roots of Chaos (Priory first). Prequels labeled so they do not become book one.",
+      "Epic fantasy reading order: Witcher, Cosmere, Dark Tower, Malazan, Belgariad (Pawn first), Drizzt (Crystal Shard or Homeland), Shannara entry. Prequels labeled so they do not become book one.",
   },
   "space-opera": {
     slug: "space-opera",
     label: "Space Opera / SFF",
     blurb:
-      "Space opera reading order: Vorkosigan (Cordelia first), Expanse novels then novellas, Red Rising not Iron Gold first. Prequels that spoil stay labeled.",
+      "Space opera reading order: Vorkosigan (Cordelia first), Foreigner (Foreigner first), Expanse, Final Architecture not Children of Time. Prequels that spoil stay labeled.",
   },
   "mystery-thriller": {
     slug: "mystery-thriller",
     label: "Mystery / Thriller",
     blurb:
-      "Mystery and thriller reading order: Reacher publication vs chronological, Sherlock, Thursday Murder Club, Rivers of London. Publication first; prequels labeled.",
+      "Mystery and thriller reading order: Reacher, Gamache (Still Life), Laundry Files, InCryptid, Jackson Brodie. Publication first; later doors labeled.",
   },
   romance: {
     slug: "romance",

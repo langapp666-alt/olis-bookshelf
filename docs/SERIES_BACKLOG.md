@@ -7,7 +7,7 @@ Status key:
 - **published** — a guide exists in `src/content/guides/` and is marked `status: published`
 - **queued** — research not started beyond this line
 
-Last updated: 2026-09-18
+Last updated: 2026-09-22
 
 ## Published
 
@@ -139,6 +139,18 @@ Last updated: 2026-09-18
 | Honorverse | David Weber | Space Opera / SFF | `honorverse-reading-order` |
 | Valdemar starter | Mercedes Lackey | Epic Fantasy | `valdemar-reading-order` |
 | The Banished Lands | John Gwynne | Epic Fantasy | `banished-lands-reading-order` |
+| The Belgariad / The Malloreon | David Eddings | Epic Fantasy | `belgariad-malloreon-reading-order` |
+| Shannara (entry) | Terry Brooks | Epic Fantasy | `shannara-reading-order` |
+| The Legend of Drizzt (entry) | R. A. Salvatore | Epic Fantasy | `drizzt-reading-order` |
+| Foreigner | C. J. Cherryh | Space Opera / SFF | `foreigner-reading-order` |
+| InCryptid | Seanan McGuire | Mystery / Thriller | `incryptid-reading-order` |
+| Jackson Brodie | Kate Atkinson | Mystery / Thriller | `jackson-brodie-reading-order` |
+| The Final Architecture | Adrian Tchaikovsky | Space Opera / SFF | `final-architecture-reading-order` |
+| Codex Alera | Jim Butcher | Epic Fantasy | `codex-alera-reading-order` |
+| The Demon Cycle | Peter V. Brett | Epic Fantasy | `demon-cycle-reading-order` |
+| The Chronicles of Amber | Roger Zelazny | Epic Fantasy | `amber-chronicles-reading-order` |
+| Chief Inspector Gamache / Three Pines | Louise Penny | Mystery / Thriller | `gamache-reading-order` |
+| The Laundry Files | Charles Stross | Mystery / Thriller | `laundry-files-reading-order` |
 
 ## Queued
 
@@ -146,15 +158,14 @@ High-demand leftovers, in no particular order. Do not crowd out a higher-search 
 
 | Series | Author | Likely hub | Why it is on this list |
 | --- | --- | --- | --- |
-| InCryptid | Seanan McGuire | Mystery / Thriller | Family-branch order is the trap. |
-| Foreigner | C. J. Cherryh | Space Opera / SFF | Trilogy-by-trilogy structure is the actual product. |
-| Jackson Brodie | Kate Atkinson | Mystery / Thriller | Short list, but the later books assume the earlier cases. |
-| The Final Architecture | Adrian Tchaikovsky | Space Opera / SFF | Separate from Children of Time; people mix the doors. |
-| The Belgariad / Malloreon | David Eddings | Epic Fantasy | Two five-book runs; prequels look like book one. |
 | Warrior Cats (entry) | Erin Hunter | Epic Fantasy | Many arcs; people start on a later prophecy. |
 | Kate Daniels world spin-offs | Ilona Andrews | Mystery / Thriller | Gunmetal Magic / Blood Heir look like new book ones. |
-| Shannara (entry) | Terry Brooks | Epic Fantasy | Many cycles; people start on a later sword. |
-| Forgotten Realms — Drizzt (entry) | R. A. Salvatore | Epic Fantasy | Homeland looks like book one of the wrong door. |
+| Riftwar (entry) | Raymond E. Feist | Epic Fantasy | Magician vs Empire trilogy doors. |
+| Memory, Sorrow and Thorn / Osten Ard | Tad Williams | Epic Fantasy | Prequels and later trilogies look like book one. |
+| Harry Bosch | Michael Connelly | Mystery / Thriller | Publication vs chronology; large shelf. |
+| In Death / Eve Dallas | J. D. Robb | Mystery / Thriller | Very long numbered run; search is steady. |
+| Divine Cities / Founders | Robert Jackson Bennett | Epic Fantasy | Two finished threes; people mix the doors. |
+| Shadows of the Apt | Adrian Tchaikovsky | Epic Fantasy | Ten-book climb; separate from Final Architecture. |
 
 ## Out of scope as primaries
 
