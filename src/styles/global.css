@@ -1997,6 +1997,20 @@ table .col-title {
   outline-offset: 2px;
 }
 
+.starter-amazon-link.amazon-link,
+a.amazon-link.starter-amazon-link {
+  color: #fff8f4;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.starter-amazon-link.amazon-link:hover,
+a.amazon-link.starter-amazon-link:hover {
+  color: #fff8f4;
+  background: var(--accent-deep);
+  border-color: var(--accent-deep);
+}
+
 .prose a.amazon-link {
   overflow-wrap: normal;
   text-decoration: none;
