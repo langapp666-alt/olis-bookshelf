@@ -1,6 +1,5 @@
 ---
-import { lookupAsin, lookupAsinByTitle } from "../lib/asins";
-import { amazonBookUrl, amazonRel } from "../lib/site";
+import { amazonBookUrl, amazonRel, amazonSearchUrl } from "../lib/site";
 
 interface Props {
   title: string;
@@ -10,15 +9,12 @@ interface Props {
 
 const { title, author } = Astro.props;
 const multiDoor = /(?:—|–|\bor\b)/i.test(title);
-const resolvedAsin = multiDoor
+const shopHref = multiDoor
   ? undefined
   : author
-    ? lookupAsin(title, author)
-    : lookupAsinByTitle(title);
-const shopHref = resolvedAsin
-  ? amazonBookUrl(title, author ?? "", { asin: resolvedAsin })
-  : undefined;
-const showShop = Boolean(shopHref && resolvedAsin);
+    ? amazonBookUrl(title, author)
+    : amazonSearchUrl(title);
+const showShop = Boolean(shopHref);
 ---
 
 <div class="start-here">

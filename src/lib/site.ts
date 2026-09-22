@@ -1,3 +1,5 @@
+import { ASIN_DEEP_LINKS_ENABLED } from "./asins";
+
 export const siteName = "Oli's Bookshelf";
 export const siteTagline = "Reading order for long series. Then what to read next.";
 
@@ -101,8 +103,9 @@ export function amazonSearchUrl(query: string): string {
 }
 
 /**
- * Official Amazon product deep link. ASIN must be looked up (ISBN-10 / catalog);
- * never invent one.
+ * Official Amazon product deep link. Only call with a *validated* amazon.com ASIN.
+ * Open Library ISBN-10 is not enough — many codes 404 on www.amazon.com.
+ * Shop CTAs currently use search via amazonBookUrl(); see docs/ASIN_DEEP_LINKS.md.
  */
 export function amazonProductUrl(asin: string): string {
   const id = asin.trim().toUpperCase();
@@ -117,12 +120,13 @@ export function amazonAsinUrl(asin: string): string {
 
 export type AmazonBookLinkOptions = {
   query?: string;
+  /** Validated amazon.com ASIN only. Ignored while ASIN_DEEP_LINKS_ENABLED is false. */
   asin?: string;
 };
 
 /**
- * Prefer a verified ASIN product URL. Fall back to title + author search
- * (exact title + author; optional more-specific query).
+ * Tagged title + author search by default. Emits `/dp/{ASIN}` only when
+ * `ASIN_DEEP_LINKS_ENABLED` is true *and* a validated amazon.com ASIN is passed.
  * Accepts either options `{ query, asin }` or positional `(query, asin)`.
  */
 export function amazonBookUrl(
@@ -135,7 +139,9 @@ export function amazonBookUrl(
     typeof queryOrOptions === "string"
       ? { query: queryOrOptions, asin }
       : (queryOrOptions ?? {});
-  if (options.asin?.trim()) return amazonProductUrl(options.asin);
+  if (ASIN_DEEP_LINKS_ENABLED && options.asin?.trim()) {
+    return amazonProductUrl(options.asin);
+  }
   return amazonSearchUrl(options.query?.trim() || `${title} ${author}`);
 }
 
