@@ -68,7 +68,7 @@ export const genres = {
     slug: "epic-fantasy",
     label: "Epic Fantasy",
     blurb:
-      "Epic fantasy reading order: Witcher, Cosmere, Dark Tower, Malazan, Belgariad (Pawn first), Drizzt (Crystal Shard or Homeland), Shannara entry. Prequels labeled so they do not become book one.",
+      "Epic fantasy reading order: Witcher, Cosmere, Dark Tower, Malazan Book of the Fallen, Roots of Chaos (Priory first), Books of Babel, Belgariad (Pawn first), Drizzt (Crystal Shard or Homeland), Shannara entry. Prequels labeled so they do not become book one.",
   },
   "space-opera": {
     slug: "space-opera",
@@ -100,8 +100,27 @@ export function amazonSearchUrl(query: string): string {
   return `https://www.amazon.com/s?${params.toString()}`;
 }
 
-/** Title + author search. Do not invent ASINs; this is the required per-book link. */
-export function amazonBookUrl(title: string, author: string, query?: string): string {
+/**
+ * Deep link when a verified ASIN is already in content data.
+ * Do not invent ASINs — prefer search via amazonBookUrl when unsure.
+ */
+export function amazonAsinUrl(asin: string): string {
+  const clean = asin.trim().toUpperCase();
+  const params = new URLSearchParams({ tag: affiliateTag });
+  return `https://www.amazon.com/dp/${clean}?${params.toString()}`;
+}
+
+/**
+ * Per-title Amazon link. Uses an ASIN deep link only when one is supplied
+ * in data; otherwise title + author search. Do not invent ASINs.
+ */
+export function amazonBookUrl(
+  title: string,
+  author: string,
+  query?: string,
+  asin?: string,
+): string {
+  if (asin?.trim()) return amazonAsinUrl(asin);
   return amazonSearchUrl(query?.trim() || `${title} ${author}`);
 }
 
