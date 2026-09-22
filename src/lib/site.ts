@@ -101,27 +101,42 @@ export function amazonSearchUrl(query: string): string {
 }
 
 /**
- * Deep link when a verified ASIN is already in content data.
- * Do not invent ASINs — prefer search via amazonBookUrl when unsure.
+ * Official Amazon product deep link. ASIN must be looked up (ISBN-10 / catalog);
+ * never invent one.
  */
-export function amazonAsinUrl(asin: string): string {
-  const clean = asin.trim().toUpperCase();
+export function amazonProductUrl(asin: string): string {
+  const id = asin.trim().toUpperCase();
   const params = new URLSearchParams({ tag: affiliateTag });
-  return `https://www.amazon.com/dp/${clean}?${params.toString()}`;
+  return `https://www.amazon.com/dp/${encodeURIComponent(id)}?${params.toString()}`;
 }
 
+/** Alias for amazonProductUrl — used by buy-intent starters. */
+export function amazonAsinUrl(asin: string): string {
+  return amazonProductUrl(asin);
+}
+
+export type AmazonBookLinkOptions = {
+  query?: string;
+  asin?: string;
+};
+
 /**
- * Per-title Amazon link. Uses an ASIN deep link only when one is supplied
- * in data; otherwise title + author search. Do not invent ASINs.
+ * Prefer a verified ASIN product URL. Fall back to title + author search
+ * (exact title + author; optional more-specific query).
+ * Accepts either options `{ query, asin }` or positional `(query, asin)`.
  */
 export function amazonBookUrl(
   title: string,
   author: string,
-  query?: string,
+  queryOrOptions?: string | AmazonBookLinkOptions,
   asin?: string,
 ): string {
-  if (asin?.trim()) return amazonAsinUrl(asin);
-  return amazonSearchUrl(query?.trim() || `${title} ${author}`);
+  const options: AmazonBookLinkOptions =
+    typeof queryOrOptions === "string"
+      ? { query: queryOrOptions, asin }
+      : (queryOrOptions ?? {});
+  if (options.asin?.trim()) return amazonProductUrl(options.asin);
+  return amazonSearchUrl(options.query?.trim() || `${title} ${author}`);
 }
 
 export function formatDate(date: Date): string {

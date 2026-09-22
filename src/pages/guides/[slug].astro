@@ -17,6 +17,7 @@ import {
   parseFirstOrderTableTitles,
   webPageSchema,
 } from "../../lib/guide-schema";
+import { guideBookOne } from "../../lib/guide-shop";
 import { relatedGuides } from "../../lib/related-guides";
 import { listedGuides } from "../../lib/guides-index";
 import { absoluteOgUrl, guideOgPath } from "../../lib/og";
@@ -36,6 +37,7 @@ const { Content, headings } = await render(guide);
 const genre = genres[guide.data.genre];
 const related = relatedGuides(guide, listedGuides(guides));
 const asked = questionsForGuide(listedQuestions(await getCollection("questions")), guide.data.slug);
+const bookOne = guideBookOne(guide.body, guide.data.author);
 const origin = siteOrigin(Astro.site);
 const canonical = new URL(`/guides/${guide.data.slug}/`, origin);
 const ogImage = absoluteOgUrl(origin, guideOgPath(guide.data.slug));
@@ -84,16 +86,22 @@ const jsonLd = [
   jsonLd={jsonLd}
 >
   <article class="guide-page">
-    <GuideHero guide={guide} headings={headings} />
+    <GuideHero guide={guide} headings={headings} bookOne={bookOne} />
 
     <div class="guide-layout">
       <div class="prose guide-prose">
         <Content components={{ OrderTable, StartHere }} />
       </div>
-      <GuideAside guide={guide} headings={headings} related={related} questions={asked} />
+      <GuideAside
+        guide={guide}
+        headings={headings}
+        related={related}
+        questions={asked}
+        bookOne={bookOne}
+      />
     </div>
     <CommonQuestions questions={asked} />
     <RelatedGuides guides={related} />
   </article>
-  <AffiliateDock query={`${guide.data.series} ${guide.data.author}`} label={guide.data.series} />
+  {bookOne ? <AffiliateDock book={bookOne} /> : null}
 </BaseLayout>

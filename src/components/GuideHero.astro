@@ -1,8 +1,9 @@
 ---
 import type { CollectionEntry } from "astro:content";
+import type { RecommendedBook } from "../lib/guide-shop";
 import { lookupCover } from "../lib/covers";
 import { withGuideMeta } from "../lib/guide-meta";
-import { formatDate, genres, type GenreSlug } from "../lib/site";
+import { amazonRel, formatDate, genres, type GenreSlug } from "../lib/site";
 import BookCover from "./BookCover.astro";
 import GuideBreadcrumb from "./GuideBreadcrumb.astro";
 import GuideToc from "./GuideToc.astro";
@@ -16,9 +17,10 @@ interface Heading {
 interface Props {
   guide: CollectionEntry<"guides">;
   headings?: Heading[];
+  bookOne?: RecommendedBook;
 }
 
-const { guide, headings = [] } = Astro.props;
+const { guide, headings = [], bookOne } = Astro.props;
 const genre = genres[guide.data.genre as GenreSlug];
 const { countLabel } = withGuideMeta(guide);
 const cover = lookupCover(guide.data.series, guide.data.author, {
@@ -49,6 +51,16 @@ const cover = lookupCover(guide.data.series, guide.data.author, {
         {countLabel && <span class="pill">{countLabel}</span>}
         <span class="pill">Checked {formatDate(guide.data.lastVerified)}</span>
       </div>
+      {
+        bookOne && (
+          <p class="guide-hero-shop">
+            <a class="amazon-link hero-amazon" href={bookOne.href} rel={amazonRel}>
+              Book 1 on Amazon
+              <span class="hero-amazon-title"> · {bookOne.title}</span>
+            </a>
+          </p>
+        )
+      }
     </div>
     <div class="guide-hero-cover">
       <BookCover title={guide.data.series} cover={cover} size="hero" priority />
