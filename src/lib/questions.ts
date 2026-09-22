@@ -15,17 +15,21 @@ export function questionHref(slug: string): string {
 export const popularQuestionSlugs = [
   "where-to-start-roots-of-chaos",
   "where-to-start-malazan",
+  "where-to-start-the-cosmere",
+  "mistborn-era-1-or-era-2",
+  "where-to-start-books-of-babel",
+  "where-to-start-the-dark-tower",
+  "where-to-start-harry-potter",
+  "where-to-start-discworld",
   "where-to-start-silo",
-  "foundation-publication-or-chronological",
-  "should-i-read-brian-herbert-dune",
   "where-to-start-dune",
   "jack-reacher-publication-or-chronological",
-  "artemis-fowl-series-order",
   "where-to-start-acotar",
-  "where-to-start-the-cosmere",
-  "where-to-start-bobiverse",
   "where-to-start-the-expanse",
   "where-to-start-the-witcher",
+  "drizzt-homeland-or-crystal-shard",
+  "where-to-start-laundry-files",
+  "belgariad-belgarath-first",
 ] as const;
 
 export function questionsBySlug(questions: Question[], slugs: readonly string[]): Question[] {

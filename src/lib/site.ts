@@ -68,19 +68,19 @@ export const genres = {
     slug: "epic-fantasy",
     label: "Epic Fantasy",
     blurb:
-      "Epic fantasy reading order: Witcher, Cosmere, Dark Tower, Malazan Book of the Fallen, Roots of Chaos (Priory first). Prequels labeled so they do not become book one.",
+      "Epic fantasy reading order: Witcher, Cosmere, Dark Tower, Malazan Book of the Fallen, Roots of Chaos (Priory first), Books of Babel, Belgariad (Pawn first), Drizzt (Crystal Shard or Homeland), Shannara entry. Prequels labeled so they do not become book one.",
   },
   "space-opera": {
     slug: "space-opera",
     label: "Space Opera / SFF",
     blurb:
-      "Space opera reading order: Vorkosigan (Cordelia first), Expanse novels then novellas, Red Rising not Iron Gold first. Prequels that spoil stay labeled.",
+      "Space opera reading order: Vorkosigan (Cordelia first), Foreigner (Foreigner first), Expanse, Final Architecture not Children of Time. Prequels that spoil stay labeled.",
   },
   "mystery-thriller": {
     slug: "mystery-thriller",
     label: "Mystery / Thriller",
     blurb:
-      "Mystery and thriller reading order: Reacher publication vs chronological, Sherlock, Thursday Murder Club, Rivers of London. Publication first; prequels labeled.",
+      "Mystery and thriller reading order: Reacher, Gamache (Still Life), Laundry Files, InCryptid, Jackson Brodie. Publication first; later doors labeled.",
   },
   romance: {
     slug: "romance",
@@ -100,9 +100,43 @@ export function amazonSearchUrl(query: string): string {
   return `https://www.amazon.com/s?${params.toString()}`;
 }
 
-/** Title + author search. Do not invent ASINs; this is the required per-book link. */
-export function amazonBookUrl(title: string, author: string, query?: string): string {
-  return amazonSearchUrl(query?.trim() || `${title} ${author}`);
+/**
+ * Official Amazon product deep link. ASIN must be looked up (ISBN-10 / catalog);
+ * never invent one.
+ */
+export function amazonProductUrl(asin: string): string {
+  const id = asin.trim().toUpperCase();
+  const params = new URLSearchParams({ tag: affiliateTag });
+  return `https://www.amazon.com/dp/${encodeURIComponent(id)}?${params.toString()}`;
+}
+
+/** Alias for amazonProductUrl — used by buy-intent starters. */
+export function amazonAsinUrl(asin: string): string {
+  return amazonProductUrl(asin);
+}
+
+export type AmazonBookLinkOptions = {
+  query?: string;
+  asin?: string;
+};
+
+/**
+ * Prefer a verified ASIN product URL. Fall back to title + author search
+ * (exact title + author; optional more-specific query).
+ * Accepts either options `{ query, asin }` or positional `(query, asin)`.
+ */
+export function amazonBookUrl(
+  title: string,
+  author: string,
+  queryOrOptions?: string | AmazonBookLinkOptions,
+  asin?: string,
+): string {
+  const options: AmazonBookLinkOptions =
+    typeof queryOrOptions === "string"
+      ? { query: queryOrOptions, asin }
+      : (queryOrOptions ?? {});
+  if (options.asin?.trim()) return amazonProductUrl(options.asin);
+  return amazonSearchUrl(options.query?.trim() || `${title} ${author}`);
 }
 
 export function formatDate(date: Date): string {

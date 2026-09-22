@@ -4,6 +4,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import GuideBreadcrumb from "../../components/GuideBreadcrumb.astro";
 import GuideCard from "../../components/GuideCard.astro";
 import StartHere from "../../components/StartHere.astro";
+import StarterAmazon from "../../components/StarterAmazon.astro";
 import {
   articleSchema,
   breadcrumbSchema,
@@ -87,6 +88,17 @@ const jsonLd = [
     <div class="prose guide-prose question-prose">
       <StartHere title={question.data.shortAnswerTitle}>
         <p>{question.data.shortAnswer}</p>
+        {
+          question.data.buy && (
+            <StarterAmazon
+              title={question.data.buy.title}
+              author={question.data.buy.author}
+              year={question.data.buy.year}
+              query={question.data.buy.query}
+              asin={question.data.buy.asin}
+            />
+          )
+        }
       </StartHere>
       <Content />
     </div>

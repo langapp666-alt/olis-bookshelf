@@ -14,11 +14,11 @@ import {
   breadcrumbSchema,
   faqPageSchema,
   itemListSchema,
-  parseBookOne,
   parseFaqPairs,
   parseFirstOrderTableTitles,
   webPageSchema,
 } from "../../lib/guide-schema";
+import { guideBookOne } from "../../lib/guide-shop";
 import { relatedGuides } from "../../lib/related-guides";
 import { listedGuides } from "../../lib/guides-index";
 import { absoluteOgUrl, guideOgPath } from "../../lib/og";
@@ -38,12 +38,12 @@ const { Content, headings } = await render(guide);
 const genre = genres[guide.data.genre];
 const related = relatedGuides(guide, listedGuides(guides));
 const asked = questionsForGuide(listedQuestions(await getCollection("questions")), guide.data.slug);
+const bookOne = guideBookOne(guide.body, guide.data.author);
 const origin = siteOrigin(Astro.site);
 const canonical = new URL(`/guides/${guide.data.slug}/`, origin);
 const ogImage = absoluteOgUrl(origin, guideOgPath(guide.data.slug));
 const logo = new URL("/og.png", origin).href;
 const modified = isoDate(guide.data.lastVerified);
-const bookOne = parseBookOne(guide.body);
 const cover = lookupCover(guide.data.series, guide.data.author, {
   coverId: guide.data.coverId,
   isbn: guide.data.isbn,
@@ -84,11 +84,6 @@ const jsonLd = [
     canonical.href,
   ),
 ].filter((block): block is Record<string, unknown> => Boolean(block));
-
-const dockQuery = bookOne
-  ? bookOne.query?.trim() || `${bookOne.title} ${bookOne.author ?? guide.data.author}`
-  : `${guide.data.series} ${guide.data.author}`;
-const dockLabel = bookOne?.title ?? guide.data.series;
 ---
 
 <BaseLayout
@@ -118,5 +113,5 @@ const dockLabel = bookOne?.title ?? guide.data.series;
     <CommonQuestions questions={asked} />
     <RelatedGuides guides={related} />
   </article>
-  <AffiliateDock query={dockQuery} label={dockLabel} />
+  {bookOne ? <AffiliateDock book={bookOne} /> : null}
 </BaseLayout>

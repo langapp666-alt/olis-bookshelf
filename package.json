@@ -13,7 +13,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "check": "astro check",
-    "covers": "node src/scripts/fetch-covers.mjs"
+    "covers": "node src/scripts/fetch-covers.mjs",
+    "asins": "node src/scripts/fetch-asins.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^8.0.1",

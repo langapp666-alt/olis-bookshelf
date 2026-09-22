@@ -1548,6 +1548,19 @@ a.catalog-chip:hover {
   margin-bottom: 0;
 }
 
+.start-here-shop {
+  margin: 0.85rem 0 0;
+}
+
+.guide-hero-shop {
+  margin: 0.85rem 0 0;
+}
+
+.aside-book1-title {
+  margin: -0.15rem 0 0.55rem;
+  line-height: 1.35;
+}
+
 .starter-amazon {
   margin: 0.85rem 0 0;
 }
@@ -1556,28 +1569,30 @@ a.catalog-chip:hover {
   margin: 0.7rem 0 0;
 }
 
-.starter-amazon-link {
+.amazon-link.starter-amazon-link {
   width: 100%;
   min-width: 0;
-  max-width: 100%;
-  justify-content: center;
+  max-width: 28rem;
+  min-height: 2.65rem;
+  justify-content: flex-start;
   text-align: center;
+  padding: 0.45rem 0.95rem;
+  font-size: 0.88rem;
   color: #fff8f4;
   background: var(--accent);
   border-color: var(--accent);
-  min-height: 2.65rem;
-  font-size: 0.88rem;
-  padding: 0.45rem 0.95rem;
 }
 
-.starter-amazon-link:hover {
+.amazon-link.starter-amazon-link:hover {
   color: #fff8f4;
   background: var(--accent-deep);
   border-color: var(--accent-deep);
 }
 
-.starter-amazon-link.is-compact {
+.amazon-link.starter-amazon-link.is-compact {
   min-height: 2.55rem;
+  justify-content: center;
+  max-width: 100%;
 }
 
 .guide-hero-lede {
@@ -1979,10 +1994,11 @@ table .col-title {
   background: var(--accent-wash);
   border: 1px solid color-mix(in srgb, var(--accent) 38%, var(--rule));
   border-radius: var(--radius-pill);
-  min-height: 2.4rem;
-  min-width: 6.4rem;
-  padding: 0.38rem 0.9rem;
+  min-height: 2.75rem;
+  min-width: 6.75rem;
+  padding: 0.45rem 0.95rem;
   box-shadow: none;
+  touch-action: manipulation;
 }
 
 .amazon-link:hover {
@@ -2020,6 +2036,34 @@ a.amazon-link.starter-amazon-link:hover {
   width: 100%;
   min-width: 0;
   margin-bottom: 0.35rem;
+}
+
+.amazon-link.hero-amazon,
+.amazon-link.start-here-amazon {
+  min-height: 2.75rem;
+  min-width: 0;
+  max-width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 0.88rem;
+  color: #fff8f4;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.amazon-link.hero-amazon:hover,
+.amazon-link.start-here-amazon:hover {
+  color: #fff8f4;
+  background: var(--accent-deep);
+  border-color: var(--accent-deep);
+}
+
+.amazon-link.start-here-amazon {
+  width: 100%;
+}
+
+.hero-amazon-title {
+  font-weight: 650;
+  opacity: 0.92;
 }
 
 .dock-amazon {

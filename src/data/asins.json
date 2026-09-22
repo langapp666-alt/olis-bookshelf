@@ -1,0 +1,6182 @@
+{
+  "a court of thorns and roses|sarah j. maas": {
+    "asin": "1635575567",
+    "source": "openlibrary:/books/OL62545945M",
+    "title": "A Court of Thorns and Roses",
+    "author": "Sarah J. Maas"
+  },
+  "a little hatred|joe abercrombie": {
+    "asin": "0316427624",
+    "source": "openlibrary:/books/OL53050246M",
+    "title": "A Little Hatred",
+    "author": "Joe Abercrombie"
+  },
+  "a discovery of witches|deborah harkness": {
+    "asin": "0755374045",
+    "source": "openlibrary:/books/OL28327035M",
+    "title": "A Discovery of Witches",
+    "author": "Deborah Harkness"
+  },
+  "artemis fowl|eoin colfer": {
+    "asin": "0241491126",
+    "source": "openlibrary:/books/OL38803709M",
+    "title": "Artemis Fowl",
+    "author": "Eoin Colfer"
+  },
+  "a game of thrones|george r. r. martin": {
+    "asin": "0553381687",
+    "source": "openlibrary:/books/OL62287051M",
+    "title": "A Game of Thrones",
+    "author": "George R. R. Martin"
+  },
+  "the atlas six|olivie blake": {
+    "asin": "1529095247",
+    "source": "openlibrary:/books/OL37994421M",
+    "title": "The Atlas Six",
+    "author": "Olivie Blake"
+  },
+  "malice|john gwynne": {
+    "asin": "0230758452",
+    "source": "openlibrary:/books/OL27626635M",
+    "title": "Malice",
+    "author": "John Gwynne"
+  },
+  "rhapsodic|laura thalassa": {
+    "asin": "1541130855",
+    "source": "openlibrary:/books/OL27003082M",
+    "title": "Rhapsodic",
+    "author": "Laura Thalassa"
+  },
+  "mr. mercedes|stephen king": {
+    "asin": "1444788663",
+    "source": "openlibrary:/books/OL53244687M",
+    "title": "Mr. Mercedes",
+    "author": "Stephen King"
+  },
+  "the black company|glen cook": {
+    "asin": "0812584384",
+    "source": "openlibrary:/books/OL51593605M",
+    "title": "The Black Company",
+    "author": "Glen Cook"
+  },
+  "dark lover|j. r. ward": {
+    "asin": "0748129081",
+    "source": "openlibrary:/books/OL33428668M",
+    "title": "Dark Lover",
+    "author": "J. R. Ward"
+  },
+  "senlin ascends|josiah bancroft": {
+    "asin": "0316517909",
+    "source": "openlibrary:/books/OL51332697M",
+    "title": "Senlin Ascends",
+    "author": "Josiah Bancroft"
+  },
+  "the bridge kingdom|danielle l. jensen": {
+    "asin": "1733090304",
+    "source": "openlibrary:/books/OL51946628M",
+    "title": "The Bridge Kingdom",
+    "author": "Danielle L. Jensen"
+  },
+  "the duke and i|julia quinn": {
+    "asin": "0349429219",
+    "source": "openlibrary:/books/OL31903713M",
+    "title": "The Duke and I",
+    "author": "Julia Quinn"
+  },
+  "the fifth season|n. k. jemisin": {
+    "asin": "140553513X",
+    "source": "openlibrary:/books/OL61599323M",
+    "title": "The Fifth Season",
+    "author": "N. K. Jemisin"
+  },
+  "captive prince|c. s. pacat": {
+    "asin": "0143799592",
+    "source": "openlibrary:/books/OL28561060M",
+    "title": "Captive Prince",
+    "author": "C. S. Pacat"
+  },
+  "caraval|stephanie garber": {
+    "asin": "1399739670",
+    "source": "openlibrary:/books/OL52565145M",
+    "title": "Caraval",
+    "author": "Stephanie Garber"
+  },
+  "children of time|adrian tchaikovsky": {
+    "asin": "1035076195",
+    "source": "openlibrary:/books/OL57533064M",
+    "title": "Children of Time",
+    "author": "Adrian Tchaikovsky"
+  },
+  "the mysterious affair at styles|agatha christie": {
+    "asin": "0007853351",
+    "source": "openlibrary:/books/OL43517186M",
+    "title": "The Mysterious Affair at Styles",
+    "author": "Agatha Christie"
+  },
+  "the cuckoo’s calling|robert galbraith": {
+    "asin": "1478980834",
+    "source": "openlibrary:/books/OL33870479M",
+    "title": "The Cuckoo’s Calling",
+    "author": "Robert Galbraith"
+  },
+  "the final empire|brandon sanderson": {
+    "asin": "0575097744",
+    "source": "openlibrary:/books/OL48138652M",
+    "title": "The Final Empire",
+    "author": "Brandon Sanderson"
+  },
+  "unsouled|will wight": {
+    "asin": "1734958170",
+    "source": "openlibrary:/books/OL36053937M",
+    "title": "Unsouled",
+    "author": "Will Wight"
+  },
+  "three parts dead|max gladstone": {
+    "asin": "1470809826",
+    "source": "openlibrary:/books/OL43713522M",
+    "title": "Three Parts Dead",
+    "author": "Max Gladstone"
+  },
+  "house of earth and blood|sarah j. maas": {
+    "asin": "1639733280",
+    "source": "openlibrary:/books/OL61054591M",
+    "title": "House of Earth and Blood",
+    "author": "Sarah J. Maas"
+  },
+  "the gunslinger|stephen king": {
+    "asin": "1848941099",
+    "source": "openlibrary:/books/OL53246655M",
+    "title": "The Gunslinger",
+    "author": "Stephen King"
+  },
+  "guards! guards!|terry pratchett": {
+    "asin": "1473588162",
+    "source": "openlibrary:/books/OL62205476M",
+    "title": "Guards! Guards!",
+    "author": "Terry Pratchett"
+  },
+  "mort|terry pratchett": {
+    "asin": "0061020680",
+    "source": "openlibrary:/books/OL9241410M",
+    "title": "Mort",
+    "author": "Terry Pratchett"
+  },
+  "going postal|terry pratchett": {
+    "asin": "006339331X",
+    "source": "openlibrary:/books/OL57591852M",
+    "title": "Going Postal",
+    "author": "Terry Pratchett"
+  },
+  "the colour of magic|terry pratchett": {
+    "asin": "1407034421",
+    "source": "openlibrary:/books/OL40360817M",
+    "title": "The Colour of Magic",
+    "author": "Terry Pratchett"
+  },
+  "equal rites|terry pratchett": {
+    "asin": "0063385546",
+    "source": "openlibrary:/books/OL51101216M",
+    "title": "Equal Rites",
+    "author": "Terry Pratchett"
+  },
+  "divergent|veronica roth": {
+    "asin": "0008662223",
+    "source": "openlibrary:/books/OL50646844M",
+    "title": "Divergent",
+    "author": "Veronica Roth"
+  },
+  "storm front|jim butcher": {
+    "asin": "1596062010",
+    "source": "openlibrary:/books/OL29522077M",
+    "title": "Storm Front",
+    "author": "Jim Butcher"
+  },
+  "dune|frank herbert": {
+    "asin": "057512279X",
+    "source": "openlibrary:/books/OL48154015M",
+    "title": "Dune",
+    "author": "Frank Herbert"
+  },
+  "dungeon crawler carl|matt dinniman": {
+    "asin": "0593820258",
+    "source": "openlibrary:/books/OL61594642M",
+    "title": "Dungeon Crawler Carl",
+    "author": "Matt Dinniman"
+  },
+  "a wizard of earthsea|ursula k. le guin": {
+    "asin": "1473226813",
+    "source": "openlibrary:/books/OL62170595M",
+    "title": "A Wizard of Earthsea",
+    "author": "Ursula K. Le Guin"
+  },
+  "an ember in the ashes|sabaa tahir": {
+    "asin": "1467601543",
+    "source": "openlibrary:/books/OL46536524M",
+    "title": "An Ember in the Ashes",
+    "author": "Sabaa Tahir"
+  },
+  "fourth wing|rebecca yarros": {
+    "asin": "1649377371",
+    "source": "openlibrary:/books/OL53388405M",
+    "title": "Fourth Wing",
+    "author": "Rebecca Yarros"
+  },
+  "darkfever|karen marie moning": {
+    "asin": "044033635X",
+    "source": "openlibrary:/books/OL24277796M",
+    "title": "Darkfever",
+    "author": "Karen Marie Moning"
+  },
+  "the blade itself|joe abercrombie": {
+    "asin": "0575091509",
+    "source": "openlibrary:/books/OL48140455M",
+    "title": "The Blade Itself",
+    "author": "Joe Abercrombie"
+  },
+  "a shadow in the ember|jennifer l. armentrout": {
+    "asin": "1952457602",
+    "source": "openlibrary:/books/OL38056188M",
+    "title": "A Shadow in the Ember",
+    "author": "Jennifer L. Armentrout"
+  },
+  "the cruel prince|holly black": {
+    "asin": "0316461253",
+    "source": "openlibrary:/books/OL48258839M",
+    "title": "The Cruel Prince",
+    "author": "Holly Black"
+  },
+  "foundation|isaac asimov": {
+    "asin": "0008117497",
+    "source": "openlibrary:/books/OL51998636M",
+    "title": "Foundation",
+    "author": "Isaac Asimov"
+  },
+  "the housemaid|freida mcfadden": {
+    "asin": "1538777932",
+    "source": "openlibrary:/books/OL60604587M",
+    "title": "The Housemaid",
+    "author": "Freida McFadden"
+  },
+  "from blood and ash|jennifer l. armentrout": {
+    "asin": "1957568224",
+    "source": "openlibrary:/books/OL38466569M",
+    "title": "From Blood and Ash",
+    "author": "Jennifer L. Armentrout"
+  },
+  "the lies of locke lamora|scott lynch": {
+    "asin": "1473216796",
+    "source": "openlibrary:/books/OL27303529M",
+    "title": "The Lies of Locke Lamora",
+    "author": "Scott Lynch"
+  },
+  "a good girl's guide to murder|holly jackson": {
+    "asin": "0593575806",
+    "source": "openlibrary:/books/OL39195447M",
+    "title": "A Good Girl's Guide to Murder",
+    "author": "Holly Jackson"
+  },
+  "shadow and bone|leigh bardugo": {
+    "asin": "1780621833",
+    "source": "openlibrary:/books/OL48149455M",
+    "title": "Shadow and Bone",
+    "author": "Leigh Bardugo"
+  },
+  "a touch of darkness|scarlett st. clair": {
+    "asin": "1728258456",
+    "source": "openlibrary:/books/OL49353271M",
+    "title": "A Touch of Darkness",
+    "author": "Scarlett St. Clair"
+  },
+  "harry potter and the philosopher's stone|j. k. rowling": {
+    "asin": "1551927284",
+    "source": "openlibrary:/books/OL62439119M",
+    "title": "Harry Potter and the Philosopher's Stone",
+    "author": "J. K. Rowling"
+  },
+  "the will of the many|james islington": {
+    "asin": "1922790915",
+    "source": "openlibrary:/books/OL62456572M",
+    "title": "The Will of the Many",
+    "author": "James Islington"
+  },
+  "northern lights|philip pullman": {
+    "asin": "0439950465",
+    "source": "openlibrary:/books/OL52329495M",
+    "title": "Northern Lights",
+    "author": "Philip Pullman"
+  },
+  "the hitchhiker's guide to the galaxy|douglas adams": {
+    "asin": "0307292045",
+    "source": "openlibrary:/books/OL52882309M",
+    "title": "The Hitchhiker's Guide to the Galaxy",
+    "author": "Douglas Adams"
+  },
+  "on basilisk station|david weber": {
+    "asin": "1982193581",
+    "source": "openlibrary:/books/OL50961715M",
+    "title": "On Basilisk Station",
+    "author": "David Weber"
+  },
+  "the hunger games|suzanne collins": {
+    "asin": "0702342386",
+    "source": "openlibrary:/books/OL57558534M",
+    "title": "The Hunger Games",
+    "author": "Suzanne Collins"
+  },
+  "hyperion|dan simmons": {
+    "asin": "1491514973",
+    "source": "openlibrary:/books/OL31979996M",
+    "title": "Hyperion",
+    "author": "Dan Simmons"
+  },
+  "ancillary justice|ann leckie": {
+    "asin": "0356523845",
+    "source": "openlibrary:/books/OL49274771M",
+    "title": "Ancillary Justice",
+    "author": "Ann Leckie"
+  },
+  "eragon|christopher paolini": {
+    "asin": "0329418165",
+    "source": "openlibrary:/books/OL49646069M",
+    "title": "Eragon",
+    "author": "Christopher Paolini"
+  },
+  "hounded|kevin hearne": {
+    "asin": "0345522532",
+    "source": "openlibrary:/books/OL38348165M",
+    "title": "Hounded",
+    "author": "Kevin Hearne"
+  },
+  "killing floor|lee child": {
+    "asin": "0515141429",
+    "source": "openlibrary:/books/OL7657915M",
+    "title": "Killing Floor",
+    "author": "Lee Child"
+  },
+  "casino royale|ian fleming": {
+    "asin": "006329852X",
+    "source": "openlibrary:/books/OL38979714M",
+    "title": "Casino Royale",
+    "author": "Ian Fleming"
+  },
+  "magic bites|ilona andrews": {
+    "asin": "0441014895",
+    "source": "openlibrary:/books/OL7524387M",
+    "title": "Magic Bites",
+    "author": "Ilona Andrews"
+  },
+  "the name of the wind|patrick rothfuss": {
+    "asin": "1473211891",
+    "source": "openlibrary:/books/OL37932805M",
+    "title": "The Name of the Wind",
+    "author": "Patrick Rothfuss"
+  },
+  "lady of darkness|melissa k. roehrich": {
+    "asin": "0008719349",
+    "source": "openlibrary:/books/OL51810061M",
+    "title": "Lady of Darkness",
+    "author": "Melissa K. Roehrich"
+  },
+  "legend|marie lu": {
+    "asin": "014133942X",
+    "source": "openlibrary:/books/OL38790341M",
+    "title": "Legend",
+    "author": "Marie Lu"
+  },
+  "the black prism|brent weeks": {
+    "asin": "0748116974",
+    "source": "openlibrary:/books/OL33421059M",
+    "title": "The Black Prism",
+    "author": "Brent Weeks"
+  },
+  "the hobbit|j. r. r. tolkien": {
+    "asin": "0345339681",
+    "source": "openlibrary:/books/OL61641547M",
+    "title": "The Hobbit",
+    "author": "J. R. R. Tolkien"
+  },
+  "cinder|marissa meyer": {
+    "asin": "153641719X",
+    "source": "openlibrary:/books/OL39630316M",
+    "title": "Cinder",
+    "author": "Marissa Meyer"
+  },
+  "the magicians|lev grossman": {
+    "asin": "1101079428",
+    "source": "openlibrary:/books/OL60566496M",
+    "title": "The Magicians",
+    "author": "Lev Grossman"
+  },
+  "gardens of the moon|steven erikson": {
+    "asin": "1469225697",
+    "source": "openlibrary:/books/OL57496165M",
+    "title": "Gardens of the Moon",
+    "author": "Steven Erikson"
+  },
+  "the maze runner|james dashner": {
+    "asin": "0385737955",
+    "source": "openlibrary:/books/OL59675012M",
+    "title": "The Maze Runner",
+    "author": "James Dashner"
+  },
+  "moon called|patricia briggs": {
+    "asin": "0786561440",
+    "source": "openlibrary:/books/OL44225809M",
+    "title": "Moon Called",
+    "author": "Patricia Briggs"
+  },
+  "transfer of power|vince flynn": {
+    "asin": "0671023195",
+    "source": "openlibrary:/books/OL23243465M",
+    "title": "Transfer of Power",
+    "author": "Vince Flynn"
+  },
+  "all systems red|martha wells": {
+    "asin": "1501977822",
+    "source": "openlibrary:/books/OL61027656M",
+    "title": "All Systems Red",
+    "author": "Martha Wells"
+  },
+  "the lion, the witch and the wardrobe|c. s. lewis": {
+    "asin": "1484499247",
+    "source": "openlibrary:/books/OL37481163M",
+    "title": "The Lion, the Witch and the Wardrobe",
+    "author": "C. S. Lewis"
+  },
+  "the way of shadows|brent weeks": {
+    "asin": "0356520366",
+    "source": "openlibrary:/books/OL38803472M",
+    "title": "The Way of Shadows",
+    "author": "Brent Weeks"
+  },
+  "rosemary and rue|seanan mcguire": {
+    "asin": "0756405718",
+    "source": "openlibrary:/books/OL24225393M",
+    "title": "Rosemary and Rue",
+    "author": "Seanan McGuire"
+  },
+  "sabriel|garth nix": {
+    "asin": "1743316585",
+    "source": "openlibrary:/books/OL57669942M",
+    "title": "Sabriel",
+    "author": "Garth Nix"
+  },
+  "old man's war|john scalzi": {
+    "asin": "1250359732",
+    "source": "openlibrary:/books/OL50789345M",
+    "title": "Old Man's War",
+    "author": "John Scalzi"
+  },
+  "once upon a broken heart|stephanie garber": {
+    "asin": "1399641697",
+    "source": "openlibrary:/books/OL61802525M",
+    "title": "Once Upon a Broken Heart",
+    "author": "Stephanie Garber"
+  },
+  "outlander|diana gabaldon": {
+    "asin": "1787464636",
+    "source": "openlibrary:/books/OL43319104M",
+    "title": "Outlander",
+    "author": "Diana Gabaldon"
+  },
+  "the lightning thief|rick riordan": {
+    "asin": "0141333227",
+    "source": "openlibrary:/books/OL43650904M",
+    "title": "The Lightning Thief",
+    "author": "Rick Riordan"
+  },
+  "the poppy war|r. f. kuang": {
+    "asin": "0063429144",
+    "source": "openlibrary:/books/OL57563399M",
+    "title": "The Poppy War",
+    "author": "R. F. Kuang"
+  },
+  "promise of blood|brian mcclellan": {
+    "asin": "0356502015",
+    "source": "openlibrary:/books/OL34601370M",
+    "title": "Promise of Blood",
+    "author": "Brian McClellan"
+  },
+  "practical magic|alice hoffman": {
+    "asin": "0593718143",
+    "source": "openlibrary:/books/OL48500325M",
+    "title": "Practical Magic",
+    "author": "Alice Hoffman"
+  },
+  "assassin's apprentice|robin hobb": {
+    "asin": "0007876432",
+    "source": "openlibrary:/books/OL44127423M",
+    "title": "Assassin's Apprentice",
+    "author": "Robin Hobb"
+  },
+  "steelheart|brandon sanderson": {
+    "asin": "1603933972",
+    "source": "openlibrary:/books/OL57481084M",
+    "title": "Steelheart",
+    "author": "Brandon Sanderson"
+  },
+  "red queen|victoria aveyard": {
+    "asin": "0062442392",
+    "source": "openlibrary:/books/OL49207728M",
+    "title": "Red Queen",
+    "author": "Victoria Aveyard"
+  },
+  "red rising|pierce brown": {
+    "asin": "1470380285",
+    "source": "openlibrary:/books/OL61021786M",
+    "title": "Red Rising",
+    "author": "Pierce Brown"
+  },
+  "revelation space|alastair reynolds": {
+    "asin": "0752889087",
+    "source": "openlibrary:/books/OL27100074M",
+    "title": "Revelation Space",
+    "author": "Alastair Reynolds"
+  },
+  "rivers of london|ben aaronovitch": {
+    "asin": "0575097566",
+    "source": "openlibrary:/books/OL26814272M",
+    "title": "Rivers of London",
+    "author": "Ben Aaronovitch"
+  },
+  "theft of swords|michael j. sullivan": {
+    "asin": "0316187747",
+    "source": "openlibrary:/books/OL24827611M",
+    "title": "Theft of Swords",
+    "author": "Michael J. Sullivan"
+  },
+  "the priory of the orange tree|samantha shannon": {
+    "asin": "1526612860",
+    "source": "openlibrary:/books/OL37060976M",
+    "title": "The Priory of the Orange Tree",
+    "author": "Samantha Shannon"
+  },
+  "a deadly education|naomi novik": {
+    "asin": "1529100879",
+    "source": "openlibrary:/books/OL32422856M",
+    "title": "A Deadly Education",
+    "author": "Naomi Novik"
+  },
+  "the selection|kiera cass": {
+    "asin": "0007466722",
+    "source": "openlibrary:/books/OL36198751M",
+    "title": "The Selection",
+    "author": "Kiera Cass"
+  },
+  "city of bones|cassandra clare": {
+    "asin": "1428739998",
+    "source": "openlibrary:/books/OL51593180M",
+    "title": "City of Bones",
+    "author": "Cassandra Clare"
+  },
+  "shatter me|tahereh mafi": {
+    "asin": "174237820X",
+    "source": "openlibrary:/books/OL52742994M",
+    "title": "Shatter Me",
+    "author": "Tahereh Mafi"
+  },
+  "a study in scarlet|arthur conan doyle": {
+    "asin": "1774537923",
+    "source": "openlibrary:/books/OL60739735M",
+    "title": "A Study in Scarlet",
+    "author": "Arthur Conan Doyle"
+  },
+  "wool|hugh howey": {
+    "asin": "1804940828",
+    "source": "openlibrary:/books/OL59165904M",
+    "title": "Wool",
+    "author": "Hugh Howey"
+  },
+  "skyward|brandon sanderson": {
+    "asin": "1473233240",
+    "source": "openlibrary:/books/OL34693695M",
+    "title": "Skyward",
+    "author": "Brandon Sanderson"
+  },
+  "annihilation|jeff vandermeer": {
+    "asin": "1443428396",
+    "source": "openlibrary:/books/OL47304430M",
+    "title": "Annihilation",
+    "author": "Jeff VanderMeer"
+  },
+  "misery|stephen king": {
+    "asin": "1844564541",
+    "source": "openlibrary:/books/OL53246076M",
+    "title": "Misery",
+    "author": "Stephen King"
+  },
+  "the way of kings|brandon sanderson": {
+    "asin": "1648813542",
+    "source": "openlibrary:/books/OL61245450M",
+    "title": "The Way of Kings",
+    "author": "Brandon Sanderson"
+  },
+  "empire of silence|christopher ruocchio": {
+    "asin": "1399625764",
+    "source": "openlibrary:/books/OL60159736M",
+    "title": "Empire of Silence",
+    "author": "Christopher Ruocchio"
+  },
+  "his majesty's dragon|naomi novik": {
+    "asin": "0593359542",
+    "source": "openlibrary:/books/OL33234587M",
+    "title": "His Majesty's Dragon",
+    "author": "Naomi Novik"
+  },
+  "consider phlebas|iain m. banks": {
+    "asin": "0333441389",
+    "source": "openlibrary:/books/OL24928935M",
+    "title": "Consider Phlebas",
+    "author": "Iain M. Banks"
+  },
+  "leviathan wakes|james s. a. corey": {
+    "asin": "0316134678",
+    "source": "openlibrary:/books/OL62490317M",
+    "title": "Leviathan Wakes",
+    "author": "James S. A. Corey"
+  },
+  "gideon the ninth|tamsyn muir": {
+    "asin": "1250246113",
+    "source": "openlibrary:/books/OL51607699M",
+    "title": "Gideon the Ninth",
+    "author": "Tamsyn Muir"
+  },
+  "throne of glass|sarah j. maas": {
+    "asin": "1526605287",
+    "source": "openlibrary:/books/OL31976944M",
+    "title": "Throne of Glass",
+    "author": "Sarah J. Maas"
+  },
+  "the thursday murder club|richard osman": {
+    "asin": "0241988276",
+    "source": "openlibrary:/books/OL39552270M",
+    "title": "The Thursday Murder Club",
+    "author": "Richard Osman"
+  },
+  "twilight|stephenie meyer": {
+    "asin": "0759529892",
+    "source": "openlibrary:/books/OL51062926M",
+    "title": "Twilight",
+    "author": "Stephenie Meyer"
+  },
+  "arrows of the queen|mercedes lackey": {
+    "asin": "0886773407",
+    "source": "openlibrary:/books/OL11259942M",
+    "title": "Arrows of the Queen",
+    "author": "Mercedes Lackey"
+  },
+  "vampire academy|richelle mead": {
+    "asin": "1955876401",
+    "source": "openlibrary:/books/OL50727602M",
+    "title": "Vampire Academy",
+    "author": "Richelle Mead"
+  },
+  "shards of honor|lois mcmaster bujold": {
+    "asin": "1476781109",
+    "source": "openlibrary:/books/OL32010985M",
+    "title": "Shards of Honor",
+    "author": "Lois McMaster Bujold"
+  },
+  "the long way to a small, angry planet|becky chambers": {
+    "asin": "1473619777",
+    "source": "openlibrary:/books/OL53248503M",
+    "title": "The Long Way to a Small, Angry Planet",
+    "author": "Becky Chambers"
+  },
+  "every heart a doorway|seanan mcguire": {
+    "asin": "1643584596",
+    "source": "openlibrary:/books/OL52882718M",
+    "title": "Every Heart a Doorway",
+    "author": "Seanan McGuire"
+  },
+  "the eye of the world|robert jordan": {
+    "asin": "0812511816",
+    "source": "amazon-public:0812511816",
+    "title": "The Eye of the World",
+    "author": "Robert Jordan"
+  },
+  "triptych|karin slaughter": {
+    "asin": "0739333542",
+    "source": "openlibrary:/books/OL7914910M",
+    "title": "Triptych",
+    "author": "Karin Slaughter"
+  },
+  "the bear and the nightingale|katherine arden": {
+    "asin": "1101885947",
+    "source": "openlibrary:/books/OL26843942M",
+    "title": "The Bear and the Nightingale",
+    "author": "Katherine Arden"
+  },
+  "the last wish|andrzej sapkowski": {
+    "asin": "1637999135",
+    "source": "openlibrary:/books/OL57772217M",
+    "title": "The Last Wish",
+    "author": "Andrzej Sapkowski"
+  },
+  "the awakening|caroline peckham and susanne valenti": {
+    "asin": "1916926258",
+    "source": "openlibrary:/books/OL52627295M",
+    "title": "The Awakening",
+    "author": "Caroline Peckham and Susanne Valenti"
+  },
+  "a court of mist and fury|sarah j. maas": {
+    "asin": "1685085393",
+    "source": "openlibrary:/books/OL62416338M",
+    "title": "A Court of Mist and Fury",
+    "author": "Sarah J. Maas"
+  },
+  "a court of wings and ruin|sarah j. maas": {
+    "asin": "1420515756",
+    "source": "openlibrary:/books/OL51632678M",
+    "title": "A Court of Wings and Ruin",
+    "author": "Sarah J. Maas"
+  },
+  "a court of frost and starlight|sarah j. maas": {
+    "asin": "152880869X",
+    "source": "openlibrary:/books/OL41901604M",
+    "title": "A Court of Frost and Starlight",
+    "author": "Sarah J. Maas"
+  },
+  "a court of silver flames|sarah j. maas": {
+    "asin": "1639730842",
+    "source": "openlibrary:/books/OL59863863M",
+    "title": "A Court of Silver Flames",
+    "author": "Sarah J. Maas"
+  },
+  "the trouble with peace|joe abercrombie": {
+    "asin": "0316591726",
+    "source": "openlibrary:/books/OL37797271M",
+    "title": "The Trouble With Peace",
+    "author": "Joe Abercrombie"
+  },
+  "the wisdom of crowds|joe abercrombie": {
+    "asin": "0575095962",
+    "source": "openlibrary:/books/OL57632460M",
+    "title": "The Wisdom of Crowds",
+    "author": "Joe Abercrombie"
+  },
+  "shadow of night|deborah harkness": {
+    "asin": "0755384741",
+    "source": "openlibrary:/books/OL28327989M",
+    "title": "Shadow of Night",
+    "author": "Deborah Harkness"
+  },
+  "the book of life|deborah harkness": {
+    "asin": "0755384792",
+    "source": "openlibrary:/books/OL28561440M",
+    "title": "The Book of Life",
+    "author": "Deborah Harkness"
+  },
+  "time's convert|deborah harkness": {
+    "asin": "1643580795",
+    "source": "openlibrary:/books/OL27048659M",
+    "title": "Time's Convert",
+    "author": "Deborah Harkness"
+  },
+  "the black bird oracle|deborah harkness": {
+    "asin": "1035410206",
+    "source": "openlibrary:/books/OL57739442M",
+    "title": "The Black Bird Oracle",
+    "author": "Deborah Harkness"
+  },
+  "the arctic incident|eoin colfer": {
+    "asin": "1484443748",
+    "source": "openlibrary:/books/OL39630078M",
+    "title": "The Arctic Incident",
+    "author": "Eoin Colfer"
+  },
+  "the eternity code|eoin colfer": {
+    "asin": "1423145771",
+    "source": "openlibrary:/books/OL43355408M",
+    "title": "The Eternity Code",
+    "author": "Eoin Colfer"
+  },
+  "the opal deception|eoin colfer": {
+    "asin": "0141806044",
+    "source": "openlibrary:/books/OL40339720M",
+    "title": "The Opal Deception",
+    "author": "Eoin Colfer"
+  },
+  "the lost colony|eoin colfer": {
+    "asin": "1536409944",
+    "source": "openlibrary:/books/OL39650623M",
+    "title": "The Lost Colony",
+    "author": "Eoin Colfer"
+  },
+  "the time paradox|eoin colfer": {
+    "asin": "0140926844",
+    "source": "openlibrary:/books/OL40363390M",
+    "title": "The Time Paradox",
+    "author": "Eoin Colfer"
+  },
+  "the atlantis complex|eoin colfer": {
+    "asin": "1405664525",
+    "source": "openlibrary:/books/OL47753261M",
+    "title": "The Atlantis Complex",
+    "author": "Eoin Colfer"
+  },
+  "the last guardian|eoin colfer": {
+    "asin": "1432875663",
+    "source": "openlibrary:/books/OL50534031M",
+    "title": "The Last Guardian",
+    "author": "Eoin Colfer"
+  },
+  "the fowl twins|eoin colfer": {
+    "asin": "0008324832",
+    "source": "openlibrary:/books/OL39542720M",
+    "title": "The Fowl Twins",
+    "author": "Eoin Colfer"
+  },
+  "the fowl twins deny all charges|eoin colfer": {
+    "asin": "1368052290",
+    "source": "openlibrary:/books/OL32872046M",
+    "title": "The Fowl Twins Deny All Charges",
+    "author": "Eoin Colfer"
+  },
+  "a clash of kings|george r. r. martin": {
+    "asin": "146590221X",
+    "source": "openlibrary:/books/OL54229136M",
+    "title": "A Clash of Kings",
+    "author": "George R. R. Martin"
+  },
+  "a storm of swords|george r. r. martin": {
+    "asin": "0007424930",
+    "source": "openlibrary:/books/OL44125261M",
+    "title": "A Storm of Swords",
+    "author": "George R. R. Martin"
+  },
+  "a feast for crows|george r. r. martin": {
+    "asin": "0006486126",
+    "source": "openlibrary:/books/OL60616963M",
+    "title": "A Feast for Crows",
+    "author": "George R. R. Martin"
+  },
+  "a dance with dragons|george r. r. martin": {
+    "asin": "0007450621",
+    "source": "openlibrary:/books/OL44171765M",
+    "title": "A Dance with Dragons",
+    "author": "George R. R. Martin"
+  },
+  "a knight of the seven kingdoms|george r. r. martin": {
+    "asin": "0007500416",
+    "source": "openlibrary:/books/OL37163373M",
+    "title": "A Knight of the Seven Kingdoms",
+    "author": "George R. R. Martin"
+  },
+  "fire & blood|george r. r. martin": {
+    "asin": "0593357531",
+    "source": "openlibrary:/books/OL32445836M",
+    "title": "Fire & Blood",
+    "author": "George R. R. Martin"
+  },
+  "the atlas paradox|olivie blake": {
+    "asin": "1250855128",
+    "source": "openlibrary:/books/OL38064635M",
+    "title": "The Atlas Paradox",
+    "author": "Olivie Blake"
+  },
+  "the atlas complex|olivie blake": {
+    "asin": "1529095379",
+    "source": "openlibrary:/books/OL57535006M",
+    "title": "The Atlas Complex",
+    "author": "Olivie Blake"
+  },
+  "valour|john gwynne": {
+    "asin": "0330545760",
+    "source": "openlibrary:/books/OL26755520M",
+    "title": "Valour",
+    "author": "John Gwynne"
+  },
+  "ruin|john gwynne": {
+    "asin": "1447259629",
+    "source": "openlibrary:/books/OL47308941M",
+    "title": "Ruin",
+    "author": "John Gwynne"
+  },
+  "wrath|john gwynne": {
+    "asin": "0316386340",
+    "source": "openlibrary:/books/OL27225804M",
+    "title": "Wrath",
+    "author": "John Gwynne"
+  },
+  "a time of dread|john gwynne": {
+    "asin": "1549140914",
+    "source": "openlibrary:/books/OL31954731M",
+    "title": "A Time of Dread",
+    "author": "John Gwynne"
+  },
+  "a time of blood|john gwynne": {
+    "asin": "0316502286",
+    "source": "openlibrary:/books/OL36333594M",
+    "title": "A Time of Blood",
+    "author": "John Gwynne"
+  },
+  "a time of courage|john gwynne": {
+    "asin": "0316502316",
+    "source": "openlibrary:/books/OL28260371M",
+    "title": "A Time of Courage",
+    "author": "John Gwynne"
+  },
+  "the shadow of the gods|john gwynne": {
+    "asin": "035652857X",
+    "source": "openlibrary:/books/OL60789058M",
+    "title": "The Shadow of the Gods",
+    "author": "John Gwynne"
+  },
+  "the hunger of the gods|john gwynne": {
+    "asin": "0356528588",
+    "source": "openlibrary:/books/OL60789069M",
+    "title": "The Hunger of the Gods",
+    "author": "John Gwynne"
+  },
+  "the fury of the gods|john gwynne": {
+    "asin": "0356528596",
+    "source": "openlibrary:/books/OL60789085M",
+    "title": "The Fury of the Gods",
+    "author": "John Gwynne"
+  },
+  "a strange hymn|laura thalassa": {
+    "asin": "1974677362",
+    "source": "openlibrary:/books/OL28319473M",
+    "title": "A Strange Hymn",
+    "author": "Laura Thalassa"
+  },
+  "the emperor of evening stars|laura thalassa": {
+    "asin": "1981426949",
+    "source": "openlibrary:/books/OL29184313M",
+    "title": "The Emperor of Evening Stars",
+    "author": "Laura Thalassa"
+  },
+  "dark harmony|laura thalassa": {
+    "asin": "1793253439",
+    "source": "openlibrary:/books/OL33012986M",
+    "title": "Dark Harmony",
+    "author": "Laura Thalassa"
+  },
+  "finders keepers|stephen king": {
+    "asin": "1473698952",
+    "source": "openlibrary:/books/OL62545970M",
+    "title": "Finders Keepers",
+    "author": "Stephen King"
+  },
+  "end of watch|stephen king": {
+    "asin": "147364237X",
+    "source": "openlibrary:/books/OL62545993M",
+    "title": "End of Watch",
+    "author": "Stephen King"
+  },
+  "the outsider|stephen king": {
+    "asin": "1473676398",
+    "source": "openlibrary:/books/OL62546037M",
+    "title": "The Outsider",
+    "author": "Stephen King"
+  },
+  "shadows linger|glen cook": {
+    "asin": "1466831103",
+    "source": "openlibrary:/books/OL37397792M",
+    "title": "Shadows Linger",
+    "author": "Glen Cook"
+  },
+  "the white rose|glen cook": {
+    "asin": "1466831022",
+    "source": "openlibrary:/books/OL37397744M",
+    "title": "The White Rose",
+    "author": "Glen Cook"
+  },
+  "the silver spike|glen cook": {
+    "asin": "1466831049",
+    "source": "openlibrary:/books/OL37397745M",
+    "title": "The Silver Spike",
+    "author": "Glen Cook"
+  },
+  "shadow games|glen cook": {
+    "asin": "1466831030",
+    "source": "openlibrary:/books/OL37397743M",
+    "title": "Shadow Games",
+    "author": "Glen Cook"
+  },
+  "dreams of steel|glen cook": {
+    "asin": "0765382644",
+    "source": "openlibrary:/books/OL28325996M",
+    "title": "Dreams of Steel",
+    "author": "Glen Cook"
+  },
+  "bleak seasons|glen cook": {
+    "asin": "0312861052",
+    "source": "openlibrary:/books/OL794262M",
+    "title": "Bleak Seasons",
+    "author": "Glen Cook"
+  },
+  "she is the darkness|glen cook": {
+    "asin": "1466831073",
+    "source": "openlibrary:/books/OL37397789M",
+    "title": "She Is the Darkness",
+    "author": "Glen Cook"
+  },
+  "water sleeps|glen cook": {
+    "asin": "1250198070",
+    "source": "openlibrary:/books/OL28326507M",
+    "title": "Water Sleeps",
+    "author": "Glen Cook"
+  },
+  "soldiers live|glen cook": {
+    "asin": "0312890575",
+    "source": "openlibrary:/books/OL6779980M",
+    "title": "Soldiers Live",
+    "author": "Glen Cook"
+  },
+  "port of shadows|glen cook": {
+    "asin": "125029956X",
+    "source": "openlibrary:/books/OL9680994M",
+    "title": "Port of Shadows",
+    "author": "Glen Cook"
+  },
+  "lies weeping|glen cook": {
+    "asin": "1250398002",
+    "source": "openlibrary:/books/OL60587951M",
+    "title": "Lies Weeping",
+    "author": "Glen Cook"
+  },
+  "lover eternal|j. r. ward": {
+    "asin": "0451218043",
+    "source": "openlibrary:/books/OL17925764M",
+    "title": "Lover Eternal",
+    "author": "J. R. Ward"
+  },
+  "lover awakened|j. r. ward": {
+    "asin": "1429515082",
+    "source": "openlibrary:/books/OL24276014M",
+    "title": "Lover Awakened",
+    "author": "J. R. Ward"
+  },
+  "lover revealed|j. r. ward": {
+    "asin": "0451412354",
+    "source": "openlibrary:/books/OL20946241M",
+    "title": "Lover Revealed",
+    "author": "J. R. Ward"
+  },
+  "lover unbound|j. r. ward": {
+    "asin": "0451222350",
+    "source": "openlibrary:/books/OL23292664M",
+    "title": "Lover Unbound",
+    "author": "J. R. Ward"
+  },
+  "lover enshrined|j. r. ward": {
+    "asin": "0451222725",
+    "source": "openlibrary:/books/OL23292523M",
+    "title": "Lover Enshrined",
+    "author": "J. R. Ward"
+  },
+  "lover avenged|j. r. ward": {
+    "asin": "1101057971",
+    "source": "openlibrary:/books/OL44229857M",
+    "title": "Lover Avenged",
+    "author": "J. R. Ward"
+  },
+  "lover mine|j. r. ward": {
+    "asin": "0451229851",
+    "source": "openlibrary:/books/OL23981404M",
+    "title": "Lover Mine",
+    "author": "J. R. Ward"
+  },
+  "lover unleashed|j. r. ward": {
+    "asin": "0451233166",
+    "source": "openlibrary:/books/OL24610378M",
+    "title": "Lover Unleashed",
+    "author": "J. R. Ward"
+  },
+  "lover reborn|j. r. ward": {
+    "asin": "0451238281",
+    "source": "openlibrary:/books/OL26123270M",
+    "title": "Lover Reborn",
+    "author": "J. R. Ward"
+  },
+  "lover at last|j. r. ward": {
+    "asin": "0451239350",
+    "source": "openlibrary:/books/OL26085062M",
+    "title": "Lover at Last",
+    "author": "J. R. Ward"
+  },
+  "the king|j. r. ward": {
+    "asin": "0451417054",
+    "source": "openlibrary:/books/OL26920684M",
+    "title": "The King",
+    "author": "J. R. Ward"
+  },
+  "the shadows|j. r. ward": {
+    "asin": "0749959622",
+    "source": "openlibrary:/books/OL27513772M",
+    "title": "The Shadows",
+    "author": "J. R. Ward"
+  },
+  "the beast|j. r. ward": {
+    "asin": "0349409137",
+    "source": "openlibrary:/books/OL34626709M",
+    "title": "The Beast",
+    "author": "J. R. Ward"
+  },
+  "the chosen|j. r. ward": {
+    "asin": "0349409196",
+    "source": "openlibrary:/books/OL34642948M",
+    "title": "The Chosen",
+    "author": "J. R. Ward"
+  },
+  "the thief|j. r. ward": {
+    "asin": "0451475224",
+    "source": "openlibrary:/books/OL27271438M",
+    "title": "The Thief",
+    "author": "J. R. Ward"
+  },
+  "the savior|j. r. ward": {
+    "asin": "1501194941",
+    "source": "openlibrary:/books/OL27333835M",
+    "title": "The Savior",
+    "author": "J. R. Ward"
+  },
+  "the sinner|j. r. ward": {
+    "asin": "0349420505",
+    "source": "openlibrary:/books/OL30159405M",
+    "title": "The Sinner",
+    "author": "J. R. Ward"
+  },
+  "lover unveiled|j. r. ward": {
+    "asin": "0349420564",
+    "source": "openlibrary:/books/OL34693857M",
+    "title": "Lover Unveiled",
+    "author": "J. R. Ward"
+  },
+  "lover arisen|j. r. ward": {
+    "asin": "1982180005",
+    "source": "openlibrary:/books/OL38063768M",
+    "title": "Lover Arisen",
+    "author": "J. R. Ward"
+  },
+  "lassiter|j. r. ward": {
+    "asin": "1982180021",
+    "source": "openlibrary:/books/OL38966806M",
+    "title": "Lassiter",
+    "author": "J. R. Ward"
+  },
+  "blood kiss|j. r. ward": {
+    "asin": "0349409277",
+    "source": "openlibrary:/books/OL34609418M",
+    "title": "Blood Kiss",
+    "author": "J. R. Ward"
+  },
+  "blood vow|j. r. ward": {
+    "asin": "045147533X",
+    "source": "openlibrary:/books/OL26211741M",
+    "title": "Blood Vow",
+    "author": "J. R. Ward"
+  },
+  "blood fury|j. r. ward": {
+    "asin": "0349409331",
+    "source": "openlibrary:/books/OL34634307M",
+    "title": "Blood Fury",
+    "author": "J. R. Ward"
+  },
+  "blood truth|j. r. ward": {
+    "asin": "1501195042",
+    "source": "openlibrary:/books/OL41176191M",
+    "title": "Blood Truth",
+    "author": "J. R. Ward"
+  },
+  "for we are many|dennis e. taylor": {
+    "asin": "1668221594",
+    "source": "openlibrary:/books/OL61305506M",
+    "title": "For We Are Many",
+    "author": "Dennis E. Taylor"
+  },
+  "all these worlds|dennis e. taylor": {
+    "asin": "154366203X",
+    "source": "openlibrary:/books/OL31493393M",
+    "title": "All These Worlds",
+    "author": "Dennis E. Taylor"
+  },
+  "heaven's river|dennis e. taylor": {
+    "asin": "1713621339",
+    "source": "openlibrary:/books/OL32890884M",
+    "title": "Heaven's River",
+    "author": "Dennis E. Taylor"
+  },
+  "not till we are lost|dennis e. taylor": {
+    "asin": "1680683586",
+    "source": "openlibrary:/books/OL58751042M",
+    "title": "Not Till We Are Lost",
+    "author": "Dennis E. Taylor"
+  },
+  "arm of the sphinx|josiah bancroft": {
+    "asin": "0316517976",
+    "source": "openlibrary:/books/OL51332768M",
+    "title": "Arm of the Sphinx",
+    "author": "Josiah Bancroft"
+  },
+  "the hod king|josiah bancroft": {
+    "asin": "0356510840",
+    "source": "openlibrary:/books/OL27256869M",
+    "title": "The Hod King",
+    "author": "Josiah Bancroft"
+  },
+  "the fall of babel|josiah bancroft": {
+    "asin": "0316518182",
+    "source": "openlibrary:/books/OL36362038M",
+    "title": "The Fall of Babel",
+    "author": "Josiah Bancroft"
+  },
+  "the traitor queen|danielle l. jensen": {
+    "asin": "0593975219",
+    "source": "openlibrary:/books/OL52221620M",
+    "title": "The Traitor Queen",
+    "author": "Danielle L. Jensen"
+  },
+  "the inadequate heir|danielle l. jensen": {
+    "asin": "0593975243",
+    "source": "openlibrary:/books/OL52206178M",
+    "title": "The Inadequate Heir",
+    "author": "Danielle L. Jensen"
+  },
+  "the twisted throne|danielle l. jensen": {
+    "asin": "0593875303",
+    "source": "openlibrary:/books/OL62098539M",
+    "title": "The Twisted Throne",
+    "author": "Danielle L. Jensen"
+  },
+  "the tempest blade|danielle l. jensen": {
+    "asin": "1405968958",
+    "source": "openlibrary:/books/OL61864726M",
+    "title": "The Tempest Blade",
+    "author": "Danielle L. Jensen"
+  },
+  "the viscount who loved me|julia quinn": {
+    "asin": "1417661550",
+    "source": "openlibrary:/books/OL8459352M",
+    "title": "The Viscount Who Loved Me",
+    "author": "Julia Quinn"
+  },
+  "an offer from a gentleman|julia quinn": {
+    "asin": "0349429448",
+    "source": "openlibrary:/books/OL31988105M",
+    "title": "An Offer from a Gentleman",
+    "author": "Julia Quinn"
+  },
+  "romancing mister bridgerton|julia quinn": {
+    "asin": "0062424106",
+    "source": "openlibrary:/books/OL35947087M",
+    "title": "Romancing Mister Bridgerton",
+    "author": "Julia Quinn"
+  },
+  "to sir phillip, with love|julia quinn": {
+    "asin": "1587245361",
+    "source": "openlibrary:/books/OL39208016M",
+    "title": "To Sir Phillip, With Love",
+    "author": "Julia Quinn"
+  },
+  "when he was wicked|julia quinn": {
+    "asin": "006314137X",
+    "source": "openlibrary:/books/OL32339920M",
+    "title": "When He Was Wicked",
+    "author": "Julia Quinn"
+  },
+  "it’s in his kiss|julia quinn": {
+    "asin": "0060855681",
+    "source": "openlibrary:/books/OL37352454M",
+    "title": "It’s in His Kiss",
+    "author": "Julia Quinn"
+  },
+  "on the way to the wedding|julia quinn": {
+    "asin": "0749907940",
+    "source": "openlibrary:/books/OL34580388M",
+    "title": "On the Way to the Wedding",
+    "author": "Julia Quinn"
+  },
+  "the bridgertons: happily ever after|julia quinn": {
+    "asin": "8024950634",
+    "source": "openlibrary:/books/OL62258378M",
+    "title": "The Bridgertons: Happily Ever After",
+    "author": "Julia Quinn"
+  },
+  "queen charlotte|julia quinn": {
+    "asin": "0063307278",
+    "source": "openlibrary:/books/OL57565492M",
+    "title": "Queen Charlotte",
+    "author": "Julia Quinn"
+  },
+  "because of miss bridgerton|julia quinn": {
+    "asin": "0063270080",
+    "source": "openlibrary:/books/OL36693863M",
+    "title": "Because of Miss Bridgerton",
+    "author": "Julia Quinn"
+  },
+  "the girl with the make-believe husband|julia quinn": {
+    "asin": "0063270099",
+    "source": "openlibrary:/books/OL37732443M",
+    "title": "The Girl with the Make-Believe Husband",
+    "author": "Julia Quinn"
+  },
+  "the other miss bridgerton|julia quinn": {
+    "asin": "0063270102",
+    "source": "openlibrary:/books/OL37732441M",
+    "title": "The Other Miss Bridgerton",
+    "author": "Julia Quinn"
+  },
+  "first comes scandal|julia quinn": {
+    "asin": "0063270110",
+    "source": "openlibrary:/books/OL36693864M",
+    "title": "First Comes Scandal",
+    "author": "Julia Quinn"
+  },
+  "the obelisk gate|n. k. jemisin": {
+    "asin": "1405537272",
+    "source": "openlibrary:/books/OL61597092M",
+    "title": "The Obelisk Gate",
+    "author": "N. K. Jemisin"
+  },
+  "the stone sky|n. k. jemisin": {
+    "asin": "1405537280",
+    "source": "openlibrary:/books/OL62086254M",
+    "title": "The Stone Sky",
+    "author": "N. K. Jemisin"
+  },
+  "prince's gambit|c. s. pacat": {
+    "asin": "1543643396",
+    "source": "openlibrary:/books/OL40218786M",
+    "title": "Prince's Gambit",
+    "author": "C. S. Pacat"
+  },
+  "kings rising|c. s. pacat": {
+    "asin": "0425273997",
+    "source": "openlibrary:/books/OL32259339M",
+    "title": "Kings Rising",
+    "author": "C. S. Pacat"
+  },
+  "the summer palace and other stories|c. s. pacat": {
+    "asin": "0987622331",
+    "source": "openlibrary:/books/OL27849893M",
+    "title": "The Summer Palace and Other Stories",
+    "author": "C. S. Pacat"
+  },
+  "legendary|stephanie garber": {
+    "asin": "1250368898",
+    "source": "openlibrary:/books/OL61697437M",
+    "title": "Legendary",
+    "author": "Stephanie Garber"
+  },
+  "finale|stephanie garber": {
+    "asin": "1399721984",
+    "source": "openlibrary:/books/OL50628663M",
+    "title": "Finale",
+    "author": "Stephanie Garber"
+  },
+  "spectacular|stephanie garber": {
+    "asin": "1399721518",
+    "source": "openlibrary:/books/OL53271504M",
+    "title": "Spectacular",
+    "author": "Stephanie Garber"
+  },
+  "children of ruin|adrian tchaikovsky": {
+    "asin": "150986587X",
+    "source": "openlibrary:/books/OL28331792M",
+    "title": "Children of Ruin",
+    "author": "Adrian Tchaikovsky"
+  },
+  "children of memory|adrian tchaikovsky": {
+    "asin": "1529087198",
+    "source": "openlibrary:/books/OL46059706M",
+    "title": "Children of Memory",
+    "author": "Adrian Tchaikovsky"
+  },
+  "the murder on the links|agatha christie": {
+    "asin": "1963622308",
+    "source": "openlibrary:/books/OL57600176M",
+    "title": "The Murder on the Links",
+    "author": "Agatha Christie"
+  },
+  "the murder of roger ackroyd|agatha christie": {
+    "asin": "0062165496",
+    "source": "openlibrary:/books/OL56878030M",
+    "title": "The Murder of Roger Ackroyd",
+    "author": "Agatha Christie"
+  },
+  "the big four|agatha christie": {
+    "asin": "1990089747",
+    "source": "openlibrary:/books/OL51444045M",
+    "title": "The Big Four",
+    "author": "Agatha Christie"
+  },
+  "the mystery of the blue train|agatha christie": {
+    "asin": "1420981889",
+    "source": "openlibrary:/books/OL53393355M",
+    "title": "The Mystery of the Blue Train",
+    "author": "Agatha Christie"
+  },
+  "peril at end house|agatha christie": {
+    "asin": "0396081118",
+    "source": "openlibrary:/books/OL60314503M",
+    "title": "Peril at End House",
+    "author": "Agatha Christie"
+  },
+  "lord edgware dies|agatha christie": {
+    "asin": "1729731627",
+    "source": "openlibrary:/books/OL43335972M",
+    "title": "Lord Edgware Dies",
+    "author": "Agatha Christie"
+  },
+  "murder on the orient express|agatha christie": {
+    "asin": "0063375834",
+    "source": "openlibrary:/books/OL60363044M",
+    "title": "Murder on the Orient Express",
+    "author": "Agatha Christie"
+  },
+  "death in the clouds|agatha christie": {
+    "asin": "0007659482",
+    "source": "openlibrary:/books/OL42879483M",
+    "title": "Death in the Clouds",
+    "author": "Agatha Christie"
+  },
+  "the a.b.c. murders|agatha christie": {
+    "asin": "1444802534",
+    "source": "openlibrary:/books/OL52329991M",
+    "title": "The A.B.C. Murders",
+    "author": "Agatha Christie"
+  },
+  "murder in mesopotamia|agatha christie": {
+    "asin": "0007422504",
+    "source": "openlibrary:/books/OL44122795M",
+    "title": "Murder in Mesopotamia",
+    "author": "Agatha Christie"
+  },
+  "cards on the table|agatha christie": {
+    "asin": "1530822394",
+    "source": "openlibrary:/books/OL56366525M",
+    "title": "Cards on the Table",
+    "author": "Agatha Christie"
+  },
+  "dumb witness|agatha christie": {
+    "asin": "0008737975",
+    "source": "openlibrary:/books/OL57548602M",
+    "title": "Dumb Witness",
+    "author": "Agatha Christie"
+  },
+  "death on the nile|agatha christie": {
+    "asin": "0008249687",
+    "source": "openlibrary:/books/OL30687965M",
+    "title": "Death on the Nile",
+    "author": "Agatha Christie"
+  },
+  "appointment with death|agatha christie": {
+    "asin": "044000246X",
+    "source": "openlibrary:/books/OL49347809M",
+    "title": "Appointment with Death",
+    "author": "Agatha Christie"
+  },
+  "hercule poirot's christmas|agatha christie": {
+    "asin": "0063376970",
+    "source": "openlibrary:/books/OL56872504M",
+    "title": "Hercule Poirot's Christmas",
+    "author": "Agatha Christie"
+  },
+  "sad cypress|agatha christie": {
+    "asin": "0006133088",
+    "source": "openlibrary:/books/OL47082639M",
+    "title": "Sad Cypress",
+    "author": "Agatha Christie"
+  },
+  "one, two, buckle my shoe|agatha christie": {
+    "asin": "1522805486",
+    "source": "openlibrary:/books/OL56367127M",
+    "title": "One, Two, Buckle My Shoe",
+    "author": "Agatha Christie"
+  },
+  "evil under the sun|agatha christie": {
+    "asin": "0671451405",
+    "source": "openlibrary:/books/OL47326588M",
+    "title": "Evil Under the Sun",
+    "author": "Agatha Christie"
+  },
+  "five little pigs|agatha christie": {
+    "asin": "1530589355",
+    "source": "openlibrary:/books/OL55915834M",
+    "title": "Five Little Pigs",
+    "author": "Agatha Christie"
+  },
+  "the hollow|agatha christie": {
+    "asin": "0063376180",
+    "source": "openlibrary:/books/OL50726423M",
+    "title": "The Hollow",
+    "author": "Agatha Christie"
+  },
+  "taken at the flood|agatha christie": {
+    "asin": "0006140238",
+    "source": "openlibrary:/books/OL9212543M",
+    "title": "Taken at the Flood",
+    "author": "Agatha Christie"
+  },
+  "mrs mcginty's dead|agatha christie": {
+    "asin": "0063376911",
+    "source": "openlibrary:/books/OL57564184M",
+    "title": "Mrs McGinty's Dead",
+    "author": "Agatha Christie"
+  },
+  "after the funeral|agatha christie": {
+    "asin": "0006134890",
+    "source": "openlibrary:/books/OL7257794M",
+    "title": "After the Funeral",
+    "author": "Agatha Christie"
+  },
+  "hickory dickory dock|agatha christie": {
+    "asin": "0007493614",
+    "source": "openlibrary:/books/OL31990718M",
+    "title": "Hickory Dickory Dock",
+    "author": "Agatha Christie"
+  },
+  "dead man's folly|agatha christie": {
+    "asin": "0007422253",
+    "source": "openlibrary:/books/OL44122833M",
+    "title": "Dead Man's Folly",
+    "author": "Agatha Christie"
+  },
+  "cat among the pigeons|agatha christie": {
+    "asin": "0008737983",
+    "source": "openlibrary:/books/OL57529805M",
+    "title": "Cat Among the Pigeons",
+    "author": "Agatha Christie"
+  },
+  "the clocks|agatha christie": {
+    "asin": "0063376954",
+    "source": "openlibrary:/books/OL56871667M",
+    "title": "The Clocks",
+    "author": "Agatha Christie"
+  },
+  "third girl|agatha christie": {
+    "asin": "0063376962",
+    "source": "openlibrary:/books/OL56872546M",
+    "title": "Third Girl",
+    "author": "Agatha Christie"
+  },
+  "hallowe'en party|agatha christie": {
+    "asin": "006337689X",
+    "source": "openlibrary:/books/OL57571526M",
+    "title": "Hallowe'en Party",
+    "author": "Agatha Christie"
+  },
+  "elephants can remember|agatha christie": {
+    "asin": "0563510412",
+    "source": "openlibrary:/books/OL60414171M",
+    "title": "Elephants Can Remember",
+    "author": "Agatha Christie"
+  },
+  "curtain|agatha christie": {
+    "asin": "0063376989",
+    "source": "openlibrary:/books/OL56872073M",
+    "title": "Curtain",
+    "author": "Agatha Christie"
+  },
+  "the murder at the vicarage|agatha christie": {
+    "asin": "0063440016",
+    "source": "openlibrary:/books/OL57602542M",
+    "title": "The Murder at the Vicarage",
+    "author": "Agatha Christie"
+  },
+  "the body in the library|agatha christie": {
+    "asin": "0671900846",
+    "source": "openlibrary:/books/OL60311878M",
+    "title": "The Body in the Library",
+    "author": "Agatha Christie"
+  },
+  "the moving finger|agatha christie": {
+    "asin": "1537054309",
+    "source": "openlibrary:/books/OL56420339M",
+    "title": "The Moving Finger",
+    "author": "Agatha Christie"
+  },
+  "a murder is announced|agatha christie": {
+    "asin": "0006134459",
+    "source": "openlibrary:/books/OL7257788M",
+    "title": "A Murder Is Announced",
+    "author": "Agatha Christie"
+  },
+  "they do it with mirrors|agatha christie": {
+    "asin": "0007310897",
+    "source": "openlibrary:/books/OL44128339M",
+    "title": "They Do It with Mirrors",
+    "author": "Agatha Christie"
+  },
+  "a pocket full of rye|agatha christie": {
+    "asin": "0671823752",
+    "source": "openlibrary:/books/OL53462200M",
+    "title": "A Pocket Full of Rye",
+    "author": "Agatha Christie"
+  },
+  "4.50 from paddington|agatha christie": {
+    "asin": "0062040677",
+    "source": "openlibrary:/books/OL37357249M",
+    "title": "4.50 from Paddington",
+    "author": "Agatha Christie"
+  },
+  "the mirror crack'd from side to side|agatha christie": {
+    "asin": "000861198X",
+    "source": "openlibrary:/books/OL46075668M",
+    "title": "The Mirror Crack'd from Side to Side",
+    "author": "Agatha Christie"
+  },
+  "a caribbean mystery|agatha christie": {
+    "asin": "0671705989",
+    "source": "openlibrary:/books/OL47127396M",
+    "title": "A Caribbean Mystery",
+    "author": "Agatha Christie"
+  },
+  "at bertram's hotel|agatha christie": {
+    "asin": "0008612005",
+    "source": "openlibrary:/books/OL46075840M",
+    "title": "At Bertram's Hotel",
+    "author": "Agatha Christie"
+  },
+  "nemesis|agatha christie": {
+    "asin": "0671824678",
+    "source": "openlibrary:/books/OL52956461M",
+    "title": "Nemesis",
+    "author": "Agatha Christie"
+  },
+  "sleeping murder|agatha christie": {
+    "asin": "0517373378",
+    "source": "openlibrary:/books/OL50987393M",
+    "title": "Sleeping Murder",
+    "author": "Agatha Christie"
+  },
+  "the secret adversary|agatha christie": {
+    "asin": "1735778931",
+    "source": "openlibrary:/books/OL52103134M",
+    "title": "The Secret Adversary",
+    "author": "Agatha Christie"
+  },
+  "and then there were none|agatha christie": {
+    "asin": "1461139368",
+    "source": "openlibrary:/books/OL50453605M",
+    "title": "And Then There Were None",
+    "author": "Agatha Christie"
+  },
+  "crooked house|agatha christie": {
+    "asin": "0007136862",
+    "source": "openlibrary:/books/OL7262033M",
+    "title": "Crooked House",
+    "author": "Agatha Christie"
+  },
+  "the pale horse|agatha christie": {
+    "asin": "1536960004",
+    "source": "openlibrary:/books/OL54992256M",
+    "title": "The Pale Horse",
+    "author": "Agatha Christie"
+  },
+  "the silkworm|robert galbraith": {
+    "asin": "1405514973",
+    "source": "openlibrary:/books/OL33443048M",
+    "title": "The Silkworm",
+    "author": "Robert Galbraith"
+  },
+  "career of evil|robert galbraith": {
+    "asin": "0316353728",
+    "source": "openlibrary:/books/OL44269909M",
+    "title": "Career of Evil",
+    "author": "Robert Galbraith"
+  },
+  "lethal white|robert galbraith": {
+    "asin": "0316491594",
+    "source": "openlibrary:/books/OL43118357M",
+    "title": "Lethal White",
+    "author": "Robert Galbraith"
+  },
+  "troubled blood|robert galbraith": {
+    "asin": "0751579955",
+    "source": "openlibrary:/books/OL34699925M",
+    "title": "Troubled Blood",
+    "author": "Robert Galbraith"
+  },
+  "the ink black heart|robert galbraith": {
+    "asin": "1668600846",
+    "source": "openlibrary:/books/OL38572814M",
+    "title": "The Ink Black Heart",
+    "author": "Robert Galbraith"
+  },
+  "the running grave|robert galbraith": {
+    "asin": "8410340690",
+    "source": "openlibrary:/books/OL60893125M",
+    "title": "The Running Grave",
+    "author": "Robert Galbraith"
+  },
+  "the hallmarked man|robert galbraith": {
+    "asin": "0316586021",
+    "source": "openlibrary:/books/OL57592301M",
+    "title": "The Hallmarked Man",
+    "author": "Robert Galbraith"
+  },
+  "warbreaker|brandon sanderson": {
+    "asin": "1501915924",
+    "source": "openlibrary:/books/OL57511490M",
+    "title": "Warbreaker",
+    "author": "Brandon Sanderson"
+  },
+  "elantris|brandon sanderson": {
+    "asin": "1501902067",
+    "source": "openlibrary:/books/OL57477383M",
+    "title": "Elantris",
+    "author": "Brandon Sanderson"
+  },
+  "the emperor's soul|brandon sanderson": {
+    "asin": "193857060X",
+    "source": "openlibrary:/books/OL61279897M",
+    "title": "The Emperor's Soul",
+    "author": "Brandon Sanderson"
+  },
+  "tress of the emerald sea|brandon sanderson": {
+    "asin": "1938570421",
+    "source": "openlibrary:/books/OL57511495M",
+    "title": "Tress of the Emerald Sea",
+    "author": "Brandon Sanderson"
+  },
+  "yumi and the nightmare painter|brandon sanderson": {
+    "asin": "1938570448",
+    "source": "openlibrary:/books/OL57511518M",
+    "title": "Yumi and the Nightmare Painter",
+    "author": "Brandon Sanderson"
+  },
+  "the sunlit man|brandon sanderson": {
+    "asin": "1938570456",
+    "source": "openlibrary:/books/OL57511541M",
+    "title": "The Sunlit Man",
+    "author": "Brandon Sanderson"
+  },
+  "soulsmith|will wight": {
+    "asin": "0989671771",
+    "source": "openlibrary:/books/OL26880173M",
+    "title": "Soulsmith",
+    "author": "Will Wight"
+  },
+  "blackflame|will wight": {
+    "asin": "098967178X",
+    "source": "openlibrary:/books/OL30128369M",
+    "title": "Blackflame",
+    "author": "Will Wight"
+  },
+  "skysworn|will wight": {
+    "asin": "0999851101",
+    "source": "openlibrary:/books/OL27281487M",
+    "title": "Skysworn",
+    "author": "Will Wight"
+  },
+  "ghostwater|will wight": {
+    "asin": "099985111X",
+    "source": "openlibrary:/books/OL26878082M",
+    "title": "Ghostwater",
+    "author": "Will Wight"
+  },
+  "underlord|will wight": {
+    "asin": "1959001175",
+    "source": "openlibrary:/books/OL49095675M",
+    "title": "Underlord",
+    "author": "Will Wight"
+  },
+  "uncrowned|will wight": {
+    "asin": "1959001868",
+    "source": "openlibrary:/books/OL60938543M",
+    "title": "Uncrowned",
+    "author": "Will Wight"
+  },
+  "wintersteel|will wight": {
+    "asin": "1959001159",
+    "source": "openlibrary:/books/OL49125628M",
+    "title": "Wintersteel",
+    "author": "Will Wight"
+  },
+  "bloodline|will wight": {
+    "asin": "1959001140",
+    "source": "openlibrary:/books/OL49170714M",
+    "title": "Bloodline",
+    "author": "Will Wight"
+  },
+  "reaper|will wight": {
+    "asin": "1959001132",
+    "source": "openlibrary:/books/OL49125618M",
+    "title": "Reaper",
+    "author": "Will Wight"
+  },
+  "dreadgod|will wight": {
+    "asin": "1959001124",
+    "source": "openlibrary:/books/OL49072542M",
+    "title": "Dreadgod",
+    "author": "Will Wight"
+  },
+  "waybound|will wight": {
+    "asin": "1959001671",
+    "source": "openlibrary:/books/OL57563229M",
+    "title": "Waybound",
+    "author": "Will Wight"
+  },
+  "threshold|will wight": {
+    "asin": "1959001922",
+    "source": "openlibrary:/books/OL60932969M",
+    "title": "Threshold",
+    "author": "Will Wight"
+  },
+  "two serpents rise|max gladstone": {
+    "asin": "1470898365",
+    "source": "openlibrary:/books/OL39309676M",
+    "title": "Two Serpents Rise",
+    "author": "Max Gladstone"
+  },
+  "full fathom five|max gladstone": {
+    "asin": "1466826150",
+    "source": "openlibrary:/books/OL37403554M",
+    "title": "Full Fathom Five",
+    "author": "Max Gladstone"
+  },
+  "last first snow|max gladstone": {
+    "asin": "1466868406",
+    "source": "openlibrary:/books/OL37415271M",
+    "title": "Last First Snow",
+    "author": "Max Gladstone"
+  },
+  "four roads cross|max gladstone": {
+    "asin": "125081345X",
+    "source": "openlibrary:/books/OL36011757M",
+    "title": "Four Roads Cross",
+    "author": "Max Gladstone"
+  },
+  "the ruin of angels|max gladstone": {
+    "asin": "0765395894",
+    "source": "openlibrary:/books/OL26797370M",
+    "title": "The Ruin of Angels",
+    "author": "Max Gladstone"
+  },
+  "dead country|max gladstone": {
+    "asin": "0765395908",
+    "source": "openlibrary:/books/OL38964079M",
+    "title": "Dead Country",
+    "author": "Max Gladstone"
+  },
+  "wicked problems|max gladstone": {
+    "asin": "0765395932",
+    "source": "openlibrary:/books/OL51091012M",
+    "title": "Wicked Problems",
+    "author": "Max Gladstone"
+  },
+  "dead hand rule|max gladstone": {
+    "asin": "1250290376",
+    "source": "openlibrary:/books/OL57606571M",
+    "title": "Dead Hand Rule",
+    "author": "Max Gladstone"
+  },
+  "house of sky and breath|sarah j. maas": {
+    "asin": "1526666103",
+    "source": "openlibrary:/books/OL49274510M",
+    "title": "House of Sky and Breath",
+    "author": "Sarah J. Maas"
+  },
+  "house of flame and shadow|sarah j. maas": {
+    "asin": "1639736441",
+    "source": "openlibrary:/books/OL62591504M",
+    "title": "House of Flame and Shadow",
+    "author": "Sarah J. Maas"
+  },
+  "the drawing of the three|stephen king": {
+    "asin": "1444723456",
+    "source": "openlibrary:/books/OL62545616M",
+    "title": "The Drawing of the Three",
+    "author": "Stephen King"
+  },
+  "wizard and glass|stephen king": {
+    "asin": "1444723472",
+    "source": "openlibrary:/books/OL62545793M",
+    "title": "Wizard and Glass",
+    "author": "Stephen King"
+  },
+  "wolves of the calla|stephen king": {
+    "asin": "1444723480",
+    "source": "openlibrary:/books/OL62550673M",
+    "title": "Wolves of the Calla",
+    "author": "Stephen King"
+  },
+  "song of susannah|stephen king": {
+    "asin": "1444723499",
+    "source": "openlibrary:/books/OL62545666M",
+    "title": "Song of Susannah",
+    "author": "Stephen King"
+  },
+  "the dark tower|stephen king": {
+    "asin": "1444723502",
+    "source": "openlibrary:/books/OL62545825M",
+    "title": "The Dark Tower",
+    "author": "Stephen King"
+  },
+  "the wind through the keyhole|stephen king": {
+    "asin": "1444731726",
+    "source": "openlibrary:/books/OL62550484M",
+    "title": "The Wind Through the Keyhole",
+    "author": "Stephen King"
+  },
+  "men at arms|terry pratchett": {
+    "asin": "0063373750",
+    "source": "openlibrary:/books/OL50726737M",
+    "title": "Men at Arms",
+    "author": "Terry Pratchett"
+  },
+  "feet of clay|terry pratchett": {
+    "asin": "0063373858",
+    "source": "openlibrary:/books/OL50711312M",
+    "title": "Feet of Clay",
+    "author": "Terry Pratchett"
+  },
+  "jingo|terry pratchett": {
+    "asin": "0063374226",
+    "source": "openlibrary:/books/OL50715030M",
+    "title": "Jingo",
+    "author": "Terry Pratchett"
+  },
+  "the fifth elephant|terry pratchett": {
+    "asin": "0063374234",
+    "source": "openlibrary:/books/OL50719126M",
+    "title": "The Fifth Elephant",
+    "author": "Terry Pratchett"
+  },
+  "night watch|terry pratchett": {
+    "asin": "0753140500",
+    "source": "openlibrary:/books/OL61281278M",
+    "title": "Night Watch",
+    "author": "Terry Pratchett"
+  },
+  "thud!|terry pratchett": {
+    "asin": "0060815221",
+    "source": "openlibrary:/books/OL9237007M",
+    "title": "Thud!",
+    "author": "Terry Pratchett"
+  },
+  "snuff|terry pratchett": {
+    "asin": "0062099833",
+    "source": "openlibrary:/books/OL57508076M",
+    "title": "Snuff",
+    "author": "Terry Pratchett"
+  },
+  "reaper man|terry pratchett": {
+    "asin": "0063393247",
+    "source": "openlibrary:/books/OL57566973M",
+    "title": "Reaper Man",
+    "author": "Terry Pratchett"
+  },
+  "soul music|terry pratchett": {
+    "asin": "0063393255",
+    "source": "openlibrary:/books/OL57566962M",
+    "title": "Soul Music",
+    "author": "Terry Pratchett"
+  },
+  "hogfather|terry pratchett": {
+    "asin": "0552154288",
+    "source": "openlibrary:/books/OL7815568M",
+    "title": "Hogfather",
+    "author": "Terry Pratchett"
+  },
+  "thief of time|terry pratchett": {
+    "asin": "1407037463",
+    "source": "openlibrary:/books/OL40359052M",
+    "title": "Thief of Time",
+    "author": "Terry Pratchett"
+  },
+  "making money|terry pratchett": {
+    "asin": "0061554456",
+    "source": "openlibrary:/books/OL57508047M",
+    "title": "Making Money",
+    "author": "Terry Pratchett"
+  },
+  "raising steam|terry pratchett": {
+    "asin": "1804990485",
+    "source": "openlibrary:/books/OL39953956M",
+    "title": "Raising Steam",
+    "author": "Terry Pratchett"
+  },
+  "the light fantastic|terry pratchett": {
+    "asin": "006337367X",
+    "source": "openlibrary:/books/OL50717907M",
+    "title": "The Light Fantastic",
+    "author": "Terry Pratchett"
+  },
+  "sourcery|terry pratchett": {
+    "asin": "006337370X",
+    "source": "openlibrary:/books/OL50733373M",
+    "title": "Sourcery",
+    "author": "Terry Pratchett"
+  },
+  "eric|terry pratchett": {
+    "asin": "006337501X",
+    "source": "openlibrary:/books/OL50717917M",
+    "title": "Eric",
+    "author": "Terry Pratchett"
+  },
+  "interesting times|terry pratchett": {
+    "asin": "0063373718",
+    "source": "openlibrary:/books/OL50729695M",
+    "title": "Interesting Times",
+    "author": "Terry Pratchett"
+  },
+  "the last continent|terry pratchett": {
+    "asin": "0063373726",
+    "source": "openlibrary:/books/OL50721911M",
+    "title": "The Last Continent",
+    "author": "Terry Pratchett"
+  },
+  "the last hero|terry pratchett": {
+    "asin": "0575110333",
+    "source": "openlibrary:/books/OL48142783M",
+    "title": "The Last Hero",
+    "author": "Terry Pratchett"
+  },
+  "wyrd sisters|terry pratchett": {
+    "asin": "0063385554",
+    "source": "openlibrary:/books/OL51096088M",
+    "title": "Wyrd Sisters",
+    "author": "Terry Pratchett"
+  },
+  "witches abroad|terry pratchett": {
+    "asin": "0063385562",
+    "source": "openlibrary:/books/OL51093304M",
+    "title": "Witches Abroad",
+    "author": "Terry Pratchett"
+  },
+  "lords and ladies|terry pratchett": {
+    "asin": "0552144177",
+    "source": "openlibrary:/books/OL44643676M",
+    "title": "Lords and Ladies",
+    "author": "Terry Pratchett"
+  },
+  "maskerade|terry pratchett": {
+    "asin": "0063385619",
+    "source": "openlibrary:/books/OL51095976M",
+    "title": "Maskerade",
+    "author": "Terry Pratchett"
+  },
+  "carpe jugulum|terry pratchett": {
+    "asin": "1435274687",
+    "source": "openlibrary:/books/OL56910569M",
+    "title": "Carpe Jugulum",
+    "author": "Terry Pratchett"
+  },
+  "the wee free men|terry pratchett": {
+    "asin": "0063442132",
+    "source": "openlibrary:/books/OL57577508M",
+    "title": "The Wee Free Men",
+    "author": "Terry Pratchett"
+  },
+  "a hat full of sky|terry pratchett": {
+    "asin": "0063442159",
+    "source": "openlibrary:/books/OL57574294M",
+    "title": "A Hat Full of Sky",
+    "author": "Terry Pratchett"
+  },
+  "wintersmith|terry pratchett": {
+    "asin": "0063442167",
+    "source": "openlibrary:/books/OL57596404M",
+    "title": "Wintersmith",
+    "author": "Terry Pratchett"
+  },
+  "i shall wear midnight|terry pratchett": {
+    "asin": "0552579173",
+    "source": "openlibrary:/books/OL50622241M",
+    "title": "I Shall Wear Midnight",
+    "author": "Terry Pratchett"
+  },
+  "the shepherd's crown|terry pratchett": {
+    "asin": "0552579181",
+    "source": "openlibrary:/books/OL50643834M",
+    "title": "The Shepherd's Crown",
+    "author": "Terry Pratchett"
+  },
+  "insurgent|veronica roth": {
+    "asin": "0008662231",
+    "source": "openlibrary:/books/OL50657801M",
+    "title": "Insurgent",
+    "author": "Veronica Roth"
+  },
+  "allegiant|veronica roth": {
+    "asin": "0062287338",
+    "source": "openlibrary:/books/OL61027557M",
+    "title": "Allegiant",
+    "author": "Veronica Roth"
+  },
+  "we can be mended|veronica roth": {
+    "asin": "0062861956",
+    "source": "openlibrary:/books/OL35953535M",
+    "title": "We Can Be Mended",
+    "author": "Veronica Roth"
+  },
+  "fool moon|jim butcher": {
+    "asin": "0356242609",
+    "source": "openlibrary:/books/OL33380991M",
+    "title": "Fool Moon",
+    "author": "Jim Butcher"
+  },
+  "grave peril|jim butcher": {
+    "asin": "1531890016",
+    "source": "openlibrary:/books/OL31990340M",
+    "title": "Grave Peril",
+    "author": "Jim Butcher"
+  },
+  "summer knight|jim butcher": {
+    "asin": "0356243389",
+    "source": "openlibrary:/books/OL33356451M",
+    "title": "Summer Knight",
+    "author": "Jim Butcher"
+  },
+  "death masks|jim butcher": {
+    "asin": "1611763940",
+    "source": "openlibrary:/books/OL37809626M",
+    "title": "Death Masks",
+    "author": "Jim Butcher"
+  },
+  "blood rites|jim butcher": {
+    "asin": "0451459873",
+    "source": "openlibrary:/books/OL24225701M",
+    "title": "Blood Rites",
+    "author": "Jim Butcher"
+  },
+  "dead beat|jim butcher": {
+    "asin": "184149528X",
+    "source": "openlibrary:/books/OL27266411M",
+    "title": "Dead Beat",
+    "author": "Jim Butcher"
+  },
+  "proven guilty|jim butcher": {
+    "asin": "0451461037",
+    "source": "openlibrary:/books/OL7576315M",
+    "title": "Proven Guilty",
+    "author": "Jim Butcher"
+  },
+  "white night|jim butcher": {
+    "asin": "0356500357",
+    "source": "openlibrary:/books/OL28998800M",
+    "title": "White Night",
+    "author": "Jim Butcher"
+  },
+  "small favor|jim butcher": {
+    "asin": "0143143395",
+    "source": "openlibrary:/books/OL28261514M",
+    "title": "Small Favor",
+    "author": "Jim Butcher"
+  },
+  "turn coat|jim butcher": {
+    "asin": "0356500373",
+    "source": "openlibrary:/books/OL29030582M",
+    "title": "Turn Coat",
+    "author": "Jim Butcher"
+  },
+  "changes|jim butcher": {
+    "asin": "1841497134",
+    "source": "openlibrary:/books/OL32084682M",
+    "title": "Changes",
+    "author": "Jim Butcher"
+  },
+  "ghost story|jim butcher": {
+    "asin": "0451464079",
+    "source": "openlibrary:/books/OL26140604M",
+    "title": "Ghost Story",
+    "author": "Jim Butcher"
+  },
+  "cold days|jim butcher": {
+    "asin": "0748130810",
+    "source": "openlibrary:/books/OL33437714M",
+    "title": "Cold Days",
+    "author": "Jim Butcher"
+  },
+  "skin game|jim butcher": {
+    "asin": "1490638334",
+    "source": "openlibrary:/books/OL47136415M",
+    "title": "Skin Game",
+    "author": "Jim Butcher"
+  },
+  "peace talks|jim butcher": {
+    "asin": "0748130837",
+    "source": "openlibrary:/books/OL33481406M",
+    "title": "Peace Talks",
+    "author": "Jim Butcher"
+  },
+  "battle ground|jim butcher": {
+    "asin": "0593199324",
+    "source": "openlibrary:/books/OL34126181M",
+    "title": "Battle Ground",
+    "author": "Jim Butcher"
+  },
+  "twelve months|jim butcher": {
+    "asin": "0593199332",
+    "source": "openlibrary:/books/OL61164324M",
+    "title": "Twelve Months",
+    "author": "Jim Butcher"
+  },
+  "side jobs|jim butcher": {
+    "asin": "0748120068",
+    "source": "openlibrary:/books/OL33399402M",
+    "title": "Side Jobs",
+    "author": "Jim Butcher"
+  },
+  "brief cases|jim butcher": {
+    "asin": "0451492129",
+    "source": "openlibrary:/books/OL62218762M",
+    "title": "Brief Cases",
+    "author": "Jim Butcher"
+  },
+  "the law|jim butcher": {
+    "asin": "103941480X",
+    "source": "openlibrary:/books/OL62083802M",
+    "title": "The Law",
+    "author": "Jim Butcher"
+  },
+  "working for bigfoot|jim butcher": {
+    "asin": "1596067306",
+    "source": "openlibrary:/books/OL28276999M",
+    "title": "Working for Bigfoot",
+    "author": "Jim Butcher"
+  },
+  "dune messiah|frank herbert": {
+    "asin": "0340960205",
+    "source": "openlibrary:/books/OL53238344M",
+    "title": "Dune Messiah",
+    "author": "Frank Herbert"
+  },
+  "children of dune|frank herbert": {
+    "asin": "1439501629",
+    "source": "openlibrary:/books/OL44658386M",
+    "title": "Children of Dune",
+    "author": "Frank Herbert"
+  },
+  "god emperor of dune|frank herbert": {
+    "asin": "1439501610",
+    "source": "openlibrary:/books/OL43919880M",
+    "title": "God Emperor of Dune",
+    "author": "Frank Herbert"
+  },
+  "heretics of dune|frank herbert": {
+    "asin": "0575104457",
+    "source": "openlibrary:/books/OL48142606M",
+    "title": "Heretics of Dune",
+    "author": "Frank Herbert"
+  },
+  "chapterhouse: dune|frank herbert": {
+    "asin": "1531108490",
+    "source": "openlibrary:/books/OL61860840M",
+    "title": "Chapterhouse: Dune",
+    "author": "Frank Herbert"
+  },
+  "carl's doomsday scenario|matt dinniman": {
+    "asin": "0593820274",
+    "source": "openlibrary:/books/OL62551286M",
+    "title": "Carl's Doomsday Scenario",
+    "author": "Matt Dinniman"
+  },
+  "the dungeon anarchist's cookbook|matt dinniman": {
+    "asin": "0593820282",
+    "source": "openlibrary:/books/OL52237752M",
+    "title": "The Dungeon Anarchist's Cookbook",
+    "author": "Matt Dinniman"
+  },
+  "the gate of the feral gods|matt dinniman": {
+    "asin": "0241829917",
+    "source": "openlibrary:/books/OL62519215M",
+    "title": "The Gate of the Feral Gods",
+    "author": "Matt Dinniman"
+  },
+  "the butcher's masquerade|matt dinniman": {
+    "asin": "0241829828",
+    "source": "openlibrary:/books/OL62519224M",
+    "title": "The Butcher's Masquerade",
+    "author": "Matt Dinniman"
+  },
+  "the eye of the bedlam bride|matt dinniman": {
+    "asin": "0241829895",
+    "source": "openlibrary:/books/OL62519231M",
+    "title": "The Eye of the Bedlam Bride",
+    "author": "Matt Dinniman"
+  },
+  "this inevitable ruin|matt dinniman": {
+    "asin": "0241829933",
+    "source": "openlibrary:/books/OL62519237M",
+    "title": "This Inevitable Ruin",
+    "author": "Matt Dinniman"
+  },
+  "a parade of horribles|matt dinniman": {
+    "asin": "0241836883",
+    "source": "openlibrary:/books/OL62519239M",
+    "title": "A Parade of Horribles",
+    "author": "Matt Dinniman"
+  },
+  "the tombs of atuan|ursula k. le guin": {
+    "asin": "1473208467",
+    "source": "openlibrary:/books/OL48160418M",
+    "title": "The Tombs of Atuan",
+    "author": "Ursula K. Le Guin"
+  },
+  "the farthest shore|ursula k. le guin": {
+    "asin": "1473208475",
+    "source": "openlibrary:/books/OL48161722M",
+    "title": "The Farthest Shore",
+    "author": "Ursula K. Le Guin"
+  },
+  "tehanu|ursula k. le guin": {
+    "asin": "1473223598",
+    "source": "openlibrary:/books/OL33654350M",
+    "title": "Tehanu",
+    "author": "Ursula K. Le Guin"
+  },
+  "tales from earthsea|ursula k. le guin": {
+    "asin": "1473206022",
+    "source": "openlibrary:/books/OL48158169M",
+    "title": "Tales from Earthsea",
+    "author": "Ursula K. Le Guin"
+  },
+  "the other wind|ursula k. le guin": {
+    "asin": "1111115400",
+    "source": "openlibrary:/books/OL48131590M",
+    "title": "The Other Wind",
+    "author": "Ursula K. Le Guin"
+  },
+  "a torch against the night|sabaa tahir": {
+    "asin": "1536417718",
+    "source": "openlibrary:/books/OL34101201M",
+    "title": "A Torch Against the Night",
+    "author": "Sabaa Tahir"
+  },
+  "a reaper at the gates|sabaa tahir": {
+    "asin": "0008288798",
+    "source": "openlibrary:/books/OL37760228M",
+    "title": "A Reaper at the Gates",
+    "author": "Sabaa Tahir"
+  },
+  "a sky beyond the storm|sabaa tahir": {
+    "asin": "0008411697",
+    "source": "openlibrary:/books/OL37760229M",
+    "title": "A Sky Beyond the Storm",
+    "author": "Sabaa Tahir"
+  },
+  "iron flame|rebecca yarros": {
+    "asin": "0349440182",
+    "source": "openlibrary:/books/OL61306022M",
+    "title": "Iron Flame",
+    "author": "Rebecca Yarros"
+  },
+  "onyx storm|rebecca yarros": {
+    "asin": "1637997930",
+    "source": "openlibrary:/books/OL57578688M",
+    "title": "Onyx Storm",
+    "author": "Rebecca Yarros"
+  },
+  "threshing day|rebecca yarros": {
+    "asin": "168281808X",
+    "source": "openlibrary:/books/OL62417601M",
+    "title": "Threshing Day",
+    "author": "Rebecca Yarros"
+  },
+  "bloodfever|karen marie moning": {
+    "asin": "0575108525",
+    "source": "openlibrary:/books/OL48138186M",
+    "title": "Bloodfever",
+    "author": "Karen Marie Moning"
+  },
+  "faefever|karen marie moning": {
+    "asin": "0440244390",
+    "source": "openlibrary:/books/OL24227044M",
+    "title": "Faefever",
+    "author": "Karen Marie Moning"
+  },
+  "dreamfever|karen marie moning": {
+    "asin": "0385341652",
+    "source": "openlibrary:/books/OL23554350M",
+    "title": "Dreamfever",
+    "author": "Karen Marie Moning"
+  },
+  "shadowfever|karen marie moning": {
+    "asin": "0385341679",
+    "source": "openlibrary:/books/OL24549490M",
+    "title": "Shadowfever",
+    "author": "Karen Marie Moning"
+  },
+  "iced|karen marie moning": {
+    "asin": "0385344406",
+    "source": "openlibrary:/books/OL25372261M",
+    "title": "Iced",
+    "author": "Karen Marie Moning"
+  },
+  "burned|karen marie moning": {
+    "asin": "1455817783",
+    "source": "openlibrary:/books/OL32000390M",
+    "title": "Burned",
+    "author": "Karen Marie Moning"
+  },
+  "feversong|karen marie moning": {
+    "asin": "1511373474",
+    "source": "openlibrary:/books/OL32000409M",
+    "title": "Feversong",
+    "author": "Karen Marie Moning"
+  },
+  "high voltage|karen marie moning": {
+    "asin": "1511373547",
+    "source": "openlibrary:/books/OL32000407M",
+    "title": "High Voltage",
+    "author": "Karen Marie Moning"
+  },
+  "kingdom of shadow and light|karen marie moning": {
+    "asin": "0399593705",
+    "source": "openlibrary:/books/OL34921540M",
+    "title": "Kingdom of Shadow and Light",
+    "author": "Karen Marie Moning"
+  },
+  "fever moon|karen marie moning": {
+    "asin": "0345525485",
+    "source": "openlibrary:/books/OL27136713M",
+    "title": "Fever Moon",
+    "author": "Karen Marie Moning"
+  },
+  "before they are hanged|joe abercrombie": {
+    "asin": "0575091517",
+    "source": "openlibrary:/books/OL48140341M",
+    "title": "Before They Are Hanged",
+    "author": "Joe Abercrombie"
+  },
+  "last argument of kings|joe abercrombie": {
+    "asin": "0575091118",
+    "source": "openlibrary:/books/OL48140412M",
+    "title": "Last Argument of Kings",
+    "author": "Joe Abercrombie"
+  },
+  "best served cold|joe abercrombie": {
+    "asin": "0575088168",
+    "source": "openlibrary:/books/OL48137500M",
+    "title": "Best Served Cold",
+    "author": "Joe Abercrombie"
+  },
+  "the heroes|joe abercrombie": {
+    "asin": "0575088753",
+    "source": "openlibrary:/books/OL48141243M",
+    "title": "The Heroes",
+    "author": "Joe Abercrombie"
+  },
+  "red country|joe abercrombie": {
+    "asin": "0575095857",
+    "source": "openlibrary:/books/OL48142349M",
+    "title": "Red Country",
+    "author": "Joe Abercrombie"
+  },
+  "sharp ends|joe abercrombie": {
+    "asin": "0316390801",
+    "source": "openlibrary:/books/OL36314831M",
+    "title": "Sharp Ends",
+    "author": "Joe Abercrombie"
+  },
+  "a light in the flame|jennifer l. armentrout": {
+    "asin": "1713624109",
+    "source": "openlibrary:/books/OL47304203M",
+    "title": "A Light in the Flame",
+    "author": "Jennifer L. Armentrout"
+  },
+  "a fire in the flesh|jennifer l. armentrout": {
+    "asin": "1637993463",
+    "source": "openlibrary:/books/OL52229420M",
+    "title": "A Fire in the Flesh",
+    "author": "Jennifer L. Armentrout"
+  },
+  "born of blood and ash|jennifer l. armentrout": {
+    "asin": "195756878X",
+    "source": "openlibrary:/books/OL51610700M",
+    "title": "Born of Blood and Ash",
+    "author": "Jennifer L. Armentrout"
+  },
+  "a kingdom of flesh and fire|jennifer l. armentrout": {
+    "asin": "1952457580",
+    "source": "openlibrary:/books/OL60377624M",
+    "title": "A Kingdom of Flesh and Fire",
+    "author": "Jennifer L. Armentrout"
+  },
+  "the crown of gilded bones|jennifer l. armentrout": {
+    "asin": "1713548186",
+    "source": "openlibrary:/books/OL32512714M",
+    "title": "The Crown of Gilded Bones",
+    "author": "Jennifer L. Armentrout"
+  },
+  "the war of two queens|jennifer l. armentrout": {
+    "asin": "1713555913",
+    "source": "openlibrary:/books/OL34448141M",
+    "title": "The War of Two Queens",
+    "author": "Jennifer L. Armentrout"
+  },
+  "a soul of ash and blood|jennifer l. armentrout": {
+    "asin": "1957568755",
+    "source": "openlibrary:/books/OL49031671M",
+    "title": "A Soul of Ash and Blood",
+    "author": "Jennifer L. Armentrout"
+  },
+  "visions of flesh and blood|jennifer l. armentrout": {
+    "asin": "196313561X",
+    "source": "openlibrary:/books/OL57765130M",
+    "title": "Visions of Flesh and Blood",
+    "author": "Jennifer L. Armentrout"
+  },
+  "the primal of blood and bone|jennifer l. armentrout": {
+    "asin": "1963135482",
+    "source": "openlibrary:/books/OL60348905M",
+    "title": "The Primal of Blood and Bone",
+    "author": "Jennifer L. Armentrout"
+  },
+  "the wicked king|holly black": {
+    "asin": "0316310352",
+    "source": "openlibrary:/books/OL61271180M",
+    "title": "The Wicked King",
+    "author": "Holly Black"
+  },
+  "the queen of nothing|holly black": {
+    "asin": "153646631X",
+    "source": "openlibrary:/books/OL39655253M",
+    "title": "The Queen of Nothing",
+    "author": "Holly Black"
+  },
+  "the lost sisters|holly black": {
+    "asin": "0316310441",
+    "source": "openlibrary:/books/OL47320232M",
+    "title": "The Lost Sisters",
+    "author": "Holly Black"
+  },
+  "how the king of elfhame learned to hate stories|holly black": {
+    "asin": "1955876193",
+    "source": "openlibrary:/books/OL38522228M",
+    "title": "How the King of Elfhame Learned to Hate Stories",
+    "author": "Holly Black"
+  },
+  "the stolen heir|holly black": {
+    "asin": "1668629275",
+    "source": "openlibrary:/books/OL42068639M",
+    "title": "The Stolen Heir",
+    "author": "Holly Black"
+  },
+  "the prisoner's throne|holly black": {
+    "asin": "1471411400",
+    "source": "openlibrary:/books/OL51579204M",
+    "title": "The Prisoner's Throne",
+    "author": "Holly Black"
+  },
+  "foundation and empire|isaac asimov": {
+    "asin": "0380397013",
+    "source": "openlibrary:/books/OL43003836M",
+    "title": "Foundation and Empire",
+    "author": "Isaac Asimov"
+  },
+  "second foundation|isaac asimov": {
+    "asin": "0380231840",
+    "source": "openlibrary:/books/OL47047102M",
+    "title": "Second Foundation",
+    "author": "Isaac Asimov"
+  },
+  "foundation's edge|isaac asimov": {
+    "asin": "0345308980",
+    "source": "openlibrary:/books/OL24950690M",
+    "title": "Foundation's Edge",
+    "author": "Isaac Asimov"
+  },
+  "foundation and earth|isaac asimov": {
+    "asin": "0553900943",
+    "source": "openlibrary:/books/OL38343978M",
+    "title": "Foundation and Earth",
+    "author": "Isaac Asimov"
+  },
+  "prelude to foundation|isaac asimov": {
+    "asin": "0385245858",
+    "source": "openlibrary:/books/OL43163349M",
+    "title": "Prelude to Foundation",
+    "author": "Isaac Asimov"
+  },
+  "forward the foundation|isaac asimov": {
+    "asin": "0857504657",
+    "source": "openlibrary:/books/OL49207597M",
+    "title": "Forward the Foundation",
+    "author": "Isaac Asimov"
+  },
+  "the housemaid's secret|freida mcfadden": {
+    "asin": "0349132860",
+    "source": "openlibrary:/books/OL57738748M",
+    "title": "The Housemaid's Secret",
+    "author": "Freida McFadden"
+  },
+  "the housemaid is watching|freida mcfadden": {
+    "asin": "146428024X",
+    "source": "openlibrary:/books/OL60904682M",
+    "title": "The Housemaid Is Watching",
+    "author": "Freida McFadden"
+  },
+  "the locked door|freida mcfadden": {
+    "asin": "1464221359",
+    "source": "openlibrary:/books/OL50642939M",
+    "title": "The Locked Door",
+    "author": "Freida McFadden"
+  },
+  "never lie|freida mcfadden": {
+    "asin": "1464221367",
+    "source": "openlibrary:/books/OL50648604M",
+    "title": "Never Lie",
+    "author": "Freida McFadden"
+  },
+  "the inmate|freida mcfadden": {
+    "asin": "1464221383",
+    "source": "openlibrary:/books/OL50637517M",
+    "title": "The Inmate",
+    "author": "Freida McFadden"
+  },
+  "ward d|freida mcfadden": {
+    "asin": "1464233004",
+    "source": "openlibrary:/books/OL58433228M",
+    "title": "Ward D",
+    "author": "Freida McFadden"
+  },
+  "the teacher|freida mcfadden": {
+    "asin": "1420516221",
+    "source": "openlibrary:/books/OL53343136M",
+    "title": "The Teacher",
+    "author": "Freida McFadden"
+  },
+  "the coworker|freida mcfadden": {
+    "asin": "1464221340",
+    "source": "openlibrary:/books/OL50627036M",
+    "title": "The Coworker",
+    "author": "Freida McFadden"
+  },
+  "the boyfriend|freida mcfadden": {
+    "asin": "1464221405",
+    "source": "openlibrary:/books/OL60337892M",
+    "title": "The Boyfriend",
+    "author": "Freida McFadden"
+  },
+  "the crash|freida mcfadden": {
+    "asin": "1420521357",
+    "source": "openlibrary:/books/OL60618983M",
+    "title": "The Crash",
+    "author": "Freida McFadden"
+  },
+  "the tenant|freida mcfadden": {
+    "asin": "1464238812",
+    "source": "openlibrary:/books/OL57586223M",
+    "title": "The Tenant",
+    "author": "Freida McFadden"
+  },
+  "red seas under red skies|scott lynch": {
+    "asin": "0575079673",
+    "source": "openlibrary:/books/OL9702168M",
+    "title": "Red Seas Under Red Skies",
+    "author": "Scott Lynch"
+  },
+  "the republic of thieves|scott lynch": {
+    "asin": "0553804693",
+    "source": "openlibrary:/books/OL26119450M",
+    "title": "The Republic of Thieves",
+    "author": "Scott Lynch"
+  },
+  "good girl, bad blood|holly jackson": {
+    "asin": "0008621713",
+    "source": "openlibrary:/books/OL48685889M",
+    "title": "Good Girl, Bad Blood",
+    "author": "Holly Jackson"
+  },
+  "as good as dead|holly jackson": {
+    "asin": "0008680876",
+    "source": "openlibrary:/books/OL51051622M",
+    "title": "As Good As Dead",
+    "author": "Holly Jackson"
+  },
+  "kill joy|holly jackson": {
+    "asin": "0593426215",
+    "source": "openlibrary:/books/OL40128785M",
+    "title": "Kill Joy",
+    "author": "Holly Jackson"
+  },
+  "siege and storm|leigh bardugo": {
+    "asin": "1780621701",
+    "source": "openlibrary:/books/OL40214572M",
+    "title": "Siege and Storm",
+    "author": "Leigh Bardugo"
+  },
+  "ruin and rising|leigh bardugo": {
+    "asin": "178062185X",
+    "source": "openlibrary:/books/OL48154401M",
+    "title": "Ruin and Rising",
+    "author": "Leigh Bardugo"
+  },
+  "six of crows|leigh bardugo": {
+    "asin": "1250409012",
+    "source": "openlibrary:/books/OL60887890M",
+    "title": "Six of Crows",
+    "author": "Leigh Bardugo"
+  },
+  "crooked kingdom|leigh bardugo": {
+    "asin": "1250409004",
+    "source": "openlibrary:/books/OL60887895M",
+    "title": "Crooked Kingdom",
+    "author": "Leigh Bardugo"
+  },
+  "king of scars|leigh bardugo": {
+    "asin": "1250231078",
+    "source": "openlibrary:/books/OL52007017M",
+    "title": "King of Scars",
+    "author": "Leigh Bardugo"
+  },
+  "rule of wolves|leigh bardugo": {
+    "asin": "1955876568",
+    "source": "openlibrary:/books/OL52201733M",
+    "title": "Rule of Wolves",
+    "author": "Leigh Bardugo"
+  },
+  "a game of fate|scarlett st. clair": {
+    "asin": "1735771910",
+    "source": "openlibrary:/books/OL31989119M",
+    "title": "A Game of Fate",
+    "author": "Scarlett St. Clair"
+  },
+  "a touch of ruin|scarlett st. clair": {
+    "asin": "1728261694",
+    "source": "openlibrary:/books/OL35589200M",
+    "title": "A Touch of Ruin",
+    "author": "Scarlett St. Clair"
+  },
+  "a game of retribution|scarlett st. clair": {
+    "asin": "1728259606",
+    "source": "openlibrary:/books/OL36372855M",
+    "title": "A Game of Retribution",
+    "author": "Scarlett St. Clair"
+  },
+  "a touch of malice|scarlett st. clair": {
+    "asin": "1737455900",
+    "source": "openlibrary:/books/OL37489729M",
+    "title": "A Touch of Malice",
+    "author": "Scarlett St. Clair"
+  },
+  "a game of gods|scarlett st. clair": {
+    "asin": "1728277701",
+    "source": "openlibrary:/books/OL48175061M",
+    "title": "A Game of Gods",
+    "author": "Scarlett St. Clair"
+  },
+  "a touch of chaos|scarlett st. clair": {
+    "asin": "1464238871",
+    "source": "openlibrary:/books/OL53372657M",
+    "title": "A Touch of Chaos",
+    "author": "Scarlett St. Clair"
+  },
+  "harry potter and the chamber of secrets|j. k. rowling": {
+    "asin": "1551927284",
+    "source": "openlibrary:/books/OL62447619M",
+    "title": "Harry Potter and the Chamber of Secrets",
+    "author": "J. K. Rowling"
+  },
+  "harry potter and the prisoner of azkaban|j. k. rowling": {
+    "asin": "1408855674",
+    "source": "openlibrary:/books/OL59004673M",
+    "title": "Harry Potter and the Prisoner of Azkaban",
+    "author": "J. K. Rowling"
+  },
+  "harry potter and the goblet of fire|j. k. rowling": {
+    "asin": "1546154418",
+    "source": "openlibrary:/books/OL60890436M",
+    "title": "Harry Potter and the Goblet of Fire",
+    "author": "J. K. Rowling"
+  },
+  "harry potter and the order of the phoenix|j. k. rowling": {
+    "asin": "043935806X",
+    "source": "openlibrary:/books/OL23247162M",
+    "title": "Harry Potter and the Order of the Phoenix",
+    "author": "J. K. Rowling"
+  },
+  "harry potter and the half-blood prince|j. k. rowling": {
+    "asin": "1408855704",
+    "source": "openlibrary:/books/OL59004684M",
+    "title": "Harry Potter and the Half-Blood Prince",
+    "author": "J. K. Rowling"
+  },
+  "harry potter and the deathly hallows|j. k. rowling": {
+    "asin": "0545010225",
+    "source": "openlibrary:/books/OL61041694M",
+    "title": "Harry Potter and the Deathly Hallows",
+    "author": "J. K. Rowling"
+  },
+  "fantastic beasts and where to find them|j. k. rowling": {
+    "asin": "1338144243",
+    "source": "openlibrary:/books/OL43040063M",
+    "title": "Fantastic Beasts and Where to Find Them",
+    "author": "J. K. Rowling"
+  },
+  "quidditch through the ages|j. k. rowling": {
+    "asin": "1551924544",
+    "source": "openlibrary:/books/OL33026661M",
+    "title": "Quidditch Through the Ages",
+    "author": "J. K. Rowling"
+  },
+  "the tales of beedle the bard|j. k. rowling": {
+    "asin": "0545128285",
+    "source": "openlibrary:/books/OL51742597M",
+    "title": "The Tales of Beedle the Bard",
+    "author": "J. K. Rowling"
+  },
+  "fantastic beasts and where to find them: the original screenplay|j. k. rowling": {
+    "asin": "1510054588",
+    "source": "openlibrary:/books/OL28002060M",
+    "title": "Fantastic Beasts and Where to Find Them: The Original Screenplay",
+    "author": "J. K. Rowling"
+  },
+  "harry potter and the cursed child|j. k. rowling": {
+    "asin": "1510051317",
+    "source": "openlibrary:/books/OL43319078M",
+    "title": "Harry Potter and the Cursed Child",
+    "author": "J. K. Rowling"
+  },
+  "the strength of the few|james islington": {
+    "asin": "191123143X",
+    "source": "openlibrary:/books/OL60789223M",
+    "title": "The Strength of the Few",
+    "author": "James Islington"
+  },
+  "the subtle knife|philip pullman": {
+    "asin": "0439950473",
+    "source": "openlibrary:/books/OL52329542M",
+    "title": "The Subtle Knife",
+    "author": "Philip Pullman"
+  },
+  "the amber spyglass|philip pullman": {
+    "asin": "0440418569",
+    "source": "openlibrary:/books/OL61369504M",
+    "title": "The Amber Spyglass",
+    "author": "Philip Pullman"
+  },
+  "la belle sauvage|philip pullman": {
+    "asin": "0375976949",
+    "source": "openlibrary:/books/OL44279618M",
+    "title": "La Belle Sauvage",
+    "author": "Philip Pullman"
+  },
+  "the secret commonwealth|philip pullman": {
+    "asin": "0241379350",
+    "source": "openlibrary:/books/OL44989040M",
+    "title": "The Secret Commonwealth",
+    "author": "Philip Pullman"
+  },
+  "the rose field|philip pullman": {
+    "asin": "0241458692",
+    "source": "openlibrary:/books/OL60829913M",
+    "title": "The Rose Field",
+    "author": "Philip Pullman"
+  },
+  "the restaurant at the end of the universe|douglas adams": {
+    "asin": "1590072626",
+    "source": "openlibrary:/books/OL9828865M",
+    "title": "The Restaurant at the End of the Universe",
+    "author": "Douglas Adams"
+  },
+  "life, the universe and everything|douglas adams": {
+    "asin": "0795328346",
+    "source": "openlibrary:/books/OL44897662M",
+    "title": "Life, the Universe and Everything",
+    "author": "Douglas Adams"
+  },
+  "so long, and thanks for all the fish|douglas adams": {
+    "asin": "1405090871",
+    "source": "openlibrary:/books/OL44991429M",
+    "title": "So Long, and Thanks for All the Fish",
+    "author": "Douglas Adams"
+  },
+  "mostly harmless|douglas adams": {
+    "asin": "1559403691",
+    "source": "openlibrary:/books/OL39877196M",
+    "title": "Mostly Harmless",
+    "author": "Douglas Adams"
+  },
+  "and another thing...|eoin colfer": {
+    "asin": "0141331801",
+    "source": "openlibrary:/books/OL40364109M",
+    "title": "And Another Thing...",
+    "author": "Eoin Colfer"
+  },
+  "if it bleeds|stephen king": {
+    "asin": "152939158X",
+    "source": "openlibrary:/books/OL32981386M",
+    "title": "If It Bleeds",
+    "author": "Stephen King"
+  },
+  "holly|stephen king": {
+    "asin": "1420516558",
+    "source": "openlibrary:/books/OL53355789M",
+    "title": "Holly",
+    "author": "Stephen King"
+  },
+  "never flinch|stephen king": {
+    "asin": "1668089335",
+    "source": "openlibrary:/books/OL56971290M",
+    "title": "Never Flinch",
+    "author": "Stephen King"
+  },
+  "the honor of the queen|david weber": {
+    "asin": "143957037X",
+    "source": "openlibrary:/books/OL31840196M",
+    "title": "The Honor of the Queen",
+    "author": "David Weber"
+  },
+  "the short victorious war|david weber": {
+    "asin": "147673688X",
+    "source": "openlibrary:/books/OL27284743M",
+    "title": "The Short Victorious War",
+    "author": "David Weber"
+  },
+  "field of dishonor|david weber": {
+    "asin": "1618242016",
+    "source": "openlibrary:/books/OL52057190M",
+    "title": "Field of Dishonor",
+    "author": "David Weber"
+  },
+  "flag in exile|david weber": {
+    "asin": "1618242768",
+    "source": "openlibrary:/books/OL51895431M",
+    "title": "Flag in Exile",
+    "author": "David Weber"
+  },
+  "honor among enemies|david weber": {
+    "asin": "0553504924",
+    "source": "openlibrary:/books/OL26972266M",
+    "title": "Honor Among Enemies",
+    "author": "David Weber"
+  },
+  "in enemy hands|david weber": {
+    "asin": "1618241761",
+    "source": "openlibrary:/books/OL51831877M",
+    "title": "In Enemy Hands",
+    "author": "David Weber"
+  },
+  "echoes of honor|david weber": {
+    "asin": "1469280833",
+    "source": "openlibrary:/books/OL27583447M",
+    "title": "Echoes of Honor",
+    "author": "David Weber"
+  },
+  "ashes of victory|david weber": {
+    "asin": "1618242210",
+    "source": "openlibrary:/books/OL51831879M",
+    "title": "Ashes of Victory",
+    "author": "David Weber"
+  },
+  "war of honor|david weber": {
+    "asin": "1618243519",
+    "source": "openlibrary:/books/OL51895443M",
+    "title": "War of Honor",
+    "author": "David Weber"
+  },
+  "at all costs|david weber": {
+    "asin": "0739461958",
+    "source": "openlibrary:/books/OL27314769M",
+    "title": "At All Costs",
+    "author": "David Weber"
+  },
+  "mission of honor|david weber": {
+    "asin": "1481484249",
+    "source": "openlibrary:/books/OL28907729M",
+    "title": "Mission of Honor",
+    "author": "David Weber"
+  },
+  "a rising thunder|david weber": {
+    "asin": "145163871X",
+    "source": "openlibrary:/books/OL34604082M",
+    "title": "A Rising Thunder",
+    "author": "David Weber"
+  },
+  "uncompromising honor|david weber": {
+    "asin": "1799761339",
+    "source": "openlibrary:/books/OL32856230M",
+    "title": "Uncompromising Honor",
+    "author": "David Weber"
+  },
+  "toll of honor|david weber": {
+    "asin": "1668072629",
+    "source": "openlibrary:/books/OL57741494M",
+    "title": "Toll of Honor",
+    "author": "David Weber"
+  },
+  "crown of slaves|david weber": {
+    "asin": "1469280809",
+    "source": "openlibrary:/books/OL27583443M",
+    "title": "Crown of Slaves",
+    "author": "David Weber"
+  },
+  "the shadow of saganami|david weber": {
+    "asin": "1416509291",
+    "source": "openlibrary:/books/OL8456743M",
+    "title": "The Shadow of Saganami",
+    "author": "David Weber"
+  },
+  "torch of freedom|david weber": {
+    "asin": "1469281465",
+    "source": "openlibrary:/books/OL27583360M",
+    "title": "Torch of Freedom",
+    "author": "David Weber"
+  },
+  "storm from the shadows|david weber": {
+    "asin": "1416591478",
+    "source": "openlibrary:/books/OL22553065M",
+    "title": "Storm from the Shadows",
+    "author": "David Weber"
+  },
+  "shadow of freedom|david weber": {
+    "asin": "1476736286",
+    "source": "openlibrary:/books/OL35497188M",
+    "title": "Shadow of Freedom",
+    "author": "David Weber"
+  },
+  "cauldron of ghosts|david weber": {
+    "asin": "1476781001",
+    "source": "openlibrary:/books/OL34514812M",
+    "title": "Cauldron of Ghosts",
+    "author": "David Weber"
+  },
+  "shadow of victory|david weber": {
+    "asin": "1536684929",
+    "source": "openlibrary:/books/OL34859060M",
+    "title": "Shadow of Victory",
+    "author": "David Weber"
+  },
+  "to end in fire|david weber": {
+    "asin": "1982192127",
+    "source": "openlibrary:/books/OL37582333M",
+    "title": "To End in Fire",
+    "author": "David Weber"
+  },
+  "a beautiful friendship|david weber": {
+    "asin": "1469201704",
+    "source": "openlibrary:/books/OL41450068M",
+    "title": "A Beautiful Friendship",
+    "author": "David Weber"
+  },
+  "fire season|david weber": {
+    "asin": "145163921X",
+    "source": "openlibrary:/books/OL26920637M",
+    "title": "Fire Season",
+    "author": "David Weber"
+  },
+  "treecat wars|david weber": {
+    "asin": "1476736634",
+    "source": "openlibrary:/books/OL27547279M",
+    "title": "Treecat Wars",
+    "author": "David Weber"
+  },
+  "a new clan|david weber": {
+    "asin": "1982192755",
+    "source": "openlibrary:/books/OL40136206M",
+    "title": "A New Clan",
+    "author": "David Weber"
+  },
+  "friends indeed|david weber": {
+    "asin": "1668073102",
+    "source": "openlibrary:/books/OL60904696M",
+    "title": "Friends Indeed",
+    "author": "David Weber"
+  },
+  "catching fire|suzanne collins": {
+    "asin": "1546159541",
+    "source": "openlibrary:/books/OL57744823M",
+    "title": "Catching Fire",
+    "author": "Suzanne Collins"
+  },
+  "mockingjay|suzanne collins": {
+    "asin": "0702342408",
+    "source": "openlibrary:/books/OL57545115M",
+    "title": "Mockingjay",
+    "author": "Suzanne Collins"
+  },
+  "the ballad of songbirds and snakes|suzanne collins": {
+    "asin": "1339016583",
+    "source": "openlibrary:/books/OL48253296M",
+    "title": "The Ballad of Songbirds and Snakes",
+    "author": "Suzanne Collins"
+  },
+  "sunrise on the reaping|suzanne collins": {
+    "asin": "0702349070",
+    "source": "openlibrary:/books/OL62107397M",
+    "title": "Sunrise on the Reaping",
+    "author": "Suzanne Collins"
+  },
+  "the fall of hyperion|dan simmons": {
+    "asin": "0575099933",
+    "source": "openlibrary:/books/OL48140498M",
+    "title": "The Fall of Hyperion",
+    "author": "Dan Simmons"
+  },
+  "endymion|dan simmons": {
+    "asin": "0575076399",
+    "source": "openlibrary:/books/OL26775798M",
+    "title": "Endymion",
+    "author": "Dan Simmons"
+  },
+  "the rise of endymion|dan simmons": {
+    "asin": "1491544732",
+    "source": "openlibrary:/books/OL32685418M",
+    "title": "The Rise of Endymion",
+    "author": "Dan Simmons"
+  },
+  "ancillary sword|ann leckie": {
+    "asin": "0316246646",
+    "source": "openlibrary:/books/OL39819956M",
+    "title": "Ancillary Sword",
+    "author": "Ann Leckie"
+  },
+  "ancillary mercy|ann leckie": {
+    "asin": "0316565180",
+    "source": "openlibrary:/books/OL42774696M",
+    "title": "Ancillary Mercy",
+    "author": "Ann Leckie"
+  },
+  "provenance|ann leckie": {
+    "asin": "0316388637",
+    "source": "openlibrary:/books/OL39826183M",
+    "title": "Provenance",
+    "author": "Ann Leckie"
+  },
+  "translation state|ann leckie": {
+    "asin": "0356517926",
+    "source": "openlibrary:/books/OL46569089M",
+    "title": "Translation State",
+    "author": "Ann Leckie"
+  },
+  "eldest|christopher paolini": {
+    "asin": "0552577472",
+    "source": "openlibrary:/books/OL40294343M",
+    "title": "Eldest",
+    "author": "Christopher Paolini"
+  },
+  "brisingr|christopher paolini": {
+    "asin": "038561618X",
+    "source": "openlibrary:/books/OL37740693M",
+    "title": "Brisingr",
+    "author": "Christopher Paolini"
+  },
+  "inheritance|christopher paolini": {
+    "asin": "0307974189",
+    "source": "openlibrary:/books/OL62486078M",
+    "title": "Inheritance",
+    "author": "Christopher Paolini"
+  },
+  "the fork, the witch, and the worm|christopher paolini": {
+    "asin": "059317559X",
+    "source": "openlibrary:/books/OL47215827M",
+    "title": "The Fork, the Witch, and the Worm",
+    "author": "Christopher Paolini"
+  },
+  "murtagh|christopher paolini": {
+    "asin": "0241651409",
+    "source": "openlibrary:/books/OL57515198M",
+    "title": "Murtagh",
+    "author": "Christopher Paolini"
+  },
+  "hexed|kevin hearne": {
+    "asin": "1455809586",
+    "source": "openlibrary:/books/OL32723247M",
+    "title": "Hexed",
+    "author": "Kevin Hearne"
+  },
+  "hammered|kevin hearne": {
+    "asin": "0748133313",
+    "source": "openlibrary:/books/OL33418474M",
+    "title": "Hammered",
+    "author": "Kevin Hearne"
+  },
+  "tricked|kevin hearne": {
+    "asin": "1405519487",
+    "source": "openlibrary:/books/OL33444753M",
+    "title": "Tricked",
+    "author": "Kevin Hearne"
+  },
+  "trapped|kevin hearne": {
+    "asin": "1405519495",
+    "source": "openlibrary:/books/OL34601244M",
+    "title": "Trapped",
+    "author": "Kevin Hearne"
+  },
+  "hunted|kevin hearne": {
+    "asin": "1405519509",
+    "source": "openlibrary:/books/OL34604891M",
+    "title": "Hunted",
+    "author": "Kevin Hearne"
+  },
+  "shattered|kevin hearne": {
+    "asin": "0356504441",
+    "source": "openlibrary:/books/OL33454243M",
+    "title": "Shattered",
+    "author": "Kevin Hearne"
+  },
+  "staked|kevin hearne": {
+    "asin": "0345548515",
+    "source": "openlibrary:/books/OL27196757M",
+    "title": "Staked",
+    "author": "Kevin Hearne"
+  },
+  "besieged|kevin hearne": {
+    "asin": "0356509567",
+    "source": "openlibrary:/books/OL33560311M",
+    "title": "Besieged",
+    "author": "Kevin Hearne"
+  },
+  "scourged|kevin hearne": {
+    "asin": "0525486453",
+    "source": "openlibrary:/books/OL27361489M",
+    "title": "Scourged",
+    "author": "Kevin Hearne"
+  },
+  "grimoire of the lamb|kevin hearne": {
+    "asin": "1405519525",
+    "source": "openlibrary:/books/OL33431112M",
+    "title": "Grimoire of the Lamb",
+    "author": "Kevin Hearne"
+  },
+  "two ravens and one crow|kevin hearne": {
+    "asin": "1405519517",
+    "source": "openlibrary:/books/OL33444758M",
+    "title": "Two Ravens and One Crow",
+    "author": "Kevin Hearne"
+  },
+  "the purloined poodle|kevin hearne": {
+    "asin": "1596068094",
+    "source": "openlibrary:/books/OL26818553M",
+    "title": "The Purloined Poodle",
+    "author": "Kevin Hearne"
+  },
+  "die trying|lee child": {
+    "asin": "1567407668",
+    "source": "openlibrary:/books/OL12166541M",
+    "title": "Die Trying",
+    "author": "Lee Child"
+  },
+  "tripwire|lee child": {
+    "asin": "1567408346",
+    "source": "openlibrary:/books/OL9876148M",
+    "title": "Tripwire",
+    "author": "Lee Child"
+  },
+  "echo burning|lee child": {
+    "asin": "1587883708",
+    "source": "openlibrary:/books/OL53616319M",
+    "title": "Echo Burning",
+    "author": "Lee Child"
+  },
+  "without fail|lee child": {
+    "asin": "0425207609",
+    "source": "openlibrary:/books/OL7505319M",
+    "title": "Without Fail",
+    "author": "Lee Child"
+  },
+  "persuader|lee child": {
+    "asin": "0593984218",
+    "source": "openlibrary:/books/OL57582664M",
+    "title": "Persuader",
+    "author": "Lee Child"
+  },
+  "the enemy|lee child": {
+    "asin": "1501229761",
+    "source": "openlibrary:/books/OL39818272M",
+    "title": "The Enemy",
+    "author": "Lee Child"
+  },
+  "one shot|lee child": {
+    "asin": "1469257556",
+    "source": "openlibrary:/books/OL51709424M",
+    "title": "One Shot",
+    "author": "Lee Child"
+  },
+  "the hard way|lee child": {
+    "asin": "1405614560",
+    "source": "openlibrary:/books/OL43562863M",
+    "title": "The Hard Way",
+    "author": "Lee Child"
+  },
+  "bad luck and trouble|lee child": {
+    "asin": "0739340670",
+    "source": "openlibrary:/books/OL7915080M",
+    "title": "Bad Luck and Trouble",
+    "author": "Lee Child"
+  },
+  "nothing to lose|lee child": {
+    "asin": "1407037943",
+    "source": "openlibrary:/books/OL24296622M",
+    "title": "Nothing to Lose",
+    "author": "Lee Child"
+  },
+  "gone tomorrow|lee child": {
+    "asin": "0440338557",
+    "source": "openlibrary:/books/OL24262257M",
+    "title": "Gone Tomorrow",
+    "author": "Lee Child"
+  },
+  "61 hours|lee child": {
+    "asin": "0345541596",
+    "source": "openlibrary:/books/OL46595054M",
+    "title": "61 Hours",
+    "author": "Lee Child"
+  },
+  "worth dying for|lee child": {
+    "asin": "1408488086",
+    "source": "openlibrary:/books/OL35471963M",
+    "title": "Worth Dying For",
+    "author": "Lee Child"
+  },
+  "the affair|lee child": {
+    "asin": "1299065341",
+    "source": "openlibrary:/books/OL35495250M",
+    "title": "The Affair",
+    "author": "Lee Child"
+  },
+  "a wanted man|lee child": {
+    "asin": "1299064574",
+    "source": "openlibrary:/books/OL35493370M",
+    "title": "A Wanted Man",
+    "author": "Lee Child"
+  },
+  "never go back|lee child": {
+    "asin": "0385344341",
+    "source": "openlibrary:/books/OL49632078M",
+    "title": "Never Go Back",
+    "author": "Lee Child"
+  },
+  "personal|lee child": {
+    "asin": "0804178747",
+    "source": "openlibrary:/books/OL49630101M",
+    "title": "Personal",
+    "author": "Lee Child"
+  },
+  "make me|lee child": {
+    "asin": "0804178771",
+    "source": "openlibrary:/books/OL25935283M",
+    "title": "Make Me",
+    "author": "Lee Child"
+  },
+  "night school|lee child": {
+    "asin": "0857503693",
+    "source": "openlibrary:/books/OL43171834M",
+    "title": "Night School",
+    "author": "Lee Child"
+  },
+  "the midnight line|lee child": {
+    "asin": "0525618333",
+    "source": "openlibrary:/books/OL35636852M",
+    "title": "The Midnight Line",
+    "author": "Lee Child"
+  },
+  "past tense|lee child": {
+    "asin": "1984819569",
+    "source": "openlibrary:/books/OL40444586M",
+    "title": "Past Tense",
+    "author": "Lee Child"
+  },
+  "blue moon|lee child": {
+    "asin": "1787632199",
+    "source": "openlibrary:/books/OL27306128M",
+    "title": "Blue Moon",
+    "author": "Lee Child"
+  },
+  "the sentinel|lee child": {
+    "asin": "1787633624",
+    "source": "openlibrary:/books/OL32222258M",
+    "title": "The Sentinel",
+    "author": "Lee Child"
+  },
+  "better off dead|lee child": {
+    "asin": "0552177539",
+    "source": "openlibrary:/books/OL47724009M",
+    "title": "Better Off Dead",
+    "author": "Lee Child"
+  },
+  "no plan b|lee child": {
+    "asin": "0552177555",
+    "source": "openlibrary:/books/OL47308385M",
+    "title": "No Plan B",
+    "author": "Lee Child"
+  },
+  "the secret|lee child": {
+    "asin": "1984818619",
+    "source": "openlibrary:/books/OL51439740M",
+    "title": "The Secret",
+    "author": "Lee Child"
+  },
+  "in too deep|lee child": {
+    "asin": "0857505602",
+    "source": "openlibrary:/books/OL50632591M",
+    "title": "In Too Deep",
+    "author": "Lee Child"
+  },
+  "live and let die|ian fleming": {
+    "asin": "0816191697",
+    "source": "openlibrary:/books/OL11383277M",
+    "title": "Live and Let Die",
+    "author": "Ian Fleming"
+  },
+  "moonraker|ian fleming": {
+    "asin": "0745159311",
+    "source": "openlibrary:/books/OL10728720M",
+    "title": "Moonraker",
+    "author": "Ian Fleming"
+  },
+  "diamonds are forever|ian fleming": {
+    "asin": "0745159281",
+    "source": "openlibrary:/books/OL9856597M",
+    "title": "Diamonds Are Forever",
+    "author": "Ian Fleming"
+  },
+  "from russia, with love|ian fleming": {
+    "asin": "0786193158",
+    "source": "openlibrary:/books/OL9427404M",
+    "title": "From Russia, with Love",
+    "author": "Ian Fleming"
+  },
+  "dr. no|ian fleming": {
+    "asin": "0862731585",
+    "source": "openlibrary:/books/OL32026859M",
+    "title": "Dr. No",
+    "author": "Ian Fleming"
+  },
+  "goldfinger|ian fleming": {
+    "asin": "1561009385",
+    "source": "openlibrary:/books/OL12122114M",
+    "title": "Goldfinger",
+    "author": "Ian Fleming"
+  },
+  "for your eyes only|ian fleming": {
+    "asin": "0441245757",
+    "source": "openlibrary:/books/OL7525397M",
+    "title": "For Your Eyes Only",
+    "author": "Ian Fleming"
+  },
+  "thunderball|ian fleming": {
+    "asin": "0745165362",
+    "source": "openlibrary:/books/OL10728827M",
+    "title": "Thunderball",
+    "author": "Ian Fleming"
+  },
+  "the spy who loved me|ian fleming": {
+    "asin": "0816195072",
+    "source": "openlibrary:/books/OL11383441M",
+    "title": "The Spy Who Loved Me",
+    "author": "Ian Fleming"
+  },
+  "on her majesty's secret service|ian fleming": {
+    "asin": "1561009407",
+    "source": "openlibrary:/books/OL9426485M",
+    "title": "On Her Majesty's Secret Service",
+    "author": "Ian Fleming"
+  },
+  "you only live twice|ian fleming": {
+    "asin": "0745159354",
+    "source": "openlibrary:/books/OL10728722M",
+    "title": "You Only Live Twice",
+    "author": "Ian Fleming"
+  },
+  "the man with the golden gun|ian fleming": {
+    "asin": "0451066774",
+    "source": "openlibrary:/books/OL10270990M",
+    "title": "The Man with the Golden Gun",
+    "author": "Ian Fleming"
+  },
+  "octopussy and the living daylights|ian fleming": {
+    "asin": "0063445727",
+    "source": "openlibrary:/books/OL60887969M",
+    "title": "Octopussy and The Living Daylights",
+    "author": "Ian Fleming"
+  },
+  "colonel sun|kingsley amis": {
+    "asin": "0340551372",
+    "source": "openlibrary:/books/OL34407150M",
+    "title": "Colonel Sun",
+    "author": "Kingsley Amis"
+  },
+  "trigger mortis|anthony horowitz": {
+    "asin": "1510025413",
+    "source": "openlibrary:/books/OL52262447M",
+    "title": "Trigger Mortis",
+    "author": "Anthony Horowitz"
+  },
+  "with a mind to kill|anthony horowitz": {
+    "asin": "0063078422",
+    "source": "openlibrary:/books/OL40193937M",
+    "title": "With a Mind to Kill",
+    "author": "Anthony Horowitz"
+  },
+  "magic burns|ilona andrews": {
+    "asin": "1436208130",
+    "source": "openlibrary:/books/OL24268009M",
+    "title": "Magic Burns",
+    "author": "Ilona Andrews"
+  },
+  "magic strikes|ilona andrews": {
+    "asin": "1101025999",
+    "source": "openlibrary:/books/OL24310000M",
+    "title": "Magic Strikes",
+    "author": "Ilona Andrews"
+  },
+  "magic bleeds|ilona andrews": {
+    "asin": "0441018521",
+    "source": "openlibrary:/books/OL24083294M",
+    "title": "Magic Bleeds",
+    "author": "Ilona Andrews"
+  },
+  "magic slays|ilona andrews": {
+    "asin": "0441020429",
+    "source": "openlibrary:/books/OL25363797M",
+    "title": "Magic Slays",
+    "author": "Ilona Andrews"
+  },
+  "magic rises|ilona andrews": {
+    "asin": "1937007588",
+    "source": "openlibrary:/books/OL26003288M",
+    "title": "Magic Rises",
+    "author": "Ilona Andrews"
+  },
+  "magic breaks|ilona andrews": {
+    "asin": "0425256227",
+    "source": "openlibrary:/books/OL25573632M",
+    "title": "Magic Breaks",
+    "author": "Ilona Andrews"
+  },
+  "magic shifts|ilona andrews": {
+    "asin": "042527067X",
+    "source": "openlibrary:/books/OL27186708M",
+    "title": "Magic Shifts",
+    "author": "Ilona Andrews"
+  },
+  "magic binds|ilona andrews": {
+    "asin": "0425270696",
+    "source": "openlibrary:/books/OL27213556M",
+    "title": "Magic Binds",
+    "author": "Ilona Andrews"
+  },
+  "magic triumphs|ilona andrews": {
+    "asin": "1480540439",
+    "source": "openlibrary:/books/OL27346770M",
+    "title": "Magic Triumphs",
+    "author": "Ilona Andrews"
+  },
+  "magic tides|ilona andrews": {
+    "asin": "1641972521",
+    "source": "openlibrary:/books/OL46535264M",
+    "title": "Magic Tides",
+    "author": "Ilona Andrews"
+  },
+  "magic claims|ilona andrews": {
+    "asin": "1641972688",
+    "source": "openlibrary:/books/OL48367409M",
+    "title": "Magic Claims",
+    "author": "Ilona Andrews"
+  },
+  "the wise man's fear|patrick rothfuss": {
+    "asin": "0575081422",
+    "source": "openlibrary:/books/OL48134158M",
+    "title": "The Wise Man's Fear",
+    "author": "Patrick Rothfuss"
+  },
+  "lady of shadows|melissa k. roehrich": {
+    "asin": "000871939X",
+    "source": "openlibrary:/books/OL51815995M",
+    "title": "Lady of Shadows",
+    "author": "Melissa K. Roehrich"
+  },
+  "lady of ashes|melissa k. roehrich": {
+    "asin": "0008719411",
+    "source": "openlibrary:/books/OL57522599M",
+    "title": "Lady of Ashes",
+    "author": "Melissa K. Roehrich"
+  },
+  "lady of embers|melissa k. roehrich": {
+    "asin": "0008719454",
+    "source": "openlibrary:/books/OL60856975M",
+    "title": "Lady of Embers",
+    "author": "Melissa K. Roehrich"
+  },
+  "lady of starfire|melissa k. roehrich": {
+    "asin": "0008719489",
+    "source": "openlibrary:/books/OL60852651M",
+    "title": "Lady of Starfire",
+    "author": "Melissa K. Roehrich"
+  },
+  "winds of darkness|melissa k. roehrich": {
+    "asin": "0008743460",
+    "source": "openlibrary:/books/OL60859182M",
+    "title": "Winds of Darkness",
+    "author": "Melissa K. Roehrich"
+  },
+  "prodigy|marie lu": {
+    "asin": "1484425359",
+    "source": "openlibrary:/books/OL39643557M",
+    "title": "Prodigy",
+    "author": "Marie Lu"
+  },
+  "champion|marie lu": {
+    "asin": "1484438493",
+    "source": "openlibrary:/books/OL39626879M",
+    "title": "Champion",
+    "author": "Marie Lu"
+  },
+  "rebel|marie lu": {
+    "asin": "024143646X",
+    "source": "openlibrary:/books/OL38789879M",
+    "title": "Rebel",
+    "author": "Marie Lu"
+  },
+  "the blinding knife|brent weeks": {
+    "asin": "1607887827",
+    "source": "openlibrary:/books/OL57482262M",
+    "title": "The Blinding Knife",
+    "author": "Brent Weeks"
+  },
+  "the broken eye|brent weeks": {
+    "asin": "1841499099",
+    "source": "openlibrary:/books/OL34602698M",
+    "title": "The Broken Eye",
+    "author": "Brent Weeks"
+  },
+  "the blood mirror|brent weeks": {
+    "asin": "1478943459",
+    "source": "openlibrary:/books/OL40223575M",
+    "title": "The Blood Mirror",
+    "author": "Brent Weeks"
+  },
+  "the burning white|brent weeks": {
+    "asin": "1549154826",
+    "source": "openlibrary:/books/OL40223573M",
+    "title": "The Burning White",
+    "author": "Brent Weeks"
+  },
+  "the fellowship of the ring|j. r. r. tolkien": {
+    "asin": "0008537720",
+    "source": "openlibrary:/books/OL62417661M",
+    "title": "The Fellowship of the Ring",
+    "author": "J. R. R. Tolkien"
+  },
+  "the two towers|j. r. r. tolkien": {
+    "asin": "154854745X",
+    "source": "openlibrary:/books/OL54879521M",
+    "title": "The Two Towers",
+    "author": "J. R. R. Tolkien"
+  },
+  "the return of the king|j. r. r. tolkien": {
+    "asin": "1514298139",
+    "source": "openlibrary:/books/OL55777406M",
+    "title": "The Return of the King",
+    "author": "J. R. R. Tolkien"
+  },
+  "the silmarillion|j. r. r. tolkien": {
+    "asin": "0008775915",
+    "source": "openlibrary:/books/OL60833860M",
+    "title": "The Silmarillion",
+    "author": "J. R. R. Tolkien"
+  },
+  "unfinished tales|j. r. r. tolkien": {
+    "asin": "0358448921",
+    "source": "openlibrary:/books/OL62349900M",
+    "title": "Unfinished Tales",
+    "author": "J. R. R. Tolkien"
+  },
+  "the children of húrin|j. r. r. tolkien": {
+    "asin": "0063379724",
+    "source": "openlibrary:/books/OL50721900M",
+    "title": "The Children of Húrin",
+    "author": "J. R. R. Tolkien"
+  },
+  "beren and lúthien|j. r. r. tolkien": {
+    "asin": "0063376407",
+    "source": "openlibrary:/books/OL50717853M",
+    "title": "Beren and Lúthien",
+    "author": "J. R. R. Tolkien"
+  },
+  "the fall of gondolin|j. r. r. tolkien": {
+    "asin": "0008503974",
+    "source": "openlibrary:/books/OL49821392M",
+    "title": "The Fall of Gondolin",
+    "author": "J. R. R. Tolkien"
+  },
+  "the fall of númenor|j. r. r. tolkien": {
+    "asin": "0063280698",
+    "source": "openlibrary:/books/OL52206699M",
+    "title": "The Fall of Númenor",
+    "author": "J. R. R. Tolkien"
+  },
+  "scarlet|marissa meyer": {
+    "asin": "146683305X",
+    "source": "openlibrary:/books/OL38359664M",
+    "title": "Scarlet",
+    "author": "Marissa Meyer"
+  },
+  "cress|marissa meyer": {
+    "asin": "0545848172",
+    "source": "openlibrary:/books/OL60321434M",
+    "title": "Cress",
+    "author": "Marissa Meyer"
+  },
+  "fairest|marissa meyer": {
+    "asin": "1250069599",
+    "source": "openlibrary:/books/OL51603895M",
+    "title": "Fairest",
+    "author": "Marissa Meyer"
+  },
+  "winter|marissa meyer": {
+    "asin": "1250093414",
+    "source": "openlibrary:/books/OL49227110M",
+    "title": "Winter",
+    "author": "Marissa Meyer"
+  },
+  "the magician king|lev grossman": {
+    "asin": "1101523670",
+    "source": "openlibrary:/books/OL60566493M",
+    "title": "The Magician King",
+    "author": "Lev Grossman"
+  },
+  "the magician's land|lev grossman": {
+    "asin": "0147516145",
+    "source": "openlibrary:/books/OL29708536M",
+    "title": "The Magician's Land",
+    "author": "Lev Grossman"
+  },
+  "deadhouse gates|steven erikson": {
+    "asin": "1469226022",
+    "source": "openlibrary:/books/OL37811489M",
+    "title": "Deadhouse Gates",
+    "author": "Steven Erikson"
+  },
+  "memories of ice|steven erikson": {
+    "asin": "1429926635",
+    "source": "openlibrary:/books/OL36292816M",
+    "title": "Memories of Ice",
+    "author": "Steven Erikson"
+  },
+  "house of chains|steven erikson": {
+    "asin": "1804995541",
+    "source": "openlibrary:/books/OL50655974M",
+    "title": "House of Chains",
+    "author": "Steven Erikson"
+  },
+  "midnight tides|steven erikson": {
+    "asin": "1429926937",
+    "source": "openlibrary:/books/OL36294931M",
+    "title": "Midnight Tides",
+    "author": "Steven Erikson"
+  },
+  "reaper’s gale|steven erikson": {
+    "asin": "1429925884",
+    "source": "openlibrary:/books/OL36294137M",
+    "title": "Reaper’s Gale",
+    "author": "Steven Erikson"
+  },
+  "toll the hounds|steven erikson": {
+    "asin": "1429926996",
+    "source": "openlibrary:/books/OL36291748M",
+    "title": "Toll the Hounds",
+    "author": "Steven Erikson"
+  },
+  "dust of dreams|steven erikson": {
+    "asin": "055381317X",
+    "source": "openlibrary:/books/OL28980775M",
+    "title": "Dust of Dreams",
+    "author": "Steven Erikson"
+  },
+  "the crippled god|steven erikson": {
+    "asin": "0593046358",
+    "source": "openlibrary:/books/OL30128106M",
+    "title": "The Crippled God",
+    "author": "Steven Erikson"
+  },
+  "the scorch trials|james dashner": {
+    "asin": "0606234306",
+    "source": "openlibrary:/books/OL26157542M",
+    "title": "The Scorch Trials",
+    "author": "James Dashner"
+  },
+  "the death cure|james dashner": {
+    "asin": "1484488903",
+    "source": "openlibrary:/books/OL39630048M",
+    "title": "The Death Cure",
+    "author": "James Dashner"
+  },
+  "the kill order|james dashner": {
+    "asin": "0449816257",
+    "source": "openlibrary:/books/OL27606033M",
+    "title": "The Kill Order",
+    "author": "James Dashner"
+  },
+  "the fever code|james dashner": {
+    "asin": "0553513117",
+    "source": "openlibrary:/books/OL62448463M",
+    "title": "The Fever Code",
+    "author": "James Dashner"
+  },
+  "blood bound|patricia briggs": {
+    "asin": "1429502371",
+    "source": "openlibrary:/books/OL44236172M",
+    "title": "Blood Bound",
+    "author": "Patricia Briggs"
+  },
+  "iron kissed|patricia briggs": {
+    "asin": "1429577592",
+    "source": "openlibrary:/books/OL43484866M",
+    "title": "Iron Kissed",
+    "author": "Patricia Briggs"
+  },
+  "bone crossed|patricia briggs": {
+    "asin": "1440698775",
+    "source": "openlibrary:/books/OL44238702M",
+    "title": "Bone Crossed",
+    "author": "Patricia Briggs"
+  },
+  "silver borne|patricia briggs": {
+    "asin": "1841497991",
+    "source": "openlibrary:/books/OL34591532M",
+    "title": "Silver Borne",
+    "author": "Patricia Briggs"
+  },
+  "river marked|patricia briggs": {
+    "asin": "0748117342",
+    "source": "openlibrary:/books/OL33426985M",
+    "title": "River Marked",
+    "author": "Patricia Briggs"
+  },
+  "frost burned|patricia briggs": {
+    "asin": "1624062725",
+    "source": "openlibrary:/books/OL32969980M",
+    "title": "Frost Burned",
+    "author": "Patricia Briggs"
+  },
+  "night broken|patricia briggs": {
+    "asin": "0356501558",
+    "source": "openlibrary:/books/OL32227771M",
+    "title": "Night Broken",
+    "author": "Patricia Briggs"
+  },
+  "fire touched|patricia briggs": {
+    "asin": "0425256766",
+    "source": "openlibrary:/books/OL27200596M",
+    "title": "Fire Touched",
+    "author": "Patricia Briggs"
+  },
+  "silence fallen|patricia briggs": {
+    "asin": "1524755761",
+    "source": "openlibrary:/books/OL27409147M",
+    "title": "Silence Fallen",
+    "author": "Patricia Briggs"
+  },
+  "storm cursed|patricia briggs": {
+    "asin": "0698195825",
+    "source": "openlibrary:/books/OL40994422M",
+    "title": "Storm Cursed",
+    "author": "Patricia Briggs"
+  },
+  "smoke bitten|patricia briggs": {
+    "asin": "0593199405",
+    "source": "openlibrary:/books/OL32286904M",
+    "title": "Smoke Bitten",
+    "author": "Patricia Briggs"
+  },
+  "soul taken|patricia briggs": {
+    "asin": "0356513653",
+    "source": "openlibrary:/books/OL38001841M",
+    "title": "Soul Taken",
+    "author": "Patricia Briggs"
+  },
+  "winter lost|patricia briggs": {
+    "asin": "0593439007",
+    "source": "openlibrary:/books/OL52612952M",
+    "title": "Winter Lost",
+    "author": "Patricia Briggs"
+  },
+  "the well of ascension|brandon sanderson": {
+    "asin": "1427206384",
+    "source": "openlibrary:/books/OL57501387M",
+    "title": "The Well of Ascension",
+    "author": "Brandon Sanderson"
+  },
+  "the hero of ages|brandon sanderson": {
+    "asin": "1427206392",
+    "source": "openlibrary:/books/OL57501397M",
+    "title": "The Hero of Ages",
+    "author": "Brandon Sanderson"
+  },
+  "the alloy of law|brandon sanderson": {
+    "asin": "1427221049",
+    "source": "openlibrary:/books/OL57501409M",
+    "title": "The Alloy of Law",
+    "author": "Brandon Sanderson"
+  },
+  "shadows of self|brandon sanderson": {
+    "asin": "1427262241",
+    "source": "openlibrary:/books/OL57501433M",
+    "title": "Shadows of Self",
+    "author": "Brandon Sanderson"
+  },
+  "the bands of mourning|brandon sanderson": {
+    "asin": "1427267901",
+    "source": "openlibrary:/books/OL57501443M",
+    "title": "The Bands of Mourning",
+    "author": "Brandon Sanderson"
+  },
+  "the lost metal|brandon sanderson": {
+    "asin": "125085928X",
+    "source": "openlibrary:/books/OL57501481M",
+    "title": "The Lost Metal",
+    "author": "Brandon Sanderson"
+  },
+  "arcanum unbounded|brandon sanderson": {
+    "asin": "1427280630",
+    "source": "openlibrary:/books/OL57493032M",
+    "title": "Arcanum Unbounded",
+    "author": "Brandon Sanderson"
+  },
+  "the third option|vince flynn": {
+    "asin": "0671047310",
+    "source": "openlibrary:/books/OL23244965M",
+    "title": "The Third Option",
+    "author": "Vince Flynn"
+  },
+  "separation of power|vince flynn": {
+    "asin": "0743537963",
+    "source": "openlibrary:/books/OL7952833M",
+    "title": "Separation of Power",
+    "author": "Vince Flynn"
+  },
+  "executive power|vince flynn": {
+    "asin": "0743453956",
+    "source": "openlibrary:/books/OL3778493M",
+    "title": "Executive Power",
+    "author": "Vince Flynn"
+  },
+  "memorial day|vince flynn": {
+    "asin": "0743453980",
+    "source": "openlibrary:/books/OL3305144M",
+    "title": "Memorial Day",
+    "author": "Vince Flynn"
+  },
+  "consent to kill|vince flynn": {
+    "asin": "1416502688",
+    "source": "openlibrary:/books/OL8456576M",
+    "title": "Consent to Kill",
+    "author": "Vince Flynn"
+  },
+  "act of treason|vince flynn": {
+    "asin": "0739474901",
+    "source": "openlibrary:/books/OL9460680M",
+    "title": "Act of Treason",
+    "author": "Vince Flynn"
+  },
+  "protect and defend|vince flynn": {
+    "asin": "0743568214",
+    "source": "openlibrary:/books/OL9684275M",
+    "title": "Protect and Defend",
+    "author": "Vince Flynn"
+  },
+  "extreme measures|vince flynn": {
+    "asin": "1847370721",
+    "source": "openlibrary:/books/OL27939233M",
+    "title": "Extreme Measures",
+    "author": "Vince Flynn"
+  },
+  "pursuit of honor|vince flynn": {
+    "asin": "1416595163",
+    "source": "openlibrary:/books/OL23918743M",
+    "title": "Pursuit of Honor",
+    "author": "Vince Flynn"
+  },
+  "american assassin|vince flynn": {
+    "asin": "141659518X",
+    "source": "openlibrary:/books/OL24356742M",
+    "title": "American Assassin",
+    "author": "Vince Flynn"
+  },
+  "kill shot|vince flynn": {
+    "asin": "1416595201",
+    "source": "openlibrary:/books/OL25011124M",
+    "title": "Kill Shot",
+    "author": "Vince Flynn"
+  },
+  "the last man|vince flynn": {
+    "asin": "085720873X",
+    "source": "openlibrary:/books/OL29132929M",
+    "title": "The Last Man",
+    "author": "Vince Flynn"
+  },
+  "the survivor|vince flynn": {
+    "asin": "1982147504",
+    "source": "openlibrary:/books/OL36017117M",
+    "title": "The Survivor",
+    "author": "Vince Flynn"
+  },
+  "order to kill|vince flynn": {
+    "asin": "1508237557",
+    "source": "openlibrary:/books/OL45298667M",
+    "title": "Order to Kill",
+    "author": "Vince Flynn"
+  },
+  "enemy of the state|vince flynn": {
+    "asin": "1508265852",
+    "source": "openlibrary:/books/OL40215908M",
+    "title": "Enemy of the State",
+    "author": "Vince Flynn"
+  },
+  "red war|vince flynn": {
+    "asin": "1471170683",
+    "source": "openlibrary:/books/OL29786894M",
+    "title": "Red War",
+    "author": "Vince Flynn"
+  },
+  "lethal agent|vince flynn": {
+    "asin": "1501190644",
+    "source": "openlibrary:/books/OL29809032M",
+    "title": "Lethal Agent",
+    "author": "Vince Flynn"
+  },
+  "total power|vince flynn": {
+    "asin": "1982194626",
+    "source": "openlibrary:/books/OL38058612M",
+    "title": "Total Power",
+    "author": "Vince Flynn"
+  },
+  "enemy at the gates|vince flynn": {
+    "asin": "1982165030",
+    "source": "openlibrary:/books/OL42712886M",
+    "title": "Enemy at the Gates",
+    "author": "Vince Flynn"
+  },
+  "oath of loyalty|vince flynn": {
+    "asin": "1982165049",
+    "source": "openlibrary:/books/OL51105726M",
+    "title": "Oath of Loyalty",
+    "author": "Vince Flynn"
+  },
+  "code red|vince flynn": {
+    "asin": "1398500879",
+    "source": "openlibrary:/books/OL51051272M",
+    "title": "Code Red",
+    "author": "Vince Flynn"
+  },
+  "capture or kill|vince flynn": {
+    "asin": "1398533025",
+    "source": "openlibrary:/books/OL57536466M",
+    "title": "Capture or Kill",
+    "author": "Vince Flynn"
+  },
+  "denied access|vince flynn": {
+    "asin": "1668045877",
+    "source": "openlibrary:/books/OL57783358M",
+    "title": "Denied Access",
+    "author": "Vince Flynn"
+  },
+  "artificial condition|martha wells": {
+    "asin": "1501977830",
+    "source": "openlibrary:/books/OL50566633M",
+    "title": "Artificial Condition",
+    "author": "Martha Wells"
+  },
+  "rogue protocol|martha wells": {
+    "asin": "1501999796",
+    "source": "openlibrary:/books/OL61034321M",
+    "title": "Rogue Protocol",
+    "author": "Martha Wells"
+  },
+  "exit strategy|martha wells": {
+    "asin": "1501999990",
+    "source": "openlibrary:/books/OL61034439M",
+    "title": "Exit Strategy",
+    "author": "Martha Wells"
+  },
+  "network effect|martha wells": {
+    "asin": "1980021716",
+    "source": "openlibrary:/books/OL61034480M",
+    "title": "Network Effect",
+    "author": "Martha Wells"
+  },
+  "fugitive telemetry|martha wells": {
+    "asin": "1980080631",
+    "source": "openlibrary:/books/OL61034497M",
+    "title": "Fugitive Telemetry",
+    "author": "Martha Wells"
+  },
+  "system collapse|martha wells": {
+    "asin": "1705041027",
+    "source": "openlibrary:/books/OL61034498M",
+    "title": "System Collapse",
+    "author": "Martha Wells"
+  },
+  "platform decay|martha wells": {
+    "asin": "1250827019",
+    "source": "openlibrary:/books/OL61795967M",
+    "title": "Platform Decay",
+    "author": "Martha Wells"
+  },
+  "home: habitat, range, niche, territory|martha wells": {
+    "asin": "1250807840",
+    "source": "openlibrary:/books/OL62098634M",
+    "title": "Home: Habitat, Range, Niche, Territory",
+    "author": "Martha Wells"
+  },
+  "prince caspian|c. s. lewis": {
+    "asin": "0007755007",
+    "source": "openlibrary:/books/OL43566002M",
+    "title": "Prince Caspian",
+    "author": "C. S. Lewis"
+  },
+  "the voyage of the dawn treader|c. s. lewis": {
+    "asin": "0583331408",
+    "source": "openlibrary:/books/OL31934099M",
+    "title": "The Voyage of the Dawn Treader",
+    "author": "C. S. Lewis"
+  },
+  "the silver chair|c. s. lewis": {
+    "asin": "000103412X",
+    "source": "openlibrary:/books/OL32435690M",
+    "title": "The Silver Chair",
+    "author": "C. S. Lewis"
+  },
+  "the horse and his boy|c. s. lewis": {
+    "asin": "1983732400",
+    "source": "openlibrary:/books/OL55409812M",
+    "title": "The Horse and His Boy",
+    "author": "C. S. Lewis"
+  },
+  "the magician's nephew|c. s. lewis": {
+    "asin": "0007319622",
+    "source": "openlibrary:/books/OL44122042M",
+    "title": "The Magician's Nephew",
+    "author": "C. S. Lewis"
+  },
+  "the last battle|c. s. lewis": {
+    "asin": "0007691327",
+    "source": "openlibrary:/books/OL30152672M",
+    "title": "The Last Battle",
+    "author": "C. S. Lewis"
+  },
+  "shadow's edge|brent weeks": {
+    "asin": "0316528269",
+    "source": "openlibrary:/books/OL38924764M",
+    "title": "Shadow's Edge",
+    "author": "Brent Weeks"
+  },
+  "beyond the shadows|brent weeks": {
+    "asin": "0748112561",
+    "source": "openlibrary:/books/OL33392843M",
+    "title": "Beyond the Shadows",
+    "author": "Brent Weeks"
+  },
+  "perfect shadow|brent weeks": {
+    "asin": "0356511065",
+    "source": "openlibrary:/books/OL33644724M",
+    "title": "Perfect Shadow",
+    "author": "Brent Weeks"
+  },
+  "night angel nemesis|brent weeks": {
+    "asin": "0356520463",
+    "source": "openlibrary:/books/OL50619326M",
+    "title": "Night Angel Nemesis",
+    "author": "Brent Weeks"
+  },
+  "a local habitation|seanan mcguire": {
+    "asin": "0756405963",
+    "source": "openlibrary:/books/OL24499110M",
+    "title": "A Local Habitation",
+    "author": "Seanan McGuire"
+  },
+  "an artificial night|seanan mcguire": {
+    "asin": "0756406269",
+    "source": "openlibrary:/books/OL27146649M",
+    "title": "An Artificial Night",
+    "author": "Seanan McGuire"
+  },
+  "late eclipses|seanan mcguire": {
+    "asin": "0756406668",
+    "source": "openlibrary:/books/OL24623294M",
+    "title": "Late Eclipses",
+    "author": "Seanan McGuire"
+  },
+  "one salt sea|seanan mcguire": {
+    "asin": "0756406838",
+    "source": "openlibrary:/books/OL25358190M",
+    "title": "One Salt Sea",
+    "author": "Seanan McGuire"
+  },
+  "ashes of honor|seanan mcguire": {
+    "asin": "0756407494",
+    "source": "openlibrary:/books/OL26033043M",
+    "title": "Ashes of Honor",
+    "author": "Seanan McGuire"
+  },
+  "chimes at midnight|seanan mcguire": {
+    "asin": "0756408148",
+    "source": "openlibrary:/books/OL26386207M",
+    "title": "Chimes at Midnight",
+    "author": "Seanan McGuire"
+  },
+  "the winter long|seanan mcguire": {
+    "asin": "0756408083",
+    "source": "openlibrary:/books/OL27167661M",
+    "title": "The Winter Long",
+    "author": "Seanan McGuire"
+  },
+  "once broken faith|seanan mcguire": {
+    "asin": "0756408105",
+    "source": "openlibrary:/books/OL27216698M",
+    "title": "Once Broken Faith",
+    "author": "Seanan McGuire"
+  },
+  "the brightest fell|seanan mcguire": {
+    "asin": "0756413311",
+    "source": "openlibrary:/books/OL26928674M",
+    "title": "The Brightest Fell",
+    "author": "Seanan McGuire"
+  },
+  "night and silence|seanan mcguire": {
+    "asin": "0756414768",
+    "source": "openlibrary:/books/OL26496872M",
+    "title": "Night and Silence",
+    "author": "Seanan McGuire"
+  },
+  "the unkindest tide|seanan mcguire": {
+    "asin": "0756415071",
+    "source": "openlibrary:/books/OL28295578M",
+    "title": "The Unkindest Tide",
+    "author": "Seanan McGuire"
+  },
+  "a killing frost|seanan mcguire": {
+    "asin": "075641508X",
+    "source": "openlibrary:/books/OL28166581M",
+    "title": "A Killing Frost",
+    "author": "Seanan McGuire"
+  },
+  "when sorrows come|seanan mcguire": {
+    "asin": "171365590X",
+    "source": "openlibrary:/books/OL37848708M",
+    "title": "When Sorrows Come",
+    "author": "Seanan McGuire"
+  },
+  "be the serpent|seanan mcguire": {
+    "asin": "0756416868",
+    "source": "openlibrary:/books/OL36842188M",
+    "title": "Be the Serpent",
+    "author": "Seanan McGuire"
+  },
+  "sleep no more|seanan mcguire": {
+    "asin": "0756416833",
+    "source": "openlibrary:/books/OL47317870M",
+    "title": "Sleep No More",
+    "author": "Seanan McGuire"
+  },
+  "the innocent sleep|seanan mcguire": {
+    "asin": "0756416809",
+    "source": "openlibrary:/books/OL47317869M",
+    "title": "The Innocent Sleep",
+    "author": "Seanan McGuire"
+  },
+  "lirael|garth nix": {
+    "asin": "0060503300",
+    "source": "openlibrary:/books/OL37090589M",
+    "title": "Lirael",
+    "author": "Garth Nix"
+  },
+  "abhorsen|garth nix": {
+    "asin": "0060532777",
+    "source": "openlibrary:/books/OL37082081M",
+    "title": "Abhorsen",
+    "author": "Garth Nix"
+  },
+  "the creature in the case|garth nix": {
+    "asin": "0062572180",
+    "source": "openlibrary:/books/OL26880389M",
+    "title": "The Creature in the Case",
+    "author": "Garth Nix"
+  },
+  "clariel|garth nix": {
+    "asin": "1471403866",
+    "source": "openlibrary:/books/OL39486786M",
+    "title": "Clariel",
+    "author": "Garth Nix"
+  },
+  "goldenhand|garth nix": {
+    "asin": "0062216783",
+    "source": "openlibrary:/books/OL35948052M",
+    "title": "Goldenhand",
+    "author": "Garth Nix"
+  },
+  "terciel and elinor|garth nix": {
+    "asin": "1471409716",
+    "source": "openlibrary:/books/OL39566094M",
+    "title": "Terciel and Elinor",
+    "author": "Garth Nix"
+  },
+  "the ghost brigades|john scalzi": {
+    "asin": "1250359554",
+    "source": "openlibrary:/books/OL50869854M",
+    "title": "The Ghost Brigades",
+    "author": "John Scalzi"
+  },
+  "the last colony|john scalzi": {
+    "asin": "142993378X",
+    "source": "openlibrary:/books/OL29146466M",
+    "title": "The Last Colony",
+    "author": "John Scalzi"
+  },
+  "zoe's tale|john scalzi": {
+    "asin": "033050603X",
+    "source": "openlibrary:/books/OL28053004M",
+    "title": "Zoe's Tale",
+    "author": "John Scalzi"
+  },
+  "the human division|john scalzi": {
+    "asin": "0765333511",
+    "source": "openlibrary:/books/OL27146365M",
+    "title": "The Human Division",
+    "author": "John Scalzi"
+  },
+  "the end of all things|john scalzi": {
+    "asin": "0765376105",
+    "source": "openlibrary:/books/OL28418501M",
+    "title": "The End of All Things",
+    "author": "John Scalzi"
+  },
+  "the ballad of never after|stephanie garber": {
+    "asin": "1399633880",
+    "source": "openlibrary:/books/OL60826320M",
+    "title": "The Ballad of Never After",
+    "author": "Stephanie Garber"
+  },
+  "a curse for true love|stephanie garber": {
+    "asin": "1399633899",
+    "source": "openlibrary:/books/OL60860705M",
+    "title": "A Curse for True Love",
+    "author": "Stephanie Garber"
+  },
+  "dragonfly in amber|diana gabaldon": {
+    "asin": "060636255X",
+    "source": "openlibrary:/books/OL49658199M",
+    "title": "Dragonfly in Amber",
+    "author": "Diana Gabaldon"
+  },
+  "voyager|diana gabaldon": {
+    "asin": "038569041X",
+    "source": "openlibrary:/books/OL43002661M",
+    "title": "Voyager",
+    "author": "Diana Gabaldon"
+  },
+  "drums of autumn|diana gabaldon": {
+    "asin": "0385658710",
+    "source": "openlibrary:/books/OL39221349M",
+    "title": "Drums of Autumn",
+    "author": "Diana Gabaldon"
+  },
+  "the fiery cross|diana gabaldon": {
+    "asin": "0099710013",
+    "source": "openlibrary:/books/OL40307146M",
+    "title": "The Fiery Cross",
+    "author": "Diana Gabaldon"
+  },
+  "a breath of snow and ashes|diana gabaldon": {
+    "asin": "0606362592",
+    "source": "openlibrary:/books/OL46899502M",
+    "title": "A Breath of Snow and Ashes",
+    "author": "Diana Gabaldon"
+  },
+  "an echo in the bone|diana gabaldon": {
+    "asin": "0752898477",
+    "source": "openlibrary:/books/OL32223055M",
+    "title": "An Echo in the Bone",
+    "author": "Diana Gabaldon"
+  },
+  "written in my own heart’s blood|diana gabaldon": {
+    "asin": "1490604243",
+    "source": "openlibrary:/books/OL32221809M",
+    "title": "Written in My Own Heart’s Blood",
+    "author": "Diana Gabaldon"
+  },
+  "go tell the bees that i am gone|diana gabaldon": {
+    "asin": "0593497198",
+    "source": "openlibrary:/books/OL37744421M",
+    "title": "Go Tell the Bees That I Am Gone",
+    "author": "Diana Gabaldon"
+  },
+  "lord john and the private matter|diana gabaldon": {
+    "asin": "1400026091",
+    "source": "openlibrary:/books/OL24087930M",
+    "title": "Lord John and the Private Matter",
+    "author": "Diana Gabaldon"
+  },
+  "lord john and the brotherhood of the blade|diana gabaldon": {
+    "asin": "0440337127",
+    "source": "openlibrary:/books/OL24252554M",
+    "title": "Lord John and the Brotherhood of the Blade",
+    "author": "Diana Gabaldon"
+  },
+  "lord john and the hand of devils|diana gabaldon": {
+    "asin": "0385311397",
+    "source": "openlibrary:/books/OL17991806M",
+    "title": "Lord John and the Hand of Devils",
+    "author": "Diana Gabaldon"
+  },
+  "the scottish prisoner|diana gabaldon": {
+    "asin": "1409135195",
+    "source": "openlibrary:/books/OL28461858M",
+    "title": "The Scottish Prisoner",
+    "author": "Diana Gabaldon"
+  },
+  "the sea of monsters|rick riordan": {
+    "asin": "0141338253",
+    "source": "openlibrary:/books/OL26709346M",
+    "title": "The Sea of Monsters",
+    "author": "Rick Riordan"
+  },
+  "the titan's curse|rick riordan": {
+    "asin": "1480614947",
+    "source": "openlibrary:/books/OL45715674M",
+    "title": "The Titan's Curse",
+    "author": "Rick Riordan"
+  },
+  "the battle of the labyrinth|rick riordan": {
+    "asin": "0241336783",
+    "source": "openlibrary:/books/OL29396816M",
+    "title": "The Battle of the Labyrinth",
+    "author": "Rick Riordan"
+  },
+  "the lost hero|rick riordan": {
+    "asin": "0141384921",
+    "source": "openlibrary:/books/OL57633473M",
+    "title": "The Lost Hero",
+    "author": "Rick Riordan"
+  },
+  "the son of neptune|rick riordan": {
+    "asin": "0606394990",
+    "source": "openlibrary:/books/OL33056261M",
+    "title": "The Son of Neptune",
+    "author": "Rick Riordan"
+  },
+  "the mark of athena|rick riordan": {
+    "asin": "0449014509",
+    "source": "openlibrary:/books/OL7563238M",
+    "title": "The Mark of Athena",
+    "author": "Rick Riordan"
+  },
+  "the blood of olympus|rick riordan": {
+    "asin": "1902603893",
+    "source": "openlibrary:/books/OL40271361M",
+    "title": "The Blood of Olympus",
+    "author": "Rick Riordan"
+  },
+  "the hidden oracle|rick riordan": {
+    "asin": "1484782712",
+    "source": "openlibrary:/books/OL43661012M",
+    "title": "The Hidden Oracle",
+    "author": "Rick Riordan"
+  },
+  "the dark prophecy|rick riordan": {
+    "asin": "1368009581",
+    "source": "openlibrary:/books/OL43015554M",
+    "title": "The Dark Prophecy",
+    "author": "Rick Riordan"
+  },
+  "the burning maze|rick riordan": {
+    "asin": "1484746430",
+    "source": "openlibrary:/books/OL26454496M",
+    "title": "The Burning Maze",
+    "author": "Rick Riordan"
+  },
+  "the tyrant's tomb|rick riordan": {
+    "asin": "1484780663",
+    "source": "openlibrary:/books/OL35673716M",
+    "title": "The Tyrant's Tomb",
+    "author": "Rick Riordan"
+  },
+  "the tower of nero|rick riordan": {
+    "asin": "0593290968",
+    "source": "openlibrary:/books/OL62400835M",
+    "title": "The Tower of Nero",
+    "author": "Rick Riordan"
+  },
+  "the chalice of the gods|rick riordan": {
+    "asin": "136810410X",
+    "source": "openlibrary:/books/OL61423798M",
+    "title": "The Chalice of the Gods",
+    "author": "Rick Riordan"
+  },
+  "wrath of the triple goddess|rick riordan": {
+    "asin": "136810763X",
+    "source": "openlibrary:/books/OL61500052M",
+    "title": "Wrath of the Triple Goddess",
+    "author": "Rick Riordan"
+  },
+  "the dragon republic|r. f. kuang": {
+    "asin": "1982661836",
+    "source": "openlibrary:/books/OL28654471M",
+    "title": "The Dragon Republic",
+    "author": "R. F. Kuang"
+  },
+  "the burning god|r. f. kuang": {
+    "asin": "0008339155",
+    "source": "openlibrary:/books/OL31380596M",
+    "title": "The Burning God",
+    "author": "R. F. Kuang"
+  },
+  "the crimson campaign|brian mcclellan": {
+    "asin": "0356502023",
+    "source": "openlibrary:/books/OL26758409M",
+    "title": "The Crimson Campaign",
+    "author": "Brian McClellan"
+  },
+  "the autumn republic|brian mcclellan": {
+    "asin": "0316219126",
+    "source": "openlibrary:/books/OL27188558M",
+    "title": "The Autumn Republic",
+    "author": "Brian McClellan"
+  },
+  "sins of empire|brian mcclellan": {
+    "asin": "0316407224",
+    "source": "openlibrary:/books/OL26833037M",
+    "title": "Sins of Empire",
+    "author": "Brian McClellan"
+  },
+  "wrath of empire|brian mcclellan": {
+    "asin": "1549196537",
+    "source": "openlibrary:/books/OL46542427M",
+    "title": "Wrath of Empire",
+    "author": "Brian McClellan"
+  },
+  "blood of empire|brian mcclellan": {
+    "asin": "0356509338",
+    "source": "openlibrary:/books/OL33686765M",
+    "title": "Blood of Empire",
+    "author": "Brian McClellan"
+  },
+  "the rules of magic|alice hoffman": {
+    "asin": "1501183877",
+    "source": "openlibrary:/books/OL43302022M",
+    "title": "The Rules of Magic",
+    "author": "Alice Hoffman"
+  },
+  "magic lessons|alice hoffman": {
+    "asin": "1982168250",
+    "source": "openlibrary:/books/OL47032403M",
+    "title": "Magic Lessons",
+    "author": "Alice Hoffman"
+  },
+  "the book of magic|alice hoffman": {
+    "asin": "1638080941",
+    "source": "openlibrary:/books/OL34988541M",
+    "title": "The Book of Magic",
+    "author": "Alice Hoffman"
+  },
+  "royal assassin|robin hobb": {
+    "asin": "0007552130",
+    "source": "openlibrary:/books/OL44140475M",
+    "title": "Royal Assassin",
+    "author": "Robin Hobb"
+  },
+  "assassin's quest|robin hobb": {
+    "asin": "1400144361",
+    "source": "openlibrary:/books/OL35643498M",
+    "title": "Assassin's Quest",
+    "author": "Robin Hobb"
+  },
+  "ship of magic|robin hobb": {
+    "asin": "0593724305",
+    "source": "openlibrary:/books/OL48259691M",
+    "title": "Ship of Magic",
+    "author": "Robin Hobb"
+  },
+  "ship of destiny|robin hobb": {
+    "asin": "0593724321",
+    "source": "openlibrary:/books/OL48281027M",
+    "title": "Ship of Destiny",
+    "author": "Robin Hobb"
+  },
+  "fool's errand|robin hobb": {
+    "asin": "0006486010",
+    "source": "openlibrary:/books/OL7259285M",
+    "title": "Fool's Errand",
+    "author": "Robin Hobb"
+  },
+  "fool's fate|robin hobb": {
+    "asin": "0007370466",
+    "source": "openlibrary:/books/OL37124241M",
+    "title": "Fool's Fate",
+    "author": "Robin Hobb"
+  },
+  "dragon haven|robin hobb": {
+    "asin": "0007335814",
+    "source": "openlibrary:/books/OL43574763M",
+    "title": "Dragon Haven",
+    "author": "Robin Hobb"
+  },
+  "city of dragons|robin hobb": {
+    "asin": "0007477171",
+    "source": "openlibrary:/books/OL43317100M",
+    "title": "City of Dragons",
+    "author": "Robin Hobb"
+  },
+  "blood of dragons|robin hobb": {
+    "asin": "0007444133",
+    "source": "openlibrary:/books/OL43018482M",
+    "title": "Blood of Dragons",
+    "author": "Robin Hobb"
+  },
+  "fool's assassin|robin hobb": {
+    "asin": "0008140278",
+    "source": "openlibrary:/books/OL42864943M",
+    "title": "Fool's Assassin",
+    "author": "Robin Hobb"
+  },
+  "assassin's fate|robin hobb": {
+    "asin": "0008240418",
+    "source": "openlibrary:/books/OL40220872M",
+    "title": "Assassin's Fate",
+    "author": "Robin Hobb"
+  },
+  "firefight|brandon sanderson": {
+    "asin": "1603933522",
+    "source": "openlibrary:/books/OL57481189M",
+    "title": "Firefight",
+    "author": "Brandon Sanderson"
+  },
+  "calamity|brandon sanderson": {
+    "asin": "1603933409",
+    "source": "openlibrary:/books/OL57481215M",
+    "title": "Calamity",
+    "author": "Brandon Sanderson"
+  },
+  "mitosis|brandon sanderson": {
+    "asin": "1978604378",
+    "source": "openlibrary:/books/OL43902285M",
+    "title": "Mitosis",
+    "author": "Brandon Sanderson"
+  },
+  "lux|brandon sanderson": {
+    "asin": "1713697785",
+    "source": "openlibrary:/books/OL57476481M",
+    "title": "Lux",
+    "author": "Brandon Sanderson"
+  },
+  "glass sword|victoria aveyard": {
+    "asin": "006245532X",
+    "source": "openlibrary:/books/OL43624025M",
+    "title": "Glass Sword",
+    "author": "Victoria Aveyard"
+  },
+  "king's cage|victoria aveyard": {
+    "asin": "1955876274",
+    "source": "openlibrary:/books/OL42846055M",
+    "title": "King's Cage",
+    "author": "Victoria Aveyard"
+  },
+  "war storm|victoria aveyard": {
+    "asin": "0062856987",
+    "source": "openlibrary:/books/OL43230877M",
+    "title": "War Storm",
+    "author": "Victoria Aveyard"
+  },
+  "cruel crown|victoria aveyard": {
+    "asin": "1409165841",
+    "source": "openlibrary:/books/OL48159770M",
+    "title": "Cruel Crown",
+    "author": "Victoria Aveyard"
+  },
+  "broken throne|victoria aveyard": {
+    "asin": "1955876290",
+    "source": "openlibrary:/books/OL42767094M",
+    "title": "Broken Throne",
+    "author": "Victoria Aveyard"
+  },
+  "golden son|pierce brown": {
+    "asin": "1470380412",
+    "source": "openlibrary:/books/OL61040101M",
+    "title": "Golden Son",
+    "author": "Pierce Brown"
+  },
+  "morning star|pierce brown": {
+    "asin": "1501904418",
+    "source": "openlibrary:/books/OL61041719M",
+    "title": "Morning Star",
+    "author": "Pierce Brown"
+  },
+  "iron gold|pierce brown": {
+    "asin": "1501959794",
+    "source": "openlibrary:/books/OL61046312M",
+    "title": "Iron Gold",
+    "author": "Pierce Brown"
+  },
+  "dark age|pierce brown": {
+    "asin": "1980000174",
+    "source": "openlibrary:/books/OL61041721M",
+    "title": "Dark Age",
+    "author": "Pierce Brown"
+  },
+  "light bringer|pierce brown": {
+    "asin": "0425285987",
+    "source": "openlibrary:/books/OL49299475M",
+    "title": "Light Bringer",
+    "author": "Pierce Brown"
+  },
+  "redemption ark|alastair reynolds": {
+    "asin": "0575073845",
+    "source": "openlibrary:/books/OL7878702M",
+    "title": "Redemption Ark",
+    "author": "Alastair Reynolds"
+  },
+  "absolution gap|alastair reynolds": {
+    "asin": "0575083166",
+    "source": "openlibrary:/books/OL26790203M",
+    "title": "Absolution Gap",
+    "author": "Alastair Reynolds"
+  },
+  "inhibitor phase|alastair reynolds": {
+    "asin": "0575090723",
+    "source": "openlibrary:/books/OL33906308M",
+    "title": "Inhibitor Phase",
+    "author": "Alastair Reynolds"
+  },
+  "chasm city|alastair reynolds": {
+    "asin": "0575087692",
+    "source": "openlibrary:/books/OL34432679M",
+    "title": "Chasm City",
+    "author": "Alastair Reynolds"
+  },
+  "the prefect|alastair reynolds": {
+    "asin": "0575078189",
+    "source": "openlibrary:/books/OL39218978M",
+    "title": "The Prefect",
+    "author": "Alastair Reynolds"
+  },
+  "elysium fire|alastair reynolds": {
+    "asin": "0575090618",
+    "source": "openlibrary:/books/OL28697979M",
+    "title": "Elysium Fire",
+    "author": "Alastair Reynolds"
+  },
+  "machine vendetta|alastair reynolds": {
+    "asin": "0316462845",
+    "source": "openlibrary:/books/OL46665804M",
+    "title": "Machine Vendetta",
+    "author": "Alastair Reynolds"
+  },
+  "moon over soho|ben aaronovitch": {
+    "asin": "0575097639",
+    "source": "openlibrary:/books/OL48137679M",
+    "title": "Moon Over Soho",
+    "author": "Ben Aaronovitch"
+  },
+  "broken homes|ben aaronovitch": {
+    "asin": "0575132493",
+    "source": "openlibrary:/books/OL48147597M",
+    "title": "Broken Homes",
+    "author": "Ben Aaronovitch"
+  },
+  "foxglove summer|ben aaronovitch": {
+    "asin": "0575132515",
+    "source": "openlibrary:/books/OL48148156M",
+    "title": "Foxglove Summer",
+    "author": "Ben Aaronovitch"
+  },
+  "the hanging tree|ben aaronovitch": {
+    "asin": "0756409675",
+    "source": "openlibrary:/books/OL27226786M",
+    "title": "The Hanging Tree",
+    "author": "Ben Aaronovitch"
+  },
+  "lies sleeping|ben aaronovitch": {
+    "asin": "1473207827",
+    "source": "openlibrary:/books/OL43564570M",
+    "title": "Lies Sleeping",
+    "author": "Ben Aaronovitch"
+  },
+  "false value|ben aaronovitch": {
+    "asin": "1473207878",
+    "source": "openlibrary:/books/OL30166172M",
+    "title": "False Value",
+    "author": "Ben Aaronovitch"
+  },
+  "amongst our weapons|ben aaronovitch": {
+    "asin": "1473226686",
+    "source": "openlibrary:/books/OL39550551M",
+    "title": "Amongst Our Weapons",
+    "author": "Ben Aaronovitch"
+  },
+  "stone and sky|ben aaronovitch": {
+    "asin": "1473226716",
+    "source": "openlibrary:/books/OL57744487M",
+    "title": "Stone and Sky",
+    "author": "Ben Aaronovitch"
+  },
+  "the furthest station|ben aaronovitch": {
+    "asin": "1665190574",
+    "source": "openlibrary:/books/OL32670554M",
+    "title": "The Furthest Station",
+    "author": "Ben Aaronovitch"
+  },
+  "the october man|ben aaronovitch": {
+    "asin": "1473228662",
+    "source": "openlibrary:/books/OL62084906M",
+    "title": "The October Man",
+    "author": "Ben Aaronovitch"
+  },
+  "what abigail did that summer|ben aaronovitch": {
+    "asin": "1473224357",
+    "source": "openlibrary:/books/OL33943565M",
+    "title": "What Abigail Did That Summer",
+    "author": "Ben Aaronovitch"
+  },
+  "winter’s gifts|ben aaronovitch": {
+    "asin": "1473224381",
+    "source": "openlibrary:/books/OL51062445M",
+    "title": "Winter’s Gifts",
+    "author": "Ben Aaronovitch"
+  },
+  "rise of empire|michael j. sullivan": {
+    "asin": "0316187704",
+    "source": "openlibrary:/books/OL24842603M",
+    "title": "Rise of Empire",
+    "author": "Michael J. Sullivan"
+  },
+  "heir of novron|michael j. sullivan": {
+    "asin": "0316187712",
+    "source": "openlibrary:/books/OL24853277M",
+    "title": "Heir of Novron",
+    "author": "Michael J. Sullivan"
+  },
+  "the crown tower|michael j. sullivan": {
+    "asin": "031624371X",
+    "source": "openlibrary:/books/OL28343365M",
+    "title": "The Crown Tower",
+    "author": "Michael J. Sullivan"
+  },
+  "the rose and the thorn|michael j. sullivan": {
+    "asin": "0356502287",
+    "source": "openlibrary:/books/OL25985850M",
+    "title": "The Rose and the Thorn",
+    "author": "Michael J. Sullivan"
+  },
+  "the death of dulgath|michael j. sullivan": {
+    "asin": "1943363021",
+    "source": "openlibrary:/books/OL26870053M",
+    "title": "The Death of Dulgath",
+    "author": "Michael J. Sullivan"
+  },
+  "the disappearance of winter's daughter|michael j. sullivan": {
+    "asin": "1943363153",
+    "source": "openlibrary:/books/OL26977300M",
+    "title": "The Disappearance of Winter's Daughter",
+    "author": "Michael J. Sullivan"
+  },
+  "drumindor|michael j. sullivan": {
+    "asin": "1943363714",
+    "source": "openlibrary:/books/OL57613018M",
+    "title": "Drumindor",
+    "author": "Michael J. Sullivan"
+  },
+  "a day of fallen night|samantha shannon": {
+    "asin": "1526660288",
+    "source": "openlibrary:/books/OL40315580M",
+    "title": "A Day of Fallen Night",
+    "author": "Samantha Shannon"
+  },
+  "among the burning flowers|samantha shannon": {
+    "asin": "1639736018",
+    "source": "openlibrary:/books/OL60897803M",
+    "title": "Among the Burning Flowers",
+    "author": "Samantha Shannon"
+  },
+  "the last graduate|naomi novik": {
+    "asin": "0593128885",
+    "source": "openlibrary:/books/OL37857649M",
+    "title": "The Last Graduate",
+    "author": "Naomi Novik"
+  },
+  "the golden enclaves|naomi novik": {
+    "asin": "0593158377",
+    "source": "openlibrary:/books/OL47307991M",
+    "title": "The Golden Enclaves",
+    "author": "Naomi Novik"
+  },
+  "the elite|kiera cass": {
+    "asin": "0062059963",
+    "source": "openlibrary:/books/OL46835456M",
+    "title": "The Elite",
+    "author": "Kiera Cass"
+  },
+  "the one|kiera cass": {
+    "asin": "0062338501",
+    "source": "openlibrary:/books/OL43018317M",
+    "title": "The One",
+    "author": "Kiera Cass"
+  },
+  "the heir|kiera cass": {
+    "asin": "0062397451",
+    "source": "openlibrary:/books/OL43020395M",
+    "title": "The Heir",
+    "author": "Kiera Cass"
+  },
+  "the crown|kiera cass": {
+    "asin": "0007580258",
+    "source": "openlibrary:/books/OL36217699M",
+    "title": "The Crown",
+    "author": "Kiera Cass"
+  },
+  "happily ever after|kiera cass": {
+    "asin": "0062414097",
+    "source": "openlibrary:/books/OL35936860M",
+    "title": "Happily Ever After",
+    "author": "Kiera Cass"
+  },
+  "city of ashes|cassandra clare": {
+    "asin": "1416914293",
+    "source": "openlibrary:/books/OL9609638M",
+    "title": "City of Ashes",
+    "author": "Cassandra Clare"
+  },
+  "city of glass|cassandra clare": {
+    "asin": "1416914307",
+    "source": "openlibrary:/books/OL22560050M",
+    "title": "City of Glass",
+    "author": "Cassandra Clare"
+  },
+  "city of fallen angels|cassandra clare": {
+    "asin": "144243371X",
+    "source": "openlibrary:/books/OL52992948M",
+    "title": "City of Fallen Angels",
+    "author": "Cassandra Clare"
+  },
+  "city of lost souls|cassandra clare": {
+    "asin": "1442416866",
+    "source": "openlibrary:/books/OL25138965M",
+    "title": "City of Lost Souls",
+    "author": "Cassandra Clare"
+  },
+  "city of heavenly fire|cassandra clare": {
+    "asin": "1442416890",
+    "source": "openlibrary:/books/OL26264897M",
+    "title": "City of Heavenly Fire",
+    "author": "Cassandra Clare"
+  },
+  "clockwork angel|cassandra clare": {
+    "asin": "1406393746",
+    "source": "openlibrary:/books/OL39553236M",
+    "title": "Clockwork Angel",
+    "author": "Cassandra Clare"
+  },
+  "clockwork prince|cassandra clare": {
+    "asin": "1416975888",
+    "source": "openlibrary:/books/OL24906274M",
+    "title": "Clockwork Prince",
+    "author": "Cassandra Clare"
+  },
+  "clockwork princess|cassandra clare": {
+    "asin": "1406356891",
+    "source": "openlibrary:/books/OL28655207M",
+    "title": "Clockwork Princess",
+    "author": "Cassandra Clare"
+  },
+  "lady midnight|cassandra clare": {
+    "asin": "1534432302",
+    "source": "openlibrary:/books/OL30850872M",
+    "title": "Lady Midnight",
+    "author": "Cassandra Clare"
+  },
+  "lord of shadows|cassandra clare": {
+    "asin": "1489455906",
+    "source": "openlibrary:/books/OL33064519M",
+    "title": "Lord of Shadows",
+    "author": "Cassandra Clare"
+  },
+  "queen of air and darkness|cassandra clare": {
+    "asin": "1471116727",
+    "source": "openlibrary:/books/OL29367931M",
+    "title": "Queen of Air and Darkness",
+    "author": "Cassandra Clare"
+  },
+  "chain of gold|cassandra clare": {
+    "asin": "1406390763",
+    "source": "openlibrary:/books/OL34573534M",
+    "title": "Chain of Gold",
+    "author": "Cassandra Clare"
+  },
+  "chain of iron|cassandra clare": {
+    "asin": "1529500915",
+    "source": "openlibrary:/books/OL36776034M",
+    "title": "Chain of Iron",
+    "author": "Cassandra Clare"
+  },
+  "chain of thorns|cassandra clare": {
+    "asin": "1481431943",
+    "source": "openlibrary:/books/OL42691020M",
+    "title": "Chain of Thorns",
+    "author": "Cassandra Clare"
+  },
+  "unravel me|tahereh mafi": {
+    "asin": "0008687625",
+    "source": "openlibrary:/books/OL50627280M",
+    "title": "Unravel Me",
+    "author": "Tahereh Mafi"
+  },
+  "ignite me|tahereh mafi": {
+    "asin": "0008687633",
+    "source": "openlibrary:/books/OL51586347M",
+    "title": "Ignite Me",
+    "author": "Tahereh Mafi"
+  },
+  "restore me|tahereh mafi": {
+    "asin": "1538500485",
+    "source": "openlibrary:/books/OL35314871M",
+    "title": "Restore Me",
+    "author": "Tahereh Mafi"
+  },
+  "defy me|tahereh mafi": {
+    "asin": "1780318545",
+    "source": "openlibrary:/books/OL35872348M",
+    "title": "Defy Me",
+    "author": "Tahereh Mafi"
+  },
+  "imagine me|tahereh mafi": {
+    "asin": "0008586314",
+    "source": "openlibrary:/books/OL46578201M",
+    "title": "Imagine Me",
+    "author": "Tahereh Mafi"
+  },
+  "destroy me|tahereh mafi": {
+    "asin": "000852713X",
+    "source": "openlibrary:/books/OL37330446M",
+    "title": "Destroy Me",
+    "author": "Tahereh Mafi"
+  },
+  "fracture me|tahereh mafi": {
+    "asin": "0062284835",
+    "source": "openlibrary:/books/OL29669966M",
+    "title": "Fracture Me",
+    "author": "Tahereh Mafi"
+  },
+  "shadow me|tahereh mafi": {
+    "asin": "0062906267",
+    "source": "openlibrary:/books/OL29797595M",
+    "title": "Shadow Me",
+    "author": "Tahereh Mafi"
+  },
+  "reveal me|tahereh mafi": {
+    "asin": "0062906275",
+    "source": "openlibrary:/books/OL29800569M",
+    "title": "Reveal Me",
+    "author": "Tahereh Mafi"
+  },
+  "believe me|tahereh mafi": {
+    "asin": "0008586322",
+    "source": "openlibrary:/books/OL46570561M",
+    "title": "Believe Me",
+    "author": "Tahereh Mafi"
+  },
+  "watch me|tahereh mafi": {
+    "asin": "0063425181",
+    "source": "openlibrary:/books/OL57564971M",
+    "title": "Watch Me",
+    "author": "Tahereh Mafi"
+  },
+  "the sign of the four|arthur conan doyle": {
+    "asin": "1722414928",
+    "source": "openlibrary:/books/OL54727062M",
+    "title": "The Sign of the Four",
+    "author": "Arthur Conan Doyle"
+  },
+  "the adventures of sherlock holmes|arthur conan doyle": {
+    "asin": "1774537915",
+    "source": "openlibrary:/books/OL51682750M",
+    "title": "The Adventures of Sherlock Holmes",
+    "author": "Arthur Conan Doyle"
+  },
+  "the hound of the baskervilles|arthur conan doyle": {
+    "asin": "164833329X",
+    "source": "openlibrary:/books/OL59728223M",
+    "title": "The Hound of the Baskervilles",
+    "author": "Arthur Conan Doyle"
+  },
+  "the return of sherlock holmes|arthur conan doyle": {
+    "asin": "1785298615",
+    "source": "openlibrary:/books/OL38563997M",
+    "title": "The Return of Sherlock Holmes",
+    "author": "Arthur Conan Doyle"
+  },
+  "the valley of fear|arthur conan doyle": {
+    "asin": "1521914109",
+    "source": "openlibrary:/books/OL40802235M",
+    "title": "The Valley of Fear",
+    "author": "Arthur Conan Doyle"
+  },
+  "his last bow|arthur conan doyle": {
+    "asin": "172010008X",
+    "source": "openlibrary:/books/OL40553431M",
+    "title": "His Last Bow",
+    "author": "Arthur Conan Doyle"
+  },
+  "the case-book of sherlock holmes|arthur conan doyle": {
+    "asin": "1081003839",
+    "source": "openlibrary:/books/OL46829947M",
+    "title": "The Case-Book of Sherlock Holmes",
+    "author": "Arthur Conan Doyle"
+  },
+  "the house of silk|anthony horowitz": {
+    "asin": "1444813404",
+    "source": "openlibrary:/books/OL43487894M",
+    "title": "The House of Silk",
+    "author": "Anthony Horowitz"
+  },
+  "a study in scarlet women|sherry thomas": {
+    "asin": "150475901X",
+    "source": "openlibrary:/books/OL32004072M",
+    "title": "A Study in Scarlet Women",
+    "author": "Sherry Thomas"
+  },
+  "shift|hugh howey": {
+    "asin": "1804940836",
+    "source": "openlibrary:/books/OL59165969M",
+    "title": "Shift",
+    "author": "Hugh Howey"
+  },
+  "dust|hugh howey": {
+    "asin": "1804940844",
+    "source": "openlibrary:/books/OL59165991M",
+    "title": "Dust",
+    "author": "Hugh Howey"
+  },
+  "starsight|brandon sanderson": {
+    "asin": "1603936785",
+    "source": "openlibrary:/books/OL57496726M",
+    "title": "Starsight",
+    "author": "Brandon Sanderson"
+  },
+  "cytonic|brandon sanderson": {
+    "asin": "1603936793",
+    "source": "openlibrary:/books/OL57496924M",
+    "title": "Cytonic",
+    "author": "Brandon Sanderson"
+  },
+  "defiant|brandon sanderson": {
+    "asin": "1938570170",
+    "source": "openlibrary:/books/OL57497010M",
+    "title": "Defiant",
+    "author": "Brandon Sanderson"
+  },
+  "sunreach|brandon sanderson": {
+    "asin": "0593590325",
+    "source": "openlibrary:/books/OL57496869M",
+    "title": "Sunreach",
+    "author": "Brandon Sanderson"
+  },
+  "redawn|brandon sanderson": {
+    "asin": "0593590341",
+    "source": "openlibrary:/books/OL57496905M",
+    "title": "ReDawn",
+    "author": "Brandon Sanderson"
+  },
+  "evershore|brandon sanderson": {
+    "asin": "0593590368",
+    "source": "openlibrary:/books/OL57496987M",
+    "title": "Evershore",
+    "author": "Brandon Sanderson"
+  },
+  "authority|jeff vandermeer": {
+    "asin": "0007553463",
+    "source": "openlibrary:/books/OL40262906M",
+    "title": "Authority",
+    "author": "Jeff VanderMeer"
+  },
+  "acceptance|jeff vandermeer": {
+    "asin": "0007553552",
+    "source": "openlibrary:/books/OL44145559M",
+    "title": "Acceptance",
+    "author": "Jeff VanderMeer"
+  },
+  "absolution|jeff vandermeer": {
+    "asin": "0008725993",
+    "source": "openlibrary:/books/OL60822904M",
+    "title": "Absolution",
+    "author": "Jeff VanderMeer"
+  },
+  "11/22/63|stephen king": {
+    "asin": "1444727338",
+    "source": "openlibrary:/books/OL62546018M",
+    "title": "11/22/63",
+    "author": "Stephen King"
+  },
+  "the shining|stephen king": {
+    "asin": "1848940998",
+    "source": "openlibrary:/books/OL53243897M",
+    "title": "The Shining",
+    "author": "Stephen King"
+  },
+  "carrie|stephen king": {
+    "asin": "0525616802",
+    "source": "openlibrary:/books/OL60608656M",
+    "title": "Carrie",
+    "author": "Stephen King"
+  },
+  "salem's lot|stephen king": {
+    "asin": "1399746960",
+    "source": "openlibrary:/books/OL60826471M",
+    "title": "Salem's Lot",
+    "author": "Stephen King"
+  },
+  "the stand|stephen king": {
+    "asin": "1444720732",
+    "source": "openlibrary:/books/OL62542496M",
+    "title": "The Stand",
+    "author": "Stephen King"
+  },
+  "pet sematary|stephen king": {
+    "asin": "1668075768",
+    "source": "openlibrary:/books/OL61225810M",
+    "title": "Pet Sematary",
+    "author": "Stephen King"
+  },
+  "it|stephen king": {
+    "asin": "1444707868",
+    "source": "openlibrary:/books/OL62580344M",
+    "title": "It",
+    "author": "Stephen King"
+  },
+  "the green mile|stephen king": {
+    "asin": "1407216511",
+    "source": "openlibrary:/books/OL53484077M",
+    "title": "The Green Mile",
+    "author": "Stephen King"
+  },
+  "different seasons|stephen king": {
+    "asin": "0451183940",
+    "source": "openlibrary:/books/OL7573654M",
+    "title": "Different Seasons",
+    "author": "Stephen King"
+  },
+  "words of radiance|brandon sanderson": {
+    "asin": "142723308X",
+    "source": "openlibrary:/books/OL57480778M",
+    "title": "Words of Radiance",
+    "author": "Brandon Sanderson"
+  },
+  "oathbringer|brandon sanderson": {
+    "asin": "1409150089",
+    "source": "openlibrary:/books/OL62207702M",
+    "title": "Oathbringer",
+    "author": "Brandon Sanderson"
+  },
+  "rhythm of war|brandon sanderson": {
+    "asin": "1473231051",
+    "source": "openlibrary:/books/OL62170583M",
+    "title": "Rhythm of War",
+    "author": "Brandon Sanderson"
+  },
+  "wind and truth|brandon sanderson": {
+    "asin": "1250368286",
+    "source": "openlibrary:/books/OL57480993M",
+    "title": "Wind and Truth",
+    "author": "Brandon Sanderson"
+  },
+  "edgedancer|brandon sanderson": {
+    "asin": "1705076475",
+    "source": "openlibrary:/books/OL57480804M",
+    "title": "Edgedancer",
+    "author": "Brandon Sanderson"
+  },
+  "dawnshard|brandon sanderson": {
+    "asin": "1705076424",
+    "source": "openlibrary:/books/OL49361185M",
+    "title": "Dawnshard",
+    "author": "Brandon Sanderson"
+  },
+  "howling dark|christopher ruocchio": {
+    "asin": "1399625772",
+    "source": "openlibrary:/books/OL60159771M",
+    "title": "Howling Dark",
+    "author": "Christopher Ruocchio"
+  },
+  "demon in white|christopher ruocchio": {
+    "asin": "1399625780",
+    "source": "openlibrary:/books/OL60159789M",
+    "title": "Demon in White",
+    "author": "Christopher Ruocchio"
+  },
+  "kingdoms of death|christopher ruocchio": {
+    "asin": "1035923149",
+    "source": "openlibrary:/books/OL60159801M",
+    "title": "Kingdoms of Death",
+    "author": "Christopher Ruocchio"
+  },
+  "ashes of man|christopher ruocchio": {
+    "asin": "1035923157",
+    "source": "openlibrary:/books/OL60159810M",
+    "title": "Ashes of Man",
+    "author": "Christopher Ruocchio"
+  },
+  "disquiet gods|christopher ruocchio": {
+    "asin": "075641993X",
+    "source": "openlibrary:/books/OL53330781M",
+    "title": "Disquiet Gods",
+    "author": "Christopher Ruocchio"
+  },
+  "shadows upon time|christopher ruocchio": {
+    "asin": "1035920670",
+    "source": "openlibrary:/books/OL61567521M",
+    "title": "Shadows Upon Time",
+    "author": "Christopher Ruocchio"
+  },
+  "queen amid ashes|christopher ruocchio": {
+    "asin": "8873700691",
+    "source": "openlibrary:/books/OL61329900M",
+    "title": "Queen Amid Ashes",
+    "author": "Christopher Ruocchio"
+  },
+  "throne of jade|naomi novik": {
+    "asin": "000757892X",
+    "source": "openlibrary:/books/OL44149199M",
+    "title": "Throne of Jade",
+    "author": "Naomi Novik"
+  },
+  "black powder war|naomi novik": {
+    "asin": "0007219164",
+    "source": "openlibrary:/books/OL44105142M",
+    "title": "Black Powder War",
+    "author": "Naomi Novik"
+  },
+  "empire of ivory|naomi novik": {
+    "asin": "0739488422",
+    "source": "openlibrary:/books/OL43838394M",
+    "title": "Empire of Ivory",
+    "author": "Naomi Novik"
+  },
+  "victory of eagles|naomi novik": {
+    "asin": "0739368648",
+    "source": "openlibrary:/books/OL45644172M",
+    "title": "Victory of Eagles",
+    "author": "Naomi Novik"
+  },
+  "tongues of serpents|naomi novik": {
+    "asin": "0345521757",
+    "source": "openlibrary:/books/OL38350323M",
+    "title": "Tongues of Serpents",
+    "author": "Naomi Novik"
+  },
+  "crucible of gold|naomi novik": {
+    "asin": "0345522885",
+    "source": "openlibrary:/books/OL38350904M",
+    "title": "Crucible of Gold",
+    "author": "Naomi Novik"
+  },
+  "blood of tyrants|naomi novik": {
+    "asin": "0593359615",
+    "source": "openlibrary:/books/OL39386157M",
+    "title": "Blood of Tyrants",
+    "author": "Naomi Novik"
+  },
+  "league of dragons|naomi novik": {
+    "asin": "034552294X",
+    "source": "openlibrary:/books/OL38372379M",
+    "title": "League of Dragons",
+    "author": "Naomi Novik"
+  },
+  "the player of games|iain m. banks": {
+    "asin": "0316005401",
+    "source": "amazon-public:0316005401",
+    "title": "The Player of Games",
+    "author": "Iain M. Banks"
+  },
+  "use of weapons|iain m. banks": {
+    "asin": "0356521656",
+    "source": "openlibrary:/books/OL48201538M",
+    "title": "Use of Weapons",
+    "author": "Iain M. Banks"
+  },
+  "the state of the art|iain m. banks": {
+    "asin": "0356521664",
+    "source": "openlibrary:/books/OL48196986M",
+    "title": "The State of the Art",
+    "author": "Iain M. Banks"
+  },
+  "excession|iain m. banks": {
+    "asin": "0356521672",
+    "source": "openlibrary:/books/OL48183766M",
+    "title": "Excession",
+    "author": "Iain M. Banks"
+  },
+  "inversions|iain m. banks": {
+    "asin": "0356521680",
+    "source": "openlibrary:/books/OL48179402M",
+    "title": "Inversions",
+    "author": "Iain M. Banks"
+  },
+  "look to windward|iain m. banks": {
+    "asin": "1857239695",
+    "source": "openlibrary:/books/OL24929580M",
+    "title": "Look to Windward",
+    "author": "Iain M. Banks"
+  },
+  "matter|iain m. banks": {
+    "asin": "0356521702",
+    "source": "openlibrary:/books/OL48183757M",
+    "title": "Matter",
+    "author": "Iain M. Banks"
+  },
+  "surface detail|iain m. banks": {
+    "asin": "1841498947",
+    "source": "openlibrary:/books/OL34600359M",
+    "title": "Surface Detail",
+    "author": "Iain M. Banks"
+  },
+  "the hydrogen sonata|iain m. banks": {
+    "asin": "0356501469",
+    "source": "openlibrary:/books/OL33543253M",
+    "title": "The Hydrogen Sonata",
+    "author": "Iain M. Banks"
+  },
+  "caliban’s war|james s. a. corey": {
+    "asin": "0316202282",
+    "source": "openlibrary:/books/OL51600125M",
+    "title": "Caliban’s War",
+    "author": "James S. A. Corey"
+  },
+  "abaddon’s gate|james s. a. corey": {
+    "asin": "0316235423",
+    "source": "openlibrary:/books/OL62488676M",
+    "title": "Abaddon’s Gate",
+    "author": "James S. A. Corey"
+  },
+  "cibola burn|james s. a. corey": {
+    "asin": "0316217603",
+    "source": "openlibrary:/books/OL62490391M",
+    "title": "Cibola Burn",
+    "author": "James S. A. Corey"
+  },
+  "nemesis games|james s. a. corey": {
+    "asin": "1478933771",
+    "source": "openlibrary:/books/OL32816445M",
+    "title": "Nemesis Games",
+    "author": "James S. A. Corey"
+  },
+  "babylon’s ashes|james s. a. corey": {
+    "asin": "0316217646",
+    "source": "openlibrary:/books/OL26768271M",
+    "title": "Babylon’s Ashes",
+    "author": "James S. A. Corey"
+  },
+  "persepolis rising|james s. a. corey": {
+    "asin": "1528800710",
+    "source": "openlibrary:/books/OL32816470M",
+    "title": "Persepolis Rising",
+    "author": "James S. A. Corey"
+  },
+  "tiamat’s wrath|james s. a. corey": {
+    "asin": "0316332860",
+    "source": "openlibrary:/books/OL62490344M",
+    "title": "Tiamat’s Wrath",
+    "author": "James S. A. Corey"
+  },
+  "leviathan falls|james s. a. corey": {
+    "asin": "1705024998",
+    "source": "openlibrary:/books/OL35666838M",
+    "title": "Leviathan Falls",
+    "author": "James S. A. Corey"
+  },
+  "the butcher of anderson station|james s. a. corey": {
+    "asin": "0316204072",
+    "source": "openlibrary:/books/OL34839604M",
+    "title": "The Butcher of Anderson Station",
+    "author": "James S. A. Corey"
+  },
+  "gods of risk|james s. a. corey": {
+    "asin": "0316217654",
+    "source": "openlibrary:/books/OL26318312M",
+    "title": "Gods of Risk",
+    "author": "James S. A. Corey"
+  },
+  "drive|james s. a. corey": {
+    "asin": "0316669229",
+    "source": "openlibrary:/books/OL34183427M",
+    "title": "Drive",
+    "author": "James S. A. Corey"
+  },
+  "the churn|james s. a. corey": {
+    "asin": "0356504212",
+    "source": "openlibrary:/books/OL33449106M",
+    "title": "The Churn",
+    "author": "James S. A. Corey"
+  },
+  "the vital abyss|james s. a. corey": {
+    "asin": "0316217565",
+    "source": "openlibrary:/books/OL26318311M",
+    "title": "The Vital Abyss",
+    "author": "James S. A. Corey"
+  },
+  "strange dogs|james s. a. corey": {
+    "asin": "0316217573",
+    "source": "openlibrary:/books/OL26441534M",
+    "title": "Strange Dogs",
+    "author": "James S. A. Corey"
+  },
+  "auberon|james s. a. corey": {
+    "asin": "0316434280",
+    "source": "openlibrary:/books/OL27737396M",
+    "title": "Auberon",
+    "author": "James S. A. Corey"
+  },
+  "the sins of our fathers|james s. a. corey": {
+    "asin": "0356517748",
+    "source": "openlibrary:/books/OL50566635M",
+    "title": "The Sins of Our Fathers",
+    "author": "James S. A. Corey"
+  },
+  "memory’s legion|james s. a. corey": {
+    "asin": "0316669148",
+    "source": "openlibrary:/books/OL34982540M",
+    "title": "Memory’s Legion",
+    "author": "James S. A. Corey"
+  },
+  "harrow the ninth|tamsyn muir": {
+    "asin": "1250774381",
+    "source": "openlibrary:/books/OL30195254M",
+    "title": "Harrow the Ninth",
+    "author": "Tamsyn Muir"
+  },
+  "nona the ninth|tamsyn muir": {
+    "asin": "1250889499",
+    "source": "openlibrary:/books/OL62362206M",
+    "title": "Nona the Ninth",
+    "author": "Tamsyn Muir"
+  },
+  "the dark forest|cixin liu": {
+    "asin": "1035920891",
+    "source": "openlibrary:/books/OL62443651M",
+    "title": "The Dark Forest",
+    "author": "Cixin Liu"
+  },
+  "death's end|cixin liu": {
+    "asin": "1528848349",
+    "source": "openlibrary:/books/OL47322339M",
+    "title": "Death's End",
+    "author": "Cixin Liu"
+  },
+  "the redemption of time|baoshu": {
+    "asin": "178954694X",
+    "source": "openlibrary:/books/OL33309681M",
+    "title": "The Redemption of Time",
+    "author": "Baoshu"
+  },
+  "crown of midnight|sarah j. maas": {
+    "asin": "1484436164",
+    "source": "openlibrary:/books/OL39616859M",
+    "title": "Crown of Midnight",
+    "author": "Sarah J. Maas"
+  },
+  "the assassin's blade|sarah j. maas": {
+    "asin": "1547608781",
+    "source": "openlibrary:/books/OL57481291M",
+    "title": "The Assassin's Blade",
+    "author": "Sarah J. Maas"
+  },
+  "heir of fire|sarah j. maas": {
+    "asin": "1408839121",
+    "source": "openlibrary:/books/OL51724712M",
+    "title": "Heir of Fire",
+    "author": "Sarah J. Maas"
+  },
+  "queen of shadows|sarah j. maas": {
+    "asin": "1408858622",
+    "source": "openlibrary:/books/OL48669749M",
+    "title": "Queen of Shadows",
+    "author": "Sarah J. Maas"
+  },
+  "empire of storms|sarah j. maas": {
+    "asin": "1681194279",
+    "source": "openlibrary:/books/OL43631860M",
+    "title": "Empire of Storms",
+    "author": "Sarah J. Maas"
+  },
+  "tower of dawn|sarah j. maas": {
+    "asin": "1681198819",
+    "source": "openlibrary:/books/OL45298184M",
+    "title": "Tower of Dawn",
+    "author": "Sarah J. Maas"
+  },
+  "kingdom of ash|sarah j. maas": {
+    "asin": "1408872927",
+    "source": "openlibrary:/books/OL48672555M",
+    "title": "Kingdom of Ash",
+    "author": "Sarah J. Maas"
+  },
+  "the man who died twice|richard osman": {
+    "asin": "0593451481",
+    "source": "openlibrary:/books/OL62443763M",
+    "title": "The Man Who Died Twice",
+    "author": "Richard Osman"
+  },
+  "the bullet that missed|richard osman": {
+    "asin": "0593628802",
+    "source": "openlibrary:/books/OL62443815M",
+    "title": "The Bullet That Missed",
+    "author": "Richard Osman"
+  },
+  "the last devil to die|richard osman": {
+    "asin": "0593789571",
+    "source": "openlibrary:/books/OL62493700M",
+    "title": "The Last Devil to Die",
+    "author": "Richard Osman"
+  },
+  "the impossible fortune|richard osman": {
+    "asin": "0241743982",
+    "source": "openlibrary:/books/OL60529470M",
+    "title": "The Impossible Fortune",
+    "author": "Richard Osman"
+  },
+  "new moon|stephenie meyer": {
+    "asin": "0316065226",
+    "source": "openlibrary:/books/OL47007177M",
+    "title": "New Moon",
+    "author": "Stephenie Meyer"
+  },
+  "eclipse|stephenie meyer": {
+    "asin": "1594133549",
+    "source": "openlibrary:/books/OL41359895M",
+    "title": "Eclipse",
+    "author": "Stephenie Meyer"
+  },
+  "breaking dawn|stephenie meyer": {
+    "asin": "0606231080",
+    "source": "openlibrary:/books/OL50551445M",
+    "title": "Breaking Dawn",
+    "author": "Stephenie Meyer"
+  },
+  "the short second life of bree tanner|stephenie meyer": {
+    "asin": "1907410368",
+    "source": "openlibrary:/books/OL32735833M",
+    "title": "The Short Second Life of Bree Tanner",
+    "author": "Stephenie Meyer"
+  },
+  "life and death|stephenie meyer": {
+    "asin": "0349002940",
+    "source": "openlibrary:/books/OL33558294M",
+    "title": "Life and Death",
+    "author": "Stephenie Meyer"
+  },
+  "midnight sun|stephenie meyer": {
+    "asin": "0349003645",
+    "source": "openlibrary:/books/OL33068740M",
+    "title": "Midnight Sun",
+    "author": "Stephenie Meyer"
+  },
+  "arrow's flight|mercedes lackey": {
+    "asin": "0606275495",
+    "source": "openlibrary:/books/OL7584907M",
+    "title": "Arrow's Flight",
+    "author": "Mercedes Lackey"
+  },
+  "arrow's fall|mercedes lackey": {
+    "asin": "1977358047",
+    "source": "openlibrary:/books/OL32639970M",
+    "title": "Arrow's Fall",
+    "author": "Mercedes Lackey"
+  },
+  "by the sword|mercedes lackey": {
+    "asin": "0886774632",
+    "source": "openlibrary:/books/OL8195814M",
+    "title": "By the Sword",
+    "author": "Mercedes Lackey"
+  },
+  "winds of fate|mercedes lackey": {
+    "asin": "149158372X",
+    "source": "openlibrary:/books/OL36646697M",
+    "title": "Winds of Fate",
+    "author": "Mercedes Lackey"
+  },
+  "winds of change|mercedes lackey": {
+    "asin": "1491583711",
+    "source": "openlibrary:/books/OL36650007M",
+    "title": "Winds of Change",
+    "author": "Mercedes Lackey"
+  },
+  "winds of fury|mercedes lackey": {
+    "asin": "0886776120",
+    "source": "openlibrary:/books/OL8195913M",
+    "title": "Winds of Fury",
+    "author": "Mercedes Lackey"
+  },
+  "storm warning|mercedes lackey": {
+    "asin": "0886776619",
+    "source": "openlibrary:/books/OL8195947M",
+    "title": "Storm Warning",
+    "author": "Mercedes Lackey"
+  },
+  "storm rising|mercedes lackey": {
+    "asin": "1101121408",
+    "source": "openlibrary:/books/OL24268588M",
+    "title": "Storm Rising",
+    "author": "Mercedes Lackey"
+  },
+  "storm breaking|mercedes lackey": {
+    "asin": "0886777550",
+    "source": "openlibrary:/books/OL8196014M",
+    "title": "Storm Breaking",
+    "author": "Mercedes Lackey"
+  },
+  "magic's pawn|mercedes lackey": {
+    "asin": "0886773520",
+    "source": "openlibrary:/books/OL8195733M",
+    "title": "Magic's Pawn",
+    "author": "Mercedes Lackey"
+  },
+  "magic's promise|mercedes lackey": {
+    "asin": "0886774012",
+    "source": "openlibrary:/books/OL24943735M",
+    "title": "Magic's Promise",
+    "author": "Mercedes Lackey"
+  },
+  "magic's price|mercedes lackey": {
+    "asin": "1480591793",
+    "source": "openlibrary:/books/OL27536674M",
+    "title": "Magic's Price",
+    "author": "Mercedes Lackey"
+  },
+  "frostbite|richelle mead": {
+    "asin": "1595141758",
+    "source": "openlibrary:/books/OL21557293M",
+    "title": "Frostbite",
+    "author": "Richelle Mead"
+  },
+  "shadow kiss|richelle mead": {
+    "asin": "1440697140",
+    "source": "openlibrary:/books/OL24247722M",
+    "title": "Shadow Kiss",
+    "author": "Richelle Mead"
+  },
+  "blood promise|richelle mead": {
+    "asin": "1595141987",
+    "source": "openlibrary:/books/OL23191836M",
+    "title": "Blood Promise",
+    "author": "Richelle Mead"
+  },
+  "spirit bound|richelle mead": {
+    "asin": "1595142509",
+    "source": "openlibrary:/books/OL24085276M",
+    "title": "Spirit Bound",
+    "author": "Richelle Mead"
+  },
+  "last sacrifice|richelle mead": {
+    "asin": "1595143068",
+    "source": "openlibrary:/books/OL24489539M",
+    "title": "Last Sacrifice",
+    "author": "Richelle Mead"
+  },
+  "bloodlines|richelle mead": {
+    "asin": "1595143173",
+    "source": "openlibrary:/books/OL25985634M",
+    "title": "Bloodlines",
+    "author": "Richelle Mead"
+  },
+  "the golden lily|richelle mead": {
+    "asin": "0141337141",
+    "source": "openlibrary:/books/OL26009124M",
+    "title": "The Golden Lily",
+    "author": "Richelle Mead"
+  },
+  "the indigo spell|richelle mead": {
+    "asin": "159514319X",
+    "source": "openlibrary:/books/OL26159962M",
+    "title": "The Indigo Spell",
+    "author": "Richelle Mead"
+  },
+  "the fiery heart|richelle mead": {
+    "asin": "0141350083",
+    "source": "openlibrary:/books/OL26024615M",
+    "title": "The Fiery Heart",
+    "author": "Richelle Mead"
+  },
+  "silver shadows|richelle mead": {
+    "asin": "1595143211",
+    "source": "openlibrary:/books/OL26149035M",
+    "title": "Silver Shadows",
+    "author": "Richelle Mead"
+  },
+  "the ruby circle|richelle mead": {
+    "asin": "159514322X",
+    "source": "openlibrary:/books/OL26141688M",
+    "title": "The Ruby Circle",
+    "author": "Richelle Mead"
+  },
+  "barrayar|lois mcmaster bujold": {
+    "asin": "0743468414",
+    "source": "openlibrary:/books/OL7950752M",
+    "title": "Barrayar",
+    "author": "Lois McMaster Bujold"
+  },
+  "the vor game|lois mcmaster bujold": {
+    "asin": "147678163X",
+    "source": "openlibrary:/books/OL34618513M",
+    "title": "The Vor Game",
+    "author": "Lois McMaster Bujold"
+  },
+  "cetaganda|lois mcmaster bujold": {
+    "asin": "0671877445",
+    "source": "openlibrary:/books/OL7667308M",
+    "title": "Cetaganda",
+    "author": "Lois McMaster Bujold"
+  },
+  "brothers in arms|lois mcmaster bujold": {
+    "asin": "1885585071",
+    "source": "openlibrary:/books/OL8704323M",
+    "title": "Brothers in Arms",
+    "author": "Lois McMaster Bujold"
+  },
+  "mirror dance|lois mcmaster bujold": {
+    "asin": "1470824582",
+    "source": "openlibrary:/books/OL27614226M",
+    "title": "Mirror Dance",
+    "author": "Lois McMaster Bujold"
+  },
+  "memory|lois mcmaster bujold": {
+    "asin": "1476736731",
+    "source": "openlibrary:/books/OL27011546M",
+    "title": "Memory",
+    "author": "Lois McMaster Bujold"
+  },
+  "komarr|lois mcmaster bujold": {
+    "asin": "0671578081",
+    "source": "openlibrary:/books/OL7659941M",
+    "title": "Komarr",
+    "author": "Lois McMaster Bujold"
+  },
+  "a civil campaign|lois mcmaster bujold": {
+    "asin": "1470824388",
+    "source": "openlibrary:/books/OL27615729M",
+    "title": "A Civil Campaign",
+    "author": "Lois McMaster Bujold"
+  },
+  "diplomatic immunity|lois mcmaster bujold": {
+    "asin": "0743436121",
+    "source": "openlibrary:/books/OL24376756M",
+    "title": "Diplomatic Immunity",
+    "author": "Lois McMaster Bujold"
+  },
+  "captain vorpatril's alliance|lois mcmaster bujold": {
+    "asin": "1451638647",
+    "source": "openlibrary:/books/OL35476563M",
+    "title": "Captain Vorpatril's Alliance",
+    "author": "Lois McMaster Bujold"
+  },
+  "cryoburn|lois mcmaster bujold": {
+    "asin": "144174746X",
+    "source": "openlibrary:/books/OL32673782M",
+    "title": "Cryoburn",
+    "author": "Lois McMaster Bujold"
+  },
+  "gentleman jole and the red queen|lois mcmaster bujold": {
+    "asin": "1625794800",
+    "source": "openlibrary:/books/OL51833104M",
+    "title": "Gentleman Jole and the Red Queen",
+    "author": "Lois McMaster Bujold"
+  },
+  "ethan of athos|lois mcmaster bujold": {
+    "asin": "1433250926",
+    "source": "openlibrary:/books/OL33050309M",
+    "title": "Ethan of Athos",
+    "author": "Lois McMaster Bujold"
+  },
+  "falling free|lois mcmaster bujold": {
+    "asin": "067157812X",
+    "source": "openlibrary:/books/OL7659945M",
+    "title": "Falling Free",
+    "author": "Lois McMaster Bujold"
+  },
+  "a closed and common orbit|becky chambers": {
+    "asin": "0062569422",
+    "source": "openlibrary:/books/OL35948166M",
+    "title": "A Closed and Common Orbit",
+    "author": "Becky Chambers"
+  },
+  "record of a spaceborn few|becky chambers": {
+    "asin": "1473647622",
+    "source": "openlibrary:/books/OL58846143M",
+    "title": "Record of a Spaceborn Few",
+    "author": "Becky Chambers"
+  },
+  "the galaxy, and the ground within|becky chambers": {
+    "asin": "1473647673",
+    "source": "openlibrary:/books/OL29488996M",
+    "title": "The Galaxy, and the Ground Within",
+    "author": "Becky Chambers"
+  },
+  "to be taught, if fortunate|becky chambers": {
+    "asin": "1473697174",
+    "source": "openlibrary:/books/OL60128604M",
+    "title": "To Be Taught, if Fortunate",
+    "author": "Becky Chambers"
+  },
+  "down among the sticks and bones|seanan mcguire": {
+    "asin": "0765392038",
+    "source": "openlibrary:/books/OL27238285M",
+    "title": "Down Among the Sticks and Bones",
+    "author": "Seanan McGuire"
+  },
+  "beneath the sugar sky|seanan mcguire": {
+    "asin": "1427293791",
+    "source": "openlibrary:/books/OL27377113M",
+    "title": "Beneath the Sugar Sky",
+    "author": "Seanan McGuire"
+  },
+  "in an absent dream|seanan mcguire": {
+    "asin": "0765399288",
+    "source": "openlibrary:/books/OL32177221M",
+    "title": "In an Absent Dream",
+    "author": "Seanan McGuire"
+  },
+  "come tumbling down|seanan mcguire": {
+    "asin": "1643585940",
+    "source": "openlibrary:/books/OL29864919M",
+    "title": "Come Tumbling Down",
+    "author": "Seanan McGuire"
+  },
+  "across the green grass fields|seanan mcguire": {
+    "asin": "1250213592",
+    "source": "openlibrary:/books/OL28219947M",
+    "title": "Across the Green Grass Fields",
+    "author": "Seanan McGuire"
+  },
+  "where the drowned girls go|seanan mcguire": {
+    "asin": "1250213614",
+    "source": "openlibrary:/books/OL35708054M",
+    "title": "Where the Drowned Girls Go",
+    "author": "Seanan McGuire"
+  },
+  "lost in the moment and found|seanan mcguire": {
+    "asin": "1250213649",
+    "source": "openlibrary:/books/OL38122771M",
+    "title": "Lost in the Moment and Found",
+    "author": "Seanan McGuire"
+  },
+  "mislaid in parts half-known|seanan mcguire": {
+    "asin": "1250848504",
+    "source": "openlibrary:/books/OL47437019M",
+    "title": "Mislaid in Parts Half-Known",
+    "author": "Seanan McGuire"
+  },
+  "adrift in currents clean and clear|seanan mcguire": {
+    "asin": "1250848342",
+    "source": "openlibrary:/books/OL57569399M",
+    "title": "Adrift in Currents Clean and Clear",
+    "author": "Seanan McGuire"
+  },
+  "through gates of garnet and gold|seanan mcguire": {
+    "asin": "1250339405",
+    "source": "openlibrary:/books/OL61108546M",
+    "title": "Through Gates of Garnet and Gold",
+    "author": "Seanan McGuire"
+  },
+  "the great hunt|robert jordan": {
+    "asin": "0356522350",
+    "source": "openlibrary:/books/OL49269512M",
+    "title": "The Great Hunt",
+    "author": "Robert Jordan"
+  },
+  "the dragon reborn|robert jordan": {
+    "asin": "0356525236",
+    "source": "openlibrary:/books/OL51062109M",
+    "title": "The Dragon Reborn",
+    "author": "Robert Jordan"
+  },
+  "the shadow rising|robert jordan": {
+    "asin": "1435257928",
+    "source": "openlibrary:/books/OL33225411M",
+    "title": "The Shadow Rising",
+    "author": "Robert Jordan"
+  },
+  "the fires of heaven|robert jordan": {
+    "asin": "0812513746",
+    "source": "openlibrary:/books/OL45219629M",
+    "title": "The Fires of Heaven",
+    "author": "Robert Jordan"
+  },
+  "lord of chaos|robert jordan": {
+    "asin": "1857232801",
+    "source": "openlibrary:/books/OL33542157M",
+    "title": "Lord of Chaos",
+    "author": "Robert Jordan"
+  },
+  "a crown of swords|robert jordan": {
+    "asin": "0765336464",
+    "source": "openlibrary:/books/OL33496825M",
+    "title": "A Crown of Swords",
+    "author": "Robert Jordan"
+  },
+  "the path of daggers|robert jordan": {
+    "asin": "1857237218",
+    "source": "openlibrary:/books/OL33360788M",
+    "title": "The Path of Daggers",
+    "author": "Robert Jordan"
+  },
+  "winter’s heart|robert jordan": {
+    "asin": "0356226107",
+    "source": "openlibrary:/books/OL33523685M",
+    "title": "Winter’s Heart",
+    "author": "Robert Jordan"
+  },
+  "crossroads of twilight|robert jordan": {
+    "asin": "0356236811",
+    "source": "openlibrary:/books/OL33356180M",
+    "title": "Crossroads of Twilight",
+    "author": "Robert Jordan"
+  },
+  "knife of dreams|robert jordan": {
+    "asin": "1417774355",
+    "source": "openlibrary:/books/OL39220707M",
+    "title": "Knife of Dreams",
+    "author": "Robert Jordan"
+  },
+  "new spring|robert jordan": {
+    "asin": "1593973780",
+    "source": "openlibrary:/books/OL57497148M",
+    "title": "New Spring",
+    "author": "Robert Jordan"
+  },
+  "fractured|karin slaughter": {
+    "asin": "1407008811",
+    "source": "openlibrary:/books/OL35460967M",
+    "title": "Fractured",
+    "author": "Karin Slaughter"
+  },
+  "undone|karin slaughter": {
+    "asin": "0440338662",
+    "source": "openlibrary:/books/OL24274616M",
+    "title": "Undone",
+    "author": "Karin Slaughter"
+  },
+  "broken|karin slaughter": {
+    "asin": "1799926613",
+    "source": "openlibrary:/books/OL37022346M",
+    "title": "Broken",
+    "author": "Karin Slaughter"
+  },
+  "fallen|karin slaughter": {
+    "asin": "0345528220",
+    "source": "openlibrary:/books/OL32937422M",
+    "title": "Fallen",
+    "author": "Karin Slaughter"
+  },
+  "criminal|karin slaughter": {
+    "asin": "1609982932",
+    "source": "openlibrary:/books/OL38213727M",
+    "title": "Criminal",
+    "author": "Karin Slaughter"
+  },
+  "unseen|karin slaughter": {
+    "asin": "0804176515",
+    "source": "openlibrary:/books/OL27586267M",
+    "title": "Unseen",
+    "author": "Karin Slaughter"
+  },
+  "the kept woman|karin slaughter": {
+    "asin": "1683311817",
+    "source": "openlibrary:/books/OL42892089M",
+    "title": "The Kept Woman",
+    "author": "Karin Slaughter"
+  },
+  "the last widow|karin slaughter": {
+    "asin": "1504780116",
+    "source": "openlibrary:/books/OL46540302M",
+    "title": "The Last Widow",
+    "author": "Karin Slaughter"
+  },
+  "the silent wife|karin slaughter": {
+    "asin": "0062858106",
+    "source": "openlibrary:/books/OL29066054M",
+    "title": "The Silent Wife",
+    "author": "Karin Slaughter"
+  },
+  "after that night|karin slaughter": {
+    "asin": "0063157802",
+    "source": "openlibrary:/books/OL48675387M",
+    "title": "After That Night",
+    "author": "Karin Slaughter"
+  },
+  "this is why we lied|karin slaughter": {
+    "asin": "0063336766",
+    "source": "openlibrary:/books/OL57774761M",
+    "title": "This Is Why We Lied",
+    "author": "Karin Slaughter"
+  },
+  "blindsighted|karin slaughter": {
+    "asin": "1856867757",
+    "source": "openlibrary:/books/OL35389878M",
+    "title": "Blindsighted",
+    "author": "Karin Slaughter"
+  },
+  "kisscut|karin slaughter": {
+    "asin": "1846571170",
+    "source": "openlibrary:/books/OL47291705M",
+    "title": "Kisscut",
+    "author": "Karin Slaughter"
+  },
+  "a faint cold fear|karin slaughter": {
+    "asin": "0091914876",
+    "source": "openlibrary:/books/OL42947328M",
+    "title": "A Faint Cold Fear",
+    "author": "Karin Slaughter"
+  },
+  "indelible|karin slaughter": {
+    "asin": "1846054516",
+    "source": "openlibrary:/books/OL43676931M",
+    "title": "Indelible",
+    "author": "Karin Slaughter"
+  },
+  "faithless|karin slaughter": {
+    "asin": "0099509970",
+    "source": "openlibrary:/books/OL40346095M",
+    "title": "Faithless",
+    "author": "Karin Slaughter"
+  },
+  "beyond reach|karin slaughter": {
+    "asin": "0804180296",
+    "source": "openlibrary:/books/OL27706695M",
+    "title": "Beyond Reach",
+    "author": "Karin Slaughter"
+  },
+  "the girl in the tower|katherine arden": {
+    "asin": "1101885963",
+    "source": "openlibrary:/books/OL26936235M",
+    "title": "The Girl in the Tower",
+    "author": "Katherine Arden"
+  },
+  "the winter of the witch|katherine arden": {
+    "asin": "1473560969",
+    "source": "openlibrary:/books/OL48163146M",
+    "title": "The Winter of the Witch",
+    "author": "Katherine Arden"
+  },
+  "sword of destiny|andrzej sapkowski": {
+    "asin": "912359795X",
+    "source": "openlibrary:/books/OL32443094M",
+    "title": "Sword of Destiny",
+    "author": "Andrzej Sapkowski"
+  },
+  "season of storms|andrzej sapkowski": {
+    "asin": "1399611135",
+    "source": "openlibrary:/books/OL39560386M",
+    "title": "Season of Storms",
+    "author": "Andrzej Sapkowski"
+  },
+  "crossroads of ravens|andrzej sapkowski": {
+    "asin": "0316597759",
+    "source": "openlibrary:/books/OL60891265M",
+    "title": "Crossroads of Ravens",
+    "author": "Andrzej Sapkowski"
+  },
+  "we are legion (we are bob)|dennis e. taylor": {
+    "asin": "1680680587",
+    "source": "amazon-public:1680680587",
+    "title": "We Are Legion (We Are Bob)",
+    "author": "Dennis E. Taylor"
+  },
+  "curse of shadows and thorns|l.j. andrews": {
+    "asin": "0578970171",
+    "source": "amazon-public:0578970171",
+    "title": "Curse of Shadows and Thorns",
+    "author": "L.J. Andrews"
+  },
+  "the three-body problem|cixin liu": {
+    "asin": "0765382032",
+    "source": "amazon-public:0765382032",
+    "title": "The Three-Body Problem",
+    "author": "Cixin Liu"
+  }
+}

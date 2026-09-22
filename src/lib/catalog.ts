@@ -17,13 +17,16 @@ export const featuredSlugs = [
 export const spotlightSlugs = [
   "roots-of-chaos-reading-order",
   "cosmere-starter-reading-order",
-  "wheel-of-time-reading-order",
+  "mistborn-era-1-2-reading-order",
+  "books-of-babel-reading-order",
   "malazan-book-of-the-fallen-reading-order",
+  "dark-tower-reading-order",
   "discworld-city-watch-reading-order",
   "the-expanse-reading-order",
-  "dresden-files-reading-order",
-  "outlander-reading-order",
   "first-law-reading-order",
+  "foreigner-reading-order",
+  "drizzt-reading-order",
+  "laundry-files-reading-order",
 ] as const;
 
 export const SHELF_PREVIEW = 6;

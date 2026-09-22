@@ -4,7 +4,10 @@ Status as of 2026-09-13: **the Amazon Associates tag is live** (`olisbookshelf-2
 
 ## Current state
 
-- Series search links and per-title Amazon search links on guides use the live Associates tag.
+- Guide CTAs prefer book-1 Amazon **product** links (`/dp/{ASIN}?tag=…`) when an ASIN is on file in `src/data/asins.json` (looked up from Open Library English-group ISBN-10 or a public Amazon product page). Otherwise title + author search.
+- Per-title OrderTable shop buttons use the same ASIN map with search fallback.
+- Sticky dock / hero / aside “Book 1 on Amazon” points at the first recommended title, not a vague series search.
+- Buy-intent `/questions/` hubs may show one prominent book-1 Amazon control. No Associates wording in body prose; disclosure stays footer + `/disclosure/`.
 - Amazon still reviews the application: we need **3 non-personal qualifying sales within 180 days**. That is a program requirement, not an income forecast.
 - `/disclosure/` states Amazon’s required sentence and that the program is active.
 

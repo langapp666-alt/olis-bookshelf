@@ -1,8 +1,8 @@
 ---
 import type { CollectionEntry } from "astro:content";
+import type { RecommendedBook } from "../lib/guide-shop";
 import { lookupCover } from "../lib/covers";
 import { withGuideMeta } from "../lib/guide-meta";
-import type { BookOne } from "../lib/guide-schema";
 import { formatDate, genres, type GenreSlug } from "../lib/site";
 import BookCover from "./BookCover.astro";
 import GuideBreadcrumb from "./GuideBreadcrumb.astro";
@@ -18,10 +18,10 @@ interface Heading {
 interface Props {
   guide: CollectionEntry<"guides">;
   headings?: Heading[];
-  bookOne?: BookOne | null;
+  bookOne?: RecommendedBook;
 }
 
-const { guide, headings = [], bookOne = null } = Astro.props;
+const { guide, headings = [], bookOne } = Astro.props;
 const genre = genres[guide.data.genre as GenreSlug];
 const { countLabel } = withGuideMeta(guide);
 const cover = lookupCover(guide.data.series, guide.data.author, {
@@ -52,8 +52,8 @@ const cover = lookupCover(guide.data.series, guide.data.author, {
           <StarterAmazon
             title={bookOne.title}
             author={bookOne.author ?? guide.data.author}
-            year={bookOne.year}
             query={bookOne.query}
+            asin={bookOne.asin}
             compact
           />
         )

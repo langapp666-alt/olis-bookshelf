@@ -6,12 +6,13 @@ interface Props {
   author: string;
   year?: string | number;
   query?: string;
+  asin?: string;
   /** Compact hero / dock label vs full Start Here control. */
   compact?: boolean;
 }
 
-const { title, author, year, query, compact = false } = Astro.props;
-const href = amazonBookUrl(title, author, query);
+const { title, author, year, query, asin, compact = false } = Astro.props;
+const href = amazonBookUrl(title, author, { query, asin });
 const label = year ? `${title} (${year})` : title;
 ---
 

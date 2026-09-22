@@ -36,7 +36,7 @@ Genre must be one of: `epic-fantasy`, `space-opera`, `mystery-thriller`, `romanc
 6. FAQ
 7. Sources
 8. Accuracy notes as HTML comments (not a public “human-review flags” heading)
-9. Per-title Amazon search URLs via `OrderTable` / `amazonBookUrl()` (site tag). Do not invent ASINs. Do not add affiliate-explainer prose to the guide; sitewide disclosure lives in the footer and on `/disclosure/` only.
+9. Per-title Amazon URLs via `OrderTable` / `amazonBookUrl()` (site tag; ASIN deep link when on file in `src/data/asins.json`, else title + author search). Do not invent ASINs. Buy-intent question hubs may set optional `buy:` frontmatter for one book-1 Amazon control. Do not add affiliate-explainer prose to the guide; sitewide disclosure lives in the footer and on `/disclosure/` only.
 
 ## 5. Human review (blocking)
 
