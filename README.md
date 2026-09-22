@@ -4,7 +4,7 @@ Series reading-order and “what to read next” guides for long science fiction
 
 This is a static [Astro](https://astro.build) site. Guides live in a Markdown/MDX content collection.
 
-Amazon Associates is **active**. Per-title and series search links use the Associates tag from `PUBLIC_AFFILIATE_TAG` / `src/lib/site.ts` via `amazonBookUrl()` / `amazonSearchUrl()`. Do not invent ASINs.
+Amazon Associates is **active**. Per-title and series links use the Associates tag from `PUBLIC_AFFILIATE_TAG` / `src/lib/site.ts` via `amazonBookUrl()` / `amazonSearchUrl()` (and `amazonAsinUrl()` only when a verified ASIN is in data). Do not invent ASINs.
 
 ## Local development
 
@@ -73,7 +73,7 @@ The custom domain **https://olisbookshelf.com** is already attached in Cloudflar
 
 ## Affiliate tag
 
-`src/lib/site.ts` exports `affiliateTag` from `PUBLIC_AFFILIATE_TAG` (default `olisbookshelf-20`). Keep `/disclosure/` accurate if the tag changes. Search URLs are fine; do not invent ASINs.
+`src/lib/site.ts` exports `affiliateTag` from `PUBLIC_AFFILIATE_TAG` (default `olisbookshelf-20`). Keep `/disclosure/` accurate if the tag changes. Search URLs are the default; ASIN deep links only when a verified ASIN is already in content data. Do not invent ASINs.
 
 ## Stack
 
