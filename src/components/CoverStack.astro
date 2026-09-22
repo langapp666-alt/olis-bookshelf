@@ -25,7 +25,7 @@ const { guides } = Astro.props;
           href={`/guides/${guide.data.slug}/`}
           style={`--i: ${i}`}
         >
-          <BookCover title={guide.data.series} cover={cover} size="shelf" priority={i < 2} />
+          <BookCover title={guide.data.series} cover={cover} size="shelf" priority={i === 0} />
           <span class="visually-hidden">
             {guide.data.series} by {guide.data.author}
           </span>

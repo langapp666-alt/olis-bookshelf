@@ -8,6 +8,7 @@ import GuideHero from "../../components/GuideHero.astro";
 import OrderTable from "../../components/OrderTable.astro";
 import RelatedGuides from "../../components/RelatedGuides.astro";
 import StartHere from "../../components/StartHere.astro";
+import { googleBooksCoverUrl, lookupCover, openLibraryCoverUrl } from "../../lib/covers";
 import {
   articleSchema,
   breadcrumbSchema,
@@ -43,6 +44,14 @@ const canonical = new URL(`/guides/${guide.data.slug}/`, origin);
 const ogImage = absoluteOgUrl(origin, guideOgPath(guide.data.slug));
 const logo = new URL("/og.png", origin).href;
 const modified = isoDate(guide.data.lastVerified);
+const cover = lookupCover(guide.data.series, guide.data.author, {
+  coverId: guide.data.coverId,
+  isbn: guide.data.isbn,
+  olid: guide.data.olid,
+  gbid: guide.data.gbid,
+});
+const preloadImage =
+  (cover && (openLibraryCoverUrl(cover, "M") ?? googleBooksCoverUrl(cover))) || undefined;
 const jsonLd = [
   webPageSchema({
     name: guide.data.title,
@@ -83,6 +92,7 @@ const jsonLd = [
   dock
   ogType="article"
   ogImage={ogImage}
+  preloadImage={preloadImage}
   jsonLd={jsonLd}
 >
   <article class="guide-page">

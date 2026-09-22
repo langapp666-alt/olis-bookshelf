@@ -3,10 +3,11 @@ import type { CollectionEntry } from "astro:content";
 import type { RecommendedBook } from "../lib/guide-shop";
 import { lookupCover } from "../lib/covers";
 import { withGuideMeta } from "../lib/guide-meta";
-import { amazonRel, formatDate, genres, type GenreSlug } from "../lib/site";
+import { formatDate, genres, type GenreSlug } from "../lib/site";
 import BookCover from "./BookCover.astro";
 import GuideBreadcrumb from "./GuideBreadcrumb.astro";
 import GuideToc from "./GuideToc.astro";
+import StarterAmazon from "./StarterAmazon.astro";
 
 interface Heading {
   depth: number;
@@ -45,22 +46,23 @@ const cover = lookupCover(guide.data.series, guide.data.author, {
         <a href={`/genres/${genre.slug}/`}>{genre.label}</a>
       </p>
       <h1>{guide.data.title}</h1>
-      <p class="lede">{guide.data.description}</p>
-      <div class="pill-row">
+      <p class="lede guide-hero-lede">{guide.data.description}</p>
+      {
+        bookOne && (
+          <StarterAmazon
+            title={bookOne.title}
+            author={bookOne.author ?? guide.data.author}
+            query={bookOne.query}
+            asin={bookOne.asin}
+            compact
+          />
+        )
+      }
+      <div class="pill-row guide-hero-meta">
         <span class="pill">{guide.data.author}</span>
         {countLabel && <span class="pill">{countLabel}</span>}
         <span class="pill">Checked {formatDate(guide.data.lastVerified)}</span>
       </div>
-      {
-        bookOne && (
-          <p class="guide-hero-shop">
-            <a class="amazon-link hero-amazon" href={bookOne.href} rel={amazonRel}>
-              Book 1 on Amazon
-              <span class="hero-amazon-title"> · {bookOne.title}</span>
-            </a>
-          </p>
-        )
-      }
     </div>
     <div class="guide-hero-cover">
       <BookCover title={guide.data.series} cover={cover} size="hero" priority />

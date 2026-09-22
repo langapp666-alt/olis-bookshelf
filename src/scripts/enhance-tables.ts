@@ -9,7 +9,7 @@ const COL_CLASS: Record<string, string> = {
   notes: "col-notes",
 };
 
-function enhanceTables() {
+export function enhanceTables() {
   document.querySelectorAll<HTMLTableElement>(".prose table").forEach((table) => {
     let wrap = table.parentElement;
     if (!wrap?.classList.contains("table-wrap")) {
@@ -50,3 +50,4 @@ function enhanceTables() {
 }
 
 enhanceTables();
+export default enhanceTables;

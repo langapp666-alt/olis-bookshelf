@@ -63,15 +63,10 @@ function go(href: string) {
   window.location.assign(href);
 }
 
-function bindRandom() {
-  document.querySelectorAll<HTMLAnchorElement>("[data-random-guide]").forEach((link) => {
-    link.addEventListener("click", async (event) => {
-      event.preventDefault();
-      const index = await loadIndex();
-      const pick = pickRandomGuide(index, currentSlug());
-      go(pick?.href ?? "/guides/");
-    });
-  });
+export async function goRandomGuide() {
+  const index = await loadIndex();
+  const pick = pickRandomGuide(index, currentSlug());
+  go(pick?.href ?? "/guides/");
 }
 
 function bindTypeahead(input: HTMLInputElement) {
@@ -260,7 +255,4 @@ function bindSearchForms() {
 export function bindSiteSearch() {
   document.querySelectorAll<HTMLInputElement>("[data-typeahead]").forEach(bindTypeahead);
   bindSearchForms();
-  bindRandom();
 }
-
-bindSiteSearch();
