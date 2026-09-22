@@ -85,11 +85,23 @@ export function bindCatalogFind(root: ParentNode = document) {
     if (writeUrl) persist();
   };
 
-  input.addEventListener("input", () => apply(true));
+  // Debounce history writes — frequent replaceState looks like Soft Navigations
+  // and can inflate INP without helping discovery.
+  let urlTimer = 0;
+  const scheduleUrl = () => {
+    window.clearTimeout(urlTimer);
+    urlTimer = window.setTimeout(() => persist(), 400);
+  };
+
+  input.addEventListener("input", () => {
+    apply(false);
+    scheduleUrl();
+  });
   chips.forEach((chip) => {
     chip.addEventListener("click", () => {
       genre = chip.dataset.catalogGenre ?? "";
-      apply(true);
+      apply(false);
+      persist();
     });
   });
 

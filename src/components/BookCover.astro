@@ -44,7 +44,7 @@ const sizesAttr =
   size === "poster"
     ? "(min-width: 980px) 16rem, 42vw"
     : size === "hero"
-      ? "(min-width: 720px) 10rem, 28vw"
+      ? "(min-width: 720px) 10rem, 5.6rem"
       : size === "shelf"
         ? "(min-width: 1200px) 10rem, (min-width: 980px) 12rem, (min-width: 720px) 18vw, 42vw"
         : size === "world"
@@ -68,7 +68,7 @@ const sizesAttr =
         width={w}
         height={h}
         loading={priority ? "eager" : "lazy"}
-        fetchpriority={priority ? "high" : undefined}
+        fetchpriority={priority ? "high" : "low"}
         decoding="async"
         referrerpolicy="no-referrer"
         onerror="

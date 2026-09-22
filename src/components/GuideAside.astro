@@ -1,7 +1,8 @@
 ---
 import type { CollectionEntry } from "astro:content";
+import type { BookOne } from "../lib/guide-schema";
 import { questionHref } from "../lib/questions";
-import { amazonRel, amazonSearchUrl, genres, type GenreSlug } from "../lib/site";
+import { amazonBookUrl, amazonRel, amazonSearchUrl, genres, type GenreSlug } from "../lib/site";
 import GuideToc from "./GuideToc.astro";
 
 interface Heading {
@@ -15,11 +16,15 @@ interface Props {
   headings: Heading[];
   related: CollectionEntry<"guides">[];
   questions?: CollectionEntry<"questions">[];
+  bookOne?: BookOne | null;
 }
 
-const { guide, headings, related, questions = [] } = Astro.props;
+const { guide, headings, related, questions = [], bookOne = null } = Astro.props;
 const genre = genres[guide.data.genre as GenreSlug];
-const searchHref = amazonSearchUrl(`${guide.data.series} ${guide.data.author}`);
+const searchHref = bookOne
+  ? amazonBookUrl(bookOne.title, bookOne.author ?? guide.data.author, bookOne.query)
+  : amazonSearchUrl(`${guide.data.series} ${guide.data.author}`);
+const amazonLabel = bookOne?.title ?? guide.data.series;
 const sources = guide.data.sources;
 ---
 
@@ -31,8 +36,8 @@ const sources = guide.data.sources;
       {guide.data.author} · {genre.label}
     </p>
     <a class="amazon-link aside-amazon" href={searchHref} rel={amazonRel}>
-      Amazon
-      <span class="visually-hidden">{` search for ${guide.data.series}`}</span>
+      Amazon · {amazonLabel}
+      <span class="visually-hidden">{` search for ${amazonLabel}`}</span>
     </a>
     {
       sources.length > 0 && (

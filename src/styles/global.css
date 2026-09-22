@@ -18,8 +18,8 @@
   --max-wide: 80rem;
   --prose: 68ch;
   --header-h: 4.25rem;
-  --serif: "Newsreader", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-  --sans: "Schibsted Grotesk", "Segoe UI", system-ui, sans-serif;
+  --serif: "Newsreader", "Newsreader Fallback", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --sans: "Schibsted Grotesk", "Schibsted Fallback", "Segoe UI", system-ui, sans-serif;
   --radius: 1.1rem;
   --radius-sm: 0.75rem;
   --radius-pill: 999px;
@@ -32,6 +32,25 @@
   --space-5: 2rem;
   --space-6: 3.25rem;
   --space-7: 5rem;
+}
+
+/* Metric-adjusted fallbacks reduce font-swap CLS while webfonts load. */
+@font-face {
+  font-family: "Newsreader Fallback";
+  src: local("Georgia");
+  size-adjust: 104%;
+  ascent-override: 90%;
+  descent-override: 22%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: "Schibsted Fallback";
+  src: local("Segoe UI"), local("Helvetica Neue"), local("Arial");
+  size-adjust: 98%;
+  ascent-override: 95%;
+  descent-override: 24%;
+  line-gap-override: 0%;
 }
 
 *,
@@ -1527,6 +1546,89 @@ a.catalog-chip:hover {
 
 .start-here-body > :last-child {
   margin-bottom: 0;
+}
+
+.starter-amazon {
+  margin: 0.85rem 0 0;
+}
+
+.starter-amazon.is-compact {
+  margin: 0.7rem 0 0;
+}
+
+.starter-amazon-link {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  justify-content: center;
+  text-align: center;
+  color: #fff8f4;
+  background: var(--accent);
+  border-color: var(--accent);
+  min-height: 2.65rem;
+  font-size: 0.88rem;
+  padding: 0.45rem 0.95rem;
+}
+
+.starter-amazon-link:hover {
+  color: #fff8f4;
+  background: var(--accent-deep);
+  border-color: var(--accent-deep);
+}
+
+.starter-amazon-link.is-compact {
+  min-height: 2.55rem;
+}
+
+.guide-hero-lede {
+  margin-bottom: 0;
+}
+
+.guide-hero .starter-amazon {
+  max-width: 28rem;
+}
+
+@media (max-width: 719px) {
+  .guide-hero {
+    margin-bottom: 0.15rem;
+  }
+
+  .guide-hero-grid {
+    gap: 0.65rem 0.75rem;
+    align-items: start;
+  }
+
+  .guide-hero-cover {
+    width: 4.4rem;
+  }
+
+  .guide-hero h1 {
+    font-size: clamp(1.45rem, 6.2vw, 1.85rem);
+    line-height: 1.18;
+    margin-bottom: 0.35rem;
+  }
+
+  .guide-hero-lede {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+    font-size: 0.98rem;
+    line-height: 1.45;
+  }
+
+  .guide-hero-meta {
+    margin-top: 0.65rem;
+  }
+
+  .guide-hero .starter-amazon {
+    max-width: none;
+  }
+
+  .guide-toc.is-mobile {
+    margin-top: 0.75rem;
+  }
 }
 
 .callout {

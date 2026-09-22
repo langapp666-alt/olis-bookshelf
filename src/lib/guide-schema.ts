@@ -6,8 +6,93 @@
 export type FaqPair = { question: string; answer: string };
 export type ListedTitle = { title: string; n?: string };
 
+/** First-read door for Amazon CTAs — never invent titles. */
+export type BookOne = {
+  title: string;
+  author?: string;
+  year?: string | number;
+  query?: string;
+};
+
 function stripMdxComments(text: string): string {
   return text.replace(/\{\/\*[\s\S]*?\*\/\}/g, "");
+}
+
+function parseOrderTableBooks(body: string): Array<BookOne & { n?: string; notes?: string }> {
+  const match = body.match(/<OrderTable[\s\S]*?books=\{\[([\s\S]*?)\]\s*\}/);
+  if (!match?.[1]) return [];
+  const books: Array<BookOne & { n?: string; notes?: string }> = [];
+  for (const object of match[1].matchAll(/\{([\s\S]*?)\}/g)) {
+    const block = object[1] ?? "";
+    const title = block.match(/title:\s*["'`]([^"'`]+)["'`]/)?.[1]?.trim();
+    if (!title) continue;
+    const n = block.match(/\bn:\s*(?:["'`]([^"'`]+)["'`]|(\d+(?:\.\d+)?))/);
+    const year = block.match(/\byear:\s*(?:["'`]([^"'`]+)["'`]|(\d{4}))/);
+    const author = block.match(/\bauthor:\s*["'`]([^"'`]+)["'`]/)?.[1]?.trim();
+    const query = block.match(/\bquery:\s*["'`]([^"'`]+)["'`]/)?.[1]?.trim();
+    const notes = block.match(/\bnotes:\s*["'`]([^"'`]+)["'`]/)?.[1]?.trim();
+    books.push({
+      title,
+      n: n?.[1] ?? n?.[2],
+      year: year?.[1] ?? year?.[2],
+      author,
+      query,
+      notes,
+    });
+  }
+  return books;
+}
+
+function parseStartHereTitle(body: string): string | undefined {
+  return body.match(/<StartHere\s+[^>]*title=["'`]([^"'`]+)["'`]/)?.[1]?.trim();
+}
+
+/**
+ * Book-1 Amazon target for a guide. Prefer the editorial StartHere title,
+ * then an OrderTable row marked “Start here”, then n=1 / first spine row.
+ */
+export function parseBookOne(body: string | undefined): BookOne | null {
+  if (!body) return null;
+  const stripped = stripMdxComments(body);
+  const books = parseOrderTableBooks(stripped);
+  const startTitle = parseStartHereTitle(stripped);
+
+  if (startTitle) {
+    const matched = books.find(
+      (book) => book.title.toLowerCase() === startTitle.toLowerCase(),
+    );
+    return matched
+      ? {
+          title: matched.title,
+          author: matched.author,
+          year: matched.year,
+          query: matched.query,
+        }
+      : { title: startTitle };
+  }
+
+  const marked = books.find((book) => {
+    const notes = (book.notes ?? "").toLowerCase();
+    return /start here/.test(notes) && !/not (an? )?(on-ramp|starting|book one)/.test(notes);
+  });
+  if (marked) {
+    return {
+      title: marked.title,
+      author: marked.author,
+      year: marked.year,
+      query: marked.query,
+    };
+  }
+
+  const numbered = books.find((book) => book.n === "1");
+  const pick = numbered ?? books[0];
+  if (!pick) return null;
+  return {
+    title: pick.title,
+    author: pick.author,
+    year: pick.year,
+    query: pick.query,
+  };
 }
 
 export function parseFaqPairs(body: string | undefined): FaqPair[] {
@@ -33,18 +118,10 @@ export function parseFaqPairs(body: string | undefined): FaqPair[] {
 /** First OrderTable on the page — usually the spine, not extras. */
 export function parseFirstOrderTableTitles(body: string | undefined): ListedTitle[] {
   if (!body) return [];
-  const match = body.match(/<OrderTable[\s\S]*?books=\{\[([\s\S]*?)\]\s*\}/);
-  if (!match?.[1]) return [];
-  const titles: ListedTitle[] = [];
-  const objects = match[1].matchAll(/\{([\s\S]*?)\}/g);
-  for (const object of objects) {
-    const block = object[1] ?? "";
-    const title = block.match(/title:\s*["'`]([^"'`]+)["'`]/)?.[1]?.trim();
-    if (!title) continue;
-    const n = block.match(/\bn:\s*(?:["'`]([^"'`]+)["'`]|(\d+(?:\.\d+)?))/);
-    titles.push({ title, n: n?.[1] ?? n?.[2] });
-  }
-  return titles;
+  return parseOrderTableBooks(stripMdxComments(body)).map((book) => ({
+    title: book.title,
+    n: book.n,
+  }));
 }
 
 export function faqPageSchema(

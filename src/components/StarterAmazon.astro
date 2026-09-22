@@ -1,0 +1,26 @@
+---
+import { amazonBookUrl, amazonRel } from "../lib/site";
+
+interface Props {
+  title: string;
+  author: string;
+  year?: string | number;
+  query?: string;
+  /** Compact hero / dock label vs full Start Here control. */
+  compact?: boolean;
+}
+
+const { title, author, year, query, compact = false } = Astro.props;
+const href = amazonBookUrl(title, author, query);
+const label = year ? `${title} (${year})` : title;
+---
+
+<p class:list={["starter-amazon", compact && "is-compact"]}>
+  <a
+    class:list={["amazon-link", "starter-amazon-link", compact && "is-compact"]}
+    href={href}
+    rel={amazonRel}
+  >
+    Amazon · {label}
+  </a>
+</p>

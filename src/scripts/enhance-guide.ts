@@ -66,7 +66,7 @@ function enhanceFaq(h2: Element) {
   }
 }
 
-function enhanceGuide() {
+export function enhanceGuide() {
   const prose = document.querySelector(".guide-prose");
   if (!prose) return;
 
@@ -90,3 +90,4 @@ function enhanceGuide() {
 }
 
 enhanceGuide();
+export default enhanceGuide;

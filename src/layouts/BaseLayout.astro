@@ -1,7 +1,6 @@
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import GuidesIndex from "../components/GuidesIndex.astro";
 import SeoJsonLd from "../components/SeoJsonLd.astro";
 import "../styles/global.css";
 import { socials, siteName, siteOrigin } from "../lib/site";
@@ -16,6 +15,8 @@ interface Props {
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
   ogImage?: string;
   ogType?: "website" | "article";
+  /** LCP cover (or similar) to preload — keep to one URL. */
+  preloadImage?: string;
 }
 
 const {
@@ -26,6 +27,7 @@ const {
   jsonLd,
   ogImage,
   ogType = "website",
+  preloadImage,
 } = Astro.props;
 const pageTitle = documentTitle(title);
 const metaDescription = clipMeta(description);
@@ -50,6 +52,8 @@ const websiteSchema = {
     "query-input": "required name=search_term_string",
   },
 };
+const fontHref =
+  "https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap";
 ---
 
 <!doctype html>
@@ -72,10 +76,17 @@ const websiteSchema = {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://covers.openlibrary.org" />
     <link rel="dns-prefetch" href="https://covers.openlibrary.org" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="dns-prefetch" href="https://books.google.com" />
+    {
+      preloadImage && (
+        <link rel="preload" as="image" href={preloadImage} fetchpriority="high" />
+      )
+    }
+    <link rel="preload" as="style" href={fontHref} />
+    <link href={fontHref} rel="stylesheet" media="print" onload="this.media='all'" />
+    <noscript>
+      <link href={fontHref} rel="stylesheet" />
+    </noscript>
     <meta property="og:site_name" content={siteName} />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={metaDescription} />
@@ -108,11 +119,8 @@ const websiteSchema = {
       </main>
       <Footer />
     </div>
-    <GuidesIndex />
     <script>
-      import "../scripts/enhance-tables";
-      import "../scripts/enhance-guide";
-      import "../scripts/site-search";
+      import "../scripts/boot-client";
     </script>
   </body>
 </html>
