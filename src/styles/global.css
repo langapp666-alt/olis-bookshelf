@@ -1533,36 +1533,8 @@ a.catalog-chip:hover {
   margin: 0.85rem 0 0;
 }
 
-.start-here-amazon {
-  width: 100%;
-  min-height: 2.75rem;
-  font-size: 0.88rem;
-}
-
 .guide-hero-shop {
   margin: 0.85rem 0 0;
-}
-
-.hero-amazon {
-  min-height: 2.75rem;
-  min-width: 0;
-  max-width: 100%;
-  padding: 0.5rem 1rem;
-  font-size: 0.88rem;
-  color: #fff8f4;
-  background: var(--accent);
-  border-color: var(--accent);
-}
-
-.hero-amazon:hover {
-  color: #fff8f4;
-  background: var(--accent-deep);
-  border-color: var(--accent-deep);
-}
-
-.hero-amazon-title {
-  font-weight: 650;
-  opacity: 0.92;
 }
 
 .aside-book1-title {
@@ -1946,6 +1918,34 @@ table .col-title {
   width: 100%;
   min-width: 0;
   margin-bottom: 0.35rem;
+}
+
+.amazon-link.hero-amazon,
+.amazon-link.start-here-amazon {
+  min-height: 2.75rem;
+  min-width: 0;
+  max-width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 0.88rem;
+  color: #fff8f4;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.amazon-link.hero-amazon:hover,
+.amazon-link.start-here-amazon:hover {
+  color: #fff8f4;
+  background: var(--accent-deep);
+  border-color: var(--accent-deep);
+}
+
+.amazon-link.start-here-amazon {
+  width: 100%;
+}
+
+.hero-amazon-title {
+  font-weight: 650;
+  opacity: 0.92;
 }
 
 .dock-amazon {
