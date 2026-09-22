@@ -12,6 +12,7 @@ export interface OrderBook {
   notes?: string;
   author?: string;
   query?: string;
+  /** Verified ASIN only — never invent. Falls back to search / asins.json when omitted. */
   asin?: string;
   coverId?: number;
   isbn?: string;

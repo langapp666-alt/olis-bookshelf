@@ -4,7 +4,7 @@ Series reading-order and “what to read next” guides for long science fiction
 
 This is a static [Astro](https://astro.build) site. Guides live in a Markdown/MDX content collection.
 
-Amazon Associates is **active**. Per-title shop links use `amazonBookUrl()` with a looked-up ASIN when `src/data/asins.json` has one (Open Library ISBN-10 / public product pages), otherwise title + author search. Tag comes from `PUBLIC_AFFILIATE_TAG` / `src/lib/site.ts`. Do not invent ASINs.
+Amazon Associates is **active**. Per-title shop links use `amazonBookUrl()` with a looked-up ASIN when `src/data/asins.json` has one (Open Library ISBN-10 / public product pages), otherwise title + author search. Tag comes from `PUBLIC_AFFILIATE_TAG` / `src/lib/site.ts` via `amazonBookUrl()` / `amazonSearchUrl()` (and `amazonAsinUrl()` / `amazonProductUrl()` only when a verified ASIN is in data). Do not invent ASINs.
 
 ## Local development
 
