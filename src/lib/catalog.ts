@@ -13,21 +13,58 @@ export const featuredSlugs = [
   "lord-of-the-rings-reading-order",
 ] as const;
 
-/** Longer or multi-door maps for the homepage “deep catalog” row. */
+/**
+ * Homepage “deep catalog” row. Prefer contested / weak-index maps so
+ * high-authority home equity reaches them (GSC crawled-not-indexed + orphans).
+ */
 export const spotlightSlugs = [
   "roots-of-chaos-reading-order",
   "cosmere-starter-reading-order",
   "mistborn-era-1-2-reading-order",
-  "books-of-babel-reading-order",
+  "kingkiller-chronicle-reading-order",
   "malazan-book-of-the-fallen-reading-order",
-  "dark-tower-reading-order",
-  "discworld-city-watch-reading-order",
+  "lunar-chronicles-reading-order",
   "the-expanse-reading-order",
+  "james-bond-reading-order",
+  "shatter-me-reading-order",
+  "bargainer-reading-order",
   "first-law-reading-order",
-  "foreigner-reading-order",
-  "drizzt-reading-order",
-  "laundry-files-reading-order",
+  "books-of-babel-reading-order",
 ] as const;
+
+/**
+ * Prefer these when previewing a genre shelf or hub — contested doors and
+ * maps that need stronger internal links from high-authority pages.
+ */
+export const genrePrioritySlugs: Record<GenreSlug, readonly string[]> = {
+  "epic-fantasy": [
+    "kingkiller-chronicle-reading-order",
+    "mistborn-era-1-2-reading-order",
+    "roots-of-chaos-reading-order",
+    "malazan-book-of-the-fallen-reading-order",
+    "empyrean-reading-order",
+    "acotar-reading-order",
+  ],
+  "space-opera": [
+    "murderbot-diaries-reading-order",
+    "lunar-chronicles-reading-order",
+    "the-expanse-reading-order",
+    "dune-novels-reading-order",
+    "red-rising-reading-order",
+  ],
+  "mystery-thriller": [
+    "james-bond-reading-order",
+    "jack-reacher-reading-order",
+    "sherlock-holmes-reading-order",
+    "housemaid-reading-order",
+  ],
+  romance: [
+    "shatter-me-reading-order",
+    "bargainer-reading-order",
+    "outlander-reading-order",
+    "twilight-reading-order",
+  ],
+};
 
 export const SHELF_PREVIEW = 6;
 
@@ -59,4 +96,25 @@ export function guidesBySlug(
     const guide = map.get(slug);
     return guide ? [guide] : [];
   });
+}
+
+/** Stable order: priority slugs first (when present), then the rest unchanged. */
+export function prioritizeGuides(
+  guides: CollectionEntry<"guides">[],
+  priority: readonly string[],
+) {
+  const bySlug = new Map(guides.map((guide) => [guide.data.slug, guide]));
+  const seen = new Set<string>();
+  const ordered: CollectionEntry<"guides">[] = [];
+  for (const slug of priority) {
+    const guide = bySlug.get(slug);
+    if (guide) {
+      ordered.push(guide);
+      seen.add(slug);
+    }
+  }
+  for (const guide of guides) {
+    if (!seen.has(guide.data.slug)) ordered.push(guide);
+  }
+  return ordered;
 }

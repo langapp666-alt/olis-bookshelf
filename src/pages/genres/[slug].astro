@@ -4,7 +4,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import CatalogFind from "../../components/CatalogFind.astro";
 import CommonQuestions from "../../components/CommonQuestions.astro";
 import GuideCard from "../../components/GuideCard.astro";
-import { sortGuides } from "../../lib/catalog";
+import { genrePrioritySlugs, prioritizeGuides, sortGuides } from "../../lib/catalog";
 import { listedGuides } from "../../lib/guides-index";
 import { listedQuestions } from "../../lib/questions";
 import { genres, siteOrigin, type GenreSlug } from "../../lib/site";
@@ -17,10 +17,16 @@ export function getStaticPaths() {
 }
 
 const { genre } = Astro.props;
-const guides = sortGuides(
-  listedGuides(await getCollection("guides")).filter(
-    (entry) => entry.data.genre === (genre.slug as GenreSlug),
+const guides = prioritizeGuides(
+  sortGuides(
+    listedGuides(await getCollection("guides")).filter(
+      (entry) => entry.data.genre === (genre.slug as GenreSlug),
+    ),
   ),
+  genrePrioritySlugs[genre.slug as GenreSlug],
+);
+const priority = guides.filter((guide) =>
+  (genrePrioritySlugs[genre.slug as GenreSlug] as readonly string[]).includes(guide.data.slug),
 );
 const asked = listedQuestions(await getCollection("questions"))
   .filter((question) => question.data.genre === (genre.slug as GenreSlug))
@@ -60,6 +66,29 @@ const askedPreview = asked.slice(0, 8);
   <CatalogFind id="find" total={guides.length} chips={false} placeholder="Series or author on this shelf" />
 
   <p class="catalog-empty" data-catalog-empty hidden>No series on this shelf matches that search.</p>
+
+  {
+    priority.length > 0 && (
+      <section class="worlds-block" data-featured>
+        <header class="shelf-head">
+          <div>
+            <p class="eyebrow">Doors people get wrong</p>
+            <h2>Start with these maps</h2>
+            <p class="shelf-blurb">
+              Contested on-ramps on this shelf. Open the map before a chronology chart or a film
+              list.
+            </p>
+          </div>
+          <p class="shelf-count">{priority.length} doors</p>
+        </header>
+        <div class="world-grid">
+          {priority.map((guide, i) => (
+            <GuideCard guide={guide} variant="featured" priority={i < 2} filterable={false} />
+          ))}
+        </div>
+      </section>
+    )
+  }
 
   <CommonQuestions questions={askedPreview} />
   {

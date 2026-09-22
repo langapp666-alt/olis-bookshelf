@@ -7,7 +7,9 @@ import GuideCard from "../components/GuideCard.astro";
 import RandomGuide from "../components/RandomGuide.astro";
 import {
   featuredSlugs,
+  genrePrioritySlugs,
   guidesBySlug,
+  prioritizeGuides,
   SHELF_PREVIEW,
   sortGuides,
   spotlightSlugs,
@@ -29,13 +31,16 @@ const popularQuestions = questionsBySlug(
 
 const shelves = Object.values(genres).map((genre) => ({
   genre,
-  guides: allGuides.filter((guide) => guide.data.genre === (genre.slug as GenreSlug)),
+  guides: prioritizeGuides(
+    allGuides.filter((guide) => guide.data.genre === (genre.slug as GenreSlug)),
+    genrePrioritySlugs[genre.slug as GenreSlug],
+  ),
 }));
 ---
 
 <BaseLayout
   title="Reading-order guides: where to start"
-  description="Where to start Roots of Chaos, Malazan, Cosmere, Books of Babel, Dark Tower, Mistborn, and 100+ long series. Publication first. Chronology when it changes the read."
+  description="Where to start Murderbot, Mistborn, Kingkiller, Shatter Me, Lunar Chronicles, James Bond, Roots of Chaos, and 100+ long series. Publication first."
   wide
   jsonLd={{
     "@context": "https://schema.org",
@@ -161,17 +166,23 @@ const shelves = Object.values(genres).map((genre) => ({
       <li>No star ratings, and no “best book in the series.”</li>
       <li>
         Publication first. Contested prequel orders stay labeled.{" "}
+        <a href="/guides/murderbot-diaries-reading-order/">Murderbot</a> starts
+        at <em>All Systems Red</em>.{" "}
+        <a href="/guides/mistborn-era-1-2-reading-order/">Mistborn</a> is Era 1
+        before <em>Alloy</em>.{" "}
+        <a href="/guides/kingkiller-chronicle-reading-order/">Kingkiller</a>{" "}
+        starts at <em>The Name of the Wind</em>.{" "}
+        <a href="/guides/shatter-me-reading-order/">Shatter Me</a>,{" "}
+        <a href="/guides/lunar-chronicles-reading-order/">Lunar Chronicles</a>,
+        and <a href="/guides/james-bond-reading-order/">James Bond</a> keep
+        films and later cycles off book one.{" "}
         <a href="/guides/roots-of-chaos-reading-order/">Roots of Chaos</a> starts
-        at <em>Priory</em>, not the 2023 prequel.{" "}
-        <a href="/guides/malazan-book-of-the-fallen-reading-order/">
-          Malazan Book of the Fallen
-        </a>{" "}
-        starts at <em>Gardens of the Moon</em>.{" "}
-        <a href="/guides/lord-of-the-rings-reading-order/">Tolkien</a>,{" "}
-        <a href="/guides/harry-potter-reading-order/">Harry Potter</a>, and{" "}
-        <a href="/guides/asoiaf-reading-order/">A Song of Ice and Fire</a> stay
-        in scope when people still start on the wrong book. Star Wars stays out
-        as a primary.
+        at <em>Priory</em>.{" "}
+        <a href="/genres/epic-fantasy/">Epic Fantasy</a>,{" "}
+        <a href="/genres/space-opera/">Space Opera</a>,{" "}
+        <a href="/genres/mystery-thriller/">Mystery</a>, and{" "}
+        <a href="/genres/romance/">Romance</a> hubs group the rest. Star Wars
+        stays out as a primary.
       </li>
     </ul>
     <p class="small muted">

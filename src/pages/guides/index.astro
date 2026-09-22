@@ -4,7 +4,13 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import CatalogFind from "../../components/CatalogFind.astro";
 import GuideCard from "../../components/GuideCard.astro";
 import PopularQuestions from "../../components/PopularQuestions.astro";
-import { featuredSlugs, guidesBySlug, sortGuides } from "../../lib/catalog";
+import {
+  featuredSlugs,
+  genrePrioritySlugs,
+  guidesBySlug,
+  prioritizeGuides,
+  sortGuides,
+} from "../../lib/catalog";
 import { listedGuides } from "../../lib/guides-index";
 import { listedQuestions, popularQuestionSlugs, questionsBySlug } from "../../lib/questions";
 import { genres, siteOrigin, type GenreSlug } from "../../lib/site";
@@ -18,13 +24,16 @@ const popularQuestions = questionsBySlug(
 
 const shelves = Object.values(genres).map((genre) => ({
   genre,
-  guides: allGuides.filter((guide) => guide.data.genre === (genre.slug as GenreSlug)),
+  guides: prioritizeGuides(
+    allGuides.filter((guide) => guide.data.genre === (genre.slug as GenreSlug)),
+    genrePrioritySlugs[genre.slug as GenreSlug],
+  ),
 }));
 ---
 
 <BaseLayout
   title="All reading-order guides"
-  description="Every Oli's Bookshelf map, grouped by shelf: Witcher, Cosmere, Dark Tower, mystery series, romantasy. Publication first, chronology when it matters."
+  description="Every Oli's Bookshelf map: Murderbot, Mistborn, Kingkiller, Shatter Me, Lunar Chronicles, James Bond, plus Witcher, Cosmere, and romantasy. Publication first."
   wide
   jsonLd={{
     "@context": "https://schema.org",
@@ -38,8 +47,17 @@ const shelves = Object.values(genres).map((genre) => ({
     <p class="eyebrow">Catalog</p>
     <h1>Reading-order guides</h1>
     <p class="lede">
-      {allGuides.length} series maps, grouped by shelf. Publication order first.
-      Chronology when it actually changes the read.
+      {allGuides.length} series maps, grouped by{" "}
+      <a href="/genres/epic-fantasy/">Epic Fantasy</a>,{" "}
+      <a href="/genres/space-opera/">Space Opera</a>,{" "}
+      <a href="/genres/mystery-thriller/">Mystery</a>, and{" "}
+      <a href="/genres/romance/">Romance</a>. Publication order first. Chronology
+      when it actually changes the read — including{" "}
+      <a href="/guides/murderbot-diaries-reading-order/">Murderbot</a>,{" "}
+      <a href="/guides/kingkiller-chronicle-reading-order/">Kingkiller</a>,{" "}
+      <a href="/guides/shatter-me-reading-order/">Shatter Me</a>,{" "}
+      <a href="/guides/lunar-chronicles-reading-order/">Lunar Chronicles</a>, and{" "}
+      <a href="/guides/james-bond-reading-order/">James Bond</a>.
     </p>
   </header>
 

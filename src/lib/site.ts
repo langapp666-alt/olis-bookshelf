@@ -68,25 +68,25 @@ export const genres = {
     slug: "epic-fantasy",
     label: "Epic Fantasy",
     blurb:
-      "Epic fantasy reading order: Witcher, Cosmere, Dark Tower, Malazan Book of the Fallen, Roots of Chaos (Priory first), Books of Babel, Belgariad (Pawn first), Drizzt (Crystal Shard or Homeland), Shannara entry. Prequels labeled so they do not become book one.",
+      "Epic fantasy reading order: Kingkiller (Name of the Wind first), Mistborn Era 1 before Alloy, Cosmere, Malazan (Gardens first), Roots of Chaos (Priory first), Witcher, Dark Tower. Prequels labeled so they do not become book one.",
   },
   "space-opera": {
     slug: "space-opera",
     label: "Space Opera / SFF",
     blurb:
-      "Space opera reading order: Vorkosigan (Cordelia first), Foreigner (Foreigner first), Expanse, Final Architecture not Children of Time. Prequels that spoil stay labeled.",
+      "Space opera reading order: Murderbot (All Systems Red first), Lunar Chronicles (Cinder before Fairest), Expanse novels then novellas, Vorkosigan (Cordelia first), Red Rising not Iron Gold first. Prequels that spoil stay labeled.",
   },
   "mystery-thriller": {
     slug: "mystery-thriller",
     label: "Mystery / Thriller",
     blurb:
-      "Mystery and thriller reading order: Reacher, Gamache (Still Life), Laundry Files, InCryptid, Jackson Brodie. Publication first; later doors labeled.",
+      "Mystery and thriller reading order: James Bond (Casino Royale, Fleming first), Reacher publication vs chronological, Sherlock, Thursday Murder Club, Rivers of London. Publication first; films and prequels labeled.",
   },
   romance: {
     slug: "romance",
     label: "Romance",
     blurb:
-      "Family sagas, romantasy runs, and long historical shelves where the screen order is not the book order, and prequels look like book one.",
+      "Romance reading order: Shatter Me (not Watch Me first), Bargainer (Rhapsodic before the Emperor novella), Outlander, Twilight. Screen order is not book order; prequels stay labeled.",
   },
 } as const;
 
