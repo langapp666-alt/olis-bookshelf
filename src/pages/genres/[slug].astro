@@ -6,7 +6,7 @@ import CommonQuestions from "../../components/CommonQuestions.astro";
 import GuideCard from "../../components/GuideCard.astro";
 import { genrePrioritySlugs, prioritizeGuides, sortGuides } from "../../lib/catalog";
 import { listedGuides } from "../../lib/guides-index";
-import { listedQuestions } from "../../lib/questions";
+import { genreQuestionPriority, listedQuestions, prioritizeQuestions } from "../../lib/questions";
 import { genres, siteOrigin, type GenreSlug } from "../../lib/site";
 
 export function getStaticPaths() {
@@ -28,10 +28,13 @@ const guides = prioritizeGuides(
 const priority = guides.filter((guide) =>
   (genrePrioritySlugs[genre.slug as GenreSlug] as readonly string[]).includes(guide.data.slug),
 );
-const asked = listedQuestions(await getCollection("questions"))
-  .filter((question) => question.data.genre === (genre.slug as GenreSlug))
-  .sort((a, b) => a.data.title.localeCompare(b.data.title));
-const askedPreview = asked.slice(0, 8);
+const asked = prioritizeQuestions(
+  listedQuestions(await getCollection("questions"))
+    .filter((question) => question.data.genre === (genre.slug as GenreSlug))
+    .sort((a, b) => a.data.title.localeCompare(b.data.title)),
+  genreQuestionPriority[genre.slug as GenreSlug],
+);
+const askedPreview = asked.slice(0, 10);
 ---
 
 <BaseLayout

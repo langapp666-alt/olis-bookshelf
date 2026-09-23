@@ -30,6 +30,17 @@ export const spotlightSlugs = [
   "bargainer-reading-order",
   "first-law-reading-order",
   "books-of-babel-reading-order",
+  // No neighbor links before this pass. Homepage deep catalog reaches them.
+  "amber-chronicles-reading-order",
+  "atlas-series-reading-order",
+  "demon-cycle-reading-order",
+  "hierarchy-reading-order",
+  "honorverse-reading-order",
+  "iron-druid-reading-order",
+  "old-kingdom-reading-order",
+  "riyria-revelations-reading-order",
+  "sun-eater-reading-order",
+  "valdemar-reading-order",
 ] as const;
 
 /**
