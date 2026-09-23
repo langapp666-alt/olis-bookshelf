@@ -23,24 +23,24 @@ export const spotlightSlugs = [
   "riftwar-reading-order",
   "warrior-cats-reading-order",
   "kate-daniels-spin-offs-reading-order",
-  "cosmere-starter-reading-order",
   "lunar-chronicles-reading-order",
-  "the-expanse-reading-order",
   "shatter-me-reading-order",
   "bargainer-reading-order",
-  "first-law-reading-order",
-  "books-of-babel-reading-order",
-  // No neighbor links before this pass. Homepage deep catalog reaches them.
-  "amber-chronicles-reading-order",
-  "atlas-series-reading-order",
-  "demon-cycle-reading-order",
-  "hierarchy-reading-order",
-  "honorverse-reading-order",
-  "iron-druid-reading-order",
   "old-kingdom-reading-order",
-  "riyria-revelations-reading-order",
-  "sun-eater-reading-order",
-  "valdemar-reading-order",
+  // GSC discovered-not-indexed (2026-09-23) with the fewest neighbor links.
+  "bridge-kingdom-reading-order",
+  "bridgerton-reading-order",
+  "caraval-reading-order",
+  "ember-in-the-ashes-reading-order",
+  "freida-mcfadden-thriller-path",
+  "lady-of-darkness-reading-order",
+  "night-angel-reading-order",
+  "realm-of-the-elderlings-reading-order",
+  "wayfarers-reading-order",
+  "flesh-and-fire-reading-order",
+  "black-dagger-brotherhood-reading-order",
+  "red-queen-reading-order",
+  "shadowhunters-reading-order",
 ] as const;
 
 /**
@@ -59,6 +59,10 @@ export const genrePrioritySlugs: Record<GenreSlug, readonly string[]> = {
     "shadows-of-the-apt-reading-order",
     "riftwar-reading-order",
     "warrior-cats-reading-order",
+    "the-locked-tomb-reading-order",
+    "throne-of-glass-reading-order",
+    "folk-of-the-air-reading-order",
+    "gentleman-bastards-reading-order",
   ],
   "space-opera": [
     "murderbot-diaries-reading-order",
@@ -82,6 +86,7 @@ export const genrePrioritySlugs: Record<GenreSlug, readonly string[]> = {
     "bargainer-reading-order",
     "outlander-reading-order",
     "twilight-reading-order",
+    "bridgerton-reading-order",
   ],
 };
 

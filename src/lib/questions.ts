@@ -52,11 +52,10 @@ export const genreQuestionPriority: Record<GenreSlug, readonly string[]> = {
     "shadows-of-the-apt-or-children-of-time",
     "riftwar-magician-or-empire",
     "warrior-cats-sun-trail-or-into-the-wild",
+    "artemis-fowl-series-order",
+    "what-to-read-after-acotar",
+    "where-to-start-discworld",
     "drizzt-homeland-or-crystal-shard",
-    "where-to-start-malazan",
-    "mistborn-era-1-or-era-2",
-    "where-to-start-the-cosmere",
-    "hobbit-or-silmarillion-first",
   ],
   "space-opera": [
     "foreigner-start-later-arc",
@@ -74,7 +73,7 @@ export const genreQuestionPriority: Record<GenreSlug, readonly string[]> = {
     "where-to-start-rivers-of-london",
     "where-to-start-sherlock-holmes",
   ],
-  romance: [],
+  romance: ["hades-persephone-touch-or-game"],
 };
 
 export function prioritizeQuestions(questions: Question[], priority: readonly string[]): Question[] {
