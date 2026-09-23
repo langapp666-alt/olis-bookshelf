@@ -30,6 +30,14 @@ export const popularQuestionSlugs = [
   "drizzt-homeland-or-crystal-shard",
   "where-to-start-laundry-files",
   "belgariad-belgarath-first",
+  "where-to-start-osten-ard",
+  "divine-cities-or-founders",
+  "shadows-of-the-apt-or-children-of-time",
+  "riftwar-magician-or-empire",
+  "where-to-start-harry-bosch",
+  "where-to-start-in-death",
+  "gunmetal-magic-or-magic-bites",
+  "warrior-cats-sun-trail-or-into-the-wild",
 ] as const;
 
 export function questionsBySlug(questions: Question[], slugs: readonly string[]): Question[] {

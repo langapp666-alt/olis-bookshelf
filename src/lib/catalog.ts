@@ -18,14 +18,14 @@ export const featuredSlugs = [
  * high-authority home equity reaches them (GSC crawled-not-indexed + orphans).
  */
 export const spotlightSlugs = [
-  "roots-of-chaos-reading-order",
+  "divine-cities-founders-reading-order",
+  "shadows-of-the-apt-reading-order",
+  "riftwar-reading-order",
+  "warrior-cats-reading-order",
+  "kate-daniels-spin-offs-reading-order",
   "cosmere-starter-reading-order",
-  "mistborn-era-1-2-reading-order",
-  "kingkiller-chronicle-reading-order",
-  "malazan-book-of-the-fallen-reading-order",
   "lunar-chronicles-reading-order",
   "the-expanse-reading-order",
-  "james-bond-reading-order",
   "shatter-me-reading-order",
   "bargainer-reading-order",
   "first-law-reading-order",
@@ -43,6 +43,11 @@ export const genrePrioritySlugs: Record<GenreSlug, readonly string[]> = {
     "roots-of-chaos-reading-order",
     "malazan-book-of-the-fallen-reading-order",
     "acotar-reading-order",
+    "osten-ard-reading-order",
+    "divine-cities-founders-reading-order",
+    "shadows-of-the-apt-reading-order",
+    "riftwar-reading-order",
+    "warrior-cats-reading-order",
   ],
   "space-opera": [
     "murderbot-diaries-reading-order",
@@ -56,6 +61,9 @@ export const genrePrioritySlugs: Record<GenreSlug, readonly string[]> = {
     "jack-reacher-reading-order",
     "sherlock-holmes-reading-order",
     "housemaid-reading-order",
+    "harry-bosch-reading-order",
+    "in-death-reading-order",
+    "kate-daniels-spin-offs-reading-order",
   ],
   romance: [
     "empyrean-reading-order",
