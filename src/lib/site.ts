@@ -70,7 +70,7 @@ export const genres = {
     slug: "epic-fantasy",
     label: "Epic Fantasy",
     blurb:
-      "Epic fantasy reading order: Kingkiller (The Name of the Wind, 2007), Locked Tomb (Gideon the Ninth, 2019), Throne of Glass (2012, not Assassin’s Blade), Folk of the Air (The Cruel Prince, 2018), Osten Ard (The Dragonbone Chair, 1988), Riftwar (Magician, 1982), Warrior Cats (Into the Wild, 2003). Prequels labeled so they do not become book one.",
+      "Epic fantasy reading order: Kingkiller (The Name of the Wind, 2007), Throne of Glass (2012, not Assassin’s Blade), Folk of the Air (The Cruel Prince, 2018), Grishaverse (Shadow and Bone, 2012), Locked Tomb (Gideon the Ninth, 2019), Osten Ard (The Dragonbone Chair, 1988), Riftwar (Magician, 1982), Warrior Cats (Into the Wild, 2003). Prequels labeled so they do not become book one.",
   },
   "space-opera": {
     slug: "space-opera",
@@ -88,7 +88,7 @@ export const genres = {
     slug: "romance",
     label: "Romance",
     blurb:
-      "Romance reading order: Fourth Wing (2023), not Threshing Day. Shatter Me (2011), not Watch Me. Bargainer starts at Rhapsodic (2016). Outlander (1991). Bridgerton starts at The Duke and I (2000). Bridge Kingdom starts at The Bridge Kingdom (2018).",
+      "Romance reading order: Fourth Wing (2023), not Threshing Day. Shatter Me (2011), not Watch Me. Bargainer starts at Rhapsodic (2016). Zodiac Academy starts at The Awakening (2019). Outlander (1991). Bridgerton starts at The Duke and I (2000). Bridge Kingdom starts at The Bridge Kingdom (2018).",
   },
 } as const;
 

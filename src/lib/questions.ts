@@ -14,6 +14,7 @@ export function questionHref(slug: string): string {
  * Keep in sync with published `src/content/questions/` slugs.
  */
 export const popularQuestionSlugs = [
+  "what-to-read-after-acotar",
   "where-to-start-roots-of-chaos",
   "where-to-start-malazan",
   "where-to-start-the-cosmere",

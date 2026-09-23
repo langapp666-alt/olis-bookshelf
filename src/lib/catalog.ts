@@ -49,19 +49,21 @@ export const spotlightSlugs = [
  */
 export const genrePrioritySlugs: Record<GenreSlug, readonly string[]> = {
   "epic-fantasy": [
+    // Homepage shelf is the first six. Crawled Kingkiller, then GSC romantasy/YA.
     "kingkiller-chronicle-reading-order",
-    "mistborn-era-1-2-reading-order",
-    "roots-of-chaos-reading-order",
-    "malazan-book-of-the-fallen-reading-order",
-    "acotar-reading-order",
+    "throne-of-glass-reading-order",
+    "folk-of-the-air-reading-order",
+    "grishaverse-reading-order",
     "osten-ard-reading-order",
+    "the-locked-tomb-reading-order",
     "divine-cities-founders-reading-order",
     "shadows-of-the-apt-reading-order",
     "riftwar-reading-order",
     "warrior-cats-reading-order",
-    "the-locked-tomb-reading-order",
-    "throne-of-glass-reading-order",
-    "folk-of-the-air-reading-order",
+    "mistborn-era-1-2-reading-order",
+    "roots-of-chaos-reading-order",
+    "malazan-book-of-the-fallen-reading-order",
+    "acotar-reading-order",
     "gentleman-bastards-reading-order",
   ],
   "space-opera": [
@@ -84,8 +86,8 @@ export const genrePrioritySlugs: Record<GenreSlug, readonly string[]> = {
     "empyrean-reading-order",
     "shatter-me-reading-order",
     "bargainer-reading-order",
+    "zodiac-academy-reading-order",
     "outlander-reading-order",
-    "twilight-reading-order",
     "bridgerton-reading-order",
   ],
 };
