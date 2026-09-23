@@ -86,7 +86,10 @@ const jsonLd = [
     </header>
 
     <div class="prose guide-prose question-prose">
-      <StartHere title={question.data.shortAnswerTitle}>
+      <StartHere
+        title={question.data.shortAnswerTitle}
+        author={question.data.buy?.author}
+      >
         <p>{question.data.shortAnswer}</p>
         {
           question.data.buy && (

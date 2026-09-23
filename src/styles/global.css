@@ -1573,11 +1573,11 @@ a.catalog-chip:hover {
   width: 100%;
   min-width: 0;
   max-width: 28rem;
-  min-height: 2.65rem;
-  justify-content: flex-start;
+  min-height: 2.85rem;
+  justify-content: center;
   text-align: center;
-  padding: 0.45rem 0.95rem;
-  font-size: 0.88rem;
+  padding: 0.5rem 1.05rem;
+  font-size: 0.95rem;
   color: #fff8f4;
   background: var(--accent);
   border-color: var(--accent);

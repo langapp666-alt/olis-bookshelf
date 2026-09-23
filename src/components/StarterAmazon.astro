@@ -14,6 +14,7 @@ interface Props {
 const { title, author, year, query, asin, compact = false } = Astro.props;
 const href = amazonBookUrl(title, author, { query, asin });
 const label = year ? `${title} (${year})` : title;
+const text = compact ? `Amazon · ${label}` : `${label} on Amazon`;
 ---
 
 <p class:list={["starter-amazon", compact && "is-compact"]}>
@@ -22,6 +23,6 @@ const label = year ? `${title} (${year})` : title;
     href={href}
     rel={amazonRel}
   >
-    Amazon · {label}
+    {text}
   </a>
 </p>
