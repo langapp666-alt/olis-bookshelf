@@ -88,7 +88,7 @@ export const genres = {
     slug: "romance",
     label: "Romance",
     blurb:
-      "Romance reading order: Shatter Me (not Watch Me first), Bargainer (Rhapsodic before the Emperor novella), Outlander, Twilight. Screen order is not book order; prequels stay labeled.",
+      "Romance reading order: Fourth Wing (2023), not Threshing Day. Shatter Me not Watch Me. Bargainer before the Emperor novella. Outlander, Twilight.",
   },
 } as const;
 

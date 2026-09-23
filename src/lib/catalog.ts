@@ -42,7 +42,6 @@ export const genrePrioritySlugs: Record<GenreSlug, readonly string[]> = {
     "mistborn-era-1-2-reading-order",
     "roots-of-chaos-reading-order",
     "malazan-book-of-the-fallen-reading-order",
-    "empyrean-reading-order",
     "acotar-reading-order",
   ],
   "space-opera": [
@@ -59,6 +58,7 @@ export const genrePrioritySlugs: Record<GenreSlug, readonly string[]> = {
     "housemaid-reading-order",
   ],
   romance: [
+    "empyrean-reading-order",
     "shatter-me-reading-order",
     "bargainer-reading-order",
     "outlander-reading-order",

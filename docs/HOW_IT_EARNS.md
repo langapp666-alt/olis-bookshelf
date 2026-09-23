@@ -5,7 +5,7 @@ Status as of 2026-09-13: **the Amazon Associates tag is live** (`olisbookshelf-2
 ## Current state
 
 - Guide CTAs and OrderTable shop buttons use tagged **title + author search** (`/s?k=…&tag=olisbookshelf-20`). ASIN `/dp/` deep links were rolled back: Open Library ISBN-10 ≠ amazon.com ASIN (many 404). See `docs/ASIN_DEEP_LINKS.md`.
-- Sticky dock / hero / aside / StartHere “Book 1 on Amazon” still points at the first recommended title (search URL), not a vague series search.
+- The guide hero uses a primary “{Title} on Amazon” search control. Dock, aside, and StartHere still say “Book 1 on Amazon.” All of them point at the first recommended title (tagged title + author search), not a vague series search.
 - Buy-intent `/questions/` hubs may show one prominent book-1 Amazon control. No Associates wording in body prose; disclosure stays footer + `/disclosure/`.
 - Amazon still reviews the application: we need **3 non-personal qualifying sales within 180 days**. That is a program requirement, not an income forecast.
 - `/disclosure/` states Amazon’s required sentence and that the program is active.
