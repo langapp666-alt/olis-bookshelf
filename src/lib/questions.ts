@@ -1,6 +1,7 @@
 import type { CollectionEntry } from "astro:content";
 import { getCollection } from "astro:content";
 import { isListedStatus } from "./search";
+import type { GenreSlug } from "./site";
 
 export type Question = CollectionEntry<"questions">;
 
@@ -13,6 +14,7 @@ export function questionHref(slug: string): string {
  * Keep in sync with published `src/content/questions/` slugs.
  */
 export const popularQuestionSlugs = [
+  "what-to-read-after-acotar",
   "where-to-start-roots-of-chaos",
   "where-to-start-malazan",
   "where-to-start-the-cosmere",
@@ -39,6 +41,58 @@ export const popularQuestionSlugs = [
   "gunmetal-magic-or-magic-bites",
   "warrior-cats-sun-trail-or-into-the-wild",
 ] as const;
+
+/**
+ * Genre-hub “common questions” preview. Weak and new P3 doors first, then a
+ * few high-traffic questions, so alpha order does not bury them past the fold.
+ */
+export const genreQuestionPriority: Record<GenreSlug, readonly string[]> = {
+  "epic-fantasy": [
+    "where-to-start-osten-ard",
+    "divine-cities-or-founders",
+    "shadows-of-the-apt-or-children-of-time",
+    "riftwar-magician-or-empire",
+    "warrior-cats-sun-trail-or-into-the-wild",
+    "artemis-fowl-series-order",
+    "what-to-read-after-acotar",
+    "where-to-start-discworld",
+    "drizzt-homeland-or-crystal-shard",
+  ],
+  "space-opera": [
+    "foreigner-start-later-arc",
+    "where-to-start-the-expanse",
+    "where-to-start-dune",
+    "where-to-start-red-rising",
+    "where-to-start-vorkosigan",
+  ],
+  "mystery-thriller": [
+    "where-to-start-laundry-files",
+    "where-to-start-harry-bosch",
+    "where-to-start-in-death",
+    "gunmetal-magic-or-magic-bites",
+    "jack-reacher-publication-or-chronological",
+    "where-to-start-rivers-of-london",
+    "where-to-start-sherlock-holmes",
+  ],
+  romance: ["hades-persephone-touch-or-game"],
+};
+
+export function prioritizeQuestions(questions: Question[], priority: readonly string[]): Question[] {
+  const bySlug = new Map(questions.map((question) => [question.data.slug, question]));
+  const seen = new Set<string>();
+  const ordered: Question[] = [];
+  for (const slug of priority) {
+    const question = bySlug.get(slug);
+    if (question) {
+      ordered.push(question);
+      seen.add(slug);
+    }
+  }
+  for (const question of questions) {
+    if (!seen.has(question.data.slug)) ordered.push(question);
+  }
+  return ordered;
+}
 
 export function questionsBySlug(questions: Question[], slugs: readonly string[]): Question[] {
   const map = new Map(questions.map((question) => [question.data.slug, question]));

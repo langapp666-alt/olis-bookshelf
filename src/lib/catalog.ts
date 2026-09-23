@@ -23,13 +23,24 @@ export const spotlightSlugs = [
   "riftwar-reading-order",
   "warrior-cats-reading-order",
   "kate-daniels-spin-offs-reading-order",
-  "cosmere-starter-reading-order",
   "lunar-chronicles-reading-order",
-  "the-expanse-reading-order",
   "shatter-me-reading-order",
   "bargainer-reading-order",
-  "first-law-reading-order",
-  "books-of-babel-reading-order",
+  "old-kingdom-reading-order",
+  // GSC discovered-not-indexed (2026-09-23) with the fewest neighbor links.
+  "bridge-kingdom-reading-order",
+  "bridgerton-reading-order",
+  "caraval-reading-order",
+  "ember-in-the-ashes-reading-order",
+  "freida-mcfadden-thriller-path",
+  "lady-of-darkness-reading-order",
+  "night-angel-reading-order",
+  "realm-of-the-elderlings-reading-order",
+  "wayfarers-reading-order",
+  "flesh-and-fire-reading-order",
+  "black-dagger-brotherhood-reading-order",
+  "red-queen-reading-order",
+  "shadowhunters-reading-order",
 ] as const;
 
 /**
@@ -38,16 +49,22 @@ export const spotlightSlugs = [
  */
 export const genrePrioritySlugs: Record<GenreSlug, readonly string[]> = {
   "epic-fantasy": [
+    // Homepage shelf is the first six. Crawled Kingkiller, then GSC romantasy/YA.
     "kingkiller-chronicle-reading-order",
-    "mistborn-era-1-2-reading-order",
-    "roots-of-chaos-reading-order",
-    "malazan-book-of-the-fallen-reading-order",
-    "acotar-reading-order",
+    "throne-of-glass-reading-order",
+    "folk-of-the-air-reading-order",
+    "grishaverse-reading-order",
     "osten-ard-reading-order",
+    "the-locked-tomb-reading-order",
     "divine-cities-founders-reading-order",
     "shadows-of-the-apt-reading-order",
     "riftwar-reading-order",
     "warrior-cats-reading-order",
+    "mistborn-era-1-2-reading-order",
+    "roots-of-chaos-reading-order",
+    "malazan-book-of-the-fallen-reading-order",
+    "acotar-reading-order",
+    "gentleman-bastards-reading-order",
   ],
   "space-opera": [
     "murderbot-diaries-reading-order",
@@ -69,8 +86,9 @@ export const genrePrioritySlugs: Record<GenreSlug, readonly string[]> = {
     "empyrean-reading-order",
     "shatter-me-reading-order",
     "bargainer-reading-order",
+    "zodiac-academy-reading-order",
     "outlander-reading-order",
-    "twilight-reading-order",
+    "bridgerton-reading-order",
   ],
 };
 

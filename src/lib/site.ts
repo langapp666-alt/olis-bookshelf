@@ -70,25 +70,25 @@ export const genres = {
     slug: "epic-fantasy",
     label: "Epic Fantasy",
     blurb:
-      "Epic fantasy reading order: Kingkiller (Name of the Wind first), Mistborn Era 1 before Alloy, Cosmere, Malazan (Gardens first), Roots of Chaos (Priory first), Osten Ard (Dragonbone Chair first), Riftwar (Magician first), Warrior Cats (Into the Wild first). Prequels labeled so they do not become book one.",
+      "Epic fantasy reading order: Kingkiller (The Name of the Wind, 2007), Throne of Glass (2012, not Assassin’s Blade), Folk of the Air (The Cruel Prince, 2018), Grishaverse (Shadow and Bone, 2012), Locked Tomb (Gideon the Ninth, 2019), Osten Ard (The Dragonbone Chair, 1988), Riftwar (Magician, 1982), Warrior Cats (Into the Wild, 2003). Prequels labeled so they do not become book one.",
   },
   "space-opera": {
     slug: "space-opera",
     label: "Space Opera / SFF",
     blurb:
-      "Space opera reading order: Murderbot (All Systems Red first), Lunar Chronicles (Cinder before Fairest), Expanse novels then novellas, Vorkosigan (Cordelia first), Red Rising not Iron Gold first. Prequels that spoil stay labeled.",
+      "Space opera reading order: Murderbot (All Systems Red, 2017), Lunar Chronicles (Cinder, 2012, before Fairest), Red Rising (2014, not Iron Gold), Wayfarers (The Long Way to a Small, Angry Planet, 2014). Prequels that spoil stay labeled.",
   },
   "mystery-thriller": {
     slug: "mystery-thriller",
     label: "Mystery / Thriller",
     blurb:
-      "Mystery and thriller reading order: James Bond (Casino Royale, Fleming first), Reacher publication vs chronological, Bosch (The Black Echo first), In Death (Naked in Death first), Sherlock, Thursday Murder Club. Publication first; films and prequels labeled.",
+      "Mystery and thriller reading order: James Bond (Casino Royale, 1953), Sherlock (A Study in Scarlet, 1887), Housemaid (2022), Bosch (The Black Echo, 1992), In Death (Naked in Death, 1995). Publication first; films and prequels labeled.",
   },
   romance: {
     slug: "romance",
     label: "Romance",
     blurb:
-      "Romance reading order: Fourth Wing (2023), not Threshing Day. Shatter Me not Watch Me. Bargainer before the Emperor novella. Outlander, Twilight.",
+      "Romance reading order: Fourth Wing (2023), not Threshing Day. Shatter Me (2011), not Watch Me. Bargainer starts at Rhapsodic (2016). Zodiac Academy starts at The Awakening (2019). Outlander (1991). Bridgerton starts at The Duke and I (2000). Bridge Kingdom starts at The Bridge Kingdom (2018).",
   },
 } as const;
 
