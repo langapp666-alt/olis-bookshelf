@@ -7,7 +7,7 @@ Status key:
 - **published** — a guide exists in `src/content/guides/` and is marked `status: published`
 - **queued** — research not started beyond this line
 
-Last updated: 2026-09-22
+Last updated: 2026-09-23
 
 ## Published
 
@@ -151,21 +151,24 @@ Last updated: 2026-09-22
 | The Chronicles of Amber | Roger Zelazny | Epic Fantasy | `amber-chronicles-reading-order` |
 | Chief Inspector Gamache / Three Pines | Louise Penny | Mystery / Thriller | `gamache-reading-order` |
 | The Laundry Files | Charles Stross | Mystery / Thriller | `laundry-files-reading-order` |
+| Osten Ard (Memory, Sorrow, and Thorn) | Tad Williams | Epic Fantasy | `osten-ard-reading-order` |
+| The Divine Cities / The Founders | Robert Jackson Bennett | Epic Fantasy | `divine-cities-founders-reading-order` |
+| Shadows of the Apt | Adrian Tchaikovsky | Epic Fantasy | `shadows-of-the-apt-reading-order` |
+| The Riftwar Cycle (entry) | Raymond E. Feist | Epic Fantasy | `riftwar-reading-order` |
+| Harry Bosch | Michael Connelly | Mystery / Thriller | `harry-bosch-reading-order` |
+| In Death (entry) | J. D. Robb | Mystery / Thriller | `in-death-reading-order` |
+| Kate Daniels world spin-offs | Ilona Andrews | Mystery / Thriller | `kate-daniels-spin-offs-reading-order` |
+| Warrior Cats (entry) | Erin Hunter | Epic Fantasy | `warrior-cats-reading-order` |
 
 ## Queued
 
-High-demand leftovers, in no particular order. Do not crowd out a higher-search title to finish these.
+No full series left from the P3 niche list. These are arcs left off an entry guide, not new doors. Extend the published page. Do not invent a complete order to fill a table.
 
-| Series | Author | Likely hub | Why it is on this list |
+| Leftover | Author | Likely hub | Why it is still queued |
 | --- | --- | --- | --- |
-| Warrior Cats (entry) | Erin Hunter | Epic Fantasy | Many arcs; people start on a later prophecy. |
-| Kate Daniels world spin-offs | Ilona Andrews | Mystery / Thriller | Gunmetal Magic / Blood Heir look like new book ones. |
-| Riftwar (entry) | Raymond E. Feist | Epic Fantasy | Magician vs Empire trilogy doors. |
-| Memory, Sorrow and Thorn / Osten Ard | Tad Williams | Epic Fantasy | Prequels and later trilogies look like book one. |
-| Harry Bosch | Michael Connelly | Mystery / Thriller | Publication vs chronology; large shelf. |
-| In Death / Eve Dallas | J. D. Robb | Mystery / Thriller | Very long numbered run; search is steady. |
-| Divine Cities / Founders | Robert Jackson Bennett | Epic Fantasy | Two finished threes; people mix the doors. |
-| Shadows of the Apt | Adrian Tchaikovsky | Epic Fantasy | Ten-book climb; separate from Final Architecture. |
+| Riftwar later cycles | Raymond E. Feist | Epic Fantasy | Entry guide is published through Serpentwar. Legacy, Legends, Conclave, Darkwar, Demonwar, and Chaoswar (through *Magician's End*), plus Firemane and Dragonwar beyond the not-book-one note, are not fully tabulated. |
+| In Death after the starter | J. D. Robb | Mystery / Thriller | Entry path is published through *Witness in Death*. Later numbered novels and anthology novellas are not tabulated. |
+| Warrior Cats later arcs | Erin Hunter | Epic Fantasy | Entry guide covers The Prophecies Begin, The New Prophecy, and the Dawn of the Clans callout. Power of Three through Changing Skies are not book-by-book. Super Editions, novellas, manga, and graphic novels stay off. |
 
 ## Out of scope as primaries
 

@@ -70,7 +70,7 @@ export const genres = {
     slug: "epic-fantasy",
     label: "Epic Fantasy",
     blurb:
-      "Epic fantasy reading order: Kingkiller (Name of the Wind first), Mistborn Era 1 before Alloy, Cosmere, Malazan (Gardens first), Roots of Chaos (Priory first), Witcher, Dark Tower. Prequels labeled so they do not become book one.",
+      "Epic fantasy reading order: Kingkiller (Name of the Wind first), Mistborn Era 1 before Alloy, Cosmere, Malazan (Gardens first), Roots of Chaos (Priory first), Osten Ard (Dragonbone Chair first), Riftwar (Magician first), Warrior Cats (Into the Wild first). Prequels labeled so they do not become book one.",
   },
   "space-opera": {
     slug: "space-opera",
@@ -82,7 +82,7 @@ export const genres = {
     slug: "mystery-thriller",
     label: "Mystery / Thriller",
     blurb:
-      "Mystery and thriller reading order: James Bond (Casino Royale, Fleming first), Reacher publication vs chronological, Sherlock, Thursday Murder Club, Rivers of London. Publication first; films and prequels labeled.",
+      "Mystery and thriller reading order: James Bond (Casino Royale, Fleming first), Reacher publication vs chronological, Bosch (The Black Echo first), In Death (Naked in Death first), Sherlock, Thursday Murder Club. Publication first; films and prequels labeled.",
   },
   romance: {
     slug: "romance",
