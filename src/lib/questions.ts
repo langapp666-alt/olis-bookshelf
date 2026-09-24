@@ -48,6 +48,7 @@ export const popularQuestionSlugs = [
  */
 export const genreQuestionPriority: Record<GenreSlug, readonly string[]> = {
   "epic-fantasy": [
+    "where-to-start-malazan",
     "where-to-start-osten-ard",
     "divine-cities-or-founders",
     "shadows-of-the-apt-or-children-of-time",
