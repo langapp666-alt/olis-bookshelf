@@ -1,5 +1,6 @@
 ---
-import { amazonRel, amazonSearchUrl } from "../lib/site";
+import { amazonSearchUrl } from "../lib/site";
+import AmazonLink from "./AmazonLink.astro";
 
 interface Props {
   series: string;
@@ -18,10 +19,10 @@ const searchHref = amazonSearchUrl(`${series} ${author}`);
   <p class="small muted aside-byline">
     {author} · {genreLabel}
   </p>
-  <a class="amazon-link aside-amazon" href={searchHref} rel={amazonRel}>
+  <AmazonLink class="amazon-link aside-amazon" href={searchHref}>
     Amazon
     <span class="visually-hidden">{` search for ${series}`}</span>
-  </a>
+  </AmazonLink>
   {
     sources.length > 0 && (
       <>

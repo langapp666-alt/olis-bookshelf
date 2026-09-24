@@ -1,10 +1,10 @@
 ---
 import { getCollection, render } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import BookOneCard from "../../components/BookOneCard.astro";
 import GuideBreadcrumb from "../../components/GuideBreadcrumb.astro";
 import GuideCard from "../../components/GuideCard.astro";
 import StartHere from "../../components/StartHere.astro";
-import StarterAmazon from "../../components/StarterAmazon.astro";
 import {
   articleSchema,
   breadcrumbSchema,
@@ -12,6 +12,7 @@ import {
   parseFaqPairs,
   webPageSchema,
 } from "../../lib/guide-schema";
+import { questionBookOne } from "../../lib/guide-shop";
 import { listedGuides } from "../../lib/guides-index";
 import { absoluteOgUrl, questionOgPath } from "../../lib/og";
 import { guidesForQuestion, listedQuestions, questionHref } from "../../lib/questions";
@@ -28,6 +29,14 @@ export async function getStaticPaths() {
 
 const { question, linkedGuides } = Astro.props;
 const { Content } = await render(question);
+const bookOne = questionBookOne(
+  {
+    shortAnswerTitle: question.data.shortAnswerTitle,
+    shortAnswer: question.data.shortAnswer,
+    buy: question.data.buy,
+  },
+  linkedGuides.map((guide) => ({ body: guide.body, author: guide.data.author })),
+);
 const genre = genres[question.data.genre];
 const origin = siteOrigin(Astro.site);
 const canonical = new URL(questionHref(question.data.slug), origin);
@@ -86,23 +95,21 @@ const jsonLd = [
     </header>
 
     <div class="prose guide-prose question-prose">
-      <StartHere
-        title={question.data.shortAnswerTitle}
-        author={question.data.buy?.author}
-      >
+      <StartHere title={question.data.shortAnswerTitle}>
         <p>{question.data.shortAnswer}</p>
-        {
-          question.data.buy && (
-            <StarterAmazon
-              title={question.data.buy.title}
-              author={question.data.buy.author}
-              year={question.data.buy.year}
-              query={question.data.buy.query}
-              asin={question.data.buy.asin}
-            />
-          )
-        }
       </StartHere>
+      {
+        bookOne && (
+          <BookOneCard
+            title={bookOne.title}
+            author={bookOne.author}
+            year={bookOne.year}
+            query={bookOne.query}
+            asin={bookOne.asin}
+            href={bookOne.href}
+          />
+        )
+      }
       <Content />
     </div>
 

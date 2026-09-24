@@ -2,7 +2,8 @@
 import type { CollectionEntry } from "astro:content";
 import type { RecommendedBook } from "../lib/guide-shop";
 import { questionHref } from "../lib/questions";
-import { amazonRel, amazonSearchUrl, genres, type GenreSlug } from "../lib/site";
+import { amazonSearchUrl, genres, type GenreSlug } from "../lib/site";
+import AmazonLink from "./AmazonLink.astro";
 import GuideToc from "./GuideToc.astro";
 
 interface Heading {
@@ -36,10 +37,10 @@ const sources = guide.data.sources;
     <p class="small muted aside-byline">
       {guide.data.author} · {genre.label}
     </p>
-    <a class="amazon-link aside-amazon" href={shopHref} rel={amazonRel}>
+    <AmazonLink class="amazon-link aside-amazon" href={shopHref}>
       {shopLabel}
       <span class="visually-hidden">{shopHidden}</span>
-    </a>
+    </AmazonLink>
     {
       bookOne && (
         <p class="small muted aside-book1-title">{bookOne.title}</p>

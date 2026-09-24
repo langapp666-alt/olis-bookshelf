@@ -1,7 +1,8 @@
 ---
 import { lookupAsin } from "../lib/asins";
-import { amazonBookUrl, amazonRel } from "../lib/site";
+import { amazonAudibleUrl, amazonBookUrl } from "../lib/site";
 import { lookupCover, type CoverRecord } from "../lib/covers";
+import AmazonLink from "./AmazonLink.astro";
 import BookCover from "./BookCover.astro";
 
 export interface OrderBook {
@@ -71,6 +72,7 @@ function badgeFor(book: OrderBook): { label: string; kind: BadgeKind } | null {
             query: book.query,
             asin,
           });
+          const audioHref = amazonAudibleUrl(book.title, bookAuthor, book.query);
           return (
             <tr>
               {hasN && (
@@ -106,10 +108,16 @@ function badgeFor(book: OrderBook): { label: string; kind: BadgeKind } | null {
                 </td>
               )}
               <td class="col-amazon amazon-cell" data-label="Shop">
-                <a class="amazon-link" href={shopHref} rel={amazonRel}>
-                  Amazon
-                  <span class="visually-hidden">{` search for ${book.title}`}</span>
-                </a>
+                <div class="shop-actions">
+                  <AmazonLink class="amazon-link" href={shopHref}>
+                    Amazon
+                    <span class="visually-hidden">{` search for ${book.title}`}</span>
+                  </AmazonLink>
+                  <AmazonLink class="audiobook-link" href={audioHref}>
+                    Audiobook
+                    <span class="visually-hidden">{` search for ${book.title}`}</span>
+                  </AmazonLink>
+                </div>
               </td>
             </tr>
           );
