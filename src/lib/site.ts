@@ -62,8 +62,8 @@ export type SocialId = (typeof socials)[number]["id"];
 export const affiliateTag =
   import.meta.env.PUBLIC_AFFILIATE_TAG?.trim() || "olisbookshelf-20";
 
-/** Required on every Associates outbound link. */
-export const amazonRel = "sponsored nofollow";
+/** Required on every Associates outbound link. New tab, no window.opener. */
+export const amazonRel = "sponsored noopener";
 
 export const genres = {
   "epic-fantasy": {
@@ -97,6 +97,20 @@ export type GenreSlug = keyof typeof genres;
 export function amazonSearchUrl(query: string): string {
   const params = new URLSearchParams({
     k: query,
+    tag: affiliateTag,
+  });
+  return `https://www.amazon.com/s?${params.toString()}`;
+}
+
+/**
+ * Tagged title + author search limited to the Audible category (`i=audible`).
+ * Same keywords as the book search. Never an ASIN `/dp/` link.
+ */
+export function amazonAudibleUrl(title: string, author: string, query?: string): string {
+  const keywords = query?.trim() || `${title} ${author}`.trim();
+  const params = new URLSearchParams({
+    k: keywords,
+    i: "audible",
     tag: affiliateTag,
   });
   return `https://www.amazon.com/s?${params.toString()}`;

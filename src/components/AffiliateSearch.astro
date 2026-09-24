@@ -1,5 +1,6 @@
 ---
-import { amazonRel, amazonSearchUrl } from "../lib/site";
+import { amazonSearchUrl } from "../lib/site";
+import AmazonLink from "./AmazonLink.astro";
 
 interface Props {
   query: string;
@@ -11,5 +12,5 @@ const href = amazonSearchUrl(query);
 ---
 
 <p>
-  <a href={href} rel={amazonRel}>{label}</a>
+  <AmazonLink href={href}>{label}</AmazonLink>
 </p>

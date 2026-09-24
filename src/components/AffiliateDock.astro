@@ -1,6 +1,6 @@
 ---
-import { amazonRel } from "../lib/site";
 import type { RecommendedBook } from "../lib/guide-shop";
+import AmazonLink from "./AmazonLink.astro";
 
 interface Props {
   book: RecommendedBook;
@@ -11,11 +11,61 @@ interface Props {
 const { book, label = "Book 1 on Amazon" } = Astro.props;
 ---
 
-<div class="guide-dock">
+<div class="guide-dock" data-guide-dock hidden>
   <div class="guide-dock-inner">
-    <a class="amazon-link dock-amazon" href={book.href} rel={amazonRel}>
+    <AmazonLink class="amazon-link dock-amazon" href={book.href}>
       {label}
-      <span class="dock-amazon-label"> · {book.title}</span>
-    </a>
+      <span class="visually-hidden">{` · ${book.title}`}</span>
+    </AmazonLink>
+    <button class="dock-dismiss" type="button" data-dock-dismiss aria-label="Dismiss">
+      <span aria-hidden="true">×</span>
+    </button>
   </div>
 </div>
+
+<script>
+  const DISMISS_KEY = "olis-book1-dock-dismissed";
+  const dock = document.querySelector<HTMLElement>("[data-guide-dock]");
+  const card = document.querySelector<HTMLElement>("[data-book-one]");
+  const mobile = window.matchMedia("(max-width: 719px)");
+
+  function dismissed(): boolean {
+    try {
+      return sessionStorage.getItem(DISMISS_KEY) === "1";
+    } catch {
+      return false;
+    }
+  }
+
+  function setDock(open: boolean) {
+    if (!dock) return;
+    const show = open && mobile.matches;
+    dock.hidden = !show;
+    document.body.classList.toggle("is-dock-on", show);
+  }
+
+  if (dock && card && !dismissed()) {
+    let passed = false;
+    const sync = () => setDock(passed && !dismissed());
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry) return;
+        passed = !entry.isIntersecting && entry.boundingClientRect.top < 0;
+        sync();
+      },
+      { threshold: 0 },
+    );
+    observer.observe(card);
+    mobile.addEventListener("change", sync);
+    dock.querySelector<HTMLButtonElement>("[data-dock-dismiss]")?.addEventListener("click", () => {
+      try {
+        sessionStorage.setItem(DISMISS_KEY, "1");
+      } catch {
+        /* private mode / quota */
+      }
+      passed = false;
+      setDock(false);
+      observer.disconnect();
+    });
+  }
+</script>

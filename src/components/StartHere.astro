@@ -1,15 +1,22 @@
 ---
-import { amazonBookUrl, amazonRel, amazonSearchUrl } from "../lib/site";
+import AmazonLink from "./AmazonLink.astro";
+import { amazonBookUrl, amazonSearchUrl } from "../lib/site";
 
 interface Props {
   title: string;
   /** Optional author when the StartHere door title alone is ambiguous. */
   author?: string;
+  /**
+   * Optional shop control inside this callout.
+   * Off by default: guide heroes and question answers render one BookOneCard
+   * instead of a second start-here button in this block.
+   */
+  shop?: boolean;
 }
 
-const { title, author } = Astro.props;
+const { title, author, shop = false } = Astro.props;
 const multiDoor = /(?:—|–|\bor\b)/i.test(title);
-const shopHref = multiDoor
+const shopHref = !shop || multiDoor
   ? undefined
   : author
     ? amazonBookUrl(title, author)
@@ -26,10 +33,10 @@ const showShop = Boolean(shopHref);
   {
     showShop && shopHref && (
       <p class="start-here-shop">
-        <a class="amazon-link start-here-amazon" href={shopHref} rel={amazonRel}>
+        <AmazonLink class="amazon-link start-here-amazon" href={shopHref}>
           Book 1 on Amazon
           <span class="visually-hidden">{` · ${title}`}</span>
-        </a>
+        </AmazonLink>
       </p>
     )
   }

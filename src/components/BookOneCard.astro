@@ -1,0 +1,35 @@
+---
+import { lookupCover } from "../lib/covers";
+import { amazonBookUrl } from "../lib/site";
+import AmazonLink from "./AmazonLink.astro";
+import BookCover from "./BookCover.astro";
+
+interface Props {
+  title: string;
+  author: string;
+  year?: string | number;
+  query?: string;
+  asin?: string;
+  href?: string;
+}
+
+const { title, author, year, query, asin, href } = Astro.props;
+const shopHref = href ?? amazonBookUrl(title, author, { query, asin });
+const cover = lookupCover(title, author);
+const yearLabel = year !== undefined && String(year).trim() !== "" ? String(year) : undefined;
+---
+
+<section class="book-one" data-book-one aria-label="Start here">
+  <div class="book-one-main">
+    <BookCover title={title} cover={cover} size="card" />
+    <div class="book-one-copy">
+      <p class="book-one-kicker">Start here</p>
+      <p class="book-one-title">{title}</p>
+      {yearLabel && <p class="book-one-year">{yearLabel}</p>}
+    </div>
+  </div>
+  <AmazonLink class="amazon-link book-one-amazon" href={shopHref}>
+    Book 1 on Amazon
+    <span class="visually-hidden">{` · ${title}`}</span>
+  </AmazonLink>
+</section>

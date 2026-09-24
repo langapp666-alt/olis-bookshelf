@@ -5,9 +5,9 @@ import { lookupCover } from "../lib/covers";
 import { withGuideMeta } from "../lib/guide-meta";
 import { formatDate, genres, type GenreSlug } from "../lib/site";
 import BookCover from "./BookCover.astro";
+import BookOneCard from "./BookOneCard.astro";
 import GuideBreadcrumb from "./GuideBreadcrumb.astro";
 import GuideToc from "./GuideToc.astro";
-import StarterAmazon from "./StarterAmazon.astro";
 
 interface Heading {
   depth: number;
@@ -49,11 +49,13 @@ const cover = lookupCover(guide.data.series, guide.data.author, {
       <p class="lede guide-hero-lede">{guide.data.description}</p>
       {
         bookOne && (
-          <StarterAmazon
+          <BookOneCard
             title={bookOne.title}
             author={bookOne.author ?? guide.data.author}
+            year={bookOne.year}
             query={bookOne.query}
             asin={bookOne.asin}
+            href={bookOne.href}
           />
         )
       }
