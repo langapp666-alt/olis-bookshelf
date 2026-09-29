@@ -46,7 +46,6 @@ const cover = lookupCover(guide.data.series, guide.data.author, {
         <a href={`/genres/${genre.slug}/`}>{genre.label}</a>
       </p>
       <h1>{guide.data.title}</h1>
-      <p class="lede guide-hero-lede">{guide.data.description}</p>
       {
         bookOne && (
           <BookOneCard
@@ -59,6 +58,7 @@ const cover = lookupCover(guide.data.series, guide.data.author, {
           />
         )
       }
+      <p class="lede guide-hero-lede">{guide.data.description}</p>
       <div class="pill-row guide-hero-meta">
         <span class="pill">{guide.data.author}</span>
         {countLabel && <span class="pill">{countLabel}</span>}

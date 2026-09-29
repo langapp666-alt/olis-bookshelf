@@ -15,6 +15,10 @@ export function questionHref(slug: string): string {
  */
 export const popularQuestionSlugs = [
   "what-to-read-after-acotar",
+  "where-to-buy-the-will-of-the-many",
+  "where-to-buy-a-wizard-of-earthsea",
+  "where-to-start-fourth-wing",
+  "where-to-buy-captive-prince",
   "where-to-start-roots-of-chaos",
   "where-to-start-malazan",
   "where-to-start-the-cosmere",
@@ -48,6 +52,8 @@ export const popularQuestionSlugs = [
  */
 export const genreQuestionPriority: Record<GenreSlug, readonly string[]> = {
   "epic-fantasy": [
+    "where-to-buy-the-will-of-the-many",
+    "where-to-buy-a-wizard-of-earthsea",
     "where-to-start-malazan",
     "where-to-start-osten-ard",
     "divine-cities-or-founders",
@@ -60,13 +66,21 @@ export const genreQuestionPriority: Record<GenreSlug, readonly string[]> = {
     "drizzt-homeland-or-crystal-shard",
   ],
   "space-opera": [
+    "where-to-buy-shards-of-earth",
+    "where-to-buy-empire-of-silence",
+    "where-to-buy-hitchhikers-guide",
     "foreigner-start-later-arc",
     "where-to-start-the-expanse",
     "where-to-start-dune",
+    "where-to-start-silo",
+    "where-to-start-revelation-space",
     "where-to-start-red-rising",
     "where-to-start-vorkosigan",
   ],
   "mystery-thriller": [
+    "where-to-buy-magic-bites",
+    "where-to-buy-the-mysterious-affair-at-styles",
+    "where-to-buy-mr-mercedes",
     "where-to-start-laundry-files",
     "where-to-start-harry-bosch",
     "where-to-start-in-death",
@@ -75,7 +89,13 @@ export const genreQuestionPriority: Record<GenreSlug, readonly string[]> = {
     "where-to-start-rivers-of-london",
     "where-to-start-sherlock-holmes",
   ],
-  romance: ["hades-persephone-touch-or-game"],
+  romance: [
+    "where-to-start-fourth-wing",
+    "where-to-buy-captive-prince",
+    "where-to-buy-once-upon-a-broken-heart",
+    "where-to-buy-outlander",
+    "hades-persephone-touch-or-game",
+  ],
 };
 
 export function prioritizeQuestions(questions: Question[], priority: readonly string[]): Question[] {
