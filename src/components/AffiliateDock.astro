@@ -14,8 +14,10 @@ const { book, label = "Book 1 on Amazon" } = Astro.props;
 <div class="guide-dock" data-guide-dock hidden>
   <div class="guide-dock-inner">
     <AmazonLink class="amazon-link dock-amazon" href={book.href}>
-      {label}
-      <span class="visually-hidden">{` · ${book.title}`}</span>
+      <span class="dock-copy">
+        <span class="dock-amazon-kicker">{label}</span>
+        <span class="dock-amazon-title">{book.title}</span>
+      </span>
     </AmazonLink>
     <button class="dock-dismiss" type="button" data-dock-dismiss aria-label="Dismiss">
       <span aria-hidden="true">×</span>
@@ -50,7 +52,7 @@ const { book, label = "Book 1 on Amazon" } = Astro.props;
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (!entry) return;
-        passed = !entry.isIntersecting && entry.boundingClientRect.top < 0;
+        passed = !entry.isIntersecting;
         sync();
       },
       { threshold: 0 },
