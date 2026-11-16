@@ -1,5 +1,19 @@
 import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
+import { writeClosedSite } from "./scripts/build-closed-site.mjs";
+
+/** If `astro build` is run, replace the output with the closed site. */
+function closedSite() {
+  return {
+    name: "closed-site",
+    hooks: {
+      "astro:build:done": ({ dir }) => {
+        writeClosedSite(dir.pathname);
+      },
+    },
+  };
+}
+
 
 /** Keep in sync with src/lib/site.ts. */
 const CANONICAL = "https://olisbookshelf.com";
@@ -20,7 +34,7 @@ export default defineConfig({
   site: siteOrigin(),
   output: "static",
   trailingSlash: "always",
-  integrations: [mdx()],
+  integrations: [mdx(), closedSite()],
   vite: {
     ssr: {
       external: ["@resvg/resvg-js"],

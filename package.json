@@ -9,7 +9,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "node scripts/build-closed-site.mjs",
     "preview": "astro preview",
     "astro": "astro",
     "check": "astro check",
