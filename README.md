@@ -1,5 +1,7 @@
 # Oli's Bookshelf
 
+> **The live site is closed.** `npm run build` writes only a blank “This site is closed.” page (noindex, no Amazon links, no analytics) to `dist/`. Old guides and source stay in this repo and in git history. To put the site back up, restore `"build": "astro build"` in `package.json` and remove the `closedSite()` hook from `astro.config.mjs`.
+
 Series reading-order and “what to read next” guides for long science fiction, fantasy, mystery/thriller, and romance shelves. Brand: **Oli's Bookshelf**.
 
 This is a static [Astro](https://astro.build) site. Guides live in a Markdown/MDX content collection.
